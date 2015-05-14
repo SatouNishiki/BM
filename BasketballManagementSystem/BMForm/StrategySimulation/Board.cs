@@ -24,6 +24,5 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
         /// </summary>
         public int ExecuteTime { get; set; }
 
-
     }
 }
