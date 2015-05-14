@@ -11,6 +11,7 @@ namespace BasketballManagementSystem.BaseClass.Action
     [Serializable]
     public class Assist : NonRelationPointAction
     {
+
         public Assist()
         {
         }
