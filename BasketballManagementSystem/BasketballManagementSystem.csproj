@@ -184,6 +184,7 @@
       <DependentUpon>PlayerData.cs</DependentUpon>
     </Compile>
     <Compile Include="BMForm\StrategySimulation\Board.cs" />
+    <Compile Include="BMForm\StrategySimulation\BoardPlayer.cs" />
     <Compile Include="BMForm\StrategySimulation\FormStrategySimulation.cs">
       <SubType>Form</SubType>
     </Compile>

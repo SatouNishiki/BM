@@ -4,26 +4,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BasketballManagementSystem.BaseClass.Player;
-
+using BasketballManagementSystem.BaseClass.Position;
 
 namespace BasketballManagementSystem.BMForm.StrategySimulation
 {
-    /// <summary>
-    /// StrategySimulationで使われる戦術の1盤面をあらわすクラス
-    /// </summary>
-    public class Board
+    public class BoardPlayer
     {
+        /// <summary>
+        /// 盤面にいる選手
+        /// </summary>
+        public Player Player { get; set; }
 
         /// <summary>
-        /// 盤面にいるプレイヤーのlist
+        /// 選手の配置情報
         /// </summary>
-        public List<BoardPlayer> FieldMembers { get; set; }
-
-        /// <summary>
-        /// 実行する時間
-        /// </summary>
-        public int ExecuteTime { get; set; }
-
-
+        public Position PlayerPosition { get; set; }
     }
 }
