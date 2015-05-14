@@ -13,6 +13,7 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
     /// </summary>
     public class Board
     {
+
         /// <summary>
         /// 盤面にいるプレイヤーのlist
         /// </summary>
