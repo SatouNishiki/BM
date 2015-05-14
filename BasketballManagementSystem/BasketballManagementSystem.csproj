@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B04CB1F-7B26-4652-BE5B-8AC9509583BF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BasketballManagementSystem</RootNamespace>
+    <AssemblyName>BasketballManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>5b7a205a</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BMErrorLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BMLibrary\DragDropPlayerList\bin\Debug\BMErrorLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="CreateFolderLibrary">
+      <HintPath>..\..\BMLibrary\CreateFolderLibrary\bin\Debug\CreateFolderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="DragDropList">
+      <HintPath>..\..\BMLibrary\DragDropList\bin\Debug\DragDropList.dll</HintPath>
+    </Reference>
+    <Reference Include="DragDropPictureBox">
+      <HintPath>..\..\BMLibrary\DragDropPictureBox\bin\Debug\DragDropPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="DragDropPlayerList, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BMLibrary\DragDropPlayerList\bin\Debug\DragDropPlayerList.dll</HintPath>
+    </Reference>
+    <Reference Include="ExchangeListBox">
+      <HintPath>..\..\BMLibrary\ExchangeListBox\bin\Debug\ExchangeListBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Mathmatical">
+      <HintPath>..\..\BMLibrary\Mathmatical\bin\Debug\Mathmatical.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="QuarterTimer">
+      <HintPath>..\..\BMLibrary\QuarterTimer\bin\Debug\QuarterTimer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TagFileLoader, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BMLibrary\TagFileLoader\bin\Debug\TagFileLoader.dll</HintPath>
+    </Reference>
+    <Reference Include="Utility">
+      <HintPath>..\..\BMLibrary\Utility\bin\Debug\Utility.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseClass\ActionPoint\ActionPointProvider.cs" />
+    <Compile Include="BaseClass\Action\FreeThrowMiss.cs" />
+    <Compile Include="BaseClass\Action\Shoot2PMiss.cs" />
+    <Compile Include="BaseClass\Action\Action.cs" />
+    <Compile Include="BaseClass\Action\Assist.cs" />
+    <Compile Include="BaseClass\Action\DisQualifyingFaul.cs" />
+    <Compile Include="BaseClass\Action\Faul.cs" />
+    <Compile Include="BaseClass\Action\FreeThrow.cs" />
+    <Compile Include="BaseClass\Action\Miss.cs" />
+    <Compile Include="BaseClass\Action\NonRelationPointAction.cs" />
+    <Compile Include="BaseClass\Action\PersonalFaul.cs" />
+    <Compile Include="BaseClass\Action\RelationPointAction.cs" />
+    <Compile Include="BaseClass\Action\Shoot2P.cs" />
+    <Compile Include="BaseClass\Action\Shoot3P.cs" />
+    <Compile Include="BaseClass\Action\Shoot3PMiss.cs" />
+    <Compile Include="BaseClass\Action\ShootBlock.cs" />
+    <Compile Include="BaseClass\Action\Steal.cs" />
+    <Compile Include="BaseClass\Action\TechnicalFaul.cs" />
+    <Compile Include="BaseClass\Action\TurnOver.cs" />
+    <Compile Include="BaseClass\Action\UnSportsmanLikeFaul.cs" />
+    <Compile Include="BaseClass\Club\ClubMember.cs" />
+    <Compile Include="BaseClass\Club\ClubTeam.cs" />
+    <Compile Include="BaseClass\Game\Game.cs" />
+    <Compile Include="BaseClass\Player\MemberChange.cs" />
+    <Compile Include="BaseClass\Player\Player.cs" />
+    <Compile Include="BaseClass\Player\PlayerCoparer.cs" />
+    <Compile Include="BaseClass\Position\CortHelper.cs" />
+    <Compile Include="BaseClass\Position\Position.cs" />
+    <Compile Include="BaseClass\Position\PositionConvert.cs" />
+    <Compile Include="BaseClass\Player\Team.cs" />
+    <Compile Include="BaseClass\Settings\AppSetting.cs" />
+    <Compile Include="BaseClass\TimeOut\TimeOut.cs" />
+    <Compile Include="BMForm\ActionPointEdit\ActionPointEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\ActionPointEdit\ActionPointEditForm.Designer.cs">
+      <DependentUpon>ActionPointEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\ActionPointGraph\FormActionPointGraph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\ActionPointGraph\FormActionPointGraph.Designer.cs">
+      <DependentUpon>FormActionPointGraph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\BoxScore\FormBoxScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\BoxScore\FormBoxScore.Designer.cs">
+      <DependentUpon>FormBoxScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\BoxScore\PlayerInfomation.cs" />
+    <Compile Include="BMForm\BoxScore\RunningScore.cs" />
+    <Compile Include="BMForm\ClubEdit\FormClubEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\ClubEdit\FormClubEdit.Designer.cs">
+      <DependentUpon>FormClubEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\GameDataEdit\EditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\GameDataEdit\EditForm.Designer.cs">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\GraphScore\FormGraphScore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\GraphScore\FormGraphScore.Designer.cs">
+      <DependentUpon>FormGraphScore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\Input\ConfigForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\Input\ConfigForm.Designer.cs">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\Input\DebugMessageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\Input\DebugMessageForm.Designer.cs">
+      <DependentUpon>DebugMessageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\Input\FormInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\Input\FormInput.Designer.cs">
+      <DependentUpon>FormInput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\Input\FormInputEvent\ActionClickEvent.cs" />
+    <Compile Include="BMForm\Input\FormInputEvent\CortEvent.cs" />
+    <Compile Include="BMForm\Input\FormInputEvent\GameSaveLoadEvent.cs" />
+    <Compile Include="BMForm\Input\FormInputEvent\PlayerListSortEvent.cs" />
+    <Compile Include="BMForm\Input\FormInputEvent\TeamChengeEvent.cs" />
+    <Compile Include="BMForm\Input\Language\CultureHelper.cs" />
+    <Compile Include="BMForm\Input\LoadHelper\FormInputLoader.cs" />
+    <Compile Include="BMForm\PlayerData\PlayerData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\PlayerData\PlayerData.Designer.cs">
+      <DependentUpon>PlayerData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\StrategySimulation\Board.cs" />
+    <Compile Include="BMForm\StrategySimulation\FormStrategySimulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\StrategySimulation\FormStrategySimulation.Designer.cs">
+      <DependentUpon>FormStrategySimulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\Tactick2D\Tacticks2D.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\Tactick2D\Tacticks2D.Designer.cs">
+      <DependentUpon>Tacticks2D.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\Transmission\TCP\FomServer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\Transmission\TCP\FomServer.Designer.cs">
+      <DependentUpon>FomServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\Transmission\TCP\FomSoch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\Transmission\TCP\FomSoch.Designer.cs">
+      <DependentUpon>FomSoch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMForm\Transmission\UDPClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\Transmission\UDPClient.Designer.cs">
+      <DependentUpon>UDPClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\IClose.cs" />
+    <Compile Include="Interface\Init\IInit.cs" />
+    <Compile Include="Interface\loder\ILorder.cs" />
+    <Compile Include="Manager\PictureManager\PictureManager.cs" />
+    <Compile Include="Manager\PrintManager\FormPrinter.cs" />
+    <Compile Include="Manager\TeamManager\TeamManager.cs" />
+    <Compile Include="Manager\SaveDataManager\SaveDataManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="BMForm\TeamMake\TeamDataEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\TeamMake\TeamDataEdit.Designer.cs">
+      <DependentUpon>TeamDataEdit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BMForm\ActionPointEdit\ActionPointEditForm.ja.resx">
+      <DependentUpon>ActionPointEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\ActionPointEdit\ActionPointEditForm.resx">
+      <DependentUpon>ActionPointEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\ActionPointGraph\FormActionPointGraph.resx">
+      <DependentUpon>FormActionPointGraph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\BoxScore\FormBoxScore.ja.resx">
+      <DependentUpon>FormBoxScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\BoxScore\FormBoxScore.resx">
+      <DependentUpon>FormBoxScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\ClubEdit\FormClubEdit.ja.resx">
+      <DependentUpon>FormClubEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\ClubEdit\FormClubEdit.resx">
+      <DependentUpon>FormClubEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\GameDataEdit\EditForm.ja.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\GameDataEdit\EditForm.resx">
+      <DependentUpon>EditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\GraphScore\FormGraphScore.ja.resx">
+      <DependentUpon>FormGraphScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\GraphScore\FormGraphScore.resx">
+      <DependentUpon>FormGraphScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Input\ConfigForm.resx">
+      <DependentUpon>ConfigForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Input\DebugMessageForm.resx">
+      <DependentUpon>DebugMessageForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Input\FormInput.en.resx">
+      <DependentUpon>FormInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Input\FormInput.ja.resx">
+      <DependentUpon>FormInput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Input\FormInput.resx">
+      <DependentUpon>FormInput.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\PlayerData\PlayerData.resx">
+      <DependentUpon>PlayerData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\StrategySimulation\FormStrategySimulation.resx">
+      <DependentUpon>FormStrategySimulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Tactick2D\Tacticks2D.ja.resx">
+      <DependentUpon>Tacticks2D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Tactick2D\Tacticks2D.resx">
+      <DependentUpon>Tacticks2D.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\TeamMake\TeamDataEdit.ja.resx">
+      <DependentUpon>TeamDataEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Transmission\TCP\FomServer.resx">
+      <DependentUpon>FomServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Transmission\TCP\FomSoch.resx">
+      <DependentUpon>FomSoch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Transmission\UDPClient.ja.resx">
+      <DependentUpon>UDPClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Transmission\UDPClient.resx">
+      <DependentUpon>UDPClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="BMForm\TeamMake\TeamDataEdit.resx">
+      <DependentUpon>TeamDataEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BMForm\BoxScore\Picture\marubatu2.png" />
+    <EmbeddedResource Include="BMForm\BoxScore\Picture\batu.png" />
+    <EmbeddedResource Include="BMForm\BoxScore\Picture\bar.png" />
+    <EmbeddedResource Include="BMForm\BoxScore\Picture\batu_touka.png" />
+    <EmbeddedResource Include="BMForm\BoxScore\Picture\redDualLine.png" />
+    <EmbeddedResource Include="BMForm\BoxScore\Picture\maru_black.png" />
+    <EmbeddedResource Include="BMForm\BoxScore\Picture\maru_red.png" />
+    <EmbeddedResource Include="BMForm\BoxScore\Picture\akamaru.png" />
+    <EmbeddedResource Include="BMForm\BoxScore\Picture\kuromaru.png" />
+    <Content Include="BMForm\BoxScore\Picture\ScoreSheet.jpg" />
+    <EmbeddedResource Include="BMForm\BoxScore\Picture\syasen_black.png" />
+    <EmbeddedResource Include="BMForm\BoxScore\Picture\syasen_red.png" />
+    <Content Include="BMForm\Input\Picture\basketball_court.png" />
+    <EmbeddedResource Include="BMForm\Input\Picture\hayaokuri.jpg" />
+    <EmbeddedResource Include="BMForm\Input\Picture\makimodosi.jpg" />
+    <EmbeddedResource Include="BMForm\Input\Picture\susumu.png" />
+    <EmbeddedResource Include="BMForm\Input\Picture\teisi.png" />
+    <Content Include="BMForm\Input\Picture\waku2.png" />
+    <Content Include="BMForm\Input\Picture\wakuwaku.png" />
+    <Content Include="BMForm\Input\Picture\wakuwakuw.png" />
+    <Content Include="BMForm\Input\Picture\Yajirusi.png" />
+    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\People.png" />
+    <Content Include="BMForm\StrategySimulation\Picture\basketball_court.png" />
+    <Content Include="BMForm\Tactick2D\Picture\basketball_court.png" />
+    <Content Include="BMForm\Input\Picture\Player.png" />
+    <None Include="Resources\Player.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
