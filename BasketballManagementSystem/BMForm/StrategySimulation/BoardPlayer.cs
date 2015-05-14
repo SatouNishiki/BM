@@ -19,5 +19,11 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
         /// 選手の配置情報
         /// </summary>
         public Position PlayerPosition { get; set; }
+
+        public BoardPlayer()
+        {
+            Player = new Player();
+            PlayerPosition = new Position();
+        }
     }
 }
