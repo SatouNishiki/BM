@@ -1,0 +1,152 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Reflection;
+using BMErrorLibrary;
+using BasketballManagementSystem.BaseClass.Settings;
+
+namespace BasketballManagementSystem.BaseClass.ActionPoint
+{
+    [Serializable]
+    public class ActionPointProvider
+    {
+        private static ActionPointProvider instance;
+
+        public int APAssist { get; set; }
+
+        public int APDisQualifyingFaul { get; set; }
+
+        public int APFreeThrow { get; set; }
+
+        public int APFreeThrowMiss { get; set; }
+
+        public int APPersonalFaul { get; set; }
+
+        public int APShoot2P { get; set; }
+
+        public int APShoot2PMiss { get; set; }
+
+        public int APShoot3P { get; set; }
+
+        public int APShoot3PMiss { get; set; }
+
+        public int APShootBlock { get; set; }
+
+        public int APSteal { get; set; }
+
+        public int APTechnicalFaul { get; set; }
+
+        public int APTurnOver { get; set; }
+
+        public int APUnSportsmanLikeFaul { get; set; }
+
+        public int APOther { get; set; }
+
+
+        private ActionPointProvider() 
+        {
+            
+        }
+
+        public static ActionPointProvider GetInstance()
+        {
+            if (instance == null)
+                instance = new ActionPointProvider();
+            
+            return instance;
+        }
+
+        public int GetActionPoint(string actionName)
+        {
+            //PlayerクラスのTypeオブジェクトを取得する
+            Type _t = typeof(ActionPointProvider);
+
+            //プロパティを取得する
+            PropertyInfo[] _pi = _t.GetProperties();
+
+            foreach (PropertyInfo _p in _pi)
+            {
+                if (_p.PropertyType != typeof(int)) continue;
+
+                if (!_p.Name.Contains("AP")) continue;
+
+                if (_p.Name == "AP" + actionName)
+                {
+                    object _o = _p.GetValue(AppSetting.GetInstance().ActionPointProvider, null);
+
+                    int _rt = 0;
+
+                    try
+                    {
+                        _rt = (int)_o;
+                    }
+                    catch(Exception exc)
+                    {
+                        BMError.ErrorMessageOutput(exc.Message);
+                        return -1;
+                    }
+
+                    return _rt;
+                }
+            }
+
+            return APOther;
+        }
+
+        public void SetActionPoint(string actionName, int value)
+        {
+            //PlayerクラスのTypeオブジェクトを取得する
+            Type _t = typeof(ActionPointProvider);
+
+            //プロパティを取得する
+            PropertyInfo[] _pi = _t.GetProperties();
+
+            foreach (PropertyInfo _p in _pi)
+            {
+                if (_p.PropertyType != typeof(int)) continue;
+
+                if (!_p.Name.Contains("AP")) continue;
+
+                if (_p.Name == "AP" + actionName)
+                {
+                    try
+                    {
+                        _p.SetValue(AppSetting.GetInstance().ActionPointProvider, value);
+                    }
+                    catch (Exception exc)
+                    {
+                        BMError.ErrorMessageOutput(exc.Message);
+                        return;
+                    }
+
+                }
+            }
+            
+        }
+
+        public void SetDefault()
+        {
+            APAssist = 3;
+            APShootBlock = 2;
+            APSteal = 2;
+            APTurnOver = 1;
+
+            APPersonalFaul = 1;
+            APUnSportsmanLikeFaul = 3;
+            APTechnicalFaul = 5;
+            APDisQualifyingFaul = 10;
+
+            APFreeThrow = 1;
+            APShoot2P = 2;
+            APShoot3P = 3;
+
+            APFreeThrowMiss = 3;
+            APShoot2PMiss = 2;
+            APShoot3PMiss = 1;
+
+            APOther = 0;
+        }
+    }
+}
