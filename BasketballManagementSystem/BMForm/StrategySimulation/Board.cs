@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BasketballManagementSystem.BaseClass.Player;
-
+using DragDropPictureBox;
 
 namespace BasketballManagementSystem.BMForm.StrategySimulation
 {
@@ -17,13 +16,22 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
         /// <summary>
         /// 盤面にいるプレイヤーのlist
         /// </summary>
-        public List<BoardPlayer> FieldMembers { get; set; }
+        public List<LocationBitmap> FieldMembers { get; set; }
 
         /// <summary>
         /// 実行する時間
         /// </summary>
         public int ExecuteTime { get; set; }
 
+        public Board()
+        {
+            FieldMembers = new List<LocationBitmap>();
+        }
+
+        public override string ToString()
+        {
+            return "Time=" + ExecuteTime + " : MembersCount=" + FieldMembers.Count;
+        }
 
     }
 }
