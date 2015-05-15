@@ -1,0 +1,3984 @@
+<?xml version="1.0"?>
+<Game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <MyTeam>
+    <teamMember>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>桐ヶ谷 和人</name>
+        <number>1</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>結城 明日奈</name>
+        <number>2</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>ユイ</name>
+        <number>3</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>桐ヶ谷 直葉</name>
+        <number>4</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>朝田 詩乃</name>
+        <number>5</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>壷井 遼太郎</name>
+        <number>6</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>アンドリュー・ギルバート・ミルズ</name>
+        <number>7</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>綾野 珪子</name>
+        <number>8</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>篠崎 里香</name>
+        <number>9</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>茅場 晶彦</name>
+        <number>10</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>てすと太郎</name>
+        <number>11</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+    </teamMember>
+    <cortMember>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>桐ヶ谷 和人</name>
+        <number>1</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>結城 明日奈</name>
+        <number>2</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>ユイ</name>
+        <number>3</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>桐ヶ谷 直葉</name>
+        <number>4</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>朝田 詩乃</name>
+        <number>5</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>壷井 遼太郎</name>
+        <number>6</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>アンドリュー・ギルバート・ミルズ</name>
+        <number>7</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>綾野 珪子</name>
+        <number>8</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>篠崎 里香</name>
+        <number>9</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>茅場 晶彦</name>
+        <number>10</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+    </cortMember>
+    <outMember>
+      <Player>
+        <isMyTeam>true</isMyTeam>
+        <name>てすと太郎</name>
+        <number>11</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+    </outMember>
+    <allPoint>0</allPoint>
+    <Name>TestTeam1</Name>
+  </MyTeam>
+  <OppentTeam>
+    <teamMember>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>綾崎 ハヤテ</name>
+        <number>1</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>三千院 ナギ</name>
+        <number>2</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>マリア</name>
+        <number>3</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>倉臼 征史郎</name>
+        <number>4</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>三千院 帝</name>
+        <number>5</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>三千院 紫子</name>
+        <number>6</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>姫神 葵</name>
+        <number>7</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>シン・ハイエック</name>
+        <number>8</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>タマ</name>
+        <number>9</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>シラヌイ</name>
+        <number>10</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>てすと太郎</name>
+        <number>11</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+    </teamMember>
+    <cortMember>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>綾崎 ハヤテ</name>
+        <number>1</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>三千院 ナギ</name>
+        <number>2</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>マリア</name>
+        <number>3</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>倉臼 征史郎</name>
+        <number>4</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>三千院 帝</name>
+        <number>5</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>三千院 紫子</name>
+        <number>6</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>姫神 葵</name>
+        <number>7</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>シン・ハイエック</name>
+        <number>8</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>タマ</name>
+        <number>9</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>シラヌイ</name>
+        <number>10</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+    </cortMember>
+    <outMember>
+      <Player>
+        <isMyTeam>false</isMyTeam>
+        <name>てすと太郎</name>
+        <number>11</number>
+        <point>0</point>
+        <twoPointShoot>
+          <actionName>2PShoot</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>2</point>
+        </twoPointShoot>
+        <threePointShoot>
+          <actionName>Shoot3P</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>3</point>
+        </threePointShoot>
+        <freeThrow>
+          <actionName>FreeThrow</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>1</point>
+        </freeThrow>
+        <assist>
+          <actionName>Assist</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </assist>
+        <personalFaul>
+          <actionName>PersonalFaul</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </personalFaul>
+        <turnOver>
+          <actionName>TurnOver</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </turnOver>
+        <steal>
+          <actionName>Steal</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </steal>
+        <shootBlock>
+          <actionName>ShootBlock</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </shootBlock>
+        <rebound>
+          <actionName>Rebound</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+        </rebound>
+        <miss>
+          <actionName>Miss</actionName>
+          <actionCount>0</actionCount>
+          <actionPoint>0</actionPoint>
+          <actionDate>0001-01-01T00:00:00</actionDate>
+          <quarter>1</quarter>
+          <remainingTime />
+          <point>0</point>
+        </miss>
+      </Player>
+    </outMember>
+    <allPoint>0</allPoint>
+    <Name>OppentTeamTest</Name>
+  </OppentTeam>
+  <startTime>2015-03-10T13:58:23.4870236+09:00</startTime>
+</Game>
