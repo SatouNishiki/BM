@@ -79,6 +79,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
             ChartQuarterAll.Series.Add("MyAllPoint");
             ChartQuarterAll.Series.Add("OppentAllPoint");
 
+            
             ChartQuarter1.Series["MyAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             ChartQuarter1.Series["OppentAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
 
@@ -93,6 +94,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             ChartQuarterAll.Series["MyAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
             ChartQuarterAll.Series["OppentAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+             
             
              
             //グラフの初期点の座標(左端の座標)を指定

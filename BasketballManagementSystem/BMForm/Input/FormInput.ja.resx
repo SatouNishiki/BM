@@ -470,9 +470,6 @@
   <data name="CortPicture.Location" type="System.Drawing.Point, System.Drawing">
     <value>169, 359</value>
   </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>874, 26</value>
-  </data>
   <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 22</value>
   </data>
@@ -683,6 +680,9 @@
   <data name="dataEdit.Text" xml:space="preserve">
     <value>データ編集</value>
   </data>
+  <data name="clubMake.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
   <data name="teamMake.Size" type="System.Drawing.Size, System.Drawing">
     <value>208, 22</value>
   </data>
@@ -876,8 +876,5 @@
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>アクション(通常)</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>874, 648</value>
   </data>
 </root>

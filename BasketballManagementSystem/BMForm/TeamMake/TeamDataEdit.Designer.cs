@@ -69,24 +69,24 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.comboBoxPosition);
             this.groupBox1.Controls.Add(this.buttonAdd);
             this.groupBox1.Controls.Add(this.textBoxNumber);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.textBoxName);
             this.groupBox1.Controls.Add(this.label1);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // comboBoxPosition
             // 
-            resources.ApplyResources(this.comboBoxPosition, "comboBoxPosition");
             this.comboBoxPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxPosition.FormattingEnabled = true;
             this.comboBoxPosition.Items.AddRange(new object[] {
             resources.GetString("comboBoxPosition.Items"),
             resources.GetString("comboBoxPosition.Items1")});
+            resources.ApplyResources(this.comboBoxPosition, "comboBoxPosition");
             this.comboBoxPosition.Name = "comboBoxPosition";
             // 
             // buttonAdd
@@ -118,13 +118,13 @@
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.buttonDicision);
             this.groupBox2.Controls.Add(this.textBoxEditNumber);
             this.groupBox2.Controls.Add(this.textBoxEditName);
             this.groupBox2.Controls.Add(this.buttonDelete);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -164,13 +164,13 @@
             // 
             // groupBox3
             // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.labelSelectedPlayer);
             this.groupBox3.Controls.Add(this.textBoxTeamName);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.listBoxOutMember);
             this.groupBox3.Controls.Add(this.listBoxCortMember);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -196,66 +196,65 @@
             // 
             // listBoxOutMember
             // 
-            resources.ApplyResources(this.listBoxOutMember, "listBoxOutMember");
             this.listBoxOutMember.FormattingEnabled = true;
+            resources.ApplyResources(this.listBoxOutMember, "listBoxOutMember");
             this.listBoxOutMember.Name = "listBoxOutMember";
             this.listBoxOutMember.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
             // 
             // listBoxCortMember
             // 
-            resources.ApplyResources(this.listBoxCortMember, "listBoxCortMember");
             this.listBoxCortMember.FormattingEnabled = true;
+            resources.ApplyResources(this.listBoxCortMember, "listBoxCortMember");
             this.listBoxCortMember.Name = "listBoxCortMember";
             this.listBoxCortMember.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
-            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loadTeam,
             this.saveTeam,
             this.loadClub});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
             // 
             // loadTeam
             // 
-            resources.ApplyResources(this.loadTeam, "loadTeam");
             this.loadTeam.Name = "loadTeam";
+            resources.ApplyResources(this.loadTeam, "loadTeam");
             this.loadTeam.Click += new System.EventHandler(this.loadTeam_Click);
             // 
             // saveTeam
             // 
-            resources.ApplyResources(this.saveTeam, "saveTeam");
             this.saveTeam.Name = "saveTeam";
+            resources.ApplyResources(this.saveTeam, "saveTeam");
             this.saveTeam.Click += new System.EventHandler(this.saveTeam_Click);
             // 
             // loadClub
             // 
-            resources.ApplyResources(this.loadClub, "loadClub");
             this.loadClub.Name = "loadClub";
+            resources.ApplyResources(this.loadClub, "loadClub");
             this.loadClub.Click += new System.EventHandler(this.loadClub_Click);
             // 
             // ClubMembersList
             // 
-            resources.ApplyResources(this.ClubMembersList, "ClubMembersList");
             this.ClubMembersList.FormattingEnabled = true;
+            resources.ApplyResources(this.ClubMembersList, "ClubMembersList");
             this.ClubMembersList.Name = "ClubMembersList";
-            this.ClubMembersList.SelectionMode = System.Windows.Forms.SelectionMode.None;
             // 
             // groupBox4
             // 
-            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.IntoOutMemberButton);
             this.groupBox4.Controls.Add(this.IntoCortMemberButton);
             this.groupBox4.Controls.Add(this.ClubNameLabel);
             this.groupBox4.Controls.Add(this.ClubMembersList);
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
