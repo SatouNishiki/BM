@@ -170,7 +170,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                             }
                             else
                             {
-                                if(readFlag)
+                                if(readFlag && !g.Equals(SaveDataManager.GetInstance().GetGame()))
                                 instance.LoadProcess(g);
                             }
                             m.Close();
