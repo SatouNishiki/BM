@@ -133,7 +133,7 @@
             this.textBoxWrite.Multiline = true;
             this.textBoxWrite.Name = "textBoxWrite";
             this.textBoxWrite.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxWrite.Size = new System.Drawing.Size(444, 60);
+            this.textBoxWrite.Size = new System.Drawing.Size(442, 60);
             this.textBoxWrite.TabIndex = 4;
             // 
             // butSend
@@ -164,7 +164,7 @@
             this.textBoxRead.Name = "textBoxRead";
             this.textBoxRead.ReadOnly = true;
             this.textBoxRead.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRead.Size = new System.Drawing.Size(444, 82);
+            this.textBoxRead.Size = new System.Drawing.Size(442, 82);
             this.textBoxRead.TabIndex = 7;
             // 
             // textBoxLog
@@ -175,7 +175,7 @@
             this.textBoxLog.Name = "textBoxLog";
             this.textBoxLog.ReadOnly = true;
             this.textBoxLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxLog.Size = new System.Drawing.Size(444, 62);
+            this.textBoxLog.Size = new System.Drawing.Size(442, 62);
             this.textBoxLog.TabIndex = 9;
             // 
             // butClsLog
@@ -266,7 +266,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 46F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel1.Controls.Add(this.panel8, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.textBoxWrite, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBoxLog, 1, 2);
@@ -290,9 +290,9 @@
             // 
             this.panel8.Controls.Add(this.butClsLog);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(494, 163);
+            this.panel8.Location = new System.Drawing.Point(492, 163);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(40, 62);
+            this.panel8.Size = new System.Drawing.Size(42, 62);
             this.panel8.TabIndex = 18;
             // 
             // panel3
@@ -327,7 +327,7 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.butClsWrite);
-            this.panel6.Location = new System.Drawing.Point(494, 5);
+            this.panel6.Location = new System.Drawing.Point(492, 5);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(34, 60);
             this.panel6.TabIndex = 16;
@@ -336,9 +336,9 @@
             // 
             this.panel7.Controls.Add(this.butClsRead);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(494, 73);
+            this.panel7.Location = new System.Drawing.Point(492, 73);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(40, 82);
+            this.panel7.Size = new System.Drawing.Size(42, 82);
             this.panel7.TabIndex = 17;
             // 
             // GameSendTimer
