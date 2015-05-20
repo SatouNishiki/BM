@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.textBoxWrite = new System.Windows.Forms.TextBox();
@@ -56,6 +57,7 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBoxPortNo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.timerGameDataSend = new System.Windows.Forms.Timer(this.components);
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -77,7 +79,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 134F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 142F));
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel8, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.textBoxLog, 1, 2);
@@ -104,7 +106,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(42, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(399, 74);
+            this.panel2.Size = new System.Drawing.Size(391, 74);
             this.panel2.TabIndex = 20;
             // 
             // textBoxWrite
@@ -114,7 +116,7 @@
             this.textBoxWrite.Multiline = true;
             this.textBoxWrite.Name = "textBoxWrite";
             this.textBoxWrite.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxWrite.Size = new System.Drawing.Size(305, 74);
+            this.textBoxWrite.Size = new System.Drawing.Size(297, 74);
             this.textBoxWrite.TabIndex = 19;
             // 
             // panel9
@@ -153,9 +155,9 @@
             // 
             this.panel8.Controls.Add(this.butClsLog);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(449, 169);
+            this.panel8.Location = new System.Drawing.Point(441, 169);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(128, 75);
+            this.panel8.Size = new System.Drawing.Size(136, 75);
             this.panel8.TabIndex = 18;
             // 
             // butClsLog
@@ -176,7 +178,7 @@
             this.textBoxLog.Name = "textBoxLog";
             this.textBoxLog.ReadOnly = true;
             this.textBoxLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxLog.Size = new System.Drawing.Size(399, 75);
+            this.textBoxLog.Size = new System.Drawing.Size(391, 75);
             this.textBoxLog.TabIndex = 9;
             // 
             // panel3
@@ -206,7 +208,7 @@
             this.textBoxRead.Name = "textBoxRead";
             this.textBoxRead.ReadOnly = true;
             this.textBoxRead.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxRead.Size = new System.Drawing.Size(399, 74);
+            this.textBoxRead.Size = new System.Drawing.Size(391, 74);
             this.textBoxRead.TabIndex = 7;
             // 
             // panel4
@@ -252,9 +254,9 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.butClsWrite);
-            this.panel6.Location = new System.Drawing.Point(449, 5);
+            this.panel6.Location = new System.Drawing.Point(441, 5);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(124, 74);
+            this.panel6.Size = new System.Drawing.Size(134, 74);
             this.panel6.TabIndex = 16;
             // 
             // butClsWrite
@@ -271,9 +273,9 @@
             // 
             this.panel7.Controls.Add(this.butClsRead);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(449, 87);
+            this.panel7.Location = new System.Drawing.Point(441, 87);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(128, 74);
+            this.panel7.Size = new System.Drawing.Size(136, 74);
             this.panel7.TabIndex = 17;
             // 
             // butClsRead
@@ -365,6 +367,11 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Port";
             // 
+            // timerGameDataSend
+            // 
+            this.timerGameDataSend.Enabled = true;
+            this.timerGameDataSend.Tick += new System.EventHandler(this.timerGameDataSend_Tick);
+            // 
             // FomServer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -426,5 +433,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBoxClient;
         private System.Windows.Forms.TextBox textBoxWrite;
+        private System.Windows.Forms.Timer timerGameDataSend;
     }
 }

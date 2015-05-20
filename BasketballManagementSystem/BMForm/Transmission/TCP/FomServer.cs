@@ -27,8 +27,10 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
     {
         //受送信は必ずshift-jisと仮定している
         //他の文字の場合はここを変える事
-        public Encoding ecUni = Encoding.GetEncoding("utf-16");
-        public Encoding ecSjis = Encoding.GetEncoding("shift-jis");
+        public Encoding EcUni = Encoding.GetEncoding("utf-16");
+        public Encoding EcSjis = Encoding.GetEncoding("shift-jis");
+
+        public Game SendGame = new Game();
 
         //サーバーのリスナー設定
         TcpListener Listener = null;
@@ -167,7 +169,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                             + "\r\n" + text + "\r\n");
 
             //クライアントに送信するデータ
-            Byte[] data = ecSjis.GetBytes("TEXT" +"[" + no.ToString() + "さんからのメッセージ] "
+            Byte[] data = EcSjis.GetBytes("TEXT" +"[" + no.ToString() + "さんからのメッセージ] "
                             + DateTime.Now.ToString()
                             + text);
 
@@ -186,11 +188,6 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             {
                 if (lstClientHandler[i] != cl)
                 {
-                    //sift-jisに変換して送る
-              /*      Byte[] data = ecSjis.GetBytes("[" + no.ToString() + "さんからのメッセージ] "
-                            + DateTime.Now.ToString()
-                            + text);
-*/
                     try
                     {
                         lstClientHandler[i].SendData(data);
@@ -315,9 +312,9 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             { return ((int)clitem.ClientHandle == no); });
 
             //sift-jisに変換して送る
-            Byte[] data = ecSjis.GetBytes(textBoxWrite.Text);
+            Byte[] data = EcSjis.GetBytes(textBoxWrite.Text);
 
-            Byte[] header = ecSjis.GetBytes("TEXT");
+            Byte[] header = EcSjis.GetBytes("TEXT");
 
             List<Byte> l = new List<byte>();
 
@@ -360,6 +357,27 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         {
             this.textBoxLog.AppendText(DateTime.Now.ToString() + "  "
                                         + strlog + "\r\n");
+        }
+
+        private void timerGameDataSend_Tick(object sender, EventArgs e)
+        {
+             BinaryFormatter b = new BinaryFormatter();
+            MemoryStream m = new MemoryStream();
+
+            b.Serialize(m, SendGame);
+            byte[] byt = m.ToArray();
+            byte[] header = EcSjis.GetBytes("GAME");
+            
+            //バイナリシリアライズしたゲームデータオブジェクトにヘッダーをくっつけて送信バイト配列を生成
+            List<byte> temp = new List<byte>(byt.Length + header.Length);
+            temp.AddRange(header);
+            temp.AddRange(byt);
+
+            byte[] sendData = temp.ToArray();
+
+            m.Close();
+
+            NotifyAll(null, sendData);
         }
 
     }
@@ -485,7 +503,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                         
                         m.Close();
 
-                        fomServer.NotifyAll(null, getByte);
+                        fomServer.SendGame = g;
                     }
                     //次の受信を待つ
                     networkStream.BeginRead(buffer, 0, buffer.Length, callbackRead, null);
