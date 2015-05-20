@@ -396,9 +396,9 @@ namespace BasketballManagementSystem.BMForm.Input
 
 
             /******************************** タイムアウト ***************************************/
-            MyTimeOutLabel.Text = nowMyTimeOut + "(現在)/" + timeOutRimit + "(上限)";
+            MyTimeOutLabel.Text = nowMyTimeOut + "/" + timeOutRimit;
 
-            OppentTimeOutLabel.Text = nowOppentTimeOut + "(現在)/" + timeOutRimit + "(上限)";
+            OppentTimeOutLabel.Text = nowOppentTimeOut + "/" + timeOutRimit;
 
             /***********************************************************************/
 
@@ -1168,6 +1168,8 @@ namespace BasketballManagementSystem.BMForm.Input
                 if (u.threadReceive != null) u.threadReceive.Abort();
             }
         }
+
+        
 
     }
 }
