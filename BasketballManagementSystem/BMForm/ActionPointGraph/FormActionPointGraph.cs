@@ -62,7 +62,7 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
         }
 
         /// <summary>
-        /// チームの平均アクションポイントのレーダーチャートの描画をします。
+        /// チームの平均アクションポイントをレーダーチャートで描画します。
         /// </summary>
         private void DrawAverageActionPoint()
         {
@@ -84,7 +84,7 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
         }
 
         /// <summary>
-        /// 渡されたプレイヤーのアクションポイントのレーダーチャートを描画します。
+        /// 渡されたプレイヤーのアクションポイントをレーダーチャートで描画します。
         /// </summary>
         /// <param name="p"></param>
         private void DrawActionPoint(Player p)
