@@ -334,8 +334,6 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             if (client == null) return;
 
 
-            readFlag = false;
-
             Game game = SaveDataManager.GetInstance().GetGame();
 
             if (sendGame != null && sendGame.Equals(game)) return;
@@ -369,6 +367,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                     for (offset = 0; offset*2 < sendData.Length; offset += client.SendBufferSize)
                     {
                         stream.Write(sendData, offset, client.SendBufferSize);
+                        readFlag = false;
                     }
                 }
 
