@@ -1,0 +1,29 @@
+﻿[TeamName]
+OppentTeamTest
+[/TeamName]
+
+[CortMember]
+綾崎 ハヤテ
+1
+三千院 ナギ
+2
+マリア
+3
+倉臼 征史郎
+4
+三千院 帝
+5
+[/CortMember]
+
+[OutMember]
+三千院 紫子
+6
+姫神 葵
+7
+シン・ハイエック
+8
+タマ
+9
+シラヌイ
+10
+[/OutMember]

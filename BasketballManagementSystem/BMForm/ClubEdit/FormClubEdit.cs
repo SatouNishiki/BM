@@ -226,6 +226,8 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
 
             int _index = ClubMembersList.SelectedIndex;
 
+            if (_index < 0) return;
+
             ClubMembersList.Items.Insert(_index, _clubMember);
             ClubMembersList.Items.Remove(ClubMembersList.SelectedItem);
 
