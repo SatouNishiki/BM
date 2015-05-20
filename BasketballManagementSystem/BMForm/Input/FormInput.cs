@@ -528,6 +528,13 @@ namespace BasketballManagementSystem.BMForm.Input
                 {
                     BMErrorLibrary.BMError.ErrorMessageOutput(exc.ToString());
                 }
+                if (StopGameButton.Enabled)
+                {
+                    QuarterTimer.StopGame();
+                    StopGameButton.Enabled = false;
+                    RestartGameButton.Enabled = true;
+                    QuarterTimerStop.Image = RestartGraph;
+                }
             }
             else
             {
@@ -550,6 +557,13 @@ namespace BasketballManagementSystem.BMForm.Input
                 catch (Exception exc)
                 {
                     BMErrorLibrary.BMError.ErrorMessageOutput(exc.ToString());
+                }
+                if (StopGameButton.Enabled)
+                {
+                    QuarterTimer.StopGame();
+                    StopGameButton.Enabled = false;
+                    RestartGameButton.Enabled = true;
+                    QuarterTimerStop.Image = RestartGraph;
                 }
             }
             else

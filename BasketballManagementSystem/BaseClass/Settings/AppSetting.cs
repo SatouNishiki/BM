@@ -128,12 +128,13 @@ namespace BasketballManagementSystem.BaseClass.Settings
 
             bool _rt = false;
 
-            //読み込むファイルを開く
-            System.IO.StreamReader _sr = new System.IO.StreamReader(
-                 _fileName, new System.Text.UTF8Encoding(false));
+            System.IO.StreamReader _sr = null;
 
             try
             {
+                //読み込むファイルを開く
+                _sr = new System.IO.StreamReader(
+                     _fileName, new System.Text.UTF8Encoding(false));
 
                 //XmlSerializerオブジェクトを作成
                 System.Xml.Serialization.XmlSerializer _serializer =
