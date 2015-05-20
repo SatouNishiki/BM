@@ -54,10 +54,15 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
             {
                 ActionPointChart.Series["PlayerActionPoint"].Points.Clear();
                 ActionPointChart.Series["AverageActionPoint"].Points.Clear();
+                ActionPointShitGraph.Series["PointAction"].Points.Clear();
+                ActionPointShitGraph.Series["DefaultAction"].Points.Clear();
+                ActionPointShitGraph.Series["MissAction"].Points.Clear();
+                ActionPointShitGraph.Series["FaulAction"].Points.Clear();
 
                 DrawActionPoint((Player)_o);
                 selectedPlayer = (Player)_o;
                 DrawAverageActionPoint();
+                DrawAPShiftGraph((Player)_o);
             }
         }
 
@@ -108,6 +113,58 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
 
             ActionPointChart.DataBind();
 
+        }
+
+        /// <summary>
+        /// 渡されたプレイヤーの各アクションポイントを時間推移グラフで描画します。
+        /// </summary>
+        /// <param name="p"></param>
+        private void DrawAPShiftGraph(Player _p)
+        {
+
+            int PA = 0;
+            int DA = 0;
+            int MA = 0;
+            int FA = 0;
+
+            foreach (string _s in Player.GetAllActionName())
+            {
+
+                object _o2 = _p.GetActionProperty(_p, _s);
+
+                if (_o2 == null) continue;
+
+                foreach (object _o in (IList)_o2)
+                {
+                    DataPoint _dp = new DataPoint();
+                   
+                    if (_o is Miss)
+                    {
+                        MA += ((BaseClass.Action.Action)_o).ActionPoint;
+                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, MA);
+                        ActionPointShitGraph.Series["MissAction"].Points.Add(_dp);
+                    }
+                    else if (_o is Faul)
+                    {
+                        FA += ((BaseClass.Action.Action)_o).ActionPoint;
+                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, FA);
+                        ActionPointShitGraph.Series["FaulAction"].Points.Add(_dp);
+                    }
+                    else if (_o is RelationPointAction)
+                    {
+                        PA += ((BaseClass.Action.Action)_o).ActionPoint;
+                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, PA);
+                        ActionPointShitGraph.Series["PointAction"].Points.Add(_dp);
+                    }
+                    else
+                    {
+                        DA += ((BaseClass.Action.Action)_o).ActionPoint;
+                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, DA);
+                        ActionPointShitGraph.Series["DefaultAction"].Points.Add(_dp);
+                    }
+                }
+                
+            }   
         }
 
         private DataSet GetDataSet(Player p)
