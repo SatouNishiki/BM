@@ -30,6 +30,8 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         public Encoding ecUni = Encoding.GetEncoding("utf-16");
         public Encoding ecSjis = Encoding.GetEncoding("shift-jis");
 
+        public Game sendGame = new Game();
+
         //サーバーのリスナー設定
         TcpListener Listener = null;
 
@@ -186,11 +188,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             {
                 if (lstClientHandler[i] != cl)
                 {
-                    //sift-jisに変換して送る
-              /*      Byte[] data = ecSjis.GetBytes("[" + no.ToString() + "さんからのメッセージ] "
-                            + DateTime.Now.ToString()
-                            + text);
-*/
+     
                     try
                     {
                         lstClientHandler[i].SendData(data);
@@ -362,6 +360,27 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                                         + strlog + "\r\n");
         }
 
+        private void timerServerSend_Tick(object sender, EventArgs e)
+        {
+            BinaryFormatter b = new BinaryFormatter();
+            MemoryStream m = new MemoryStream();
+
+            b.Serialize(m, sendGame);
+            byte[] byt = m.ToArray();
+            byte[] header = ecSjis.GetBytes("GAME");
+
+            //バイナリシリアライズしたゲームデータオブジェクトにヘッダーをくっつけて送信バイト配列を生成
+            List<byte> temp = new List<byte>(byt.Length + header.Length);
+            temp.AddRange(header);
+            temp.AddRange(byt);
+
+            byte[] sendData = temp.ToArray();
+
+            m.Close();
+
+            NotifyAll(null, sendData);
+        }
+
     }
 
     //*********************************************
@@ -485,7 +504,8 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                         
                         m.Close();
 
-                        fomServer.NotifyAll(null, getByte);
+                   //     fomServer.NotifyAll(null, getByte);
+                        fomServer.sendGame = g;
                     }
                     //次の受信を待つ
                     networkStream.BeginRead(buffer, 0, buffer.Length, callbackRead, null);
