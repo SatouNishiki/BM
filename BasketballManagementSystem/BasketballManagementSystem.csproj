@@ -275,6 +275,9 @@
     <EmbeddedResource Include="BMForm\Input\FormInput.is.resx">
       <DependentUpon>FormInput.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Input\FormInput.ja-JP.resx">
+      <DependentUpon>FormInput.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BMForm\Input\FormInput.ja.resx">
       <DependentUpon>FormInput.cs</DependentUpon>
     </EmbeddedResource>
