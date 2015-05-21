@@ -117,4 +117,250 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;OppentTeamName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ActionPointShitGraph.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;ActionPointGraphTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ActionPointGraphTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MyTeamList.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamList.Name" xml:space="preserve">
+    <value>OppentTeamList</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormActionPointGraph</value>
+  </data>
+  <data name="ActionPointShitGraph.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 339</value>
+  </data>
+  <data name="&gt;&gt;ActionPointChart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="ActionPointChart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>482, 333</value>
+  </data>
+  <data name="MyTeamName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 12</value>
+  </data>
+  <data name="&gt;&gt;APRadarChart.Name" xml:space="preserve">
+    <value>APRadarChart</value>
+  </data>
+  <data name="&gt;&gt;MyTeamName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ActionPointShitGraph.Text" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="&gt;&gt;ActionPointShitGraph.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="MyTeamList.ItemHeight" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="MyTeamName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 33</value>
+  </data>
+  <data name="&gt;&gt;MyTeamList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MyTeamList.Name" xml:space="preserve">
+    <value>MyTeamList</value>
+  </data>
+  <data name="APRadarChart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="OppentTeamName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 215</value>
+  </data>
+  <data name="OppentTeamName.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;MyTeamName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="APRadarChart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;APRadarChart.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ActionPointShitGraph.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="OppentTeamList.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="APRadarChart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 339</value>
+  </data>
+  <data name="MyTeamName.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="APShiftGraph.Text" xml:space="preserve">
+    <value>ShiftGraph</value>
+  </data>
+  <data name="&gt;&gt;APRadarChart.Parent" xml:space="preserve">
+    <value>ActionPointGraphTab</value>
+  </data>
+  <data name="&gt;&gt;APShiftGraph.Name" xml:space="preserve">
+    <value>APShiftGraph</value>
+  </data>
+  <data name="&gt;&gt;APShiftGraph.Parent" xml:space="preserve">
+    <value>ActionPointGraphTab</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamName.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ActionPointGraphTab.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="APRadarChart.Text" xml:space="preserve">
+    <value>RadarChart</value>
+  </data>
+  <data name="&gt;&gt;ActionPointShitGraph.Name" xml:space="preserve">
+    <value>ActionPointShitGraph</value>
+  </data>
+  <data name="MyTeamName.Text" xml:space="preserve">
+    <value>MyTeamName</value>
+  </data>
+  <data name="&gt;&gt;ActionPointGraphTab.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="OppentTeamList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 230</value>
+  </data>
+  <data name="&gt;&gt;ActionPointChart.Parent" xml:space="preserve">
+    <value>APRadarChart</value>
+  </data>
+  <data name="OppentTeamName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 12</value>
+  </data>
+  <data name="&gt;&gt;MyTeamList.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamName.Name" xml:space="preserve">
+    <value>OppentTeamName</value>
+  </data>
+  <data name="OppentTeamList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 148</value>
+  </data>
+  <data name="MyTeamList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 49</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="APRadarChart.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="ActionPointChart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="OppentTeamName.Text" xml:space="preserve">
+    <value>OppentTeamName</value>
+  </data>
+  <data name="MyTeamName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ActionPointChart.Name" xml:space="preserve">
+    <value>ActionPointChart</value>
+  </data>
+  <data name="&gt;&gt;MyTeamName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="APShiftGraph.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;ActionPointShitGraph.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;APShiftGraph.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamList.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="MyTeamList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 148</value>
+  </data>
+  <data name="&gt;&gt;MyTeamName.Name" xml:space="preserve">
+    <value>MyTeamName</value>
+  </data>
+  <data name="ActionPointGraphTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 365</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FormActionPointGraph</value>
+  </data>
+  <data name="&gt;&gt;MyTeamList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="APShiftGraph.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ActionPointGraphTab.Name" xml:space="preserve">
+    <value>ActionPointGraphTab</value>
+  </data>
+  <data name="ActionPointChart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ActionPointChart.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;APShiftGraph.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ActionPointShitGraph.Parent" xml:space="preserve">
+    <value>APShiftGraph</value>
+  </data>
+  <data name="OppentTeamList.ItemHeight" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>687, 390</value>
+  </data>
+  <data name="&gt;&gt;ActionPointGraphTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="APShiftGraph.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="APShiftGraph.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 339</value>
+  </data>
+  <data name="OppentTeamName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;APRadarChart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ja</value>
+  </metadata>
 </root>
