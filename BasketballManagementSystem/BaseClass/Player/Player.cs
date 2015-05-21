@@ -46,13 +46,13 @@ namespace BasketballManagementSystem.BaseClass.Player
                 int _point = 0;
 
                 if(Shoot2P.Count > 0)
-                _point += Shoot2P[0].point * Shoot2P.Count;
+                _point += Shoot2P[0].Point * Shoot2P.Count;
 
                 if(Shoot3P.Count > 0)
-                _point += Shoot3P[0].point * Shoot3P.Count;
+                _point += Shoot3P[0].Point * Shoot3P.Count;
 
                 if(FreeThrow.Count > 0)
-                _point += FreeThrow[0].point * FreeThrow.Count;
+                _point += FreeThrow[0].Point * FreeThrow.Count;
 
 
                 return _point;

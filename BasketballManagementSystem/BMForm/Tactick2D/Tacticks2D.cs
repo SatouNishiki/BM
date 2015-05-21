@@ -124,7 +124,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             {
                 foreach (RelationPointAction action in p.GetPointActionList())
                 {
-                    Point point = PositionConvert.ConvertToPoint(action.position, leftTop, rightDown);
+                    Point point = PositionConvert.ConvertToPoint(action.Position, leftTop, rightDown);
 
                     //四角のパスを作成する
                     GraphicsPath gp = new GraphicsPath();
@@ -163,7 +163,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             {
                 foreach (RelationPointAction action in p.GetPointActionList())
                 {
-                    Point point = PositionConvert.ConvertToPoint(action.position, leftTop, rightDown);
+                    Point point = PositionConvert.ConvertToPoint(action.Position, leftTop, rightDown);
 
                     //四角のパスを作成する
                     GraphicsPath gp = new GraphicsPath();
@@ -207,7 +207,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
 
             foreach (RelationPointAction action in selectedPlayer.GetPointActionList())
             {
-                Point point = PositionConvert.ConvertToPoint(action.position, leftTop, rightDown);
+                Point point = PositionConvert.ConvertToPoint(action.Position, leftTop, rightDown);
 
                 //四角のパスを作成する
                 GraphicsPath gp = new GraphicsPath();
@@ -250,7 +250,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
 
             foreach (RelationPointAction action in selectedPlayer.GetPointActionList(a => a.ActionName == (string)DrawActionKinds.SelectedItem))
             {
-                Point point = PositionConvert.ConvertToPoint(action.position, leftTop, rightDown);
+                Point point = PositionConvert.ConvertToPoint(action.Position, leftTop, rightDown);
 
                 //四角のパスを作成する
                 GraphicsPath gp = new GraphicsPath();
@@ -321,7 +321,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             //ミスとフリースローを除外
             foreach (RelationPointAction r in selectedPlayer.GetPointActionList(a => !(a is Miss) && !(a is FreeThrow)))
             {
-                double temp = CortHelper.GetDistance(p, r.position);
+                double temp = CortHelper.GetDistance(p, r.Position);
                //double temp = CortHelper.GetDistanceX(p, r.position);
 
                 //一番近いものをとってくる
@@ -378,7 +378,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             Position beforeActionPoint = new Position(0, 0);
 
             var query = from p2 in selectedPlayer.GetPointActionList(a => !(a is FreeThrow))
-                        orderby CortHelper.GetDistanceFromCort(p2.position)
+                        orderby CortHelper.GetDistanceFromCort(p2.Position)
                         select p2;
 
             List<RelationPointAction> rList = query.ToList<RelationPointAction>();
@@ -388,7 +388,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             {
                 if (!firstFlag)
                 {
-                    double d2 = CortHelper.GetDistance(beforeActionPoint, r.position);
+                    double d2 = CortHelper.GetDistance(beforeActionPoint, r.Position);
 
                     if (d2 <= 2 && d2 >= 0)
                     {
@@ -413,7 +413,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
                     list[lineCount].Add(r);
                 }
 
-                beforeActionPoint = r.position;
+                beforeActionPoint = r.Position;
             }
 
             /**********それぞれの列ごとにシュートの成功率をまとめる************/
@@ -476,7 +476,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             //ここでシュート成功率の分布から最長シュート可能距離の40%地点にあたると思われるポイントを探し出し関数形に当てはめている
 
             //最長シュート可能距離の40%に位置する地点を求める
-            double fortyPercentPositon = CortHelper.GetDistanceFromCort(list[0][0].position);
+            double fortyPercentPositon = CortHelper.GetDistanceFromCort(list[0][0].Position);
 
             double point = CortHelper.GetDistanceFromCort(p);
 

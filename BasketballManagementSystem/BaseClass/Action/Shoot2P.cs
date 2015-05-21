@@ -13,7 +13,7 @@ namespace BasketballManagementSystem.BaseClass.Action
     {
         public Shoot2P()
         {
-            point = 2;
+            Point = 2;
         }
 
     }

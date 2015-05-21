@@ -86,10 +86,10 @@ namespace BasketballManagementSystem.BMForm.BoxScore
                     beforeQuarter = nowQuarter;
                 }
              */
-            teamAAllPoint += action.point;
+            teamAAllPoint += action.Point;
 
             //2ポイントシュートだった場合の処理
-            if (action.point == new Shoot2P().point)
+            if (action.Point == new Shoot2P().Point)
             {
                 if (action.Quarter == 1 || action.Quarter == 3)
                 {
@@ -104,7 +104,7 @@ namespace BasketballManagementSystem.BMForm.BoxScore
                 }
             }
 
-            if (action.point == new Shoot3P().point)
+            if (action.Point == new Shoot3P().Point)
             {
                 if (action.Quarter == 1 || action.Quarter == 3)
                 {
@@ -121,7 +121,7 @@ namespace BasketballManagementSystem.BMForm.BoxScore
                 }
             }
 
-            if (action.point == new FreeThrow().point)
+            if (action.Point == new FreeThrow().Point)
             {
                 if (action.Quarter == 1 || action.Quarter == 3)
                 {
@@ -140,10 +140,10 @@ namespace BasketballManagementSystem.BMForm.BoxScore
 
         public void InputRunningScoreB(RelationPointAction action, int playerNumber)
         {
-            teamBAllPoint += action.point;
+            teamBAllPoint += action.Point;
 
             //2ポイントシュートだった場合の処理
-            if (action.point == new Shoot2P().point)
+            if (action.Point == new Shoot2P().Point)
             {
                 if (action.Quarter == 1 || action.Quarter == 3)
                 {
@@ -158,7 +158,7 @@ namespace BasketballManagementSystem.BMForm.BoxScore
                 }
             }
 
-            if (action.point == new Shoot3P().point)
+            if (action.Point == new Shoot3P().Point)
             {
                 if (action.Quarter == 1 || action.Quarter == 3)
                 {
@@ -175,7 +175,7 @@ namespace BasketballManagementSystem.BMForm.BoxScore
                 }
             }
 
-            if (action.point == new FreeThrow().point)
+            if (action.Point == new FreeThrow().Point)
             {
                 if (action.Quarter == 1 || action.Quarter == 3)
                 {

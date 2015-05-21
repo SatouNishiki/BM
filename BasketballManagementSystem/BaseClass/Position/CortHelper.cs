@@ -39,7 +39,7 @@ namespace BasketballManagementSystem.BaseClass.Position
 
             foreach (RelationPointAction r in l)
             {
-                double _c = GetDistanceFromCort(r.position);
+                double _c = GetDistanceFromCort(r.Position);
 
                 if (_c > _maxRange)
                 {

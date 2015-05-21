@@ -215,7 +215,7 @@ namespace BasketballManagementSystem.BaseClass.Player
 
             foreach (RelationPointAction p in r)
             {
-                _point += p.point;
+                _point += p.Point;
             }
 
             return _point;

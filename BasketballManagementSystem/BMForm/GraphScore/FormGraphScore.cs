@@ -118,7 +118,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in game.MyTeam.GetQuarterPointAction(1))
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarter1.Series["MyAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
@@ -128,7 +128,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in game.OppentTeam.GetQuarterPointAction(1))
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarter1.Series["OppentAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
@@ -139,7 +139,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in game.MyTeam.GetQuarterPointAction(2))
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarter2.Series["MyAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
@@ -149,7 +149,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in game.OppentTeam.GetQuarterPointAction(2))
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarter2.Series["OppentAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds,  point);
 
@@ -159,7 +159,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in game.MyTeam.GetQuarterPointAction(3))
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarter3.Series["MyAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
@@ -169,7 +169,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in game.OppentTeam.GetQuarterPointAction(3))
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarter3.Series["OppentAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
@@ -179,7 +179,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in game.MyTeam.GetQuarterPointAction(4))
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarter4.Series["MyAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
@@ -189,7 +189,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in game.OppentTeam.GetQuarterPointAction(4))
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarter4.Series["OppentAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds,  point);
             }
@@ -199,7 +199,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in game.MyTeam.GetQuarterPointActionAll())
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarterAll.Series["MyAllPoint"].Points.AddXY((int)((r.ActionDate - game.StartTime).TotalSeconds), point);
             }
@@ -208,7 +208,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in game.OppentTeam.GetQuarterPointActionAll())
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarterAll.Series["OppentAllPoint"].Points.AddXY((int)((r.ActionDate - game.StartTime).TotalSeconds), point);
             }
@@ -246,7 +246,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in p.GetPointActionList(1, false))
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarter1.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
                 
@@ -256,7 +256,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in p.GetPointActionList(2, false))
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarter2.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
@@ -266,7 +266,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in p.GetPointActionList(3, false))
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarter3.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
@@ -276,7 +276,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in p.GetPointActionList(4, true))
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarter4.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds,  point);
             }
@@ -285,7 +285,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             foreach (RelationPointAction r in p.GetPointActionList())
             {
-                point += r.point;
+                point += r.Point;
 
                 ChartQuarterAll.Series["SelectPlayerAllPoint"].Points.AddXY((int)((r.ActionDate - game.StartTime).TotalSeconds), point);
             }

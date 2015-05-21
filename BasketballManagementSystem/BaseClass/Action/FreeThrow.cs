@@ -13,7 +13,7 @@ namespace BasketballManagementSystem.BaseClass.Action
     {
         public FreeThrow()
         {
-            point = 1;
+            Point = 1;
         }
     }
 }
