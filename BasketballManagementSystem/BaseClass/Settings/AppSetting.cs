@@ -83,6 +83,7 @@ namespace BasketballManagementSystem.BaseClass.Settings
         private AppSetting()
         {
             ActionPointProvider = ActionPointProvider.GetInstance();
+            CultureSelectedIndex = 1;
         }
 
         public static AppSetting GetInstance()
@@ -152,6 +153,7 @@ namespace BasketballManagementSystem.BaseClass.Settings
             catch
             {
                 instance = AppSetting.GetInstance();
+                _rt = false;
             }
             finally
             {
