@@ -4695,4 +4695,7 @@
   <data name="ToolStripMenuItem.Text" xml:space="preserve">
     <value>ファイル</value>
   </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>スコアシート</value>
+  </data>
 </root>
