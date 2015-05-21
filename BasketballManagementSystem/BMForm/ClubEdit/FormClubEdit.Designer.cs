@@ -49,7 +49,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.NameSelected = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.ButtonAdd = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.WeightAdd = new System.Windows.Forms.TextBox();
@@ -59,6 +58,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.NameAdd = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -192,7 +192,6 @@
             // groupBox3
             // 
             resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.ButtonAdd);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.WeightAdd);
@@ -204,11 +203,6 @@
             this.groupBox3.Controls.Add(this.NameAdd);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.Name = "label9";
             // 
             // ButtonAdd
             // 
@@ -258,10 +252,16 @@
             resources.ApplyResources(this.NameAdd, "NameAdd");
             this.NameAdd.Name = "NameAdd";
             // 
+            // label9
+            // 
+            resources.ApplyResources(this.label9, "label9");
+            this.label9.Name = "label9";
+            // 
             // FormClubEdit
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
