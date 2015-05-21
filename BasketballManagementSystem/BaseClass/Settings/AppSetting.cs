@@ -124,7 +124,7 @@ namespace BasketballManagementSystem.BaseClass.Settings
         public bool LoadAppSetting()
         {
             //保存元のファイル名
-            string _fileName = BMFile.GetApplicationPass() + "\\Save\\Settings\\AppSettings.xml";
+            string _fileName = BMFile.CreateDirectory("Save\\Settings") + BMFile.CreateFile("Save\\Settings\\AppSettings.xml");
 
             bool _rt = false;
 
@@ -132,6 +132,7 @@ namespace BasketballManagementSystem.BaseClass.Settings
 
             try
             {
+
                 //読み込むファイルを開く
                 _sr = new System.IO.StreamReader(
                      _fileName, new System.Text.UTF8Encoding(false));
