@@ -130,6 +130,21 @@
   <data name="label2.Text" xml:space="preserve">
     <value>相手チーム</value>
   </data>
+  <data name="Quarter1.Text" xml:space="preserve">
+    <value>第1クォーター</value>
+  </data>
+  <data name="Quarter2.Text" xml:space="preserve">
+    <value>第2クォーター</value>
+  </data>
+  <data name="Quarter3.Text" xml:space="preserve">
+    <value>第3クォーター</value>
+  </data>
+  <data name="Quarter4.Text" xml:space="preserve">
+    <value>第4クォーター</value>
+  </data>
+  <data name="tabPage1.Text" xml:space="preserve">
+    <value>全クォーター</value>
+  </data>
   <data name="PrintForm.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
   </data>
@@ -147,5 +162,8 @@
   </data>
   <data name="ファイルToolStripMenuItem.Text" xml:space="preserve">
     <value>ファイル</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>点数グラフ</value>
   </data>
 </root>

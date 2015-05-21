@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormActionPointGraph));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series11 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Series series12 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.ActionPointChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.MyTeamList = new System.Windows.Forms.ListBox();
             this.OppentTeamList = new System.Windows.Forms.ListBox();
@@ -58,24 +58,24 @@
             // ActionPointChart
             // 
             resources.ApplyResources(this.ActionPointChart, "ActionPointChart");
-            chartArea3.Name = "ChartArea1";
-            this.ActionPointChart.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.ActionPointChart.Legends.Add(legend3);
+            chartArea1.Name = "ChartArea1";
+            this.ActionPointChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.ActionPointChart.Legends.Add(legend1);
             this.ActionPointChart.Name = "ActionPointChart";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
-            series7.Legend = "Legend1";
-            series7.Name = "PlayerActionPoint";
-            series8.BorderColor = System.Drawing.Color.Orange;
-            series8.BorderWidth = 5;
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
-            series8.Color = System.Drawing.Color.Transparent;
-            series8.Legend = "Legend1";
-            series8.Name = "AverageActionPoint";
-            this.ActionPointChart.Series.Add(series7);
-            this.ActionPointChart.Series.Add(series8);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
+            series1.Legend = "Legend1";
+            series1.Name = "PlayerActionPoint";
+            series2.BorderColor = System.Drawing.Color.Orange;
+            series2.BorderWidth = 5;
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
+            series2.Color = System.Drawing.Color.Transparent;
+            series2.Legend = "Legend1";
+            series2.Name = "AverageActionPoint";
+            this.ActionPointChart.Series.Add(series1);
+            this.ActionPointChart.Series.Add(series2);
             // 
             // MyTeamList
             // 
@@ -126,31 +126,31 @@
             // ActionPointShitGraph
             // 
             resources.ApplyResources(this.ActionPointShitGraph, "ActionPointShitGraph");
-            chartArea4.Name = "ChartArea1";
-            this.ActionPointShitGraph.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.ActionPointShitGraph.Legends.Add(legend4);
+            chartArea2.Name = "ChartArea1";
+            this.ActionPointShitGraph.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.ActionPointShitGraph.Legends.Add(legend2);
             this.ActionPointShitGraph.Name = "ActionPointShitGraph";
-            series9.ChartArea = "ChartArea1";
-            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series9.Legend = "Legend1";
-            series9.Name = "PointAction";
-            series10.ChartArea = "ChartArea1";
-            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series10.Legend = "Legend1";
-            series10.Name = "DefaultAction";
-            series11.ChartArea = "ChartArea1";
-            series11.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series11.Legend = "Legend1";
-            series11.Name = "MissAction";
-            series12.ChartArea = "ChartArea1";
-            series12.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series12.Legend = "Legend1";
-            series12.Name = "FaulAction";
-            this.ActionPointShitGraph.Series.Add(series9);
-            this.ActionPointShitGraph.Series.Add(series10);
-            this.ActionPointShitGraph.Series.Add(series11);
-            this.ActionPointShitGraph.Series.Add(series12);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "PointAction";
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Legend = "Legend1";
+            series4.Name = "DefaultAction";
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Legend = "Legend1";
+            series5.Name = "MissAction";
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Legend = "Legend1";
+            series6.Name = "FaulAction";
+            this.ActionPointShitGraph.Series.Add(series3);
+            this.ActionPointShitGraph.Series.Add(series4);
+            this.ActionPointShitGraph.Series.Add(series5);
+            this.ActionPointShitGraph.Series.Add(series6);
             // 
             // FormActionPointGraph
             // 
