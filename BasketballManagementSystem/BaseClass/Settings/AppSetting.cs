@@ -25,26 +25,62 @@ namespace BasketballManagementSystem.BaseClass.Settings
     public class AppSetting
     {
 
+        /// <summary>
+        /// 入力画面の背景色
+        /// </summary>
         [XmlIgnore]
         public Color FormInputBackGroundColor { get; set; }
+
+        /// <summary>
+        /// 入力画面の得点板の背景色
+        /// </summary>
         [XmlIgnore]
         public Color FormInputPointBackGroundColor { get; set; }
+
+        /// <summary>
+        /// 入力画面のボタンの背景色
+        /// </summary>
         [XmlIgnore]
         public Color FormInputButtonColor { get; set; }
+
+        /// <summary>
+        /// 入力画面のボタンの文字色
+        /// </summary>
         [XmlIgnore]
         public Color FormInputButtonTextColor { get; set; }
 
+        /// <summary>
+        /// アプリケーションの言語設定
+        /// </summary>
         public string Culture { get; set; }
 
+        /// <summary>
+        /// 入力画面の言語設定ComboBoxの選択インデックス
+        /// </summary>
         public int CultureSelectedIndex { get; set; }
 
+        /// <summary>
+        /// UDPクライアントの送信間隔
+        /// </summary>
         public int UDPSendInterval { get; set; }
 
+        /// <summary>
+        /// 入力画面のFPS設定
+        /// </summary>
         public int FormInputFPS { get; set; }
 
+        /// <summary>
+        /// デバックウインドウを表示するかどうか
+        /// </summary>
         public bool DebugWindowChecked { get; set; }
 
+        /// <summary>
+        /// ActionPointProvider(行動傾向点の重みを決定するクラス)のインスタンス
+        /// </summary>
         public ActionPointProvider ActionPointProvider { get; set; }
+
+
+        /************************** 以下シリアライズ用変換プロパティ *********************************************/
 
         [XmlAttribute("FormInputBackGroundColor")]
         public string FormInputBackGroundColorAsRGB
@@ -78,6 +114,9 @@ namespace BasketballManagementSystem.BaseClass.Settings
             set { FormInputButtonTextColor = ColorTranslator.FromHtml(value); }
         }
 
+
+        /***********************************************************************************************************/
+
         private static AppSetting instance;
 
         private AppSetting()
@@ -86,6 +125,10 @@ namespace BasketballManagementSystem.BaseClass.Settings
             CultureSelectedIndex = 1;
         }
 
+        /// <summary>
+        /// AppSettingクラスのインスタンスを取得
+        /// </summary>
+        /// <returns>AppSettingクラスのインスタンス</returns>
         public static AppSetting GetInstance()
         {
             if (instance == null)
@@ -103,6 +146,9 @@ namespace BasketballManagementSystem.BaseClass.Settings
             instance = a;
         }
 
+        /// <summary>
+        /// 設定を保存するメソッド(通常はアプリケーション終了時に自動的に呼ばれます)
+        /// </summary>
         public void SettingChanged()
         {
 
@@ -122,6 +168,11 @@ namespace BasketballManagementSystem.BaseClass.Settings
             _sw.Close();
         }
 
+        /// <summary>
+        /// 設定を規定のフォルダにある設定ファイルから読み込みます
+        /// 読み込みに失敗した場合アプリケーション設定を初期化しfalseの戻り値を返却します
+        /// </summary>
+        /// <returns>読み込み成功? true : false</returns>
         public bool LoadAppSetting()
         {
 
@@ -130,6 +181,7 @@ namespace BasketballManagementSystem.BaseClass.Settings
             //保存元のファイル名
             string _fileName = BMFile.CreateFile("Save\\Settings\\AppSettings.xml");
 
+            //戻り値
             bool _rt = true;
 
             System.IO.StreamReader _sr = null;
@@ -152,6 +204,7 @@ namespace BasketballManagementSystem.BaseClass.Settings
             }
             catch
             {
+                //デシリアライズに失敗=ファイルが壊れているか初回起動時
                 instance = AppSetting.GetInstance();
                 _rt = false;
             }
