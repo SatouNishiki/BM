@@ -158,6 +158,7 @@ namespace BasketballManagementSystem.BaseClass.Settings
             }
             finally
             {
+                if(_sr != null)
                 _sr.Close();
             }
 
