@@ -149,7 +149,7 @@ namespace BasketballManagementSystem.BaseClass.Settings
                 instance = _obj;
 
             }
-            catch (Exception exc)
+            catch
             {
                 instance = AppSetting.GetInstance();
             }
