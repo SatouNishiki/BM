@@ -36,29 +36,29 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BMErrorLibrary">
-      <HintPath>..\..\bmLibRepos\BMErrorLibrary\bin\Debug\BMErrorLibrary.dll</HintPath>
+      <HintPath>..\..\BMLibrary\BMErrorLibrary\bin\Debug\BMErrorLibrary.dll</HintPath>
     </Reference>
     <Reference Include="CreateFolderLibrary">
-      <HintPath>..\..\bmLibRepos\CreateFolderLibrary\bin\Debug\CreateFolderLibrary.dll</HintPath>
+      <HintPath>..\..\BMLibrary\CreateFolderLibrary\bin\Debug\CreateFolderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="DragDropList">
-      <HintPath>..\..\bmLibRepos\DragDropPlayerList\bin\Debug\DragDropList.dll</HintPath>
+      <HintPath>..\..\BMLibrary\DragDropList\bin\Debug\DragDropList.dll</HintPath>
     </Reference>
     <Reference Include="DragDropPictureBox">
-      <HintPath>..\..\bmLibRepos\DragDropPictureBox\bin\Debug\DragDropPictureBox.dll</HintPath>
+      <HintPath>..\..\BMLibrary\DragDropPictureBox\bin\Debug\DragDropPictureBox.dll</HintPath>
     </Reference>
     <Reference Include="DragDropPlayerList">
-      <HintPath>..\..\bmLibRepos\DragDropPlayerList\bin\Debug\DragDropPlayerList.dll</HintPath>
+      <HintPath>..\..\BMLibrary\DragDropPlayerList\bin\Debug\DragDropPlayerList.dll</HintPath>
     </Reference>
     <Reference Include="ExchangeListBox">
-      <HintPath>..\..\bmLibRepos\ExchangeListBox\bin\Debug\ExchangeListBox.dll</HintPath>
+      <HintPath>..\..\BMLibrary\ExchangeListBox\bin\Debug\ExchangeListBox.dll</HintPath>
     </Reference>
     <Reference Include="Mathmatical">
-      <HintPath>..\..\bmLibRepos\Mathmatical\bin\Debug\Mathmatical.dll</HintPath>
+      <HintPath>..\..\BMLibrary\Mathmatical\bin\Debug\Mathmatical.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="QuarterTimer">
-      <HintPath>..\..\bmLibRepos\QuarterTimer\bin\Debug\QuarterTimer.dll</HintPath>
+      <HintPath>..\..\BMLibrary\QuarterTimer\bin\Debug\QuarterTimer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -72,10 +72,10 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="TagFileLoader">
-      <HintPath>..\..\bmLibRepos\TagFileLoader\bin\Debug\TagFileLoader.dll</HintPath>
+      <HintPath>..\..\BMLibrary\TagFileLoader\bin\Debug\TagFileLoader.dll</HintPath>
     </Reference>
     <Reference Include="Utility">
-      <HintPath>..\..\bmLibRepos\Utility\bin\Debug\Utility.dll</HintPath>
+      <HintPath>..\..\BMLibrary\Utility\bin\Debug\Utility.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -232,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BMForm\ActionPointEdit\ActionPointEditForm.resx">
       <DependentUpon>ActionPointEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\ActionPointGraph\FormActionPointGraph.ja.resx">
+      <DependentUpon>FormActionPointGraph.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BMForm\ActionPointGraph\FormActionPointGraph.resx">
       <DependentUpon>FormActionPointGraph.cs</DependentUpon>
