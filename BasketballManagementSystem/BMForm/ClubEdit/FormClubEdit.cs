@@ -175,6 +175,10 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
             ClubMembersList.Items.Add(_clubMember);
 
             changeFlag = true;
+
+            NameAdd.Text = "";
+            HeightAdd.Text = "";
+            WeightAdd.Text = "";
         }
 
         private void ClubMembersList_SelectedIndexChanged(object sender, EventArgs e)
@@ -233,6 +237,10 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
 
             changeFlag = true;
 
+            NameSelected.Text = "";
+            HeightSelected.Text = "";
+            WeightSelected.Text = "";
+
         }
 
         private void FormClubEdit_FormClosing(object sender, FormClosingEventArgs e)
@@ -270,6 +278,10 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
             {
                 ClubMembersList.Items.Remove(ClubMembersList.SelectedItem);
             }
+
+            NameSelected.Text = "";
+            HeightSelected.Text = "";
+            WeightSelected.Text = "";
         }
 
     }
