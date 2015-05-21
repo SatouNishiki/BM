@@ -123,43 +123,40 @@ namespace BasketballManagementSystem.BaseClass.Settings
 
         public bool LoadAppSetting()
         {
-            
+
             BMFile.CreateDirectory("Save\\Settings");
 
-             //保存元のファイル名
+            //保存元のファイル名
             string _fileName = BMFile.CreateFile("Save\\Settings\\AppSettings.xml");
 
-            bool _rt = false;
+            bool _rt = true;
 
             System.IO.StreamReader _sr = null;
 
+
+            //読み込むファイルを開く
+            _sr = new System.IO.StreamReader(
+                 _fileName, new System.Text.UTF8Encoding(false));
+
+            //XmlSerializerオブジェクトを作成
+            System.Xml.Serialization.XmlSerializer _serializer =
+                new System.Xml.Serialization.XmlSerializer(typeof(AppSetting));
             try
             {
-
-                //読み込むファイルを開く
-                _sr = new System.IO.StreamReader(
-                     _fileName, new System.Text.UTF8Encoding(false));
-
-                //XmlSerializerオブジェクトを作成
-                System.Xml.Serialization.XmlSerializer _serializer =
-                    new System.Xml.Serialization.XmlSerializer(typeof(AppSetting));
-
                 //XMLファイルから読み込み、逆シリアル化する
                 AppSetting _obj = (AppSetting)_serializer.Deserialize(_sr);
 
                 instance = _obj;
 
-                _rt = true;
             }
             catch (Exception exc)
             {
-                BMError.ErrorMessageOutput(exc.Message);
-                _rt = false;
+                instance = AppSetting.GetInstance();
             }
             finally
             {
-                if(_sr != null)
-                _sr.Close();
+                if (_sr != null)
+                    _sr.Close();
             }
 
             return _rt;
