@@ -35,11 +35,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="BMErrorLibrary">
-      <HintPath>..\..\bmLibRepos\BMErrorLibrary\bin\Debug\BMErrorLibrary.dll</HintPath>
+    <Reference Include="BMErrorLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BMLibrary\DragDropPlayerList\bin\Debug\BMErrorLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="CreateFolderLibrary">
-      <HintPath>..\..\bmLibRepos\CreateFolderLibrary\bin\Debug\CreateFolderLibrary.dll</HintPath>
+    <Reference Include="CreateFolderLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BMLibrary\CreateFolderLibrary\bin\Debug\CreateFolderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="DragDropList">
       <HintPath>..\..\bmLibRepos\DragDropPlayerList\bin\Debug\DragDropList.dll</HintPath>
