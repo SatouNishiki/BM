@@ -1590,16 +1590,16 @@
     <value>MS UI Gothic, 11.25pt</value>
   </data>
   <data name="MyTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 81</value>
+    <value>47, 81</value>
   </data>
   <data name="MyTimeOutLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 15</value>
+    <value>31, 15</value>
   </data>
   <data name="MyTimeOutLabel.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
   </data>
   <data name="MyTimeOutLabel.Text" xml:space="preserve">
-    <value>0(現在)/2(上限)</value>
+    <value>0/2</value>
   </data>
   <data name="&gt;&gt;MyTimeOutLabel.Name" xml:space="preserve">
     <value>MyTimeOutLabel</value>
@@ -1749,16 +1749,16 @@
     <value>MS UI Gothic, 11.25pt</value>
   </data>
   <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>138, 81</value>
+    <value>168, 81</value>
   </data>
   <data name="OppentTimeOutLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 15</value>
+    <value>31, 15</value>
   </data>
   <data name="OppentTimeOutLabel.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
   <data name="OppentTimeOutLabel.Text" xml:space="preserve">
-    <value>0(現在)/2(上限)</value>
+    <value>0/2</value>
   </data>
   <data name="&gt;&gt;OppentTimeOutLabel.Name" xml:space="preserve">
     <value>OppentTimeOutLabel</value>
@@ -2173,39 +2173,6 @@
   <data name="&gt;&gt;TeamChangeButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>436, 243</value>
-  </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 111</value>
-  </data>
-  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>73</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -2238,6 +2205,27 @@
   </data>
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>436, 243</value>
+  </data>
+  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 111</value>
+  </data>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="oppentTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 36pt, style=Bold</value>
