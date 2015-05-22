@@ -122,7 +122,15 @@ namespace BasketballManagementSystem.BaseClass.Settings
         private AppSetting()
         {
             ActionPointProvider = ActionPointProvider.GetInstance();
+        }
+
+        /// <summary>
+        /// 初回起動時の初期化用メソッド
+        /// </summary>
+        private void Init()
+        {
             CultureSelectedIndex = 1;
+            ActionPointProvider.SetDefault();
         }
 
         /// <summary>
@@ -206,6 +214,7 @@ namespace BasketballManagementSystem.BaseClass.Settings
             {
                 //デシリアライズに失敗=ファイルが壊れているか初回起動時
                 instance = AppSetting.GetInstance();
+                Init();
                 _rt = false;
             }
             finally
