@@ -81,7 +81,7 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
 
         private void saveClub_Click(object sender, EventArgs e)
         {
-            if (ClubName.Text == "")
+            if (ClubName.Text == string.Empty)
             {
                 MessageBox.Show("Clubの名前を入力してください");
                 return;
@@ -149,7 +149,7 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
                 return;
             }
 
-            if (HeightAdd.Text != "")
+            if (HeightAdd.Text != string.Empty)
             {
                 if (!double.TryParse(HeightAdd.Text, out _height))
                 {
@@ -158,7 +158,7 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
                 }
             }
 
-            if (WeightAdd.Text != "")
+            if (WeightAdd.Text != string.Empty)
             {
                 if (!double.TryParse(WeightAdd.Text, out _weight))
                 {
@@ -176,9 +176,9 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
 
             changeFlag = true;
 
-            NameAdd.Text = "";
-            HeightAdd.Text = "";
-            WeightAdd.Text = "";
+            NameAdd.Text = string.Empty;
+            HeightAdd.Text = string.Empty;
+            WeightAdd.Text = string.Empty;
         }
 
         private void ClubMembersList_SelectedIndexChanged(object sender, EventArgs e)
@@ -205,7 +205,7 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
                 return;
             }
 
-            if (HeightSelected.Text != "")
+            if (HeightSelected.Text != string.Empty)
             {
                 if (!double.TryParse(HeightSelected.Text, out _height))
                 {
@@ -214,7 +214,7 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
                 }
             }
 
-            if (WeightSelected.Text != "")
+            if (WeightSelected.Text != string.Empty)
             {
                 if (!double.TryParse(WeightSelected.Text, out _weight))
                 {
@@ -237,9 +237,9 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
 
             changeFlag = true;
 
-            NameSelected.Text = "";
-            HeightSelected.Text = "";
-            WeightSelected.Text = "";
+            NameSelected.Text = string.Empty;
+            HeightSelected.Text = string.Empty;
+            WeightSelected.Text = string.Empty;
 
         }
 
@@ -279,9 +279,9 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
                 ClubMembersList.Items.Remove(ClubMembersList.SelectedItem);
             }
 
-            NameSelected.Text = "";
-            HeightSelected.Text = "";
-            WeightSelected.Text = "";
+            NameSelected.Text = string.Empty;
+            HeightSelected.Text = string.Empty;
+            WeightSelected.Text = string.Empty;
         }
 
     }
