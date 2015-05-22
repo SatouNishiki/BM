@@ -9,10 +9,21 @@ using BasketballManagementSystem.BaseClass.Settings;
 
 namespace BasketballManagementSystem.BaseClass.ActionPoint
 {
+    /// <summary>
+    /// ActionPointの重みを定義しているクラス
+    /// </summary>
     [Serializable]
     public class ActionPointProvider
     {
+        /// <summary>
+        /// このクラスのインスタンス
+        /// </summary>
         private static ActionPointProvider instance;
+
+
+        //以下はそれぞれのアクションごとの傾向点を表します
+        //プロパティ名は"AP + [アクション名]"で構成され、これ以外の形にはできません
+        //(GetActionPointやSetActionPoint等で構文判定しているため) 
 
         public int APAssist { get; set; }
 
@@ -45,11 +56,16 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
         public int APOther { get; set; }
 
 
+
         private ActionPointProvider() 
         {
             
         }
 
+        /// <summary>
+        /// ActionPointProviderのインスタンスを取得
+        /// </summary>
+        /// <returns>ActionPointProviderのインスタンス</returns>
         public static ActionPointProvider GetInstance()
         {
             if (instance == null)
@@ -58,6 +74,11 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
             return instance;
         }
 
+        /// <summary>
+        /// 指定されたアクションの名前に紐付けられた傾向点を取得します
+        /// </summary>
+        /// <param name="actionName">アクション名</param>
+        /// <returns>取得成功=傾向点　設定されていない=APOtherの値　致命的なエラー=-1</returns>
         public int GetActionPoint(string actionName)
         {
             //PlayerクラスのTypeオブジェクトを取得する
@@ -95,6 +116,11 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
             return APOther;
         }
 
+        /// <summary>
+        /// 指定された名前のアクションに紐付けられている傾向点変数に引数の値を割り当てます
+        /// </summary>
+        /// <param name="actionName">アクション名</param>
+        /// <param name="value">傾向点</param>
         public void SetActionPoint(string actionName, int value)
         {
             //PlayerクラスのTypeオブジェクトを取得する
@@ -126,6 +152,9 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
             
         }
 
+        /// <summary>
+        /// 傾向点の設定を初期化します
+        /// </summary>
         public void SetDefault()
         {
             APAssist = 3;

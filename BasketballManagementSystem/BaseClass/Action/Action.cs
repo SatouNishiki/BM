@@ -22,7 +22,7 @@ namespace BasketballManagementSystem.BaseClass.Action
         public string ActionName { get; set; } 
 
         /// <summary>
-        /// アクションごとに重みをつけて解析に活かす
+        /// 行動傾向点(旧アクションポイント)
         /// </summary>
         public int ActionPoint 
         {
@@ -65,8 +65,8 @@ namespace BasketballManagementSystem.BaseClass.Action
         [XmlIgnore]
         public TimeSpan ElapsedTime { get; set; }
 
+        /*********************** 以下シリアライズ変換用プロパティ *********************************/
 
-        //TimeSpan型はなぜかシリアライズのサポート外なためこんなことしないといけない
         [XmlAttribute("RemainingTime")]
         public string XmlRemainingTime
         {
@@ -81,6 +81,9 @@ namespace BasketballManagementSystem.BaseClass.Action
             get { return XmlConvert.ToString(ElapsedTime); }
             set { ElapsedTime = XmlConvert.ToTimeSpan(value); }
         }
+
+
+        /*******************************************************************************************/
 
 
         public Action()
@@ -101,6 +104,12 @@ namespace BasketballManagementSystem.BaseClass.Action
         }
 
 
+        /// <summary>
+        /// 渡された名前のプロパティを動的に取得する
+        /// </summary>
+        /// <param name="action">Actionクラス、またはそれを継承したクラスのインスタンス</param>
+        /// <param name="name">プロパティ名</param>
+        /// <returns>取得成功? プロパティ : null</returns>
         public object GetPropertyFromString(Action action, string name)
         {
             try

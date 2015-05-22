@@ -11,7 +11,7 @@ namespace BasketballManagementSystem.BaseClass.Position
     public class CortHelper
     {
         //ゴールの位置はエンドラインより120cm内側である(競技ルールより)
-        private static Position goalPosition = new Position(1.2, PositionConvert.CortY / 2);
+        public static readonly Position goalPosition = new Position(1.2, PositionConvert.CortY / 2);
 
         /// <summary>
         /// 指定された実際のコート上の長さをフォーム上の長さに変換する
@@ -33,13 +33,18 @@ namespace BasketballManagementSystem.BaseClass.Position
             return new double[] { length * _ratioX, length * _ratioY };
         }
 
+        /// <summary>
+        /// 指定されたアクションのリストの中から最もゴールまでの距離が長いものを検索し、その距離を返す
+        /// </summary>
+        /// <param name="l">RelationPointAction、またはそれを継承したクラスのインスタンスリスト</param>
+        /// <returns>見つかったアクションのゴールまでの距離</returns>
         public static double GetMaxShootRange(List<RelationPointAction> l)
         {
             double _maxRange = 0;
 
             foreach (RelationPointAction r in l)
             {
-                double _c = GetDistanceFromCort(r.Position);
+                double _c = GetDistanceFromGoal(r.Position);
 
                 if (_c > _maxRange)
                 {
@@ -50,7 +55,12 @@ namespace BasketballManagementSystem.BaseClass.Position
             return _maxRange;
         }
 
-        public static double GetDistanceFromCort(Position p)
+        /// <summary>
+        /// ゴールまでの距離を計算する
+        /// </summary>
+        /// <param name="p">Potision型の変数</param>
+        /// <returns>コートまでの距離</returns>
+        public static double GetDistanceFromGoal(Position p)
         {
             double _a = p.PosX - goalPosition.PosX;
 
