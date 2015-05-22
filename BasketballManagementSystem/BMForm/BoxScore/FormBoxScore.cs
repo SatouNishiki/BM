@@ -22,29 +22,29 @@ namespace BasketballManagementSystem.BMForm.BoxScore
         /// <summary>
         /// スコアシートのプレイヤーの人数
         /// </summary>
-        private const int playerNumber = 18;
-        private const int faulLineNumber = 5;
+        private const int PlayerNumber = 18;
+        private const int FaulLineNumber = 5;
 
         private Game game = new Game();
 
         private Label[] myQuarterPointLabels = new Label[5];
         private Label[] oppentQuarterPointLabels = new Label[5];
 
-        private Label[] myPlayerNameLabels = new Label[playerNumber];
+        private Label[] myPlayerNameLabels = new Label[PlayerNumber];
 
-        private Label[] oppentPlayerNameLabels = new Label[playerNumber];
+        private Label[] oppentPlayerNameLabels = new Label[PlayerNumber];
 
-        private Label[] myPlayerNumberLabels = new Label[playerNumber];
+        private Label[] myPlayerNumberLabels = new Label[PlayerNumber];
 
-        private Label[] oppentPlayerNumberLabels = new Label[playerNumber];
+        private Label[] oppentPlayerNumberLabels = new Label[PlayerNumber];
 
-        private Label[] myPlInLabels = new Label[playerNumber];
+        private Label[] myPlInLabels = new Label[PlayerNumber];
 
-        private Label[] oppentPlInLabels = new Label[playerNumber];
+        private Label[] oppentPlInLabels = new Label[PlayerNumber];
 
-        private Label[,] myFaulLines = new Label[faulLineNumber, playerNumber];
+        private Label[,] myFaulLines = new Label[FaulLineNumber, PlayerNumber];
 
-        private Label[,] oppentFaulLines = new Label[faulLineNumber, playerNumber];
+        private Label[,] oppentFaulLines = new Label[FaulLineNumber, PlayerNumber];
 
         private List<PlayerInfomation> myPlayerLists = new List<PlayerInfomation>();
 
@@ -234,52 +234,52 @@ namespace BasketballManagementSystem.BMForm.BoxScore
             Label[] _ar9 = (Label[])GetControlArrayByName(this, "label", 235, 252);
             Label[] _ar10 = (Label[])GetControlArrayByName(this, "label", 217, 234);
 
-            for (int _i = 0; _i < playerNumber; _i++)
+            for (int _i = 0; _i < PlayerNumber; _i++)
             {
                 myFaulLines[0, _i] = _ar1[_i];
             }
 
-            for (int _i = 0; _i < playerNumber; _i++)
+            for (int _i = 0; _i < PlayerNumber; _i++)
             {
                 myFaulLines[1, _i] = _ar2[_i];
             }
 
-            for (int _i = 0; _i < playerNumber; _i++)
+            for (int _i = 0; _i < PlayerNumber; _i++)
             {
                 myFaulLines[2, _i] = _ar3[_i];
             }
 
-            for (int _i = 0; _i < playerNumber; _i++)
+            for (int _i = 0; _i < PlayerNumber; _i++)
             {
                 myFaulLines[3, _i] = _ar4[_i];
             }
 
-            for (int _i = 0; _i < playerNumber; _i++)
+            for (int _i = 0; _i < PlayerNumber; _i++)
             {
                 myFaulLines[4, _i] = _ar5[_i];
             }
 
-            for (int _i = 0; _i < playerNumber; _i++)
+            for (int _i = 0; _i < PlayerNumber; _i++)
             {
                 oppentFaulLines[0, _i] = _ar6[_i];
             }
 
-            for (int _i = 0; _i < playerNumber; _i++)
+            for (int _i = 0; _i < PlayerNumber; _i++)
             {
                 oppentFaulLines[1, _i] = _ar7[_i];
             }
 
-            for (int _i = 0; _i < playerNumber; _i++)
+            for (int _i = 0; _i < PlayerNumber; _i++)
             {
                 oppentFaulLines[2, _i] = _ar8[_i];
             }
 
-            for (int _i = 0; _i < playerNumber; _i++)
+            for (int _i = 0; _i < PlayerNumber; _i++)
             {
                 oppentFaulLines[3, _i] = _ar9[_i];
             }
 
-            for (int _i = 0; _i < playerNumber; _i++)
+            for (int _i = 0; _i < PlayerNumber; _i++)
             {
                 oppentFaulLines[4, _i] = _ar10[_i];
             }
@@ -385,7 +385,7 @@ namespace BasketballManagementSystem.BMForm.BoxScore
             _r.AddRange(_ar3);
             _r.AddRange(_ar4);
 
-            this.runningScore.teamANumber = _r.ToArray();
+            this.runningScore.teamANumbers = _r.ToArray();
 
 
             Label[] _br1_1 = (Label[])GetControlArrayByName(this, "label", 375, 378);
@@ -424,7 +424,7 @@ namespace BasketballManagementSystem.BMForm.BoxScore
             _br.AddRange(_br4_3);
             _br.AddRange(_br4_4);
 
-            this.runningScore.teamAPoint = _br.ToArray();
+            this.runningScore.teamAPoints = _br.ToArray();
 
 
             Label _cr1_1 = label415;
@@ -465,7 +465,7 @@ namespace BasketballManagementSystem.BMForm.BoxScore
             _cr.AddRange(_cr4_3);
             _cr.AddRange(_cr4_4);
 
-            this.runningScore.teamBPoint = _cr.ToArray();
+            this.runningScore.teamBPoints = _cr.ToArray();
 
 
             Label _dr1_1 = label437;
@@ -504,7 +504,7 @@ namespace BasketballManagementSystem.BMForm.BoxScore
             _dr.AddRange(_dr4_3);
             _dr.AddRange(_dr4_4);
 
-            this.runningScore.teamBNumber = _dr.ToArray();
+            this.runningScore.teamBNumbers = _dr.ToArray();
 
         }
 
@@ -651,7 +651,7 @@ namespace BasketballManagementSystem.BMForm.BoxScore
                 _i++;
             }
 
-            for (int _l = 0; _l < playerNumber; _l++)
+            for (int _l = 0; _l < PlayerNumber; _l++)
             {
                 for (int _m = 0; _m < 5; _m++)
                 {
@@ -799,7 +799,7 @@ namespace BasketballManagementSystem.BMForm.BoxScore
                 _i++;
             }
 
-            for (int _l = 0; _l < playerNumber; _l++)
+            for (int _l = 0; _l < PlayerNumber; _l++)
             {
                 for (int _m = 0; _m < 5; _m++)
                 {

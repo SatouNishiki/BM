@@ -13,11 +13,11 @@ namespace BasketballManagementSystem.BMForm.BoxScore
     {
         private const int RunningScoreNumber = 160;
 
-        public Label[] teamANumber { get; set; }
-        public Label[] teamAPoint { get; set; }
+        public Label[] teamANumbers { get; set; }
+        public Label[] teamAPoints { get; set; }
 
-        public Label[] teamBNumber { get; set; }
-        public Label[] teamBPoint { get; set; }
+        public Label[] teamBNumbers { get; set; }
+        public Label[] teamBPoints { get; set; }
 
         private Bitmap syasen_black;
         private Bitmap syasen_red;
@@ -28,16 +28,14 @@ namespace BasketballManagementSystem.BMForm.BoxScore
 
         private int teamAAllPoint = 0;
         private int teamBAllPoint = 0;
-  //      private int beforeQuarter = 1;
-  //      private int nowQuarter = 1;
 
         public RunningScore()
         {
 
-            teamANumber = new Label[RunningScoreNumber];
-            teamAPoint = new Label[RunningScoreNumber];
-            teamBNumber = new Label[RunningScoreNumber];
-            teamBPoint = new Label[RunningScoreNumber];
+            teamANumbers = new Label[RunningScoreNumber];
+            teamAPoints = new Label[RunningScoreNumber];
+            teamBNumbers = new Label[RunningScoreNumber];
+            teamBPoints = new Label[RunningScoreNumber];
 
             //現在のコードを実行しているAssemblyを取得
             System.Reflection.Assembly Assembly =
@@ -68,24 +66,6 @@ namespace BasketballManagementSystem.BMForm.BoxScore
 
         public void InputRunningScoreA(RelationPointAction action, int playerNumber)
         {
-            /* nowQuarter = action.quarter;
-
-                if (beforeQuarter != nowQuarter)
-                {
-                    if (beforeQuarter == 1 || beforeQuarter == 3)
-                    {
-                        teamAPoint[allPoint - 1].BackColor = Color.Black;
-                        teamANumber[allPoint - 1].BackColor = Color.Black;
-                    }
-                    else
-                    {
-                        teamAPoint[allPoint - 1].BackColor = Color.Red;
-                        teamANumber[allPoint - 1].BackColor = Color.Red;
-                    }
-
-                    beforeQuarter = nowQuarter;
-                }
-             */
             teamAAllPoint += action.Point;
 
             //2ポイントシュートだった場合の処理
@@ -93,14 +73,14 @@ namespace BasketballManagementSystem.BMForm.BoxScore
             {
                 if (action.Quarter == 1 || action.Quarter == 3)
                 {
-                    teamAPoint[teamAAllPoint - 1].Image = syasen_black;
-                    teamANumber[teamAAllPoint - 1].ForeColor = Color.Black;
+                    teamAPoints[teamAAllPoint - 1].Image = syasen_black;
+                    teamANumbers[teamAAllPoint - 1].ForeColor = Color.Black;
                 }
 
                 if (action.Quarter == 2 || action.Quarter >= 4)
                 {
-                    teamAPoint[teamAAllPoint - 1].Image = syasen_red;
-                    teamANumber[teamAAllPoint - 1].ForeColor = Color.Red;
+                    teamAPoints[teamAAllPoint - 1].Image = syasen_red;
+                    teamANumbers[teamAAllPoint - 1].ForeColor = Color.Red;
                 }
             }
 
@@ -108,16 +88,16 @@ namespace BasketballManagementSystem.BMForm.BoxScore
             {
                 if (action.Quarter == 1 || action.Quarter == 3)
                 {
-                    teamAPoint[teamAAllPoint - 1].Image = syasen_black;
-                    teamANumber[teamAAllPoint - 1].ForeColor = Color.Black;
-                    teamANumber[teamAAllPoint - 1].Image = maru_black;
+                    teamAPoints[teamAAllPoint - 1].Image = syasen_black;
+                    teamANumbers[teamAAllPoint - 1].ForeColor = Color.Black;
+                    teamANumbers[teamAAllPoint - 1].Image = maru_black;
                 }
 
                 if (action.Quarter == 2 || action.Quarter >= 4)
                 {
-                    teamAPoint[teamAAllPoint - 1].Image = syasen_red;
-                    teamANumber[teamAAllPoint - 1].ForeColor = Color.Red;
-                    teamANumber[teamAAllPoint - 1].Image = maru_red;
+                    teamAPoints[teamAAllPoint - 1].Image = syasen_red;
+                    teamANumbers[teamAAllPoint - 1].ForeColor = Color.Red;
+                    teamANumbers[teamAAllPoint - 1].Image = maru_red;
                 }
             }
 
@@ -125,17 +105,17 @@ namespace BasketballManagementSystem.BMForm.BoxScore
             {
                 if (action.Quarter == 1 || action.Quarter == 3)
                 {
-                    teamAPoint[teamAAllPoint - 1].Image = kuromaru;
-                    teamANumber[teamAAllPoint - 1].ForeColor = Color.Black;
+                    teamAPoints[teamAAllPoint - 1].Image = kuromaru;
+                    teamANumbers[teamAAllPoint - 1].ForeColor = Color.Black;
                 }
 
                 if (action.Quarter == 2 || action.Quarter >= 4)
                 {
-                    teamAPoint[teamAAllPoint - 1].Image = akamaru;
-                    teamANumber[teamAAllPoint - 1].ForeColor = Color.Red;
+                    teamAPoints[teamAAllPoint - 1].Image = akamaru;
+                    teamANumbers[teamAAllPoint - 1].ForeColor = Color.Red;
                 }
             }
-            teamANumber[teamAAllPoint - 1].Text = playerNumber.ToString();
+            teamANumbers[teamAAllPoint - 1].Text = playerNumber.ToString();
         }
 
         public void InputRunningScoreB(RelationPointAction action, int playerNumber)
@@ -147,14 +127,14 @@ namespace BasketballManagementSystem.BMForm.BoxScore
             {
                 if (action.Quarter == 1 || action.Quarter == 3)
                 {
-                    teamBPoint[teamBAllPoint - 1].Image = syasen_black;
-                    teamBNumber[teamBAllPoint - 1].ForeColor = Color.Black;
+                    teamBPoints[teamBAllPoint - 1].Image = syasen_black;
+                    teamBNumbers[teamBAllPoint - 1].ForeColor = Color.Black;
                 }
 
                 if (action.Quarter == 2 || action.Quarter >= 4)
                 {
-                    teamBPoint[teamBAllPoint - 1].Image = syasen_red;
-                    teamBNumber[teamBAllPoint - 1].ForeColor = Color.Red;
+                    teamBPoints[teamBAllPoint - 1].Image = syasen_red;
+                    teamBNumbers[teamBAllPoint - 1].ForeColor = Color.Red;
                 }
             }
 
@@ -162,16 +142,16 @@ namespace BasketballManagementSystem.BMForm.BoxScore
             {
                 if (action.Quarter == 1 || action.Quarter == 3)
                 {
-                    teamBPoint[teamBAllPoint - 1].Image = syasen_black;
-                    teamBNumber[teamBAllPoint - 1].ForeColor = Color.Black;
-                    teamBNumber[teamBAllPoint - 1].Image = maru_black;
+                    teamBPoints[teamBAllPoint - 1].Image = syasen_black;
+                    teamBNumbers[teamBAllPoint - 1].ForeColor = Color.Black;
+                    teamBNumbers[teamBAllPoint - 1].Image = maru_black;
                 }
 
                 if (action.Quarter == 2 || action.Quarter >= 4)
                 {
-                    teamBPoint[teamBAllPoint - 1].Image = syasen_red;
-                    teamBNumber[teamBAllPoint - 1].ForeColor = Color.Red;
-                    teamBNumber[teamBAllPoint - 1].Image = maru_red;
+                    teamBPoints[teamBAllPoint - 1].Image = syasen_red;
+                    teamBNumbers[teamBAllPoint - 1].ForeColor = Color.Red;
+                    teamBNumbers[teamBAllPoint - 1].Image = maru_red;
                 }
             }
 
@@ -179,32 +159,32 @@ namespace BasketballManagementSystem.BMForm.BoxScore
             {
                 if (action.Quarter == 1 || action.Quarter == 3)
                 {
-                    teamBPoint[teamBAllPoint - 1].Image = kuromaru;
-                    teamBNumber[teamBAllPoint - 1].ForeColor = Color.Black;
+                    teamBPoints[teamBAllPoint - 1].Image = kuromaru;
+                    teamBNumbers[teamBAllPoint - 1].ForeColor = Color.Black;
                 }
 
                 if (action.Quarter == 2 || action.Quarter >= 4)
                 {
-                    teamBPoint[teamBAllPoint - 1].Image = akamaru;
-                    teamBNumber[teamBAllPoint - 1].ForeColor = Color.Red;
+                    teamBPoints[teamBAllPoint - 1].Image = akamaru;
+                    teamBNumbers[teamBAllPoint - 1].ForeColor = Color.Red;
                 }
             }
-            teamBNumber[teamBAllPoint - 1].Text = playerNumber.ToString();
+            teamBNumbers[teamBAllPoint - 1].Text = playerNumber.ToString();
         }
 
         public void Init()
         {
-            for (int i = 0; i < RunningScoreNumber - 1; i++)
+            for (int _i = 0; _i < RunningScoreNumber - 1; _i++)
             {
-                teamAPoint[i].Text = (i + 1).ToString();
-                teamANumber[i].Text = "";
-                teamAPoint[i].Font = new Font(teamAPoint[i].Font.FontFamily.Name, 10.0F);
-                teamANumber[i].Font = new Font(teamAPoint[i].Font.FontFamily.Name, 10.0F);
+                teamAPoints[_i].Text = (_i + 1).ToString();
+                teamANumbers[_i].Text = "";
+                teamAPoints[_i].Font = new Font(teamAPoints[_i].Font.FontFamily.Name, 10.0F);
+                teamANumbers[_i].Font = new Font(teamAPoints[_i].Font.FontFamily.Name, 10.0F);
 
-                teamBPoint[i].Text = (i + 1).ToString();
-                teamBNumber[i].Text = "";
-                teamBPoint[i].Font = new Font(teamBPoint[i].Font.FontFamily.Name, 10.0F);
-                teamBNumber[i].Font = new Font(teamAPoint[i].Font.FontFamily.Name, 10.0F);
+                teamBPoints[_i].Text = (_i + 1).ToString();
+                teamBNumbers[_i].Text = "";
+                teamBPoints[_i].Font = new Font(teamBPoints[_i].Font.FontFamily.Name, 10.0F);
+                teamBNumbers[_i].Font = new Font(teamAPoints[_i].Font.FontFamily.Name, 10.0F);
             }
 
         }
