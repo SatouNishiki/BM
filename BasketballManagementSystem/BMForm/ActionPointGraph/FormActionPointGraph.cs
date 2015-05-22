@@ -18,8 +18,14 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
 {
     public partial class FormActionPointGraph : Form
     {
+        /// <summary>
+        /// 現在のゲームデータオブジェクト
+        /// </summary>
         private Game game = SaveDataManager.GetInstance().GetGame();
 
+        /// <summary>
+        /// 選択選手
+        /// </summary>
         private Player selectedPlayer = new Player("No Name", 0);
 
         public FormActionPointGraph()
@@ -30,22 +36,30 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
 
         }
 
+        /// <summary>
+        /// チームのリストの初期化
+        /// </summary>
         private void SetTeam()
         {
             MyTeamName.Text = game.MyTeam.Name;
             OppentTeamName.Text = game.OppentTeam.Name;
 
-            foreach (Player p in game.MyTeam.TeamMember)
+            foreach (Player _p in game.MyTeam.TeamMember)
             {
-                MyTeamList.Items.Add(p);
+                MyTeamList.Items.Add(_p);
             }
 
-            foreach (Player p in game.OppentTeam.TeamMember)
+            foreach (Player _p in game.OppentTeam.TeamMember)
             {
-                OppentTeamList.Items.Add(p);
+                OppentTeamList.Items.Add(_p);
             }
         }
 
+        /// <summary>
+        /// リストのアイテムの選択が変更されたとき
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void TeamList_SelectedIndexChanged(object sender, EventArgs e)
         {
             object _o = ((ListBox)sender).SelectedItem;
@@ -122,10 +136,10 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
         private void DrawAPShiftGraph(Player _p)
         {
 
-            int PA = 0;
-            int DA = 0;
-            int MA = 0;
-            int FA = 0;
+            int _PA = 0;
+            int _DA = 0;
+            int _MA = 0;
+            int _FA = 0;
 
             foreach (string _s in Player.GetAllActionName())
             {
@@ -140,26 +154,26 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
                    
                     if (_o is Miss)
                     {
-                        MA += ((BaseClass.Action.Action)_o).ActionPoint;
-                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, MA);
+                        _MA += ((BaseClass.Action.Action)_o).ActionPoint;
+                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, _MA);
                         ActionPointShitGraph.Series["MissAction"].Points.Add(_dp);
                     }
                     else if (_o is Faul)
                     {
-                        FA += ((BaseClass.Action.Action)_o).ActionPoint;
-                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, FA);
+                        _FA += ((BaseClass.Action.Action)_o).ActionPoint;
+                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, _FA);
                         ActionPointShitGraph.Series["FaulAction"].Points.Add(_dp);
                     }
                     else if (_o is RelationPointAction)
                     {
-                        PA += ((BaseClass.Action.Action)_o).ActionPoint;
-                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, PA);
+                        _PA += ((BaseClass.Action.Action)_o).ActionPoint;
+                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, _PA);
                         ActionPointShitGraph.Series["PointAction"].Points.Add(_dp);
                     }
                     else
                     {
-                        DA += ((BaseClass.Action.Action)_o).ActionPoint;
-                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, DA);
+                        _DA += ((BaseClass.Action.Action)_o).ActionPoint;
+                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, _DA);
                         ActionPointShitGraph.Series["DefaultAction"].Points.Add(_dp);
                     }
                 }
@@ -167,6 +181,11 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
             }   
         }
 
+        /// <summary>
+        /// アクションポイントのDataSetを取得
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
         private DataSet GetDataSet(Player p)
         {
             DataSet _ds = new DataSet();
