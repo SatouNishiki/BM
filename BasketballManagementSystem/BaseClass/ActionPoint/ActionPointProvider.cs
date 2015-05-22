@@ -9,6 +9,9 @@ using BasketballManagementSystem.BaseClass.Settings;
 
 namespace BasketballManagementSystem.BaseClass.ActionPoint
 {
+    /// <summary>
+    /// ActionPointの重みを定義しているクラス
+    /// </summary>
     [Serializable]
     public class ActionPointProvider
     {

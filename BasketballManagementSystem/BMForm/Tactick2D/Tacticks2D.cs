@@ -378,7 +378,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             Position beforeActionPoint = new Position(0, 0);
 
             var query = from p2 in selectedPlayer.GetPointActionList(a => !(a is FreeThrow))
-                        orderby CortHelper.GetDistanceFromCort(p2.Position)
+                        orderby CortHelper.GetDistanceFromGoal(p2.Position)
                         select p2;
 
             List<RelationPointAction> rList = query.ToList<RelationPointAction>();
@@ -476,9 +476,9 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             //ここでシュート成功率の分布から最長シュート可能距離の40%地点にあたると思われるポイントを探し出し関数形に当てはめている
 
             //最長シュート可能距離の40%に位置する地点を求める
-            double fortyPercentPositon = CortHelper.GetDistanceFromCort(list[0][0].Position);
+            double fortyPercentPositon = CortHelper.GetDistanceFromGoal(list[0][0].Position);
 
-            double point = CortHelper.GetDistanceFromCort(p);
+            double point = CortHelper.GetDistanceFromGoal(p);
 
             if (point <= fortyPercentPositon)
             {
