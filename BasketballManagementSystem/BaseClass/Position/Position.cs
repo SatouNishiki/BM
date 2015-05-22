@@ -7,12 +7,19 @@ namespace BasketballManagementSystem.BaseClass.Position
 {
 
     /// <summary>
-    /// 競技バスケットボールのルールにのっとって、コートの大きさを縦(x)28m、横(y)15mとしたときの座標
+    /// 競技バスケットボールのルールにのっとって、コートの大きさを横(x)28m、縦(y)15mとしたときの座標
     /// </summary>
     [Serializable]
     public class Position
     {
+        /// <summary>
+        /// x座標
+        /// </summary>
         public double PosX { get; set; }
+
+        /// <summary>
+        /// y座標
+        /// </summary>
         public double PosY { get; set; }
 
         public Position() { }

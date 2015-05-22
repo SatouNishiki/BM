@@ -9,18 +9,22 @@ namespace BasketballManagementSystem.BaseClass.Position
 {
     public class PositionConvert
     {
+        /// <summary>
+        /// コートの横幅
+        /// </summary>
         public static readonly double CortX = 28.0;
+
+        /// <summary>
+        /// コートの縦幅
+        /// </summary>
         public static readonly double CortY = 15.0;
 
         /// <summary>
         /// 指定されたオブジェクトの座標をコートの大きさを縦(x)28m、横(y)15mとしたときの座標に変換する
-        /// objectPoint : 変換する対象のオブジェクトの座標(フォーム上の座標)
-        /// leftTop : 変換する対象があったコートの左上の座標(フォーム上の座標)
-        /// rightTop : 変換する対象があったコートの右下の座標(フォーム上の座標)
         /// </summary>
-        /// <param name="objectPoint"></param>
-        /// <param name="leftTop"></param>
-        /// <param name="rightDown"></param>
+        /// <param name="objectPoint">変換する対象のオブジェクトの座標(フォーム上の座標)</param>
+        /// <param name="leftTop">変換する対象があったコートの左上の座標(フォーム上の座標)</param>
+        /// <param name="rightDown">変換する対象があったコートの右下の座標(フォーム上の座標)</param>
         /// <returns></returns>
         public static Position ConvertToPosition(Point objectPoint, Point leftTop, Point rightDown)
         {
