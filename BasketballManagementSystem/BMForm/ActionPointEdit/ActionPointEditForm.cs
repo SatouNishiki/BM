@@ -13,7 +13,10 @@ namespace BasketballManagementSystem.BMForm.ActionPointEdit
 {
     public partial class ActionPointEditForm : Form
     {
-        private List<NumericUpDown> numericUpDownList = new List<NumericUpDown>();
+        /// <summary>
+        /// フォーム内のnumericUpDownコントロールのlist
+        /// </summary>
+        private List<NumericUpDown> numericUpDowns = new List<NumericUpDown>();
 
         public ActionPointEditForm()
         {
@@ -27,15 +30,20 @@ namespace BasketballManagementSystem.BMForm.ActionPointEdit
                     {
                         //GroupBoxに囲まれた全てのNumericUpDownコントロールを取得してくる
                         if(_c2.GetType() == typeof(NumericUpDown))
-                        numericUpDownList.Add((NumericUpDown)_c2);
+                        numericUpDowns.Add((NumericUpDown)_c2);
                     }
                 }
             }
         }
 
+        /// <summary>
+        /// セーブボタンがクリックされたとき
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void save_Click(object sender, EventArgs e)
         {
-            foreach (NumericUpDown _n in numericUpDownList)
+            foreach (NumericUpDown _n in numericUpDowns)
             {
                 AppSetting.GetInstance().ActionPointProvider.SetActionPoint
                     (
@@ -45,20 +53,35 @@ namespace BasketballManagementSystem.BMForm.ActionPointEdit
             }
         }
 
+        /// <summary>
+        /// フォームが閉じられたとき
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ActionPointEditForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             save_Click(sender, e);
         }
 
+        /// <summary>
+        /// フォームがロードされたとき
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ActionPointEditForm_Load(object sender, EventArgs e)
         {
-            foreach (NumericUpDown _n in numericUpDownList)
+            foreach (NumericUpDown _n in numericUpDowns)
             {
                 string _s = _n.Name.Substring(13);
                 _n.Value = AppSetting.GetInstance().ActionPointProvider.GetActionPoint(_s);
             }
         }
 
+        /// <summary>
+        /// 傾向点をデフォルトに戻す
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void settingAPDefault_Click(object sender, EventArgs e)
         {
             AppSetting.GetInstance().ActionPointProvider.SetDefault();

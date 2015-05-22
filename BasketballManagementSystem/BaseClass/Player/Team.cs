@@ -156,7 +156,14 @@ namespace BasketballManagementSystem.BaseClass.Player
                     _actionList.AddRange(_p.GetActionList(_p, a => a.Quarter >= quarter));
                 }
             }
-            return _actionList;
+
+            var query = from p in _actionList
+                        orderby p.ActionDate.Ticks
+                        select p;
+
+            List<Action.Action> _rt = query.ToList<Action.Action>();
+
+            return _rt;
         }
 
         /// <summary>
@@ -166,21 +173,27 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns>RelationPointAction型のlist</returns>
         public List<RelationPointAction> GetQuarterPointAction(int quarter)
         {
-            List<RelationPointAction> actionList = new List<RelationPointAction>();
+            List<RelationPointAction> _actionList = new List<RelationPointAction>();
 
             foreach (Player p in TeamMember)
             {
                 if (quarter < 4)
                 {
-                    actionList.AddRange(p.GetPointActionList(a => a.Quarter == quarter));
+                    _actionList.AddRange(p.GetPointActionList(a => a.Quarter == quarter));
                 }
                 else
                 {
-                    actionList.AddRange(p.GetPointActionList(a => a.Quarter >= quarter));
+                    _actionList.AddRange(p.GetPointActionList(a => a.Quarter >= quarter));
                 }
             }
 
-            return actionList;
+            var query = from p in _actionList
+                        orderby p.ActionDate.Ticks
+                        select p;
+
+            List<RelationPointAction> _rt = query.ToList<RelationPointAction>();
+
+            return _rt;
         }
 
 
@@ -190,14 +203,20 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns>RelationPointAction型のlist</returns>
         public List<RelationPointAction> GetQuarterPointActionAll()
         {
-            List<RelationPointAction> actionList = new List<RelationPointAction>();
+            List<RelationPointAction> _actionList = new List<RelationPointAction>();
 
             foreach (Player p in TeamMember)
             {
-                actionList.AddRange(p.GetPointActionList());
+                _actionList.AddRange(p.GetPointActionList());
             }
 
-            return actionList;
+            var query = from p in _actionList
+                        orderby p.ActionDate.Ticks
+                        select p;
+
+            List<RelationPointAction> _rt = query.ToList<RelationPointAction>();
+
+            return _rt;
         }
 
         /// <summary>
