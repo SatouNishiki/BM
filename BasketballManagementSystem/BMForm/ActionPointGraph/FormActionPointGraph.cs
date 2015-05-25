@@ -44,14 +44,14 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
             MyTeamName.Text = game.MyTeam.Name;
             OppentTeamName.Text = game.OppentTeam.Name;
 
-            foreach (Player _p in game.MyTeam.TeamMember)
+            foreach (var p in game.MyTeam.TeamMember)
             {
-                MyTeamList.Items.Add(_p);
+                MyTeamList.Items.Add(p);
             }
 
-            foreach (Player _p in game.OppentTeam.TeamMember)
+            foreach (var p in game.OppentTeam.TeamMember)
             {
-                OppentTeamList.Items.Add(_p);
+                OppentTeamList.Items.Add(p);
             }
         }
 
@@ -62,9 +62,9 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
         /// <param name="e"></param>
         private void TeamList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            object _o = ((ListBox)sender).SelectedItem;
+            object obj = ((ListBox)sender).SelectedItem;
 
-            if (_o != null && _o is Player)
+            if (obj != null && obj is Player)
             {
                 ActionPointChart.Series["PlayerActionPoint"].Points.Clear();
                 ActionPointChart.Series["AverageActionPoint"].Points.Clear();
@@ -73,10 +73,10 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
                 ActionPointShitGraph.Series["MissAction"].Points.Clear();
                 ActionPointShitGraph.Series["FaulAction"].Points.Clear();
 
-                DrawActionPoint((Player)_o);
-                selectedPlayer = (Player)_o;
+                DrawActionPoint((Player)obj);
+                selectedPlayer = (Player)obj;
                 DrawAverageActionPoint();
-                DrawAPShiftGraph((Player)_o);
+                DrawAPShiftGraph((Player)obj);
             }
         }
 
@@ -86,17 +86,17 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
         private void DrawAverageActionPoint()
         {
             
-            DataSet _ds = GetDataSet(selectedPlayer.IsMyTeam);
+            DataSet ds = GetDataSet(selectedPlayer.IsMyTeam);
 
-            ActionPointChart.DataSource = _ds;
+            ActionPointChart.DataSource = ds;
 
-            for (int _i = 0; _i < _ds.Tables[0].Columns.Count; _i++)
+            for (var i = 0; i < ds.Tables[0].Columns.Count; i++)
             {
-                DataPoint _dp = new DataPoint();
-                _dp.SetValueXY(_ds.Tables[0].Columns[_i], _ds.Tables[0].Rows[0][_i]);
+                DataPoint dp = new DataPoint();
+                dp.SetValueXY(ds.Tables[0].Columns[i], ds.Tables[0].Rows[0][i]);
                 
-                _dp.LabelBackColor = Color.Orange;
-                ActionPointChart.Series["AverageActionPoint"].Points.Add(_dp);
+                dp.LabelBackColor = Color.Orange;
+                ActionPointChart.Series["AverageActionPoint"].Points.Add(dp);
             }
 
             ActionPointChart.DataBind();
@@ -109,20 +109,20 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
         private void DrawActionPoint(Player p)
         {
 
-            DataSet _ds = GetDataSet(p);
+            DataSet ds = GetDataSet(p);
 
-            ActionPointChart.DataSource = _ds;
+            ActionPointChart.DataSource = ds;
 
-            for (int _i = 0; _i < _ds.Tables[0].Columns.Count; _i++)
+            for (var i = 0; i < ds.Tables[0].Columns.Count; i++)
             {
-                DataPoint _dp = new DataPoint();
-                _dp.SetValueXY(_ds.Tables[0].Columns[_i], _ds.Tables[0].Rows[0][_i]);
+                DataPoint dp = new DataPoint();
+                dp.SetValueXY(ds.Tables[0].Columns[i], ds.Tables[0].Rows[0][i]);
                 
-                _dp.IsValueShownAsLabel = true;  //グラフに値を表示するように指定
-                _dp.Label = _ds.Tables[0].Columns[_i].ColumnName;
+                dp.IsValueShownAsLabel = true;  //グラフに値を表示するように指定
+                dp.Label = ds.Tables[0].Columns[i].ColumnName;
 
-                _dp.LabelBackColor = Color.LightBlue;
-                ActionPointChart.Series["PlayerActionPoint"].Points.Add(_dp);
+                dp.LabelBackColor = Color.LightBlue;
+                ActionPointChart.Series["PlayerActionPoint"].Points.Add(dp);
             }
 
             ActionPointChart.DataBind();
@@ -133,48 +133,48 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
         /// 渡されたプレイヤーの各アクションポイントを時間推移グラフで描画します。
         /// </summary>
         /// <param name="p"></param>
-        private void DrawAPShiftGraph(Player _p)
+        private void DrawAPShiftGraph(Player p)
         {
 
-            int _PA = 0;
-            int _DA = 0;
-            int _MA = 0;
-            int _FA = 0;
+            int PA = 0;
+            int DA = 0;
+            int MA = 0;
+            int FA = 0;
 
-            foreach (string _s in Player.GetAllActionName())
+            foreach (var s in Player.GetAllActionName())
             {
 
-                object _o2 = _p.GetActionProperty(_p, _s);
+                object o2 = p.GetActionProperty(p, s);
 
-                if (_o2 == null) continue;
+                if (o2 == null) continue;
 
-                foreach (object _o in (IList)_o2)
+                foreach (var o in (IList)o2)
                 {
-                    DataPoint _dp = new DataPoint();
+                    DataPoint dp = new DataPoint();
                    
-                    if (_o is Miss)
+                    if (o is Miss)
                     {
-                        _MA += ((BaseClass.Action.Action)_o).ActionPoint;
-                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, _MA);
-                        ActionPointShitGraph.Series["MissAction"].Points.Add(_dp);
+                        MA += ((BaseClass.Action.Action)o).ActionPoint;
+                        dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, MA);
+                        ActionPointShitGraph.Series["MissAction"].Points.Add(dp);
                     }
-                    else if (_o is Faul)
+                    else if (o is Faul)
                     {
-                        _FA += ((BaseClass.Action.Action)_o).ActionPoint;
-                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, _FA);
-                        ActionPointShitGraph.Series["FaulAction"].Points.Add(_dp);
+                        FA += ((BaseClass.Action.Action)o).ActionPoint;
+                        dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, FA);
+                        ActionPointShitGraph.Series["FaulAction"].Points.Add(dp);
                     }
-                    else if (_o is RelationPointAction)
+                    else if (o is RelationPointAction)
                     {
-                        _PA += ((BaseClass.Action.Action)_o).ActionPoint;
-                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, _PA);
-                        ActionPointShitGraph.Series["PointAction"].Points.Add(_dp);
+                        PA += ((BaseClass.Action.Action)o).ActionPoint;
+                        dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, PA);
+                        ActionPointShitGraph.Series["PointAction"].Points.Add(dp);
                     }
                     else
                     {
-                        _DA += ((BaseClass.Action.Action)_o).ActionPoint;
-                        _dp.SetValueXY(((BaseClass.Action.Action)_o).ElapsedTime.TotalSeconds, _DA);
-                        ActionPointShitGraph.Series["DefaultAction"].Points.Add(_dp);
+                        DA += ((BaseClass.Action.Action)o).ActionPoint;
+                        dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, DA);
+                        ActionPointShitGraph.Series["DefaultAction"].Points.Add(dp);
                     }
                 }
                 
@@ -188,130 +188,130 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
         /// <returns></returns>
         private DataSet GetDataSet(Player p)
         {
-            DataSet _ds = new DataSet();
-            DataTable _dt = new DataTable();
+            DataSet ds = new DataSet();
+            DataTable dt = new DataTable();
 
-            DataRow _dtRow;
+            DataRow dtRow;
 
-            _dt.Columns.Add("PointAction", typeof(int));
-            _dt.Columns.Add("DefaultAction", typeof(int));
-            _dt.Columns.Add("MissAction", typeof(int));
-            _dt.Columns.Add("FaulAction", typeof(int));
+            dt.Columns.Add("PointAction", typeof(int));
+            dt.Columns.Add("DefaultAction", typeof(int));
+            dt.Columns.Add("MissAction", typeof(int));
+            dt.Columns.Add("FaulAction", typeof(int));
 
-            _ds.Tables.Add(_dt);
+            ds.Tables.Add(dt);
 
-            _dtRow = _ds.Tables[0].NewRow();
+            dtRow = ds.Tables[0].NewRow();
 
-            int[] _temp = new int[4];
+            int[] temp = new int[4];
 
-            foreach (string _s in Player.GetAllActionName())
+            foreach (var s in Player.GetAllActionName())
             {
-                object _o2 = p.GetActionProperty(p, _s);
+                object o2 = p.GetActionProperty(p, s);
 
-                if (_o2 == null) continue;
+                if (o2 == null) continue;
 
-                foreach (object _o in (IList)_o2)
+                foreach (var o in (IList)o2)
                 {
-                    if (_o is Miss)
+                    if (o is Miss)
                     {
-                        _temp[2] += ((Miss)_o).ActionPoint;
+                        temp[2] += ((Miss)o).ActionPoint;
                     }
-                    else if (_o is Faul)
+                    else if (o is Faul)
                     {
-                        _temp[3] += ((Faul)_o).ActionPoint;
+                        temp[3] += ((Faul)o).ActionPoint;
                     }
-                    else if (_o is RelationPointAction)
+                    else if (o is RelationPointAction)
                     {
-                        _temp[0] += ((RelationPointAction)_o).ActionPoint;
+                        temp[0] += ((RelationPointAction)o).ActionPoint;
                     }
                     else
                     {
-                        _temp[1] += ((BaseClass.Action.Action)_o).ActionPoint;
+                        temp[1] += ((BaseClass.Action.Action)o).ActionPoint;
                     }
                 }
 
             }
 
-            for (int _i = 0; _i < 4; _i++)
+            for (var i = 0; i < 4; i++)
             {
-                _dtRow[_i] = _temp[_i];
+                dtRow[i] = temp[i];
             }
 
-            _ds.Tables[0].Rows.Add(_dtRow);
+            ds.Tables[0].Rows.Add(dtRow);
 
-            return _ds;
+            return ds;
         }
 
         private DataSet GetDataSet(bool isMyTeam)
         {
-            DataSet _ds = new DataSet();
-            DataTable _dt = new DataTable();
+            DataSet ds = new DataSet();
+            DataTable dt = new DataTable();
 
-            DataRow _dtRow;
+            DataRow dtRow;
 
-            _dt.Columns.Add("PointAction", typeof(int));
-            _dt.Columns.Add("DefaultAction", typeof(int));
-            _dt.Columns.Add("MissAction", typeof(int));
-            _dt.Columns.Add("FaulAction", typeof(int));
+            dt.Columns.Add("PointAction", typeof(int));
+            dt.Columns.Add("DefaultAction", typeof(int));
+            dt.Columns.Add("MissAction", typeof(int));
+            dt.Columns.Add("FaulAction", typeof(int));
 
-            _ds.Tables.Add(_dt);
+            ds.Tables.Add(dt);
 
-            _dtRow = _ds.Tables[0].NewRow();
+            dtRow = ds.Tables[0].NewRow();
 
-            double[] _temp = new double[4];
+            double[] temp = new double[4];
 
-            double _count = 0;
+            double count = 0;
 
-            Team _t = new Team();
+            Team t = new Team();
 
             if(isMyTeam)
-                _t = game.MyTeam;
+                t = game.MyTeam;
             else
-                _t = game.OppentTeam;
+                t = game.OppentTeam;
 
-            foreach (Player _p in _t.TeamMember)
+            foreach (var p in t.TeamMember)
             {
-                foreach (string _s in Player.GetAllActionName())
+                foreach (var s in Player.GetAllActionName())
                 {
 
-                    object _o2 = _p.GetActionProperty(_p, _s);
+                    object o2 = p.GetActionProperty(p, s);
 
-                    if (_o2 == null) continue;
+                    if (o2 == null) continue;
 
-                    foreach (object _o in (IList)_o2)
+                    foreach (var o in (IList)o2)
                     {
-                        if (_o is Miss)
+                        if (o is Miss)
                         {
-                            _temp[2] += ((Miss)_o).ActionPoint;
+                            temp[2] += ((Miss)o).ActionPoint;
                         }
-                        else if (_o is Faul)
+                        else if (o is Faul)
                         {
-                            _temp[3] += ((Faul)_o).ActionPoint;
+                            temp[3] += ((Faul)o).ActionPoint;
                         }
-                        else if (_o is RelationPointAction)
+                        else if (o is RelationPointAction)
                         {
-                            _temp[0] += ((RelationPointAction)_o).ActionPoint;
+                            temp[0] += ((RelationPointAction)o).ActionPoint;
                         }
                         else
                         {
-                            _temp[1] += ((BaseClass.Action.Action)_o).ActionPoint;
+                            temp[1] += ((BaseClass.Action.Action)o).ActionPoint;
                         }
                     }
 
                 }
 
-                _count++;
+                count++;
             }
 
-            for (int _i = 0; _i < 4; _i++)
+            for (var i = 0; i < 4; i++)
             {
-                _temp[_i] /= _count;
-                _dtRow[_i] = _temp[_i];
+                temp[i] /= count;
+                dtRow[i] = temp[i];
             }
 
-            _ds.Tables[0].Rows.Add(_dtRow);
+            ds.Tables[0].Rows.Add(dtRow);
 
-            return _ds;
+            return ds;
         }
 
     }

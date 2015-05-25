@@ -22,15 +22,15 @@ namespace BasketballManagementSystem.BMForm.ActionPointEdit
         {
             InitializeComponent();
 
-            foreach (Control _c in Controls)
+            foreach (var c in Controls)
             {
-                if (_c.GetType() == typeof(GroupBox))
+                if (c.GetType() == typeof(GroupBox))
                 {
-                    foreach (Control _c2 in ((GroupBox)_c).Controls)
+                    foreach (var c2 in ((GroupBox)c).Controls)
                     {
                         //GroupBoxに囲まれた全てのNumericUpDownコントロールを取得してくる
-                        if(_c2.GetType() == typeof(NumericUpDown))
-                        numericUpDowns.Add((NumericUpDown)_c2);
+                        if(c2.GetType() == typeof(NumericUpDown))
+                        numericUpDowns.Add((NumericUpDown)c2);
                     }
                 }
             }
@@ -41,14 +41,14 @@ namespace BasketballManagementSystem.BMForm.ActionPointEdit
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void save_Click(object sender, EventArgs e)
+        private void Save_Click(object sender, EventArgs e)
         {
-            foreach (NumericUpDown _n in numericUpDowns)
+            foreach (var n in numericUpDowns)
             {
                 AppSetting.GetInstance().ActionPointProvider.SetActionPoint
                     (
-                        _n.Name.Substring(13), //名前から"numericUpDown"の13文字を切り取る=Actionの名前になる
-                        int.Parse(_n.Value.ToString())
+                        n.Name.Substring(13), //名前から"numericUpDown"の13文字を切り取る=Actionの名前になる
+                        int.Parse(n.Value.ToString())
                     );
             }
         }
@@ -60,7 +60,7 @@ namespace BasketballManagementSystem.BMForm.ActionPointEdit
         /// <param name="e"></param>
         private void ActionPointEditForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            save_Click(sender, e);
+            Save_Click(sender, e);
         }
 
         /// <summary>
@@ -70,10 +70,10 @@ namespace BasketballManagementSystem.BMForm.ActionPointEdit
         /// <param name="e"></param>
         private void ActionPointEditForm_Load(object sender, EventArgs e)
         {
-            foreach (NumericUpDown _n in numericUpDowns)
+            foreach (var n in numericUpDowns)
             {
-                string _s = _n.Name.Substring(13);
-                _n.Value = AppSetting.GetInstance().ActionPointProvider.GetActionPoint(_s);
+                string s = n.Name.Substring(13);
+                n.Value = AppSetting.GetInstance().ActionPointProvider.GetActionPoint(s);
             }
         }
 
@@ -82,7 +82,7 @@ namespace BasketballManagementSystem.BMForm.ActionPointEdit
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void settingAPDefault_Click(object sender, EventArgs e)
+        private void SettingAPDefault_Click(object sender, EventArgs e)
         {
             AppSetting.GetInstance().ActionPointProvider.SetDefault();
             ActionPointEditForm_Load(sender, e);

@@ -160,20 +160,20 @@ namespace BasketballManagementSystem.BaseClass.Settings
         public void SettingChanged()
         {
 
-            string _s = BMFile.CreateDirectory("Save\\Settings") + "\\AppSettings.xml";
+            string s = BMFile.CreateDirectory("Save\\Settings") + "\\AppSettings.xml";
 
             //XmlSerializerオブジェクトを作成
             //オブジェクトの型を指定する
-            System.Xml.Serialization.XmlSerializer _serializer =
+            System.Xml.Serialization.XmlSerializer serializer =
                 new System.Xml.Serialization.XmlSerializer(typeof(AppSetting));
             //書き込むファイルを開く（UTF-8 BOM無し）
-            System.IO.StreamWriter _sw = new System.IO.StreamWriter(
-                _s, false, new System.Text.UTF8Encoding(false));
+            System.IO.StreamWriter sw = new System.IO.StreamWriter(
+                s, false, new System.Text.UTF8Encoding(false));
             //シリアル化し、XMLファイルに保存する
-            AppSetting _a = AppSetting.GetInstance();
-            _serializer.Serialize(_sw, _a);
+            AppSetting a = AppSetting.GetInstance();
+            serializer.Serialize(sw, a);
             //ファイルを閉じる
-            _sw.Close();
+            sw.Close();
         }
 
         /// <summary>
@@ -187,17 +187,17 @@ namespace BasketballManagementSystem.BaseClass.Settings
             BMFile.CreateDirectory("Save\\Settings");
 
             //保存元のファイル名
-            string _fileName = BMFile.CreateFile("Save\\Settings\\AppSettings.xml");
+            string fileName = BMFile.CreateFile("Save\\Settings\\AppSettings.xml");
 
             //戻り値
-            bool _rt = true;
+            bool rt = true;
 
-            System.IO.StreamReader _sr = null;
+            System.IO.StreamReader sr = null;
 
 
             //読み込むファイルを開く
-            _sr = new System.IO.StreamReader(
-                 _fileName, new System.Text.UTF8Encoding(false));
+            sr = new System.IO.StreamReader(
+                 fileName, new System.Text.UTF8Encoding(false));
 
             //XmlSerializerオブジェクトを作成
             System.Xml.Serialization.XmlSerializer _serializer =
@@ -205,9 +205,9 @@ namespace BasketballManagementSystem.BaseClass.Settings
             try
             {
                 //XMLファイルから読み込み、逆シリアル化する
-                AppSetting _obj = (AppSetting)_serializer.Deserialize(_sr);
+                AppSetting obj = (AppSetting)_serializer.Deserialize(sr);
 
-                instance = _obj;
+                instance = obj;
 
             }
             catch
@@ -215,15 +215,15 @@ namespace BasketballManagementSystem.BaseClass.Settings
                 //デシリアライズに失敗=ファイルが壊れているか初回起動時
                 instance = AppSetting.GetInstance();
                 Init();
-                _rt = false;
+                rt = false;
             }
             finally
             {
-                if (_sr != null)
-                    _sr.Close();
+                if (sr != null)
+                    sr.Close();
             }
 
-            return _rt;
+            return rt;
         }
     }
 }
