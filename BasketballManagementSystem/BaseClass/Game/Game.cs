@@ -69,34 +69,34 @@ namespace BasketballManagementSystem.BaseClass.Game
                 return false;
             }
 
-            Game _g = (Game)obj;
+            Game game = (Game)obj;
 
-            if (this.Location != _g.Location) return false;
-            if (this.Name != _g.Name) return false;
-            if (this.StartTime.Millisecond != _g.StartTime.Millisecond) return false;
-            if (this.MyTeam.CortMember.Count != _g.MyTeam.CortMember.Count) return false;
-            if (this.MyTeam.OutMember.Count != _g.MyTeam.OutMember.Count) return false;
-            if (this.OppentTeam.CortMember.Count != _g.OppentTeam.CortMember.Count) return false;
-            if (this.OppentTeam.OutMember.Count != _g.OppentTeam.OutMember.Count) return false;
-            if (this.MyTeam.TimeOutList.Count != _g.MyTeam.TimeOutList.Count) return false;
-            if (this.OppentTeam.TimeOutList.Count != _g.OppentTeam.TimeOutList.Count) return false;
-            if (this.MyTeam.MemberChange.Count != _g.MyTeam.MemberChange.Count) return false;
-            if (this.OppentTeam.MemberChange.Count != _g.OppentTeam.MemberChange.Count) return false;
+            if (this.Location != game.Location) return false;
+            if (this.Name != game.Name) return false;
+            if (this.StartTime.Millisecond != game.StartTime.Millisecond) return false;
+            if (this.MyTeam.CortMember.Count != game.MyTeam.CortMember.Count) return false;
+            if (this.MyTeam.OutMember.Count != game.MyTeam.OutMember.Count) return false;
+            if (this.OppentTeam.CortMember.Count != game.OppentTeam.CortMember.Count) return false;
+            if (this.OppentTeam.OutMember.Count != game.OppentTeam.OutMember.Count) return false;
+            if (this.MyTeam.TimeOutList.Count != game.MyTeam.TimeOutList.Count) return false;
+            if (this.OppentTeam.TimeOutList.Count != game.OppentTeam.TimeOutList.Count) return false;
+            if (this.MyTeam.MemberChange.Count != game.MyTeam.MemberChange.Count) return false;
+            if (this.OppentTeam.MemberChange.Count != game.OppentTeam.MemberChange.Count) return false;
 
-            for (int _i = 0; _i < this.MyTeam.TeamMember.Count; _i++)
+            for (var i = 0; i < this.MyTeam.TeamMember.Count; i++)
             {
-                List<Action.Action> _l = this.MyTeam.TeamMember[_i].GetActionList(this.MyTeam.TeamMember[_i]);
-                List<Action.Action> _l2 = _g.MyTeam.TeamMember[_i].GetActionList(_g.MyTeam.TeamMember[_i]);
+                List<Action.Action> myList = this.MyTeam.TeamMember[i].GetActionList(this.MyTeam.TeamMember[i]);
+                List<Action.Action> gameList = game.MyTeam.TeamMember[i].GetActionList(game.MyTeam.TeamMember[i]);
 
-                if (this.MyTeam.TeamMember[_i].GetActionList(this.MyTeam.TeamMember[_i]).Count
-                    != _g.MyTeam.TeamMember[_i].GetActionList(_g.MyTeam.TeamMember[_i]).Count)
+                if (this.MyTeam.TeamMember[i].GetActionList(this.MyTeam.TeamMember[i]).Count
+                    != game.MyTeam.TeamMember[i].GetActionList(game.MyTeam.TeamMember[i]).Count)
                     return false;
             }
 
-            for (int _i = 0; _i < this.OppentTeam.TeamMember.Count; _i++)
+            for (var i = 0; i < this.OppentTeam.TeamMember.Count; i++)
             {
-                if (this.OppentTeam.TeamMember[_i].GetActionList(this.OppentTeam.TeamMember[_i]).Count 
-                    != _g.OppentTeam.TeamMember[_i].GetActionList(_g.OppentTeam.TeamMember[_i]).Count)
+                if (this.OppentTeam.TeamMember[i].GetActionList(this.OppentTeam.TeamMember[i]).Count 
+                    != game.OppentTeam.TeamMember[i].GetActionList(game.OppentTeam.TeamMember[i]).Count)
                     return false;
             }
 

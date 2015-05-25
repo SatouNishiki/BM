@@ -43,19 +43,19 @@ namespace BasketballManagementSystem.BaseClass.Player
         {
             get
             {
-                int _point = 0;
+                int point = 0;
 
                 if(Shoot2P.Count > 0)
-                _point += Shoot2P[0].Point * Shoot2P.Count;
+                point += Shoot2P[0].Point * Shoot2P.Count;
 
                 if(Shoot3P.Count > 0)
-                _point += Shoot3P[0].Point * Shoot3P.Count;
+                point += Shoot3P[0].Point * Shoot3P.Count;
 
                 if(FreeThrow.Count > 0)
-                _point += FreeThrow[0].Point * FreeThrow.Count;
+                point += FreeThrow[0].Point * FreeThrow.Count;
 
 
-                return _point;
+                return point;
             }
         }
 
@@ -181,16 +181,16 @@ namespace BasketballManagementSystem.BaseClass.Player
         public override string ToString()
         {
 
-            string _s1;
+            string s1;
 
             if (this.Number < 10)
-                _s1 = "0" + this.Number;
+                s1 = "0" + this.Number;
             else
-                _s1 = this.Number.ToString();
+                s1 = this.Number.ToString();
 
-            string _s = _s1 + " : " + this.Name;
+            string s = s1 + " : " + this.Name;
 
-            return _s;
+            return s;
         }
 
         /// <summary>
@@ -316,32 +316,32 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns>Action型のlist</returns>
         public List<Action.Action> GetActionList(Player player)
         {
-            List<Action.Action> _actionList = new List<Action.Action>();
+            List<Action.Action> actionList = new List<Action.Action>();
 
             //PlayerクラスのTypeオブジェクトを取得する
-            Type _t = typeof(Player);
+            Type type = typeof(Player);
 
             //プロパティを取得する
-            PropertyInfo[] _pi = _t.GetProperties();
+            PropertyInfo[] properties = type.GetProperties();
 
-            foreach (PropertyInfo _p in _pi)
+            foreach (var pi in properties)
             {
-                if (!_p.PropertyType.IsGenericType) continue;
+                if (!pi.PropertyType.IsGenericType) continue;
 
-                object _obj = GetActionProperty(player, _p.Name);
+                object obj = GetActionProperty(player, pi.Name);
 
-                if (_obj != null)
+                if (obj != null)
                 {
-                    foreach (object _o in (IList)_obj)
+                    foreach (var o in (IList)obj)
                     {
-                        _actionList.Add((Action.Action)_o);
+                        actionList.Add((Action.Action)o);
                     }
 
                 }
             }
 
             //linqクエリー式 actionListを絶対時間によって昇順ソート命令
-            var query = from p in _actionList
+            var query = from p in actionList
                         orderby p.ActionDate.Ticks
                         select p;
 
@@ -358,10 +358,10 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns>ActionList</returns>
         public List<Action.Action> GetActionList(Player player, GetActionListDelegate dl)
         {
-            List<Action.Action> _actionList = GetActionList(player);
+            List<Action.Action> actionList = GetActionList(player);
 
-            _actionList.RemoveAll(a => !(dl(a)));
-            return _actionList;
+            actionList.RemoveAll(a => !(dl(a)));
+            return actionList;
         }
         
         /// <summary>
@@ -372,27 +372,27 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns>Action型のlist</returns>
         public List<Action.Action> GetActionList(Player player, int quarter, bool extend)
         {
-            List<Action.Action> _actionList = new List<Action.Action>();
+            List<Action.Action> actionList = new List<Action.Action>();
 
-            _actionList = this.GetActionList(player);
+            actionList = this.GetActionList(player);
 
             if (extend)
             {
                 if (quarter < 4)
                 {
-                    _actionList.RemoveAll(a => a.Quarter != quarter);
+                    actionList.RemoveAll(a => a.Quarter != quarter);
                 }
                 else
                 {
-                    _actionList.RemoveAll(a => a.Quarter < quarter);
+                    actionList.RemoveAll(a => a.Quarter < quarter);
                 }
 
             }
             else
             {
-                _actionList.RemoveAll(a => a.Quarter != quarter);
+                actionList.RemoveAll(a => a.Quarter != quarter);
             }
-            return _actionList;
+            return actionList;
         }
 
         /// <summary>
@@ -404,7 +404,7 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns></returns>
         public List<Action.Action> GetActionList(Player player, int quarter, int minutes1, int minutes2, bool extend)
         {
-            List<Action.Action> _l = this.GetActionList(player, quarter, extend);
+            List<Action.Action> actionList = this.GetActionList(player, quarter, extend);
 
             if(minutes1 > minutes2){
                 int temp = minutes1;
@@ -412,9 +412,9 @@ namespace BasketballManagementSystem.BaseClass.Player
                 minutes2 = temp;
             }
 
-            _l.RemoveAll(a => !(a.RemainingTime.Minutes >= minutes1 && a.RemainingTime.Minutes < minutes2));
+            actionList.RemoveAll(a => !(a.RemainingTime.Minutes >= minutes1 && a.RemainingTime.Minutes < minutes2));
 
-            return _l;
+            return actionList;
         }
 
         /// <summary>
@@ -434,11 +434,11 @@ namespace BasketballManagementSystem.BaseClass.Player
                 minutes2 = temp;
             }
 
-            List<Action.Action> _l = this.GetActionList(player, quarter, minutes1, minutes2, extend);
+            List<Action.Action> actionList = this.GetActionList(player, quarter, minutes1, minutes2, extend);
 
-            _l.RemoveAll(a => !(a.ActionName == actionName));
+            actionList.RemoveAll(a => !(a.ActionName == actionName));
 
-            return _l;
+            return actionList;
         }
 
         /// <summary>
@@ -448,28 +448,28 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns>RelationPointAction型のlist</returns>
         public List<RelationPointAction> GetPointActionList(int quarter, bool extend)
         {
-            List<RelationPointAction> _actionList = new List<RelationPointAction>();
+            List<RelationPointAction> actionList = new List<RelationPointAction>();
 
-            _actionList = this.GetPointActionList();
+            actionList = this.GetPointActionList();
             if (extend)
             {
 
                 if (quarter < 4)
                 {
-                    _actionList.RemoveAll(a => a.Quarter != quarter);
+                    actionList.RemoveAll(a => a.Quarter != quarter);
                 }
                 else
                 {
 
-                    _actionList.RemoveAll(a => a.Quarter < quarter);
+                    actionList.RemoveAll(a => a.Quarter < quarter);
                 }
             }
             else
             {
-                _actionList.RemoveAll(a => a.Quarter != quarter);
+                actionList.RemoveAll(a => a.Quarter != quarter);
             }
      
-            return _actionList;
+            return actionList;
 
         }
 
@@ -479,37 +479,37 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns>RelationPointAction型のlist</returns>
         public List<RelationPointAction> GetPointActionList()
         {
-            List<RelationPointAction> _actionList = new List<RelationPointAction>();
+            List<RelationPointAction> actionList = new List<RelationPointAction>();
 
 
-            foreach (RelationPointAction a in FreeThrow)
+            foreach (var a in FreeThrow)
             {
-                _actionList.Add(a);
+                actionList.Add(a);
             }
-            foreach (RelationPointAction a in Shoot2PMiss)
+            foreach (var a in Shoot2PMiss)
             {
-                _actionList.Add(a);
+                actionList.Add(a);
             }
-            foreach (RelationPointAction a in Shoot3PMiss)
+            foreach (var a in Shoot3PMiss)
             {
-                 _actionList.Add(a); 
+                 actionList.Add(a); 
             }
-            foreach (RelationPointAction a in FreeThrowMiss)
+            foreach (var a in FreeThrowMiss)
             {
-               _actionList.Add(a); 
+               actionList.Add(a); 
             }
 
-            foreach (RelationPointAction a in Shoot3P)
+            foreach (var a in Shoot3P)
             {
-                _actionList.Add(a);
+                actionList.Add(a);
             }
-            foreach (RelationPointAction a in Shoot2P)
+            foreach (var a in Shoot2P)
             {
-                _actionList.Add(a);
+                actionList.Add(a);
             }
 
             //linqクエリー式 actionListを絶対時間によって昇順ソート命令
-            var query = from p in _actionList
+            var query = from p in actionList
                         orderby p.ActionDate.Ticks
                         select p;
 
@@ -526,25 +526,25 @@ namespace BasketballManagementSystem.BaseClass.Player
             }
             else
             {
-                List<RelationPointAction> _actionList = new List<RelationPointAction>();
+                List<RelationPointAction> actionList = new List<RelationPointAction>();
 
 
-                foreach (RelationPointAction a in FreeThrow)
+                foreach (var a in FreeThrow)
                 {
-                    _actionList.Add(a);
+                    actionList.Add(a);
                 }
 
-                foreach (RelationPointAction a in Shoot3P)
+                foreach (var a in Shoot3P)
                 {
-                    _actionList.Add(a);
+                    actionList.Add(a);
                 }
-                foreach (RelationPointAction a in Shoot2P)
+                foreach (var a in Shoot2P)
                 {
-                    _actionList.Add(a);
+                    actionList.Add(a);
                 }
 
                 //linqクエリー式 actionListを絶対時間によって昇順ソート命令
-                var query = from p in _actionList
+                var query = from p in actionList
                             orderby p.ActionDate.Ticks
                             select p;
 
@@ -556,11 +556,11 @@ namespace BasketballManagementSystem.BaseClass.Player
 
         public List<RelationPointAction> GetPointActionList(GetPointActionListDelegate dl)
         {
-            List<RelationPointAction> _l = GetPointActionList();
+            List<RelationPointAction> actionList = GetPointActionList();
 
-            _l.RemoveAll(a => !dl(a));
+            actionList.RemoveAll(a => !dl(a));
 
-            return _l;
+            return actionList;
         }
 
         /// <summary>
@@ -573,20 +573,20 @@ namespace BasketballManagementSystem.BaseClass.Player
         {
             try
             {
-                Type _type = typeof(Player);
-                PropertyInfo _myPropInfo = _type.GetProperty(propName);
+                Type type = typeof(Player);
+                PropertyInfo myPropInfo = type.GetProperty(propName);
 
-                if (_myPropInfo == null) return null;
+                if (myPropInfo == null) return null;
 
-                object _o = _myPropInfo.GetValue(p, null);
+                object obj = myPropInfo.GetValue(p, null);
 
-                if (typeof(List<>).IsAssignableFrom(_o.GetType().GetGenericTypeDefinition()))
+                if (typeof(List<>).IsAssignableFrom(obj.GetType().GetGenericTypeDefinition()))
                 {
-                    Type _elementType = _o.GetType().GetGenericArguments()[0];
+                    Type elementType = obj.GetType().GetGenericArguments()[0];
                  
-                    if (typeof(Action.Action).IsAssignableFrom(_o.GetType().GetGenericArguments()[0]))
+                    if (typeof(Action.Action).IsAssignableFrom(obj.GetType().GetGenericArguments()[0]))
                     {
-                        return _o;
+                        return obj;
                     }
 
                 }
@@ -605,20 +605,20 @@ namespace BasketballManagementSystem.BaseClass.Player
         {
             try
             {
-                Type _type = typeof(Player);
-                PropertyInfo _myPropInfo = _type.GetProperty(propName);
+                Type type = typeof(Player);
+                PropertyInfo myPropInfo = type.GetProperty(propName);
 
-                if (_myPropInfo == null) return;
+                if (myPropInfo == null) return;
 
-                object _o = _myPropInfo.GetValue(p, null);
+                object o = myPropInfo.GetValue(p, null);
 
-                if (typeof(List<>).IsAssignableFrom(_o.GetType().GetGenericTypeDefinition()))
+                if (typeof(List<>).IsAssignableFrom(o.GetType().GetGenericTypeDefinition()))
                 {
-                    Type _elementType = _o.GetType().GetGenericArguments()[0];
+                    Type elementType = o.GetType().GetGenericArguments()[0];
 
-                    if (typeof(Action.Action).IsAssignableFrom(_o.GetType().GetGenericArguments()[0]))
+                    if (typeof(Action.Action).IsAssignableFrom(o.GetType().GetGenericArguments()[0]))
                     {
-                        _myPropInfo.SetValue(p, obj, null);
+                        myPropInfo.SetValue(p, obj, null);
                     }
 
                 }
@@ -639,28 +639,28 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns></returns>
         public static List<string> GetAllActionName()
         {
-            List<string> _l = new List<string>();
+            List<string> l = new List<string>();
 
             //PlayerクラスのTypeオブジェクトを取得する
-            Type _t = typeof(Player);
+            Type type = typeof(Player);
 
             //プロパティを取得する
-            PropertyInfo[] _pi = _t.GetProperties();
+            PropertyInfo[] properties = type.GetProperties();
 
-            foreach (PropertyInfo _p in _pi)
+            foreach (PropertyInfo pi in properties)
             {
-                if (!_p.PropertyType.IsGenericType) continue;
+                if (!pi.PropertyType.IsGenericType) continue;
 
                 try
                 {
                     
-                    if (typeof(List<>).IsAssignableFrom(_p.PropertyType.GetGenericTypeDefinition()))
+                    if (typeof(List<>).IsAssignableFrom(pi.PropertyType.GetGenericTypeDefinition()))
                     {
-                        Type _elementType = _p.PropertyType.GetGenericArguments()[0];
+                        Type elementType = pi.PropertyType.GetGenericArguments()[0];
 
-                        if (typeof(Action.Action).IsAssignableFrom(_elementType))
+                        if (typeof(Action.Action).IsAssignableFrom(elementType))
                         {
-                            _l.Add(_p.Name);
+                            l.Add(pi.Name);
                         }
                     }
                 }
@@ -671,7 +671,7 @@ namespace BasketballManagementSystem.BaseClass.Player
                 }
             }
 
-            return _l;
+            return l;
 
         }
 
@@ -684,10 +684,10 @@ namespace BasketballManagementSystem.BaseClass.Player
                 return false;
             }
 
-            Player _p = (Player)obj;
+            Player p = (Player)obj;
 
             //名前と背番号が同じなら一致
-            return ((this.Name == _p.Name) && (this.Number == _p.Number));
+            return ((this.Name == p.Name) && (this.Number == p.Number));
         }
 
         public override int GetHashCode()

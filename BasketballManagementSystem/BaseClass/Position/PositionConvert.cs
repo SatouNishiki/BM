@@ -29,22 +29,22 @@ namespace BasketballManagementSystem.BaseClass.Position
         public static Position ConvertToPosition(Point objectPoint, Point leftTop, Point rightDown)
         {
             //フォーム上のコートの横幅、縦幅
-            double _formCortX = rightDown.X - leftTop.X;
-            double _formCortY = rightDown.Y - leftTop.Y;
+            double formCortX = rightDown.X - leftTop.X;
+            double formCortY = rightDown.Y - leftTop.Y;
 
             //実際のコートとの比
-            double _ratioX = _formCortX / CortX;
-            double _ratioY = _formCortY / CortY;
+            double ratioX = formCortX / CortX;
+            double ratioY = formCortY / CortY;
 
             //フォーム上のコートから見たオブジェクトの相対座標
-            double _relativeX = objectPoint.X - leftTop.X;
-            double _relativeY = objectPoint.Y - leftTop.Y;
+            double relativeX = objectPoint.X - leftTop.X;
+            double relativeY = objectPoint.Y - leftTop.Y;
 
             //実際のコート上の相対座標
-            double _relativeRealX = _relativeX / _ratioX;
-            double _relativeRealY = _relativeY / _ratioY;
+            double relativeRealX = relativeX / ratioX;
+            double relativeRealY = relativeY / ratioY;
 
-            return new Position(_relativeRealX, _relativeRealY);
+            return new Position(relativeRealX, relativeRealY);
         }
         
         /// <summary>
@@ -57,14 +57,14 @@ namespace BasketballManagementSystem.BaseClass.Position
         public static Point ConvertToPoint(Position position, Point leftTop, Point rightDown)
         {
             //フォーム上描画先のx,yの長さ
-            double _XLength = rightDown.X - leftTop.X;
-            double _YLength = rightDown.Y - leftTop.Y;
+            double xLength = rightDown.X - leftTop.X;
+            double yLength = rightDown.Y - leftTop.Y;
 
             //実際のコートとの比
-            double _ratioX = _XLength / CortX;
-            double _ratioY = _YLength / CortY;
+            double ratioX = xLength / CortX;
+            double ratioY = yLength / CortY;
 
-            return new Point((int)(position.PosX * _ratioX), (int)(position.PosY * _ratioY));
+            return new Point((int)(position.PosX * ratioX), (int)(position.PosY * ratioY));
         }
 
         

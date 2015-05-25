@@ -82,26 +82,26 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
         public int GetActionPoint(string actionName)
         {
             //PlayerクラスのTypeオブジェクトを取得する
-            Type _t = typeof(ActionPointProvider);
+            Type type = typeof(ActionPointProvider);
 
             //プロパティを取得する
-            PropertyInfo[] _pi = _t.GetProperties();
+            PropertyInfo[] properties = type.GetProperties();
 
-            foreach (PropertyInfo _p in _pi)
+            foreach (var pi in properties)
             {
-                if (_p.PropertyType != typeof(int)) continue;
+                if (pi.PropertyType != typeof(int)) continue;
 
-                if (!_p.Name.Contains("AP")) continue;
+                if (!pi.Name.Contains("AP")) continue;
 
-                if (_p.Name == "AP" + actionName)
+                if (pi.Name == "AP" + actionName)
                 {
-                    object _o = _p.GetValue(AppSetting.GetInstance().ActionPointProvider, null);
+                    object obj = pi.GetValue(AppSetting.GetInstance().ActionPointProvider, null);
 
-                    int _rt = 0;
+                    int rt = 0;
 
                     try
                     {
-                        _rt = (int)_o;
+                        rt = (int)obj;
                     }
                     catch(Exception exc)
                     {
@@ -109,7 +109,7 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
                         return -1;
                     }
 
-                    return _rt;
+                    return rt;
                 }
             }
 
@@ -124,22 +124,22 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
         public void SetActionPoint(string actionName, int value)
         {
             //PlayerクラスのTypeオブジェクトを取得する
-            Type _t = typeof(ActionPointProvider);
+            Type type = typeof(ActionPointProvider);
 
             //プロパティを取得する
-            PropertyInfo[] _pi = _t.GetProperties();
+            PropertyInfo[] properties = type.GetProperties();
 
-            foreach (PropertyInfo _p in _pi)
+            foreach (var pi in properties)
             {
-                if (_p.PropertyType != typeof(int)) continue;
+                if (pi.PropertyType != typeof(int)) continue;
 
-                if (!_p.Name.Contains("AP")) continue;
+                if (!pi.Name.Contains("AP")) continue;
 
-                if (_p.Name == "AP" + actionName)
+                if (pi.Name == "AP" + actionName)
                 {
                     try
                     {
-                        _p.SetValue(AppSetting.GetInstance().ActionPointProvider, value);
+                        pi.SetValue(AppSetting.GetInstance().ActionPointProvider, value);
                     }
                     catch (Exception exc)
                     {

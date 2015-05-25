@@ -23,14 +23,14 @@ namespace BasketballManagementSystem.BaseClass.Position
         public static double[] GetCortLengthFromForm(Point leftTop, Point rightDown, double length)
         {
             //フォーム上描画先のx,yの長さ
-            double _XLength = rightDown.X - leftTop.X;
-            double _YLength = rightDown.Y - leftTop.Y;
+            double xLength = rightDown.X - leftTop.X;
+            double yLength = rightDown.Y - leftTop.Y;
 
             //実際のコートとの比
-            double _ratioX = _XLength / PositionConvert.CortX;
-            double _ratioY = _YLength / PositionConvert.CortY;
+            double ratioX = xLength / PositionConvert.CortX;
+            double ratioY = yLength / PositionConvert.CortY;
 
-            return new double[] { length * _ratioX, length * _ratioY };
+            return new double[] { length * ratioX, length * ratioY };
         }
 
         /// <summary>
@@ -40,19 +40,19 @@ namespace BasketballManagementSystem.BaseClass.Position
         /// <returns>見つかったアクションのゴールまでの距離</returns>
         public static double GetMaxShootRange(List<RelationPointAction> l)
         {
-            double _maxRange = 0;
+            double maxRange = 0;
 
-            foreach (RelationPointAction r in l)
+            foreach (var r in l)
             {
-                double _c = GetDistanceFromGoal(r.Position);
+                double c = GetDistanceFromGoal(r.Position);
 
-                if (_c > _maxRange)
+                if (c > maxRange)
                 {
-                    _maxRange = _c;
+                    maxRange = c;
                 }
             }
 
-            return _maxRange;
+            return maxRange;
         }
 
         /// <summary>
@@ -62,13 +62,13 @@ namespace BasketballManagementSystem.BaseClass.Position
         /// <returns>コートまでの距離</returns>
         public static double GetDistanceFromGoal(Position p)
         {
-            double _a = p.PosX - goalPosition.PosX;
+            double a = p.PosX - goalPosition.PosX;
 
-            double _b = p.PosY - goalPosition.PosY;
+            double b = p.PosY - goalPosition.PosY;
 
-            double _c = Math.Sqrt(_a * _a + _b * _b);
+            double c = Math.Sqrt(a * a + b * b);
 
-            return _c;
+            return c;
         }
 
      

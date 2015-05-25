@@ -19,12 +19,12 @@ namespace BasketballManagementSystem.BaseClass.Player
         {
             get
             {
-                List<Player> _t = new List<Player>();
+                List<Player> t = new List<Player>();
 
-                _t.AddRange(CortMember);
-                _t.AddRange(OutMember);
+                t.AddRange(CortMember);
+                t.AddRange(OutMember);
 
-                return _t;
+                return t;
             }
             private set
             {
@@ -48,14 +48,14 @@ namespace BasketballManagementSystem.BaseClass.Player
         {
             get
             {
-                int _point = 0;
+                int point = 0;
 
                 foreach (Player p in TeamMember)
                 {
-                    _point += p.Point;
+                    point += p.Point;
                 }
 
-                return _point;
+                return point;
             }
         }
 
@@ -125,14 +125,14 @@ namespace BasketballManagementSystem.BaseClass.Player
         public void allMemberChangeIsMyTeam(bool isMyTeam)
         {
 
-            foreach (Player _p in CortMember)
+            foreach (var p in CortMember)
             {
-                _p.IsMyTeam = isMyTeam;
+                p.IsMyTeam = isMyTeam;
             }
 
-            foreach (Player _p in OutMember)
+            foreach (var p in OutMember)
             {
-                _p.IsMyTeam = isMyTeam;
+                p.IsMyTeam = isMyTeam;
             }
         }
 
@@ -143,27 +143,27 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns>Action型のlist</returns>
         public List<Action.Action> GetQuarterAction(int quarter)
         {
-            List<Action.Action> _actionList = new List<Action.Action>();
+            List<Action.Action> actionList = new List<Action.Action>();
 
-            foreach (Player _p in TeamMember)
+            foreach (var p in TeamMember)
             {
                 if (quarter < 4)
                 {
-                    _actionList.AddRange(_p.GetActionList(_p, a => a.Quarter == quarter));
+                    actionList.AddRange(p.GetActionList(p, a => a.Quarter == quarter));
                 }
                 else
                 {
-                    _actionList.AddRange(_p.GetActionList(_p, a => a.Quarter >= quarter));
+                    actionList.AddRange(p.GetActionList(p, a => a.Quarter >= quarter));
                 }
             }
 
-            var query = from p in _actionList
+            var query = from p in actionList
                         orderby p.ActionDate.Ticks
                         select p;
 
-            List<Action.Action> _rt = query.ToList<Action.Action>();
+            List<Action.Action> rt = query.ToList<Action.Action>();
 
-            return _rt;
+            return rt;
         }
 
         /// <summary>
@@ -173,27 +173,27 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns>RelationPointAction型のlist</returns>
         public List<RelationPointAction> GetQuarterPointAction(int quarter)
         {
-            List<RelationPointAction> _actionList = new List<RelationPointAction>();
+            List<RelationPointAction> actionList = new List<RelationPointAction>();
 
-            foreach (Player p in TeamMember)
+            foreach (var p in TeamMember)
             {
                 if (quarter < 4)
                 {
-                    _actionList.AddRange(p.GetPointActionList(a => a.Quarter == quarter));
+                    actionList.AddRange(p.GetPointActionList(a => a.Quarter == quarter));
                 }
                 else
                 {
-                    _actionList.AddRange(p.GetPointActionList(a => a.Quarter >= quarter));
+                    actionList.AddRange(p.GetPointActionList(a => a.Quarter >= quarter));
                 }
             }
 
-            var query = from p in _actionList
+            var query = from p in actionList
                         orderby p.ActionDate.Ticks
                         select p;
 
-            List<RelationPointAction> _rt = query.ToList<RelationPointAction>();
+            List<RelationPointAction> rt = query.ToList<RelationPointAction>();
 
-            return _rt;
+            return rt;
         }
 
 
@@ -203,20 +203,20 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns>RelationPointAction型のlist</returns>
         public List<RelationPointAction> GetQuarterPointActionAll()
         {
-            List<RelationPointAction> _actionList = new List<RelationPointAction>();
+            List<RelationPointAction> actionList = new List<RelationPointAction>();
 
-            foreach (Player p in TeamMember)
+            foreach (var p in TeamMember)
             {
-                _actionList.AddRange(p.GetPointActionList());
+                actionList.AddRange(p.GetPointActionList());
             }
 
-            var query = from p in _actionList
+            var query = from p in actionList
                         orderby p.ActionDate.Ticks
                         select p;
 
-            List<RelationPointAction> _rt = query.ToList<RelationPointAction>();
+            List<RelationPointAction> rt = query.ToList<RelationPointAction>();
 
-            return _rt;
+            return rt;
         }
 
         /// <summary>
@@ -230,14 +230,14 @@ namespace BasketballManagementSystem.BaseClass.Player
 
             List<RelationPointAction> r = GetQuarterPointAction(quarter);
 
-            int _point = 0;
+            int point = 0;
 
-            foreach (RelationPointAction p in r)
+            foreach (var p in r)
             {
-                _point += p.Point;
+                point += p.Point;
             }
 
-            return _point;
+            return point;
         }
 
         /// <summary>
@@ -247,32 +247,32 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns></returns>
         public int GetTimeOutCount(int timeoutSection)
         {
-            List<TimeOut.TimeOut> _to = new List<TimeOut.TimeOut>();
+            List<TimeOut.TimeOut> to = new List<TimeOut.TimeOut>();
 
             if (timeoutSection == TimeOut.TimeOut.FirstHalf ||
                 timeoutSection == TimeOut.TimeOut.SecondHalf ||
                 timeoutSection == TimeOut.TimeOut.ExtraInning)
             {
-                foreach (TimeOut.TimeOut _t in TimeOutList)
+                foreach (var t in TimeOutList)
                 {
-                    if (_t.GetTimeOutSection(timeoutSection))
+                    if (t.GetTimeOutSection(timeoutSection))
                     {
-                        _to.Add(_t);
+                        to.Add(t);
                     }
                 }
             }
             else
             {
-                foreach (TimeOut.TimeOut _t in TimeOutList)
+                foreach (var _t in TimeOutList)
                 {
                     if (_t.Quarter == timeoutSection)
                     {
-                        _to.Add(_t);
+                        to.Add(_t);
                     }
                 }
             }
 
-            return _to.Count;
+            return to.Count;
         }
     }
 }
