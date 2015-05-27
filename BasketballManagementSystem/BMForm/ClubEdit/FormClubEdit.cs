@@ -26,51 +26,51 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
             InitializeComponent();
         }
 
-        private void loadClub_Click(object sender, EventArgs e)
+        private void LoadClubToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            OpenFileDialog _ofd = new OpenFileDialog();
+            OpenFileDialog ofd = new OpenFileDialog();
 
             //はじめのファイル名を指定する
-            _ofd.FileName = "ClubTeam1.xml";
+            ofd.FileName = "ClubTeam1.xml";
 
             //はじめに表示されるフォルダを指定する
-            _ofd.InitialDirectory = BMFile.CreateDirectory("Save\\ClubData");
+            ofd.InitialDirectory = BMFile.CreateDirectory("Save\\ClubData");
 
             //[ファイルの種類]に表示される選択肢を指定する
-            _ofd.Filter =
+            ofd.Filter =
                 "Xmlファイル(*.xml)|*.xml|xmlファイル(*.xml)|*.xml";
 
-            _ofd.Title = "開くファイルを選択してください";
+            ofd.Title = "開くファイルを選択してください";
 
             //ダイアログボックスを閉じる前に現在のディレクトリを復元するようにする
-            _ofd.RestoreDirectory = true;
+            ofd.RestoreDirectory = true;
 
             //ダイアログを表示する
-            if (_ofd.ShowDialog() == DialogResult.OK)
+            if (ofd.ShowDialog() == DialogResult.OK)
             {
-                System.IO.Stream _stream;
-                _stream = _ofd.OpenFile();
+                System.IO.Stream stream;
+                stream = ofd.OpenFile();
 
-                if (_stream != null)
+                if (stream != null)
                 {
 
-                    XmlSerializer _s = new XmlSerializer(typeof(ClubTeam));
+                    XmlSerializer s = new XmlSerializer(typeof(ClubTeam));
 
-                    ClubTeam _clubTeam = new ClubTeam();
+                    ClubTeam clubTeam = new ClubTeam();
 
-                    _clubTeam = (ClubTeam)_s.Deserialize(_stream);
+                    clubTeam = (ClubTeam)s.Deserialize(stream);
 
-                    ClubName.Text = _clubTeam.Name;
+                    ClubNameTextBox.Text = clubTeam.Name;
 
-                    ClubMembersList.Items.Clear();
-                    foreach (ClubMember _clubMember in _clubTeam.ClubMemberList)
+                    ClubMembersListBox.Items.Clear();
+                    foreach (ClubMember clubMember in clubTeam.ClubMemberList)
                     {
-                        ClubMembersList.Items.Add(_clubMember);
+                        ClubMembersListBox.Items.Add(clubMember);
                     }
 
                     changeFlag = false;
 
-                    _stream.Close();
+                    stream.Close();
                 }
                 else
                 {
@@ -79,56 +79,56 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
             }
         }
 
-        private void saveClub_Click(object sender, EventArgs e)
+        private void SaveClubToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (ClubName.Text == string.Empty)
+            if (ClubNameTextBox.Text == string.Empty)
             {
                 MessageBox.Show("Clubの名前を入力してください");
                 return;
             }
 
-            SaveFileDialog _sfd = new SaveFileDialog();
+            SaveFileDialog sfd = new SaveFileDialog();
 
             //はじめのファイル名を指定する
-            _sfd.FileName = ClubName.Text;
+            sfd.FileName = ClubNameTextBox.Text;
 
             //はじめに表示されるフォルダを指定する
-            _sfd.InitialDirectory = BMFile.CreateDirectory("Save\\ClubData");
+            sfd.InitialDirectory = BMFile.CreateDirectory("Save\\ClubData");
 
             //[ファイルの種類]に表示される選択肢を指定する
-            _sfd.Filter =
+            sfd.Filter =
                 "Xmlファイル(*.xml)|*.xml|xmlファイル(*.xml)|*.xml";
 
-            _sfd.Title = "保存先のファイルを選択してください";
+            sfd.Title = "保存先のファイルを選択してください";
 
             //ダイアログボックスを閉じる前に現在のディレクトリを復元するようにする
-            _sfd.RestoreDirectory = true;
+            sfd.RestoreDirectory = true;
 
             //ダイアログを表示する
-            if (_sfd.ShowDialog() == DialogResult.OK)
+            if (sfd.ShowDialog() == DialogResult.OK)
             {
-                System.IO.Stream _stream;
-                _stream = _sfd.OpenFile();
+                System.IO.Stream stream;
+                stream = sfd.OpenFile();
 
-                if (_stream != null)
+                if (stream != null)
                 {
 
-                    XmlSerializer _s = new XmlSerializer(typeof(ClubTeam));
+                    XmlSerializer s = new XmlSerializer(typeof(ClubTeam));
 
-                    ClubTeam _clubTeam = new ClubTeam();
+                    ClubTeam clubTeam = new ClubTeam();
 
-                    _clubTeam.Name = ClubName.Text;
+                    clubTeam.Name = ClubNameTextBox.Text;
 
-                    foreach (ClubMember _clubMember in ClubMembersList.Items)
+                    foreach (ClubMember clubMember in ClubMembersListBox.Items)
                     {
-                        _clubTeam.ClubMemberList.Add(_clubMember);
+                        clubTeam.ClubMemberList.Add(clubMember);
                     }
 
-                    _s.Serialize(_stream, _clubTeam);
+                    s.Serialize(stream, clubTeam);
 
                     changeFlag = false;
 
-                    _stream.Close();
+                    stream.Close();
                 }
                 else
                 {
@@ -137,109 +137,109 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
             }
         }
 
-        private void ButtonAdd_Click(object sender, EventArgs e)
+        private void AddButton_Click(object sender, EventArgs e)
         {
-            ClubMember _clubMember = new ClubMember();
-            double _height = 0.0D;
-            double _weight = 0.0D;
+            ClubMember clubMember = new ClubMember();
+            double height = 0.0D;
+            double weight = 0.0D;
 
-            if (NameAdd.Text == string.Empty)
+            if (NameAddTextBox.Text == string.Empty)
             {
                 MessageBox.Show("名前が未入力です");
                 return;
             }
 
-            if (HeightAdd.Text != string.Empty)
+            if (HeightAddTextBox.Text != string.Empty)
             {
-                if (!double.TryParse(HeightAdd.Text, out _height))
+                if (!double.TryParse(HeightAddTextBox.Text, out height))
                 {
                     MessageBox.Show("値が不正です");
                     return;
                 }
             }
 
-            if (WeightAdd.Text != string.Empty)
+            if (WeightAddTextBox.Text != string.Empty)
             {
-                if (!double.TryParse(WeightAdd.Text, out _weight))
+                if (!double.TryParse(WeightAddTextBox.Text, out weight))
                 {
                     MessageBox.Show("値が不正です");
                     return;
                 }
             }
 
-            _clubMember.Name = NameAdd.Text;
-            _clubMember.Height = _height;
-            _clubMember.Weight = _weight;
-            _clubMember.IsMan = IsManAdd.Checked;
+            clubMember.Name = NameAddTextBox.Text;
+            clubMember.Height = height;
+            clubMember.Weight = weight;
+            clubMember.IsMan = IsManAddCheckBox.Checked;
 
-            ClubMembersList.Items.Add(_clubMember);
+            ClubMembersListBox.Items.Add(clubMember);
 
             changeFlag = true;
 
-            NameAdd.Text = string.Empty;
-            HeightAdd.Text = string.Empty;
-            WeightAdd.Text = string.Empty;
+            NameAddTextBox.Text = string.Empty;
+            HeightAddTextBox.Text = string.Empty;
+            WeightAddTextBox.Text = string.Empty;
         }
 
-        private void ClubMembersList_SelectedIndexChanged(object sender, EventArgs e)
+        private void ClubMembersLisBoxt_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (ClubMembersList.SelectedItem == null) return;
-            ClubMember _selectedClubMember = (ClubMember)ClubMembersList.SelectedItem;
+            if (ClubMembersListBox.SelectedItem == null) return;
+            ClubMember selectedClubMember = (ClubMember)ClubMembersListBox.SelectedItem;
 
-            NameSelected.Text = _selectedClubMember.Name;
-            IsManSelected.Checked = _selectedClubMember.IsMan;
-            HeightSelected.Text = _selectedClubMember.Height.ToString();
-            WeightSelected.Text = _selectedClubMember.Weight.ToString();
+            NameSelectedTextBox.Text = selectedClubMember.Name;
+            IsManSelectedCheckBox.Checked = selectedClubMember.IsMan;
+            HeightSelectedTextBox.Text = selectedClubMember.Height.ToString();
+            WeightSelectedTextBox.Text = selectedClubMember.Weight.ToString();
            
         }
 
-        private void ButtonDicision_Click(object sender, EventArgs e)
+        private void DicisionButton_Click(object sender, EventArgs e)
         {
-            ClubMember _clubMember = new ClubMember();
-            double _height = 0.0D;
-            double _weight = 0.0D;
+            ClubMember clubMember = new ClubMember();
+            double height = 0.0D;
+            double weight = 0.0D;
 
-            if (NameSelected.Text == string.Empty)
+            if (NameSelectedTextBox.Text == string.Empty)
             {
                 MessageBox.Show("名前が未入力です");
                 return;
             }
 
-            if (HeightSelected.Text != string.Empty)
+            if (HeightSelectedTextBox.Text != string.Empty)
             {
-                if (!double.TryParse(HeightSelected.Text, out _height))
+                if (!double.TryParse(HeightSelectedTextBox.Text, out height))
                 {
                     MessageBox.Show("値が不正です");
                     return;
                 }
             }
 
-            if (WeightSelected.Text != string.Empty)
+            if (WeightSelectedTextBox.Text != string.Empty)
             {
-                if (!double.TryParse(WeightSelected.Text, out _weight))
+                if (!double.TryParse(WeightSelectedTextBox.Text, out weight))
                 {
                     MessageBox.Show("値が不正です");
                     return;
                 }
             }
 
-            _clubMember.Name = NameSelected.Text;
-            _clubMember.Height = _height;
-            _clubMember.Weight = _weight;
-            _clubMember.IsMan = IsManSelected.Checked;
+            clubMember.Name = NameSelectedTextBox.Text;
+            clubMember.Height = height;
+            clubMember.Weight = weight;
+            clubMember.IsMan = IsManSelectedCheckBox.Checked;
 
-            int _index = ClubMembersList.SelectedIndex;
+            int index = ClubMembersListBox.SelectedIndex;
 
-            if (_index < 0) return;
+            if (index < 0) return;
 
-            ClubMembersList.Items.Insert(_index, _clubMember);
-            ClubMembersList.Items.Remove(ClubMembersList.SelectedItem);
+            ClubMembersListBox.Items.Insert(index, clubMember);
+            ClubMembersListBox.Items.Remove(ClubMembersListBox.SelectedItem);
 
             changeFlag = true;
 
-            NameSelected.Text = string.Empty;
-            HeightSelected.Text = string.Empty;
-            WeightSelected.Text = string.Empty;
+            NameSelectedTextBox.Text = string.Empty;
+            HeightSelectedTextBox.Text = string.Empty;
+            WeightSelectedTextBox.Text = string.Empty;
 
         }
 
@@ -260,9 +260,9 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
             }
         }
 
-        private void ButtonDelete_Click(object sender, EventArgs e)
+        private void DeleteButton_Click(object sender, EventArgs e)
         {
-            if (ClubMembersList.SelectedItem == null)
+            if (ClubMembersListBox.SelectedItem == null)
             {
                 MessageBox.Show("メンバーが選択されていません");
                 return;
@@ -276,12 +276,12 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
 
             if (d == DialogResult.OK)
             {
-                ClubMembersList.Items.Remove(ClubMembersList.SelectedItem);
+                ClubMembersListBox.Items.Remove(ClubMembersListBox.SelectedItem);
             }
 
-            NameSelected.Text = string.Empty;
-            HeightSelected.Text = string.Empty;
-            WeightSelected.Text = string.Empty;
+            NameSelectedTextBox.Text = string.Empty;
+            HeightSelectedTextBox.Text = string.Empty;
+            WeightSelectedTextBox.Text = string.Empty;
         }
 
     }

@@ -40,14 +40,14 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             PlotAllClear();
 
-            foreach (Player p in game.MyTeam.TeamMember)
+            foreach (var p in game.MyTeam.TeamMember)
             {
-                MyTeamList.Items.Add(p);
+                MyTeamListBox.Items.Add(p);
             }
 
-            foreach (Player p in game.OppentTeam.TeamMember)
+            foreach (var p in game.OppentTeam.TeamMember)
             {
-                OppentTeamList.Items.Add(p);
+                OppentTeamListBox.Items.Add(p);
             }
 
             PlotTeamAllPoint();
@@ -55,162 +55,162 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
         private void PlotAllClear()
         {
-            ChartQuarter1.Series.Clear();
-            ChartQuarter2.Series.Clear();
-            ChartQuarter3.Series.Clear();
-            ChartQuarter4.Series.Clear();
-            ChartQuarterAll.Series.Clear();
+            Quarter1Chart.Series.Clear();
+            Quarter2Chart.Series.Clear();
+            Quarter3Chart.Series.Clear();
+            Quarter4Chart.Series.Clear();
+            QuarterAllChart.Series.Clear();
         }
 
         private void PlotTeamAllPoint()
         {
-            ChartQuarter1.Series.Add("MyAllPoint");
-            ChartQuarter1.Series.Add("OppentAllPoint");
+            Quarter1Chart.Series.Add("MyAllPoint");
+            Quarter1Chart.Series.Add("OppentAllPoint");
 
-            ChartQuarter2.Series.Add("MyAllPoint");
-            ChartQuarter2.Series.Add("OppentAllPoint");
+            Quarter2Chart.Series.Add("MyAllPoint");
+            Quarter2Chart.Series.Add("OppentAllPoint");
 
-            ChartQuarter3.Series.Add("MyAllPoint");
-            ChartQuarter3.Series.Add("OppentAllPoint");
+            Quarter3Chart.Series.Add("MyAllPoint");
+            Quarter3Chart.Series.Add("OppentAllPoint");
 
-            ChartQuarter4.Series.Add("MyAllPoint");
-            ChartQuarter4.Series.Add("OppentAllPoint");
+            Quarter4Chart.Series.Add("MyAllPoint");
+            Quarter4Chart.Series.Add("OppentAllPoint");
 
-            ChartQuarterAll.Series.Add("MyAllPoint");
-            ChartQuarterAll.Series.Add("OppentAllPoint");
+            QuarterAllChart.Series.Add("MyAllPoint");
+            QuarterAllChart.Series.Add("OppentAllPoint");
 
             
-            ChartQuarter1.Series["MyAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            ChartQuarter1.Series["OppentAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            Quarter1Chart.Series["MyAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            Quarter1Chart.Series["OppentAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
 
-            ChartQuarter2.Series["MyAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            ChartQuarter2.Series["OppentAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            Quarter2Chart.Series["MyAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            Quarter2Chart.Series["OppentAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
 
-            ChartQuarter3.Series["MyAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            ChartQuarter3.Series["OppentAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            Quarter3Chart.Series["MyAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            Quarter3Chart.Series["OppentAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
 
-            ChartQuarter4.Series["MyAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            ChartQuarter4.Series["OppentAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            Quarter4Chart.Series["MyAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            Quarter4Chart.Series["OppentAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
 
-            ChartQuarterAll.Series["MyAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            ChartQuarterAll.Series["OppentAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            QuarterAllChart.Series["MyAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            QuarterAllChart.Series["OppentAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
              
             
              
             //グラフの初期点の座標(左端の座標)を指定
             //これがないと最初に点数が入ったときにその座標に点だけが打たれ、折れ線にならない(2点目以降から折れ線グラフになる)
-            ChartQuarter1.Series["MyAllPoint"].Points.AddXY(0, 0);
-            ChartQuarter2.Series["MyAllPoint"].Points.AddXY(0, 0);
-            ChartQuarter3.Series["MyAllPoint"].Points.AddXY(0, 0);
-            ChartQuarter4.Series["MyAllPoint"].Points.AddXY(0, 0);
-            ChartQuarterAll.Series["MyAllPoint"].Points.AddXY(0, 0);
+            Quarter1Chart.Series["MyAllPoint"].Points.AddXY(0, 0);
+            Quarter2Chart.Series["MyAllPoint"].Points.AddXY(0, 0);
+            Quarter3Chart.Series["MyAllPoint"].Points.AddXY(0, 0);
+            Quarter4Chart.Series["MyAllPoint"].Points.AddXY(0, 0);
+            QuarterAllChart.Series["MyAllPoint"].Points.AddXY(0, 0);
           
 
-            ChartQuarter1.Series["OppentAllPoint"].Points.AddXY(0, 0);
-            ChartQuarter2.Series["OppentAllPoint"].Points.AddXY(0, 0);
-            ChartQuarter3.Series["OppentAllPoint"].Points.AddXY(0, 0);
-            ChartQuarter4.Series["OppentAllPoint"].Points.AddXY(0, 0);
-            ChartQuarterAll.Series["OppentAllPoint"].Points.AddXY(0, 0);
+            Quarter1Chart.Series["OppentAllPoint"].Points.AddXY(0, 0);
+            Quarter2Chart.Series["OppentAllPoint"].Points.AddXY(0, 0);
+            Quarter3Chart.Series["OppentAllPoint"].Points.AddXY(0, 0);
+            Quarter4Chart.Series["OppentAllPoint"].Points.AddXY(0, 0);
+            QuarterAllChart.Series["OppentAllPoint"].Points.AddXY(0, 0);
 
             
 
             int point = 0;
 
-            foreach (RelationPointAction r in game.MyTeam.GetQuarterPointAction(1))
+            foreach (var r in game.MyTeam.GetQuarterPointAction(1))
             {
                 point += r.Point;
 
-                ChartQuarter1.Series["MyAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
+                Quarter1Chart.Series["MyAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
             }
 
             point = 0;
 
-            foreach (RelationPointAction r in game.OppentTeam.GetQuarterPointAction(1))
+            foreach (var r in game.OppentTeam.GetQuarterPointAction(1))
             {
                 point += r.Point;
 
-                ChartQuarter1.Series["OppentAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
+                Quarter1Chart.Series["OppentAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
             }
 
 
             point = 0;
 
-            foreach (RelationPointAction r in game.MyTeam.GetQuarterPointAction(2))
+            foreach (var r in game.MyTeam.GetQuarterPointAction(2))
             {
                 point += r.Point;
 
-                ChartQuarter2.Series["MyAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
+                Quarter2Chart.Series["MyAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
             }
 
             point = 0;
 
-            foreach (RelationPointAction r in game.OppentTeam.GetQuarterPointAction(2))
+            foreach (var r in game.OppentTeam.GetQuarterPointAction(2))
             {
                 point += r.Point;
 
-                ChartQuarter2.Series["OppentAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds,  point);
+                Quarter2Chart.Series["OppentAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds,  point);
 
             }
 
             point = 0;
 
-            foreach (RelationPointAction r in game.MyTeam.GetQuarterPointAction(3))
+            foreach (var r in game.MyTeam.GetQuarterPointAction(3))
             {
                 point += r.Point;
 
-                ChartQuarter3.Series["MyAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
+                Quarter3Chart.Series["MyAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
             }
 
             point = 0;
 
-            foreach (RelationPointAction r in game.OppentTeam.GetQuarterPointAction(3))
+            foreach (var r in game.OppentTeam.GetQuarterPointAction(3))
             {
                 point += r.Point;
 
-                ChartQuarter3.Series["OppentAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
+                Quarter3Chart.Series["OppentAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
             }
 
             point = 0;
 
-            foreach (RelationPointAction r in game.MyTeam.GetQuarterPointAction(4))
+            foreach (var r in game.MyTeam.GetQuarterPointAction(4))
             {
                 point += r.Point;
 
-                ChartQuarter4.Series["MyAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
+                Quarter4Chart.Series["MyAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
             }
 
             point = 0;
 
-            foreach (RelationPointAction r in game.OppentTeam.GetQuarterPointAction(4))
+            foreach (var r in game.OppentTeam.GetQuarterPointAction(4))
             {
                 point += r.Point;
 
-                ChartQuarter4.Series["OppentAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds,  point);
+                Quarter4Chart.Series["OppentAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds,  point);
             }
 
 
             point = 0;
 
-            foreach (RelationPointAction r in game.MyTeam.GetQuarterPointActionAll())
+            foreach (var r in game.MyTeam.GetQuarterPointActionAll())
             {
                 point += r.Point;
 
-                ChartQuarterAll.Series["MyAllPoint"].Points.AddXY((int)((r.ActionDate - game.StartTime).TotalSeconds), point);
+                QuarterAllChart.Series["MyAllPoint"].Points.AddXY((int)((r.ActionDate - game.StartTime).TotalSeconds), point);
             }
 
             point = 0;
 
-            foreach (RelationPointAction r in game.OppentTeam.GetQuarterPointActionAll())
+            foreach (var r in game.OppentTeam.GetQuarterPointActionAll())
             {
                 point += r.Point;
 
-                ChartQuarterAll.Series["OppentAllPoint"].Points.AddXY((int)((r.ActionDate - game.StartTime).TotalSeconds), point);
+                QuarterAllChart.Series["OppentAllPoint"].Points.AddXY((int)((r.ActionDate - game.StartTime).TotalSeconds), point);
             }
 
         }
@@ -221,73 +221,73 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             PlotTeamAllPoint();
 
-            ChartQuarter1.Series.Add("SelectPlayerAllPoint");
-            ChartQuarter2.Series.Add("SelectPlayerAllPoint");
-            ChartQuarter3.Series.Add("SelectPlayerAllPoint");
-            ChartQuarter4.Series.Add("SelectPlayerAllPoint");
-            ChartQuarterAll.Series.Add("SelectPlayerAllPoint");
+            Quarter1Chart.Series.Add("SelectPlayerAllPoint");
+            Quarter2Chart.Series.Add("SelectPlayerAllPoint");
+            Quarter3Chart.Series.Add("SelectPlayerAllPoint");
+            Quarter4Chart.Series.Add("SelectPlayerAllPoint");
+            QuarterAllChart.Series.Add("SelectPlayerAllPoint");
 
-            ChartQuarter1.Series["SelectPlayerAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            ChartQuarter2.Series["SelectPlayerAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            ChartQuarter3.Series["SelectPlayerAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            ChartQuarter4.Series["SelectPlayerAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            ChartQuarterAll.Series["SelectPlayerAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            Quarter1Chart.Series["SelectPlayerAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            Quarter2Chart.Series["SelectPlayerAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            Quarter3Chart.Series["SelectPlayerAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            Quarter4Chart.Series["SelectPlayerAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            QuarterAllChart.Series["SelectPlayerAllPoint"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
 
-            ChartQuarter1.Series["SelectPlayerAllPoint"].Points.AddXY(0, 0);
-            ChartQuarter2.Series["SelectPlayerAllPoint"].Points.AddXY(0, 0);
-            ChartQuarter3.Series["SelectPlayerAllPoint"].Points.AddXY(0, 0);
-            ChartQuarter4.Series["SelectPlayerAllPoint"].Points.AddXY(0, 0);
-            ChartQuarterAll.Series["SelectPlayerAllPoint"].Points.AddXY(0, 0);
+            Quarter1Chart.Series["SelectPlayerAllPoint"].Points.AddXY(0, 0);
+            Quarter2Chart.Series["SelectPlayerAllPoint"].Points.AddXY(0, 0);
+            Quarter3Chart.Series["SelectPlayerAllPoint"].Points.AddXY(0, 0);
+            Quarter4Chart.Series["SelectPlayerAllPoint"].Points.AddXY(0, 0);
+            QuarterAllChart.Series["SelectPlayerAllPoint"].Points.AddXY(0, 0);
 
             
             Player p = (Player)(((ListBox)sender).SelectedItem);
 
             int point = 0;
 
-            foreach (RelationPointAction r in p.GetPointActionList(1, false))
+            foreach (var r in p.GetPointActionList(1, false))
             {
                 point += r.Point;
 
-                ChartQuarter1.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
+                Quarter1Chart.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
                 
             }
 
             point = 0;
 
-            foreach (RelationPointAction r in p.GetPointActionList(2, false))
+            foreach (var r in p.GetPointActionList(2, false))
             {
                 point += r.Point;
 
-                ChartQuarter2.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
+                Quarter2Chart.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
             }
 
             point = 0;
 
-            foreach (RelationPointAction r in p.GetPointActionList(3, false))
+            foreach (var r in p.GetPointActionList(3, false))
             {
                 point += r.Point;
 
-                ChartQuarter3.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
+                Quarter3Chart.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
             }
 
             point = 0;
 
-            foreach (RelationPointAction r in p.GetPointActionList(4, true))
+            foreach (var r in p.GetPointActionList(4, true))
             {
                 point += r.Point;
 
-                ChartQuarter4.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds,  point);
+                Quarter4Chart.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds,  point);
             }
 
              point = 0;
 
-            foreach (RelationPointAction r in p.GetPointActionList())
+            foreach (var r in p.GetPointActionList())
             {
                 point += r.Point;
 
-                ChartQuarterAll.Series["SelectPlayerAllPoint"].Points.AddXY((int)((r.ActionDate - game.StartTime).TotalSeconds), point);
+                QuarterAllChart.Series["SelectPlayerAllPoint"].Points.AddXY((int)((r.ActionDate - game.StartTime).TotalSeconds), point);
             }
 
         }

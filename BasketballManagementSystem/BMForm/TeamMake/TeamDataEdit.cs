@@ -26,7 +26,7 @@ namespace BasketballManagementSystem.BMForm.TeamMake
         public TeamDataEdit()
         {
             InitializeComponent();
-            comboBoxPosition.SelectedIndex = 0;
+            PositionComboBox.SelectedIndex = 0;
         }
 
         private void loadTeam_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace BasketballManagementSystem.BMForm.TeamMake
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.InitialDirectory = BMFile.FindDirectory("TeamData");
 
-            Team t;
+            Team team;
 
             //ダイアログを表示する
             if (ofd.ShowDialog() == DialogResult.OK)
@@ -48,22 +48,22 @@ namespace BasketballManagementSystem.BMForm.TeamMake
                 if (stream != null)
                 {
                     //指定したファイルからチーム情報取得
-                    t = teamManager.loadTeam(ofd.FileName, true);
+                    team = teamManager.loadTeam(ofd.FileName, true);
 
-                    listBoxCortMember.Items.Clear();
-                    listBoxOutMember.Items.Clear();
+                    CortMemberListBox.Items.Clear();
+                    OutMemberListBox.Items.Clear();
 
-                    foreach (Player p in t.CortMember)
+                    foreach (var p in team.CortMember)
                     {
-                        listBoxCortMember.Items.Add(p);
+                        CortMemberListBox.Items.Add(p);
                     }
 
-                    foreach (Player p in t.OutMember)
+                    foreach (var p in team.OutMember)
                     {
-                        listBoxOutMember.Items.Add(p);
+                        OutMemberListBox.Items.Add(p);
                     }
 
-                    textBoxTeamName.Text = t.Name;
+                    TeamNameTextBox.Text = team.Name;
 
                 }
                 else
@@ -79,8 +79,8 @@ namespace BasketballManagementSystem.BMForm.TeamMake
             {
                 selectedPlayer = (Player)((ListBox)sender).SelectedItem;
 
-                textBoxEditName.Text = selectedPlayer.Name;
-                textBoxEditNumber.Text = selectedPlayer.Number.ToString();
+                EditNameTextBox.Text = selectedPlayer.Name;
+                EditNumberTextBox.Text = selectedPlayer.Number.ToString();
                 labelSelectedPlayer.Text = selectedPlayer.ToString();
             }
             else
@@ -101,27 +101,27 @@ namespace BasketballManagementSystem.BMForm.TeamMake
             if (result == DialogResult.OK)
             {
 
-                foreach (Player p in listBoxCortMember.Items)
+                foreach (var p in CortMemberListBox.Items)
                 {
                     if (p == selectedPlayer)
                     {
-                        listBoxCortMember.Items.Remove(p);
+                        CortMemberListBox.Items.Remove(p);
                         selectedPlayer = new Player("No Name", 0);
-                        textBoxEditName.Text = selectedPlayer.Name;
-                        textBoxEditNumber.Text = selectedPlayer.Number.ToString();
+                        EditNameTextBox.Text = selectedPlayer.Name;
+                        EditNumberTextBox.Text = selectedPlayer.Number.ToString();
                         MessageBox.Show("削除しました");
                         return;
                     }
                 }
 
-                foreach (Player p in listBoxOutMember.Items)
+                foreach (var p in OutMemberListBox.Items)
                 {
                     if (p == selectedPlayer)
                     {
-                        listBoxOutMember.Items.Remove(p);
+                        OutMemberListBox.Items.Remove(p);
                         selectedPlayer = new Player("No Name", 0);
-                        textBoxEditName.Text = selectedPlayer.Name;
-                        textBoxEditNumber.Text = selectedPlayer.Number.ToString();
+                        EditNameTextBox.Text = selectedPlayer.Name;
+                        EditNumberTextBox.Text = selectedPlayer.Number.ToString();
                         MessageBox.Show("削除しました");
                         return;
                     }
@@ -137,21 +137,21 @@ namespace BasketballManagementSystem.BMForm.TeamMake
         {
             int number = 0;
 
-            if (!int.TryParse(textBoxNumber.Text, out number))
+            if (!int.TryParse(NumberTextBox.Text, out number))
             {
                 MessageBox.Show("背番号が不正です");
                 return;
             }
 
-            Player p = new Player(textBoxName.Text, number);
+            Player p = new Player(NameTextBox.Text, number);
 
-            if (comboBoxPosition.SelectedIndex == 0)
+            if (PositionComboBox.SelectedIndex == 0)
             {
-                listBoxCortMember.Items.Add(p);
+                CortMemberListBox.Items.Add(p);
             }
             else
             {
-                listBoxOutMember.Items.Add(p);
+                OutMemberListBox.Items.Add(p);
             }
         }
 
@@ -160,7 +160,7 @@ namespace BasketballManagementSystem.BMForm.TeamMake
             SaveFileDialog sfd = new SaveFileDialog();
 
             //はじめのファイル名を指定する
-            sfd.FileName = textBoxTeamName.Text + ".txt";
+            sfd.FileName = TeamNameTextBox.Text + ".txt";
 
             //はじめに表示されるフォルダを指定する
             sfd.InitialDirectory = BMFile.CreateDirectory("TeamData");
@@ -203,13 +203,13 @@ namespace BasketballManagementSystem.BMForm.TeamMake
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine("[TeamName]");
-            sb.AppendLine(textBoxTeamName.Text);
+            sb.AppendLine(TeamNameTextBox.Text);
             sb.AppendLine("[/TeamName]");
 
 
             sb.AppendLine("[CortMember]");
 
-            foreach (Player p in listBoxCortMember.Items)
+            foreach (Player p in CortMemberListBox.Items)
             {
                 sb.AppendLine(p.Name);
                 sb.AppendLine(p.Number.ToString());
@@ -218,7 +218,7 @@ namespace BasketballManagementSystem.BMForm.TeamMake
             sb.AppendLine("[/CortMember]");
 
             sb.AppendLine("[OutMember]");
-            foreach (Player p in listBoxOutMember.Items)
+            foreach (Player p in OutMemberListBox.Items)
             {
                 sb.AppendLine(p.Name);
                 sb.AppendLine(p.Number.ToString());
@@ -228,50 +228,50 @@ namespace BasketballManagementSystem.BMForm.TeamMake
             return sb.ToString();
         }
 
-        private void loadClub_Click(object sender, EventArgs e)
+        private void LoadClub_Click(object sender, EventArgs e)
         {
-            OpenFileDialog _ofd = new OpenFileDialog();
+            OpenFileDialog ofd = new OpenFileDialog();
 
             //はじめのファイル名を指定する
-            _ofd.FileName = "ClubTeam1.xml";
+            ofd.FileName = "ClubTeam1.xml";
 
             //はじめに表示されるフォルダを指定する
-            _ofd.InitialDirectory = BMFile.CreateDirectory("Save\\ClubData");
+            ofd.InitialDirectory = BMFile.CreateDirectory("Save\\ClubData");
 
             //[ファイルの種類]に表示される選択肢を指定する
-            _ofd.Filter =
+            ofd.Filter =
                 "Xmlファイル(*.xml)|*.xml|xmlファイル(*.xml)|*.xml";
 
-            _ofd.Title = "開くファイルを選択してください";
+            ofd.Title = "開くファイルを選択してください";
 
             //ダイアログボックスを閉じる前に現在のディレクトリを復元するようにする
-            _ofd.RestoreDirectory = true;
+            ofd.RestoreDirectory = true;
 
             //ダイアログを表示する
-            if (_ofd.ShowDialog() == DialogResult.OK)
+            if (ofd.ShowDialog() == DialogResult.OK)
             {
-                System.IO.Stream _stream;
-                _stream = _ofd.OpenFile();
+                System.IO.Stream stream;
+                stream = ofd.OpenFile();
 
-                if (_stream != null)
+                if (stream != null)
                 {
 
-                    XmlSerializer _s = new XmlSerializer(typeof(ClubTeam));
+                    XmlSerializer s = new XmlSerializer(typeof(ClubTeam));
 
-                    ClubTeam _clubTeam = new ClubTeam();
+                    ClubTeam clubTeam = new ClubTeam();
 
-                    _clubTeam = (ClubTeam)_s.Deserialize(_stream);
+                    clubTeam = (ClubTeam)s.Deserialize(stream);
 
-                    ClubNameLabel.Text = _clubTeam.Name;
+                    ClubNameLabel.Text = clubTeam.Name;
 
-                    ClubMembersList.Items.Clear();
+                    ClubMembersListBox.Items.Clear();
 
-                    foreach (ClubMember _clubMember in _clubTeam.ClubMemberList)
+                    foreach (var _clubMember in clubTeam.ClubMemberList)
                     {
-                        ClubMembersList.Items.Add(_clubMember);
+                        ClubMembersListBox.Items.Add(_clubMember);
                     }
 
-                    _stream.Close();
+                    stream.Close();
                 }
                 else
                 {
@@ -282,31 +282,31 @@ namespace BasketballManagementSystem.BMForm.TeamMake
 
         private void IntoCortMemberButton_Click(object sender, EventArgs e)
         {
-            if (ClubMembersList.SelectedItem == null)
+            if (ClubMembersListBox.SelectedItem == null)
             {
                 MessageBox.Show("メンバーが選択されていません");
                 return;
             }
            
             string _s = Microsoft.VisualBasic.Interaction.InputBox(
-                ClubMembersList.SelectedItem.ToString() + "の背番号を入力してください",
+                ClubMembersListBox.SelectedItem.ToString() + "の背番号を入力してください",
                 "入力画面",
                 "",
                 200,
                 100);
 
-            int _number = 0;
+            int number = 0;
 
-            if (!int.TryParse(_s, out _number))
+            if (!int.TryParse(_s, out number))
             {
                 MessageBox.Show("値が不正です");
                 return;
             }
             else
             {
-                string _name = ((ClubMember)ClubMembersList.SelectedItem).Name;
+                string _name = ((ClubMember)ClubMembersListBox.SelectedItem).Name;
 
-                listBoxCortMember.Items.Add(new Player(_name, _number));
+                CortMemberListBox.Items.Add(new Player(_name, number));
             }
 
             
@@ -314,31 +314,31 @@ namespace BasketballManagementSystem.BMForm.TeamMake
 
         private void IntoOutMemberButton_Click(object sender, EventArgs e)
         {
-            if (ClubMembersList.SelectedItem == null)
+            if (ClubMembersListBox.SelectedItem == null)
             {
                 MessageBox.Show("メンバーが選択されていません");
                 return;
             }
 
             string _s = Microsoft.VisualBasic.Interaction.InputBox(
-                ClubMembersList.SelectedItem.ToString() + "の背番号を入力してください",
+                ClubMembersListBox.SelectedItem.ToString() + "の背番号を入力してください",
                 "入力画面",
                 "",
                 200,
                 100);
 
-            int _number = 0;
+            int number = 0;
 
-            if (!int.TryParse(_s, out _number))
+            if (!int.TryParse(_s, out number))
             {
                 MessageBox.Show("値が不正です");
                 return;
             }
             else
             {
-                string _name = ((ClubMember)ClubMembersList.SelectedItem).Name;
+                string _name = ((ClubMember)ClubMembersListBox.SelectedItem).Name;
 
-                listBoxOutMember.Items.Add(new Player(_name, _number));
+                OutMemberListBox.Items.Add(new Player(_name, number));
             }
         }
 
@@ -347,25 +347,25 @@ namespace BasketballManagementSystem.BMForm.TeamMake
 
             int _number = 0;
 
-            if (!int.TryParse(textBoxEditNumber.Text, out _number))
+            if (!int.TryParse(EditNumberTextBox.Text, out _number))
             {
                 MessageBox.Show("値が不正です");
                 return;
             }
 
-            int _index = listBoxCortMember.Items.IndexOf(selectedPlayer);
+            int _index = CortMemberListBox.Items.IndexOf(selectedPlayer);
 
             if (_index >= 0)
             {
-                Player _p = new Player(textBoxEditName.Text, _number);
+                Player _p = new Player(EditNameTextBox.Text, _number);
 
-                listBoxCortMember.Items.Insert(_index, _p);
+                CortMemberListBox.Items.Insert(_index, _p);
 
-                listBoxCortMember.Items.Remove(selectedPlayer);
+                CortMemberListBox.Items.Remove(selectedPlayer);
             }
             else
             {
-                _index = listBoxOutMember.Items.IndexOf(selectedPlayer);
+                _index = OutMemberListBox.Items.IndexOf(selectedPlayer);
 
                 if (_index < 0)
                 {
@@ -373,11 +373,11 @@ namespace BasketballManagementSystem.BMForm.TeamMake
                     return;
                 }
 
-                Player _p = new Player(textBoxEditName.Text, _number);
+                Player _p = new Player(EditNameTextBox.Text, _number);
 
-                listBoxOutMember.Items.Insert(_index, _p);
+                OutMemberListBox.Items.Insert(_index, _p);
 
-                listBoxOutMember.Items.Remove(selectedPlayer);
+                OutMemberListBox.Items.Remove(selectedPlayer);
             }
         }
     }

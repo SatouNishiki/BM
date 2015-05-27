@@ -30,17 +30,17 @@ namespace BasketballManagementSystem.BMForm.GameDataEdit
 
             PlayerSelectCombo.Items.Add("AllPlayer");
 
-            foreach (Player p in game.MyTeam.TeamMember)
+            foreach (var p in game.MyTeam.TeamMember)
             {
                 PlayerSelectCombo.Items.Add(p);
             }
 
-            foreach (Player p in game.OppentTeam.TeamMember)
+            foreach (var p in game.OppentTeam.TeamMember)
             {
                 PlayerSelectCombo.Items.Add(p);
             }
 
-            foreach (string s in Player.GetAllActionName())
+            foreach (var s in Player.GetAllActionName())
             {
                 ActionSelectConbo.Items.Add(s);
             }
@@ -71,7 +71,7 @@ namespace BasketballManagementSystem.BMForm.GameDataEdit
 
                 List<object> obj = new List<object>();
 
-                for (int i = 1; i < PlayerSelectCombo.Items.Count; i++)
+                for (var i = 1; i < PlayerSelectCombo.Items.Count; i++)
                 {
                     Player p = (Player)PlayerSelectCombo.Items[i];
 
@@ -79,7 +79,7 @@ namespace BasketballManagementSystem.BMForm.GameDataEdit
                    
                     if (obj != null)
                     {
-                        foreach (object o in (IList)oo)
+                        foreach (var o in (IList)oo)
                         {
                             obj.Add(o);
                         }
@@ -105,7 +105,7 @@ namespace BasketballManagementSystem.BMForm.GameDataEdit
             game.OppentTeam.CortMember.Clear();
             game.OppentTeam.OutMember.Clear();
 
-            foreach (Player p in l)
+            foreach (var p in l)
             {
                 if (p.IsMyTeam)
                 {
@@ -134,7 +134,7 @@ namespace BasketballManagementSystem.BMForm.GameDataEdit
 
             foreach (string name in ActionSelectConbo.Items)
             {
-                foreach (Player p in game.MyTeam.TeamMember)
+                foreach (var p in game.MyTeam.TeamMember)
                 {
                     ActionInfoGridView.DataSource = p.GetActionProperty(p, name);
 

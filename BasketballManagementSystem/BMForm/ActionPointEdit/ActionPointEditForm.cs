@@ -47,7 +47,7 @@ namespace BasketballManagementSystem.BMForm.ActionPointEdit
             {
                 AppSetting.GetInstance().ActionPointProvider.SetActionPoint
                     (
-                        n.Name.Substring(13), //名前から"numericUpDown"の13文字を切り取る=Actionの名前になる
+                        n.Name.Substring(0, n.Name.Length - 13), //名前から"numericUpDown"の13文字を切り取る=Actionの名前になる
                         int.Parse(n.Value.ToString())
                     );
             }
@@ -72,7 +72,7 @@ namespace BasketballManagementSystem.BMForm.ActionPointEdit
         {
             foreach (var n in numericUpDowns)
             {
-                string s = n.Name.Substring(13);
+                string s = n.Name.Substring(0, n.Name.Length - 13);
                 n.Value = AppSetting.GetInstance().ActionPointProvider.GetActionPoint(s);
             }
         }

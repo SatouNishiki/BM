@@ -142,11 +142,11 @@ namespace BasketballManagementSystem.BMForm.Input
         {
             get
             {
-                int _r = 0;
+                int r = 0;
                 try
                 {
-                    _r = int.Parse(this.givenFreeThowLabel.Text.ToString());
-                    return _r;
+                    r = int.Parse(this.givenFreeThowLabel.Text.ToString());
+                    return r;
                 }
                 catch (Exception exc)
                 {
@@ -226,7 +226,7 @@ namespace BasketballManagementSystem.BMForm.Input
             StopGraph = new Bitmap(assembly.GetManifestResourceStream
                             ("BasketballManagementSystem.BMForm.Input.Picture.teisi.png"));
 
-            foreach (Control c in Controls)
+            foreach (var c in Controls)
             {
                 if (c.GetType() == typeof(Button))
                 {
@@ -252,7 +252,7 @@ namespace BasketballManagementSystem.BMForm.Input
               CultureInfo.GetCultures(CultureTypes.AllCultures);
 
             // ComboBoxに取得したカルチャ情報を設定する
-            foreach (CultureInfo c in cultures)
+            foreach (var c in cultures)
             {
                 if (c.Name == "ja" || c.Name == "en")
                     this.ChangeLanguageComboBox.Items.Add(c.DisplayName);
@@ -269,12 +269,12 @@ namespace BasketballManagementSystem.BMForm.Input
             /************************************設定読み込み****************************************/
 
             this.BackColor = AppSetting.GetInstance().FormInputBackGroundColor;
-            this.myTeamPointLabel.BackColor = AppSetting.GetInstance().FormInputPointBackGroundColor;
-            this.oppentTeamPointLabel.BackColor = AppSetting.GetInstance().FormInputPointBackGroundColor;
+            this.MyTeamPointLabel.BackColor = AppSetting.GetInstance().FormInputPointBackGroundColor;
+            this.OppentTeamPointLabel.BackColor = AppSetting.GetInstance().FormInputPointBackGroundColor;
             TimerTickComboBox.SelectedIndex = AppSetting.GetInstance().FormInputFPS;
-            DebugFormVisiable.Checked = AppSetting.GetInstance().DebugWindowChecked;
+            DebugFormVisiableItem.Checked = AppSetting.GetInstance().DebugWindowChecked;
 
-            foreach (Button b in colorChangeButton)
+            foreach (var b in colorChangeButton)
             {
                 b.BackColor = AppSetting.GetInstance().FormInputButtonColor;
 
@@ -291,7 +291,7 @@ namespace BasketballManagementSystem.BMForm.Input
             /***********************************デバッグウインドウ設定*******************************/
 
 
-            if (DebugFormVisiable.Checked)
+            if (DebugFormVisiableItem.Checked)
             {
                 debugForm.Show();
 
@@ -339,14 +339,14 @@ namespace BasketballManagementSystem.BMForm.Input
             /************************** ファウル情報 *******************************************/
 
             if (Quarter <= 4)
-                MyTeamFaul.Text = MyTeam.TeamFaul[Quarter].ToString();
+                MyTeamFaulLabel.Text = MyTeam.TeamFaul[Quarter].ToString();
             else
-                MyTeamFaul.Text = MyTeam.TeamFaul[4].ToString();
+                MyTeamFaulLabel.Text = MyTeam.TeamFaul[4].ToString();
 
             if (Quarter <= 4)
-                OppentTeamFaul.Text = OppentTeam.TeamFaul[Quarter].ToString();
+                OppentTeamFaulLabel.Text = OppentTeam.TeamFaul[Quarter].ToString();
             else
-                OppentTeamFaul.Text = OppentTeam.TeamFaul[4].ToString();
+                OppentTeamFaulLabel.Text = OppentTeam.TeamFaul[4].ToString();
 
             /***********************************************************************/
 
@@ -358,30 +358,30 @@ namespace BasketballManagementSystem.BMForm.Input
 
             MyTeam.CortMember.Clear();
 
-            foreach (Player _p in MyCortTeam.Items)
+            foreach (Player p in MyCortTeamListBox.Items)
             {
-                MyTeam.CortMember.Add(_p);
+                MyTeam.CortMember.Add(p);
             }
 
             MyTeam.OutMember.Clear();
 
-            foreach (Player _p in MyOutTeam.Items)
+            foreach (Player p in MyOutTeamListBox.Items)
             {
-                MyTeam.OutMember.Add(_p);
+                MyTeam.OutMember.Add(p);
             }
 
             OppentTeam.CortMember.Clear();
 
-            foreach (Player _p in OppentCortTeam.Items)
+            foreach (Player p in OppentCortTeamListBox.Items)
             {
-                OppentTeam.CortMember.Add(_p);
+                OppentTeam.CortMember.Add(p);
             }
 
             OppentTeam.OutMember.Clear();
 
-            foreach (Player _p in OppentOutTeam.Items)
+            foreach (Player p in OppentOutTeamListBox.Items)
             {
-                OppentTeam.OutMember.Add(_p);
+                OppentTeam.OutMember.Add(p);
             }
 
             /***********************************************************************/
@@ -389,8 +389,8 @@ namespace BasketballManagementSystem.BMForm.Input
 
             /********************************* 点数 **************************************/
 
-            myTeamPointLabel.Text = MyTeam.AllPoint.ToString();
-            oppentTeamPointLabel.Text = OppentTeam.AllPoint.ToString();
+            MyTeamPointLabel.Text = MyTeam.AllPoint.ToString();
+            OppentTeamPointLabel.Text = OppentTeam.AllPoint.ToString();
 
             /***********************************************************************/
 
@@ -405,9 +405,9 @@ namespace BasketballManagementSystem.BMForm.Input
 
             /******************************* DebugWindow **********************************************/
 
-            if ((debugForm == null || debugForm.IsDisposed) && DebugFormVisiable.Checked)
+            if ((debugForm == null || debugForm.IsDisposed) && DebugFormVisiableItem.Checked)
             {
-                DebugFormVisiable.Checked = false;
+                DebugFormVisiableItem.Checked = false;
                 AppSetting.GetInstance().DebugWindowChecked = false;
                 AppSetting.GetInstance().SettingChanged();
             }
@@ -425,7 +425,7 @@ namespace BasketballManagementSystem.BMForm.Input
         /// <param name="e"></param>
         private void ChangeMyTeamButton_Click(object sender, System.EventArgs e)
         {
-            teamChangeEvent.onMyTeamChange(this,  MyCortTeam, MyOutTeam);
+            teamChangeEvent.onMyTeamChange(this,  MyCortTeamListBox, MyOutTeamListBox);
         }
 
         /// <summary>
@@ -435,7 +435,7 @@ namespace BasketballManagementSystem.BMForm.Input
         /// <param name="e"></param>
         private void ChangeOppentTeamButton_Click(object sender, System.EventArgs e)
         {
-            teamChangeEvent.onOppentTeamChange(this, OppentCortTeam, OppentOutTeam);
+            teamChangeEvent.onOppentTeamChange(this, OppentCortTeamListBox, OppentOutTeamListBox);
         }
 
 
@@ -483,7 +483,7 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void CortPicture_Click(object sender, System.EventArgs e)
         {
-            cortEvent.onCortClick(this, CortPicture, sender, e);
+            cortEvent.onCortClick(this, CortPictureBox, sender, e);
         }
 
         /***************************************************************************************************/
@@ -528,12 +528,12 @@ namespace BasketballManagementSystem.BMForm.Input
                 {
                     BMErrorLibrary.BMError.ErrorMessageOutput(exc.ToString());
                 }
-                if (StopGameButton.Enabled)
+                if (StopGameItem.Enabled)
                 {
                     QuarterTimer.StopGame();
-                    StopGameButton.Enabled = false;
-                    RestartGameButton.Enabled = true;
-                    QuarterTimerStop.Image = RestartGraph;
+                    StopGameItem.Enabled = false;
+                    RestartGameItem.Enabled = true;
+                    QuarterTimerStopButton.Image = RestartGraph;
                 }
             }
             else
@@ -558,12 +558,12 @@ namespace BasketballManagementSystem.BMForm.Input
                 {
                     BMErrorLibrary.BMError.ErrorMessageOutput(exc.ToString());
                 }
-                if (StopGameButton.Enabled)
+                if (StopGameItem.Enabled)
                 {
                     QuarterTimer.StopGame();
-                    StopGameButton.Enabled = false;
-                    RestartGameButton.Enabled = true;
-                    QuarterTimerStop.Image = RestartGraph;
+                    StopGameItem.Enabled = false;
+                    RestartGameItem.Enabled = true;
+                    QuarterTimerStopButton.Image = RestartGraph;
                 }
             }
             else
@@ -596,65 +596,65 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void TeamChangeButton_Click(object sender, EventArgs e)
         {
-            List<object> _obj1 = new List<object>();
-            List<object> _obj2 = new List<object>();
+            List<object> obj1 = new List<object>();
+            List<object> obj2 = new List<object>();
 
-            foreach (object _o in MyCortTeam.SelectedItems) _obj1.Add(_o);
-            foreach (object _o in MyOutTeam.SelectedItems) _obj2.Add(_o);
+            foreach (var o in MyCortTeamListBox.SelectedItems) obj1.Add(o);
+            foreach (var o in MyOutTeamListBox.SelectedItems) obj2.Add(o);
 
-            if (MyCortTeam.ExchangeSelectedItem(MyOutTeam))
+            if (MyCortTeamListBox.ExchangeSelectedItem(MyOutTeamListBox))
             {
-                MemberChange _m = new MemberChange();
+                MemberChange m = new MemberChange();
 
-                foreach (Player p in _obj1)
+                foreach (Player p in obj1)
                 {
-                    _m.ChangedCortMembers.Add(p);
+                    m.ChangedCortMembers.Add(p);
                 }
 
-                foreach (Player p in _obj2)
+                foreach (Player p in obj2)
                 {
-                    _m.ChangedOutMembers.Add(p);
+                    m.ChangedOutMembers.Add(p);
                 }
 
-                _m.ChengedMemberTime = DateTime.Now;
-                _m.RemainingTime = QuarterTimer.remainingTime;
-                _m.Quarter = Quarter;
-                Game.MyTeam.MemberChange.Add(_m);
+                m.ChengedMemberTime = DateTime.Now;
+                m.RemainingTime = QuarterTimer.remainingTime;
+                m.Quarter = Quarter;
+                Game.MyTeam.MemberChange.Add(m);
             }
 
-            _obj1.Clear();
-            _obj2.Clear();
+            obj1.Clear();
+            obj2.Clear();
 
-            foreach (object _o in OppentCortTeam.SelectedItems) _obj1.Add(_o);
-            foreach (object _o in OppentOutTeam.SelectedItems) _obj2.Add(_o);
+            foreach (object o in OppentCortTeamListBox.SelectedItems) obj1.Add(o);
+            foreach (object o in OppentOutTeamListBox.SelectedItems) obj2.Add(o);
 
-            if (OppentCortTeam.ExchangeSelectedItem(OppentOutTeam))
+            if (OppentCortTeamListBox.ExchangeSelectedItem(OppentOutTeamListBox))
             {
-                MemberChange _m = new MemberChange();
+                MemberChange m = new MemberChange();
 
-                foreach (Player p in _obj1)
+                foreach (Player p in obj1)
                 {
-                    _m.ChangedCortMembers.Add(p);
+                    m.ChangedCortMembers.Add(p);
                 }
 
-                foreach (Player p in _obj2)
+                foreach (Player p in obj2)
                 {
-                    _m.ChangedOutMembers.Add(p);
+                    m.ChangedOutMembers.Add(p);
                 }
 
-                _m.ChengedMemberTime = DateTime.Now;
-                _m.RemainingTime = QuarterTimer.remainingTime;
-                _m.Quarter = Quarter;
-                Game.OppentTeam.MemberChange.Add(_m);
+                m.ChengedMemberTime = DateTime.Now;
+                m.RemainingTime = QuarterTimer.remainingTime;
+                m.Quarter = Quarter;
+                Game.OppentTeam.MemberChange.Add(m);
             }
 
-            PlayerListSortEvent.Sort(MyCortTeam);
+            PlayerListSortEvent.Sort(MyCortTeamListBox);
 
-            PlayerListSortEvent.Sort(MyOutTeam);
+            PlayerListSortEvent.Sort(MyOutTeamListBox);
 
-            PlayerListSortEvent.Sort(OppentCortTeam);
+            PlayerListSortEvent.Sort(OppentCortTeamListBox);
 
-            PlayerListSortEvent.Sort(OppentOutTeam);
+            PlayerListSortEvent.Sort(OppentOutTeamListBox);
         }
 
         /***********************************************************************************************************/
@@ -670,14 +670,14 @@ namespace BasketballManagementSystem.BMForm.Input
         {
             QuarterTimer.StartGame();
 
-            NextQuarterButton.Enabled = true;
+            NextQuarterItem.Enabled = true;
 
-            GameEndButton.Enabled = true;
+            GameEndItem.Enabled = true;
             //ゲーム開始ボタンはゲーム終了まで操作不能にしておく
-            StartGame.Enabled = false;
+            StartGameItem.Enabled = false;
 
-            StopGameButton.Enabled = true;
-            QuarterTimerStop.Enabled = true;
+            StopGameItem.Enabled = true;
+            QuarterTimerStopButton.Enabled = true;
             Game.StartTime = QuarterTimer.startTime;
         }
 
@@ -710,9 +710,9 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void GameEndButton_Click(object sender, EventArgs e)
         {
-            StartGame.Enabled = true;
-            NextQuarterButton.Enabled = false;
-            StopGameButton.Enabled = false;
+            StartGameItem.Enabled = true;
+            NextQuarterItem.Enabled = false;
+            StopGameItem.Enabled = false;
             QuarterTimer.EndGame();
             Game.EndTime = QuarterTimer.endTime;
         }
@@ -739,19 +739,19 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void QuarterTimerStop_Click(object sender, EventArgs e)
         {
-            if (StopGameButton.Enabled)
+            if (StopGameItem.Enabled)
             {
                 QuarterTimer.StopGame();
-                StopGameButton.Enabled = false;
-                RestartGameButton.Enabled = true;
-                QuarterTimerStop.Image = RestartGraph;
+                StopGameItem.Enabled = false;
+                RestartGameItem.Enabled = true;
+                QuarterTimerStopButton.Image = RestartGraph;
             }
             else
             {
                 QuarterTimer.RestartGame();
-                StopGameButton.Enabled = true;
-                RestartGameButton.Enabled = false;
-                QuarterTimerStop.Image = StopGraph;
+                StopGameItem.Enabled = true;
+                RestartGameItem.Enabled = false;
+                QuarterTimerStopButton.Image = StopGraph;
             }
         }
 
@@ -812,11 +812,12 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void CreateNewData_Click(object sender, EventArgs e)
         {
-            //TODO:メモリリークの可能性もあるのでこの初期化はかなりまずい
+            //TODO:メモリリークの可能性あり? 要検証
             this.Controls.Clear();
             Game = new Game();
             InitializeComponent();
             Init();
+
         }
 
         private void Exit_Click(object sender, EventArgs e)
@@ -899,7 +900,7 @@ namespace BasketballManagementSystem.BMForm.Input
             ColorDialog colorDialog1 = new ColorDialog();
 
             // 初期選択する色を設定する
-            colorDialog1.Color = myTeamPointLabel.BackColor;
+            colorDialog1.Color = MyTeamPointLabel.BackColor;
 
             // カスタム カラーを表示した状態にする (初期値 false)
             colorDialog1.FullOpen = true;
@@ -916,8 +917,8 @@ namespace BasketballManagementSystem.BMForm.Input
             // ダイアログを表示し、戻り値が [OK] の場合は選択した色を textBox1 に適用する
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
-                myTeamPointLabel.BackColor = colorDialog1.Color;
-                oppentTeamPointLabel.BackColor = colorDialog1.Color;
+                MyTeamPointLabel.BackColor = colorDialog1.Color;
+                OppentTeamPointLabel.BackColor = colorDialog1.Color;
                 AppSetting.GetInstance().FormInputPointBackGroundColor = colorDialog1.Color;
             }
 
@@ -933,8 +934,8 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void ChangePointLabelColorDefault_Click(object sender, EventArgs e)
         {
-            myTeamPointLabel.BackColor = Color.Empty;
-            oppentTeamPointLabel.BackColor = Color.Empty;
+            MyTeamPointLabel.BackColor = Color.Empty;
+            OppentTeamPointLabel.BackColor = Color.Empty;
             AppSetting.GetInstance().FormInputPointBackGroundColor = Color.Empty;
         }
 
@@ -943,7 +944,7 @@ namespace BasketballManagementSystem.BMForm.Input
             ColorDialog colorDialog1 = new ColorDialog();
 
             // 初期選択する色を設定する
-            colorDialog1.Color = myTeamPointLabel.BackColor;
+            colorDialog1.Color = MyTeamPointLabel.BackColor;
 
             // カスタム カラーを表示した状態にする (初期値 false)
             colorDialog1.FullOpen = true;
@@ -960,7 +961,7 @@ namespace BasketballManagementSystem.BMForm.Input
             // ダイアログを表示し、戻り値が [OK] の場合は選択した色を textBox1 に適用する
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
-                foreach (Button b in colorChangeButton)
+                foreach (var b in colorChangeButton)
                 {
                     b.BackColor = colorDialog1.Color;
                 }
@@ -974,7 +975,7 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void ChangeButtonColorDefault_Click(object sender, EventArgs e)
         {
-            foreach (Button b in colorChangeButton)
+            foreach (var b in colorChangeButton)
             {
                 b.BackColor = Color.Empty;
                 b.UseVisualStyleBackColor = true;
@@ -987,7 +988,7 @@ namespace BasketballManagementSystem.BMForm.Input
             ColorDialog colorDialog1 = new ColorDialog();
 
             // 初期選択する色を設定する
-            colorDialog1.Color = myTeamPointLabel.BackColor;
+            colorDialog1.Color = MyTeamPointLabel.BackColor;
 
             // カスタム カラーを表示した状態にする (初期値 false)
             colorDialog1.FullOpen = true;
@@ -1004,7 +1005,7 @@ namespace BasketballManagementSystem.BMForm.Input
             // ダイアログを表示し、戻り値が [OK] の場合は選択した色を textBox1 に適用する
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
-                foreach (Button b in colorChangeButton)
+                foreach (var b in colorChangeButton)
                 {
                     b.ForeColor = colorDialog1.Color;
                 }
@@ -1018,7 +1019,7 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void ChangeButtonTextColorDefault_Click(object sender, EventArgs e)
         {
-            foreach (Button b in colorChangeButton)
+            foreach (var b in colorChangeButton)
             {
                 b.ForeColor = Color.Black;
                 b.UseVisualStyleBackColor = true;

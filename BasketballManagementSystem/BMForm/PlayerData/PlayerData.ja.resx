@@ -127,38 +127,23 @@
   <data name="label1.Text" xml:space="preserve">
     <value>全体データ</value>
   </data>
-  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>746, 330</value>
-  </data>
-  <data name="quarter1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>752, 342</value>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 159</value>
   </data>
   <data name="quarter1.Text" xml:space="preserve">
     <value>第1クォーター</value>
   </data>
-  <data name="quarter2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>752, 342</value>
+  <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>746, 330</value>
   </data>
   <data name="quarter2.Text" xml:space="preserve">
     <value>第2クォーター</value>
   </data>
-  <data name="quarter3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>752, 342</value>
-  </data>
   <data name="quarter3.Text" xml:space="preserve">
     <value>第3クォーター</value>
   </data>
-  <data name="quarter4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>752, 342</value>
-  </data>
   <data name="quarter4.Text" xml:space="preserve">
     <value>第4クォーター</value>
-  </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>137, 159</value>
-  </data>
-  <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>760, 368</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>135, 144</value>
@@ -171,6 +156,24 @@
   </data>
   <data name="dataGridView5.Location" type="System.Drawing.Point, System.Drawing">
     <value>137, 58</value>
+  </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="PrintFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="PrintFormItem.Text" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="PrintPreviewItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="PrintPreviewItem.Text" xml:space="preserve">
+    <value>印刷プレビュー</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>プレイヤー情報</value>

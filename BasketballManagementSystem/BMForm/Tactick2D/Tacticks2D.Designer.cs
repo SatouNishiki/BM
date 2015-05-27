@@ -29,53 +29,53 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tacticks2D));
-            this.Cort = new System.Windows.Forms.PictureBox();
-            this.DrawActionKinds = new System.Windows.Forms.ComboBox();
-            this.MyTeamList = new System.Windows.Forms.ListBox();
-            this.OppentTeamList = new System.Windows.Forms.ListBox();
+            this.CortPictureBox = new System.Windows.Forms.PictureBox();
+            this.DrawActionKindsComboBox = new System.Windows.Forms.ComboBox();
+            this.MyTeamListBox = new System.Windows.Forms.ListBox();
+            this.OppentTeamListBox = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.InformationText = new System.Windows.Forms.RichTextBox();
+            this.InformationRichTextBox = new System.Windows.Forms.RichTextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.printForm = new System.Windows.Forms.ToolStripMenuItem();
-            this.printPreview = new System.Windows.Forms.ToolStripMenuItem();
+            this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintFormItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintPreviewItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.valuationBasis = new System.Windows.Forms.ToolStripMenuItem();
-            this.percent = new System.Windows.Forms.ToolStripTextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Cort)).BeginInit();
+            this.FaluationBasisItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PercentTextBox = new System.Windows.Forms.ToolStripTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.CortPictureBox)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Cort
+            // CortPictureBox
             // 
-            resources.ApplyResources(this.Cort, "Cort");
-            this.Cort.Name = "Cort";
-            this.Cort.TabStop = false;
-            this.Cort.Click += new System.EventHandler(this.Cort_Click);
-            this.Cort.Paint += new System.Windows.Forms.PaintEventHandler(this.Cort_Paint);
+            resources.ApplyResources(this.CortPictureBox, "CortPictureBox");
+            this.CortPictureBox.Name = "CortPictureBox";
+            this.CortPictureBox.TabStop = false;
+            this.CortPictureBox.Click += new System.EventHandler(this.Cort_Click);
+            this.CortPictureBox.Paint += new System.Windows.Forms.PaintEventHandler(this.Cort_Paint);
             // 
-            // DrawActionKinds
+            // DrawActionKindsComboBox
             // 
-            resources.ApplyResources(this.DrawActionKinds, "DrawActionKinds");
-            this.DrawActionKinds.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.DrawActionKinds.FormattingEnabled = true;
-            this.DrawActionKinds.Name = "DrawActionKinds";
-            this.DrawActionKinds.SelectedIndexChanged += new System.EventHandler(this.DrawActionKinds_SelectedIndexChanged);
+            this.DrawActionKindsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DrawActionKindsComboBox.FormattingEnabled = true;
+            resources.ApplyResources(this.DrawActionKindsComboBox, "DrawActionKindsComboBox");
+            this.DrawActionKindsComboBox.Name = "DrawActionKindsComboBox";
+            this.DrawActionKindsComboBox.SelectedIndexChanged += new System.EventHandler(this.DrawActionKinds_SelectedIndexChanged);
             // 
-            // MyTeamList
+            // MyTeamListBox
             // 
-            resources.ApplyResources(this.MyTeamList, "MyTeamList");
-            this.MyTeamList.FormattingEnabled = true;
-            this.MyTeamList.Name = "MyTeamList";
-            this.MyTeamList.SelectedIndexChanged += new System.EventHandler(this.TeamList_SelectedIndexChanged);
+            this.MyTeamListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.MyTeamListBox, "MyTeamListBox");
+            this.MyTeamListBox.Name = "MyTeamListBox";
+            this.MyTeamListBox.SelectedIndexChanged += new System.EventHandler(this.TeamList_SelectedIndexChanged);
             // 
-            // OppentTeamList
+            // OppentTeamListBox
             // 
-            resources.ApplyResources(this.OppentTeamList, "OppentTeamList");
-            this.OppentTeamList.FormattingEnabled = true;
-            this.OppentTeamList.Name = "OppentTeamList";
-            this.OppentTeamList.SelectedIndexChanged += new System.EventHandler(this.TeamList_SelectedIndexChanged);
+            this.OppentTeamListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.OppentTeamListBox, "OppentTeamListBox");
+            this.OppentTeamListBox.Name = "OppentTeamListBox";
+            this.OppentTeamListBox.SelectedIndexChanged += new System.EventHandler(this.TeamList_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -87,77 +87,77 @@
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
-            // InformationText
+            // InformationRichTextBox
             // 
-            resources.ApplyResources(this.InformationText, "InformationText");
-            this.InformationText.BackColor = System.Drawing.SystemColors.Window;
-            this.InformationText.Name = "InformationText";
-            this.InformationText.ReadOnly = true;
+            this.InformationRichTextBox.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.InformationRichTextBox, "InformationRichTextBox");
+            this.InformationRichTextBox.Name = "InformationRichTextBox";
+            this.InformationRichTextBox.ReadOnly = true;
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
+            this.FileToolStripMenuItem,
             this.configToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
-            // fileToolStripMenuItem
+            // FileToolStripMenuItem
             // 
-            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.printForm,
-            this.printPreview});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.PrintFormItem,
+            this.PrintPreviewItem});
+            this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
-            // printForm
+            // PrintFormItem
             // 
-            resources.ApplyResources(this.printForm, "printForm");
-            this.printForm.Name = "printForm";
-            this.printForm.Click += new System.EventHandler(this.printForm_Click);
+            this.PrintFormItem.Name = "PrintFormItem";
+            resources.ApplyResources(this.PrintFormItem, "PrintFormItem");
+            this.PrintFormItem.Click += new System.EventHandler(this.printForm_Click);
             // 
-            // printPreview
+            // PrintPreviewItem
             // 
-            resources.ApplyResources(this.printPreview, "printPreview");
-            this.printPreview.Name = "printPreview";
-            this.printPreview.Click += new System.EventHandler(this.printPreview_Click);
+            this.PrintPreviewItem.Name = "PrintPreviewItem";
+            resources.ApplyResources(this.PrintPreviewItem, "PrintPreviewItem");
+            this.PrintPreviewItem.Click += new System.EventHandler(this.printPreview_Click);
             // 
             // configToolStripMenuItem
             // 
-            resources.ApplyResources(this.configToolStripMenuItem, "configToolStripMenuItem");
             this.configToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.valuationBasis});
+            this.FaluationBasisItem});
             this.configToolStripMenuItem.Name = "configToolStripMenuItem";
+            resources.ApplyResources(this.configToolStripMenuItem, "configToolStripMenuItem");
             // 
-            // valuationBasis
+            // FaluationBasisItem
             // 
-            resources.ApplyResources(this.valuationBasis, "valuationBasis");
-            this.valuationBasis.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.percent});
-            this.valuationBasis.Name = "valuationBasis";
+            this.FaluationBasisItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.PercentTextBox});
+            this.FaluationBasisItem.Name = "FaluationBasisItem";
+            resources.ApplyResources(this.FaluationBasisItem, "FaluationBasisItem");
             // 
-            // percent
+            // PercentTextBox
             // 
-            resources.ApplyResources(this.percent, "percent");
-            this.percent.Name = "percent";
-            this.percent.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.percent_KeyPress);
-            this.percent.TextChanged += new System.EventHandler(this.percent_TextChanged);
+            this.PercentTextBox.Name = "PercentTextBox";
+            resources.ApplyResources(this.PercentTextBox, "PercentTextBox");
+            this.PercentTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.percent_KeyPress);
+            this.PercentTextBox.TextChanged += new System.EventHandler(this.percent_TextChanged);
             // 
             // Tacticks2D
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.InformationText);
+            this.Controls.Add(this.InformationRichTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.OppentTeamList);
-            this.Controls.Add(this.MyTeamList);
-            this.Controls.Add(this.DrawActionKinds);
-            this.Controls.Add(this.Cort);
+            this.Controls.Add(this.OppentTeamListBox);
+            this.Controls.Add(this.MyTeamListBox);
+            this.Controls.Add(this.DrawActionKindsComboBox);
+            this.Controls.Add(this.CortPictureBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Tacticks2D";
-            ((System.ComponentModel.ISupportInitialize)(this.Cort)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CortPictureBox)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -167,19 +167,19 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox Cort;
-        private System.Windows.Forms.ComboBox DrawActionKinds;
-        private System.Windows.Forms.ListBox MyTeamList;
-        private System.Windows.Forms.ListBox OppentTeamList;
+        private System.Windows.Forms.PictureBox CortPictureBox;
+        private System.Windows.Forms.ComboBox DrawActionKindsComboBox;
+        private System.Windows.Forms.ListBox MyTeamListBox;
+        private System.Windows.Forms.ListBox OppentTeamListBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RichTextBox InformationText;
+        private System.Windows.Forms.RichTextBox InformationRichTextBox;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem printForm;
-        private System.Windows.Forms.ToolStripMenuItem printPreview;
+        private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem PrintFormItem;
+        private System.Windows.Forms.ToolStripMenuItem PrintPreviewItem;
         private System.Windows.Forms.ToolStripMenuItem configToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem valuationBasis;
-        private System.Windows.Forms.ToolStripTextBox percent;
+        private System.Windows.Forms.ToolStripMenuItem FaluationBasisItem;
+        private System.Windows.Forms.ToolStripTextBox PercentTextBox;
     }
 }

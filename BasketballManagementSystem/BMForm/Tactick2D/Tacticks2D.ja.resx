@@ -497,16 +497,16 @@
   <data name="fileToolStripMenuItem.Text" xml:space="preserve">
     <value>ファイル</value>
   </data>
-  <data name="configToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
-  </data>
-  <data name="configToolStripMenuItem.Text" xml:space="preserve">
-    <value>設定</value>
-  </data>
   <data name="valuationBasis.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 22</value>
   </data>
   <data name="valuationBasis.Text" xml:space="preserve">
     <value>評価基準</value>
+  </data>
+  <data name="configToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
+  </data>
+  <data name="configToolStripMenuItem.Text" xml:space="preserve">
+    <value>設定</value>
   </data>
 </root>

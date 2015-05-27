@@ -113,12 +113,12 @@ namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
             List<Player> l1 = team.CortMember;
             List<Player> l2 = team.OutMember;
 
-            foreach (Player p in l1)
+            foreach (var p in l1)
             {
                 cortMemberList.Items.Add(p);     
             }
 
-            foreach (Player p in l2)
+            foreach (var p in l2)
             {
                 outMemberList.Items.Add(p);
             }

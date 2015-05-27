@@ -76,10 +76,10 @@ namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
 
                 //listboxにアイテム追加
                 selectPointList.Items.Add((new Shoot2P()).ActionName);
-                selectPointList.Items.Add((new Shoot3P()).ActionName);
-                selectPointList.Items.Add((new FreeThrow()).ActionName);
                 selectPointList.Items.Add((new Shoot2PMiss()).ActionName);
+                selectPointList.Items.Add((new Shoot3P()).ActionName);
                 selectPointList.Items.Add((new Shoot3PMiss()).ActionName);
+                selectPointList.Items.Add((new FreeThrow()).ActionName);
                 selectPointList.Items.Add((new FreeThrowMiss()).ActionName);
                 selectPointList.Items.Add(cancelString);
 

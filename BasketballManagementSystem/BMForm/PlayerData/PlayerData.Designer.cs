@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerData));
-            this.MyTeamList = new System.Windows.Forms.ListBox();
-            this.OppentTeamList = new System.Windows.Forms.ListBox();
+            this.MyTeamListBox = new System.Windows.Forms.ListBox();
+            this.OppentTeamListBox = new System.Windows.Forms.ListBox();
             this.SelectPlayer = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -100,9 +100,9 @@
             this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.ファイルToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PrintForm = new System.Windows.Forms.ToolStripMenuItem();
-            this.PrintPreview = new System.Windows.Forms.ToolStripMenuItem();
+            this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintFormItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintPreviewItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1.SuspendLayout();
             this.quarter1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -116,19 +116,19 @@
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // MyTeamList
+            // MyTeamListBox
             // 
-            this.MyTeamList.FormattingEnabled = true;
-            resources.ApplyResources(this.MyTeamList, "MyTeamList");
-            this.MyTeamList.Name = "MyTeamList";
-            this.MyTeamList.SelectedIndexChanged += new System.EventHandler(this.MyTeamList_SelectedIndexChanged);
+            resources.ApplyResources(this.MyTeamListBox, "MyTeamListBox");
+            this.MyTeamListBox.FormattingEnabled = true;
+            this.MyTeamListBox.Name = "MyTeamListBox";
+            this.MyTeamListBox.SelectedIndexChanged += new System.EventHandler(this.MyTeamList_SelectedIndexChanged);
             // 
-            // OppentTeamList
+            // OppentTeamListBox
             // 
-            this.OppentTeamList.FormattingEnabled = true;
-            resources.ApplyResources(this.OppentTeamList, "OppentTeamList");
-            this.OppentTeamList.Name = "OppentTeamList";
-            this.OppentTeamList.SelectedIndexChanged += new System.EventHandler(this.OppentTeamList_SelectedIndexChanged);
+            resources.ApplyResources(this.OppentTeamListBox, "OppentTeamListBox");
+            this.OppentTeamListBox.FormattingEnabled = true;
+            this.OppentTeamListBox.Name = "OppentTeamListBox";
+            this.OppentTeamListBox.SelectedIndexChanged += new System.EventHandler(this.OppentTeamList_SelectedIndexChanged);
             // 
             // SelectPlayer
             // 
@@ -142,23 +142,24 @@
             // 
             // tabControl1
             // 
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.quarter1);
             this.tabControl1.Controls.Add(this.quarter2);
             this.tabControl1.Controls.Add(this.quarter3);
             this.tabControl1.Controls.Add(this.quarter4);
-            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             // 
             // quarter1
             // 
-            this.quarter1.Controls.Add(this.dataGridView1);
             resources.ApplyResources(this.quarter1, "quarter1");
+            this.quarter1.Controls.Add(this.dataGridView1);
             this.quarter1.Name = "quarter1";
             this.quarter1.UseVisualStyleBackColor = true;
             // 
             // dataGridView1
             // 
+            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -174,7 +175,6 @@
             this.Column9,
             this.Column10,
             this.Column11});
-            resources.ApplyResources(this.dataGridView1, "dataGridView1");
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 21;
@@ -258,13 +258,14 @@
             // 
             // quarter2
             // 
-            this.quarter2.Controls.Add(this.dataGridView2);
             resources.ApplyResources(this.quarter2, "quarter2");
+            this.quarter2.Controls.Add(this.dataGridView2);
             this.quarter2.Name = "quarter2";
             this.quarter2.UseVisualStyleBackColor = true;
             // 
             // dataGridView2
             // 
+            resources.ApplyResources(this.dataGridView2, "dataGridView2");
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -280,7 +281,6 @@
             this.dataGridViewTextBoxColumn9,
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11});
-            resources.ApplyResources(this.dataGridView2, "dataGridView2");
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             this.dataGridView2.RowTemplate.Height = 21;
@@ -353,13 +353,14 @@
             // 
             // quarter3
             // 
-            this.quarter3.Controls.Add(this.dataGridView3);
             resources.ApplyResources(this.quarter3, "quarter3");
+            this.quarter3.Controls.Add(this.dataGridView3);
             this.quarter3.Name = "quarter3";
             this.quarter3.UseVisualStyleBackColor = true;
             // 
             // dataGridView3
             // 
+            resources.ApplyResources(this.dataGridView3, "dataGridView3");
             this.dataGridView3.AllowUserToAddRows = false;
             this.dataGridView3.AllowUserToDeleteRows = false;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -375,7 +376,6 @@
             this.dataGridViewTextBoxColumn20,
             this.dataGridViewTextBoxColumn21,
             this.dataGridViewTextBoxColumn22});
-            resources.ApplyResources(this.dataGridView3, "dataGridView3");
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.ReadOnly = true;
             this.dataGridView3.RowTemplate.Height = 21;
@@ -448,13 +448,14 @@
             // 
             // quarter4
             // 
-            this.quarter4.Controls.Add(this.dataGridView4);
             resources.ApplyResources(this.quarter4, "quarter4");
+            this.quarter4.Controls.Add(this.dataGridView4);
             this.quarter4.Name = "quarter4";
             this.quarter4.UseVisualStyleBackColor = true;
             // 
             // dataGridView4
             // 
+            resources.ApplyResources(this.dataGridView4, "dataGridView4");
             this.dataGridView4.AllowUserToAddRows = false;
             this.dataGridView4.AllowUserToDeleteRows = false;
             this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -470,7 +471,6 @@
             this.dataGridViewTextBoxColumn31,
             this.dataGridViewTextBoxColumn32,
             this.dataGridViewTextBoxColumn33});
-            resources.ApplyResources(this.dataGridView4, "dataGridView4");
             this.dataGridView4.Name = "dataGridView4";
             this.dataGridView4.ReadOnly = true;
             this.dataGridView4.RowTemplate.Height = 21;
@@ -548,6 +548,7 @@
             // 
             // dataGridView5
             // 
+            resources.ApplyResources(this.dataGridView5, "dataGridView5");
             this.dataGridView5.AllowUserToAddRows = false;
             this.dataGridView5.AllowUserToDeleteRows = false;
             this.dataGridView5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -562,7 +563,6 @@
             this.Column20,
             this.Column21,
             this.Column22});
-            resources.ApplyResources(this.dataGridView5, "dataGridView5");
             this.dataGridView5.Name = "dataGridView5";
             this.dataGridView5.ReadOnly = true;
             this.dataGridView5.RowTemplate.Height = 21;
@@ -657,30 +657,30 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ファイルToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FileToolStripMenuItem});
             this.menuStrip1.Name = "menuStrip1";
             // 
-            // ファイルToolStripMenuItem
+            // FileToolStripMenuItem
             // 
-            this.ファイルToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.PrintForm,
-            this.PrintPreview});
-            this.ファイルToolStripMenuItem.Name = "ファイルToolStripMenuItem";
-            resources.ApplyResources(this.ファイルToolStripMenuItem, "ファイルToolStripMenuItem");
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
+            this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.PrintFormItem,
+            this.PrintPreviewItem});
+            this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
             // 
-            // PrintForm
+            // PrintFormItem
             // 
-            this.PrintForm.Name = "PrintForm";
-            resources.ApplyResources(this.PrintForm, "PrintForm");
-            this.PrintForm.Click += new System.EventHandler(this.PrintForm_Click);
+            resources.ApplyResources(this.PrintFormItem, "PrintFormItem");
+            this.PrintFormItem.Name = "PrintFormItem";
+            this.PrintFormItem.Click += new System.EventHandler(this.PrintForm_Click);
             // 
-            // PrintPreview
+            // PrintPreviewItem
             // 
-            this.PrintPreview.Name = "PrintPreview";
-            resources.ApplyResources(this.PrintPreview, "PrintPreview");
-            this.PrintPreview.Click += new System.EventHandler(this.PrintPreview_Click);
+            resources.ApplyResources(this.PrintPreviewItem, "PrintPreviewItem");
+            this.PrintPreviewItem.Name = "PrintPreviewItem";
+            this.PrintPreviewItem.Click += new System.EventHandler(this.PrintPreview_Click);
             // 
             // PlayerData
             // 
@@ -691,8 +691,8 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.SelectPlayer);
-            this.Controls.Add(this.OppentTeamList);
-            this.Controls.Add(this.MyTeamList);
+            this.Controls.Add(this.OppentTeamListBox);
+            this.Controls.Add(this.MyTeamListBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "PlayerData";
@@ -715,8 +715,8 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox MyTeamList;
-        private System.Windows.Forms.ListBox OppentTeamList;
+        private System.Windows.Forms.ListBox MyTeamListBox;
+        private System.Windows.Forms.ListBox OppentTeamListBox;
         private System.Windows.Forms.Label SelectPlayer;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TabControl tabControl1;
@@ -786,8 +786,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem ファイルToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem PrintForm;
-        private System.Windows.Forms.ToolStripMenuItem PrintPreview;
+        private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem PrintFormItem;
+        private System.Windows.Forms.ToolStripMenuItem PrintPreviewItem;
     }
 }

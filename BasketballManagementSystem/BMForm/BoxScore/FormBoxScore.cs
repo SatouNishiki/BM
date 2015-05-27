@@ -112,12 +112,12 @@ namespace BasketballManagementSystem.BMForm.BoxScore
 
             System.Collections.ArrayList ctrs = new System.Collections.ArrayList();
 
-            object _obj;
+            object obj;
 
-            for (int _i = number1; _i <= number2; _i++)
+            for (var i = number1; i <= number2; i++)
             {
-                _obj = FindControlByFieldName(frm, name + _i.ToString());
-                ctrs.Add(_obj);
+                obj = FindControlByFieldName(frm, name + i.ToString());
+                ctrs.Add(obj);
             }
 
             if (ctrs.Count == 0)
@@ -141,9 +141,9 @@ namespace BasketballManagementSystem.BMForm.BoxScore
         /// 見つからなかった時は、null(VB.NETではNothing)。</returns>
         public static object FindControlByFieldName(Form frm, string name)
         {
-            System.Type _t = frm.GetType();
+            Type t = frm.GetType();
 
-            System.Reflection.FieldInfo fi = _t.GetField(
+            System.Reflection.FieldInfo fi = t.GetField(
                 name,
                 System.Reflection.BindingFlags.Public |
                 System.Reflection.BindingFlags.NonPublic |
@@ -171,10 +171,10 @@ namespace BasketballManagementSystem.BMForm.BoxScore
                 }
 
                 //画面上のロケーションでソートする
-                int _s1 = ((Label)x).Location.Y;
-                int _s2 = ((Label)y).Location.Y;
+                int s1 = ((Label)x).Location.Y;
+                int s2 = ((Label)y).Location.Y;
 
-                return _s1.CompareTo(_s2);
+                return s1.CompareTo(s2);
             }
         }
 
@@ -222,119 +222,119 @@ namespace BasketballManagementSystem.BMForm.BoxScore
         private void FaulLineInit()
         {
 
-            Label[] _ar1 = (Label[])GetControlArrayByName(this, "label", 109, 126);
-            Label[] _ar2 = (Label[])GetControlArrayByName(this, "label", 127, 144);
-            Label[] _ar3 = (Label[])GetControlArrayByName(this, "label", 181, 198);
-            Label[] _ar4 = (Label[])GetControlArrayByName(this, "label", 163, 180);
-            Label[] _ar5 = (Label[])GetControlArrayByName(this, "label", 145, 162);
+            Label[] ar1 = (Label[])GetControlArrayByName(this, "label", 109, 126);
+            Label[] ar2 = (Label[])GetControlArrayByName(this, "label", 127, 144);
+            Label[] ar3 = (Label[])GetControlArrayByName(this, "label", 181, 198);
+            Label[] ar4 = (Label[])GetControlArrayByName(this, "label", 163, 180);
+            Label[] ar5 = (Label[])GetControlArrayByName(this, "label", 145, 162);
 
-            Label[] _ar6 = (Label[])GetControlArrayByName(this, "label", 199, 216);
-            Label[] _ar7 = (Label[])GetControlArrayByName(this, "label", 253, 270);
-            Label[] _ar8 = (Label[])GetControlArrayByName(this, "label", 271, 288);
-            Label[] _ar9 = (Label[])GetControlArrayByName(this, "label", 235, 252);
-            Label[] _ar10 = (Label[])GetControlArrayByName(this, "label", 217, 234);
+            Label[] ar6 = (Label[])GetControlArrayByName(this, "label", 199, 216);
+            Label[] ar7 = (Label[])GetControlArrayByName(this, "label", 253, 270);
+            Label[] ar8 = (Label[])GetControlArrayByName(this, "label", 271, 288);
+            Label[] ar9 = (Label[])GetControlArrayByName(this, "label", 235, 252);
+            Label[] ar10 = (Label[])GetControlArrayByName(this, "label", 217, 234);
 
-            for (int _i = 0; _i < PlayerNumber; _i++)
+            for (var i = 0; i < PlayerNumber; i++)
             {
-                myFaulLines[0, _i] = _ar1[_i];
+                myFaulLines[0, i] = ar1[i];
             }
 
-            for (int _i = 0; _i < PlayerNumber; _i++)
+            for (var i = 0; i < PlayerNumber; i++)
             {
-                myFaulLines[1, _i] = _ar2[_i];
+                myFaulLines[1, i] = ar2[i];
             }
 
-            for (int _i = 0; _i < PlayerNumber; _i++)
+            for (var i = 0; i < PlayerNumber; i++)
             {
-                myFaulLines[2, _i] = _ar3[_i];
+                myFaulLines[2, i] = ar3[i];
             }
 
-            for (int _i = 0; _i < PlayerNumber; _i++)
+            for (var i = 0; i < PlayerNumber; i++)
             {
-                myFaulLines[3, _i] = _ar4[_i];
+                myFaulLines[3, i] = ar4[i];
             }
 
-            for (int _i = 0; _i < PlayerNumber; _i++)
+            for (var i = 0; i < PlayerNumber; i++)
             {
-                myFaulLines[4, _i] = _ar5[_i];
+                myFaulLines[4, i] = ar5[i];
             }
 
-            for (int _i = 0; _i < PlayerNumber; _i++)
+            for (var i = 0; i < PlayerNumber; i++)
             {
-                oppentFaulLines[0, _i] = _ar6[_i];
+                oppentFaulLines[0, i] = ar6[i];
             }
 
-            for (int _i = 0; _i < PlayerNumber; _i++)
+            for (var i = 0; i < PlayerNumber; i++)
             {
-                oppentFaulLines[1, _i] = _ar7[_i];
+                oppentFaulLines[1, i] = ar7[i];
             }
 
-            for (int _i = 0; _i < PlayerNumber; _i++)
+            for (var i = 0; i < PlayerNumber; i++)
             {
-                oppentFaulLines[2, _i] = _ar8[_i];
+                oppentFaulLines[2, i] = ar8[i];
             }
 
-            for (int _i = 0; _i < PlayerNumber; _i++)
+            for (var i = 0; i < PlayerNumber; i++)
             {
-                oppentFaulLines[3, _i] = _ar9[_i];
+                oppentFaulLines[3, i] = ar9[i];
             }
 
-            for (int _i = 0; _i < PlayerNumber; _i++)
+            for (var i = 0; i < PlayerNumber; i++)
             {
-                oppentFaulLines[4, _i] = _ar10[_i];
+                oppentFaulLines[4, i] = ar10[i];
             }
         }
 
         private void TeamFaulLabelInit()
         {
-            Label[] _ar1 = (Label[])GetControlArrayByName(this, "label", 289, 292);
-            Label[] _ar2 = (Label[])GetControlArrayByName(this, "label", 293, 296);
-            Label[] _ar3 = (Label[])GetControlArrayByName(this, "label", 297, 300);
-            Label[] _ar4 = (Label[])GetControlArrayByName(this, "label", 301, 304);
+            Label[] ar1 = (Label[])GetControlArrayByName(this, "label", 289, 292);
+            Label[] ar2 = (Label[])GetControlArrayByName(this, "label", 293, 296);
+            Label[] ar3 = (Label[])GetControlArrayByName(this, "label", 297, 300);
+            Label[] ar4 = (Label[])GetControlArrayByName(this, "label", 301, 304);
 
-            Label[] _ar5 = (Label[])GetControlArrayByName(this, "label", 305, 308);
-            Label[] _ar6 = (Label[])GetControlArrayByName(this, "label", 309, 312);
-            Label[] _ar7 = (Label[])GetControlArrayByName(this, "label", 313, 316);
-            Label[] _ar8 = (Label[])GetControlArrayByName(this, "label", 317, 320);
+            Label[] ar5 = (Label[])GetControlArrayByName(this, "label", 305, 308);
+            Label[] ar6 = (Label[])GetControlArrayByName(this, "label", 309, 312);
+            Label[] ar7 = (Label[])GetControlArrayByName(this, "label", 313, 316);
+            Label[] ar8 = (Label[])GetControlArrayByName(this, "label", 317, 320);
 
-            for (int _i = 0; _i < 4; _i++)
+            for (var i = 0; i < 4; i++)
             {
-                myTeamFaulLabels[0, _i] = _ar1[_i];
+                myTeamFaulLabels[0, i] = ar1[i];
             }
 
-            for (int _i = 0; _i < 4; _i++)
+            for (var i = 0; i < 4; i++)
             {
-                myTeamFaulLabels[1, _i] = _ar2[_i];
+                myTeamFaulLabels[1, i] = ar2[i];
             }
 
-            for (int _i = 0; _i < 4; _i++)
+            for (var i = 0; i < 4; i++)
             {
-                myTeamFaulLabels[2, _i] = _ar3[_i];
+                myTeamFaulLabels[2, i] = ar3[i];
             }
 
-            for (int _i = 0; _i < 4; _i++)
+            for (var i = 0; i < 4; i++)
             {
-                myTeamFaulLabels[3, _i] = _ar4[_i];
+                myTeamFaulLabels[3, i] = ar4[i];
             }
 
-            for (int _i = 0; _i < 4; _i++)
+            for (var i = 0; i < 4; i++)
             {
-                oppentTeamFaulLabels[0, _i] = _ar5[_i];
+                oppentTeamFaulLabels[0, i] = ar5[i];
             }
 
-            for (int _i = 0; _i < 4; _i++)
+            for (var i = 0; i < 4; i++)
             {
-                oppentTeamFaulLabels[1, _i] = _ar6[_i];
+                oppentTeamFaulLabels[1, i] = ar6[i];
             }
 
-            for (int _i = 0; _i < 4; _i++)
+            for (var i = 0; i < 4; i++)
             {
-                oppentTeamFaulLabels[2, _i] = _ar7[_i];
+                oppentTeamFaulLabels[2, i] = ar7[i];
             }
 
-            for (int _i = 0; _i < 4; _i++)
+            for (var i = 0; i < 4; i++)
             {
-                oppentTeamFaulLabels[3, _i] = _ar8[_i];
+                oppentTeamFaulLabels[3, i] = ar8[i];
             }
         }
 
@@ -346,327 +346,345 @@ namespace BasketballManagementSystem.BMForm.BoxScore
 
         private void RunningScoreInit()
         {
-            Label[] _ar1 = (Label[])GetControlArrayByName(this, "label", 335, 374);
+            Label[] ar1 = (Label[])GetControlArrayByName(this, "label", 335, 374);
 
             Label _ar2_1 = label476;
-            Label[] _ar2_2 = (Label[])GetControlArrayByName(this, "label", 517, 535);
-            Label[] _ar2_3 = (Label[])GetControlArrayByName(this, "label", 496, 515);
-            List<Label> _l = new List<Label>();
-            _l.Add(_ar2_1);
-            _l.AddRange(_ar2_2);
-            _l.AddRange(_ar2_3);
-            Label[] _ar2 = _l.ToArray();
+            Label[] ar2_2 = (Label[])GetControlArrayByName(this, "label", 517, 535);
+            Label[] ar2_3 = (Label[])GetControlArrayByName(this, "label", 496, 515);
+            List<Label> l = new List<Label>();
+            l.Add(_ar2_1);
+            l.AddRange(ar2_2);
+            l.AddRange(ar2_3);
+            Label[] ar2 = l.ToArray();
 
-            Label _ar3_1 = label638;
-            Label[] _ar3_2 = (Label[])GetControlArrayByName(this, "label", 659, 678);
-            Label[] _ar3_3 = (Label[])GetControlArrayByName(this, "label", 639, 640);
-            Label[] _ar3_4 = (Label[])GetControlArrayByName(this, "label", 684, 700);
-            List<Label> _l2 = new List<Label>();
-            _l2.Add(_ar3_1);
-            _l2.AddRange(_ar3_2);
-            _l2.AddRange(_ar3_3);
-            _l2.AddRange(_ar3_4);
-            Label[] _ar3 = _l2.ToArray();
+            Label ar3_1 = label638;
+            Label[] ar3_2 = (Label[])GetControlArrayByName(this, "label", 659, 678);
+            Label[] ar3_3 = (Label[])GetControlArrayByName(this, "label", 639, 640);
+            Label[] ar3_4 = (Label[])GetControlArrayByName(this, "label", 684, 700);
+            List<Label> l2 = new List<Label>();
+            l2.Add(ar3_1);
+            l2.AddRange(ar3_2);
+            l2.AddRange(ar3_3);
+            l2.AddRange(ar3_4);
+            Label[] ar3 = l2.ToArray();
 
-            Label _ar4_1 = label799;
-            Label[] _ar4_2 = (Label[])GetControlArrayByName(this, "label", 821, 837);
-            Label[] _ar4_3 = (Label[])GetControlArrayByName(this, "label", 800, 803);
-            Label[] _ar4_4 = (Label[])GetControlArrayByName(this, "label", 841, 858);
-            List<Label> _l3 = new List<Label>();
-            _l3.Add(_ar4_1);
-            _l3.AddRange(_ar4_2);
-            _l3.AddRange(_ar4_3);
-            _l3.AddRange(_ar4_4);
-            Label[] _ar4 = _l3.ToArray();
+            Label ar4_1 = label799;
+            Label[] ar4_2 = (Label[])GetControlArrayByName(this, "label", 821, 837);
+            Label[] ar4_3 = (Label[])GetControlArrayByName(this, "label", 800, 803);
+            Label[] ar4_4 = (Label[])GetControlArrayByName(this, "label", 841, 858);
+            List<Label> l3 = new List<Label>();
+            l3.Add(ar4_1);
+            l3.AddRange(ar4_2);
+            l3.AddRange(ar4_3);
+            l3.AddRange(ar4_4);
+            Label[] ar4 = l3.ToArray();
 
-            List<Label> _r = new List<Label>();
-            _r.AddRange(_ar1);
-            _r.AddRange(_ar2);
-            _r.AddRange(_ar3);
-            _r.AddRange(_ar4);
+            List<Label> r = new List<Label>();
+            r.AddRange(ar1);
+            r.AddRange(ar2);
+            r.AddRange(ar3);
+            r.AddRange(ar4);
 
-            this.runningScore.teamANumbers = _r.ToArray();
-
-
-            Label[] _br1_1 = (Label[])GetControlArrayByName(this, "label", 375, 378);
-            Label[] _br1_2 = (Label[])GetControlArrayByName(this, "label", 379, 390);
-            Label[] _br1_3 = (Label[])GetControlArrayByName(this, "label", 391, 402);
-            Label[] _br1_4 = (Label[])GetControlArrayByName(this, "label", 403, 414);
-
-            Label _br2_1 = label516;
-            Label[] _br2_2 = (Label[])GetControlArrayByName(this, "label", 537, 556);
-            Label[] _br2_3 = (Label[])GetControlArrayByName(this, "label", 559, 577);
-
-            Label _br3_1 = label679;
-            Label[] _br3_2 = (Label[])GetControlArrayByName(this, "label", 701, 717);
-            Label[] _br3_3 = (Label[])GetControlArrayByName(this, "label", 680, 683);
-            Label[] _br3_4 = (Label[])GetControlArrayByName(this, "label", 721, 738);
-
-            Label _br4_1 = label838;
-            Label[] _br4_2 = (Label[])GetControlArrayByName(this, "label", 859, 878);
-            Label[] _br4_3 = (Label[])GetControlArrayByName(this, "label", 839, 840);
-            Label[] _br4_4 = (Label[])GetControlArrayByName(this, "label", 884, 900);
-
-            List<Label> _br = new List<Label>();
-            _br.AddRange(_br1_1);
-            _br.AddRange(_br1_2);
-            _br.AddRange(_br1_3);
-            _br.AddRange(_br1_4);
-            _br.Add(_br2_1);
-            _br.AddRange(_br2_2);
-            _br.AddRange(_br2_3);
-            _br.Add(_br3_1);
-            _br.AddRange(_br3_2);
-            _br.AddRange(_br3_3);
-            _br.AddRange(_br3_4);
-            _br.Add(_br4_1);
-            _br.AddRange(_br4_2);
-            _br.AddRange(_br4_3);
-            _br.AddRange(_br4_4);
-
-            this.runningScore.teamAPoints = _br.ToArray();
+            this.runningScore.teamANumbers = r.ToArray();
 
 
-            Label _cr1_1 = label415;
-            Label[] _cr1_2 = (Label[])GetControlArrayByName(this, "label", 416, 436);
-            Label[] _cr1_3 = (Label[])GetControlArrayByName(this, "label", 440, 457);
+            Label[] br1_1 = (Label[])GetControlArrayByName(this, "label", 375, 378);
+            Label[] br1_2 = (Label[])GetControlArrayByName(this, "label", 379, 390);
+            Label[] br1_3 = (Label[])GetControlArrayByName(this, "label", 391, 402);
+            Label[] br1_4 = (Label[])GetControlArrayByName(this, "label", 403, 414);
 
-            Label _cr2_1 = label557;
-            Label[] _cr2_2 = (Label[])GetControlArrayByName(this, "label", 578, 595);
-            Label _cr2_3 = label558;
-            Label[] _cr2_4 = (Label[])GetControlArrayByName(this, "label", 596, 614);
-            Label _cr2_5 = label615;
+            Label br2_1 = label516;
+            Label[] br2_2 = (Label[])GetControlArrayByName(this, "label", 537, 556);
+            Label[] br2_3 = (Label[])GetControlArrayByName(this, "label", 559, 577);
 
-            Label _cr3_1 = label718;
-            Label[] _cr3_2 = (Label[])GetControlArrayByName(this, "label", 739, 757);
-            Label[] _cr3_3 = (Label[])GetControlArrayByName(this, "label", 719, 720);
-            Label[] _cr3_4 = (Label[])GetControlArrayByName(this, "label", 761, 778);
+            Label br3_1 = label679;
+            Label[] br3_2 = (Label[])GetControlArrayByName(this, "label", 701, 717);
+            Label[] br3_3 = (Label[])GetControlArrayByName(this, "label", 680, 683);
+            Label[] br3_4 = (Label[])GetControlArrayByName(this, "label", 721, 738);
 
-            Label _cr4_1 = label879;
-            Label[] _cr4_2 = (Label[])GetControlArrayByName(this, "label", 901, 917);
-            Label[] _cr4_3 = (Label[])GetControlArrayByName(this, "label", 880, 883);
-            Label[] _cr4_4 = (Label[])GetControlArrayByName(this, "label", 921, 938);
+            Label br4_1 = label838;
+            Label[] br4_2 = (Label[])GetControlArrayByName(this, "label", 859, 878);
+            Label[] br4_3 = (Label[])GetControlArrayByName(this, "label", 839, 840);
+            Label[] br4_4 = (Label[])GetControlArrayByName(this, "label", 884, 900);
 
-            List<Label> _cr = new List<Label>();
-            _cr.Add(_cr1_1);
-            _cr.AddRange(_cr1_2);
-            _cr.AddRange(_cr1_3);
-            _cr.Add(_cr2_1);
-            _cr.AddRange(_cr2_2);
-            _cr.Add(_cr2_3);
-            _cr.AddRange(_cr2_4);
-            _cr.Add(_cr2_5);
-            _cr.Add(_cr3_1);
-            _cr.AddRange(_cr3_2);
-            _cr.AddRange(_cr3_3);
-            _cr.AddRange(_cr3_4);
-            _cr.Add(_cr4_1);
-            _cr.AddRange(_cr4_2);
-            _cr.AddRange(_cr4_3);
-            _cr.AddRange(_cr4_4);
+            List<Label> br = new List<Label>();
+            br.AddRange(br1_1);
+            br.AddRange(br1_2);
+            br.AddRange(br1_3);
+            br.AddRange(br1_4);
+            br.Add(br2_1);
+            br.AddRange(br2_2);
+            br.AddRange(br2_3);
+            br.Add(br3_1);
+            br.AddRange(br3_2);
+            br.AddRange(br3_3);
+            br.AddRange(br3_4);
+            br.Add(br4_1);
+            br.AddRange(br4_2);
+            br.AddRange(br4_3);
+            br.AddRange(br4_4);
 
-            this.runningScore.teamBPoints = _cr.ToArray();
+            this.runningScore.teamAPoints = br.ToArray();
 
 
-            Label _dr1_1 = label437;
-            Label[] _dr1_2 = (Label[])GetControlArrayByName(this, "label", 458, 475);
-            Label[] _dr1_3 = (Label[])GetControlArrayByName(this, "label", 438, 439);
-            Label[] _dr1_4 = (Label[])GetControlArrayByName(this, "label", 477, 495);
+            Label cr1_1 = label415;
+            Label[] cr1_2 = (Label[])GetControlArrayByName(this, "label", 416, 436);
+            Label[] cr1_3 = (Label[])GetControlArrayByName(this, "label", 440, 457);
 
-            Label _dr2_1 = label616;
-            Label[] _dr2_2 = (Label[])GetControlArrayByName(this, "label", 617, 637);
-            Label[] _dr2_3 = (Label[])GetControlArrayByName(this, "label", 641, 658);
+            Label cr2_1 = label557;
+            Label[] cr2_2 = (Label[])GetControlArrayByName(this, "label", 578, 595);
+            Label cr2_3 = label558;
+            Label[] cr2_4 = (Label[])GetControlArrayByName(this, "label", 596, 614);
+            Label cr2_5 = label615;
 
-            Label _dr3_1 = label758;
-            Label[] _dr3_2 = (Label[])GetControlArrayByName(this, "label", 779, 798);
-            Label[] _dr3_3 = (Label[])GetControlArrayByName(this, "label", 759, 760);
-            Label[] _dr3_4 = (Label[])GetControlArrayByName(this, "label", 804, 820);
+            Label cr3_1 = label718;
+            Label[] cr3_2 = (Label[])GetControlArrayByName(this, "label", 739, 757);
+            Label[] cr3_3 = (Label[])GetControlArrayByName(this, "label", 719, 720);
+            Label[] cr3_4 = (Label[])GetControlArrayByName(this, "label", 761, 778);
 
-            Label _dr4_1 = label918;
-            Label[] _dr4_2 = (Label[])GetControlArrayByName(this, "label", 939, 957);
-            Label[] _dr4_3 = (Label[])GetControlArrayByName(this, "label", 919, 920);
-            Label[] _dr4_4 = (Label[])GetControlArrayByName(this, "label", 961, 978);
+            Label cr4_1 = label879;
+            Label[] cr4_2 = (Label[])GetControlArrayByName(this, "label", 901, 917);
+            Label[] cr4_3 = (Label[])GetControlArrayByName(this, "label", 880, 883);
+            Label[] cr4_4 = (Label[])GetControlArrayByName(this, "label", 921, 938);
 
-            List<Label> _dr = new List<Label>();
-            _dr.Add(_dr1_1);
-            _dr.AddRange(_dr1_2);
-            _dr.AddRange(_dr1_3);
-            _dr.AddRange(_dr1_4);
-            _dr.Add(_dr2_1);
-            _dr.AddRange(_dr2_2);
-            _dr.AddRange(_dr2_3);
-            _dr.Add(_dr3_1);
-            _dr.AddRange(_dr3_2);
-            _dr.AddRange(_dr3_3);
-            _dr.AddRange(_dr3_4);
-            _dr.Add(_dr4_1);
-            _dr.AddRange(_dr4_2);
-            _dr.AddRange(_dr4_3);
-            _dr.AddRange(_dr4_4);
+            List<Label> cr = new List<Label>();
+            cr.Add(cr1_1);
+            cr.AddRange(cr1_2);
+            cr.AddRange(cr1_3);
+            cr.Add(cr2_1);
+            cr.AddRange(cr2_2);
+            cr.Add(cr2_3);
+            cr.AddRange(cr2_4);
+            cr.Add(cr2_5);
+            cr.Add(cr3_1);
+            cr.AddRange(cr3_2);
+            cr.AddRange(cr3_3);
+            cr.AddRange(cr3_4);
+            cr.Add(cr4_1);
+            cr.AddRange(cr4_2);
+            cr.AddRange(cr4_3);
+            cr.AddRange(cr4_4);
 
-            this.runningScore.teamBNumbers = _dr.ToArray();
+            this.runningScore.teamBPoints = cr.ToArray();
+
+
+            Label dr1_1 = label437;
+            Label[] dr1_2 = (Label[])GetControlArrayByName(this, "label", 458, 475);
+            Label[] dr1_3 = (Label[])GetControlArrayByName(this, "label", 438, 439);
+            Label[] dr1_4 = (Label[])GetControlArrayByName(this, "label", 477, 495);
+
+            Label dr2_1 = label616;
+            Label[] dr2_2 = (Label[])GetControlArrayByName(this, "label", 617, 637);
+            Label[] dr2_3 = (Label[])GetControlArrayByName(this, "label", 641, 658);
+
+            Label dr3_1 = label758;
+            Label[] dr3_2 = (Label[])GetControlArrayByName(this, "label", 779, 798);
+            Label[] dr3_3 = (Label[])GetControlArrayByName(this, "label", 759, 760);
+            Label[] dr3_4 = (Label[])GetControlArrayByName(this, "label", 804, 820);
+
+            Label dr4_1 = label918;
+            Label[] dr4_2 = (Label[])GetControlArrayByName(this, "label", 939, 957);
+            Label[] dr4_3 = (Label[])GetControlArrayByName(this, "label", 919, 920);
+            Label[] dr4_4 = (Label[])GetControlArrayByName(this, "label", 961, 978);
+
+            List<Label> dr = new List<Label>();
+            dr.Add(dr1_1);
+            dr.AddRange(dr1_2);
+            dr.AddRange(dr1_3);
+            dr.AddRange(dr1_4);
+            dr.Add(dr2_1);
+            dr.AddRange(dr2_2);
+            dr.AddRange(dr2_3);
+            dr.Add(dr3_1);
+            dr.AddRange(dr3_2);
+            dr.AddRange(dr3_3);
+            dr.AddRange(dr3_4);
+            dr.Add(dr4_1);
+            dr.AddRange(dr4_2);
+            dr.AddRange(dr4_3);
+            dr.AddRange(dr4_4);
+
+            this.runningScore.teamBNumbers = dr.ToArray();
 
         }
 
         private void InputBaseInfomation()
         {
-            GameName.Text = game.Name;
-            GameDate.Text = game.StartTime.ToString();
-            GamePlace.Text = game.Location;
-            MyTeamName.Text = "チームA" + "\n" + game.MyTeam.Name;
-            OppentTeamName.Text = "チームB" + "\n" + game.OppentTeam.Name;
+            GameNameLabel.Text = game.Name;
+            GameDateLabel.Text = game.StartTime.ToString();
+            GamePlaceLabel.Text = game.Location;
+            MyTeamNameLabel.Text = "チームA" + "\n" + game.MyTeam.Name;
+            OppentTeamNameLabel.Text = "チームB" + "\n" + game.OppentTeam.Name;
 
-            for (int _i = 0; _i <= 4; _i++)
+            for (var i = 0; i <= 4; i++)
             {
-                myQuarterPointLabels[_i].Text = game.MyTeam.GetQuarterPoint(_i + 1).ToString();
-                oppentQuarterPointLabels[_i].Text = game.OppentTeam.GetQuarterPoint(_i + 1).ToString();
+                myQuarterPointLabels[i].Text = game.MyTeam.GetQuarterPoint(i + 1).ToString();
+                oppentQuarterPointLabels[i].Text = game.OppentTeam.GetQuarterPoint(i + 1).ToString();
             }
 
-            MyResult.Text = game.MyTeam.AllPoint.ToString();
-            OppentResult.Text = game.OppentTeam.AllPoint.ToString();
+            MyResultLabel.Text = game.MyTeam.AllPoint.ToString();
+            OppentResultLabel.Text = game.OppentTeam.AllPoint.ToString();
         }
 
         private void InputMyPlayerInfomation()
         {
             //自チームの入力
-            int _i = 0;
+            int i = 0;
 
-            foreach (Player _p in game.MyTeam.TeamMember)
+            foreach (var p in game.MyTeam.TeamMember)
             {
-                PlayerInfomation _pl = new PlayerInfomation();
+                PlayerInfomation pi = new PlayerInfomation();
 
-                _pl.Name = myPlayerNameLabels[_i];
-                _pl.Name.Text = _p.Name;
+                pi.Name = myPlayerNameLabels[i];
+                pi.Name.Text = p.Name;
 
-                _pl.Number = myPlayerNumberLabels[_i];
-                _pl.Number.Text = _p.Number.ToString();
+                pi.Number = myPlayerNumberLabels[i];
+                pi.Number.Text = p.Number.ToString();
 
-                _pl.PlIn = myPlInLabels[_i];
+                pi.PlIn = myPlInLabels[i];
 
-                if (_p.IsStarter)
+                if (p.IsStarter)
                 {
-                    _pl.PlIn.Text = "";
+                    pi.PlIn.Text = "";
 
                     //現在のコードを実行しているAssemblyを取得
                     System.Reflection.Assembly _myAssembly =
                         System.Reflection.Assembly.GetExecutingAssembly();
                     //指定されたリソースを読み込む
-                    Bitmap _bmp =
+                    Bitmap bmp =
                         new Bitmap(_myAssembly.GetManifestResourceStream
                             ("BasketballManagementSystem.BMForm.BoxScore.Picture.marubatu2.png"));
 
-                    _pl.PlIn.Image = _bmp;
+                    pi.PlIn.Image = bmp;
                 }
-                //TODO:これだとなんもアクションしてないけど途中出場している選手がいた場合に反応しない(memberchange情報を使ったほうがいい)
-                else if (_p.GetActionList(_p).Count > 0)
+                else
                 {
-                    _pl.PlIn.Text = "";
+                    //以下、その選手がメンバーチェンジを行ったリストの中にいるか判定
+                    bool flag = false;
+
+                    foreach (var memberChange in game.MyTeam.MemberChange)
+                    {
+                        foreach (var changePlayer in memberChange.ChangedOutMembers)
+                        {
+                            if (changePlayer == p)
+                            {
+                                flag = true;
+                                break;
+                            }
+                        }
+
+                        if (flag) break;
+                    }
+
+                    if (!flag) continue;
+
+                    pi.PlIn.Text = "";
                     //現在のコードを実行しているAssemblyを取得
                     System.Reflection.Assembly _myAssembly =
                         System.Reflection.Assembly.GetExecutingAssembly();
                     //指定されたリソースを読み込む
-                    Bitmap _bmp =
+                    Bitmap bmp =
                         new Bitmap(_myAssembly.GetManifestResourceStream
                             ("BasketballManagementSystem.BMForm.BoxScore.Picture.batu.png"));
 
-                    _pl.PlIn.Image = _bmp;
+                    pi.PlIn.Image = bmp;
                 }
 
-                for (int _j = 0; _j < 5; _j++)
+                for (var j = 0; j < 5; j++)
                 {
-                    _pl.Fauls[_j] = myFaulLines[_j, _i];
+                    pi.Fauls[j] = myFaulLines[j, i];
 
                 }
 
-                int _k = 0;
+                int k = 0;
 
-                foreach (Faul _f in _p.PersonalFaul)
+                foreach (var f in p.PersonalFaul)
                 {
-                    if (_k > 4) break;
-                    string _s = string.Empty;
-                    if (_f.GivenFreeThrow != 0) { _s = _f.GivenFreeThrow.ToString(); }
+                    if (k > 4) break;
+                    string s = string.Empty;
+                    if (f.GivenFreeThrow != 0) { s = f.GivenFreeThrow.ToString(); }
 
-                    _pl.Fauls[_k].Text = "P" + _s;
+                    pi.Fauls[k].Text = "P" + s;
 
-                    if (_f.Quarter <= 2)
+                    if (f.Quarter <= 2)
                     {
-                        if (_k != 0) { _pl.Fauls[_k - 1].BackColor = Control.DefaultBackColor; }
-                        _pl.Fauls[_k].BackColor = Color.Red;
+                        if (k != 0) { pi.Fauls[k - 1].BackColor = Control.DefaultBackColor; }
+                        pi.Fauls[k].BackColor = Color.Red;
                     }
-                    _k++;
+                    k++;
                 }
 
-                foreach (Faul _f in _p.TechnicalFaul)
+                foreach (var f in p.TechnicalFaul)
                 {
-                    if (_k > 4) break;
-                    string _s = string.Empty;
-                    if (_f.GivenFreeThrow != 0) { _s = _f.GivenFreeThrow.ToString(); }
+                    if (k > 4) break;
+                    string s = string.Empty;
+                    if (f.GivenFreeThrow != 0) { s = f.GivenFreeThrow.ToString(); }
 
-                    _pl.Fauls[_k].Text = "T" + _s;
+                    pi.Fauls[k].Text = "T" + s;
 
-                    if (_f.Quarter <= 2)
+                    if (f.Quarter <= 2)
                     {
-                        if (_k != 0) { _pl.Fauls[_k - 1].BackColor = Control.DefaultBackColor; }
-                        _pl.Fauls[_k].BackColor = Color.Red;
+                        if (k != 0) { pi.Fauls[k - 1].BackColor = Control.DefaultBackColor; }
+                        pi.Fauls[k].BackColor = Color.Red;
                     }
-                    _k++;
+                    k++;
 
                 }
 
-                foreach (Faul _f in _p.DisQualifyingFaul)
+                foreach (var f in p.DisQualifyingFaul)
                 {
-                    if (_k > 4) break;
+                    if (k > 4) break;
 
-                    string _s = string.Empty;
-                    if (_f.GivenFreeThrow != 0) { _s = _f.GivenFreeThrow.ToString(); }
+                    string s = string.Empty;
+                    if (f.GivenFreeThrow != 0) { s = f.GivenFreeThrow.ToString(); }
 
-                    _pl.Fauls[_k].Text = "D" + _s;
+                    pi.Fauls[k].Text = "D" + s;
 
-                    if (_f.Quarter <= 2)
+                    if (f.Quarter <= 2)
                     {
-                        if (_k != 0) { _pl.Fauls[_k - 1].BackColor = Control.DefaultBackColor; }
-                        _pl.Fauls[_k].BackColor = Color.Red;
+                        if (k != 0) { pi.Fauls[k - 1].BackColor = Control.DefaultBackColor; }
+                        pi.Fauls[k].BackColor = Color.Red;
                     }
-                    _k++;
+                    k++;
 
                 }
 
-                foreach (Faul _f in _p.UnSportsmanLikeFaul)
+                foreach (var f in p.UnSportsmanLikeFaul)
                 {
-                    if (_k > 4) break;
-                    string _s = string.Empty;
-                    if (_f.GivenFreeThrow != 0) { _s = _f.GivenFreeThrow.ToString(); }
+                    if (k > 4) break;
+                    string s = string.Empty;
+                    if (f.GivenFreeThrow != 0) { s = f.GivenFreeThrow.ToString(); }
 
-                    _pl.Fauls[_k].Text = "U" + _s;
+                    pi.Fauls[k].Text = "U" + s;
 
-                    if (_f.Quarter <= 2)
+                    if (f.Quarter <= 2)
                     {
-                        if (_k != 0) { _pl.Fauls[_k - 1].BackColor = Control.DefaultBackColor; }
-                        _pl.Fauls[_k].BackColor = Color.Red;
+                        if (k != 0) { pi.Fauls[k - 1].BackColor = Control.DefaultBackColor; }
+                        pi.Fauls[k].BackColor = Color.Red;
                     }
-                    _k++;
+                    k++;
 
                 }
 
-                _i++;
+                i++;
             }
 
-            for (int _l = 0; _l < PlayerNumber; _l++)
+            for (var l = 0; l < PlayerNumber; l++)
             {
-                for (int _m = 0; _m < 5; _m++)
+                for (var m = 0; m < 5; m++)
                 {
-                    if (myFaulLines[_m, _l].Text == "0")
+                    if (myFaulLines[m, l].Text == "0")
                     {
                         //現在のコードを実行しているAssemblyを取得
-                        System.Reflection.Assembly _myAssembly =
+                        System.Reflection.Assembly myAssembly =
                             System.Reflection.Assembly.GetExecutingAssembly();
                         //指定されたリソースを読み込む
-                        Bitmap _bmp =
-                            new Bitmap(_myAssembly.GetManifestResourceStream
+                        Bitmap bmp =
+                            new Bitmap(myAssembly.GetManifestResourceStream
                                 ("BasketballManagementSystem.BMForm.BoxScore.Picture.bar.png"));
 
-                        myFaulLines[_m, _l].Text = "";
-                        myFaulLines[_m, _l].Image = _bmp;
+                        myFaulLines[m, l].Text = "";
+                        myFaulLines[m, l].Image = bmp;
                     }
 
                 }
@@ -678,143 +696,162 @@ namespace BasketballManagementSystem.BMForm.BoxScore
         {
             //相手チームの入力
 
-            int _i = 0;
+            int i = 0;
 
-            foreach (Player _p in game.OppentTeam.TeamMember)
+            foreach (var p in game.OppentTeam.TeamMember)
             {
-                PlayerInfomation _pl = new PlayerInfomation();
+                PlayerInfomation pl = new PlayerInfomation();
 
-                _pl.Name = oppentPlayerNameLabels[_i];
-                _pl.Name.Text = _p.Name;
+                pl.Name = oppentPlayerNameLabels[i];
+                pl.Name.Text = p.Name;
 
-                _pl.Number = oppentPlayerNumberLabels[_i];
-                _pl.Number.Text = _p.Number.ToString();
+                pl.Number = oppentPlayerNumberLabels[i];
+                pl.Number.Text = p.Number.ToString();
 
-                _pl.PlIn = oppentPlInLabels[_i];
+                pl.PlIn = oppentPlInLabels[i];
 
-                if (_p.IsStarter)
+                if (p.IsStarter)
                 {
-                    _pl.PlIn.Text = "";
+                    pl.PlIn.Text = "";
 
                     //現在のコードを実行しているAssemblyを取得
-                    System.Reflection.Assembly _oppentAssembly =
+                    System.Reflection.Assembly oppentAssembly =
                         System.Reflection.Assembly.GetExecutingAssembly();
                     //指定されたリソースを読み込む
-                    Bitmap _bmp =
-                        new Bitmap(_oppentAssembly.GetManifestResourceStream
+                    Bitmap bmp =
+                        new Bitmap(oppentAssembly.GetManifestResourceStream
                             ("BasketballManagementSystem.BMForm.BoxScore.Picture.marubatu2.png"));
 
-                    _pl.PlIn.Image = _bmp;
+                    pl.PlIn.Image = bmp;
                 }
                 //TODO:これだとなんもアクションしてないけど途中出場している選手がいた場合に反応しない
-                else if (_p.GetActionList(_p).Count > 0)
+                else
                 {
-                    _pl.PlIn.Text = "";
+                    //以下、その選手がメンバーチェンジを行ったリストの中にいるか判定
+                    bool flag = false;
+
+                    foreach (var memberChange in game.OppentTeam.MemberChange)
+                    {
+                        foreach (var changePlayer in memberChange.ChangedOutMembers)
+                        {
+                            if (changePlayer == p)
+                            {
+                                flag = true;
+                                break;
+                            }
+                        }
+
+                        if (flag) break;
+                    }
+
+                    if (!flag) continue;
+
+                    pl.PlIn.Text = "";
                     //現在のコードを実行しているAssemblyを取得
-                    System.Reflection.Assembly _oppentAssembly =
+                    System.Reflection.Assembly oppentAssembly =
                         System.Reflection.Assembly.GetExecutingAssembly();
                     //指定されたリソースを読み込む
-                    Bitmap _bmp =
-                        new Bitmap(_oppentAssembly.GetManifestResourceStream
+                    Bitmap bmp =
+                        new Bitmap(oppentAssembly.GetManifestResourceStream
                             ("BasketballManagementSystem.BMForm.BoxScore.Picture.batu.png"));
 
-                    _pl.PlIn.Image = _bmp;
+                    pl.PlIn.Image = bmp;
                 }
 
-                for (int _j = 0; _j < 5; _j++)
+                for (var j = 0; j < 5; j++)
                 {
-                    _pl.Fauls[_j] = oppentFaulLines[_j, _i];
+                    pl.Fauls[j] = oppentFaulLines[j, i];
 
                 }
 
-                int _k = 0;
+                int k = 0;
 
-                foreach (Faul _f in _p.PersonalFaul)
+                foreach (var f in p.PersonalFaul)
                 {
-                    if (_k > 4) break;
-                    string _s = string.Empty;
-                    if (_f.GivenFreeThrow != 0) { _s = _f.GivenFreeThrow.ToString(); }
-
-                    _pl.Fauls[_k].Text = "P" + _s;
-
-                    if (_f.Quarter <= 2)
-                    {
-                        if (_k != 0) { _pl.Fauls[_k - 1].BackColor = Control.DefaultBackColor; }
-                        _pl.Fauls[_k].BackColor = Color.Red;
-                    }
-                    _k++;
-                }
-
-                foreach (Faul _f in _p.TechnicalFaul)
-                {
-                    if (_k > 4) break;
+                    if (k > 4) break;
                     string s = string.Empty;
-                    if (_f.GivenFreeThrow != 0) { s = _f.GivenFreeThrow.ToString(); }
+                    if (f.GivenFreeThrow != 0) { s = f.GivenFreeThrow.ToString(); }
 
-                    _pl.Fauls[_k].Text = "T" + s;
+                    pl.Fauls[k].Text = "P" + s;
 
-                    if (_f.Quarter <= 2)
+                    if (f.Quarter <= 2)
                     {
-                        if (_k != 0) { _pl.Fauls[_k - 1].BackColor = Control.DefaultBackColor; }
-                        _pl.Fauls[_k].BackColor = Color.Red;
+                        if (k != 0) { pl.Fauls[k - 1].BackColor = Control.DefaultBackColor; }
+                        pl.Fauls[k].BackColor = Color.Red;
                     }
-                    _k++;
-
+                    k++;
                 }
 
-                foreach (Faul _f in _p.DisQualifyingFaul)
+                foreach (var f in p.TechnicalFaul)
                 {
-                    if (_k > 4) break;
-                    string _s = string.Empty;
-                    if (_f.GivenFreeThrow != 0) { _s = _f.GivenFreeThrow.ToString(); }
+                    if (k > 4) break;
+                    string s = string.Empty;
+                    if (f.GivenFreeThrow != 0) { s = f.GivenFreeThrow.ToString(); }
 
-                    _pl.Fauls[_k].Text = "D" + _s;
+                    pl.Fauls[k].Text = "T" + s;
 
-                    if (_f.Quarter <= 2)
+                    if (f.Quarter <= 2)
                     {
-                        if (_k != 0) { _pl.Fauls[_k - 1].BackColor = Control.DefaultBackColor; }
-                        _pl.Fauls[_k].BackColor = Color.Red;
+                        if (k != 0) { pl.Fauls[k - 1].BackColor = Control.DefaultBackColor; }
+                        pl.Fauls[k].BackColor = Color.Red;
                     }
-                    _k++;
+                    k++;
 
                 }
 
-                foreach (Faul _f in _p.UnSportsmanLikeFaul)
+                foreach (var f in p.DisQualifyingFaul)
                 {
-                    if (_k > 4) break;
-                    string _s = string.Empty;
-                    if (_f.GivenFreeThrow != 0) { _s = _f.GivenFreeThrow.ToString(); }
+                    if (k > 4) break;
+                    string s = string.Empty;
+                    if (f.GivenFreeThrow != 0) { s = f.GivenFreeThrow.ToString(); }
 
-                    _pl.Fauls[_k].Text = "U" + _s;
+                    pl.Fauls[k].Text = "D" + s;
 
-                    if (_f.Quarter <= 2)
+                    if (f.Quarter <= 2)
                     {
-                        if (_k != 0) { _pl.Fauls[_k - 1].BackColor = Control.DefaultBackColor; }
-                        _pl.Fauls[_k].BackColor = Color.Red;
+                        if (k != 0) { pl.Fauls[k - 1].BackColor = Control.DefaultBackColor; }
+                        pl.Fauls[k].BackColor = Color.Red;
                     }
-                    _k++;
+                    k++;
 
                 }
 
-                _i++;
+                foreach (var f in p.UnSportsmanLikeFaul)
+                {
+                    if (k > 4) break;
+                    string s = string.Empty;
+                    if (f.GivenFreeThrow != 0) { s = f.GivenFreeThrow.ToString(); }
+
+                    pl.Fauls[k].Text = "U" + s;
+
+                    if (f.Quarter <= 2)
+                    {
+                        if (k != 0) { pl.Fauls[k - 1].BackColor = Control.DefaultBackColor; }
+                        pl.Fauls[k].BackColor = Color.Red;
+                    }
+                    k++;
+
+                }
+
+                i++;
             }
 
-            for (int _l = 0; _l < PlayerNumber; _l++)
+            for (var l = 0; l < PlayerNumber; l++)
             {
-                for (int _m = 0; _m < 5; _m++)
+                for (var m = 0; m < 5; m++)
                 {
-                    if (oppentFaulLines[_m, _l].Text == "0")
+                    if (oppentFaulLines[m, l].Text == "0")
                     {
                         //現在のコードを実行しているAssemblyを取得
-                        System.Reflection.Assembly _oppentAssembly =
+                        System.Reflection.Assembly oppentAssembly =
                             System.Reflection.Assembly.GetExecutingAssembly();
                         //指定されたリソースを読み込む
-                        Bitmap _bmp =
-                            new Bitmap(_oppentAssembly.GetManifestResourceStream
+                        Bitmap bmp =
+                            new Bitmap(oppentAssembly.GetManifestResourceStream
                                 ("BasketballManagementSystem.BMForm.BoxScore.Picture.bar.png"));
 
-                        oppentFaulLines[_m, _l].Text = "";
-                        oppentFaulLines[_m, _l].Image = _bmp;
+                        oppentFaulLines[m, l].Text = "";
+                        oppentFaulLines[m, l].Image = bmp;
                     }
 
                 }
@@ -824,28 +861,28 @@ namespace BasketballManagementSystem.BMForm.BoxScore
         private void InputTeamFaulLabel()
         {
             //現在のコードを実行しているAssemblyを取得
-            System.Reflection.Assembly _assembly =
+            System.Reflection.Assembly assembly =
                 System.Reflection.Assembly.GetExecutingAssembly();
             //指定されたリソースを読み込む
-            Bitmap _bmp =
-                new Bitmap(_assembly.GetManifestResourceStream
+            Bitmap bmp =
+                new Bitmap(assembly.GetManifestResourceStream
                     ("BasketballManagementSystem.BMForm.BoxScore.Picture.batu_touka.png"));
 
-            for (int _i = 0; _i < 4; _i++)
+            for (var i = 0; i < 4; i++)
             {
-                for (int _j = 0; _j < game.MyTeam.TeamFaul[_i + 1]; _j++)
+                for (var j = 0; j < game.MyTeam.TeamFaul[i + 1]; j++)
                 {
-                    if (_j > 3) break;
-                    myTeamFaulLabels[_i, _j].Image = _bmp;
+                    if (j > 3) break;
+                    myTeamFaulLabels[i, j].Image = bmp;
                 }
             }
 
-            for (int _i = 0; _i < 4; _i++)
+            for (var i = 0; i < 4; i++)
             {
-                for (int _j = 0; _j < game.OppentTeam.TeamFaul[_i + 1]; _j++)
+                for (var j = 0; j < game.OppentTeam.TeamFaul[i + 1]; j++)
                 {
-                    if (_j > 3) break;
-                    oppentTeamFaulLabels[_i, _j].Image = _bmp;
+                    if (j > 3) break;
+                    oppentTeamFaulLabels[i, j].Image = bmp;
                 }
             }
             
@@ -853,93 +890,93 @@ namespace BasketballManagementSystem.BMForm.BoxScore
 
         private void InputTimeOutLabel()
         {
-            int _i = 0;
-            bool _firstFlag = true;
+            int i = 0;
+            bool firstFlag = true;
 
             //現在のコードを実行しているAssemblyを取得
-                        System.Reflection.Assembly _assembly =
+                        System.Reflection.Assembly assembly =
                             System.Reflection.Assembly.GetExecutingAssembly();
                         //指定されたリソースを読み込む
-                        Bitmap _bmp =
-                            new Bitmap(_assembly.GetManifestResourceStream
+                        Bitmap bmp =
+                            new Bitmap(assembly.GetManifestResourceStream
                                 ("BasketballManagementSystem.BMForm.BoxScore.Picture.batu_touka.png"));
 
-            foreach (TimeOut _t in game.MyTeam.TimeOutList)
+            foreach (var t in game.MyTeam.TimeOutList)
             {
 
-                if (_t.Quarter >= 3 && _t.Quarter <= 4 && _firstFlag)
+                if (t.Quarter >= 3 && t.Quarter <= 4 && firstFlag)
                 {
-                    _i = 2;
-                    _firstFlag = false;
+                    i = 2;
+                    firstFlag = false;
                 }
 
-                if (_t.Quarter == 5)
+                if (t.Quarter == 5)
                 {
-                    _i = 5;
+                    i = 5;
                 }
 
-                if (_t.Quarter == 6)
+                if (t.Quarter == 6)
                 {
-                    _i = 6;
+                    i = 6;
                 }
 
-                myTeamTimeOutLabels[_i].Image = _bmp;
-                _i++;
+                myTeamTimeOutLabels[i].Image = bmp;
+                i++;
 
-                if (_i > 6)
+                if (i > 6)
                 {
                     break;
                 }
             }
 
-            Bitmap _bmp2 = new Bitmap(_assembly.GetManifestResourceStream
+            Bitmap bmp2 = new Bitmap(assembly.GetManifestResourceStream
                                ("BasketballManagementSystem.BMForm.BoxScore.Picture.redDualLine.png"));
 
-            for (int _j = 0; _j < myTeamTimeOutLabels.Count(); _j++)
+            for (var j = 0; j < myTeamTimeOutLabels.Count(); j++)
             {
-                if (myTeamTimeOutLabels[_j].Image != _bmp)
+                if (myTeamTimeOutLabels[j].Image != bmp)
                 {
-                    myTeamTimeOutLabels[_j].Image = _bmp2;
+                    myTeamTimeOutLabels[j].Image = bmp2;
                 }
             }
 
 
-             _i = 0;
-            _firstFlag = true;
+             i = 0;
+            firstFlag = true;
 
-            foreach (TimeOut _t in game.OppentTeam.TimeOutList)
+            foreach (var t in game.OppentTeam.TimeOutList)
             {
 
-                if (_t.Quarter >= 3 && _t.Quarter <= 4 && _firstFlag)
+                if (t.Quarter >= 3 && t.Quarter <= 4 && firstFlag)
                 {
-                    _i = 2;
-                    _firstFlag = false;
+                    i = 2;
+                    firstFlag = false;
                 }
 
-                if (_t.Quarter == 5)
+                if (t.Quarter == 5)
                 {
-                    _i = 5;
+                    i = 5;
                 }
 
-                if (_t.Quarter == 6)
+                if (t.Quarter == 6)
                 {
-                    _i = 6;
+                    i = 6;
                 }
 
-                oppentTeamTimeOutLabels[_i].Image = _bmp;
-                _i++;
+                oppentTeamTimeOutLabels[i].Image = bmp;
+                i++;
 
-                if (_i > 6)
+                if (i > 6)
                 {
                     break;
                 }
             }
 
-            for (int _j = 0; _j < oppentTeamTimeOutLabels.Count(); _j++)
+            for (var j = 0; j < oppentTeamTimeOutLabels.Count(); j++)
             {
-                if (oppentTeamTimeOutLabels[_j].Image != _bmp)
+                if (oppentTeamTimeOutLabels[j].Image != bmp)
                 {
-                    oppentTeamTimeOutLabels[_j].Image = _bmp2;
+                    oppentTeamTimeOutLabels[j].Image = bmp2;
                 }
             }
         }
@@ -948,27 +985,27 @@ namespace BasketballManagementSystem.BMForm.BoxScore
         {
             runningScore.Init();
             
-            foreach (RelationPointAction _r in this.game.MyTeam.GetQuarterPointActionAll())
+            foreach (var r in this.game.MyTeam.GetQuarterPointActionAll())
             {
-                this.runningScore.InputRunningScoreA(_r, _r.OwnerNumber);
+                this.runningScore.InputRunningScoreA(r, r.OwnerNumber);
             }
 
-            foreach (RelationPointAction _r in this.game.OppentTeam.GetQuarterPointActionAll())
+            foreach (var r in this.game.OppentTeam.GetQuarterPointActionAll())
             {
-                this.runningScore.InputRunningScoreB(_r, _r.OwnerNumber);
+                this.runningScore.InputRunningScoreB(r, r.OwnerNumber);
             }
         }
 
         private void PrintForm_Click(object sender, EventArgs e)
         {
-            FormPrinter _fp = new FormPrinter();
-            _fp.PrintForm(this);
+            FormPrinter fp = new FormPrinter();
+            fp.PrintForm(this);
         }
 
         private void PrintPreview_Click(object sender, EventArgs e)
         {
-            FormPrinter _fp = new FormPrinter();
-            _fp.ShowPrintPreview(this);
+            FormPrinter fp = new FormPrinter();
+            fp.ShowPrintPreview(this);
         }
     }
 

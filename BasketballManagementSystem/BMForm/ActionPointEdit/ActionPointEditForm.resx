@@ -149,28 +149,28 @@
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="NumericUpDownFreeThrowMiss.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="FreeThrowMissNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownFreeThrowMiss.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="FreeThrowMissNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 112</value>
   </data>
-  <data name="NumericUpDownFreeThrowMiss.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="FreeThrowMissNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownFreeThrowMiss.TabIndex" type="System.Int32, mscorlib">
+  <data name="FreeThrowMissNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownFreeThrowMiss.Name" xml:space="preserve">
-    <value>NumericUpDownFreeThrowMiss</value>
+  <data name="&gt;&gt;FreeThrowMissNumericUpDown.Name" xml:space="preserve">
+    <value>FreeThrowMissNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownFreeThrowMiss.Type" xml:space="preserve">
+  <data name="&gt;&gt;FreeThrowMissNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownFreeThrowMiss.Parent" xml:space="preserve">
+  <data name="&gt;&gt;FreeThrowMissNumericUpDown.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownFreeThrowMiss.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;FreeThrowMissNumericUpDown.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
@@ -203,28 +203,28 @@
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="NumericUpDownShoot3PMiss.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Shoot3PMissNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownShoot3PMiss.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Shoot3PMissNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 71</value>
   </data>
-  <data name="NumericUpDownShoot3PMiss.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Shoot3PMissNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownShoot3PMiss.TabIndex" type="System.Int32, mscorlib">
+  <data name="Shoot3PMissNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot3PMiss.Name" xml:space="preserve">
-    <value>NumericUpDownShoot3PMiss</value>
+  <data name="&gt;&gt;Shoot3PMissNumericUpDown.Name" xml:space="preserve">
+    <value>Shoot3PMissNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot3PMiss.Type" xml:space="preserve">
+  <data name="&gt;&gt;Shoot3PMissNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot3PMiss.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Shoot3PMissNumericUpDown.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot3PMiss.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Shoot3PMissNumericUpDown.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
@@ -257,28 +257,28 @@
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="NumericUpDownShoot2PMiss.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Shoot2PMissNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownShoot2PMiss.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Shoot2PMissNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>119, 27</value>
   </data>
-  <data name="NumericUpDownShoot2PMiss.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Shoot2PMissNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownShoot2PMiss.TabIndex" type="System.Int32, mscorlib">
+  <data name="Shoot2PMissNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot2PMiss.Name" xml:space="preserve">
-    <value>NumericUpDownShoot2PMiss</value>
+  <data name="&gt;&gt;Shoot2PMissNumericUpDown.Name" xml:space="preserve">
+    <value>Shoot2PMissNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot2PMiss.Type" xml:space="preserve">
+  <data name="&gt;&gt;Shoot2PMissNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot2PMiss.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Shoot2PMissNumericUpDown.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot2PMiss.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Shoot2PMissNumericUpDown.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
@@ -336,28 +336,28 @@ Faul</value>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="NumericUpDownDisQualifyingFaul.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="DisQualifyingFaulNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownDisQualifyingFaul.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="DisQualifyingFaulNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>95, 158</value>
   </data>
-  <data name="NumericUpDownDisQualifyingFaul.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="DisQualifyingFaulNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownDisQualifyingFaul.TabIndex" type="System.Int32, mscorlib">
+  <data name="DisQualifyingFaulNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownDisQualifyingFaul.Name" xml:space="preserve">
-    <value>NumericUpDownDisQualifyingFaul</value>
+  <data name="&gt;&gt;DisQualifyingFaulNumericUpDown.Name" xml:space="preserve">
+    <value>DisQualifyingFaulNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownDisQualifyingFaul.Type" xml:space="preserve">
+  <data name="&gt;&gt;DisQualifyingFaulNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownDisQualifyingFaul.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DisQualifyingFaulNumericUpDown.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownDisQualifyingFaul.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DisQualifyingFaulNumericUpDown.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="label12.AutoSize" type="System.Boolean, mscorlib">
@@ -391,28 +391,28 @@ LikeFaul</value>
   <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="NumericUpDownUnSportsmanLikeFaul.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="UnSportsmanLikeFaulNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownUnSportsmanLikeFaul.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="UnSportsmanLikeFaulNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>95, 113</value>
   </data>
-  <data name="NumericUpDownUnSportsmanLikeFaul.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="UnSportsmanLikeFaulNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownUnSportsmanLikeFaul.TabIndex" type="System.Int32, mscorlib">
+  <data name="UnSportsmanLikeFaulNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownUnSportsmanLikeFaul.Name" xml:space="preserve">
-    <value>NumericUpDownUnSportsmanLikeFaul</value>
+  <data name="&gt;&gt;UnSportsmanLikeFaulNumericUpDown.Name" xml:space="preserve">
+    <value>UnSportsmanLikeFaulNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownUnSportsmanLikeFaul.Type" xml:space="preserve">
+  <data name="&gt;&gt;UnSportsmanLikeFaulNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownUnSportsmanLikeFaul.Parent" xml:space="preserve">
+  <data name="&gt;&gt;UnSportsmanLikeFaulNumericUpDown.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownUnSportsmanLikeFaul.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;UnSportsmanLikeFaulNumericUpDown.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
@@ -445,28 +445,28 @@ LikeFaul</value>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="NumericUpDownTechnicalFaul.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TechnicalFaulNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownTechnicalFaul.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="TechnicalFaulNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>95, 71</value>
   </data>
-  <data name="NumericUpDownTechnicalFaul.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TechnicalFaulNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownTechnicalFaul.TabIndex" type="System.Int32, mscorlib">
+  <data name="TechnicalFaulNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownTechnicalFaul.Name" xml:space="preserve">
-    <value>NumericUpDownTechnicalFaul</value>
+  <data name="&gt;&gt;TechnicalFaulNumericUpDown.Name" xml:space="preserve">
+    <value>TechnicalFaulNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownTechnicalFaul.Type" xml:space="preserve">
+  <data name="&gt;&gt;TechnicalFaulNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownTechnicalFaul.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TechnicalFaulNumericUpDown.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownTechnicalFaul.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;TechnicalFaulNumericUpDown.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
@@ -499,28 +499,28 @@ LikeFaul</value>
   <data name="&gt;&gt;label14.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="NumericUpDownPersonalFaul.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="PersonalFaulNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownPersonalFaul.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="PersonalFaulNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>95, 27</value>
   </data>
-  <data name="NumericUpDownPersonalFaul.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PersonalFaulNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownPersonalFaul.TabIndex" type="System.Int32, mscorlib">
+  <data name="PersonalFaulNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownPersonalFaul.Name" xml:space="preserve">
-    <value>NumericUpDownPersonalFaul</value>
+  <data name="&gt;&gt;PersonalFaulNumericUpDown.Name" xml:space="preserve">
+    <value>PersonalFaulNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownPersonalFaul.Type" xml:space="preserve">
+  <data name="&gt;&gt;PersonalFaulNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownPersonalFaul.Parent" xml:space="preserve">
+  <data name="&gt;&gt;PersonalFaulNumericUpDown.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownPersonalFaul.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;PersonalFaulNumericUpDown.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
@@ -577,28 +577,28 @@ LikeFaul</value>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="NumericUpDownFreeThrow.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="FreeThrowNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownFreeThrow.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="FreeThrowNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>90, 112</value>
   </data>
-  <data name="NumericUpDownFreeThrow.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="FreeThrowNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownFreeThrow.TabIndex" type="System.Int32, mscorlib">
+  <data name="FreeThrowNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownFreeThrow.Name" xml:space="preserve">
-    <value>NumericUpDownFreeThrow</value>
+  <data name="&gt;&gt;FreeThrowNumericUpDown.Name" xml:space="preserve">
+    <value>FreeThrowNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownFreeThrow.Type" xml:space="preserve">
+  <data name="&gt;&gt;FreeThrowNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownFreeThrow.Parent" xml:space="preserve">
+  <data name="&gt;&gt;FreeThrowNumericUpDown.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownFreeThrow.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;FreeThrowNumericUpDown.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
@@ -631,28 +631,28 @@ LikeFaul</value>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="NumericUpDownShoot3P.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Shoot3PNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownShoot3P.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Shoot3PNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>90, 71</value>
   </data>
-  <data name="NumericUpDownShoot3P.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Shoot3PNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownShoot3P.TabIndex" type="System.Int32, mscorlib">
+  <data name="Shoot3PNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot3P.Name" xml:space="preserve">
-    <value>NumericUpDownShoot3P</value>
+  <data name="&gt;&gt;Shoot3PNumericUpDown.Name" xml:space="preserve">
+    <value>Shoot3PNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot3P.Type" xml:space="preserve">
+  <data name="&gt;&gt;Shoot3PNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot3P.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Shoot3PNumericUpDown.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot3P.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Shoot3PNumericUpDown.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
@@ -685,37 +685,37 @@ LikeFaul</value>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="NumericUpDownShoot2P.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="Shoot2PNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownShoot2P.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Shoot2PNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>90, 27</value>
   </data>
-  <data name="NumericUpDownShoot2P.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Shoot2PNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownShoot2P.TabIndex" type="System.Int32, mscorlib">
+  <data name="Shoot2PNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot2P.Name" xml:space="preserve">
-    <value>NumericUpDownShoot2P</value>
+  <data name="&gt;&gt;Shoot2PNumericUpDown.Name" xml:space="preserve">
+    <value>Shoot2PNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot2P.Type" xml:space="preserve">
+  <data name="&gt;&gt;Shoot2PNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot2P.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Shoot2PNumericUpDown.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownShoot2P.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Shoot2PNumericUpDown.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="Save.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SaveItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 22</value>
   </data>
-  <data name="Save.Text" xml:space="preserve">
+  <data name="SaveItem.Text" xml:space="preserve">
     <value>Save</value>
   </data>
   <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
@@ -724,10 +724,10 @@ LikeFaul</value>
   <data name="FileToolStripMenuItem.Text" xml:space="preserve">
     <value>File</value>
   </data>
-  <data name="SettingAPDefault.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SettingAPDefaultItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>175, 22</value>
   </data>
-  <data name="SettingAPDefault.Text" xml:space="preserve">
+  <data name="SettingAPDefaultItem.Text" xml:space="preserve">
     <value>SettingAPDefault</value>
   </data>
   <data name="ConfigToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
@@ -760,28 +760,28 @@ LikeFaul</value>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="NumericUpDownAssist.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="AssistNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownAssist.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="AssistNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>84, 27</value>
   </data>
-  <data name="NumericUpDownAssist.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="AssistNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownAssist.TabIndex" type="System.Int32, mscorlib">
+  <data name="AssistNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownAssist.Name" xml:space="preserve">
-    <value>NumericUpDownAssist</value>
+  <data name="&gt;&gt;AssistNumericUpDown.Name" xml:space="preserve">
+    <value>AssistNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownAssist.Type" xml:space="preserve">
+  <data name="&gt;&gt;AssistNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownAssist.Parent" xml:space="preserve">
+  <data name="&gt;&gt;AssistNumericUpDown.Parent" xml:space="preserve">
     <value>GroupBox1</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownAssist.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;AssistNumericUpDown.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
@@ -814,28 +814,28 @@ LikeFaul</value>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="NumericUpDownSteal.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="StealNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownSteal.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="StealNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>84, 71</value>
   </data>
-  <data name="NumericUpDownSteal.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="StealNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownSteal.TabIndex" type="System.Int32, mscorlib">
+  <data name="StealNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownSteal.Name" xml:space="preserve">
-    <value>NumericUpDownSteal</value>
+  <data name="&gt;&gt;StealNumericUpDown.Name" xml:space="preserve">
+    <value>StealNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownSteal.Type" xml:space="preserve">
+  <data name="&gt;&gt;StealNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownSteal.Parent" xml:space="preserve">
+  <data name="&gt;&gt;StealNumericUpDown.Parent" xml:space="preserve">
     <value>GroupBox1</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownSteal.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;StealNumericUpDown.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
@@ -868,28 +868,28 @@ LikeFaul</value>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="NumericUpDownTurnOver.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="TurnOverNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownTurnOver.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="TurnOverNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>84, 112</value>
   </data>
-  <data name="NumericUpDownTurnOver.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="TurnOverNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownTurnOver.TabIndex" type="System.Int32, mscorlib">
+  <data name="TurnOverNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownTurnOver.Name" xml:space="preserve">
-    <value>NumericUpDownTurnOver</value>
+  <data name="&gt;&gt;TurnOverNumericUpDown.Name" xml:space="preserve">
+    <value>TurnOverNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownTurnOver.Type" xml:space="preserve">
+  <data name="&gt;&gt;TurnOverNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownTurnOver.Parent" xml:space="preserve">
+  <data name="&gt;&gt;TurnOverNumericUpDown.Parent" xml:space="preserve">
     <value>GroupBox1</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownTurnOver.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;TurnOverNumericUpDown.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
@@ -922,28 +922,28 @@ LikeFaul</value>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="NumericUpDownBlockShoot.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="BlockShootNumericUpDown.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
   </data>
-  <data name="NumericUpDownBlockShoot.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="BlockShootNumericUpDown.Location" type="System.Drawing.Point, System.Drawing">
     <value>84, 153</value>
   </data>
-  <data name="NumericUpDownBlockShoot.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="BlockShootNumericUpDown.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 23</value>
   </data>
-  <data name="NumericUpDownBlockShoot.TabIndex" type="System.Int32, mscorlib">
+  <data name="BlockShootNumericUpDown.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownBlockShoot.Name" xml:space="preserve">
-    <value>NumericUpDownBlockShoot</value>
+  <data name="&gt;&gt;BlockShootNumericUpDown.Name" xml:space="preserve">
+    <value>BlockShootNumericUpDown</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownBlockShoot.Type" xml:space="preserve">
+  <data name="&gt;&gt;BlockShootNumericUpDown.Type" xml:space="preserve">
     <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownBlockShoot.Parent" xml:space="preserve">
+  <data name="&gt;&gt;BlockShootNumericUpDown.Parent" xml:space="preserve">
     <value>GroupBox1</value>
   </data>
-  <data name="&gt;&gt;NumericUpDownBlockShoot.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;BlockShootNumericUpDown.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
@@ -1042,10 +1042,10 @@ LikeFaul</value>
   <data name="&gt;&gt;FileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Save.Name" xml:space="preserve">
-    <value>Save</value>
+  <data name="&gt;&gt;SaveItem.Name" xml:space="preserve">
+    <value>SaveItem</value>
   </data>
-  <data name="&gt;&gt;Save.Type" xml:space="preserve">
+  <data name="&gt;&gt;SaveItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ConfigToolStripMenuItem.Name" xml:space="preserve">
@@ -1054,10 +1054,10 @@ LikeFaul</value>
   <data name="&gt;&gt;ConfigToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;SettingAPDefault.Name" xml:space="preserve">
-    <value>SettingAPDefault</value>
+  <data name="&gt;&gt;SettingAPDefaultItem.Name" xml:space="preserve">
+    <value>SettingAPDefaultItem</value>
   </data>
-  <data name="&gt;&gt;SettingAPDefault.Type" xml:space="preserve">
+  <data name="&gt;&gt;SettingAPDefaultItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

@@ -39,10 +39,10 @@
             this.PlayerInfoGridView = new System.Windows.Forms.DataGridView();
             this.DataGridTab = new System.Windows.Forms.TabControl();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gameDataSave = new System.Windows.Forms.ToolStripMenuItem();
-            this.printForm = new System.Windows.Forms.ToolStripMenuItem();
-            this.printPreview = new System.Windows.Forms.ToolStripMenuItem();
+            this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.GameDataSaveItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintFormItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintPreviewItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ActionInfoGridView)).BeginInit();
             this.tabPage2.SuspendLayout();
@@ -113,36 +113,36 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.FileToolStripMenuItem});
             resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
-            // fileToolStripMenuItem
+            // FileToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.gameDataSave,
-            this.printForm,
-            this.printPreview});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
+            this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.GameDataSaveItem,
+            this.PrintFormItem,
+            this.PrintPreviewItem});
+            this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
-            // gameDataSave
+            // GameDataSaveItem
             // 
-            this.gameDataSave.Name = "gameDataSave";
-            resources.ApplyResources(this.gameDataSave, "gameDataSave");
-            this.gameDataSave.Click += new System.EventHandler(this.gameDataSave_Click);
+            this.GameDataSaveItem.Name = "GameDataSaveItem";
+            resources.ApplyResources(this.GameDataSaveItem, "GameDataSaveItem");
+            this.GameDataSaveItem.Click += new System.EventHandler(this.gameDataSave_Click);
             // 
-            // printForm
+            // PrintFormItem
             // 
-            this.printForm.Name = "printForm";
-            resources.ApplyResources(this.printForm, "printForm");
-            this.printForm.Click += new System.EventHandler(this.printForm_Click);
+            this.PrintFormItem.Name = "PrintFormItem";
+            resources.ApplyResources(this.PrintFormItem, "PrintFormItem");
+            this.PrintFormItem.Click += new System.EventHandler(this.printForm_Click);
             // 
-            // printPreview
+            // PrintPreviewItem
             // 
-            this.printPreview.Name = "printPreview";
-            resources.ApplyResources(this.printPreview, "printPreview");
-            this.printPreview.Click += new System.EventHandler(this.printPreview_Click);
+            this.PrintPreviewItem.Name = "PrintPreviewItem";
+            resources.ApplyResources(this.PrintPreviewItem, "PrintPreviewItem");
+            this.PrintPreviewItem.Click += new System.EventHandler(this.printPreview_Click);
             // 
             // EditForm
             // 
@@ -181,9 +181,9 @@
         private System.Windows.Forms.DataGridView PlayerInfoGridView;
         private System.Windows.Forms.TabControl DataGridTab;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gameDataSave;
-        private System.Windows.Forms.ToolStripMenuItem printForm;
-        private System.Windows.Forms.ToolStripMenuItem printPreview;
+        private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem GameDataSaveItem;
+        private System.Windows.Forms.ToolStripMenuItem PrintFormItem;
+        private System.Windows.Forms.ToolStripMenuItem PrintPreviewItem;
     }
 }

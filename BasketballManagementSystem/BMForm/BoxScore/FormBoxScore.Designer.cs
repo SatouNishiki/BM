@@ -898,8 +898,8 @@
             this.label124 = new System.Windows.Forms.Label();
             this.label125 = new System.Windows.Forms.Label();
             this.label126 = new System.Windows.Forms.Label();
-            this.GamePlace = new System.Windows.Forms.Label();
-            this.MyResult = new System.Windows.Forms.Label();
+            this.GamePlaceLabel = new System.Windows.Forms.Label();
+            this.MyResultLabel = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
@@ -1009,7 +1009,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Q5o = new System.Windows.Forms.Label();
             this.Q5m = new System.Windows.Forms.Label();
-            this.OppentResult = new System.Windows.Forms.Label();
+            this.OppentResultLabel = new System.Windows.Forms.Label();
             this.Q4o = new System.Windows.Forms.Label();
             this.Q3o = new System.Windows.Forms.Label();
             this.Q2o = new System.Windows.Forms.Label();
@@ -1018,15 +1018,15 @@
             this.Q3m = new System.Windows.Forms.Label();
             this.Q2m = new System.Windows.Forms.Label();
             this.Q1m = new System.Windows.Forms.Label();
-            this.OppentTeamName = new System.Windows.Forms.Label();
-            this.MyTeamName = new System.Windows.Forms.Label();
-            this.GameDate = new System.Windows.Forms.Label();
-            this.GameName = new System.Windows.Forms.Label();
+            this.OppentTeamNameLabel = new System.Windows.Forms.Label();
+            this.MyTeamNameLabel = new System.Windows.Forms.Label();
+            this.GameDateLabel = new System.Windows.Forms.Label();
+            this.GameNameLabel = new System.Windows.Forms.Label();
             this.ScoreSheet = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PrintForm = new System.Windows.Forms.ToolStripMenuItem();
-            this.PrintPreview = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintFormItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintPreviewItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ScoreSheet)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -1903,8 +1903,8 @@
             this.panel1.Controls.Add(this.label124);
             this.panel1.Controls.Add(this.label125);
             this.panel1.Controls.Add(this.label126);
-            this.panel1.Controls.Add(this.GamePlace);
-            this.panel1.Controls.Add(this.MyResult);
+            this.panel1.Controls.Add(this.GamePlaceLabel);
+            this.panel1.Controls.Add(this.MyResultLabel);
             this.panel1.Controls.Add(this.label55);
             this.panel1.Controls.Add(this.label56);
             this.panel1.Controls.Add(this.label57);
@@ -2014,7 +2014,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.Q5o);
             this.panel1.Controls.Add(this.Q5m);
-            this.panel1.Controls.Add(this.OppentResult);
+            this.panel1.Controls.Add(this.OppentResultLabel);
             this.panel1.Controls.Add(this.Q4o);
             this.panel1.Controls.Add(this.Q3o);
             this.panel1.Controls.Add(this.Q2o);
@@ -2023,10 +2023,10 @@
             this.panel1.Controls.Add(this.Q3m);
             this.panel1.Controls.Add(this.Q2m);
             this.panel1.Controls.Add(this.Q1m);
-            this.panel1.Controls.Add(this.OppentTeamName);
-            this.panel1.Controls.Add(this.MyTeamName);
-            this.panel1.Controls.Add(this.GameDate);
-            this.panel1.Controls.Add(this.GameName);
+            this.panel1.Controls.Add(this.OppentTeamNameLabel);
+            this.panel1.Controls.Add(this.MyTeamNameLabel);
+            this.panel1.Controls.Add(this.GameDateLabel);
+            this.panel1.Controls.Add(this.GameNameLabel);
             this.panel1.Controls.Add(this.ScoreSheet);
             this.panel1.Name = "panel1";
             // 
@@ -6367,19 +6367,19 @@
             // 
             // label126
             // 
-            resources.ApplyResources(this.label126, "label126");
             this.label126.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.label126, "label126");
             this.label126.Name = "label126";
             // 
-            // GamePlace
+            // GamePlaceLabel
             // 
-            resources.ApplyResources(this.GamePlace, "GamePlace");
-            this.GamePlace.Name = "GamePlace";
+            resources.ApplyResources(this.GamePlaceLabel, "GamePlaceLabel");
+            this.GamePlaceLabel.Name = "GamePlaceLabel";
             // 
-            // MyResult
+            // MyResultLabel
             // 
-            resources.ApplyResources(this.MyResult, "MyResult");
-            this.MyResult.Name = "MyResult";
+            resources.ApplyResources(this.MyResultLabel, "MyResultLabel");
+            this.MyResultLabel.Name = "MyResultLabel";
             // 
             // label55
             // 
@@ -6926,10 +6926,10 @@
             resources.ApplyResources(this.Q5m, "Q5m");
             this.Q5m.Name = "Q5m";
             // 
-            // OppentResult
+            // OppentResultLabel
             // 
-            resources.ApplyResources(this.OppentResult, "OppentResult");
-            this.OppentResult.Name = "OppentResult";
+            resources.ApplyResources(this.OppentResultLabel, "OppentResultLabel");
+            this.OppentResultLabel.Name = "OppentResultLabel";
             // 
             // Q4o
             // 
@@ -6971,25 +6971,25 @@
             resources.ApplyResources(this.Q1m, "Q1m");
             this.Q1m.Name = "Q1m";
             // 
-            // OppentTeamName
+            // OppentTeamNameLabel
             // 
-            resources.ApplyResources(this.OppentTeamName, "OppentTeamName");
-            this.OppentTeamName.Name = "OppentTeamName";
+            resources.ApplyResources(this.OppentTeamNameLabel, "OppentTeamNameLabel");
+            this.OppentTeamNameLabel.Name = "OppentTeamNameLabel";
             // 
-            // MyTeamName
+            // MyTeamNameLabel
             // 
-            resources.ApplyResources(this.MyTeamName, "MyTeamName");
-            this.MyTeamName.Name = "MyTeamName";
+            resources.ApplyResources(this.MyTeamNameLabel, "MyTeamNameLabel");
+            this.MyTeamNameLabel.Name = "MyTeamNameLabel";
             // 
-            // GameDate
+            // GameDateLabel
             // 
-            resources.ApplyResources(this.GameDate, "GameDate");
-            this.GameDate.Name = "GameDate";
+            resources.ApplyResources(this.GameDateLabel, "GameDateLabel");
+            this.GameDateLabel.Name = "GameDateLabel";
             // 
-            // GameName
+            // GameNameLabel
             // 
-            resources.ApplyResources(this.GameName, "GameName");
-            this.GameName.Name = "GameName";
+            resources.ApplyResources(this.GameNameLabel, "GameNameLabel");
+            this.GameNameLabel.Name = "GameNameLabel";
             // 
             // ScoreSheet
             // 
@@ -6999,30 +6999,30 @@
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // ToolStripMenuItem
             // 
-            resources.ApplyResources(this.ToolStripMenuItem, "ToolStripMenuItem");
             this.ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.PrintForm,
-            this.PrintPreview});
+            this.PrintFormItem,
+            this.PrintPreviewItem});
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
+            resources.ApplyResources(this.ToolStripMenuItem, "ToolStripMenuItem");
             // 
-            // PrintForm
+            // PrintFormItem
             // 
-            resources.ApplyResources(this.PrintForm, "PrintForm");
-            this.PrintForm.Name = "PrintForm";
-            this.PrintForm.Click += new System.EventHandler(this.PrintForm_Click);
+            this.PrintFormItem.Name = "PrintFormItem";
+            resources.ApplyResources(this.PrintFormItem, "PrintFormItem");
+            this.PrintFormItem.Click += new System.EventHandler(this.PrintForm_Click);
             // 
-            // PrintPreview
+            // PrintPreviewItem
             // 
-            resources.ApplyResources(this.PrintPreview, "PrintPreview");
-            this.PrintPreview.Name = "PrintPreview";
-            this.PrintPreview.Click += new System.EventHandler(this.PrintPreview_Click);
+            this.PrintPreviewItem.Name = "PrintPreviewItem";
+            resources.ApplyResources(this.PrintPreviewItem, "PrintPreviewItem");
+            this.PrintPreviewItem.Click += new System.EventHandler(this.PrintPreview_Click);
             // 
             // FormBoxScore
             // 
@@ -7046,10 +7046,10 @@
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox ScoreSheet;
-        private System.Windows.Forms.Label GameName;
-        private System.Windows.Forms.Label GameDate;
-        private System.Windows.Forms.Label OppentTeamName;
-        private System.Windows.Forms.Label MyTeamName;
+        private System.Windows.Forms.Label GameNameLabel;
+        private System.Windows.Forms.Label GameDateLabel;
+        private System.Windows.Forms.Label OppentTeamNameLabel;
+        private System.Windows.Forms.Label MyTeamNameLabel;
         private System.Windows.Forms.Label Q4o;
         private System.Windows.Forms.Label Q3o;
         private System.Windows.Forms.Label Q2o;
@@ -7058,7 +7058,7 @@
         private System.Windows.Forms.Label Q3m;
         private System.Windows.Forms.Label Q2m;
         private System.Windows.Forms.Label Q1m;
-        private System.Windows.Forms.Label OppentResult;
+        private System.Windows.Forms.Label OppentResultLabel;
         private System.Windows.Forms.Label Q5o;
         private System.Windows.Forms.Label Q5m;
         private System.Windows.Forms.Label label18;
@@ -7168,8 +7168,8 @@
         private System.Windows.Forms.Label label106;
         private System.Windows.Forms.Label label107;
         private System.Windows.Forms.Label label108;
-        private System.Windows.Forms.Label MyResult;
-        private System.Windows.Forms.Label GamePlace;
+        private System.Windows.Forms.Label MyResultLabel;
+        private System.Windows.Forms.Label GamePlaceLabel;
         private System.Windows.Forms.Label label181;
         private System.Windows.Forms.Label label182;
         private System.Windows.Forms.Label label183;
@@ -8040,8 +8040,8 @@
         private System.Windows.Forms.Label label837;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem PrintForm;
-        private System.Windows.Forms.ToolStripMenuItem PrintPreview;
+        private System.Windows.Forms.ToolStripMenuItem PrintFormItem;
+        private System.Windows.Forms.ToolStripMenuItem PrintPreviewItem;
        
 
     }

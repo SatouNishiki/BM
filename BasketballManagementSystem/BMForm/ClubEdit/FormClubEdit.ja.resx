@@ -118,26 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>ファイル</value>
-  </data>
-  <data name="LoadClub.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="LoadClubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
   </data>
-  <data name="LoadClub.Text" xml:space="preserve">
+  <data name="LoadClubToolStripMenuItem.Text" xml:space="preserve">
     <value>クラブのロード</value>
   </data>
-  <data name="SaveClub.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SaveClubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
   </data>
-  <data name="SaveClub.Text" xml:space="preserve">
+  <data name="SaveClubToolStripMenuItem.Text" xml:space="preserve">
     <value>クラブのセーブ</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>部員名簿</value>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>512, 26</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ClubMembersListBox.HorizontalScrollbar" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 12</value>
@@ -145,13 +149,16 @@
   <data name="label10.Text" xml:space="preserve">
     <value>クラブ名※</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>選択メンバー</value>
+  <data name="ClubNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 19</value>
   </data>
-  <data name="ButtonDelete.Text" xml:space="preserve">
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>部員名簿</value>
+  </data>
+  <data name="DeleteButton.Text" xml:space="preserve">
     <value>削除</value>
   </data>
-  <data name="ButtonDicision.Text" xml:space="preserve">
+  <data name="DicisionButton.Text" xml:space="preserve">
     <value>編集確定</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
@@ -160,16 +167,25 @@
   <data name="label4.Text" xml:space="preserve">
     <value>体重 (kg)</value>
   </data>
+  <data name="WeightSelectedTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 19</value>
+  </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 12</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>身長 (cm)</value>
   </data>
-  <data name="IsManSelected.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="HeightSelectedTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 19</value>
+  </data>
+  <data name="IsManSelectedCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="IsManSelectedCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 16</value>
   </data>
-  <data name="IsManSelected.Text" xml:space="preserve">
+  <data name="IsManSelectedCheckBox.Text" xml:space="preserve">
     <value>男性かどうか</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
@@ -184,10 +200,16 @@
   <data name="label1.Text" xml:space="preserve">
     <value>名前</value>
   </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>追加</value>
+  <data name="NameSelectedTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 19</value>
   </data>
-  <data name="ButtonAdd.Text" xml:space="preserve">
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>選択メンバー</value>
+  </data>
+  <data name="AddButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 23</value>
+  </data>
+  <data name="AddButton.Text" xml:space="preserve">
     <value>追加</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
@@ -196,16 +218,25 @@
   <data name="label7.Text" xml:space="preserve">
     <value>体重 (kg)</value>
   </data>
+  <data name="WeightAddTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 19</value>
+  </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 12</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>身長 (cm)</value>
   </data>
-  <data name="IsManAdd.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="HeightAddTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 19</value>
+  </data>
+  <data name="IsManAddCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="IsManAddCheckBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 16</value>
   </data>
-  <data name="IsManAdd.Text" xml:space="preserve">
+  <data name="IsManAddCheckBox.Text" xml:space="preserve">
     <value>男性かどうか</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
@@ -220,6 +251,12 @@
   <data name="label6.Text" xml:space="preserve">
     <value>名前※</value>
   </data>
+  <data name="NameAddTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 19</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>追加</value>
+  </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>391, 26</value>
   </data>
@@ -228,6 +265,9 @@
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>(※は必須項目)</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>512, 356</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>名簿作成</value>

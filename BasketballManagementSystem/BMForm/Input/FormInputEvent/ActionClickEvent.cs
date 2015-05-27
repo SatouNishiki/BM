@@ -18,7 +18,7 @@ namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
     public class InputActionEvent
     {
          //出力用のプレイヤー変数
-        Player p = new Player();
+        Player player = new Player();
         
         Team team = new Team();
 
@@ -62,10 +62,10 @@ namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
             //選手リストの中で現在選択中の選手がどの場所にあるか(リストの何番目の要素か)
             int point = 0;
 
-            p = f.SelectedPlayer;
+            player = f.SelectedPlayer;
 
             //選手の場所を確定
-            point = team.TeamMember.IndexOf(p);
+            point = team.TeamMember.IndexOf(player);
 
             Type t1 = action.GetType();
 
@@ -112,7 +112,7 @@ namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
             if (propInfo != null)
             {
                 methodInfo = propInfo.GetSetMethod();
-                methodInfo.Invoke(action, new object[] { p.Name });
+                methodInfo.Invoke(action, new object[] { player.Name });
             }
 
             propInfo = t1.GetProperty("OwnerNumber");
@@ -120,7 +120,7 @@ namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
             if (propInfo != null)
             {
                 methodInfo = propInfo.GetSetMethod();
-                methodInfo.Invoke(action, new object[] { p.Number });
+                methodInfo.Invoke(action, new object[] { player.Number });
             }
 
             propInfo = t1.GetProperty("GivenFreeThrow");
@@ -162,7 +162,7 @@ namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
 
             actionName = (string)propInfo.GetValue(action, null);
 
-            object o = team.TeamMember[point].GetActionProperty(p, actionName);
+            object o = team.TeamMember[point].GetActionProperty(player, actionName);
 
             try
             {
@@ -176,7 +176,7 @@ namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
 
                 int count = (int)pi.GetValue(o, null);
 
-                f.AddDebugMessage(p.Name + "のアクションを変更, " + action + " ,ActionCount=" + count);
+                f.AddDebugMessage(player.Name + "のアクションを変更, " + action + " ,ActionCount=" + count);
             }
             catch(Exception exc)
             {

@@ -174,17 +174,17 @@ namespace BasketballManagementSystem.BMForm.BoxScore
 
         public void Init()
         {
-            for (int _i = 0; _i < RunningScoreNumber - 1; _i++)
+            for (var i = 0; i < RunningScoreNumber - 1; i++)
             {
-                teamAPoints[_i].Text = (_i + 1).ToString();
-                teamANumbers[_i].Text = "";
-                teamAPoints[_i].Font = new Font(teamAPoints[_i].Font.FontFamily.Name, 10.0F);
-                teamANumbers[_i].Font = new Font(teamAPoints[_i].Font.FontFamily.Name, 10.0F);
+                teamAPoints[i].Text = (i + 1).ToString();
+                teamANumbers[i].Text = "";
+                teamAPoints[i].Font = new Font(teamAPoints[i].Font.FontFamily.Name, 10.0F);
+                teamANumbers[i].Font = new Font(teamAPoints[i].Font.FontFamily.Name, 10.0F);
 
-                teamBPoints[_i].Text = (_i + 1).ToString();
-                teamBNumbers[_i].Text = "";
-                teamBPoints[_i].Font = new Font(teamBPoints[_i].Font.FontFamily.Name, 10.0F);
-                teamBNumbers[_i].Font = new Font(teamAPoints[_i].Font.FontFamily.Name, 10.0F);
+                teamBPoints[i].Text = (i + 1).ToString();
+                teamBNumbers[i].Text = "";
+                teamBPoints[i].Font = new Font(teamBPoints[i].Font.FontFamily.Name, 10.0F);
+                teamBNumbers[i].Font = new Font(teamAPoints[i].Font.FontFamily.Name, 10.0F);
             }
 
         }

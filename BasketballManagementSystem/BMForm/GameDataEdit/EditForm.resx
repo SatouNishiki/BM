@@ -333,28 +333,28 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>30, 17</value>
   </metadata>
-  <data name="gameDataSave.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="GameDataSaveItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 22</value>
   </data>
-  <data name="gameDataSave.Text" xml:space="preserve">
+  <data name="GameDataSaveItem.Text" xml:space="preserve">
     <value>GameDataSave</value>
   </data>
-  <data name="printForm.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PrintFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 22</value>
   </data>
-  <data name="printForm.Text" xml:space="preserve">
+  <data name="PrintFormItem.Text" xml:space="preserve">
     <value>PrintForm</value>
   </data>
-  <data name="printPreview.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PrintPreviewItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>168, 22</value>
   </data>
-  <data name="printPreview.Text" xml:space="preserve">
+  <data name="PrintPreviewItem.Text" xml:space="preserve">
     <value>printPreview</value>
   </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 22</value>
   </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
     <value>File</value>
   </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
@@ -393,28 +393,28 @@
   <data name="$this.Text" xml:space="preserve">
     <value>EditForm</value>
   </data>
-  <data name="&gt;&gt;fileToolStripMenuItem.Name" xml:space="preserve">
-    <value>fileToolStripMenuItem</value>
+  <data name="&gt;&gt;FileToolStripMenuItem.Name" xml:space="preserve">
+    <value>FileToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;fileToolStripMenuItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;FileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;gameDataSave.Name" xml:space="preserve">
-    <value>gameDataSave</value>
+  <data name="&gt;&gt;GameDataSaveItem.Name" xml:space="preserve">
+    <value>GameDataSaveItem</value>
   </data>
-  <data name="&gt;&gt;gameDataSave.Type" xml:space="preserve">
+  <data name="&gt;&gt;GameDataSaveItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;printForm.Name" xml:space="preserve">
-    <value>printForm</value>
+  <data name="&gt;&gt;PrintFormItem.Name" xml:space="preserve">
+    <value>PrintFormItem</value>
   </data>
-  <data name="&gt;&gt;printForm.Type" xml:space="preserve">
+  <data name="&gt;&gt;PrintFormItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;printPreview.Name" xml:space="preserve">
-    <value>printPreview</value>
+  <data name="&gt;&gt;PrintPreviewItem.Name" xml:space="preserve">
+    <value>PrintPreviewItem</value>
   </data>
-  <data name="&gt;&gt;printPreview.Type" xml:space="preserve">
+  <data name="&gt;&gt;PrintPreviewItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

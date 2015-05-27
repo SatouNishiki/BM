@@ -26,107 +26,98 @@ namespace BasketballManagementSystem.BMForm.Input.LoadHelper
 
         public void LoadForm(FormInput f, Game game)
         {
-            /*
-            if (f.GameNameText.Text != game.name)
-                f.GameNameText.Text = game.name;
-            
-
-            if (f.GameLocationText.Text != game.location)
-            f.GameLocationText.Text = game.location;
-            */
-
             f.Game = game;
             SaveDataManager.GetInstance().SetGame(game);
 
             //別スレッドからコントロールを操作するための努力
-            if (f.MyCortTeam.InvokeRequired)
+            if (f.MyCortTeamListBox.InvokeRequired)
             {
                 SetListBoxDelegate sbd = (_f, _g) =>
                 {
-                    _f.MyCortTeam.Enabled = false;
+                    _f.MyCortTeamListBox.Enabled = false;
 
-                    _f.MyCortTeam.Items.Clear();
+                    _f.MyCortTeamListBox.Items.Clear();
                     foreach (Player p in _g.MyTeam.CortMember)
                     {
-                        _f.MyCortTeam.Items.Add(p);
+                        _f.MyCortTeamListBox.Items.Add(p);
                     }
 
-                    _f.MyCortTeam.Enabled = true;
+                    _f.MyCortTeamListBox.Enabled = true;
 
 
 
-                    _f.MyOutTeam.Enabled = false;
+                    _f.MyOutTeamListBox.Enabled = false;
 
-                    _f.MyOutTeam.Items.Clear();
+                    _f.MyOutTeamListBox.Items.Clear();
                     foreach (Player p in _g.MyTeam.OutMember)
                     {
-                        _f.MyOutTeam.Items.Add(p);
+                        _f.MyOutTeamListBox.Items.Add(p);
                     }
 
-                    _f.MyOutTeam.Enabled = true;
-                    _f.OppentCortTeam.Enabled = false;
+                    _f.MyOutTeamListBox.Enabled = true;
+                    _f.OppentCortTeamListBox.Enabled = false;
 
-                    _f.OppentCortTeam.Items.Clear();
+                    _f.OppentCortTeamListBox.Items.Clear();
                     foreach (Player p in _g.OppentTeam.CortMember)
                     {
-                        _f.OppentCortTeam.Items.Add(p);
+                        _f.OppentCortTeamListBox.Items.Add(p);
                     }
 
-                    _f.OppentCortTeam.Enabled = true;
-                    _f.OppentOutTeam.Enabled = false;
+                    _f.OppentCortTeamListBox.Enabled = true;
+                    _f.OppentOutTeamListBox.Enabled = false;
 
-                    _f.OppentOutTeam.Items.Clear();
+                    _f.OppentOutTeamListBox.Items.Clear();
                     foreach (Player p in _g.OppentTeam.OutMember)
                     {
-                        _f.OppentOutTeam.Items.Add(p);
+                        _f.OppentOutTeamListBox.Items.Add(p);
                     }
 
-                    _f.OppentOutTeam.Enabled = true;
+                    _f.OppentOutTeamListBox.Enabled = true;
                 };
 
                 f.Invoke(sbd, new object[] { f, game });
             }
             else
             {
-                f.MyCortTeam.Enabled = false;
+                f.MyCortTeamListBox.Enabled = false;
 
-                f.MyCortTeam.Items.Clear();
+                f.MyCortTeamListBox.Items.Clear();
                 foreach (Player p in game.MyTeam.CortMember)
                 {
-                    f.MyCortTeam.Items.Add(p);
+                    f.MyCortTeamListBox.Items.Add(p);
                 }
 
-                f.MyCortTeam.Enabled = true;
+                f.MyCortTeamListBox.Enabled = true;
 
 
 
-                f.MyOutTeam.Enabled = false;
+                f.MyOutTeamListBox.Enabled = false;
 
-                f.MyOutTeam.Items.Clear();
+                f.MyOutTeamListBox.Items.Clear();
                 foreach (Player p in game.MyTeam.OutMember)
                 {
-                    f.MyOutTeam.Items.Add(p);
+                    f.MyOutTeamListBox.Items.Add(p);
                 }
 
-                f.MyOutTeam.Enabled = true;
-                f.OppentCortTeam.Enabled = false;
+                f.MyOutTeamListBox.Enabled = true;
+                f.OppentCortTeamListBox.Enabled = false;
 
-                f.OppentCortTeam.Items.Clear();
+                f.OppentCortTeamListBox.Items.Clear();
                 foreach (Player p in game.OppentTeam.CortMember)
                 {
-                    f.OppentCortTeam.Items.Add(p);
+                    f.OppentCortTeamListBox.Items.Add(p);
                 }
 
-                f.OppentCortTeam.Enabled = true;
-                f.OppentOutTeam.Enabled = false;
+                f.OppentCortTeamListBox.Enabled = true;
+                f.OppentOutTeamListBox.Enabled = false;
 
-                f.OppentOutTeam.Items.Clear();
+                f.OppentOutTeamListBox.Items.Clear();
                 foreach (Player p in game.OppentTeam.OutMember)
                 {
-                    f.OppentOutTeam.Items.Add(p);
+                    f.OppentOutTeamListBox.Items.Add(p);
                 }
 
-                f.OppentOutTeam.Enabled = true;
+                f.OppentOutTeamListBox.Enabled = true;
                 /*
                 f.MyCortTeam.Refresh();
                 f.MyOutTeam.Refresh();

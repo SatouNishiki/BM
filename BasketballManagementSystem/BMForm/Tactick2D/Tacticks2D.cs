@@ -24,7 +24,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
         private Point leftTop;
         private Point rightDown;
         
-        private Graphics g;
+        private Graphics graphics;
         
         private double[] range;
 
@@ -43,32 +43,32 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
         {
             InitializeComponent();
 
-            leftTop = Cort.Location;
+            leftTop = CortPictureBox.Location;
 
-            rightDown = new Point(Cort.Location.X + Cort.Size.Width, Cort.Location.Y + Cort.Size.Height);
+            rightDown = new Point(CortPictureBox.Location.X + CortPictureBox.Size.Width, CortPictureBox.Location.Y + CortPictureBox.Size.Height);
 
             //身長175cmの男性の平均的な片腕の長さ0.75[m]をボールキープ可能レンジと定義
             range = CortHelper.GetCortLengthFromForm(leftTop, rightDown, 0.75);
 
-            DrawActionKinds.Items.Add(AllTeamAction);
-            DrawActionKinds.Items.Add(AllAction);
-            DrawActionKinds.Items.Add(new Shoot2P().ActionName);
-            DrawActionKinds.Items.Add(new Shoot3P().ActionName);
-            DrawActionKinds.Items.Add(new FreeThrow().ActionName);
-            DrawActionKinds.Items.Add(new Shoot2PMiss().ActionName);
-            DrawActionKinds.Items.Add(new Shoot3PMiss().ActionName);
-            DrawActionKinds.Items.Add(new FreeThrowMiss().ActionName);
+            DrawActionKindsComboBox.Items.Add(AllTeamAction);
+            DrawActionKindsComboBox.Items.Add(AllAction);
+            DrawActionKindsComboBox.Items.Add(new Shoot2P().ActionName);
+            DrawActionKindsComboBox.Items.Add(new Shoot3P().ActionName);
+            DrawActionKindsComboBox.Items.Add(new FreeThrow().ActionName);
+            DrawActionKindsComboBox.Items.Add(new Shoot2PMiss().ActionName);
+            DrawActionKindsComboBox.Items.Add(new Shoot3PMiss().ActionName);
+            DrawActionKindsComboBox.Items.Add(new FreeThrowMiss().ActionName);
 
-            DrawActionKinds.SelectedIndex = 0;
+            DrawActionKindsComboBox.SelectedIndex = 0;
 
-            foreach (Player p in game.MyTeam.TeamMember)
+            foreach (var p in game.MyTeam.TeamMember)
             {
-                MyTeamList.Items.Add(p);
+                MyTeamListBox.Items.Add(p);
             }
 
-            foreach (Player p in game.OppentTeam.TeamMember)
+            foreach (var p in game.OppentTeam.TeamMember)
             {
-                OppentTeamList.Items.Add(p);
+                OppentTeamListBox.Items.Add(p);
             }
         }
 
@@ -87,17 +87,17 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
                 team = game.OppentTeam.Name;
             }
 
-            InformationText.Text = "SelectedPlayer = " + selectedPlayer + "\n";
-            InformationText.AppendText("Team = " + team + "\n");
-            InformationText.AppendText("AllPoint = " + selectedPlayer.Point + "\n");
-            InformationText.AppendText("MaxShootRange = " + CortHelper.GetMaxShootRange(selectedPlayer.GetPointActionList(false)) + "[m]\n");
-            InformationText.AppendText(message);
+            InformationRichTextBox.Text = "SelectedPlayer = " + selectedPlayer + "\n";
+            InformationRichTextBox.AppendText("Team = " + team + "\n");
+            InformationRichTextBox.AppendText("AllPoint = " + selectedPlayer.Point + "\n");
+            InformationRichTextBox.AppendText("MaxShootRange = " + CortHelper.GetMaxShootRange(selectedPlayer.GetPointActionList(false)) + "[m]\n");
+            InformationRichTextBox.AppendText(message);
         }
        
 
         private void Cort_Paint(object sender, PaintEventArgs e)
         {
-            string selectedString = (string)DrawActionKinds.SelectedItem;
+            string selectedString = (string)DrawActionKindsComboBox.SelectedItem;
 
             switch (selectedString)
             {
@@ -118,11 +118,11 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
         private void DrawAllTeamAction(PaintEventArgs e)
         {
             //Graphicsオブジェクトを作成する
-            g = e.Graphics;
+            graphics = e.Graphics;
 
-            foreach (Player p in game.MyTeam.TeamMember)
+            foreach (var p in game.MyTeam.TeamMember)
             {
-                foreach (RelationPointAction action in p.GetPointActionList())
+                foreach (var action in p.GetPointActionList())
                 {
                     Point point = PositionConvert.ConvertToPoint(action.Position, leftTop, rightDown);
 
@@ -143,7 +143,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
                         //パス内の点に対応している色を指定する
                         gb.SurroundColors =
                             new Color[] { Color.Yellow };
-                        g.FillEllipse(gb, point.X, point.Y, (int)range[0], (int)range[1]);
+                        graphics.FillEllipse(gb, point.X, point.Y, (int)range[0], (int)range[1]);
 
                     }
                     else
@@ -154,14 +154,14 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
                         gb2.SurroundColors =
                             new Color[] { Color.LightBlue };
 
-                        g.FillEllipse(gb2, point.X, point.Y, (int)range[0], (int)range[1]);
+                        graphics.FillEllipse(gb2, point.X, point.Y, (int)range[0], (int)range[1]);
                     }
                 }
             }
 
-            foreach (Player p in game.OppentTeam.TeamMember)
+            foreach (var p in game.OppentTeam.TeamMember)
             {
-                foreach (RelationPointAction action in p.GetPointActionList())
+                foreach (var action in p.GetPointActionList())
                 {
                     Point point = PositionConvert.ConvertToPoint(action.Position, leftTop, rightDown);
 
@@ -182,7 +182,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
                         //パス内の点に対応している色を指定する
                         gb.SurroundColors =
                             new Color[] { Color.Yellow };
-                        g.FillEllipse(gb, point.X, point.Y, (int)range[0], (int)range[1]);
+                        graphics.FillEllipse(gb, point.X, point.Y, (int)range[0], (int)range[1]);
 
                     }
                     else
@@ -193,7 +193,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
                         gb2.SurroundColors =
                             new Color[] { Color.LightBlue };
 
-                        g.FillEllipse(gb2, point.X, point.Y, (int)range[0], (int)range[1]);
+                        graphics.FillEllipse(gb2, point.X, point.Y, (int)range[0], (int)range[1]);
                     }
                 }
             }
@@ -203,9 +203,9 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
         {
             if (selectedPlayer == null) return;
 
-            g = e.Graphics;
+            graphics = e.Graphics;
 
-            foreach (RelationPointAction action in selectedPlayer.GetPointActionList())
+            foreach (var action in selectedPlayer.GetPointActionList())
             {
                 Point point = PositionConvert.ConvertToPoint(action.Position, leftTop, rightDown);
 
@@ -226,7 +226,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
                     //パス内の点に対応している色を指定する
                     gb.SurroundColors =
                         new Color[] { Color.Yellow };
-                    g.FillEllipse(gb, point.X, point.Y, (int)range[0], (int)range[1]);
+                    graphics.FillEllipse(gb, point.X, point.Y, (int)range[0], (int)range[1]);
 
                 }
                 else
@@ -237,7 +237,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
                     gb2.SurroundColors =
                         new Color[] { Color.LightBlue };
 
-                    g.FillEllipse(gb2, point.X, point.Y, (int)range[0], (int)range[1]);
+                    graphics.FillEllipse(gb2, point.X, point.Y, (int)range[0], (int)range[1]);
                 }
             }
         }
@@ -246,9 +246,9 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
         {
             if (selectedPlayer == null) return;
 
-            g = e.Graphics;
+            graphics = e.Graphics;
 
-            foreach (RelationPointAction action in selectedPlayer.GetPointActionList(a => a.ActionName == (string)DrawActionKinds.SelectedItem))
+            foreach (var action in selectedPlayer.GetPointActionList(a => a.ActionName == (string)DrawActionKindsComboBox.SelectedItem))
             {
                 Point point = PositionConvert.ConvertToPoint(action.Position, leftTop, rightDown);
 
@@ -269,7 +269,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
                     //パス内の点に対応している色を指定する
                     gb.SurroundColors =
                         new Color[] { Color.Yellow };
-                    g.FillEllipse(gb, point.X, point.Y, (int)range[0], (int)range[1]);
+                    graphics.FillEllipse(gb, point.X, point.Y, (int)range[0], (int)range[1]);
 
                 }
                 else
@@ -280,7 +280,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
                     gb2.SurroundColors =
                         new Color[] { Color.LightBlue };
 
-                    g.FillEllipse(gb2, point.X, point.Y, (int)range[0], (int)range[1]);
+                    graphics.FillEllipse(gb2, point.X, point.Y, (int)range[0], (int)range[1]);
                     
                 }
             }
@@ -290,12 +290,12 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
         {
             selectedPlayer = (Player)((ListBox)sender).SelectedItem;
             AddInformationText("");
-            Cort.Refresh();
+            CortPictureBox.Refresh();
         }
 
         private void DrawActionKinds_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Cort.Refresh();
+            CortPictureBox.Refresh();
         }
 
         private void Cort_Click(object sender, EventArgs e)
@@ -319,7 +319,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             RelationPointAction shoot = new RelationPointAction();
 
             //ミスとフリースローを除外
-            foreach (RelationPointAction r in selectedPlayer.GetPointActionList(a => !(a is Miss) && !(a is FreeThrow)))
+            foreach (var r in selectedPlayer.GetPointActionList(a => !(a is Miss) && !(a is FreeThrow)))
             {
                 double temp = CortHelper.GetDistance(p, r.Position);
                //double temp = CortHelper.GetDistanceX(p, r.position);
@@ -384,7 +384,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             List<RelationPointAction> rList = query.ToList<RelationPointAction>();
 
             //ミスとフリースローを除外
-            foreach (RelationPointAction r in rList)
+            foreach (var r in rList)
             {
                 if (!firstFlag)
                 {
@@ -420,12 +420,12 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
 
             List<double> shootSuccessPercent = new List<double>();
 
-            foreach (List<RelationPointAction> l in list)
+            foreach (var l in list)
             {
                 double shootCount = 0;
                 double missCount = 0;
 
-                foreach (RelationPointAction r in l)
+                foreach (var r in l)
                 {
                     if (!(r is Miss))
                     {
@@ -451,7 +451,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             int pos = 0;
             int count = 0;
 
-            foreach (double d in shootSuccessPercent)
+            foreach (var d in shootSuccessPercent)
             {
                 if (d >= _valuationBasis)
                 {
@@ -518,23 +518,23 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
 
         private void percent_TextChanged(object sender, EventArgs e)
         {
-            if (percent.Text != "")
+            if (PercentTextBox.Text != "")
             {
                 try
                 {
-                   valuationBasisPercent = double.Parse(percent.Text);
+                   valuationBasisPercent = double.Parse(PercentTextBox.Text);
                 }
                 catch
                 {
                     valuationBasisPercent = 50;
-                    percent.Text = "50";
+                    PercentTextBox.Text = "50";
 
                     BMErrorLibrary.BMError.ErrorMessageOutput("評価基準に不正な値が入力されました");
                 }
             }
             else
             {
-                percent.Text = "50";
+                PercentTextBox.Text = "50";
             }
         }
 

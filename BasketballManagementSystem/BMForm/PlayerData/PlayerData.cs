@@ -35,7 +35,7 @@ namespace BasketballManagementSystem.BMForm.PlayerData
 
         private void MyTeamList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Player p = (Player)MyTeamList.Items[MyTeamList.SelectedIndex];
+            Player p = (Player)MyTeamListBox.Items[MyTeamListBox.SelectedIndex];
             SelectPlayer.Text = p.ToString();
             selectedPlayer = p;
 
@@ -50,7 +50,7 @@ namespace BasketballManagementSystem.BMForm.PlayerData
 
         private void OppentTeamList_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Player p = (Player)OppentTeamList.Items[OppentTeamList.SelectedIndex];
+            Player p = (Player)OppentTeamListBox.Items[OppentTeamListBox.SelectedIndex];
             SelectPlayer.Text = p.ToString();
             selectedPlayer = p;
 
@@ -67,12 +67,12 @@ namespace BasketballManagementSystem.BMForm.PlayerData
         {
             foreach (Player p in game.MyTeam.TeamMember)
             {
-                this.MyTeamList.Items.Add(p);
+                this.MyTeamListBox.Items.Add(p);
             }
 
             foreach (Player p in game.OppentTeam.TeamMember)
             {
-                this.OppentTeamList.Items.Add(p);
+                this.OppentTeamListBox.Items.Add(p);
             }
         }
 

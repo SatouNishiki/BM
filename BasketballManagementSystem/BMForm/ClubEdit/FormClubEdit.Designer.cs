@@ -30,34 +30,34 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClubEdit));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.LoadClub = new System.Windows.Forms.ToolStripMenuItem();
-            this.SaveClub = new System.Windows.Forms.ToolStripMenuItem();
-            this.ClubMembersList = new System.Windows.Forms.ListBox();
+            this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LoadClubItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SaveClubItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ClubMembersListBox = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.ClubName = new System.Windows.Forms.TextBox();
+            this.ClubNameTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.ButtonDelete = new System.Windows.Forms.Button();
-            this.ButtonDicision = new System.Windows.Forms.Button();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.DicisionButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.WeightSelected = new System.Windows.Forms.TextBox();
+            this.WeightSelectedTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.HeightSelected = new System.Windows.Forms.TextBox();
-            this.IsManSelected = new System.Windows.Forms.CheckBox();
+            this.HeightSelectedTextBox = new System.Windows.Forms.TextBox();
+            this.IsManSelectedCheckBox = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.NameSelected = new System.Windows.Forms.TextBox();
+            this.NameSelectedTextBox = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.ButtonAdd = new System.Windows.Forms.Button();
+            this.AddButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.WeightAdd = new System.Windows.Forms.TextBox();
+            this.WeightAddTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.HeightAdd = new System.Windows.Forms.TextBox();
-            this.IsManAdd = new System.Windows.Forms.CheckBox();
+            this.HeightAddTextBox = new System.Windows.Forms.TextBox();
+            this.IsManAddCheckBox = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.NameAdd = new System.Windows.Forms.TextBox();
+            this.NameAddTextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -67,44 +67,44 @@
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.FileToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
-            // fileToolStripMenuItem
+            // FileToolStripMenuItem
             // 
-            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.LoadClub,
-            this.SaveClub});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LoadClubItem,
+            this.SaveClubItem});
+            this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
-            // LoadClub
+            // LoadClubItem
             // 
-            resources.ApplyResources(this.LoadClub, "LoadClub");
-            this.LoadClub.Name = "LoadClub";
-            this.LoadClub.Click += new System.EventHandler(this.loadClub_Click);
+            this.LoadClubItem.Name = "LoadClubItem";
+            resources.ApplyResources(this.LoadClubItem, "LoadClubItem");
+            this.LoadClubItem.Click += new System.EventHandler(this.LoadClubToolStripMenuItem_Click);
             // 
-            // SaveClub
+            // SaveClubItem
             // 
-            resources.ApplyResources(this.SaveClub, "SaveClub");
-            this.SaveClub.Name = "SaveClub";
-            this.SaveClub.Click += new System.EventHandler(this.saveClub_Click);
+            this.SaveClubItem.Name = "SaveClubItem";
+            resources.ApplyResources(this.SaveClubItem, "SaveClubItem");
+            this.SaveClubItem.Click += new System.EventHandler(this.SaveClubToolStripMenuItem_Click);
             // 
-            // ClubMembersList
+            // ClubMembersListBox
             // 
-            resources.ApplyResources(this.ClubMembersList, "ClubMembersList");
-            this.ClubMembersList.FormattingEnabled = true;
-            this.ClubMembersList.Name = "ClubMembersList";
-            this.ClubMembersList.SelectedIndexChanged += new System.EventHandler(this.ClubMembersList_SelectedIndexChanged);
+            this.ClubMembersListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.ClubMembersListBox, "ClubMembersListBox");
+            this.ClubMembersListBox.Name = "ClubMembersListBox";
+            this.ClubMembersListBox.SelectedIndexChanged += new System.EventHandler(this.ClubMembersLisBoxt_SelectedIndexChanged);
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.ClubName);
-            this.groupBox1.Controls.Add(this.ClubMembersList);
+            this.groupBox1.Controls.Add(this.ClubNameTextBox);
+            this.groupBox1.Controls.Add(this.ClubMembersListBox);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -113,66 +113,66 @@
             resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
             // 
-            // ClubName
+            // ClubNameTextBox
             // 
-            resources.ApplyResources(this.ClubName, "ClubName");
-            this.ClubName.Name = "ClubName";
+            resources.ApplyResources(this.ClubNameTextBox, "ClubNameTextBox");
+            this.ClubNameTextBox.Name = "ClubNameTextBox";
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Controls.Add(this.ButtonDelete);
-            this.groupBox2.Controls.Add(this.ButtonDicision);
+            this.groupBox2.Controls.Add(this.DeleteButton);
+            this.groupBox2.Controls.Add(this.DicisionButton);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.WeightSelected);
+            this.groupBox2.Controls.Add(this.WeightSelectedTextBox);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.HeightSelected);
-            this.groupBox2.Controls.Add(this.IsManSelected);
+            this.groupBox2.Controls.Add(this.HeightSelectedTextBox);
+            this.groupBox2.Controls.Add(this.IsManSelectedCheckBox);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.NameSelected);
+            this.groupBox2.Controls.Add(this.NameSelectedTextBox);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
-            // ButtonDelete
+            // DeleteButton
             // 
-            resources.ApplyResources(this.ButtonDelete, "ButtonDelete");
-            this.ButtonDelete.Name = "ButtonDelete";
-            this.ButtonDelete.UseVisualStyleBackColor = true;
-            this.ButtonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
+            resources.ApplyResources(this.DeleteButton, "DeleteButton");
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
-            // ButtonDicision
+            // DicisionButton
             // 
-            resources.ApplyResources(this.ButtonDicision, "ButtonDicision");
-            this.ButtonDicision.Name = "ButtonDicision";
-            this.ButtonDicision.UseVisualStyleBackColor = true;
-            this.ButtonDicision.Click += new System.EventHandler(this.ButtonDicision_Click);
+            resources.ApplyResources(this.DicisionButton, "DicisionButton");
+            this.DicisionButton.Name = "DicisionButton";
+            this.DicisionButton.UseVisualStyleBackColor = true;
+            this.DicisionButton.Click += new System.EventHandler(this.DicisionButton_Click);
             // 
             // label4
             // 
             resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
             // 
-            // WeightSelected
+            // WeightSelectedTextBox
             // 
-            resources.ApplyResources(this.WeightSelected, "WeightSelected");
-            this.WeightSelected.Name = "WeightSelected";
+            resources.ApplyResources(this.WeightSelectedTextBox, "WeightSelectedTextBox");
+            this.WeightSelectedTextBox.Name = "WeightSelectedTextBox";
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
-            // HeightSelected
+            // HeightSelectedTextBox
             // 
-            resources.ApplyResources(this.HeightSelected, "HeightSelected");
-            this.HeightSelected.Name = "HeightSelected";
+            resources.ApplyResources(this.HeightSelectedTextBox, "HeightSelectedTextBox");
+            this.HeightSelectedTextBox.Name = "HeightSelectedTextBox";
             // 
-            // IsManSelected
+            // IsManSelectedCheckBox
             // 
-            resources.ApplyResources(this.IsManSelected, "IsManSelected");
-            this.IsManSelected.Name = "IsManSelected";
-            this.IsManSelected.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.IsManSelectedCheckBox, "IsManSelectedCheckBox");
+            this.IsManSelectedCheckBox.Name = "IsManSelectedCheckBox";
+            this.IsManSelectedCheckBox.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -184,58 +184,58 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // NameSelected
+            // NameSelectedTextBox
             // 
-            resources.ApplyResources(this.NameSelected, "NameSelected");
-            this.NameSelected.Name = "NameSelected";
+            resources.ApplyResources(this.NameSelectedTextBox, "NameSelectedTextBox");
+            this.NameSelectedTextBox.Name = "NameSelectedTextBox";
             // 
             // groupBox3
             // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.Controls.Add(this.ButtonAdd);
+            this.groupBox3.Controls.Add(this.AddButton);
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.WeightAdd);
+            this.groupBox3.Controls.Add(this.WeightAddTextBox);
             this.groupBox3.Controls.Add(this.label8);
-            this.groupBox3.Controls.Add(this.HeightAdd);
-            this.groupBox3.Controls.Add(this.IsManAdd);
+            this.groupBox3.Controls.Add(this.HeightAddTextBox);
+            this.groupBox3.Controls.Add(this.IsManAddCheckBox);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.NameAdd);
+            this.groupBox3.Controls.Add(this.NameAddTextBox);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
-            // ButtonAdd
+            // AddButton
             // 
-            resources.ApplyResources(this.ButtonAdd, "ButtonAdd");
-            this.ButtonAdd.Name = "ButtonAdd";
-            this.ButtonAdd.UseVisualStyleBackColor = true;
-            this.ButtonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
+            resources.ApplyResources(this.AddButton, "AddButton");
+            this.AddButton.Name = "AddButton";
+            this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // label7
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
-            // WeightAdd
+            // WeightAddTextBox
             // 
-            resources.ApplyResources(this.WeightAdd, "WeightAdd");
-            this.WeightAdd.Name = "WeightAdd";
+            resources.ApplyResources(this.WeightAddTextBox, "WeightAddTextBox");
+            this.WeightAddTextBox.Name = "WeightAddTextBox";
             // 
             // label8
             // 
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
             // 
-            // HeightAdd
+            // HeightAddTextBox
             // 
-            resources.ApplyResources(this.HeightAdd, "HeightAdd");
-            this.HeightAdd.Name = "HeightAdd";
+            resources.ApplyResources(this.HeightAddTextBox, "HeightAddTextBox");
+            this.HeightAddTextBox.Name = "HeightAddTextBox";
             // 
-            // IsManAdd
+            // IsManAddCheckBox
             // 
-            resources.ApplyResources(this.IsManAdd, "IsManAdd");
-            this.IsManAdd.Name = "IsManAdd";
-            this.IsManAdd.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.IsManAddCheckBox, "IsManAddCheckBox");
+            this.IsManAddCheckBox.Name = "IsManAddCheckBox";
+            this.IsManAddCheckBox.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -247,10 +247,10 @@
             resources.ApplyResources(this.label6, "label6");
             this.label6.Name = "label6";
             // 
-            // NameAdd
+            // NameAddTextBox
             // 
-            resources.ApplyResources(this.NameAdd, "NameAdd");
-            this.NameAdd.Name = "NameAdd";
+            resources.ApplyResources(this.NameAddTextBox, "NameAddTextBox");
+            this.NameAddTextBox.Name = "NameAddTextBox";
             // 
             // label9
             // 
@@ -285,34 +285,34 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem LoadClub;
-        private System.Windows.Forms.ToolStripMenuItem SaveClub;
-        private System.Windows.Forms.ListBox ClubMembersList;
+        private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem LoadClubItem;
+        private System.Windows.Forms.ToolStripMenuItem SaveClubItem;
+        private System.Windows.Forms.ListBox ClubMembersListBox;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox NameSelected;
-        private System.Windows.Forms.CheckBox IsManSelected;
+        private System.Windows.Forms.TextBox NameSelectedTextBox;
+        private System.Windows.Forms.CheckBox IsManSelectedCheckBox;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox WeightSelected;
+        private System.Windows.Forms.TextBox WeightSelectedTextBox;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox HeightSelected;
-        private System.Windows.Forms.Button ButtonDicision;
+        private System.Windows.Forms.TextBox HeightSelectedTextBox;
+        private System.Windows.Forms.Button DicisionButton;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox WeightAdd;
+        private System.Windows.Forms.TextBox WeightAddTextBox;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox HeightAdd;
-        private System.Windows.Forms.CheckBox IsManAdd;
+        private System.Windows.Forms.TextBox HeightAddTextBox;
+        private System.Windows.Forms.CheckBox IsManAddCheckBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox NameAdd;
-        private System.Windows.Forms.Button ButtonAdd;
+        private System.Windows.Forms.TextBox NameAddTextBox;
+        private System.Windows.Forms.Button AddButton;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox ClubName;
-        private System.Windows.Forms.Button ButtonDelete;
+        private System.Windows.Forms.TextBox ClubNameTextBox;
+        private System.Windows.Forms.Button DeleteButton;
     }
 }

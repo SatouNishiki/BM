@@ -28,94 +28,94 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGraphScore));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title3 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title4 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title5 = new System.Windows.Forms.DataVisualization.Charting.Title();
-            this.ChartQuarter1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.MyTeamList = new System.Windows.Forms.ListBox();
-            this.OppentTeamList = new System.Windows.Forms.ListBox();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title7 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title8 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title9 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title10 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            this.Quarter1Chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.MyTeamListBox = new System.Windows.Forms.ListBox();
+            this.OppentTeamListBox = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.TabControl1 = new System.Windows.Forms.TabControl();
             this.Quarter1 = new System.Windows.Forms.TabPage();
             this.Quarter2 = new System.Windows.Forms.TabPage();
-            this.ChartQuarter2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.Quarter2Chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Quarter3 = new System.Windows.Forms.TabPage();
-            this.ChartQuarter3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.Quarter3Chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.Quarter4 = new System.Windows.Forms.TabPage();
-            this.ChartQuarter4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.Quarter4Chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.ChartQuarterAll = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.QuarterAllChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.ファイルToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PrintForm = new System.Windows.Forms.ToolStripMenuItem();
-            this.PrintPreview = new System.Windows.Forms.ToolStripMenuItem();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartQuarter1)).BeginInit();
-            this.tabControl1.SuspendLayout();
+            this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintFormItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintPreviewItem = new System.Windows.Forms.ToolStripMenuItem();
+            ((System.ComponentModel.ISupportInitialize)(this.Quarter1Chart)).BeginInit();
+            this.TabControl1.SuspendLayout();
             this.Quarter1.SuspendLayout();
             this.Quarter2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartQuarter2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Quarter2Chart)).BeginInit();
             this.Quarter3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartQuarter3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Quarter3Chart)).BeginInit();
             this.Quarter4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartQuarter4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Quarter4Chart)).BeginInit();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ChartQuarterAll)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuarterAllChart)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // ChartQuarter1
+            // Quarter1Chart
             // 
-            resources.ApplyResources(this.ChartQuarter1, "ChartQuarter1");
-            chartArea1.AxisX.Minimum = 0D;
-            chartArea1.AxisX.Title = "クォーター開始からの時間[Second]";
-            chartArea1.AxisY.Minimum = 0D;
-            chartArea1.AxisY.Title = "点数[点]";
-            chartArea1.Name = "ChartArea1";
-            this.ChartQuarter1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.ChartQuarter1.Legends.Add(legend1);
-            this.ChartQuarter1.Name = "ChartQuarter1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.ChartQuarter1.Series.Add(series1);
-            title1.Name = "Title1";
-            title1.Text = "クォーター1のグラフ";
-            this.ChartQuarter1.Titles.Add(title1);
+            chartArea6.AxisX.Minimum = 0D;
+            chartArea6.AxisX.Title = "クォーター開始からの時間[Second]";
+            chartArea6.AxisY.Minimum = 0D;
+            chartArea6.AxisY.Title = "点数[点]";
+            chartArea6.Name = "ChartArea1";
+            this.Quarter1Chart.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.Quarter1Chart.Legends.Add(legend6);
+            resources.ApplyResources(this.Quarter1Chart, "Quarter1Chart");
+            this.Quarter1Chart.Name = "Quarter1Chart";
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Legend = "Legend1";
+            series6.Name = "Series1";
+            this.Quarter1Chart.Series.Add(series6);
+            title6.Name = "Title1";
+            title6.Text = "クォーター1のグラフ";
+            this.Quarter1Chart.Titles.Add(title6);
             // 
-            // MyTeamList
+            // MyTeamListBox
             // 
-            resources.ApplyResources(this.MyTeamList, "MyTeamList");
-            this.MyTeamList.FormattingEnabled = true;
-            this.MyTeamList.Name = "MyTeamList";
-            this.MyTeamList.SelectedIndexChanged += new System.EventHandler(this.List_SelectedIndexChanged);
+            this.MyTeamListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.MyTeamListBox, "MyTeamListBox");
+            this.MyTeamListBox.Name = "MyTeamListBox";
+            this.MyTeamListBox.SelectedIndexChanged += new System.EventHandler(this.List_SelectedIndexChanged);
             // 
-            // OppentTeamList
+            // OppentTeamListBox
             // 
-            resources.ApplyResources(this.OppentTeamList, "OppentTeamList");
-            this.OppentTeamList.FormattingEnabled = true;
-            this.OppentTeamList.Name = "OppentTeamList";
-            this.OppentTeamList.SelectedIndexChanged += new System.EventHandler(this.List_SelectedIndexChanged);
+            this.OppentTeamListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.OppentTeamListBox, "OppentTeamListBox");
+            this.OppentTeamListBox.Name = "OppentTeamListBox";
+            this.OppentTeamListBox.SelectedIndexChanged += new System.EventHandler(this.List_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -129,187 +129,187 @@
             this.label2.ForeColor = System.Drawing.Color.DarkGreen;
             this.label2.Name = "label2";
             // 
-            // tabControl1
+            // TabControl1
             // 
-            resources.ApplyResources(this.tabControl1, "tabControl1");
-            this.tabControl1.Controls.Add(this.Quarter1);
-            this.tabControl1.Controls.Add(this.Quarter2);
-            this.tabControl1.Controls.Add(this.Quarter3);
-            this.tabControl1.Controls.Add(this.Quarter4);
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
+            this.TabControl1.Controls.Add(this.Quarter1);
+            this.TabControl1.Controls.Add(this.Quarter2);
+            this.TabControl1.Controls.Add(this.Quarter3);
+            this.TabControl1.Controls.Add(this.Quarter4);
+            this.TabControl1.Controls.Add(this.tabPage1);
+            resources.ApplyResources(this.TabControl1, "TabControl1");
+            this.TabControl1.Name = "TabControl1";
+            this.TabControl1.SelectedIndex = 0;
+            this.TabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // Quarter1
             // 
+            this.Quarter1.Controls.Add(this.Quarter1Chart);
             resources.ApplyResources(this.Quarter1, "Quarter1");
-            this.Quarter1.Controls.Add(this.ChartQuarter1);
             this.Quarter1.Name = "Quarter1";
             this.Quarter1.UseVisualStyleBackColor = true;
             // 
             // Quarter2
             // 
+            this.Quarter2.Controls.Add(this.Quarter2Chart);
             resources.ApplyResources(this.Quarter2, "Quarter2");
-            this.Quarter2.Controls.Add(this.ChartQuarter2);
             this.Quarter2.Name = "Quarter2";
             this.Quarter2.UseVisualStyleBackColor = true;
             // 
-            // ChartQuarter2
+            // Quarter2Chart
             // 
-            resources.ApplyResources(this.ChartQuarter2, "ChartQuarter2");
-            chartArea2.AxisX.Minimum = 0D;
-            chartArea2.AxisX.Title = "クォーター開始からの時間[Second]";
-            chartArea2.AxisY.Minimum = 0D;
-            chartArea2.AxisY.Title = "点数[点]";
-            chartArea2.Name = "ChartArea1";
-            this.ChartQuarter2.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.ChartQuarter2.Legends.Add(legend2);
-            this.ChartQuarter2.Name = "ChartQuarter2";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.ChartQuarter2.Series.Add(series2);
-            title2.Name = "Title1";
-            title2.Text = "クォーター2のグラフ";
-            this.ChartQuarter2.Titles.Add(title2);
+            chartArea7.AxisX.Minimum = 0D;
+            chartArea7.AxisX.Title = "クォーター開始からの時間[Second]";
+            chartArea7.AxisY.Minimum = 0D;
+            chartArea7.AxisY.Title = "点数[点]";
+            chartArea7.Name = "ChartArea1";
+            this.Quarter2Chart.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.Quarter2Chart.Legends.Add(legend7);
+            resources.ApplyResources(this.Quarter2Chart, "Quarter2Chart");
+            this.Quarter2Chart.Name = "Quarter2Chart";
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Legend = "Legend1";
+            series7.Name = "Series1";
+            this.Quarter2Chart.Series.Add(series7);
+            title7.Name = "Title1";
+            title7.Text = "クォーター2のグラフ";
+            this.Quarter2Chart.Titles.Add(title7);
             // 
             // Quarter3
             // 
+            this.Quarter3.Controls.Add(this.Quarter3Chart);
             resources.ApplyResources(this.Quarter3, "Quarter3");
-            this.Quarter3.Controls.Add(this.ChartQuarter3);
             this.Quarter3.Name = "Quarter3";
             this.Quarter3.UseVisualStyleBackColor = true;
             // 
-            // ChartQuarter3
+            // Quarter3Chart
             // 
-            resources.ApplyResources(this.ChartQuarter3, "ChartQuarter3");
-            chartArea3.AxisX.Minimum = 0D;
-            chartArea3.AxisX.Title = "クォーター開始からの時間[Second]";
-            chartArea3.AxisY.Minimum = 0D;
-            chartArea3.AxisY.Title = "点数[点]";
-            chartArea3.Name = "ChartArea1";
-            this.ChartQuarter3.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.ChartQuarter3.Legends.Add(legend3);
-            this.ChartQuarter3.Name = "ChartQuarter3";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.ChartQuarter3.Series.Add(series3);
-            title3.Name = "Title1";
-            title3.Text = "クォーター3のグラフ";
-            this.ChartQuarter3.Titles.Add(title3);
+            chartArea8.AxisX.Minimum = 0D;
+            chartArea8.AxisX.Title = "クォーター開始からの時間[Second]";
+            chartArea8.AxisY.Minimum = 0D;
+            chartArea8.AxisY.Title = "点数[点]";
+            chartArea8.Name = "ChartArea1";
+            this.Quarter3Chart.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.Quarter3Chart.Legends.Add(legend8);
+            resources.ApplyResources(this.Quarter3Chart, "Quarter3Chart");
+            this.Quarter3Chart.Name = "Quarter3Chart";
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series8.Legend = "Legend1";
+            series8.Name = "Series1";
+            this.Quarter3Chart.Series.Add(series8);
+            title8.Name = "Title1";
+            title8.Text = "クォーター3のグラフ";
+            this.Quarter3Chart.Titles.Add(title8);
             // 
             // Quarter4
             // 
+            this.Quarter4.Controls.Add(this.Quarter4Chart);
             resources.ApplyResources(this.Quarter4, "Quarter4");
-            this.Quarter4.Controls.Add(this.ChartQuarter4);
             this.Quarter4.Name = "Quarter4";
             this.Quarter4.UseVisualStyleBackColor = true;
             // 
-            // ChartQuarter4
+            // Quarter4Chart
             // 
-            resources.ApplyResources(this.ChartQuarter4, "ChartQuarter4");
-            chartArea4.AxisX.Minimum = 0D;
-            chartArea4.AxisX.Title = "クォーター開始からの時間[Second]";
-            chartArea4.AxisY.Minimum = 0D;
-            chartArea4.AxisY.Title = "点数[点]";
-            chartArea4.Name = "ChartArea1";
-            this.ChartQuarter4.ChartAreas.Add(chartArea4);
-            legend4.Name = "Legend1";
-            this.ChartQuarter4.Legends.Add(legend4);
-            this.ChartQuarter4.Name = "ChartQuarter4";
-            series4.ChartArea = "ChartArea1";
-            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series4.Legend = "Legend1";
-            series4.Name = "Series1";
-            this.ChartQuarter4.Series.Add(series4);
-            title4.Name = "Title1";
-            title4.Text = "クォーター4のグラフ";
-            this.ChartQuarter4.Titles.Add(title4);
+            chartArea9.AxisX.Minimum = 0D;
+            chartArea9.AxisX.Title = "クォーター開始からの時間[Second]";
+            chartArea9.AxisY.Minimum = 0D;
+            chartArea9.AxisY.Title = "点数[点]";
+            chartArea9.Name = "ChartArea1";
+            this.Quarter4Chart.ChartAreas.Add(chartArea9);
+            legend9.Name = "Legend1";
+            this.Quarter4Chart.Legends.Add(legend9);
+            resources.ApplyResources(this.Quarter4Chart, "Quarter4Chart");
+            this.Quarter4Chart.Name = "Quarter4Chart";
+            series9.ChartArea = "ChartArea1";
+            series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series9.Legend = "Legend1";
+            series9.Name = "Series1";
+            this.Quarter4Chart.Series.Add(series9);
+            title9.Name = "Title1";
+            title9.Text = "クォーター4のグラフ";
+            this.Quarter4Chart.Titles.Add(title9);
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.QuarterAllChart);
             resources.ApplyResources(this.tabPage1, "tabPage1");
-            this.tabPage1.Controls.Add(this.ChartQuarterAll);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // ChartQuarterAll
+            // QuarterAllChart
             // 
-            resources.ApplyResources(this.ChartQuarterAll, "ChartQuarterAll");
-            chartArea5.AxisX.Minimum = 0D;
-            chartArea5.AxisX.Title = "試合開始からの時間[Second]";
-            chartArea5.AxisY.Minimum = 0D;
-            chartArea5.AxisY.Title = "点数[点]";
-            chartArea5.Name = "ChartArea1";
-            this.ChartQuarterAll.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.ChartQuarterAll.Legends.Add(legend5);
-            this.ChartQuarterAll.Name = "ChartQuarterAll";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.ChartQuarterAll.Series.Add(series5);
-            title5.Name = "Title1";
-            title5.Text = "試合全体のグラフ";
-            this.ChartQuarterAll.Titles.Add(title5);
+            chartArea10.AxisX.Minimum = 0D;
+            chartArea10.AxisX.Title = "試合開始からの時間[Second]";
+            chartArea10.AxisY.Minimum = 0D;
+            chartArea10.AxisY.Title = "点数[点]";
+            chartArea10.Name = "ChartArea1";
+            this.QuarterAllChart.ChartAreas.Add(chartArea10);
+            legend10.Name = "Legend1";
+            this.QuarterAllChart.Legends.Add(legend10);
+            resources.ApplyResources(this.QuarterAllChart, "QuarterAllChart");
+            this.QuarterAllChart.Name = "QuarterAllChart";
+            series10.ChartArea = "ChartArea1";
+            series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series10.Legend = "Legend1";
+            series10.Name = "Series1";
+            this.QuarterAllChart.Series.Add(series10);
+            title10.Name = "Title1";
+            title10.Text = "試合全体のグラフ";
+            this.QuarterAllChart.Titles.Add(title10);
             // 
             // menuStrip1
             // 
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ファイルToolStripMenuItem});
+            this.FileToolStripMenuItem});
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
-            // ファイルToolStripMenuItem
+            // FileToolStripMenuItem
             // 
-            resources.ApplyResources(this.ファイルToolStripMenuItem, "ファイルToolStripMenuItem");
-            this.ファイルToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.PrintForm,
-            this.PrintPreview});
-            this.ファイルToolStripMenuItem.Name = "ファイルToolStripMenuItem";
+            this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.PrintFormItem,
+            this.PrintPreviewItem});
+            this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
-            // PrintForm
+            // PrintFormItem
             // 
-            resources.ApplyResources(this.PrintForm, "PrintForm");
-            this.PrintForm.Name = "PrintForm";
-            this.PrintForm.Click += new System.EventHandler(this.PrintForm_Click);
+            this.PrintFormItem.Name = "PrintFormItem";
+            resources.ApplyResources(this.PrintFormItem, "PrintFormItem");
+            this.PrintFormItem.Click += new System.EventHandler(this.PrintForm_Click);
             // 
-            // PrintPreview
+            // PrintPreviewItem
             // 
-            resources.ApplyResources(this.PrintPreview, "PrintPreview");
-            this.PrintPreview.Name = "PrintPreview";
-            this.PrintPreview.Click += new System.EventHandler(this.PrintPreview_Click);
+            this.PrintPreviewItem.Name = "PrintPreviewItem";
+            resources.ApplyResources(this.PrintPreviewItem, "PrintPreviewItem");
+            this.PrintPreviewItem.Click += new System.EventHandler(this.PrintPreview_Click);
             // 
             // FormGraphScore
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.TabControl1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.OppentTeamList);
-            this.Controls.Add(this.MyTeamList);
+            this.Controls.Add(this.OppentTeamListBox);
+            this.Controls.Add(this.MyTeamListBox);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormGraphScore";
-            ((System.ComponentModel.ISupportInitialize)(this.ChartQuarter1)).EndInit();
-            this.tabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Quarter1Chart)).EndInit();
+            this.TabControl1.ResumeLayout(false);
             this.Quarter1.ResumeLayout(false);
             this.Quarter2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ChartQuarter2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Quarter2Chart)).EndInit();
             this.Quarter3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ChartQuarter3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Quarter3Chart)).EndInit();
             this.Quarter4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ChartQuarter4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Quarter4Chart)).EndInit();
             this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ChartQuarterAll)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuarterAllChart)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -319,24 +319,24 @@
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart ChartQuarter1;
-        private System.Windows.Forms.ListBox MyTeamList;
-        private System.Windows.Forms.ListBox OppentTeamList;
+        private System.Windows.Forms.DataVisualization.Charting.Chart Quarter1Chart;
+        private System.Windows.Forms.ListBox MyTeamListBox;
+        private System.Windows.Forms.ListBox OppentTeamListBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl TabControl1;
         private System.Windows.Forms.TabPage Quarter1;
         private System.Windows.Forms.TabPage Quarter2;
-        private System.Windows.Forms.DataVisualization.Charting.Chart ChartQuarter2;
+        private System.Windows.Forms.DataVisualization.Charting.Chart Quarter2Chart;
         private System.Windows.Forms.TabPage Quarter3;
-        private System.Windows.Forms.DataVisualization.Charting.Chart ChartQuarter3;
+        private System.Windows.Forms.DataVisualization.Charting.Chart Quarter3Chart;
         private System.Windows.Forms.TabPage Quarter4;
-        private System.Windows.Forms.DataVisualization.Charting.Chart ChartQuarter4;
+        private System.Windows.Forms.DataVisualization.Charting.Chart Quarter4Chart;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.DataVisualization.Charting.Chart ChartQuarterAll;
+        private System.Windows.Forms.DataVisualization.Charting.Chart QuarterAllChart;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem ファイルToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem PrintForm;
-        private System.Windows.Forms.ToolStripMenuItem PrintPreview;
+        private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem PrintFormItem;
+        private System.Windows.Forms.ToolStripMenuItem PrintPreviewItem;
     }
 }
