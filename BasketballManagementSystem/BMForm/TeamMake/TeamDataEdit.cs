@@ -42,33 +42,34 @@ namespace BasketballManagementSystem.BMForm.TeamMake
             {
                 //OKボタンがクリックされたとき
                 //選択されたファイルを読み取り専用で開く
-                System.IO.Stream stream;
-                stream = ofd.OpenFile();
-
-                if (stream != null)
+                using (Stream stream = ofd.OpenFile())
                 {
-                    //指定したファイルからチーム情報取得
-                    team = teamManager.loadTeam(ofd.FileName, true);
 
-                    CortMemberListBox.Items.Clear();
-                    OutMemberListBox.Items.Clear();
-
-                    foreach (var p in team.CortMember)
+                    if (stream != null)
                     {
-                        CortMemberListBox.Items.Add(p);
-                    }
+                        //指定したファイルからチーム情報取得
+                        team = teamManager.loadTeam(ofd.FileName, true);
 
-                    foreach (var p in team.OutMember)
+                        CortMemberListBox.Items.Clear();
+                        OutMemberListBox.Items.Clear();
+
+                        foreach (var p in team.CortMember)
+                        {
+                            CortMemberListBox.Items.Add(p);
+                        }
+
+                        foreach (var p in team.OutMember)
+                        {
+                            OutMemberListBox.Items.Add(p);
+                        }
+
+                        TeamNameTextBox.Text = team.Name;
+
+                    }
+                    else
                     {
-                        OutMemberListBox.Items.Add(p);
+                        BMError.ErrorMessageOutput("stream is null");
                     }
-
-                    TeamNameTextBox.Text = team.Name;
-
-                }
-                else
-                {
-                    BMError.ErrorMessageOutput("stream is null");
                 }
             }
         }
@@ -178,22 +179,23 @@ namespace BasketballManagementSystem.BMForm.TeamMake
             //ダイアログを表示する
             if (sfd.ShowDialog() == DialogResult.OK)
             {
-                Stream stream;
-                stream = sfd.OpenFile();
-
-                if (stream != null)
+                using (Stream stream = sfd.OpenFile())
                 {
-                    Encoding ecd = Encoding.UTF8;
-                    StreamWriter sw = new StreamWriter(stream, ecd);
 
-                    sw.Write(CreateTextFile());
-                    
-                    sw.Close();
-                    stream.Close();
-                }
-                else
-                {
-                    BMError.ErrorMessageOutput("stream is null !!");
+                    if (stream != null)
+                    {
+                        Encoding ecd = Encoding.UTF8;
+                        StreamWriter sw = new StreamWriter(stream, ecd);
+
+                        sw.Write(CreateTextFile());
+
+                        sw.Close();
+                        stream.Close();
+                    }
+                    else
+                    {
+                        BMError.ErrorMessageOutput("stream is null !!");
+                    }
                 }
             }
         }
@@ -250,32 +252,33 @@ namespace BasketballManagementSystem.BMForm.TeamMake
             //ダイアログを表示する
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                System.IO.Stream stream;
-                stream = ofd.OpenFile();
-
-                if (stream != null)
+                using (Stream stream = ofd.OpenFile())
                 {
 
-                    XmlSerializer s = new XmlSerializer(typeof(ClubTeam));
-
-                    ClubTeam clubTeam = new ClubTeam();
-
-                    clubTeam = (ClubTeam)s.Deserialize(stream);
-
-                    ClubNameLabel.Text = clubTeam.Name;
-
-                    ClubMembersListBox.Items.Clear();
-
-                    foreach (var _clubMember in clubTeam.ClubMemberList)
+                    if (stream != null)
                     {
-                        ClubMembersListBox.Items.Add(_clubMember);
-                    }
 
-                    stream.Close();
-                }
-                else
-                {
-                    BMError.ErrorMessageOutput("stream is null !!");
+                        XmlSerializer s = new XmlSerializer(typeof(ClubTeam));
+
+                        ClubTeam clubTeam = new ClubTeam();
+
+                        clubTeam = (ClubTeam)s.Deserialize(stream);
+
+                        ClubNameLabel.Text = clubTeam.Name;
+
+                        ClubMembersListBox.Items.Clear();
+
+                        foreach (var _clubMember in clubTeam.ClubMemberList)
+                        {
+                            ClubMembersListBox.Items.Add(_clubMember);
+                        }
+
+                        stream.Close();
+                    }
+                    else
+                    {
+                        BMError.ErrorMessageOutput("stream is null !!");
+                    }
                 }
             }
         }
@@ -336,46 +339,46 @@ namespace BasketballManagementSystem.BMForm.TeamMake
             }
             else
             {
-                string _name = ((ClubMember)ClubMembersListBox.SelectedItem).Name;
+                string name = ((ClubMember)ClubMembersListBox.SelectedItem).Name;
 
-                OutMemberListBox.Items.Add(new Player(_name, number));
+                OutMemberListBox.Items.Add(new Player(name, number));
             }
         }
 
         private void buttonDicision_Click(object sender, EventArgs e)
         {
 
-            int _number = 0;
+            int number = 0;
 
-            if (!int.TryParse(EditNumberTextBox.Text, out _number))
+            if (!int.TryParse(EditNumberTextBox.Text, out number))
             {
                 MessageBox.Show("値が不正です");
                 return;
             }
 
-            int _index = CortMemberListBox.Items.IndexOf(selectedPlayer);
+            int index = CortMemberListBox.Items.IndexOf(selectedPlayer);
 
-            if (_index >= 0)
+            if (index >= 0)
             {
-                Player _p = new Player(EditNameTextBox.Text, _number);
+                Player p = new Player(EditNameTextBox.Text, number);
 
-                CortMemberListBox.Items.Insert(_index, _p);
+                CortMemberListBox.Items.Insert(index, p);
 
                 CortMemberListBox.Items.Remove(selectedPlayer);
             }
             else
             {
-                _index = OutMemberListBox.Items.IndexOf(selectedPlayer);
+                index = OutMemberListBox.Items.IndexOf(selectedPlayer);
 
-                if (_index < 0)
+                if (index < 0)
                 {
                     MessageBox.Show("選択選手が見つかりませんでした");
                     return;
                 }
 
-                Player _p = new Player(EditNameTextBox.Text, _number);
+                Player p = new Player(EditNameTextBox.Text, number);
 
-                OutMemberListBox.Items.Insert(_index, _p);
+                OutMemberListBox.Items.Insert(index, p);
 
                 OutMemberListBox.Items.Remove(selectedPlayer);
             }

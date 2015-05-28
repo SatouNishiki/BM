@@ -16,62 +16,92 @@ using BasketballManagementSystem.BMForm.Input;
 
 namespace BasketballManagementSystem.BMForm.Transmission.TCP
 {
-    //別スレッドからClientHandlerを持つList<T>の操作
-    public delegate void dlgsetList(ClientHandler ch);
-    //別スレッドからメインスレッドのテキストボックスに書き込むデリゲート
-    public delegate void dlgWriteText(ClientHandler ch, string text);
-    //別スレッドからログを書き込むデリゲート
-    public delegate void dlgWriteLog(string text);
+    /// <summary>
+    /// 別スレッドからClientHandlerを持つList<T>の操作
+    /// </summary>
+    /// <param name="ch"></param>
+    public delegate void ListSetDelegate(ClientHandler ch);
+
+    /// <summary>
+    /// //別スレッドからメインスレッドのテキストボックスに書き込むデリゲート
+    /// </summary>
+    /// <param name="ch"></param>
+    /// <param name="text"></param>
+    public delegate void WriteTextDelegate(ClientHandler ch, string text);
+
+    /// <summary>
+    /// 別スレッドからログを書き込むデリゲート
+    /// </summary>
+    /// <param name="text"></param>
+    public delegate void WriteLogDelegate(string text);
 
     public partial class FomServer : Form
     {
         //受送信は必ずshift-jisと仮定している
         //他の文字の場合はここを変える事
-        public Encoding ecUni = Encoding.GetEncoding("utf-16");
-        public Encoding ecSjis = Encoding.GetEncoding("shift-jis");
+        public Encoding EcUni = Encoding.GetEncoding("utf-16");
+        public Encoding EcSjis = Encoding.GetEncoding("shift-jis");
 
-        public Game sendGame = new Game();
+        public Game SendGame = new Game();
 
-        //サーバーのリスナー設定
-        TcpListener Listener = null;
+        /// <summary>
+        /// サーバーのリスナー設定
+        /// </summary>
+        private TcpListener Listener = null;
 
-        //サーバーのセカンドスレッドの設定
-        Thread threadServer = null;
+        /// <summary>
+        /// サーバーのセカンドスレッドの設定
+        /// </summary>
+        private Thread threadServer = null;
 
-        //クライアントの参照を保持するListクラス
+        /// <summary>
+        /// クライアントの参照を保持するListクラス
+        /// </summary>
         private List<ClientHandler> lstClientHandler = new List<ClientHandler>();
 
         private FormInput instance;
 
-        //コンストラクタ
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        /// <param name="f"></param>
         public FomServer(FormInput f)
         {
             InitializeComponent();
             instance = f;
         }
-        
 
-        //サーバースタートボタン押下
-        private void butStart_Click(object sender, EventArgs e)
+
+        /// <summary>
+        /// サーバースタートボタン押下
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void StartButton_Click(object sender, EventArgs e)
         {
             StartSock();
         }
 
-        //ソケット通信開始
+        /// <summary>
+        /// ソケット通信開始
+        /// </summary>
         private void StartSock()
         {
             //サーバーが開始したら    
             if (ServerStart())
             {
                 //ボタンのenableを変える
-                butStart.Enabled = false;
-                butStop.Enabled = true;
+                StartButton.Enabled = false;
+                StopButton.Enabled = true;
                 //LEDインジケータ風の色を変える
                 picIndicator.BackColor = Color.LightGreen;
             }
         }
 
-        //** セカンドスレッドの作成とサーバーのスタート **
+        /// <summary>
+        /// セカンドスレッドの作成とサーバーのスタート
+        /// </summary>
+        /// <returns></returns>
         private bool ServerStart()
         {
             //TcpListenerを使用してサーバーの接続の確立
@@ -96,12 +126,13 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         }
 
 
-        //** セカンドスレッドせで実行されるサーバーのListen **
-        //サーバーのListen
+        /// <summary>
+        /// セカンドスレッドで実行されるサーバーのListen
+        /// </summary>
         private void ServerListen()
         {
             //TcpListenerを作成
-            Listener = new TcpListener(IPAddress.Any, int.Parse(textBoxPortNo.Text));
+            Listener = new TcpListener(IPAddress.Any, int.Parse(PortNumberTextBox.Text));
             Listener.Start();
             // クライアントの接続を受けるための永久ループ
             try
@@ -118,7 +149,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                     ClientHandler handler = new ClientHandler(socketForClient, this, instance);
 
                     //ListクラスにClientHandlerのインスタンスを保持します                
-                    this.BeginInvoke(new dlgsetList(this.addNewClient)
+                    this.BeginInvoke(new ListSetDelegate(this.AddNewClient)
                                                        , new object[] { handler });
 
                     //読み込みを開始
@@ -138,17 +169,18 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             catch (Exception ex)
             {
                 //デリゲートでエラーを書き込む
-                this.textBoxLog.BeginInvoke(new dlgWriteLog(WriteLog)
+                this.LogTextBox.BeginInvoke(new WriteLogDelegate(WriteLog)
                               , new object[] { "受信エラー　" + ex.ToString() });
                 return;
             }
         }
 
 
-        //**** 接続、切断、受信処理 ****
-        //** 受信文字の表示 ***
-        //受信があった時に呼ばれて
-        //受信文字をテキストボックスに書き込みます
+        /// <summary>
+        /// 引数をテキストボックスに書き込みます
+        /// </summary>
+        /// <param name="cl"></param>
+        /// <param name="text"></param>
         public void WriteReadText(ClientHandler cl, string text)
         {
             //Listクラスが保持しているClientHandlerの中のSocketクラスの
@@ -164,12 +196,12 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 }
             }
             //送られたメッセージをクライアントの情報と時間と共に書き込む
-            this.textBoxRead.AppendText("[" + no.ToString() + "さんからのメッセージ] "
+            this.ReadTextBox.AppendText("[" + no.ToString() + "さんからのメッセージ] "
                             + DateTime.Now.ToString()
                             + "\r\n" + text + "\r\n");
 
             //クライアントに送信するデータ
-            Byte[] data = ecSjis.GetBytes("TEXT" +"[" + no.ToString() + "さんからのメッセージ] "
+            Byte[] data = EcSjis.GetBytes("TEXT" + "[" + no.ToString() + "さんからのメッセージ] "
                             + DateTime.Now.ToString()
                             + text);
 
@@ -188,7 +220,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             {
                 if (lstClientHandler[i] != cl)
                 {
-     
+
                     try
                     {
                         lstClientHandler[i].SendData(data);
@@ -203,21 +235,22 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         }
 
 
-        //** ClientHandleクラスのListクラスへの登録 **
-        //新しい接続が有った時Delegateから呼ばれて、
-        //新しいClientHandlerクラスのインスタンスをListクラスに登録します。
-        private void addNewClient(ClientHandler cl)
+        /// <summary>
+        /// 新しいClientHandlerクラスのインスタンスをListクラスに登録
+        /// </summary>
+        /// <param name="cl"></param>
+        private void AddNewClient(ClientHandler cl)
         {
             lstClientHandler.Add(cl);
-            resetClientListBox();
+            ResetClientListBox();
             WriteLog(cl.ClientHandle.ToString() + " さんが接続しました。");
         }
 
-        //** 切断が生じた時のClientHandleクラスのListクラスからの削除 **
-        //切断があった時にDelegateから呼ばれて
-        //切断されたクライアントのClientHandleクラスのインスタンスをを
-        //Listクラスから削除します。
-        public void deleteClient(ClientHandler cl)
+        /// <summary>
+        /// 切断されたクライアントのClientHandleクラスのインスタンスをListクラスから削除
+        /// </summary>
+        /// <param name="cl"></param>
+        public void DeleteClient(ClientHandler cl)
         {
             //Listクラスを総なめ
             for (int i = 0; i < lstClientHandler.Count; i++)
@@ -226,36 +259,40 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 {
                     WriteLog(lstClientHandler[i].ClientHandle.ToString() + " さんが切断しました。");
                     lstClientHandler.RemoveAt(i);
-                    resetClientListBox();
+                    ResetClientListBox();
                     return;
                 }
             }
         }
 
 
-        //** クライアント表示の更新 **
-        //接続、切断が有った時にList<T>を総なめして
-        //接続しているクライアント表示のListBoxwoを新しく書き直す
-        private void resetClientListBox()
+        /// <summary>
+        /// クライアント表示のListBoxを新しく書き直す
+        /// </summary>
+        private void ResetClientListBox()
         {
-            listBoxClient.Items.Clear();
+            ClientListBox.Items.Clear();
             for (int i = 0; i < lstClientHandler.Count; i++)
             {
-                listBoxClient.Items.Add(lstClientHandler[i].ClientHandle.ToString());
+                ClientListBox.Items.Add(lstClientHandler[i].ClientHandle.ToString());
             }
         }
 
-        //**************************************
-        //サーバーの終了処理
-        //**************************************
-
-        //ストップボタン押下
-        private void butStop_Click(object sender, EventArgs e)
+        /// <summary>
+        /// ストップボタン押下
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void StopButton_Click(object sender, EventArgs e)
         {
             StopSock();
         }
-        //xを押された時のフォームの終了
-        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        /// <summary>
+        /// xを押された時のフォームの終了
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void FormServer_FormClosing(object sender, FormClosingEventArgs e)
         {
             StopSock();
         }
@@ -264,11 +301,13 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         {
             CloseServer();
             //ボタンのenableを変える
-            butStart.Enabled = true;
-            butStop.Enabled = false;
+            StartButton.Enabled = true;
+            StopButton.Enabled = false;
         }
 
-        //サーバーのクローズ
+        /// <summary>
+        /// サーバーのクローズ
+        /// </summary>
         private void CloseServer()
         {
             if (Listener != null)
@@ -291,31 +330,31 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         }
 
 
-        //**** 送信　****
-        //ListBoxでクライアントのハンドルを選択して
-        //メッセージを送信する
-
-        //送信ボタン押下
-        private void butSend_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 送信ボタン押下
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SendButton_Click(object sender, EventArgs e)
         {
 
             ClientHandler clientHandler = null;
 
             //リストボックスでクライアントのハンドルが選択されていない。
-            if (listBoxClient.SelectedItem == null)
+            if (ClientListBox.SelectedItem == null)
                 return;
 
             //ListBoxの選択された番号を取得
-            int no = int.Parse(listBoxClient.SelectedItem.ToString());
+            int no = int.Parse(ClientListBox.SelectedItem.ToString());
 
             //List<T>からハンドルがキーに該当するclientHandlerを取得する
             clientHandler = lstClientHandler.Find(delegate(ClientHandler clitem)
             { return ((int)clitem.ClientHandle == no); });
 
             //sift-jisに変換して送る
-            Byte[] data = ecSjis.GetBytes(textBoxWrite.Text);
+            Byte[] data = EcSjis.GetBytes(WriteTextBox.Text);
 
-            Byte[] header = ecSjis.GetBytes("TEXT");
+            Byte[] header = EcSjis.GetBytes("TEXT");
 
             List<Byte> l = new List<byte>();
 
@@ -326,7 +365,6 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
 
             try
             {
-        //        clientHandler.WriteString(data);
                 clientHandler.SendData(sendData);
             }
             catch (Exception ex)
@@ -335,39 +373,39 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             }
         }
 
-
-        // ***テキストボックスのクリア***
-        //各テキストボックスのクリア
-        private void butClsWrite_Click(object sender, EventArgs e)
+        private void WriteClearButton_Click(object sender, EventArgs e)
         {
-            textBoxWrite.Clear();
+            WriteTextBox.Clear();
         }
 
-        private void butClsRead_Click(object sender, EventArgs e)
+        private void ReadClearButton_Click(object sender, EventArgs e)
         {
-            textBoxRead.Clear();
+            ReadTextBox.Clear();
         }
 
-        private void butClsLog_Click(object sender, EventArgs e)
+        private void LogClearButton_Click(object sender, EventArgs e)
         {
-            textBoxLog.Clear();
+            LogTextBox.Clear();
         }
 
-        //Logを書き込む
+        /// <summary>
+        /// Logを書き込む
+        /// </summary>
+        /// <param name="strlog"></param>
         public void WriteLog(string strlog)
         {
-            this.textBoxLog.AppendText(DateTime.Now.ToString() + "  "
+            this.LogTextBox.AppendText(DateTime.Now.ToString() + "  "
                                         + strlog + "\r\n");
         }
 
-        private void timerServerSend_Tick(object sender, EventArgs e)
+        private void ServerSendTimer_Tick(object sender, EventArgs e)
         {
             BinaryFormatter b = new BinaryFormatter();
             MemoryStream m = new MemoryStream();
 
-            b.Serialize(m, sendGame);
+            b.Serialize(m, SendGame);
             byte[] byt = m.ToArray();
-            byte[] header = ecSjis.GetBytes("GAME");
+            byte[] header = EcSjis.GetBytes("GAME");
 
             //バイナリシリアライズしたゲームデータオブジェクトにヘッダーをくっつけて送信バイト配列を生成
             List<byte> temp = new List<byte>(byt.Length + header.Length);
@@ -383,18 +421,24 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
 
     }
 
-    //*********************************************
-    //    複数コネクション、非同期I/O クラス
-    //*********************************************
+    /// <summary>
+    /// 複数コネクション、非同期I/O クラス
+    /// </summary>
     public class ClientHandler
     {
-        private byte[] buffer;    //受信データ
+        /// <summary>
+        /// 受信データ
+        /// </summary>
+        private byte[] buffer;
+
         private Socket socket;
         private NetworkStream networkStream;
         private AsyncCallback callbackRead;
         private AsyncCallback callbackWrite;
 
-        //FomServerの参照を保持する 
+        /// <summary>
+        /// FomServerの参照を保持する
+        /// </summary>
         private FomServer fomServer = null;
 
         //受送信は必ずshift-jisと仮定している
@@ -404,8 +448,13 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
 
         private FormInput instance;
 
-        //クラスのコンストラクタ
-        public ClientHandler(Socket socketForClient, FomServer _FomServer, FormInput f)
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        /// <param name="socketForClient"></param>
+        /// <param name="fomServer"></param>
+        /// <param name="f"></param>
+        public ClientHandler(Socket socketForClient, FomServer fomServer, FormInput f)
         {
             //呼び出し側のSocketを保持
             socket = socketForClient;
@@ -415,7 +464,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             //clientHandle = socket.Handle;
 
             //呼び出し側のフォームのインスタンスを保持
-            fomServer = _FomServer;
+            fomServer = fomServer;
 
             //読み込み用のバッファ
             buffer = new byte[100000];
@@ -433,24 +482,27 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         }
 
 
-        //Socketクラスのハンドルを返します
-        //これはインスタンスの識別に使用します
+        /// <summary>
+        /// Socketクラスのハンドルを返す
+        /// </summary>
         public IntPtr ClientHandle
         {
             get { return socket.Handle; }
         }
 
-        // クライアントからの文字列読み出し開始
-        //別スレッドで行われ、読み込み終了時にcallbackReadがCLRによって
-        //呼び出されます。
+        /// <summary>
+        /// クライアントからの文字列読み出し開始
+        /// </summary>
         public void StartRead()
         {
             networkStream.BeginRead(buffer, 0, buffer.Length, callbackRead, null);
         }
 
 
-        //networkStream.BeginReadの別スレッドから、読み込み完了時
-        //又はクライアント切断時にコールバックされます。
+        /// <summary>
+        /// networkStream.BeginReadの別スレッドから、読み込み完了時、又はクライアント切断時にコールバックされる
+        /// </summary>
+        /// <param name="ar"></param>
         private void OnReadComplete(IAsyncResult ar)
         {
             try
@@ -490,7 +542,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                         //受信文字を切り出す
 
                         //メインスレッドのテキストボックスに書き込む
-                        fomServer.Invoke(new dlgWriteText(fomServer.WriteReadText)
+                        fomServer.Invoke(new WriteTextDelegate(fomServer.WriteReadText)
                                            , new object[] { this, strGetText });
 
                     }
@@ -501,11 +553,10 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                         m.Seek(0, SeekOrigin.Begin);
                         Game g = (Game)b.Deserialize(m);
                         instance.LoadProcess(g);
-                        
+
                         m.Close();
 
-                   //     fomServer.NotifyAll(null, getByte);
-                        fomServer.sendGame = g;
+                        fomServer.SendGame = g;
                     }
                     //次の受信を待つ
                     networkStream.BeginRead(buffer, 0, buffer.Length, callbackRead, null);
@@ -515,7 +566,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 {
                     //終了ボタンが押され場合はここに落ちる
                     //クライアントのList<T>からの削除
-                    fomServer.Invoke(new dlgsetList(fomServer.deleteClient)
+                    fomServer.Invoke(new ListSetDelegate(fomServer.DeleteClient)
                                             , new object[] { this });
 
                     networkStream.Close();
@@ -540,19 +591,20 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             catch (Exception ex)
             {
                 //エラーログの書き込み
-                fomServer.Invoke(new dlgWriteLog(fomServer.WriteLog)
+                fomServer.Invoke(new WriteLogDelegate(fomServer.WriteLog)
                 , new object[] { "受信エラーが起こりました " + ex.ToString() });
             }
         }
 
-        // 送信
-        //別スレッドで送信し、送信が終了すると
-        //OnWriteCompleteがコールバックされます。
+        /// <summary>
+        /// 別スレッドで送信し、送信が終了するとOnWriteCompleteがコールバックされる
+        /// </summary>
+        /// <param name="buffer"></param>
         public void SendData(byte[] buffer)
         {
             int offset = 0;
-            
-                //もしネットワークバッファのサイズを超えたデータを送ろうとしていたら分割送信処理
+
+            //もしネットワークバッファのサイズを超えたデータを送ろうとしていたら分割送信処理
             if (buffer.Length > socket.SendBufferSize)
             {
                 for (offset = 0; offset * 2 < buffer.Length; offset += socket.SendBufferSize)
@@ -562,14 +614,16 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             }
 
             networkStream.BeginWrite(buffer, offset, buffer.Length - offset, callbackWrite, null);
-            
+
         }
 
-        // 文字列の書き込みが完了したときにメッセージを出力して読み取りを続けます
+        /// <summary>
+        /// 文字列の書き込みが完了したときにメッセージを出力して読み取りを続ける
+        /// </summary>
+        /// <param name="ar"></param>
         private void OnWriteComplete(IAsyncResult ar)
         {
             networkStream.EndWrite(ar);
-            //networkStream.BeginRead(buffer, 0, buffer.Length,callbackRead, null);
         }
     }
 }
