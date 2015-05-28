@@ -194,17 +194,17 @@
     <Compile Include="BMForm\Tactick2D\Tacticks2D.Designer.cs">
       <DependentUpon>Tacticks2D.cs</DependentUpon>
     </Compile>
-    <Compile Include="BMForm\Transmission\TCP\FomServer.cs">
+    <Compile Include="BMForm\Transmission\TCP\TCPServer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BMForm\Transmission\TCP\FomServer.Designer.cs">
-      <DependentUpon>FomServer.cs</DependentUpon>
+    <Compile Include="BMForm\Transmission\TCP\TCPServer.Designer.cs">
+      <DependentUpon>TCPServer.cs</DependentUpon>
     </Compile>
-    <Compile Include="BMForm\Transmission\TCP\FomSoch.cs">
+    <Compile Include="BMForm\Transmission\TCP\TCPClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="BMForm\Transmission\TCP\FomSoch.Designer.cs">
-      <DependentUpon>FomSoch.cs</DependentUpon>
+    <Compile Include="BMForm\Transmission\TCP\TCPClient.Designer.cs">
+      <DependentUpon>TCPClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Interface\IClose.cs" />
     <Compile Include="Interface\Init\IInit.cs" />
@@ -297,11 +297,14 @@
     <EmbeddedResource Include="BMForm\TeamMake\TeamDataEdit.ja.resx">
       <DependentUpon>TeamDataEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BMForm\Transmission\TCP\FomServer.resx">
-      <DependentUpon>FomServer.cs</DependentUpon>
+    <EmbeddedResource Include="BMForm\Transmission\TCP\TCPServer.ja.resx">
+      <DependentUpon>TCPServer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="BMForm\Transmission\TCP\FomSoch.resx">
-      <DependentUpon>FomSoch.cs</DependentUpon>
+    <EmbeddedResource Include="BMForm\Transmission\TCP\TCPServer.resx">
+      <DependentUpon>TCPServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Transmission\TCP\TCPClient.resx">
+      <DependentUpon>TCPClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

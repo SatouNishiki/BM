@@ -35,7 +35,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
     /// <param name="text"></param>
     public delegate void WriteLogDelegate(string text);
 
-    public partial class FomServer : Form
+    public partial class TCPServer : Form
     {
         //受送信は必ずshift-jisと仮定している
         //他の文字の場合はここを変える事
@@ -65,7 +65,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         /// コンストラクタ
         /// </summary>
         /// <param name="f"></param>
-        public FomServer(FormInput f)
+        public TCPServer(FormInput f)
         {
             InitializeComponent();
             instance = f;
@@ -439,7 +439,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         /// <summary>
         /// FomServerの参照を保持する
         /// </summary>
-        private FomServer fomServer = null;
+        private TCPServer fomServer = null;
 
         //受送信は必ずshift-jisと仮定している
         //他の文字の場合はここを変える事
@@ -454,7 +454,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         /// <param name="socketForClient"></param>
         /// <param name="fomServer"></param>
         /// <param name="f"></param>
-        public ClientHandler(Socket socketForClient, FomServer fomServer, FormInput f)
+        public ClientHandler(Socket socketForClient, TCPServer fomServer, FormInput f)
         {
             //呼び出し側のSocketを保持
             socket = socketForClient;

@@ -17,20 +17,22 @@ using BMErrorLibrary;
 
 namespace BasketballManagementSystem.BMForm.Transmission.TCP
 {
-    public partial class FomSoch : Form
+    public partial class TCPClient : Form
     {
 
-        //***********************************************************
-        //初期設定宣言
-        //***********************************************************
         //受信は必ずshift-jisと仮定している
         //他の文字の場合はここを変える事
         private Encoding ecUni = Encoding.GetEncoding("utf-16");
         private Encoding ecSjis = Encoding.GetEncoding("shift-jis");
 
-        //クライアント設定
+        /// <summary>
+        /// クライアント設定
+        /// </summary>
         private TcpClient client = null;
-        //クライアントのセカンドスレッドの設定
+
+        /// <summary>
+        /// クライアントのセカンドスレッドの設定
+        /// </summary>
         private Thread threadClient = null;
 
         /// <summary>
@@ -42,33 +44,37 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
 
         private FormInput instance;
 
-        //**********************************************************
-        //デリゲート宣言
-        //**********************************************************
-        //別スレッドからメインスレッドのテキストボックスに書き込むデリゲート
-        delegate void dlgWriteText(string text);
+        /// <summary>
+        /// 別スレッドからメインスレッドのテキストボックスに書き込むデリゲート
+        /// </summary>
+        /// <param name="text"></param>
+        delegate void WriteTextDelegate(string text);
 
-        //引数を持たない汎用のデリゲート
-        //ストップボタンを押す等に使用
-        delegate void dlgMydelegate();
+        /// <summary>
+        /// 引数を持たない汎用のデリゲート ストップボタンを押す等に使用
+        /// </summary>
+        delegate void MydelegateDelegate();
 
 
-        public FomSoch(FormInput f)
+        public TCPClient(FormInput f)
         {
             InitializeComponent();
             instance = f;
         }
 
-        //***********************************************************
-        //ソケット通信の開始処理
-        //***********************************************************
-        //Startボタン押下
-        private void butStart_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Startボタン押下
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void StartButton_Click(object sender, EventArgs e)
         {
             StartSock();
         }
 
-        //ソケット通信開始
+        /// <summary>
+        /// ソケット通信開始
+        /// </summary>
         private void StartSock()
         {
             bool openflg = false;
@@ -78,20 +84,21 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             //ボタンのenableを変える
             if (openflg)
             {
-                butStart.Enabled = false;
-                butStop.Enabled = true;
+                StartButton.Enabled = false;
+                StopButton.Enabled = true;
             }
         }
 
-        //***********************************************************
-        //セカンドスレッドの作成とクライアントのスタート
-        //***********************************************************    
+        /// <summary>
+        /// セカンドスレッドの作成とクライアントのスタート
+        /// </summary>
+        /// <returns></returns>
         private bool ClientStart()
         {
             try
             {
                 //クライアントのソケットを用意
-                client = new TcpClient(textBoxIp.Text, int.Parse(textBoxPortNo.Text));
+                client = new TcpClient(IpTextButton.Text, int.Parse(PortNumberTextbox.Text));
                 client.SendBufferSize = 50000;
 
                 //サーバからのデータを受信するループをスレッドで処理
@@ -99,7 +106,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 threadClient.Start();
 
                 //接続インディケータ
-                picIndicator.BackColor = Color.LightGreen;
+                IndicatorPctureBox.BackColor = Color.LightGreen;
                 writeLog("クライアント接続されました:");
                 return (true);
             }
@@ -107,22 +114,21 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             {
                 writeLog("クライアント接続エラー:" + ex.Message.ToString());
                 BMError.ErrorMessageOutput(ex.Message);
-                picIndicator.BackColor = Color.Navy;
+                IndicatorPctureBox.BackColor = Color.Navy;
                 return (false);
             }
         }
 
-        //***********************************************************
-        //別スレッドで実行されるクライアント側の処理
-        //ここの処理はServerと同じなのでそちらを参照のこと
-        //***********************************************************
+        /// <summary>
+        /// 別スレッドで実行されるクライアント側の処理
+        /// </summary>
         private void ClientListen()
         {
 
             NetworkStream stream = client.GetStream();
 
             Byte[] bytes = new Byte[100000];
-            dlgWriteText dlgText = new dlgWriteText(WriteReadText);
+            WriteTextDelegate dlgText = new WriteTextDelegate(WriteReadText);
 
             while (true)
             {
@@ -154,7 +160,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                             uniBytes = Encoding.Convert(ecSjis, ecUni, body);
                             string strGetText = ecUni.GetString(uniBytes);
 
-                            textBoxWrite.Invoke(dlgText, strGetText);
+                            WriteTextBox.Invoke(dlgText, strGetText);
 
                         }
                         else if (header == "GAME")
@@ -179,9 +185,9 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                     else
                     {
                         //サーバーが切断された 
-                        this.textBoxLog.BeginInvoke(new dlgWriteText(writeLog)
+                        this.LogTextBox.BeginInvoke(new WriteTextDelegate(writeLog)
                              , new object[] { "ホストが切断されました。" });
-                        this.butStart.BeginInvoke(new dlgMydelegate(StopSock),
+                        this.StartButton.BeginInvoke(new MydelegateDelegate(StopSock),
                              new object[] { });
                         return;
                     }
@@ -193,7 +199,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 }
                 catch (Exception ex)
                 {
-                    this.textBoxLog.BeginInvoke(new dlgWriteText(writeLog)
+                    this.LogTextBox.BeginInvoke(new WriteTextDelegate(writeLog)
                             , new object[] { "受信エラー　　" + ex.ToString() });
                     BMError.ErrorMessageOutput(ex.Message);
                     return;
@@ -202,11 +208,12 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         }
 
 
-        //***********************************************************
-        //ソケット通信の終了処理
-        //***********************************************************
-        //Stopボタン押下
-        private void butStop_Click(object sender, EventArgs e)
+        /// <summary>
+        /// ソケット通信の終了処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void StopButton_Click(object sender, EventArgs e)
         {
             StopSock();
         }
@@ -214,15 +221,15 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         private void StopSock()
         {
             //クライアントストップ
-
             CloseClient();
 
-            //ボタンのenableを変える
-            butStart.Enabled = true;
-            butStop.Enabled = false;
+            StartButton.Enabled = true;
+            StopButton.Enabled = false;
         }
 
-        //クライアントのクローズ
+        /// <summary>
+        /// クライアントのクローズ
+        /// </summary>
         private void CloseClient()
         {
             //クライアントのインスタンスが有って、接続されていたら
@@ -234,45 +241,42 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 threadClient.Abort();
 
             //インディケータの色を変える      
-            picIndicator.BackColor = Color.Navy;
+            IndicatorPctureBox.BackColor = Color.Navy;
             //ログを書き込む
             writeLog("クライアントが閉じられました。");
         }
 
-
-        //******************************************************
-        //デリゲートから呼ばれるテキストに書き込むメソド、
-        //*******************************************************
-        //受信文字をテキストボックスに書き込む
+        /// <summary>
+        /// 受信文字をテキストボックスに書き込む
+        /// </summary>
+        /// <param name="text"></param>
         private void WriteReadText(string text)
         {
             //受信文字の改行は全て↓に置き換えられる
             text = text.Replace("\r\n", "↓");
-            this.textBoxRead.AppendText(text + "\r\n");
+            this.ReadTextBox.AppendText(text + "\r\n");
         }
 
         //Logを書き込む
         private void writeLog(string strlog)
         {
-            this.textBoxLog.AppendText(DateTime.Now.ToString() + "  "
+            this.LogTextBox.AppendText(DateTime.Now.ToString() + "  "
                                         + strlog + "\r\n");
         }
 
 
-        //************************************************************
-        //文字データの送信
-        //************************************************************
-        //送信ボタン押下
-        private void butSend_Click(object sender, EventArgs e)
+        private void SendButton_Click(object sender, EventArgs e)
         {
             SendStringData();
         }
 
-        //文字データーの送信
+        /// <summary>
+        /// 文字データの送信
+        /// </summary>
         private void SendStringData()
         {
             //sift-jisに変換して送る
-            Byte[] data = ecSjis.GetBytes(textBoxWrite.Text);
+            Byte[] data = ecSjis.GetBytes(WriteTextBox.Text);
 
             Byte[] header = ecSjis.GetBytes("TEXT");
 
@@ -305,26 +309,25 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         }
 
 
-        //******************************************************
-        //テキストボックスのクリア
-        //******************************************************
-        private void butCls_Click(object sender, EventArgs e)
+        private void WriteClearButton_Click(object sender, EventArgs e)
         {
-            textBoxWrite.Clear();
+            WriteTextBox.Clear();
         }
-        private void butClsRead_Click(object sender, EventArgs e)
+        private void ReadClearButton_Click(object sender, EventArgs e)
         {
-            textBoxRead.Clear();
+            ReadTextBox.Clear();
         }
-        private void butClsLog_Click(object sender, EventArgs e)
+        private void LogClearButton_Click(object sender, EventArgs e)
         {
-            textBoxLog.Clear();
+            LogTextBox.Clear();
         }
 
-        //*******************************************************
-        //プログラムの終了処理
-        //*******************************************************
-        private void FomSoch_FormClosing(object sender, FormClosingEventArgs e)
+        /// <summary>
+        /// プログラムの終了処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TCPClient_FormClosing(object sender, FormClosingEventArgs e)
         {
             CloseClient();
         }

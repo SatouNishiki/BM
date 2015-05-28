@@ -1,6 +1,6 @@
 ﻿namespace BasketballManagementSystem.BMForm.Transmission.TCP
 {
-    partial class FomServer
+    partial class TCPServer
     {
         /// <summary>
         /// 必要なデザイナ変数です。
@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TCPServer));
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.StopButton = new System.Windows.Forms.Button();
@@ -77,41 +78,29 @@
             // 
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox3);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(496, 47);
-            this.panel1.TabIndex = 21;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.StopButton);
             this.groupBox2.Controls.Add(this.StartButton);
             this.groupBox2.Controls.Add(this.picIndicator);
-            this.groupBox2.Location = new System.Drawing.Point(7, 5);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(124, 35);
-            this.groupBox2.TabIndex = 16;
             this.groupBox2.TabStop = false;
             // 
             // StopButton
             // 
-            this.StopButton.Enabled = false;
-            this.StopButton.Location = new System.Drawing.Point(73, 8);
+            resources.ApplyResources(this.StopButton, "StopButton");
             this.StopButton.Name = "StopButton";
-            this.StopButton.Size = new System.Drawing.Size(43, 23);
-            this.StopButton.TabIndex = 9;
-            this.StopButton.Text = "Stop";
             this.StopButton.UseVisualStyleBackColor = true;
             this.StopButton.Click += new System.EventHandler(this.StopButton_Click);
             // 
             // StartButton
             // 
-            this.StartButton.Location = new System.Drawing.Point(25, 8);
+            resources.ApplyResources(this.StartButton, "StartButton");
             this.StartButton.Name = "StartButton";
-            this.StartButton.Size = new System.Drawing.Size(43, 23);
-            this.StartButton.TabIndex = 8;
-            this.StartButton.Text = "Start";
             this.StartButton.UseVisualStyleBackColor = true;
             this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
@@ -119,38 +108,27 @@
             // 
             this.picIndicator.BackColor = System.Drawing.Color.Navy;
             this.picIndicator.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picIndicator.Location = new System.Drawing.Point(6, 12);
+            resources.ApplyResources(this.picIndicator, "picIndicator");
             this.picIndicator.Name = "picIndicator";
-            this.picIndicator.Size = new System.Drawing.Size(12, 18);
-            this.picIndicator.TabIndex = 7;
             this.picIndicator.TabStop = false;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.PortNumberTextBox);
             this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Location = new System.Drawing.Point(150, 5);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(110, 35);
-            this.groupBox3.TabIndex = 3;
             this.groupBox3.TabStop = false;
             // 
             // PortNumberTextBox
             // 
-            this.PortNumberTextBox.Location = new System.Drawing.Point(44, 10);
+            resources.ApplyResources(this.PortNumberTextBox, "PortNumberTextBox");
             this.PortNumberTextBox.Name = "PortNumberTextBox";
-            this.PortNumberTextBox.Size = new System.Drawing.Size(48, 19);
-            this.PortNumberTextBox.TabIndex = 3;
-            this.PortNumberTextBox.Text = "1001";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(10, 14);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 12);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Port";
             // 
             // ServerSendTimer
             // 
@@ -160,38 +138,26 @@
             // panel7
             // 
             this.panel7.Controls.Add(this.ReadClearButton);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(441, 87);
+            resources.ApplyResources(this.panel7, "panel7");
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(50, 74);
-            this.panel7.TabIndex = 17;
             // 
             // ReadClearButton
             // 
-            this.ReadClearButton.Location = new System.Drawing.Point(3, 4);
+            resources.ApplyResources(this.ReadClearButton, "ReadClearButton");
             this.ReadClearButton.Name = "ReadClearButton";
-            this.ReadClearButton.Size = new System.Drawing.Size(32, 23);
-            this.ReadClearButton.TabIndex = 10;
-            this.ReadClearButton.Text = "C";
             this.ReadClearButton.UseVisualStyleBackColor = true;
             this.ReadClearButton.Click += new System.EventHandler(this.ReadClearButton_Click);
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.WriteClearButton);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(441, 5);
+            resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(50, 74);
-            this.panel6.TabIndex = 16;
             // 
             // WriteClearButton
             // 
-            this.WriteClearButton.Location = new System.Drawing.Point(2, 0);
+            resources.ApplyResources(this.WriteClearButton, "WriteClearButton");
             this.WriteClearButton.Name = "WriteClearButton";
-            this.WriteClearButton.Size = new System.Drawing.Size(33, 23);
-            this.WriteClearButton.TabIndex = 6;
-            this.WriteClearButton.Text = "C";
             this.WriteClearButton.UseVisualStyleBackColor = true;
             this.WriteClearButton.Click += new System.EventHandler(this.WriteClearButton_Click);
             // 
@@ -199,99 +165,65 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.Controls.Add(this.labelLog);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(5, 169);
+            resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(47, 75);
-            this.panel5.TabIndex = 15;
             // 
             // labelLog
             // 
             this.labelLog.BackColor = System.Drawing.Color.Transparent;
             this.labelLog.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelLog.Location = new System.Drawing.Point(13, 30);
+            resources.ApplyResources(this.labelLog, "labelLog");
             this.labelLog.Name = "labelLog";
-            this.labelLog.Size = new System.Drawing.Size(23, 23);
-            this.labelLog.TabIndex = 12;
-            this.labelLog.Text = "LogText";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Controls.Add(this.ReadLabel);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(5, 87);
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(47, 74);
-            this.panel4.TabIndex = 14;
             // 
             // ReadLabel
             // 
             this.ReadLabel.BackColor = System.Drawing.Color.Transparent;
             this.ReadLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ReadLabel.Location = new System.Drawing.Point(7, 22);
+            resources.ApplyResources(this.ReadLabel, "ReadLabel");
             this.ReadLabel.Name = "ReadLabel";
-            this.ReadLabel.Size = new System.Drawing.Size(32, 33);
-            this.ReadLabel.TabIndex = 11;
-            this.ReadLabel.Text = "ReadText";
             // 
             // ReadTextBox
             // 
-            this.ReadTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ReadTextBox.Location = new System.Drawing.Point(60, 87);
-            this.ReadTextBox.Multiline = true;
+            resources.ApplyResources(this.ReadTextBox, "ReadTextBox");
             this.ReadTextBox.Name = "ReadTextBox";
             this.ReadTextBox.ReadOnly = true;
-            this.ReadTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.ReadTextBox.Size = new System.Drawing.Size(373, 74);
-            this.ReadTextBox.TabIndex = 7;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.SendButton);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(5, 5);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(47, 74);
-            this.panel3.TabIndex = 13;
             // 
             // SendButton
             // 
-            this.SendButton.Location = new System.Drawing.Point(2, 22);
+            resources.ApplyResources(this.SendButton, "SendButton");
             this.SendButton.Name = "SendButton";
-            this.SendButton.Size = new System.Drawing.Size(42, 29);
-            this.SendButton.TabIndex = 5;
-            this.SendButton.Text = "Send";
             this.SendButton.UseVisualStyleBackColor = true;
             this.SendButton.Click += new System.EventHandler(this.SendButton_Click);
             // 
             // LogTextBox
             // 
-            this.LogTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LogTextBox.Location = new System.Drawing.Point(60, 169);
-            this.LogTextBox.Multiline = true;
+            resources.ApplyResources(this.LogTextBox, "LogTextBox");
             this.LogTextBox.Name = "LogTextBox";
             this.LogTextBox.ReadOnly = true;
-            this.LogTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.LogTextBox.Size = new System.Drawing.Size(373, 75);
-            this.LogTextBox.TabIndex = 9;
             // 
             // panel8
             // 
             this.panel8.Controls.Add(this.LogClearButton);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(441, 169);
+            resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(50, 75);
-            this.panel8.TabIndex = 18;
             // 
             // LogClearButton
             // 
-            this.LogClearButton.Location = new System.Drawing.Point(3, 3);
+            resources.ApplyResources(this.LogClearButton, "LogClearButton");
             this.LogClearButton.Name = "LogClearButton";
-            this.LogClearButton.Size = new System.Drawing.Size(32, 23);
-            this.LogClearButton.TabIndex = 10;
-            this.LogClearButton.Text = "C";
             this.LogClearButton.UseVisualStyleBackColor = true;
             this.LogClearButton.Click += new System.EventHandler(this.LogClearButton_Click);
             // 
@@ -299,61 +231,37 @@
             // 
             this.panel2.Controls.Add(this.WriteTextBox);
             this.panel2.Controls.Add(this.panel9);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(60, 5);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(373, 74);
-            this.panel2.TabIndex = 20;
             // 
             // WriteTextBox
             // 
-            this.WriteTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.WriteTextBox.Location = new System.Drawing.Point(94, 0);
-            this.WriteTextBox.Multiline = true;
+            resources.ApplyResources(this.WriteTextBox, "WriteTextBox");
             this.WriteTextBox.Name = "WriteTextBox";
-            this.WriteTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.WriteTextBox.Size = new System.Drawing.Size(279, 74);
-            this.WriteTextBox.TabIndex = 19;
             // 
             // panel9
             // 
             this.panel9.Controls.Add(this.ClientListBox);
             this.panel9.Controls.Add(this.label1);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel9.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.panel9, "panel9");
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(94, 74);
-            this.panel9.TabIndex = 20;
             // 
             // ClientListBox
             // 
             this.ClientListBox.BackColor = System.Drawing.Color.Azure;
-            this.ClientListBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            resources.ApplyResources(this.ClientListBox, "ClientListBox");
             this.ClientListBox.ForeColor = System.Drawing.Color.Black;
             this.ClientListBox.FormattingEnabled = true;
-            this.ClientListBox.ItemHeight = 12;
-            this.ClientListBox.Location = new System.Drawing.Point(0, 12);
             this.ClientListBox.Name = "ClientListBox";
-            this.ClientListBox.Size = new System.Drawing.Size(94, 62);
-            this.ClientListBox.TabIndex = 6;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 12);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "SelectClient";
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 56F));
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel8, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.LogTextBox, 1, 2);
@@ -363,25 +271,15 @@
             this.tableLayoutPanel1.Controls.Add(this.panel5, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel6, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel7, 2, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 47);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(496, 249);
-            this.tableLayoutPanel1.TabIndex = 20;
             // 
-            // FomServer
+            // TCPServer
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(496, 296);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
-            this.Name = "FomServer";
-            this.Text = "TCPServer";
+            this.Name = "TCPServer";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormServer_FormClosing);
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);

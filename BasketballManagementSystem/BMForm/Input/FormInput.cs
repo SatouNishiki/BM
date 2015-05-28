@@ -1132,14 +1132,14 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void tCPServer_Click(object sender, EventArgs e)
         {
-            FomServer f = new FomServer(this);
+            TCPServer f = new TCPServer(this);
             f.ShowDialog();
             f.Dispose();
         }
 
         private void tCPClient_Click(object sender, EventArgs e)
         {
-            FomSoch f = new FomSoch(this);
+            TCPClient f = new TCPClient(this);
             f.Show();
         }
 
