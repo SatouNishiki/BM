@@ -150,8 +150,6 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns>引数のアクションがほしい:true いらない:false</returns>
         public delegate bool GetActionListDelegate(Action.Action action);
 
-        public delegate bool GetPointActionListDelegate(RelationPointAction action);
-
         /********************************************************************************************/
 
         /// <summary>
@@ -314,9 +312,9 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// アクションを時系列(残り時間の多い)順のlistにして返す
         /// </summary>
         /// <returns>Action型のlist</returns>
-        public List<Action.Action> GetActionList(Player player)
+        public List<object> GetActionList(Player player)
         {
-            List<Action.Action> actionList = new List<Action.Action>();
+            List<object> actionList = new List<object>();
 
             //PlayerクラスのTypeオブジェクトを取得する
             Type type = typeof(Player);
@@ -334,7 +332,7 @@ namespace BasketballManagementSystem.BaseClass.Player
                 {
                     foreach (var o in (IList)obj)
                     {
-                        actionList.Add((Action.Action)o);
+                        actionList.Add(o);
                     }
 
                 }
@@ -342,10 +340,10 @@ namespace BasketballManagementSystem.BaseClass.Player
 
             //linqクエリー式 actionListを絶対時間によって昇順ソート命令
             var query = from p in actionList
-                        orderby p.ActionDate.Ticks
+                        orderby ((Action.Action)p).ActionDate.Ticks
                         select p;
 
-            List<Action.Action> rt = query.ToList<Action.Action>();
+            List<object> rt = query.ToList<object>();
 
             return rt;
         }
@@ -356,42 +354,26 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// </summary>
         /// <param name="dl">{PlayerTypeInstance}.GetActionListDelegateに一致するようなデリゲート</param>
         /// <returns>ActionList</returns>
-        public List<Action.Action> GetActionList(Player player, GetActionListDelegate dl)
+        public List<object> GetActionList(Player player, GetActionListDelegate dl)
         {
-            List<Action.Action> actionList = GetActionList(player);
+            List<object> actionList = GetActionList(player);
 
-            actionList.RemoveAll(a => !(dl(a)));
+            actionList.RemoveAll(a => !(dl((Action.Action)a)));
+
             return actionList;
         }
         
         /// <summary>
         /// 指定のクォーターに行われたアクションを時系列(残り時間の多い)順のlistにして返す
         /// </summary>
-        /// <param name="quarter">クォーター(1-4)</param>
-        /// <param name="extend">延長を含めたリストを返すかどうか</param>
+        /// <param name="quarter">クォーター</param>
         /// <returns>Action型のlist</returns>
-        public List<Action.Action> GetActionList(Player player, int quarter, bool extend)
+        public List<object> GetActionList(Player player, int quarter)
         {
-            List<Action.Action> actionList = new List<Action.Action>();
+            List<object> actionList = new List<object>();
 
-            actionList = this.GetActionList(player);
+            actionList = this.GetActionList(player, a => a.Quarter == quarter);
 
-            if (extend)
-            {
-                if (quarter < 4)
-                {
-                    actionList.RemoveAll(a => a.Quarter != quarter);
-                }
-                else
-                {
-                    actionList.RemoveAll(a => a.Quarter < quarter);
-                }
-
-            }
-            else
-            {
-                actionList.RemoveAll(a => a.Quarter != quarter);
-            }
             return actionList;
         }
 
@@ -402,9 +384,9 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <param name="minutes1">時間1</param>
         /// <param name="minutes2">時間2</param>
         /// <returns></returns>
-        public List<Action.Action> GetActionList(Player player, int quarter, int minutes1, int minutes2, bool extend)
+        public List<object> GetActionList(Player player, int quarter, int minutes1, int minutes2)
         {
-            List<Action.Action> actionList = this.GetActionList(player, quarter, extend);
+            List<object> actionList = this.GetActionList(player, quarter);
 
             if(minutes1 > minutes2){
                 int temp = minutes1;
@@ -412,7 +394,7 @@ namespace BasketballManagementSystem.BaseClass.Player
                 minutes2 = temp;
             }
 
-            actionList.RemoveAll(a => !(a.RemainingTime.Minutes >= minutes1 && a.RemainingTime.Minutes < minutes2));
+            actionList.RemoveAll(a => !(((Action.Action)a).RemainingTime.Minutes >= minutes1 && ((Action.Action)a).RemainingTime.Minutes < minutes2));
 
             return actionList;
         }
@@ -425,7 +407,7 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <param name="minutes1">時間1</param>
         /// <param name="minutes2">時間2</param>
         /// <returns></returns>
-        public List<Action.Action> GetActionList(Player player, string actionName, int quarter, int minutes1, int minutes2, bool extend)
+        public List<object> GetActionList(Player player, string actionName, int quarter, int minutes1, int minutes2)
         {
             if (minutes1 > minutes2)
             {
@@ -434,131 +416,9 @@ namespace BasketballManagementSystem.BaseClass.Player
                 minutes2 = temp;
             }
 
-            List<Action.Action> actionList = this.GetActionList(player, quarter, minutes1, minutes2, extend);
+            List<object> actionList = this.GetActionList(player, quarter, minutes1, minutes2);
 
-            actionList.RemoveAll(a => !(a.ActionName == actionName));
-
-            return actionList;
-        }
-
-        /// <summary>
-        /// 指定のクォーターに行われた点数に関係するアクションを時系列(残り時間の多い)順のlistにして返す
-        /// </summary>
-        /// <param name="quarter">クォーター(1-4)</param>
-        /// <returns>RelationPointAction型のlist</returns>
-        public List<RelationPointAction> GetPointActionList(int quarter, bool extend)
-        {
-            List<RelationPointAction> actionList = new List<RelationPointAction>();
-
-            actionList = this.GetPointActionList();
-            if (extend)
-            {
-
-                if (quarter < 4)
-                {
-                    actionList.RemoveAll(a => a.Quarter != quarter);
-                }
-                else
-                {
-
-                    actionList.RemoveAll(a => a.Quarter < quarter);
-                }
-            }
-            else
-            {
-                actionList.RemoveAll(a => a.Quarter != quarter);
-            }
-     
-            return actionList;
-
-        }
-
-        /// <summary>
-        /// 点数に関係するアクションを時系列(残り時間の多い)順のlistにして返す
-        /// </summary>
-        /// <returns>RelationPointAction型のlist</returns>
-        public List<RelationPointAction> GetPointActionList()
-        {
-            List<RelationPointAction> actionList = new List<RelationPointAction>();
-
-
-            foreach (var a in FreeThrow)
-            {
-                actionList.Add(a);
-            }
-            foreach (var a in Shoot2PMiss)
-            {
-                actionList.Add(a);
-            }
-            foreach (var a in Shoot3PMiss)
-            {
-                 actionList.Add(a); 
-            }
-            foreach (var a in FreeThrowMiss)
-            {
-               actionList.Add(a); 
-            }
-
-            foreach (var a in Shoot3P)
-            {
-                actionList.Add(a);
-            }
-            foreach (var a in Shoot2P)
-            {
-                actionList.Add(a);
-            }
-
-            //linqクエリー式 actionListを絶対時間によって昇順ソート命令
-            var query = from p in actionList
-                        orderby p.ActionDate.Ticks
-                        select p;
-
-            List<RelationPointAction> rt = query.ToList<RelationPointAction>();
-
-            return rt;
-        }
-
-        public List<RelationPointAction> GetPointActionList(bool b)
-        {
-            if (b)
-            {
-                return GetPointActionList();
-            }
-            else
-            {
-                List<RelationPointAction> actionList = new List<RelationPointAction>();
-
-
-                foreach (var a in FreeThrow)
-                {
-                    actionList.Add(a);
-                }
-
-                foreach (var a in Shoot3P)
-                {
-                    actionList.Add(a);
-                }
-                foreach (var a in Shoot2P)
-                {
-                    actionList.Add(a);
-                }
-
-                //linqクエリー式 actionListを絶対時間によって昇順ソート命令
-                var query = from p in actionList
-                            orderby p.ActionDate.Ticks
-                            select p;
-
-                List<RelationPointAction> rt = query.ToList<RelationPointAction>();
-
-                return rt;
-            }
-        }
-
-        public List<RelationPointAction> GetPointActionList(GetPointActionListDelegate dl)
-        {
-            List<RelationPointAction> actionList = GetPointActionList();
-
-            actionList.RemoveAll(a => !dl(a));
+            actionList.RemoveAll(a => !(((Action.Action)a).ActionName == actionName));
 
             return actionList;
         }

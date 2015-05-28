@@ -137,7 +137,7 @@ namespace BasketballManagementSystem.BMForm.PlayerData
 
             for (int i = 0; i <= 9; i++)
             {
-                o[i + 1] = (selectedPlayer.GetActionList(selectedPlayer,actionName, quarter, 10 - i, 9 - i, false)).Count;
+                o[i + 1] = (selectedPlayer.GetActionList(selectedPlayer,actionName, quarter, 10 - i, 9 - i)).Count;
             
             }
 
@@ -152,8 +152,8 @@ namespace BasketballManagementSystem.BMForm.PlayerData
 
             for (int i = 0; i <= 9; i++)
             {
-                double a = (selectedPlayer.GetActionList(selectedPlayer, actionName, quarter, 10 - i, 9 - i, false)).Count;
-                double b = (selectedPlayer.GetActionList(selectedPlayer, missActionName, quarter, 10 - i, 9 - i, false)).Count;
+                double a = (selectedPlayer.GetActionList(selectedPlayer, actionName, quarter, 10 - i, 9 - i)).Count;
+                double b = (selectedPlayer.GetActionList(selectedPlayer, missActionName, quarter, 10 - i, 9 - i)).Count;
 
                 string s = "";
 

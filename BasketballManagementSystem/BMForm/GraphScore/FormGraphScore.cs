@@ -116,7 +116,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             int point = 0;
 
-            foreach (var r in game.MyTeam.GetQuarterPointAction(1))
+            foreach (var r in ActionListConverter.ToRelationPointActionList(game.MyTeam.GetQuarterAction(1)))
             {
                 point += r.Point;
 
@@ -126,7 +126,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             point = 0;
 
-            foreach (var r in game.OppentTeam.GetQuarterPointAction(1))
+            foreach (var r in ActionListConverter.ToRelationPointActionList(game.OppentTeam.GetQuarterAction(1)))
             {
                 point += r.Point;
 
@@ -137,7 +137,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             point = 0;
 
-            foreach (var r in game.MyTeam.GetQuarterPointAction(2))
+            foreach (var r in ActionListConverter.ToRelationPointActionList(game.MyTeam.GetQuarterAction(2)))
             {
                 point += r.Point;
 
@@ -147,7 +147,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             point = 0;
 
-            foreach (var r in game.OppentTeam.GetQuarterPointAction(2))
+            foreach (var r in ActionListConverter.ToRelationPointActionList(game.OppentTeam.GetQuarterAction(2)))
             {
                 point += r.Point;
 
@@ -157,7 +157,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             point = 0;
 
-            foreach (var r in game.MyTeam.GetQuarterPointAction(3))
+            foreach (var r in ActionListConverter.ToRelationPointActionList(game.MyTeam.GetQuarterAction(3)))
             {
                 point += r.Point;
 
@@ -167,7 +167,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             point = 0;
 
-            foreach (var r in game.OppentTeam.GetQuarterPointAction(3))
+            foreach (var r in ActionListConverter.ToRelationPointActionList(game.OppentTeam.GetQuarterAction(3)))
             {
                 point += r.Point;
 
@@ -177,7 +177,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             point = 0;
 
-            foreach (var r in game.MyTeam.GetQuarterPointAction(4))
+            foreach (var r in ActionListConverter.ToRelationPointActionList(game.MyTeam.GetQuarterAction(4)))
             {
                 point += r.Point;
 
@@ -187,7 +187,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             point = 0;
 
-            foreach (var r in game.OppentTeam.GetQuarterPointAction(4))
+            foreach (var r in ActionListConverter.ToRelationPointActionList(game.OppentTeam.GetQuarterAction(4)))
             {
                 point += r.Point;
 
@@ -197,7 +197,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             point = 0;
 
-            foreach (var r in game.MyTeam.GetQuarterPointActionAll())
+            foreach (var r in ActionListConverter.ToRelationPointActionList(game.MyTeam.GetActionAll()))
             {
                 point += r.Point;
 
@@ -206,7 +206,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             point = 0;
 
-            foreach (var r in game.OppentTeam.GetQuarterPointActionAll())
+            foreach (var r in ActionListConverter.ToRelationPointActionList(game.OppentTeam.GetActionAll()))
             {
                 point += r.Point;
 
@@ -244,7 +244,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             int point = 0;
 
-            foreach (var r in p.GetPointActionList(1, false))
+            foreach (var r in ActionListConverter.ToRelationPointActionList(p.GetActionList(p, 1)))
             {
                 point += r.Point;
 
@@ -254,7 +254,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             point = 0;
 
-            foreach (var r in p.GetPointActionList(2, false))
+            foreach (var r in ActionListConverter.ToRelationPointActionList(p.GetActionList(p, 2)))
             {
                 point += r.Point;
 
@@ -264,7 +264,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             point = 0;
 
-            foreach (var r in p.GetPointActionList(3, false))
+            foreach (var r in ActionListConverter.ToRelationPointActionList(p.GetActionList(p, 3)))
             {
                 point += r.Point;
 
@@ -274,7 +274,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
             point = 0;
 
-            foreach (var r in p.GetPointActionList(4, true))
+            foreach (var r in ActionListConverter.ToRelationPointActionList(p.GetActionList(p, 4)))
             {
                 point += r.Point;
 
@@ -283,7 +283,7 @@ namespace BasketballManagementSystem.BMForm.GraphScore
 
              point = 0;
 
-            foreach (var r in p.GetPointActionList())
+            foreach (var r in ActionListConverter.ToRelationPointActionList(p.GetActionList(p)))
             {
                 point += r.Point;
 

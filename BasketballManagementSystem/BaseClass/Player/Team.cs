@@ -139,82 +139,44 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <summary>
         /// 指定のクォーターに行われたアクションを時系列(残り時間の多い)順のlistにして返す
         /// </summary>
-        /// <param name="quarter">クォーター(1-4) 全ての延長を取得したいときは5</param>
-        /// <returns>Action型のlist</returns>
-        public List<Action.Action> GetQuarterAction(int quarter)
+        /// <param name="quarter">クォーター </param>
+        /// <returns>object型のlist</returns>
+        public List<object> GetQuarterAction(int quarter)
         {
-            List<Action.Action> actionList = new List<Action.Action>();
+            List<object> actionList = new List<object>();
 
             foreach (var p in TeamMember)
             {
-                if (quarter < 4)
-                {
-                    actionList.AddRange(p.GetActionList(p, a => a.Quarter == quarter));
-                }
-                else
-                {
-                    actionList.AddRange(p.GetActionList(p, a => a.Quarter >= quarter));
-                }
+                actionList.AddRange(p.GetActionList(p, a => a.Quarter == quarter));
             }
 
             var query = from p in actionList
-                        orderby p.ActionDate.Ticks
+                        orderby ((Action.Action)p).ActionDate.Ticks
                         select p;
 
-            List<Action.Action> rt = query.ToList<Action.Action>();
+            List<object> rt = query.ToList<object>();
 
             return rt;
         }
 
         /// <summary>
-        /// 指定のクォーターに行われた点数に関係するアクションを時系列(残り時間の多い)順のlistにして返す
+        /// 全てのアクションを時系列(残り時間の多い)順のlistにして返す
         /// </summary>
-        /// <param name="quarter">クォーター(1-4) 全ての延長を取得したいときは5</param>
-        /// <returns>RelationPointAction型のlist</returns>
-        public List<RelationPointAction> GetQuarterPointAction(int quarter)
+        /// <returns>object型のlist</returns>
+        public List<object> GetActionAll()
         {
-            List<RelationPointAction> actionList = new List<RelationPointAction>();
+            List<object> actionList = new List<object>();
 
-            foreach (var p in TeamMember)
+            foreach (Player p in TeamMember)
             {
-                if (quarter < 4)
-                {
-                    actionList.AddRange(p.GetPointActionList(a => a.Quarter == quarter));
-                }
-                else
-                {
-                    actionList.AddRange(p.GetPointActionList(a => a.Quarter >= quarter));
-                }
+                actionList.AddRange(p.GetActionList(p));
             }
 
             var query = from p in actionList
-                        orderby p.ActionDate.Ticks
+                        orderby ((Action.Action)p).ActionDate.Ticks
                         select p;
 
-            List<RelationPointAction> rt = query.ToList<RelationPointAction>();
-
-            return rt;
-        }
-
-
-        /// <summary>
-        /// 指定のクォーターに行われた点数に関係するアクションを時系列(残り時間の多い)順のlistにして返す
-        /// </summary>
-        /// <returns>RelationPointAction型のlist</returns>
-        public List<RelationPointAction> GetQuarterPointActionAll()
-        {
-            List<RelationPointAction> actionList = new List<RelationPointAction>();
-
-            foreach (var p in TeamMember)
-            {
-                actionList.AddRange(p.GetPointActionList());
-            }
-
-            var query = from p in actionList
-                        orderby p.ActionDate.Ticks
-                        select p;
-
-            List<RelationPointAction> rt = query.ToList<RelationPointAction>();
+            List<object> rt = query.ToList<object>();
 
             return rt;
         }
@@ -228,7 +190,7 @@ namespace BasketballManagementSystem.BaseClass.Player
         {
             if (quarter >= 5) { quarter = 5; }
 
-            List<RelationPointAction> r = GetQuarterPointAction(quarter);
+            List<RelationPointAction> r = ActionListConverter.ToRelationPointActionList(GetQuarterAction(quarter));
 
             int point = 0;
 

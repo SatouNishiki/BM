@@ -80,6 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClass\ActionPoint\ActionPointProvider.cs" />
+    <Compile Include="BaseClass\Action\ActionListConverter.cs" />
     <Compile Include="BaseClass\Action\FreeThrowMiss.cs" />
     <Compile Include="BaseClass\Action\Shoot2PMiss.cs" />
     <Compile Include="BaseClass\Action\Action.cs" />
@@ -262,15 +263,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BMForm\Input\DebugMessageForm.resx">
       <DependentUpon>DebugMessageForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BMForm\Input\FormInput.en.resx">
-      <DependentUpon>FormInput.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BMForm\Input\FormInput.is.resx">
-      <DependentUpon>FormInput.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="BMForm\Input\FormInput.ja-JP.resx">
-      <DependentUpon>FormInput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BMForm\Input\FormInput.ja.resx">
       <DependentUpon>FormInput.cs</DependentUpon>

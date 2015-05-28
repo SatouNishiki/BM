@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="CortPicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="CortPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABC4AAAI+CAYAAABzKUsHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAFBjSURBVHhe7d1/sG7XQd/njIC2w4xb2qatDNTTgUYzbdUy
@@ -467,92 +467,59 @@
         WeSa4iBc/OEfPHvwNwAAAAAt+a1f/8zm/wdr4AmliUezKwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="CortPicture.Location" type="System.Drawing.Point, System.Drawing">
-    <value>169, 359</value>
-  </data>
-  <data name="CreateNewData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="CreateNewData.Text" xml:space="preserve">
-    <value>新規試合</value>
-  </data>
-  <data name="ChangeMyTeamButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="ChangeMyTeamButton.Text" xml:space="preserve">
-    <value>自チーム変更</value>
-  </data>
-  <data name="ChangeOppentTeamButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="ChangeOppentTeamButton.Text" xml:space="preserve">
-    <value>相手チーム変更</value>
-  </data>
-  <data name="GameDataSave.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="GameDataSave.Text" xml:space="preserve">
-    <value>試合データ保存</value>
-  </data>
-  <data name="GameDataLoad.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="GameDataLoad.Text" xml:space="preserve">
-    <value>試合データ読み込み</value>
-  </data>
-  <data name="PrintForm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="PrintForm.Text" xml:space="preserve">
-    <value>印刷</value>
-  </data>
-  <data name="PrintPreview.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="PrintPreview.Text" xml:space="preserve">
-    <value>印刷プレビュー</value>
-  </data>
-  <data name="Exit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="Exit.Text" xml:space="preserve">
-    <value>終了</value>
-  </data>
   <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 22</value>
   </data>
   <data name="FileToolStripMenuItem.Text" xml:space="preserve">
     <value>ファイル</value>
   </data>
-  <data name="StartGame.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="CreateNewDataItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
   </data>
-  <data name="StartGame.Text" xml:space="preserve">
-    <value>試合開始</value>
+  <data name="CreateNewDataItem.Text" xml:space="preserve">
+    <value>新規試合</value>
   </data>
-  <data name="NextQuarterButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ChangeMyTeamItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
   </data>
-  <data name="NextQuarterButton.Text" xml:space="preserve">
-    <value>次のクォーターへ進む</value>
+  <data name="ChangeMyTeamItem.Text" xml:space="preserve">
+    <value>自チーム変更</value>
   </data>
-  <data name="StopGameButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ChangeOppentTeamItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
   </data>
-  <data name="StopGameButton.Text" xml:space="preserve">
-    <value>試合停止</value>
+  <data name="ChangeOppentTeamItem.Text" xml:space="preserve">
+    <value>相手チーム変更</value>
   </data>
-  <data name="RestartGameButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="GameDataSaveItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
   </data>
-  <data name="RestartGameButton.Text" xml:space="preserve">
-    <value>試合再開</value>
+  <data name="GameDataSaveItem.Text" xml:space="preserve">
+    <value>ゲームデータ保存</value>
   </data>
-  <data name="GameEndButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="GameDataLoadItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
   </data>
-  <data name="GameEndButton.Text" xml:space="preserve">
-    <value>試合終了</value>
+  <data name="GameDataLoadItem.Text" xml:space="preserve">
+    <value>ゲームデータ読み込み</value>
+  </data>
+  <data name="PrintFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 22</value>
+  </data>
+  <data name="PrintFormItem.Text" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="PrintPreviewItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 22</value>
+  </data>
+  <data name="PrintPreviewItem.Text" xml:space="preserve">
+    <value>印刷プレビュー</value>
+  </data>
+  <data name="ExitItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 22</value>
+  </data>
+  <data name="ExitItem.Text" xml:space="preserve">
+    <value>終了</value>
   </data>
   <data name="GameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 22</value>
@@ -560,17 +527,35 @@
   <data name="GameToolStripMenuItem.Text" xml:space="preserve">
     <value>試合</value>
   </data>
-  <data name="toolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
+  <data name="StartGameItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
   </data>
-  <data name="toolStripMenuItem1.Text" xml:space="preserve">
-    <value>試合名変更</value>
+  <data name="StartGameItem.Text" xml:space="preserve">
+    <value>開始</value>
   </data>
-  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>148, 22</value>
+  <data name="NextQuarterItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
   </data>
-  <data name="toolStripMenuItem2.Text" xml:space="preserve">
-    <value>試合場所変更</value>
+  <data name="NextQuarterItem.Text" xml:space="preserve">
+    <value>次のクォーター</value>
+  </data>
+  <data name="StopGameItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="StopGameItem.Text" xml:space="preserve">
+    <value>停止</value>
+  </data>
+  <data name="RestartGameItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="RestartGameItem.Text" xml:space="preserve">
+    <value>再開</value>
+  </data>
+  <data name="GameEndItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
+  </data>
+  <data name="GameEndItem.Text" xml:space="preserve">
+    <value>ゲーム終了</value>
   </data>
   <data name="GamePropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 22</value>
@@ -578,38 +563,17 @@
   <data name="GamePropToolStripMenuItem.Text" xml:space="preserve">
     <value>試合設定</value>
   </data>
-  <data name="GoGraphScorePage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
+  <data name="ChangeGameNameItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
   </data>
-  <data name="GoGraphScorePage.Text" xml:space="preserve">
-    <value>点数グラフ</value>
+  <data name="ChangeGameNameItem.Text" xml:space="preserve">
+    <value>ゲーム名変更</value>
   </data>
-  <data name="GoBoxScorePage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
+  <data name="ChangeGameLocationItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 22</value>
   </data>
-  <data name="GoBoxScorePage.Text" xml:space="preserve">
-    <value>スコアシート</value>
-  </data>
-  <data name="GoPlayerData.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="GoPlayerData.Text" xml:space="preserve">
-    <value>プレイヤー情報</value>
-  </data>
-  <data name="GoTacticks2D.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="actionPointGraph.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="actionPointGraph.Text" xml:space="preserve">
-    <value>行動傾向点グラフ</value>
-  </data>
-  <data name="strategySimulation.Size" type="System.Drawing.Size, System.Drawing">
-    <value>184, 22</value>
-  </data>
-  <data name="strategySimulation.Text" xml:space="preserve">
-    <value>戦略シミュレーター</value>
+  <data name="ChangeGameLocationItem.Text" xml:space="preserve">
+    <value>ゲーム場所変更</value>
   </data>
   <data name="SolutionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 22</value>
@@ -617,83 +581,41 @@
   <data name="SolutionToolStripMenuItem.Text" xml:space="preserve">
     <value>解析</value>
   </data>
-  <data name="ChangeFormBackGroundColor.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="GoGraphScoreFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
   </data>
-  <data name="ChangeFormBackGroundColor.Text" xml:space="preserve">
-    <value>背景色変更</value>
+  <data name="GoGraphScoreFormItem.Text" xml:space="preserve">
+    <value>スコアグラフ</value>
   </data>
-  <data name="ChangeFormBackGroundColorDefault.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="GoBoxScoreFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
   </data>
-  <data name="ChangeFormBackGroundColorDefault.Text" xml:space="preserve">
-    <value>背景色リセット</value>
+  <data name="GoBoxScoreFormItem.Text" xml:space="preserve">
+    <value>スコアシート</value>
   </data>
-  <data name="ChangePointLabelColor.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="GoPlayerDataFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
   </data>
-  <data name="ChangePointLabelColor.Text" xml:space="preserve">
-    <value>得点板色変更</value>
+  <data name="GoPlayerDataFormItem.Text" xml:space="preserve">
+    <value>プレイヤー情報</value>
   </data>
-  <data name="ChangePointLabelColorDefault.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="GoTacticks2DFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
   </data>
-  <data name="ChangePointLabelColorDefault.Text" xml:space="preserve">
-    <value>得点板色リセット</value>
+  <data name="GoTacticks2DFormItem.Text" xml:space="preserve">
+    <value>シュート確率分析</value>
   </data>
-  <data name="ChangeButtonColor.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="actionPointGraphFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
   </data>
-  <data name="ChangeButtonColor.Text" xml:space="preserve">
-    <value>ボタン色変更</value>
+  <data name="actionPointGraphFormItem.Text" xml:space="preserve">
+    <value>行動傾向点グラフ</value>
   </data>
-  <data name="ChangeButtonColorDefault.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="StrategySimulationFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
   </data>
-  <data name="ChangeButtonColorDefault.Text" xml:space="preserve">
-    <value>ボタン色リセット</value>
-  </data>
-  <data name="ChangeButtonTextColor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 22</value>
-  </data>
-  <data name="ChangeButtonTextColor.Text" xml:space="preserve">
-    <value>ボタン文字色変更</value>
-  </data>
-  <data name="ChangeButtonTextColorDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>196, 22</value>
-  </data>
-  <data name="ChangeButtonTextColorDefault.Text" xml:space="preserve">
-    <value>ボタン文字色リセット</value>
-  </data>
-  <data name="色設定ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
-  </data>
-  <data name="色設定ToolStripMenuItem.Text" xml:space="preserve">
-    <value>色設定</value>
-  </data>
-  <data name="ChangeFPS.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
-  </data>
-  <data name="ChangeFPS.Text" xml:space="preserve">
-    <value>画面更新速度変更</value>
-  </data>
-  <data name="DebugFormVisiable.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
-  </data>
-  <data name="DebugFormVisiable.Text" xml:space="preserve">
-    <value>DebugWindow表示切替</value>
-  </data>
-  <data name="QuarterChangeTimerSpeedChange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
-  </data>
-  <data name="QuarterChangeTimerSpeedChange.Text" xml:space="preserve">
-    <value>QuarterTimer加減速度変更</value>
-  </data>
-  <data name="ChangeLanguage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>230, 22</value>
-  </data>
-  <data name="ChangeLanguage.Text" xml:space="preserve">
-    <value>言語切り替え(再起動後有効)</value>
+  <data name="StrategySimulationFormItem.Text" xml:space="preserve">
+    <value>戦略シュミレーション</value>
   </data>
   <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 22</value>
@@ -701,29 +623,35 @@
   <data name="PropToolStripMenuItem.Text" xml:space="preserve">
     <value>設定</value>
   </data>
-  <data name="dataEdit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 22</value>
+  <data name="ColorConfigItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 22</value>
   </data>
-  <data name="dataEdit.Text" xml:space="preserve">
-    <value>データ編集</value>
+  <data name="ColorConfigItem.Text" xml:space="preserve">
+    <value>色設定</value>
   </data>
-  <data name="clubMake.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 22</value>
+  <data name="ChangeFPSItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 22</value>
   </data>
-  <data name="clubMake.Text" xml:space="preserve">
-    <value>名簿作成</value>
+  <data name="ChangeFPSItem.Text" xml:space="preserve">
+    <value>FPS設定</value>
   </data>
-  <data name="teamMake.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 22</value>
+  <data name="DebugFormVisiableItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 22</value>
   </data>
-  <data name="teamMake.Text" xml:space="preserve">
-    <value>チーム作成</value>
+  <data name="DebugFormVisiableItem.Text" xml:space="preserve">
+    <value>デバッグウィンドウ表示切替</value>
   </data>
-  <data name="actionPointEdit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>208, 22</value>
+  <data name="QuarterChangeTimerSpeedChangeItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 22</value>
   </data>
-  <data name="actionPointEdit.Text" xml:space="preserve">
-    <value>アクションポイント編集</value>
+  <data name="QuarterChangeTimerSpeedChangeItem.Text" xml:space="preserve">
+    <value>タイマー加減速度変更</value>
+  </data>
+  <data name="ChangeLanguageItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 22</value>
+  </data>
+  <data name="ChangeLanguageItem.Text" xml:space="preserve">
+    <value>言語設定(再起動後有効)</value>
   </data>
   <data name="dataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>56, 22</value>
@@ -731,29 +659,47 @@
   <data name="dataToolStripMenuItem.Text" xml:space="preserve">
     <value>データ</value>
   </data>
-  <data name="openUDPClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
+  <data name="GoDataEditFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
   </data>
-  <data name="openUDPClient.Text" xml:space="preserve">
-    <value>UDPクライアント</value>
+  <data name="GoDataEditFormItem.Text" xml:space="preserve">
+    <value>ゲームデータ編集</value>
   </data>
-  <data name="tCPServer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
+  <data name="GoClubMakeFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
   </data>
-  <data name="tCPServer.Text" xml:space="preserve">
-    <value>TCPサーバー</value>
+  <data name="GoClubMakeFormItem.Text" xml:space="preserve">
+    <value>名簿作成</value>
   </data>
-  <data name="tCPClient.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 22</value>
+  <data name="GoTeamMakeFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
   </data>
-  <data name="tCPClient.Text" xml:space="preserve">
-    <value>TCPクライアント</value>
+  <data name="GoTeamMakeFormItem.Text" xml:space="preserve">
+    <value>チーム作成</value>
+  </data>
+  <data name="GoActionPointEditFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="GoActionPointEditFormItem.Text" xml:space="preserve">
+    <value>行動傾向点変更</value>
   </data>
   <data name="transmission.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 22</value>
   </data>
   <data name="transmission.Text" xml:space="preserve">
     <value>通信</value>
+  </data>
+  <data name="GoTCPServerFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
+  </data>
+  <data name="GoTCPServerFormItem.Text" xml:space="preserve">
+    <value>TCPサーバー</value>
+  </data>
+  <data name="GoTCPClientFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
+  </data>
+  <data name="GoTCPClientFormItem.Text" xml:space="preserve">
+    <value>TCPクライアント</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>787, 38</value>
@@ -800,9 +746,6 @@
   <data name="label6.Text" xml:space="preserve">
     <value>ベンチメンバー</value>
   </data>
-  <data name="MyTimeOut.Text" xml:space="preserve">
-    <value>タイムアウト(自)</value>
-  </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 13</value>
   </data>
@@ -821,13 +764,10 @@
   <data name="label11.Text" xml:space="preserve">
     <value>与フリースロー</value>
   </data>
-  <data name="OppentTimeOut.Text" xml:space="preserve">
-    <value>タイムアウト(相)</value>
-  </data>
   <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>175, 81</value>
   </data>
-  <data name="QuarterTimerRewind.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="QuarterTimerRewindButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/4QCuRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAZKG
         AAcAAAB6AAAALAAAAABVTklDT0RFAABDAFIARQBBAFQATwBSADoAIABnAGQALQBqAHAAZQBnACAAdgAx
@@ -869,7 +809,7 @@
         gBC92GBs2Sauqmh+xAt14KXEsiljHBbi3cjx0/llhxtG4iF3/9k=
 </value>
   </data>
-  <data name="QuarterTimerFastFoward.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="QuarterTimerFastFowardButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/4QCuRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAZKG
         AAcAAAB6AAAALAAAAABVTklDT0RFAABDAFIARQBBAFQATwBSADoAIABnAGQALQBqAHAAZQBnACAAdgAx
@@ -909,7 +849,7 @@
         atrENlhrQt9ndTpYwgXmlpge0ekMtvju2hkn46T8oeqJnHzKErFpuvKM/9k=
 </value>
   </data>
-  <data name="QuarterTimerStop.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="QuarterTimerStopButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQffBBkHIiP3t5tY

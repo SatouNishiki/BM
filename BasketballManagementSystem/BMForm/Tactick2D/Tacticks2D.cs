@@ -90,7 +90,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             InformationRichTextBox.Text = "SelectedPlayer = " + selectedPlayer + "\n";
             InformationRichTextBox.AppendText("Team = " + team + "\n");
             InformationRichTextBox.AppendText("AllPoint = " + selectedPlayer.Point + "\n");
-            InformationRichTextBox.AppendText("MaxShootRange = " + CortHelper.GetMaxShootRange(selectedPlayer.GetPointActionList(false)) + "[m]\n");
+            InformationRichTextBox.AppendText("MaxShootRange = " + CortHelper.GetMaxShootRange(ActionListConverter.ToRelationPointActionList(selectedPlayer.GetActionList(selectedPlayer))) + "[m]\n");
             InformationRichTextBox.AppendText(message);
         }
        
@@ -122,7 +122,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
 
             foreach (var p in game.MyTeam.TeamMember)
             {
-                foreach (var action in p.GetPointActionList())
+                foreach (var action in ActionListConverter.ToRelationPointActionList(p.GetActionList(p)))
                 {
                     Point point = PositionConvert.ConvertToPoint(action.Position, leftTop, rightDown);
 
@@ -161,7 +161,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
 
             foreach (var p in game.OppentTeam.TeamMember)
             {
-                foreach (var action in p.GetPointActionList())
+                foreach (var action in ActionListConverter.ToRelationPointActionList(p.GetActionList(p)))
                 {
                     Point point = PositionConvert.ConvertToPoint(action.Position, leftTop, rightDown);
 
@@ -205,7 +205,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
 
             graphics = e.Graphics;
 
-            foreach (var action in selectedPlayer.GetPointActionList())
+            foreach (var action in ActionListConverter.ToRelationPointActionList(selectedPlayer.GetActionList(selectedPlayer)))
             {
                 Point point = PositionConvert.ConvertToPoint(action.Position, leftTop, rightDown);
 
@@ -248,7 +248,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
 
             graphics = e.Graphics;
 
-            foreach (var action in selectedPlayer.GetPointActionList(a => a.ActionName == (string)DrawActionKindsComboBox.SelectedItem))
+            foreach (var action in ActionListConverter.ToRelationPointActionList(selectedPlayer.GetActionList(selectedPlayer, a => a.ActionName == (string)DrawActionKindsComboBox.SelectedItem)))
             {
                 Point point = PositionConvert.ConvertToPoint(action.Position, leftTop, rightDown);
 
@@ -319,7 +319,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             RelationPointAction shoot = new RelationPointAction();
 
             //ミスとフリースローを除外
-            foreach (var r in selectedPlayer.GetPointActionList(a => !(a is Miss) && !(a is FreeThrow)))
+            foreach (var r in ActionListConverter.ToRelationPointActionList(selectedPlayer.GetActionList(selectedPlayer, a => !(a is Miss) && !(a is FreeThrow))))
             {
                 double temp = CortHelper.GetDistance(p, r.Position);
                //double temp = CortHelper.GetDistanceX(p, r.position);
@@ -377,7 +377,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             int lineCount = 0;
             Position beforeActionPoint = new Position(0, 0);
 
-            var query = from p2 in selectedPlayer.GetPointActionList(a => !(a is FreeThrow))
+            var query = from p2 in ActionListConverter.ToRelationPointActionList(selectedPlayer.GetActionList(selectedPlayer, a => !(a is FreeThrow)))
                         orderby CortHelper.GetDistanceFromGoal(p2.Position)
                         select p2;
 

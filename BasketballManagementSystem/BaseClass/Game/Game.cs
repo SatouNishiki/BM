@@ -7,6 +7,7 @@ using BasketballManagementSystem.BaseClass.Player;
 using System.Xml.Serialization;
 using BasketballManagementSystem.BaseClass.TimeOut;
 using Utility;
+using BasketballManagementSystem.BaseClass.Action;
 
 namespace BasketballManagementSystem.BaseClass.Game
 {
@@ -85,8 +86,8 @@ namespace BasketballManagementSystem.BaseClass.Game
 
             for (var i = 0; i < this.MyTeam.TeamMember.Count; i++)
             {
-                List<Action.Action> myList = this.MyTeam.TeamMember[i].GetActionList(this.MyTeam.TeamMember[i]);
-                List<Action.Action> gameList = game.MyTeam.TeamMember[i].GetActionList(game.MyTeam.TeamMember[i]);
+                List<Action.Action> myList =  ActionListConverter.ToActionList(this.MyTeam.TeamMember[i].GetActionList(this.MyTeam.TeamMember[i]));
+                List<Action.Action> gameList = ActionListConverter.ToActionList(game.MyTeam.TeamMember[i].GetActionList(game.MyTeam.TeamMember[i]));
 
                 if (this.MyTeam.TeamMember[i].GetActionList(this.MyTeam.TeamMember[i]).Count
                     != game.MyTeam.TeamMember[i].GetActionList(game.MyTeam.TeamMember[i]).Count)

@@ -14,6 +14,7 @@ using BasketballManagementSystem.BaseClass.Player;
 using BasketballManagementSystem.BaseClass.Action;
 using BasketballManagementSystem.BaseClass.TimeOut;
 using BasketballManagementSystem.Manager.PrintManager;
+using BasketballManagementSystem.BaseClass.Action;
 
 namespace BasketballManagementSystem.BMForm.BoxScore
 {
@@ -985,12 +986,12 @@ namespace BasketballManagementSystem.BMForm.BoxScore
         {
             runningScore.Init();
             
-            foreach (var r in this.game.MyTeam.GetQuarterPointActionAll())
+            foreach (var r in ActionListConverter.ToRelationPointActionList(this.game.MyTeam.GetActionAll()))
             {
                 this.runningScore.InputRunningScoreA(r, r.OwnerNumber);
             }
 
-            foreach (var r in this.game.OppentTeam.GetQuarterPointActionAll())
+            foreach (var r in ActionListConverter.ToRelationPointActionList(this.game.OppentTeam.GetActionAll()))
             {
                 this.runningScore.InputRunningScoreB(r, r.OwnerNumber);
             }
