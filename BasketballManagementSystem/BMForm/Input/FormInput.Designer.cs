@@ -888,7 +888,6 @@
             this.Controls.Add(this.MyOutTeamListBox);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormInput";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormInput_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.CortPictureBox)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

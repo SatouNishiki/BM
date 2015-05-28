@@ -1151,13 +1151,7 @@ namespace BasketballManagementSystem.BMForm.Input
 
         /****************************************************************************************/
 
-        private void FormInput_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            if (u != null && !u.IsDisposed)
-            {
-                if (u.threadReceive != null) u.threadReceive.Abort();
-            }
-        }
+       
 
         
 
