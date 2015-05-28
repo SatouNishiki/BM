@@ -464,7 +464,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             //clientHandle = socket.Handle;
 
             //呼び出し側のフォームのインスタンスを保持
-            fomServer = fomServer;
+            this.fomServer = fomServer;
 
             //読み込み用のバッファ
             buffer = new byte[100000];
