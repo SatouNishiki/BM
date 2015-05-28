@@ -161,9 +161,9 @@
             // 
             this.panel7.Controls.Add(this.ReadClearButton);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(447, 87);
+            this.panel7.Location = new System.Drawing.Point(445, 87);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(44, 74);
+            this.panel7.Size = new System.Drawing.Size(46, 74);
             this.panel7.TabIndex = 17;
             // 
             // ReadClearButton
@@ -180,9 +180,9 @@
             // 
             this.panel6.Controls.Add(this.WriteClearButton);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(447, 5);
+            this.panel6.Location = new System.Drawing.Point(445, 5);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(44, 74);
+            this.panel6.Size = new System.Drawing.Size(46, 74);
             this.panel6.TabIndex = 16;
             // 
             // WriteClearButton
@@ -243,7 +243,7 @@
             this.ReadTextBox.Name = "ReadTextBox";
             this.ReadTextBox.ReadOnly = true;
             this.ReadTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.ReadTextBox.Size = new System.Drawing.Size(379, 74);
+            this.ReadTextBox.Size = new System.Drawing.Size(377, 74);
             this.ReadTextBox.TabIndex = 7;
             // 
             // panel3
@@ -273,16 +273,16 @@
             this.LogTextBox.Name = "LogTextBox";
             this.LogTextBox.ReadOnly = true;
             this.LogTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.LogTextBox.Size = new System.Drawing.Size(379, 75);
+            this.LogTextBox.Size = new System.Drawing.Size(377, 75);
             this.LogTextBox.TabIndex = 9;
             // 
             // panel8
             // 
             this.panel8.Controls.Add(this.LogClearButton);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(447, 169);
+            this.panel8.Location = new System.Drawing.Point(445, 169);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(44, 75);
+            this.panel8.Size = new System.Drawing.Size(46, 75);
             this.panel8.TabIndex = 18;
             // 
             // LogClearButton
@@ -302,7 +302,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(60, 5);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(379, 74);
+            this.panel2.Size = new System.Drawing.Size(377, 74);
             this.panel2.TabIndex = 20;
             // 
             // WriteTextBox
@@ -312,7 +312,7 @@
             this.WriteTextBox.Multiline = true;
             this.WriteTextBox.Name = "WriteTextBox";
             this.WriteTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.WriteTextBox.Size = new System.Drawing.Size(285, 74);
+            this.WriteTextBox.Size = new System.Drawing.Size(283, 74);
             this.WriteTextBox.TabIndex = 19;
             // 
             // panel9
@@ -353,7 +353,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 53F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel8, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.LogTextBox, 1, 2);
