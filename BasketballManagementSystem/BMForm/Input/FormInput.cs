@@ -85,11 +85,6 @@ namespace BasketballManagementSystem.BMForm.Input
         private bool preLoad = true;
 
         /// <summary>
-        /// UDPクライアントフォームのインスタンス(親フォームでスレッドの終了処理を呼び出すため)
-        /// </summary>
-        private UDPClient u;
-
-        /// <summary>
         /// 現在の自分のタイムアウトの数
         /// </summary>
         private int nowMyTimeOut
@@ -1109,12 +1104,6 @@ namespace BasketballManagementSystem.BMForm.Input
         {
             EditForm ed = new EditForm();
             ed.Show();
-        }
-
-        private void openUDPClient_Click(object sender, EventArgs e)
-        {
-            u = new UDPClient(this);
-            u.Show();
         }
 
         private void teamMake_Click(object sender, EventArgs e)

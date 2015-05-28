@@ -89,7 +89,6 @@
             this.GoTeamMakeFormItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GoActionPointEditFormItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transmission = new System.Windows.Forms.ToolStripMenuItem();
-            this.GoUDPClienFormtItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GoTCPServerFormItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GoTCPClientFormItem = new System.Windows.Forms.ToolStripMenuItem();
             this.MyTeamNameLael = new System.Windows.Forms.Label();
@@ -562,17 +561,10 @@
             // transmission
             // 
             this.transmission.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.GoUDPClienFormtItem,
             this.GoTCPServerFormItem,
             this.GoTCPClientFormItem});
             this.transmission.Name = "transmission";
             resources.ApplyResources(this.transmission, "transmission");
-            // 
-            // GoUDPClienFormtItem
-            // 
-            this.GoUDPClienFormtItem.Name = "GoUDPClienFormtItem";
-            resources.ApplyResources(this.GoUDPClienFormtItem, "GoUDPClienFormtItem");
-            this.GoUDPClienFormtItem.Click += new System.EventHandler(this.openUDPClient_Click);
             // 
             // GoTCPServerFormItem
             // 
@@ -994,7 +986,6 @@
         private System.Windows.Forms.ToolStripMenuItem dataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem GoDataEditFormItem;
         private System.Windows.Forms.ToolStripMenuItem transmission;
-        private System.Windows.Forms.ToolStripMenuItem GoUDPClienFormtItem;
         private System.Windows.Forms.ToolStripMenuItem GoTeamMakeFormItem;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ToolStripMenuItem GoActionPointEditFormItem;
