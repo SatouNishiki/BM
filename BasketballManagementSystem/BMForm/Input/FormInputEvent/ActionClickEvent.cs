@@ -10,12 +10,12 @@ using BasketballManagementSystem.BaseClass.Position;
 using BMErrorLibrary;
 using System.Reflection;
 
-namespace BasketballManagementSystem.BMForm.Input.EventHelper
+namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
 {
     /// <summary>
     /// アクションの入力処理を行うクラス
     /// </summary>
-    public class ActionClickEventHelper
+    public class InputActionEvent
     {
          //出力用のプレイヤー変数
         Player player = new Player();
@@ -35,14 +35,14 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
             {
                 team = form.MyTeam;
 
-                ActionInput(form, action, position);
+                actionInput(form, action, position);
 
             }
             else if (form.OppentTeam.TeamMember.IndexOf(form.SelectedPlayer) >= 0)
             {
                 team = form.OppentTeam;
 
-                ActionInput(form, action, position);
+                actionInput(form, action, position);
             }
             else
             {
@@ -56,10 +56,8 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
         /// <param name="f">FormInputインスタンス</param>
         /// <param name="action">actionのインスタンス</param>
         /// <param name="positon">アクションが行われた位置情報</param>
-        private void ActionInput<T>(FormInput f, T action, Position positon)
+        private void actionInput<T>(FormInput f, T action, Position positon)
         {
-
-            f.StackGameData();
 
             //選手リストの中で現在選択中の選手がどの場所にあるか(リストの何番目の要素か)
             int point = 0;

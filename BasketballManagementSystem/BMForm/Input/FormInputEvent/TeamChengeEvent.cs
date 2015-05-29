@@ -10,9 +10,9 @@ using DandDPlayerList;
 using BMErrorLibrary;
 using BMFileLibrary;
 
-namespace BasketballManagementSystem.BMForm.Input.EventHelper
+namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
 {
-    public class TeamChengeEventHelper
+    public class TeamChengeEvent
     {
         private TeamManager teamManager = TeamManager.getInstance();
 
