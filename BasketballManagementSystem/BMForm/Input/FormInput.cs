@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
 using BasketballManagementSystem.BaseClass.Player;
 using BasketballManagementSystem.BaseClass.Action;
-using BasketballManagementSystem.BMForm.Input.FormInputEvent;
+using BasketballManagementSystem.BMForm.Input.EventHelper;
 using System;
 using QuarterTimer;
 using BasketballManagementSystem.BaseClass.Game;
@@ -37,12 +37,12 @@ namespace BasketballManagementSystem.BMForm.Input
         /// <summary>
         /// アクションクリックのイベントの処理を行うクラス
         /// </summary>
-        private InputActionEvent actionClickEvent = new InputActionEvent();
+        private ActionClickEventHelper actionClickEventHelper = new ActionClickEventHelper();
 
         /// <summary>
         /// チームチェンジのイベントの処理を行うクラス
         /// </summary>
-        private TeamChengeEvent teamChangeEvent = new TeamChengeEvent();
+        private TeamChengeEventHelper teamChangeEventHelper = new TeamChengeEventHelper();
 
         /// <summary>
         /// セーブデータの管理を行うクラス
@@ -52,12 +52,17 @@ namespace BasketballManagementSystem.BMForm.Input
         /// <summary>
         /// コート入力に関するイベントの処理を行うクラス
         /// </summary>
-        private CortEvent cortEvent = new CortEvent();
+        private CortEventHelper cortEventHelper = new CortEventHelper();
+
+        /// <summary>
+        /// キーボードショートカット処理を行うクラス
+        /// </summary>
+        private KeyboardEventHelper keyboardEventHelper = new KeyboardEventHelper();
 
         /// <summary>
         /// デバッグメッセージを表示するフォーム
         /// </summary>
-        private DebugMessageForm debugForm = new DebugMessageForm();
+        private DebugMessageForm debugMessageForm = new DebugMessageForm();
 
         /// <summary>
         /// そのクォーターのタイムアウト回数の上限
@@ -83,6 +88,20 @@ namespace BasketballManagementSystem.BMForm.Input
         /// 初回のロード処理が終わるまでtrueを示すフラグ
         /// </summary>
         private bool preLoad = true;
+
+        /// <summary>
+        /// Undo,Redoに使われるゲームデータのスタックオブジェクト
+        /// </summary>
+        private Stack<Game> gameDataStack = new Stack<Game>();
+
+        private Stack<Game> oldGameDataStack = new Stack<Game>();
+
+        private Stack<Game> redoGameDataStack = new Stack<Game>();
+
+        /// <summary>
+        /// 現在Undo動作を行っているか
+        /// </summary>
+        private bool isUndo = false;
 
         /// <summary>
         /// 現在の自分のタイムアウトの数
@@ -288,7 +307,7 @@ namespace BasketballManagementSystem.BMForm.Input
 
             if (DebugFormVisiableItem.Checked)
             {
-                debugForm.Show();
+                debugMessageForm.Show();
 
                 this.TopMost = true;
                 this.TopMost = false;
@@ -306,8 +325,8 @@ namespace BasketballManagementSystem.BMForm.Input
         public void AddDebugMessage(string message)
         {
 
-            if(debugForm != null && !debugForm.IsDisposed)
-            debugForm.addDebugMessage(message);
+            if(debugMessageForm != null && !debugMessageForm.IsDisposed)
+            debugMessageForm.addDebugMessage(message);
 
         }
 
@@ -346,11 +365,69 @@ namespace BasketballManagementSystem.BMForm.Input
             /***********************************************************************/
 
 
+            /********************************* 点数 **************************************/
 
-            // TODO:毎tickTeamへの同期処理を行うのは重いのでなんとかして
+            MyTeamPointLabel.Text = MyTeam.AllPoint.ToString();
+            OppentTeamPointLabel.Text = OppentTeam.AllPoint.ToString();
 
-            /************************ Listへの同期処理 ***********************************************/
+            /***********************************************************************/
 
+
+            /******************************** タイムアウト ***************************************/
+            MyTimeOutLabel.Text = nowMyTimeOut + "/" + timeOutRimit;
+
+            OppentTimeOutLabel.Text = nowOppentTimeOut + "/" + timeOutRimit;
+
+            /***********************************************************************/
+
+
+            /******************************* DebugWindow **********************************************/
+
+            if ((debugMessageForm == null || debugMessageForm.IsDisposed) && DebugFormVisiableItem.Checked)
+            {
+                DebugFormVisiableItem.Checked = false;
+                AppSetting.GetInstance().DebugWindowChecked = false;
+                AppSetting.GetInstance().SettingChanged();
+            }
+
+            /*****************************************************************************************/
+
+            if (gameDataStack.Count == 0) UndoToolStripButton.Enabled = false;
+            else UndoToolStripButton.Enabled = true;
+
+            if (redoGameDataStack.Count == 0) RedoToolStripButton.Enabled = false;
+            else RedoToolStripButton.Enabled = true;
+
+            this.SaveToSaveManager();
+        }
+
+
+        /// <summary>
+        /// 自チーム変更ボタンが押されたときに呼び出し
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ChangeMyTeamButton_Click(object sender, System.EventArgs e)
+        {
+            teamChangeEventHelper.onMyTeamChange(this,  MyCortTeamListBox, MyOutTeamListBox);
+
+            SyncTeam();
+        }
+
+        /// <summary>
+        /// 相手チーム変更ボタンが押されたときに呼び出し
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ChangeOppentTeamButton_Click(object sender, System.EventArgs e)
+        {
+            teamChangeEventHelper.onOppentTeamChange(this, OppentCortTeamListBox, OppentOutTeamListBox);
+
+            SyncTeam();
+        }
+
+        private void SyncTeam()
+        {
             MyTeam.CortMember.Clear();
 
             foreach (Player p in MyCortTeamListBox.Items)
@@ -378,59 +455,6 @@ namespace BasketballManagementSystem.BMForm.Input
             {
                 OppentTeam.OutMember.Add(p);
             }
-
-            /***********************************************************************/
-
-
-            /********************************* 点数 **************************************/
-
-            MyTeamPointLabel.Text = MyTeam.AllPoint.ToString();
-            OppentTeamPointLabel.Text = OppentTeam.AllPoint.ToString();
-
-            /***********************************************************************/
-
-
-            /******************************** タイムアウト ***************************************/
-            MyTimeOutLabel.Text = nowMyTimeOut + "/" + timeOutRimit;
-
-            OppentTimeOutLabel.Text = nowOppentTimeOut + "/" + timeOutRimit;
-
-            /***********************************************************************/
-
-
-            /******************************* DebugWindow **********************************************/
-
-            if ((debugForm == null || debugForm.IsDisposed) && DebugFormVisiableItem.Checked)
-            {
-                DebugFormVisiableItem.Checked = false;
-                AppSetting.GetInstance().DebugWindowChecked = false;
-                AppSetting.GetInstance().SettingChanged();
-            }
-
-            /***********************************************************************/
-
-            this.SaveToSaveManager();
-        }
-
-
-        /// <summary>
-        /// 自チーム変更ボタンが押されたときに呼び出し
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ChangeMyTeamButton_Click(object sender, System.EventArgs e)
-        {
-            teamChangeEvent.onMyTeamChange(this,  MyCortTeamListBox, MyOutTeamListBox);
-        }
-
-        /// <summary>
-        /// 相手チーム変更ボタンが押されたときに呼び出し
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ChangeOppentTeamButton_Click(object sender, System.EventArgs e)
-        {
-            teamChangeEvent.onOppentTeamChange(this, OppentCortTeamListBox, OppentOutTeamListBox);
         }
 
 
@@ -438,47 +462,47 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void AssistButton_Click(object sender, System.EventArgs e)
         {
-            actionClickEvent.ActionInputAccept(this, new Assist(), null);
+            actionClickEventHelper.ActionInputAccept(this, new Assist(), null);
         }
 
         private void PersonalFaulButton_Click(object sender, System.EventArgs e)
         {
-            actionClickEvent.ActionInputAccept(this, new PersonalFaul(), null);
+            actionClickEventHelper.ActionInputAccept(this, new PersonalFaul(), null);
         }
 
         private void TurnOverButton_Click(object sender, System.EventArgs e)
         {
-            actionClickEvent.ActionInputAccept(this, new TurnOver(), null);
+            actionClickEventHelper.ActionInputAccept(this, new TurnOver(), null);
         }
 
         private void StealButton_Click(object sender, System.EventArgs e)
         {
-            actionClickEvent.ActionInputAccept(this, new Steal(), null);
+            actionClickEventHelper.ActionInputAccept(this, new Steal(), null);
         }
 
         private void BlockShotButton_Click(object sender, System.EventArgs e)
         {
-            actionClickEvent.ActionInputAccept(this, new ShootBlock(), null);
+            actionClickEventHelper.ActionInputAccept(this, new ShootBlock(), null);
         }
 
         private void TechnicalFaulButton_Click(object sender, EventArgs e)
         {
-            actionClickEvent.ActionInputAccept(this, new TechnicalFaul(), null);
+            actionClickEventHelper.ActionInputAccept(this, new TechnicalFaul(), null);
         }
 
         private void UnSportsmanLikeFaulButton_Click(object sender, EventArgs e)
         {
-            actionClickEvent.ActionInputAccept(this, new UnSportsmanLikeFaul(), null);
+            actionClickEventHelper.ActionInputAccept(this, new UnSportsmanLikeFaul(), null);
         }
 
         private void DisQualifyingFaulButton_Click(object sender, EventArgs e)
         {
-            actionClickEvent.ActionInputAccept(this, new DisQualifyingFaul(), null);
+            actionClickEventHelper.ActionInputAccept(this, new DisQualifyingFaul(), null);
         }
 
         private void CortPicture_Click(object sender, System.EventArgs e)
         {
-            cortEvent.onCortClick(this, CortPictureBox, sender, e);
+            cortEventHelper.onCortClick(this, CortPictureBox, sender, e);
         }
 
         /***************************************************************************************************/
@@ -518,6 +542,7 @@ namespace BasketballManagementSystem.BMForm.Input
                 try
                 {
                     Game.MyTeam.TimeOutList.Add(new BaseClass.TimeOut.TimeOut(Quarter, DateTime.Now, QuarterTimer.remainingTime));
+                    StackGameData();
                 }
                 catch (Exception exc)
                 {
@@ -547,7 +572,7 @@ namespace BasketballManagementSystem.BMForm.Input
                 try
                 {
                     Game.OppentTeam.TimeOutList.Add(new BaseClass.TimeOut.TimeOut(Quarter, DateTime.Now, QuarterTimer.remainingTime));
-
+                    StackGameData();
                 }
                 catch (Exception exc)
                 {
@@ -615,6 +640,7 @@ namespace BasketballManagementSystem.BMForm.Input
                 m.RemainingTime = QuarterTimer.remainingTime;
                 m.Quarter = Quarter;
                 Game.MyTeam.MemberChange.Add(m);
+                StackGameData();
             }
 
             obj1.Clear();
@@ -641,15 +667,16 @@ namespace BasketballManagementSystem.BMForm.Input
                 m.RemainingTime = QuarterTimer.remainingTime;
                 m.Quarter = Quarter;
                 Game.OppentTeam.MemberChange.Add(m);
+                StackGameData();
             }
 
-            PlayerListSortEvent.Sort(MyCortTeamListBox);
+            PlayerListSortEventHelper.Sort(MyCortTeamListBox);
 
-            PlayerListSortEvent.Sort(MyOutTeamListBox);
+            PlayerListSortEventHelper.Sort(MyOutTeamListBox);
 
-            PlayerListSortEvent.Sort(OppentCortTeamListBox);
+            PlayerListSortEventHelper.Sort(OppentCortTeamListBox);
 
-            PlayerListSortEvent.Sort(OppentOutTeamListBox);
+            PlayerListSortEventHelper.Sort(OppentOutTeamListBox);
         }
 
         /***********************************************************************************************************/
@@ -765,7 +792,7 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void GameDataSave_Click(object sender, EventArgs e)
         {
-            GameSaveLoadEvent g = new GameSaveLoadEvent();
+            GameSaveLoadEventHelper g = new GameSaveLoadEventHelper();
             g.GameSave(saveDataManager.GetGame());
         }
 
@@ -776,7 +803,7 @@ namespace BasketballManagementSystem.BMForm.Input
         /// <param name="e"></param>
         private void GameDataLoad_Click(object sender, EventArgs e)
         {
-            GameSaveLoadEvent g = new GameSaveLoadEvent();
+            GameSaveLoadEventHelper g = new GameSaveLoadEventHelper();
 
             Game temp = g.GameLoad();
 
@@ -787,11 +814,13 @@ namespace BasketballManagementSystem.BMForm.Input
                 saveDataManager.SetGame(Game);
 
                 LoadProcess(Game);
+
+                gameDataStack.Clear();
             }
         }
 
         /// <summary>
-        /// ゲームデータをロードするときの処理について
+        /// ゲームデータをロードするときの処理
         /// </summary>
         /// <param name="game"></param>
         public void LoadProcess(Game game)
@@ -862,63 +891,34 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void ChangeBackGroundColor_Click(object sender, EventArgs e)
         {
-            ColorDialog colorDialog1 = new ColorDialog();
-
-            // 初期選択する色を設定する
-            colorDialog1.Color = this.BackColor;
-
-            // カスタム カラーを表示した状態にする (初期値 false)
-            colorDialog1.FullOpen = true;
-
-            // 使用可能なすべての色を基本セットに表示する (初期値 false)
-            colorDialog1.AnyColor = true;
-
-            // カスタム カラーを任意の色で設定する
-            colorDialog1.CustomColors = new int[] { 0x8040FF, 0xFF8040, 0x80FF40, 0x4080FF };
-
-            // [ヘルプ] ボタンを表示する
-            colorDialog1.ShowHelp = true;
+            ColorDialog.Color = this.BackColor;
 
             // ダイアログを表示し、戻り値が [OK] の場合は選択した色を textBox1 に適用する
-            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            if (ColorDialog.ShowDialog() == DialogResult.OK)
             {
-                this.BackColor = colorDialog1.Color;
-                AppSetting.GetInstance().FormInputBackGroundColor = colorDialog1.Color;
+                this.BackColor = ColorDialog.Color;
+                AppSetting.GetInstance().FormInputBackGroundColor = ColorDialog.Color;
             }
 
             // 不要になった時点で破棄する (正しくは オブジェクトの破棄を保証する を参照)
-            colorDialog1.Dispose();
+            ColorDialog.Dispose();
         }
 
         private void PointColorChange_Click(object sender, EventArgs e)
         {
-            ColorDialog colorDialog1 = new ColorDialog();
-
             // 初期選択する色を設定する
-            colorDialog1.Color = MyTeamPointLabel.BackColor;
-
-            // カスタム カラーを表示した状態にする (初期値 false)
-            colorDialog1.FullOpen = true;
-
-            // 使用可能なすべての色を基本セットに表示する (初期値 false)
-            colorDialog1.AnyColor = true;
-
-            // カスタム カラーを任意の色で設定する
-            colorDialog1.CustomColors = new int[] { 0x8040FF, 0xFF8040, 0x80FF40, 0x4080FF };
-
-            // [ヘルプ] ボタンを表示する
-            colorDialog1.ShowHelp = true;
+            ColorDialog.Color = MyTeamPointLabel.BackColor;
 
             // ダイアログを表示し、戻り値が [OK] の場合は選択した色を textBox1 に適用する
-            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            if (ColorDialog.ShowDialog() == DialogResult.OK)
             {
-                MyTeamPointLabel.BackColor = colorDialog1.Color;
-                OppentTeamPointLabel.BackColor = colorDialog1.Color;
-                AppSetting.GetInstance().FormInputPointBackGroundColor = colorDialog1.Color;
+                MyTeamPointLabel.BackColor = ColorDialog.Color;
+                OppentTeamPointLabel.BackColor = ColorDialog.Color;
+                AppSetting.GetInstance().FormInputPointBackGroundColor = ColorDialog.Color;
             }
 
             // 不要になった時点で破棄する (正しくは オブジェクトの破棄を保証する を参照)
-            colorDialog1.Dispose();
+            ColorDialog.Dispose();
         }
 
         private void ChangeFormBackGroundColorDefault_Click(object sender, EventArgs e)
@@ -936,36 +936,23 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void ChangeButtonColor_Click(object sender, EventArgs e)
         {
-            ColorDialog colorDialog1 = new ColorDialog();
-
+          
             // 初期選択する色を設定する
-            colorDialog1.Color = MyTeamPointLabel.BackColor;
-
-            // カスタム カラーを表示した状態にする (初期値 false)
-            colorDialog1.FullOpen = true;
-
-            // 使用可能なすべての色を基本セットに表示する (初期値 false)
-            colorDialog1.AnyColor = true;
-
-            // カスタム カラーを任意の色で設定する
-            colorDialog1.CustomColors = new int[] { 0x8040FF, 0xFF8040, 0x80FF40, 0x4080FF };
-
-            // [ヘルプ] ボタンを表示する
-            colorDialog1.ShowHelp = true;
+            ColorDialog.Color = MyTeamPointLabel.BackColor;
 
             // ダイアログを表示し、戻り値が [OK] の場合は選択した色を textBox1 に適用する
-            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            if (ColorDialog.ShowDialog() == DialogResult.OK)
             {
                 foreach (var b in colorChangeButton)
                 {
-                    b.BackColor = colorDialog1.Color;
+                    b.BackColor = ColorDialog.Color;
                 }
 
-                AppSetting.GetInstance().FormInputButtonColor = colorDialog1.Color;
+                AppSetting.GetInstance().FormInputButtonColor = ColorDialog.Color;
             }
 
             // 不要になった時点で破棄する (正しくは オブジェクトの破棄を保証する を参照)
-            colorDialog1.Dispose();
+            ColorDialog.Dispose();
         }
 
         private void ChangeButtonColorDefault_Click(object sender, EventArgs e)
@@ -980,36 +967,22 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void ChangeButtonTextColor_Click(object sender, EventArgs e)
         {
-            ColorDialog colorDialog1 = new ColorDialog();
-
             // 初期選択する色を設定する
-            colorDialog1.Color = MyTeamPointLabel.BackColor;
-
-            // カスタム カラーを表示した状態にする (初期値 false)
-            colorDialog1.FullOpen = true;
-
-            // 使用可能なすべての色を基本セットに表示する (初期値 false)
-            colorDialog1.AnyColor = true;
-
-            // カスタム カラーを任意の色で設定する
-            colorDialog1.CustomColors = new int[] { 0x8040FF, 0xFF8040, 0x80FF40, 0x4080FF };
-
-            // [ヘルプ] ボタンを表示する
-            colorDialog1.ShowHelp = true;
+            ColorDialog.Color = MyTeamPointLabel.BackColor;
 
             // ダイアログを表示し、戻り値が [OK] の場合は選択した色を textBox1 に適用する
-            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            if (ColorDialog.ShowDialog() == DialogResult.OK)
             {
                 foreach (var b in colorChangeButton)
                 {
-                    b.ForeColor = colorDialog1.Color;
+                    b.ForeColor = ColorDialog.Color;
                 }
 
-                AppSetting.GetInstance().FormInputButtonTextColor = colorDialog1.Color;
+                AppSetting.GetInstance().FormInputButtonTextColor = ColorDialog.Color;
             }
 
             // 不要になった時点で破棄する (正しくは オブジェクトの破棄を保証する を参照)
-            colorDialog1.Dispose();
+            ColorDialog.Dispose();
         }
 
         private void ChangeButtonTextColorDefault_Click(object sender, EventArgs e)
@@ -1036,14 +1009,14 @@ namespace BasketballManagementSystem.BMForm.Input
         {
             if (!((ToolStripMenuItem)sender).Checked)
             {
-                debugForm = new DebugMessageForm();
-                debugForm.Show();
+                debugMessageForm = new DebugMessageForm();
+                debugMessageForm.Show();
                 this.TopMost = true;
                 this.TopMost = false;
             }
             else
             {
-                debugForm.Close();
+                debugMessageForm.Close();
             }
 
             //チェック状態反転
@@ -1151,5 +1124,87 @@ namespace BasketballManagementSystem.BMForm.Input
 
         /****************************************************************************************/
 
+
+        /********************************* KeyEvent *********************************************/
+
+        private void FormInput_KeyDown(object sender, KeyEventArgs e)
+        {
+            keyboardEventHelper.KeyDownEvent(this, e);
+        }
+
+        private void FormInput_KeyUp(object sender, KeyEventArgs e)
+        {
+            keyboardEventHelper.KeyUpEvent(this);
+        }
+
+        /****************************************************************************************/
+
+
+        /**************************** ショートカットアイコン ************************************/
+
+        private void NewGameToolStripButton_Click(object sender, EventArgs e)
+        {
+            NewGameItem.PerformClick();
+        }
+
+        private void SaveToolStripButton_Click(object sender, EventArgs e)
+        {
+            GameDataSaveItem.PerformClick();
+        }
+
+        private void OpenToolStripButton_Click(object sender, EventArgs e)
+        {
+            LoadGameDataItem.PerformClick();
+        }
+
+        private void UndoToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (gameDataStack.Count != 0)
+            {
+
+                redoGameDataStack.Push(Game.CloneDeep());
+
+                Game g = gameDataStack.Pop();
+
+                LoadProcess(g);
+
+                isUndo = true;
+
+            }
+       
+        }
+
+        private void RedoToolStripButton_Click(object sender, EventArgs e)
+        {
+            if (redoGameDataStack.Count != 0)
+            {
+                Game g = redoGameDataStack.Pop();
+
+                LoadProcess(g);
+
+            }
+        }
+
+        /****************************************************************************************/
+
+
+        public void StackGameData()
+        {
+            if (isUndo)
+            {
+                gameDataStack.Clear();
+                oldGameDataStack.Clear();
+                isUndo = false;
+            }
+
+            redoGameDataStack.Clear();
+
+            if (oldGameDataStack.Count != 0)
+            {
+                gameDataStack.Push(oldGameDataStack.Peek());
+            }
+
+            oldGameDataStack.Push(Game.CloneDeep());
+        }
     }
 }
