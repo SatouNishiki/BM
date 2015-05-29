@@ -10,7 +10,7 @@ using BasketballManagementSystem.BaseClass.Position;
 using BMErrorLibrary;
 using System.Reflection;
 
-namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
+namespace BasketballManagementSystem.BMForm.Input.EventHelper
 {
     /// <summary>
     /// アクションの入力処理を行うクラス

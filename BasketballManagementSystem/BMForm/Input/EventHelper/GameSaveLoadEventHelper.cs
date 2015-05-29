@@ -10,9 +10,9 @@ using BasketballManagementSystem.BaseClass.Game;
 using System.IO;
 using BMFileLibrary;
 
-namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
+namespace BasketballManagementSystem.BMForm.Input.EventHelper
 {
-    public class GameSaveLoadEvent
+    public class GameSaveLoadEventHelper
     {
         private const string defaultFileName = "Game1";
 

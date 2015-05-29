@@ -1,7 +1,7 @@
 ﻿using System.Windows.Forms;
 using BasketballManagementSystem.BaseClass.Player;
 using BasketballManagementSystem.BaseClass.Action;
-using BasketballManagementSystem.BMForm.Input.FormInputEvent;
+using BasketballManagementSystem.BMForm.Input.EventHelper;
 using System;
 using QuarterTimer;
 using BasketballManagementSystem.BaseClass.Game;
@@ -42,7 +42,7 @@ namespace BasketballManagementSystem.BMForm.Input
         /// <summary>
         /// チームチェンジのイベントの処理を行うクラス
         /// </summary>
-        private TeamChengeEvent teamChangeEvent = new TeamChengeEvent();
+        private TeamChengeEventHelper teamChangeEvent = new TeamChengeEventHelper();
 
         /// <summary>
         /// セーブデータの管理を行うクラス
@@ -52,7 +52,7 @@ namespace BasketballManagementSystem.BMForm.Input
         /// <summary>
         /// コート入力に関するイベントの処理を行うクラス
         /// </summary>
-        private CortEvent cortEvent = new CortEvent();
+        private CortEventHelper cortEvent = new CortEventHelper();
 
         /// <summary>
         /// デバッグメッセージを表示するフォーム
@@ -643,13 +643,13 @@ namespace BasketballManagementSystem.BMForm.Input
                 Game.OppentTeam.MemberChange.Add(m);
             }
 
-            PlayerListSortEvent.Sort(MyCortTeamListBox);
+            PlayerListSortEventHelper.Sort(MyCortTeamListBox);
 
-            PlayerListSortEvent.Sort(MyOutTeamListBox);
+            PlayerListSortEventHelper.Sort(MyOutTeamListBox);
 
-            PlayerListSortEvent.Sort(OppentCortTeamListBox);
+            PlayerListSortEventHelper.Sort(OppentCortTeamListBox);
 
-            PlayerListSortEvent.Sort(OppentOutTeamListBox);
+            PlayerListSortEventHelper.Sort(OppentOutTeamListBox);
         }
 
         /***********************************************************************************************************/
@@ -765,7 +765,7 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void GameDataSave_Click(object sender, EventArgs e)
         {
-            GameSaveLoadEvent g = new GameSaveLoadEvent();
+            GameSaveLoadEventHelper g = new GameSaveLoadEventHelper();
             g.GameSave(saveDataManager.GetGame());
         }
 
@@ -776,7 +776,7 @@ namespace BasketballManagementSystem.BMForm.Input
         /// <param name="e"></param>
         private void GameDataLoad_Click(object sender, EventArgs e)
         {
-            GameSaveLoadEvent g = new GameSaveLoadEvent();
+            GameSaveLoadEventHelper g = new GameSaveLoadEventHelper();
 
             Game temp = g.GameLoad();
 

@@ -8,13 +8,13 @@ using System.Windows.Forms;
 using BasketballManagementSystem.BaseClass.Action;
 using BasketballManagementSystem.BaseClass.Position;
 
-namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
+namespace BasketballManagementSystem.BMForm.Input.EventHelper
 {
     /// <summary>
     /// コートをクリックされたときのイベントを管理するクラス
     /// listを表示して点数入力を可能にする
     /// </summary>
-    public class CortEvent
+    public class CortEventHelper
     {
         //マウスの押された位置を覚える変数
         private Point mousePoint = Point.Empty;

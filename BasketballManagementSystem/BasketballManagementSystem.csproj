@@ -168,11 +168,11 @@
     <Compile Include="BMForm\Input\FormInput.Designer.cs">
       <DependentUpon>FormInput.cs</DependentUpon>
     </Compile>
-    <Compile Include="BMForm\Input\FormInputEvent\ActionClickEvent.cs" />
-    <Compile Include="BMForm\Input\FormInputEvent\CortEvent.cs" />
-    <Compile Include="BMForm\Input\FormInputEvent\GameSaveLoadEvent.cs" />
-    <Compile Include="BMForm\Input\FormInputEvent\PlayerListSortEvent.cs" />
-    <Compile Include="BMForm\Input\FormInputEvent\TeamChengeEvent.cs" />
+    <Compile Include="BMForm\Input\EventHelper\ActionClickEventHelper.cs" />
+    <Compile Include="BMForm\Input\EventHelper\CortEventHelper.cs" />
+    <Compile Include="BMForm\Input\EventHelper\GameSaveLoadEventHelper.cs" />
+    <Compile Include="BMForm\Input\EventHelper\PlayerListSortEventHelper.cs" />
+    <Compile Include="BMForm\Input\EventHelper\TeamChengeEventHelper.cs" />
     <Compile Include="BMForm\Input\Language\CultureHelper.cs" />
     <Compile Include="BMForm\Input\LoadHelper\FormInputLoader.cs" />
     <Compile Include="BMForm\PlayerData\PlayerData.cs">
