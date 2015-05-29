@@ -38,13 +38,13 @@
             this.StealButton = new System.Windows.Forms.Button();
             this.BlockShotButton = new System.Windows.Forms.Button();
             this.CortPictureBox = new System.Windows.Forms.PictureBox();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CreateNewDataItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.NewGameItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangeMyTeamItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangeOppentTeamItem = new System.Windows.Forms.ToolStripMenuItem();
             this.GameDataSaveItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.GameDataLoadItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LoadGameDataItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PrintFormItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PrintPreviewItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ExitItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -119,7 +119,7 @@
             this.QuarterTimerFastFowardButton = new System.Windows.Forms.Button();
             this.QuarterTimerStopButton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.toolTipFormInput = new System.Windows.Forms.ToolTip(this.components);
+            this.ToolTipFormInput = new System.Windows.Forms.ToolTip(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.MyCortTeamListBox = new ExchangeListBox.ExChangeList();
@@ -131,12 +131,19 @@
             this.label9 = new System.Windows.Forms.Label();
             this.OppentTeamPointLabel = new System.Windows.Forms.Label();
             this.MyTeamPointLabel = new System.Windows.Forms.Label();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.ToolStrip = new System.Windows.Forms.ToolStrip();
+            this.ColorDialog = new System.Windows.Forms.ColorDialog();
+            this.NewGameToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.SaveToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.RedoToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.UndoToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.OpenToolStripButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.CortPictureBox)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.MenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.ToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // PlayerNameLabel
@@ -153,7 +160,7 @@
             // 
             resources.ApplyResources(this.AssistButton, "AssistButton");
             this.AssistButton.Name = "AssistButton";
-            this.toolTipFormInput.SetToolTip(this.AssistButton, resources.GetString("AssistButton.ToolTip"));
+            this.ToolTipFormInput.SetToolTip(this.AssistButton, resources.GetString("AssistButton.ToolTip"));
             this.AssistButton.UseVisualStyleBackColor = true;
             this.AssistButton.Click += new System.EventHandler(this.AssistButton_Click);
             // 
@@ -162,7 +169,7 @@
             this.PersonalFaulButton.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.PersonalFaulButton, "PersonalFaulButton");
             this.PersonalFaulButton.Name = "PersonalFaulButton";
-            this.toolTipFormInput.SetToolTip(this.PersonalFaulButton, resources.GetString("PersonalFaulButton.ToolTip"));
+            this.ToolTipFormInput.SetToolTip(this.PersonalFaulButton, resources.GetString("PersonalFaulButton.ToolTip"));
             this.PersonalFaulButton.UseVisualStyleBackColor = true;
             this.PersonalFaulButton.Click += new System.EventHandler(this.PersonalFaulButton_Click);
             // 
@@ -170,7 +177,7 @@
             // 
             resources.ApplyResources(this.TurnOverButton, "TurnOverButton");
             this.TurnOverButton.Name = "TurnOverButton";
-            this.toolTipFormInput.SetToolTip(this.TurnOverButton, resources.GetString("TurnOverButton.ToolTip"));
+            this.ToolTipFormInput.SetToolTip(this.TurnOverButton, resources.GetString("TurnOverButton.ToolTip"));
             this.TurnOverButton.UseVisualStyleBackColor = true;
             this.TurnOverButton.Click += new System.EventHandler(this.TurnOverButton_Click);
             // 
@@ -178,7 +185,7 @@
             // 
             resources.ApplyResources(this.StealButton, "StealButton");
             this.StealButton.Name = "StealButton";
-            this.toolTipFormInput.SetToolTip(this.StealButton, resources.GetString("StealButton.ToolTip"));
+            this.ToolTipFormInput.SetToolTip(this.StealButton, resources.GetString("StealButton.ToolTip"));
             this.StealButton.UseVisualStyleBackColor = true;
             this.StealButton.Click += new System.EventHandler(this.StealButton_Click);
             // 
@@ -186,7 +193,7 @@
             // 
             resources.ApplyResources(this.BlockShotButton, "BlockShotButton");
             this.BlockShotButton.Name = "BlockShotButton";
-            this.toolTipFormInput.SetToolTip(this.BlockShotButton, resources.GetString("BlockShotButton.ToolTip"));
+            this.ToolTipFormInput.SetToolTip(this.BlockShotButton, resources.GetString("BlockShotButton.ToolTip"));
             this.BlockShotButton.UseVisualStyleBackColor = true;
             this.BlockShotButton.Click += new System.EventHandler(this.BlockShotButton_Click);
             // 
@@ -197,9 +204,9 @@
             this.CortPictureBox.TabStop = false;
             this.CortPictureBox.Click += new System.EventHandler(this.CortPicture_Click);
             // 
-            // menuStrip1
+            // MenuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileToolStripMenuItem,
             this.GameToolStripMenuItem,
             this.GamePropToolStripMenuItem,
@@ -207,28 +214,28 @@
             this.PropToolStripMenuItem,
             this.dataToolStripMenuItem,
             this.transmission});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.Name = "menuStrip1";
+            resources.ApplyResources(this.MenuStrip1, "MenuStrip1");
+            this.MenuStrip1.Name = "MenuStrip1";
             // 
             // FileToolStripMenuItem
             // 
             this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CreateNewDataItem,
+            this.NewGameItem,
             this.ChangeMyTeamItem,
             this.ChangeOppentTeamItem,
             this.GameDataSaveItem,
-            this.GameDataLoadItem,
+            this.LoadGameDataItem,
             this.PrintFormItem,
             this.PrintPreviewItem,
             this.ExitItem});
             this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
             resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
-            // CreateNewDataItem
+            // NewGameItem
             // 
-            this.CreateNewDataItem.Name = "CreateNewDataItem";
-            resources.ApplyResources(this.CreateNewDataItem, "CreateNewDataItem");
-            this.CreateNewDataItem.Click += new System.EventHandler(this.CreateNewData_Click);
+            this.NewGameItem.Name = "NewGameItem";
+            resources.ApplyResources(this.NewGameItem, "NewGameItem");
+            this.NewGameItem.Click += new System.EventHandler(this.NewGameItem_Click);
             // 
             // ChangeMyTeamItem
             // 
@@ -248,11 +255,11 @@
             resources.ApplyResources(this.GameDataSaveItem, "GameDataSaveItem");
             this.GameDataSaveItem.Click += new System.EventHandler(this.GameDataSave_Click);
             // 
-            // GameDataLoadItem
+            // LoadGameDataItem
             // 
-            this.GameDataLoadItem.Name = "GameDataLoadItem";
-            resources.ApplyResources(this.GameDataLoadItem, "GameDataLoadItem");
-            this.GameDataLoadItem.Click += new System.EventHandler(this.GameDataLoad_Click);
+            this.LoadGameDataItem.Name = "LoadGameDataItem";
+            resources.ApplyResources(this.LoadGameDataItem, "LoadGameDataItem");
+            this.LoadGameDataItem.Click += new System.EventHandler(this.GameDataLoad_Click);
             // 
             // PrintFormItem
             // 
@@ -667,7 +674,7 @@
             // 
             resources.ApplyResources(this.TechnicalFaulButton, "TechnicalFaulButton");
             this.TechnicalFaulButton.Name = "TechnicalFaulButton";
-            this.toolTipFormInput.SetToolTip(this.TechnicalFaulButton, resources.GetString("TechnicalFaulButton.ToolTip"));
+            this.ToolTipFormInput.SetToolTip(this.TechnicalFaulButton, resources.GetString("TechnicalFaulButton.ToolTip"));
             this.TechnicalFaulButton.UseVisualStyleBackColor = true;
             this.TechnicalFaulButton.Click += new System.EventHandler(this.TechnicalFaulButton_Click);
             // 
@@ -675,7 +682,7 @@
             // 
             resources.ApplyResources(this.UnSportsmanLikeFaulButton, "UnSportsmanLikeFaulButton");
             this.UnSportsmanLikeFaulButton.Name = "UnSportsmanLikeFaulButton";
-            this.toolTipFormInput.SetToolTip(this.UnSportsmanLikeFaulButton, resources.GetString("UnSportsmanLikeFaulButton.ToolTip"));
+            this.ToolTipFormInput.SetToolTip(this.UnSportsmanLikeFaulButton, resources.GetString("UnSportsmanLikeFaulButton.ToolTip"));
             this.UnSportsmanLikeFaulButton.UseVisualStyleBackColor = true;
             this.UnSportsmanLikeFaulButton.Click += new System.EventHandler(this.UnSportsmanLikeFaulButton_Click);
             // 
@@ -683,7 +690,7 @@
             // 
             resources.ApplyResources(this.DisQualifyingFaulButton, "DisQualifyingFaulButton");
             this.DisQualifyingFaulButton.Name = "DisQualifyingFaulButton";
-            this.toolTipFormInput.SetToolTip(this.DisQualifyingFaulButton, resources.GetString("DisQualifyingFaulButton.ToolTip"));
+            this.ToolTipFormInput.SetToolTip(this.DisQualifyingFaulButton, resources.GetString("DisQualifyingFaulButton.ToolTip"));
             this.DisQualifyingFaulButton.UseVisualStyleBackColor = true;
             this.DisQualifyingFaulButton.Click += new System.EventHandler(this.DisQualifyingFaulButton_Click);
             // 
@@ -857,16 +864,57 @@
             resources.ApplyResources(this.MyTeamPointLabel, "MyTeamPointLabel");
             this.MyTeamPointLabel.Name = "MyTeamPointLabel";
             // 
-            // toolStrip1
+            // ToolStrip
             // 
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
-            this.toolStrip1.Name = "toolStrip1";
+            this.ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.NewGameToolStripButton,
+            this.OpenToolStripButton,
+            this.SaveToolStripButton,
+            this.UndoToolStripButton,
+            this.RedoToolStripButton});
+            resources.ApplyResources(this.ToolStrip, "ToolStrip");
+            this.ToolStrip.Name = "ToolStrip";
+            // 
+            // NewGameToolStripButton
+            // 
+            this.NewGameToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.NewGameToolStripButton, "NewGameToolStripButton");
+            this.NewGameToolStripButton.Name = "NewGameToolStripButton";
+            this.NewGameToolStripButton.Click += new System.EventHandler(this.NewGameToolStripButton_Click);
+            // 
+            // SaveToolStripButton
+            // 
+            this.SaveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.SaveToolStripButton, "SaveToolStripButton");
+            this.SaveToolStripButton.Name = "SaveToolStripButton";
+            this.SaveToolStripButton.Click += new System.EventHandler(this.SaveToolStripButton_Click);
+            // 
+            // RedoToolStripButton
+            // 
+            this.RedoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.RedoToolStripButton, "RedoToolStripButton");
+            this.RedoToolStripButton.Name = "RedoToolStripButton";
+            this.RedoToolStripButton.Click += new System.EventHandler(this.RedoToolStripButton_Click);
+            // 
+            // UndoToolStripButton
+            // 
+            this.UndoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.UndoToolStripButton, "UndoToolStripButton");
+            this.UndoToolStripButton.Name = "UndoToolStripButton";
+            this.UndoToolStripButton.Click += new System.EventHandler(this.UndoToolStripButton_Click);
+            // 
+            // OpenToolStripButton
+            // 
+            this.OpenToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            resources.ApplyResources(this.OpenToolStripButton, "OpenToolStripButton");
+            this.OpenToolStripButton.Name = "OpenToolStripButton";
+            this.OpenToolStripButton.Click += new System.EventHandler(this.OpenToolStripButton_Click);
             // 
             // FormInput
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.ToolStrip);
             this.Controls.Add(this.QuarterTimerStopButton);
             this.Controls.Add(this.MyTeamPointLabel);
             this.Controls.Add(this.OppentTeamPointLabel);
@@ -892,19 +940,24 @@
             this.Controls.Add(this.MyTeamNameLael);
             this.Controls.Add(this.CortPictureBox);
             this.Controls.Add(this.PlayerNameLabel);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.MenuStrip1);
             this.Controls.Add(this.MyOutTeamListBox);
-            this.MainMenuStrip = this.menuStrip1;
+            this.KeyPreview = true;
+            this.MainMenuStrip = this.MenuStrip1;
             this.Name = "FormInput";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormInput_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormInput_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.CortPictureBox)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MenuStrip1.ResumeLayout(false);
+            this.MenuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.ToolStrip.ResumeLayout(false);
+            this.ToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -933,7 +986,6 @@
         private System.Windows.Forms.ToolStripMenuItem StopGameItem;
         private System.Windows.Forms.ToolStripMenuItem RestartGameItem;
         private System.Windows.Forms.ToolStripMenuItem GameEndItem;
-        private QuarterTimer.QuarterTimer QuarterTimer;
         private System.Windows.Forms.ToolStripMenuItem GameDataSaveItem;
         private System.Windows.Forms.ToolStripMenuItem SolutionToolStripMenuItem;
         private System.Windows.Forms.Label OppentTeamFaulLabel;
@@ -945,7 +997,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ToolStripMenuItem GoGraphScoreFormItem;
-        private System.Windows.Forms.ToolStripMenuItem GameDataLoadItem;
+        private System.Windows.Forms.ToolStripMenuItem LoadGameDataItem;
         private System.Windows.Forms.ToolStripMenuItem ExitItem;
         private System.Windows.Forms.ToolStripMenuItem GamePropToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ChangeGameNameItem;
@@ -956,7 +1008,7 @@
         private System.Windows.Forms.Button UnSportsmanLikeFaulButton;
         private System.Windows.Forms.Button DisQualifyingFaulButton;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ToolStripMenuItem CreateNewDataItem;
+        private System.Windows.Forms.ToolStripMenuItem NewGameItem;
         private System.Windows.Forms.Label MyTimeOutLabel;
         private System.Windows.Forms.Button UpButton;
         private System.Windows.Forms.Button DownButton;
@@ -984,12 +1036,11 @@
         private System.Windows.Forms.ToolStripMenuItem DebugFormVisiableItem;
         private System.Windows.Forms.ToolStripMenuItem QuarterChangeTimerSpeedChangeItem;
         private System.Windows.Forms.ToolStripComboBox QuarterChangeTimerSpeedCombo;
-        private System.Windows.Forms.Button QuarterTimerStopButton;
         private System.Windows.Forms.ToolStripMenuItem ChangeLanguageItem;
         private System.Windows.Forms.ToolStripComboBox ChangeLanguageComboBox;
         public System.Windows.Forms.ToolStripTextBox GameNameText;
         public System.Windows.Forms.ToolStripTextBox GameLocationText;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip MenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem dataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem GoDataEditFormItem;
         private System.Windows.Forms.ToolStripMenuItem transmission;
@@ -1000,7 +1051,7 @@
         private System.Windows.Forms.ToolStripMenuItem StrategySimulationFormItem;
         private System.Windows.Forms.ToolStripMenuItem GoTCPServerFormItem;
         private System.Windows.Forms.ToolStripMenuItem GoTCPClientFormItem;
-        private System.Windows.Forms.ToolTip toolTipFormInput;
+        private System.Windows.Forms.ToolTip ToolTipFormInput;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         public ExchangeListBox.ExChangeList MyCortTeamListBox;
@@ -1013,7 +1064,15 @@
         private System.Windows.Forms.ToolStripMenuItem GoClubMakeFormItem;
         private System.Windows.Forms.Label OppentTeamPointLabel;
         private System.Windows.Forms.Label MyTeamPointLabel;
-        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStrip ToolStrip;
+        private System.Windows.Forms.ColorDialog ColorDialog;
+        private System.Windows.Forms.ToolStripButton NewGameToolStripButton;
+        private System.Windows.Forms.ToolStripButton SaveToolStripButton;
+        private System.Windows.Forms.ToolStripButton RedoToolStripButton;
+        private System.Windows.Forms.ToolStripButton UndoToolStripButton;
+        private System.Windows.Forms.ToolStripButton OpenToolStripButton;
+        internal QuarterTimer.QuarterTimer QuarterTimer;
+        internal System.Windows.Forms.Button QuarterTimerStopButton;
     }
 }
 

@@ -94,14 +94,8 @@ namespace BasketballManagementSystem.BMForm.Input
         /// </summary>
         private Stack<Game> gameDataStack = new Stack<Game>();
 
-        private Stack<Game> oldGameDataStack = new Stack<Game>();
-
         private Stack<Game> redoGameDataStack = new Stack<Game>();
 
-        /// <summary>
-        /// 現在Undo動作を行っているか
-        /// </summary>
-        private bool isUndo = false;
 
         /// <summary>
         /// 現在の自分のタイムアウトの数
@@ -541,8 +535,8 @@ namespace BasketballManagementSystem.BMForm.Input
             {
                 try
                 {
-                    Game.MyTeam.TimeOutList.Add(new BaseClass.TimeOut.TimeOut(Quarter, DateTime.Now, QuarterTimer.remainingTime));
                     StackGameData();
+                    Game.MyTeam.TimeOutList.Add(new BaseClass.TimeOut.TimeOut(Quarter, DateTime.Now, QuarterTimer.remainingTime));
                 }
                 catch (Exception exc)
                 {
@@ -571,8 +565,8 @@ namespace BasketballManagementSystem.BMForm.Input
             {
                 try
                 {
-                    Game.OppentTeam.TimeOutList.Add(new BaseClass.TimeOut.TimeOut(Quarter, DateTime.Now, QuarterTimer.remainingTime));
                     StackGameData();
+                    Game.OppentTeam.TimeOutList.Add(new BaseClass.TimeOut.TimeOut(Quarter, DateTime.Now, QuarterTimer.remainingTime));
                 }
                 catch (Exception exc)
                 {
@@ -639,8 +633,8 @@ namespace BasketballManagementSystem.BMForm.Input
                 m.ChengedMemberTime = DateTime.Now;
                 m.RemainingTime = QuarterTimer.remainingTime;
                 m.Quarter = Quarter;
-                Game.MyTeam.MemberChange.Add(m);
                 StackGameData();
+                Game.MyTeam.MemberChange.Add(m);
             }
 
             obj1.Clear();
@@ -666,8 +660,8 @@ namespace BasketballManagementSystem.BMForm.Input
                 m.ChengedMemberTime = DateTime.Now;
                 m.RemainingTime = QuarterTimer.remainingTime;
                 m.Quarter = Quarter;
-                Game.OppentTeam.MemberChange.Add(m);
                 StackGameData();
+                Game.OppentTeam.MemberChange.Add(m);
             }
 
             PlayerListSortEventHelper.Sort(MyCortTeamListBox);
@@ -834,11 +828,13 @@ namespace BasketballManagementSystem.BMForm.Input
 
         /**************************** その他メニュー画面用メソッド郡************************************/
 
-        private void CreateNewData_Click(object sender, EventArgs e)
+        private void NewGameItem_Click(object sender, EventArgs e)
         {
             //TODO:メモリリークの可能性あり? 要検証
             this.Controls.Clear();
             Game = new Game();
+            gameDataStack.Clear();
+            redoGameDataStack.Clear();
             InitializeComponent();
             Init();
 
@@ -1161,14 +1157,11 @@ namespace BasketballManagementSystem.BMForm.Input
         {
             if (gameDataStack.Count != 0)
             {
-
                 redoGameDataStack.Push(Game.CloneDeep());
 
                 Game g = gameDataStack.Pop();
 
                 LoadProcess(g);
-
-                isUndo = true;
 
             }
        
@@ -1190,21 +1183,8 @@ namespace BasketballManagementSystem.BMForm.Input
 
         public void StackGameData()
         {
-            if (isUndo)
-            {
-                gameDataStack.Clear();
-                oldGameDataStack.Clear();
-                isUndo = false;
-            }
-
+            gameDataStack.Push(Game.CloneDeep());
             redoGameDataStack.Clear();
-
-            if (oldGameDataStack.Count != 0)
-            {
-                gameDataStack.Push(oldGameDataStack.Peek());
-            }
-
-            oldGameDataStack.Push(Game.CloneDeep());
         }
     }
 }

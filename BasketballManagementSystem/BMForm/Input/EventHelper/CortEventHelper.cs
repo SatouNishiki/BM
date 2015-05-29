@@ -14,7 +14,7 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
     /// コートをクリックされたときのイベントを管理するクラス
     /// listを表示して点数入力を可能にする
     /// </summary>
-    public class CortEvent
+    public class CortEventHelper
     {
         //マウスの押された位置を覚える変数
         private Point mousePoint = Point.Empty;
@@ -26,7 +26,7 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
         private FormInput formInput;
 
         //アクションが入力されたときの処理をするクラスのインスタンス
-        private InputActionEvent actionClickEvent = new InputActionEvent();
+        private ActionClickEventHelper actionClickEvent = new ActionClickEventHelper();
 
         //すでにlistが存在しているかどうか
         private bool isExistListBox = false;

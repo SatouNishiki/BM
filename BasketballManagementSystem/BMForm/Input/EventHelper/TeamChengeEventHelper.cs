@@ -12,7 +12,7 @@ using BMFileLibrary;
 
 namespace BasketballManagementSystem.BMForm.Input.EventHelper
 {
-    public class TeamChengeEvent
+    public class TeamChengeEventHelper
     {
         private TeamManager teamManager = TeamManager.getInstance();
 

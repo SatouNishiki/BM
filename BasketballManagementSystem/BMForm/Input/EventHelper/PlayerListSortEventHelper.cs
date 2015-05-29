@@ -9,7 +9,7 @@ using BasketballManagementSystem.BaseClass.Player;
 
 namespace BasketballManagementSystem.BMForm.Input.EventHelper
 {
-    public class PlayerListSortEvent
+    public class PlayerListSortEventHelper
     {
         public static void Sort(ListBox pList)
         {
