@@ -131,6 +131,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.OppentTeamPointLabel = new System.Windows.Forms.Label();
             this.MyTeamPointLabel = new System.Windows.Forms.Label();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             ((System.ComponentModel.ISupportInitialize)(this.CortPictureBox)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -856,10 +857,16 @@
             resources.ApplyResources(this.MyTeamPointLabel, "MyTeamPointLabel");
             this.MyTeamPointLabel.Name = "MyTeamPointLabel";
             // 
+            // toolStrip1
+            // 
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
+            this.toolStrip1.Name = "toolStrip1";
+            // 
             // FormInput
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.QuarterTimerStopButton);
             this.Controls.Add(this.MyTeamPointLabel);
             this.Controls.Add(this.OppentTeamPointLabel);
@@ -1006,6 +1013,7 @@
         private System.Windows.Forms.ToolStripMenuItem GoClubMakeFormItem;
         private System.Windows.Forms.Label OppentTeamPointLabel;
         private System.Windows.Forms.Label MyTeamPointLabel;
+        private System.Windows.Forms.ToolStrip toolStrip1;
     }
 }
 

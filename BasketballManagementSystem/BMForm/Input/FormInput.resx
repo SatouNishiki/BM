@@ -126,7 +126,7 @@
     <value>MS UI Gothic, 13.8pt</value>
   </data>
   <data name="PlayerNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>373, 144</value>
+    <value>379, 174</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PlayerNameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -151,7 +151,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PlayerNameLabel.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <metadata name="FormInputTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -674,7 +674,7 @@
 </value>
   </data>
   <data name="CortPictureBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>156, 359</value>
+    <value>162, 389</value>
   </data>
   <data name="CortPictureBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -698,7 +698,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CortPictureBox.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>24</value>
   </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>193, 17</value>
@@ -1038,13 +1038,13 @@
     <value>Data</value>
   </data>
   <data name="GoTCPServerFormItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>138, 22</value>
   </data>
   <data name="GoTCPServerFormItem.Text" xml:space="preserve">
     <value>TCPServer</value>
   </data>
   <data name="GoTCPClientFormItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>138, 22</value>
   </data>
   <data name="GoTCPClientFormItem.Text" xml:space="preserve">
     <value>TCPClient</value>
@@ -1080,7 +1080,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>26</value>
   </data>
   <data name="MyTeamNameLael.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1089,7 +1089,7 @@
     <value>MS UI Gothic, 9pt, style=Bold</value>
   </data>
   <data name="MyTeamNameLael.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 82</value>
+    <value>17, 112</value>
   </data>
   <data name="MyTeamNameLael.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 12</value>
@@ -1110,7 +1110,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyTeamNameLael.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>23</value>
   </data>
   <data name="OppentTeamNameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1119,7 +1119,7 @@
     <value>MS UI Gothic, 9pt, style=Bold</value>
   </data>
   <data name="OppentTeamNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>759, 82</value>
+    <value>765, 112</value>
   </data>
   <data name="OppentTeamNameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 12</value>
@@ -1140,13 +1140,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentTeamNameLabel.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>22</value>
   </data>
   <data name="QuarterText.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 24pt, style=Bold</value>
   </data>
   <data name="QuarterText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 98</value>
+    <value>373, 128</value>
   </data>
   <data name="QuarterText.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 35</value>
@@ -1170,7 +1170,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterText.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>21</value>
   </data>
   <data name="QuarterTimer.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1179,7 +1179,7 @@
     <value>MS UI Gothic, 26.25pt, style=Bold</value>
   </data>
   <data name="QuarterTimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>382, 63</value>
+    <value>388, 93</value>
   </data>
   <data name="QuarterTimer.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 35</value>
@@ -1200,7 +1200,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterTimer.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>20</value>
   </data>
   <data name="OppentTeamFaulLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1209,7 +1209,7 @@
     <value>MS UI Gothic, 20.25pt</value>
   </data>
   <data name="OppentTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>794, 53</value>
+    <value>800, 83</value>
   </data>
   <data name="OppentTeamFaulLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 27</value>
@@ -1230,7 +1230,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentTeamFaulLabel.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1257,7 +1257,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1284,7 +1284,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="MyTeamFaulLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1293,7 +1293,7 @@
     <value>MS UI Gothic, 20.25pt</value>
   </data>
   <data name="MyTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 53</value>
+    <value>47, 83</value>
   </data>
   <data name="MyTeamFaulLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>26, 27</value>
@@ -1314,7 +1314,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyTeamFaulLabel.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1323,7 +1323,7 @@
     <value>MS UI Gothic, 12pt, style=Bold</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 103</value>
+    <value>170, 133</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 16</value>
@@ -1344,7 +1344,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1353,7 +1353,7 @@
     <value>MS UI Gothic, 12pt, style=Bold</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 103</value>
+    <value>16, 133</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 16</value>
@@ -1374,7 +1374,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1383,7 +1383,7 @@
     <value>MS UI Gothic, 12pt, style=Bold</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>595, 103</value>
+    <value>601, 133</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>103, 16</value>
@@ -1404,7 +1404,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1413,7 +1413,7 @@
     <value>MS UI Gothic, 12pt, style=Bold</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>740, 103</value>
+    <value>746, 133</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 16</value>
@@ -1434,7 +1434,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="MyTimeOutButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 55</value>
@@ -1821,7 +1821,7 @@
 </value>
   </data>
   <data name="QuarterTimerRewindButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>367, 29</value>
+    <value>373, 59</value>
   </data>
   <data name="QuarterTimerRewindButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 31</value>
@@ -1839,7 +1839,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterTimerRewindButton.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="QuarterTimerFastFowardButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1882,7 +1882,7 @@
 </value>
   </data>
   <data name="QuarterTimerFastFowardButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>462, 29</value>
+    <value>468, 59</value>
   </data>
   <data name="QuarterTimerFastFowardButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 31</value>
@@ -1900,7 +1900,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterTimerFastFowardButton.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="QuarterTimerStopButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -1914,7 +1914,7 @@
   <data name="QuarterTimerStopButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACw0AAAsNAe0HwCwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQffBBkHIiP3t5tY
+        YQUAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQffBBkHIiP3t5tY
         AAAFwklEQVRIS4WVCUyURxTHP1YE1pQQj1hrbE3RFiyg1gOhCGhCtSkepV5Na6UeiFIREfBAQQSUS/Zi
         QUVuVpD7XkDZhWUBEZZTQaklFqFpIpLWtZWNNv33fR8LlGrTl7zMzJt5v3nfe/PNMP8WPl+s77ES5cQw
         gmgrq0zNWsdcrfO6fDg65Wptlso0DCOMZphImh+TqX5vlLEFPAOhjYmJVHciUI0n2hfoGRqB8u4g5G0/
@@ -1946,7 +1946,7 @@
     <value>NoControl</value>
   </data>
   <data name="QuarterTimerStopButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>415, 29</value>
+    <value>421, 59</value>
   </data>
   <data name="QuarterTimerStopButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 31</value>
@@ -1967,7 +1967,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterTimerStopButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2003,7 +2003,7 @@
     <value>1</value>
   </data>
   <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>328, 175</value>
+    <value>334, 205</value>
   </data>
   <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>207, 62</value>
@@ -2021,10 +2021,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>209, 243</value>
+    <value>215, 273</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>221, 111</value>
@@ -2042,7 +2042,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="MyCortTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11pt</value>
@@ -2054,7 +2054,7 @@
     <value>15</value>
   </data>
   <data name="MyCortTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>167, 133</value>
+    <value>173, 163</value>
   </data>
   <data name="MyCortTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 109</value>
@@ -2072,7 +2072,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyCortTeamListBox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="MyOutTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11pt</value>
@@ -2084,7 +2084,7 @@
     <value>15</value>
   </data>
   <data name="MyOutTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 133</value>
+    <value>17, 163</value>
   </data>
   <data name="MyOutTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 169</value>
@@ -2102,7 +2102,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyOutTeamListBox.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>27</value>
   </data>
   <data name="OppentCortTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11pt</value>
@@ -2114,7 +2114,7 @@
     <value>15</value>
   </data>
   <data name="OppentCortTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>553, 133</value>
+    <value>559, 163</value>
   </data>
   <data name="OppentCortTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 109</value>
@@ -2132,7 +2132,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentCortTeamListBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="OppentOutTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11pt</value>
@@ -2144,7 +2144,7 @@
     <value>15</value>
   </data>
   <data name="OppentOutTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>710, 133</value>
+    <value>716, 163</value>
   </data>
   <data name="OppentOutTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 184</value>
@@ -2162,7 +2162,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentOutTeamListBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="TeamChangeButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 23</value>
@@ -2222,7 +2222,7 @@
     <value>0</value>
   </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>436, 243</value>
+    <value>442, 273</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>248, 111</value>
@@ -2240,13 +2240,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="OppentTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 36pt, style=Bold</value>
   </data>
   <data name="OppentTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>545, 32</value>
+    <value>551, 62</value>
   </data>
   <data name="OppentTeamPointLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 55</value>
@@ -2270,7 +2270,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentTeamPointLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="MyTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 36pt, style=Bold</value>
@@ -2279,7 +2279,7 @@
     <value>NoControl</value>
   </data>
   <data name="MyTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>223, 32</value>
+    <value>229, 62</value>
   </data>
   <data name="MyTeamPointLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 55</value>
@@ -2303,7 +2303,34 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyTeamPointLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
+  </data>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>471, 17</value>
+  </metadata>
+  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 26</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>872, 25</value>
+  </data>
+  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -2315,7 +2342,7 @@
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>872, 667</value>
+    <value>872, 690</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
