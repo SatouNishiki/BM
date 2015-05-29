@@ -45,7 +45,7 @@ namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
         /// <param name="f"></param>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public void onCortClick(FormInput f, PictureBox p , object sender, System.EventArgs e)
+        public void onCortClick(FormInput f, PictureBox pictureBox , object sender, EventArgs e)
         {
             //もし画面上にlistboxがなかったら
             if (!isExistListBox)
@@ -60,9 +60,9 @@ namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
                 mousePoint = f.PointToClient(mousePoint);
 
                 //コートの画像の左上、右下の座標算出
-                Point leftTop = p.Location;
-                int rightDownX = p.Location.X + p.Size.Width;
-                int rightDownY = p.Location.Y + p.Size.Height;
+                Point leftTop = pictureBox.Location;
+                int rightDownX = pictureBox.Location.X + pictureBox.Size.Width;
+                int rightDownY = pictureBox.Location.Y + pictureBox.Size.Height;
                 Point rightDown = new Point();
                 rightDown.X = rightDownX;
                 rightDown.Y = rightDownY;
@@ -83,7 +83,7 @@ namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
                 selectPointList.Items.Add((new FreeThrowMiss()).ActionName);
                 selectPointList.Items.Add(cancelString);
 
-                Point p2 = new Point(mousePoint.X, mousePoint.Y - 40);
+                Point p2 = new Point(mousePoint.X + 40, mousePoint.Y - 40);
 
                 while (p2.Y + selectPointList.Size.Height > rightDown.Y)
                 {
@@ -91,6 +91,15 @@ namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
                 }
 
                 selectPointList.Location = p2;
+
+                //クリック点に円を描画
+                using(Graphics graphics = pictureBox.CreateGraphics()){
+
+                    int radius = 5;
+
+                    pictureBox.Refresh();
+                    graphics.FillEllipse(Brushes.Red, ((MouseEventArgs)e).X - radius, ((MouseEventArgs)e).Y - radius, radius * 2, radius * 2);
+                }
 
                 //クリックされたときのイベントを設定
                 selectPointList.Click += new EventHandler(SelectPointListClick);
@@ -107,6 +116,7 @@ namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
             {
                 selectPointList.Dispose();
                 isExistListBox = false;
+                pictureBox.Refresh();
             }
         }
 

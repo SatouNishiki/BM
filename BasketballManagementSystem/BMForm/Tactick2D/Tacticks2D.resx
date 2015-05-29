@@ -650,13 +650,13 @@
     <value>17, 17</value>
   </metadata>
   <data name="PrintFormItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="PrintFormItem.Text" xml:space="preserve">
     <value>PrintForm</value>
   </data>
   <data name="PrintPreviewItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="PrintPreviewItem.Text" xml:space="preserve">
     <value>PrintPreview</value>
