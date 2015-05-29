@@ -14,7 +14,6 @@ using BasketballManagementSystem.BaseClass.Player;
 using BasketballManagementSystem.BaseClass.Action;
 using BasketballManagementSystem.BaseClass.TimeOut;
 using BasketballManagementSystem.Manager.PrintManager;
-using BasketballManagementSystem.BaseClass.Action;
 
 namespace BasketballManagementSystem.BMForm.BoxScore
 {

@@ -38,13 +38,14 @@
             this.label10 = new System.Windows.Forms.Label();
             this.ClubNameTextBox = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.WomanSelectedRadioButton = new System.Windows.Forms.RadioButton();
+            this.ManSelectedRadioButton = new System.Windows.Forms.RadioButton();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.DicisionButton = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.WeightSelectedTextBox = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.HeightSelectedTextBox = new System.Windows.Forms.TextBox();
-            this.IsManSelectedCheckBox = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.NameSelectedTextBox = new System.Windows.Forms.TextBox();
@@ -54,11 +55,12 @@
             this.WeightAddTextBox = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.HeightAddTextBox = new System.Windows.Forms.TextBox();
-            this.IsManAddCheckBox = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.NameAddTextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.WomanAddRadioButton = new System.Windows.Forms.RadioButton();
+            this.ManAddRadioButton = new System.Windows.Forms.RadioButton();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -97,7 +99,7 @@
             this.ClubMembersListBox.FormattingEnabled = true;
             resources.ApplyResources(this.ClubMembersListBox, "ClubMembersListBox");
             this.ClubMembersListBox.Name = "ClubMembersListBox";
-            this.ClubMembersListBox.SelectedIndexChanged += new System.EventHandler(this.ClubMembersLisBoxt_SelectedIndexChanged);
+            this.ClubMembersListBox.SelectedIndexChanged += new System.EventHandler(this.ClubMembersListBox_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -120,19 +122,34 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.WomanSelectedRadioButton);
+            this.groupBox2.Controls.Add(this.ManSelectedRadioButton);
             this.groupBox2.Controls.Add(this.DeleteButton);
             this.groupBox2.Controls.Add(this.DicisionButton);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.WeightSelectedTextBox);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.HeightSelectedTextBox);
-            this.groupBox2.Controls.Add(this.IsManSelectedCheckBox);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.NameSelectedTextBox);
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
+            // 
+            // WomanSelectedRadioButton
+            // 
+            resources.ApplyResources(this.WomanSelectedRadioButton, "WomanSelectedRadioButton");
+            this.WomanSelectedRadioButton.Name = "WomanSelectedRadioButton";
+            this.WomanSelectedRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // ManSelectedRadioButton
+            // 
+            resources.ApplyResources(this.ManSelectedRadioButton, "ManSelectedRadioButton");
+            this.ManSelectedRadioButton.Checked = true;
+            this.ManSelectedRadioButton.Name = "ManSelectedRadioButton";
+            this.ManSelectedRadioButton.TabStop = true;
+            this.ManSelectedRadioButton.UseVisualStyleBackColor = true;
             // 
             // DeleteButton
             // 
@@ -168,12 +185,6 @@
             resources.ApplyResources(this.HeightSelectedTextBox, "HeightSelectedTextBox");
             this.HeightSelectedTextBox.Name = "HeightSelectedTextBox";
             // 
-            // IsManSelectedCheckBox
-            // 
-            resources.ApplyResources(this.IsManSelectedCheckBox, "IsManSelectedCheckBox");
-            this.IsManSelectedCheckBox.Name = "IsManSelectedCheckBox";
-            this.IsManSelectedCheckBox.UseVisualStyleBackColor = true;
-            // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
@@ -191,12 +202,13 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.WomanAddRadioButton);
+            this.groupBox3.Controls.Add(this.ManAddRadioButton);
             this.groupBox3.Controls.Add(this.AddButton);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.WeightAddTextBox);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.HeightAddTextBox);
-            this.groupBox3.Controls.Add(this.IsManAddCheckBox);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.NameAddTextBox);
@@ -231,12 +243,6 @@
             resources.ApplyResources(this.HeightAddTextBox, "HeightAddTextBox");
             this.HeightAddTextBox.Name = "HeightAddTextBox";
             // 
-            // IsManAddCheckBox
-            // 
-            resources.ApplyResources(this.IsManAddCheckBox, "IsManAddCheckBox");
-            this.IsManAddCheckBox.Name = "IsManAddCheckBox";
-            this.IsManAddCheckBox.UseVisualStyleBackColor = true;
-            // 
             // label5
             // 
             resources.ApplyResources(this.label5, "label5");
@@ -256,6 +262,20 @@
             // 
             resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
+            // 
+            // WomanAddRadioButton
+            // 
+            resources.ApplyResources(this.WomanAddRadioButton, "WomanAddRadioButton");
+            this.WomanAddRadioButton.Name = "WomanAddRadioButton";
+            this.WomanAddRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // ManAddRadioButton
+            // 
+            resources.ApplyResources(this.ManAddRadioButton, "ManAddRadioButton");
+            this.ManAddRadioButton.Checked = true;
+            this.ManAddRadioButton.Name = "ManAddRadioButton";
+            this.ManAddRadioButton.TabStop = true;
+            this.ManAddRadioButton.UseVisualStyleBackColor = true;
             // 
             // FormClubEdit
             // 
@@ -294,7 +314,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox NameSelectedTextBox;
-        private System.Windows.Forms.CheckBox IsManSelectedCheckBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox WeightSelectedTextBox;
         private System.Windows.Forms.Label label3;
@@ -305,7 +324,6 @@
         private System.Windows.Forms.TextBox WeightAddTextBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox HeightAddTextBox;
-        private System.Windows.Forms.CheckBox IsManAddCheckBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox NameAddTextBox;
@@ -314,5 +332,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox ClubNameTextBox;
         private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.RadioButton WomanSelectedRadioButton;
+        private System.Windows.Forms.RadioButton ManSelectedRadioButton;
+        private System.Windows.Forms.RadioButton WomanAddRadioButton;
+        private System.Windows.Forms.RadioButton ManAddRadioButton;
     }
 }

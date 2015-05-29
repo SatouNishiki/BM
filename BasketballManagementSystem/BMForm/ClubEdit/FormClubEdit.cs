@@ -170,7 +170,8 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
             clubMember.Name = NameAddTextBox.Text;
             clubMember.Height = height;
             clubMember.Weight = weight;
-            clubMember.IsMan = IsManAddCheckBox.Checked;
+
+            clubMember.IsMan = ManAddRadioButton.Checked;
 
             ClubMembersListBox.Items.Add(clubMember);
 
@@ -181,13 +182,18 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
             WeightAddTextBox.Text = string.Empty;
         }
 
-        private void ClubMembersLisBoxt_SelectedIndexChanged(object sender, EventArgs e)
+        private void ClubMembersListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (ClubMembersListBox.SelectedItem == null) return;
             ClubMember selectedClubMember = (ClubMember)ClubMembersListBox.SelectedItem;
 
             NameSelectedTextBox.Text = selectedClubMember.Name;
-            IsManSelectedCheckBox.Checked = selectedClubMember.IsMan;
+
+            if (selectedClubMember.IsMan)
+                ManSelectedRadioButton.Checked = true;
+            else
+                WomanSelectedRadioButton.Checked = false;
+
             HeightSelectedTextBox.Text = selectedClubMember.Height.ToString();
             WeightSelectedTextBox.Text = selectedClubMember.Weight.ToString();
            
@@ -226,7 +232,8 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
             clubMember.Name = NameSelectedTextBox.Text;
             clubMember.Height = height;
             clubMember.Weight = weight;
-            clubMember.IsMan = IsManSelectedCheckBox.Checked;
+
+            clubMember.IsMan = ManSelectedRadioButton.Checked;
 
             int index = ClubMembersListBox.SelectedIndex;
 
