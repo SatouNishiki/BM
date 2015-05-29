@@ -135,50 +135,49 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
         /// <param name="p"></param>
         private void DrawAPShiftGraph(Player p)
         {
+            DataPoint firstPoint = new DataPoint(0D, 0D);
 
+            foreach (var v in ActionPointShitGraph.Series)
+            {
+                v.Points.Add(firstPoint);
+            }
+            
             int PA = 0;
             int DA = 0;
             int MA = 0;
             int FA = 0;
 
-            foreach (var s in Player.GetAllActionName())
+            foreach (var o in p.GetActionList(p))
             {
+                DataPoint dp = new DataPoint();
 
-                object o2 = p.GetActionProperty(p, s);
-
-                if (o2 == null) continue;
-
-                foreach (var o in (IList)o2)
+                if (o is Miss)
                 {
-                    DataPoint dp = new DataPoint();
-                   
-                    if (o is Miss)
-                    {
-                        MA += ((BaseClass.Action.Action)o).ActionPoint;
-                        dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, MA);
-                        ActionPointShitGraph.Series["MissAction"].Points.Add(dp);
-                    }
-                    else if (o is Faul)
-                    {
-                        FA += ((BaseClass.Action.Action)o).ActionPoint;
-                        dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, FA);
-                        ActionPointShitGraph.Series["FaulAction"].Points.Add(dp);
-                    }
-                    else if (o is RelationPointAction)
-                    {
-                        PA += ((BaseClass.Action.Action)o).ActionPoint;
-                        dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, PA);
-                        ActionPointShitGraph.Series["PointAction"].Points.Add(dp);
-                    }
-                    else
-                    {
-                        DA += ((BaseClass.Action.Action)o).ActionPoint;
-                        dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, DA);
-                        ActionPointShitGraph.Series["DefaultAction"].Points.Add(dp);
-                    }
+                    MA += ((BaseClass.Action.Action)o).ActionPoint;
+                    dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, MA);
+                    ActionPointShitGraph.Series["MissAction"].Points.Add(dp);
                 }
+                else if (o is Faul)
+                {
+                    FA += ((BaseClass.Action.Action)o).ActionPoint;
+                    dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, FA);
+                    ActionPointShitGraph.Series["FaulAction"].Points.Add(dp);
+                }
+                else if (o is RelationPointAction)
+                {
+                    PA += ((BaseClass.Action.Action)o).ActionPoint;
+                    dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, PA);
+                    ActionPointShitGraph.Series["PointAction"].Points.Add(dp);
+                }
+                else
+                {
+                    DA += ((BaseClass.Action.Action)o).ActionPoint;
+                    dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, DA);
+                    ActionPointShitGraph.Series["DefaultAction"].Points.Add(dp);
+                }
+            }
                 
-            }   
+             
         }
 
         /// <summary>
