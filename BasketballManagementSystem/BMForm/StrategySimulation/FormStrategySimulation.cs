@@ -27,6 +27,7 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
             System.Reflection.Assembly myAssembly =
     System.Reflection.Assembly.GetExecutingAssembly();
 
+
             int count = 0;
             int width;
 
