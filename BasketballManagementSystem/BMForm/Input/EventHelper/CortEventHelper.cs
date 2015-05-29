@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using BasketballManagementSystem.BaseClass.Action;
 using BasketballManagementSystem.BaseClass.Position;
 
-namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
+namespace BasketballManagementSystem.BMForm.Input.EventHelper
 {
     /// <summary>
     /// コートをクリックされたときのイベントを管理するクラス

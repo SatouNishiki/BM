@@ -7,7 +7,7 @@ using System.Windows.Forms;
 using DandDPlayerList;
 using BasketballManagementSystem.BaseClass.Player;
 
-namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
+namespace BasketballManagementSystem.BMForm.Input.EventHelper
 {
     public class PlayerListSortEvent
     {

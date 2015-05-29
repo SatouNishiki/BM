@@ -10,7 +10,7 @@ using BasketballManagementSystem.BaseClass.Game;
 using System.IO;
 using BMFileLibrary;
 
-namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
+namespace BasketballManagementSystem.BMForm.Input.EventHelper
 {
     public class GameSaveLoadEvent
     {

@@ -10,7 +10,7 @@ using DandDPlayerList;
 using BMErrorLibrary;
 using BMFileLibrary;
 
-namespace BasketballManagementSystem.BMForm.Input.FormInputEvent
+namespace BasketballManagementSystem.BMForm.Input.EventHelper
 {
     public class TeamChengeEvent
     {

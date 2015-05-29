@@ -162,6 +162,7 @@
     <Compile Include="BMForm\Input\DebugMessageForm.Designer.cs">
       <DependentUpon>DebugMessageForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="BMForm\Input\EventHelper\ActionClickEventHelper.cs" />
     <Compile Include="BMForm\Input\EventHelper\KeyboardEventHelper.cs" />
     <Compile Include="BMForm\Input\FormInput.cs">
       <SubType>Form</SubType>
@@ -169,7 +170,6 @@
     <Compile Include="BMForm\Input\FormInput.Designer.cs">
       <DependentUpon>FormInput.cs</DependentUpon>
     </Compile>
-    <Compile Include="BMForm\Input\EventHelper\ActionClickEventHelper.cs" />
     <Compile Include="BMForm\Input\EventHelper\CortEventHelper.cs" />
     <Compile Include="BMForm\Input\EventHelper\GameSaveLoadEventHelper.cs" />
     <Compile Include="BMForm\Input\EventHelper\PlayerListSortEventHelper.cs" />
