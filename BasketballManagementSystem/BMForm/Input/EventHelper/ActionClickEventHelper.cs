@@ -59,8 +59,6 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
         private void ActionInput<T>(FormInput f, T action, Position positon)
         {
 
-            f.StackGameData();
-
             //選手リストの中で現在選択中の選手がどの場所にあるか(リストの何番目の要素か)
             int point = 0;
 
@@ -184,6 +182,8 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
             {
                 BMError.ErrorMessageOutput(exc.Message);
             }
+
+            f.StackGameData();
 
         }
     }
