@@ -133,12 +133,12 @@
             this.WriteTextBox.Multiline = true;
             this.WriteTextBox.Name = "WriteTextBox";
             this.WriteTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.WriteTextBox.Size = new System.Drawing.Size(419, 60);
+            this.WriteTextBox.Size = new System.Drawing.Size(462, 101);
             this.WriteTextBox.TabIndex = 4;
             // 
             // SendButton
             // 
-            this.SendButton.Location = new System.Drawing.Point(3, 14);
+            this.SendButton.Location = new System.Drawing.Point(3, 28);
             this.SendButton.Name = "SendButton";
             this.SendButton.Size = new System.Drawing.Size(43, 32);
             this.SendButton.TabIndex = 5;
@@ -159,23 +159,23 @@
             // ReadTextBox
             // 
             this.ReadTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ReadTextBox.Location = new System.Drawing.Point(61, 73);
+            this.ReadTextBox.Location = new System.Drawing.Point(61, 114);
             this.ReadTextBox.Multiline = true;
             this.ReadTextBox.Name = "ReadTextBox";
             this.ReadTextBox.ReadOnly = true;
             this.ReadTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.ReadTextBox.Size = new System.Drawing.Size(419, 82);
+            this.ReadTextBox.Size = new System.Drawing.Size(462, 136);
             this.ReadTextBox.TabIndex = 7;
             // 
             // LogTextBox
             // 
             this.LogTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LogTextBox.Location = new System.Drawing.Point(61, 163);
+            this.LogTextBox.Location = new System.Drawing.Point(61, 258);
             this.LogTextBox.Multiline = true;
             this.LogTextBox.Name = "LogTextBox";
             this.LogTextBox.ReadOnly = true;
             this.LogTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.LogTextBox.Size = new System.Drawing.Size(419, 62);
+            this.LogTextBox.Size = new System.Drawing.Size(462, 102);
             this.LogTextBox.TabIndex = 9;
             // 
             // LogClearButton
@@ -192,7 +192,7 @@
             // 
             this.ReadLabel.BackColor = System.Drawing.Color.Transparent;
             this.ReadLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ReadLabel.Location = new System.Drawing.Point(7, 23);
+            this.ReadLabel.Location = new System.Drawing.Point(7, 50);
             this.ReadLabel.Name = "ReadLabel";
             this.ReadLabel.Size = new System.Drawing.Size(31, 31);
             this.ReadLabel.TabIndex = 11;
@@ -202,7 +202,7 @@
             // 
             this.LogLabel.BackColor = System.Drawing.Color.Transparent;
             this.LogLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LogLabel.Location = new System.Drawing.Point(10, 23);
+            this.LogLabel.Location = new System.Drawing.Point(10, 39);
             this.LogLabel.Name = "LogLabel";
             this.LogLabel.Size = new System.Drawing.Size(28, 16);
             this.LogLabel.TabIndex = 12;
@@ -215,7 +215,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(539, 47);
+            this.panel1.Size = new System.Drawing.Size(584, 47);
             this.panel1.TabIndex = 13;
             // 
             // groupBox2
@@ -266,7 +266,7 @@
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 52F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 54F));
             this.tableLayoutPanel1.Controls.Add(this.panel8, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.WriteTextBox, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.LogTextBox, 1, 2);
@@ -283,16 +283,16 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 40F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(539, 230);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(584, 365);
             this.tableLayoutPanel1.TabIndex = 14;
             // 
             // panel8
             // 
             this.panel8.Controls.Add(this.LogClearButton);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel8.Location = new System.Drawing.Point(488, 163);
+            this.panel8.Location = new System.Drawing.Point(531, 258);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(46, 62);
+            this.panel8.Size = new System.Drawing.Size(48, 102);
             this.panel8.TabIndex = 18;
             // 
             // panel3
@@ -301,7 +301,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(5, 5);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(48, 60);
+            this.panel3.Size = new System.Drawing.Size(48, 101);
             this.panel3.TabIndex = 13;
             // 
             // panel4
@@ -309,9 +309,9 @@
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Controls.Add(this.ReadLabel);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(5, 73);
+            this.panel4.Location = new System.Drawing.Point(5, 114);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(48, 82);
+            this.panel4.Size = new System.Drawing.Size(48, 136);
             this.panel4.TabIndex = 14;
             // 
             // panel5
@@ -319,15 +319,15 @@
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.Controls.Add(this.LogLabel);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(5, 163);
+            this.panel5.Location = new System.Drawing.Point(5, 258);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(48, 62);
+            this.panel5.Size = new System.Drawing.Size(48, 102);
             this.panel5.TabIndex = 15;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.WriteClearButton);
-            this.panel6.Location = new System.Drawing.Point(488, 5);
+            this.panel6.Location = new System.Drawing.Point(531, 5);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(44, 60);
             this.panel6.TabIndex = 16;
@@ -336,9 +336,9 @@
             // 
             this.panel7.Controls.Add(this.ReadClearButton);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(488, 73);
+            this.panel7.Location = new System.Drawing.Point(531, 114);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(46, 82);
+            this.panel7.Size = new System.Drawing.Size(48, 136);
             this.panel7.TabIndex = 17;
             // 
             // GameSendTimer
@@ -347,15 +347,15 @@
             this.GameSendTimer.Interval = 500;
             this.GameSendTimer.Tick += new System.EventHandler(this.GameSendTimer_Tick);
             // 
-            // FomSoch
+            // TCPClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 277);
+            this.ClientSize = new System.Drawing.Size(584, 412);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
             this.MaximizeBox = false;
-            this.Name = "FomSoch";
+            this.Name = "TCPClient";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "TCPClient";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TCPClient_FormClosing);

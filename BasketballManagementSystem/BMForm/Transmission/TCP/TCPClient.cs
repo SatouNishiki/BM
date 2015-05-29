@@ -268,6 +268,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         private void SendButton_Click(object sender, EventArgs e)
         {
             SendStringData();
+            WriteTextBox.Clear();
         }
 
         /// <summary>

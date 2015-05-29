@@ -366,6 +366,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             try
             {
                 clientHandler.SendData(sendData);
+                WriteTextBox.Clear();
             }
             catch (Exception ex)
             {
