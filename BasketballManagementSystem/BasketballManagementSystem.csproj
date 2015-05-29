@@ -162,6 +162,7 @@
     <Compile Include="BMForm\Input\DebugMessageForm.Designer.cs">
       <DependentUpon>DebugMessageForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="BMForm\Input\EventHelper\KeyboardEventHelper.cs" />
     <Compile Include="BMForm\Input\FormInput.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -26,7 +26,7 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
         private FormInput formInput;
 
         //アクションが入力されたときの処理をするクラスのインスタンス
-        private InputActionEvent actionClickEvent = new InputActionEvent();
+        private ActionClickEventHelper actionClickEvent = new ActionClickEventHelper();
 
         //すでにlistが存在しているかどうか
         private bool isExistListBox = false;

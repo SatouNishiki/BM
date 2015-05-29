@@ -147,7 +147,7 @@ namespace BasketballManagementSystem.BMForm.GameDataEdit
 
         private void EditForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            gameDataSave_Click(sender, e);
+            GameDataSaveItem.PerformClick();
         }
 
         private void printForm_Click(object sender, EventArgs e)
