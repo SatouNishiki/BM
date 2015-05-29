@@ -344,8 +344,8 @@
     <Content Include="BMForm\Input\Picture\wakuwakuw.png" />
     <Content Include="BMForm\Input\Picture\Yajirusi.png" />
     <EmbeddedResource Include="BMForm\StrategySimulation\Picture\People.png" />
-    <Content Include="BMForm\StrategySimulation\Picture\ball.png" />
-    <Content Include="BMForm\StrategySimulation\Picture\basketball_court.png" />
+    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\ball.png" />
+    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\basketball_court.png" />
     <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Player2.png" />
     <Content Include="BMForm\Tactick2D\Picture\basketball_court.png" />
     <Content Include="BMForm\Input\Picture\Player.png" />
