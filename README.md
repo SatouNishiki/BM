@@ -26,7 +26,7 @@ Basketball Data Management System(BM)のメインアプリケーションです
 
 ・ActionPointGraph
 　-　選手別傾向分析
-　-　★傾向点推移グラフ
+　-　傾向点推移グラフ
 
 ・★StrategySimulation
 
