@@ -84,7 +84,7 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
                 methodInfo.Invoke(action, new object[] { DateTime.Now });
             }
 
-            propInfo = t1.GetProperty("!uarter");
+            propInfo = t1.GetProperty("Quarter");
 
             if (propInfo != null)
             {

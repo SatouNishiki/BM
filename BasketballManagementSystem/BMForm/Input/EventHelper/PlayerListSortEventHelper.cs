@@ -15,6 +15,8 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
         {
             if (pList.Items.Count != 0)
             {
+                int index = pList.SelectedIndex;
+
                 Player[] array = new Player[pList.Items.Count];
                 pList.Items.CopyTo(array, 0);
 
@@ -26,6 +28,8 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
                 {
                     pList.Items.Add(p);
                 }
+
+                pList.SelectedIndex = index;
             }
         }
     }

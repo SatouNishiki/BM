@@ -29,6 +29,7 @@ namespace BasketballManagementSystem.BMForm.Input.LoadHelper
             f.Game = game;
             SaveDataManager.GetInstance().SetGame(game);
 
+
             //別スレッドからコントロールを操作するための努力
             if (f.MyCortTeamListBox.InvokeRequired)
             {
@@ -42,8 +43,8 @@ namespace BasketballManagementSystem.BMForm.Input.LoadHelper
                         fi.MyCortTeamListBox.Items.Add(p);
                     }
 
+                    SelectedIndexClick(fi);
                     fi.MyCortTeamListBox.Enabled = true;
-
 
 
                     fi.MyOutTeamListBox.Enabled = false;
@@ -53,8 +54,9 @@ namespace BasketballManagementSystem.BMForm.Input.LoadHelper
                     {
                         fi.MyOutTeamListBox.Items.Add(p);
                     }
-
+                    SelectedIndexClick(fi);
                     fi.MyOutTeamListBox.Enabled = true;
+
                     fi.OppentCortTeamListBox.Enabled = false;
 
                     fi.OppentCortTeamListBox.Items.Clear();
@@ -63,7 +65,9 @@ namespace BasketballManagementSystem.BMForm.Input.LoadHelper
                         fi.OppentCortTeamListBox.Items.Add(p);
                     }
 
+                    SelectedIndexClick(fi);
                     fi.OppentCortTeamListBox.Enabled = true;
+
                     fi.OppentOutTeamListBox.Enabled = false;
 
                     fi.OppentOutTeamListBox.Items.Clear();
@@ -72,6 +76,7 @@ namespace BasketballManagementSystem.BMForm.Input.LoadHelper
                         fi.OppentOutTeamListBox.Items.Add(p);
                     }
 
+                    SelectedIndexClick(fi);
                     fi.OppentOutTeamListBox.Enabled = true;
                 };
 
@@ -81,14 +86,15 @@ namespace BasketballManagementSystem.BMForm.Input.LoadHelper
             {
                 f.MyCortTeamListBox.Enabled = false;
 
+                
                 f.MyCortTeamListBox.Items.Clear();
                 foreach (Player p in game.MyTeam.CortMember)
                 {
                     f.MyCortTeamListBox.Items.Add(p);
                 }
 
+                SelectedIndexClick(f);
                 f.MyCortTeamListBox.Enabled = true;
-
 
 
                 f.MyOutTeamListBox.Enabled = false;
@@ -99,7 +105,10 @@ namespace BasketballManagementSystem.BMForm.Input.LoadHelper
                     f.MyOutTeamListBox.Items.Add(p);
                 }
 
+                SelectedIndexClick(f);
                 f.MyOutTeamListBox.Enabled = true;
+
+
                 f.OppentCortTeamListBox.Enabled = false;
 
                 f.OppentCortTeamListBox.Items.Clear();
@@ -108,7 +117,10 @@ namespace BasketballManagementSystem.BMForm.Input.LoadHelper
                     f.OppentCortTeamListBox.Items.Add(p);
                 }
 
+                SelectedIndexClick(f);
                 f.OppentCortTeamListBox.Enabled = true;
+
+
                 f.OppentOutTeamListBox.Enabled = false;
 
                 f.OppentOutTeamListBox.Items.Clear();
@@ -117,16 +129,20 @@ namespace BasketballManagementSystem.BMForm.Input.LoadHelper
                     f.OppentOutTeamListBox.Items.Add(p);
                 }
 
+                SelectedIndexClick(f);
                 f.OppentOutTeamListBox.Enabled = true;
-                /*
-                f.MyCortTeam.Refresh();
-                f.MyOutTeam.Refresh();
-                f.OppentCortTeam.Refresh();
-                f.OppentOutTeam.Refresh();
-
-                */
+                
             }
         }
 
+        /// <summary>
+        /// ロードイベント後にselectedIndexの再設定をはさむためのメソッド
+        /// </summary>
+        /// <param name="f"></param>
+        private void SelectedIndexClick(FormInput f)
+        {
+            int index = f.MyCortTeamListBox.Items.IndexOf(f.SelectedPlayer);
+            f.MyCortTeamListBox.PerformIndexClick(index);
+        }
     }
 }
