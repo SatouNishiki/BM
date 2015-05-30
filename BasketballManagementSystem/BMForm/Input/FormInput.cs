@@ -1180,7 +1180,10 @@ namespace BasketballManagementSystem.BMForm.Input
 
         /****************************************************************************************/
 
-
+        /// <summary>
+        /// ゲームデータのディープコピーをスタックに入れます
+        /// アクションの変更など、Undo操作の対象にしたい動作が行われる直前に呼んでください
+        /// </summary>
         public void StackGameData()
         {
             gameDataStack.Push(Game.CloneDeep());
