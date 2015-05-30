@@ -64,7 +64,7 @@
             this.Quarter4Chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.QuarterAllChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PrintFormItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PrintPreviewItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,7 +79,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Quarter4Chart)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QuarterAllChart)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // Quarter1Chart
@@ -260,12 +260,12 @@
             title10.Text = "試合全体のグラフ";
             this.QuarterAllChart.Titles.Add(title10);
             // 
-            // menuStrip1
+            // MenuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.Name = "menuStrip1";
+            resources.ApplyResources(this.MenuStrip, "MenuStrip");
+            this.MenuStrip.Name = "MenuStrip";
             // 
             // FileToolStripMenuItem
             // 
@@ -296,8 +296,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.OppentTeamListBox);
             this.Controls.Add(this.MyTeamListBox);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.MenuStrip);
+            this.MainMenuStrip = this.MenuStrip;
             this.Name = "FormGraphScore";
             ((System.ComponentModel.ISupportInitialize)(this.Quarter1Chart)).EndInit();
             this.TabControl1.ResumeLayout(false);
@@ -310,8 +310,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Quarter4Chart)).EndInit();
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.QuarterAllChart)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,7 +334,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart Quarter4Chart;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataVisualization.Charting.Chart QuarterAllChart;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip MenuStrip;
         private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem PrintFormItem;
         private System.Windows.Forms.ToolStripMenuItem PrintPreviewItem;

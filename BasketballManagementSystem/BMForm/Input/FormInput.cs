@@ -948,7 +948,7 @@ namespace BasketballManagementSystem.BMForm.Input
         {
             if (!preLoad)
             {
-                FormInputTimer.Interval = int.Parse(TimerTickComboBox.SelectedItem.ToString());
+                FPSTimer.Interval = int.Parse(TimerTickComboBox.SelectedItem.ToString());
                 AppSetting.GetInstance().FormInputFPS = TimerTickComboBox.SelectedIndex;
                 AppSetting.GetInstance().SettingChanged();
             }

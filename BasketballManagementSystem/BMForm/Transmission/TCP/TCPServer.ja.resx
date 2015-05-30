@@ -124,17 +124,23 @@
     <value>開始</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 12</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>ポート</value>
+  </data>
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>437, 87</value>
+    <value>513, 125</value>
   </data>
   <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 74</value>
+    <value>66, 113</value>
   </data>
   <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>437, 5</value>
+    <value>513, 5</value>
   </data>
   <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 74</value>
+    <value>66, 112</value>
   </data>
   <data name="labelLog.Text" xml:space="preserve">
     <value>ログ</value>
@@ -143,31 +149,31 @@
     <value>受信文字</value>
   </data>
   <data name="ReadTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>369, 74</value>
+    <value>445, 113</value>
   </data>
   <data name="SendButton.Text" xml:space="preserve">
     <value>送信</value>
   </data>
   <data name="LogTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>369, 75</value>
+    <value>445, 114</value>
   </data>
   <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>437, 169</value>
+    <value>513, 246</value>
   </data>
   <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 75</value>
-  </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>369, 74</value>
+    <value>66, 114</value>
   </data>
   <data name="WriteTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>275, 74</value>
+    <value>351, 112</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>80, 12</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>クライアント選択</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 112</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>TCPサーバー</value>

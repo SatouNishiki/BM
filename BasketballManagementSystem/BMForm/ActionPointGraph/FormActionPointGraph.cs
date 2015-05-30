@@ -13,6 +13,7 @@ using BasketballManagementSystem.BaseClass.Player;
 using BasketballManagementSystem.BaseClass.Action;
 using System.Collections;
 using System.Windows.Forms.DataVisualization.Charting;
+using BasketballManagementSystem.Manager.PrintManager;
 
 namespace BasketballManagementSystem.BMForm.ActionPointGraph
 {
@@ -311,6 +312,18 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
             ds.Tables[0].Rows.Add(dtRow);
 
             return ds;
+        }
+
+        private void PrintFormItem_Click(object sender, EventArgs e)
+        {
+            FormPrinter f = new FormPrinter();
+            f.PrintForm(this);
+        }
+
+        private void PrintPreviewToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormPrinter f = new FormPrinter();
+            f.ShowPrintPreview(this);
         }
 
     }

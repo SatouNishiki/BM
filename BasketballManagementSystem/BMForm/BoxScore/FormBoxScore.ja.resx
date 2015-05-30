@@ -118,17 +118,11 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="GamePlaceLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 12pt</value>
-  </data>
   <data name="GamePlaceLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>240, 41</value>
   </data>
   <data name="GamePlaceLabel.Text" xml:space="preserve">
     <value>GamePlace</value>
-  </data>
-  <data name="GamePlaceLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
   </data>
   <data name="MyResultLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -182,20 +176,8 @@
   <data name="MyTeamNameLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="GameDateLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 12pt</value>
-  </data>
   <data name="GameDateLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>240, 41</value>
-  </data>
-  <data name="GameDateLabel.Text" xml:space="preserve">
-    <value>GameDate</value>
-  </data>
-  <data name="GameDateLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="GameNameLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 12pt</value>
   </data>
   <data name="GameNameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>240, 44</value>
@@ -4762,16 +4744,16 @@
         CigAooAKKACigAooAKKACigAooAKKACigAooA//Z
 </value>
   </data>
-  <data name="PrintForm.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PrintFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
   </data>
-  <data name="PrintForm.Text" xml:space="preserve">
+  <data name="PrintFormItem.Text" xml:space="preserve">
     <value>印刷</value>
   </data>
-  <data name="PrintPreview.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PrintPreviewItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
   </data>
-  <data name="PrintPreview.Text" xml:space="preserve">
+  <data name="PrintPreviewItem.Text" xml:space="preserve">
     <value>印刷プレビュー</value>
   </data>
   <data name="ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">

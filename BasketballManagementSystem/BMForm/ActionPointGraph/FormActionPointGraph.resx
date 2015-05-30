@@ -127,12 +127,27 @@
   <data name="&gt;&gt;ActionPointGraphTab.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ActionPointGraphTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>179, 13</value>
+  <data name="&gt;&gt;FileToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="OppentTeamName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ActionPointGraphTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 39</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.Name" xml:space="preserve">
+    <value>MenuStrip</value>
+  </data>
+  <data name="&gt;&gt;PrintFormItem.Name" xml:space="preserve">
+    <value>PrintFormItem</value>
+  </data>
   <data name="MyTeamList.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>687, 412</value>
   </data>
   <data name="&gt;&gt;OppentTeamList.Name" xml:space="preserve">
     <value>OppentTeamList</value>
@@ -146,20 +161,20 @@
   <data name="&gt;&gt;ActionPointChart.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
   </data>
-  <data name="ActionPointChart.Size" type="System.Drawing.Size, System.Drawing">
-    <value>482, 333</value>
-  </data>
   <data name="MyTeamName.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 12</value>
   </data>
   <data name="&gt;&gt;APRadarChart.Name" xml:space="preserve">
     <value>APRadarChart</value>
   </data>
+  <data name="&gt;&gt;PrintFormItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;MyTeamName.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="ActionPointShitGraph.Text" xml:space="preserve">
-    <value>chart1</value>
+  <data name="&gt;&gt;ActionPointShitGraph.Name" xml:space="preserve">
+    <value>ActionPointShitGraph</value>
   </data>
   <data name="&gt;&gt;ActionPointShitGraph.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -171,19 +186,16 @@
     <value>12</value>
   </data>
   <data name="MyTeamName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 33</value>
+    <value>12, 59</value>
   </data>
   <data name="&gt;&gt;MyTeamList.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MyTeamList.Name" xml:space="preserve">
-    <value>MyTeamList</value>
   </data>
   <data name="APRadarChart.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 22</value>
   </data>
   <data name="OppentTeamName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 215</value>
+    <value>12, 241</value>
   </data>
   <data name="OppentTeamName.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -191,13 +203,13 @@
   <data name="&gt;&gt;MyTeamName.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;ActionPointGraphTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;OppentTeamList.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="APRadarChart.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;APRadarChart.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="ActionPointShitGraph.TabIndex" type="System.Int32, mscorlib">
@@ -209,11 +221,11 @@
   <data name="APRadarChart.Size" type="System.Drawing.Size, System.Drawing">
     <value>488, 339</value>
   </data>
+  <data name="MenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
   <data name="MyTeamName.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
-  </data>
-  <data name="APShiftGraph.Text" xml:space="preserve">
-    <value>ShiftGraph</value>
   </data>
   <data name="&gt;&gt;APRadarChart.Parent" xml:space="preserve">
     <value>ActionPointGraphTab</value>
@@ -233,8 +245,11 @@
   <data name="APRadarChart.Text" xml:space="preserve">
     <value>RadarChart</value>
   </data>
-  <data name="&gt;&gt;ActionPointShitGraph.Name" xml:space="preserve">
-    <value>ActionPointShitGraph</value>
+  <data name="MenuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PrintPreviewToolStripMenuItem.Text" xml:space="preserve">
+    <value>PrintPreview</value>
   </data>
   <data name="MyTeamName.Text" xml:space="preserve">
     <value>MyTeamName</value>
@@ -243,10 +258,19 @@
     <value>$this</value>
   </data>
   <data name="OppentTeamList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 230</value>
+    <value>12, 256</value>
+  </data>
+  <data name="&gt;&gt;PrintPreviewToolStripMenuItem.Name" xml:space="preserve">
+    <value>PrintPreviewToolStripMenuItem</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>File</value>
   </data>
   <data name="&gt;&gt;ActionPointChart.Parent" xml:space="preserve">
     <value>APRadarChart</value>
+  </data>
+  <data name="MenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>687, 26</value>
   </data>
   <data name="OppentTeamName.Size" type="System.Drawing.Size, System.Drawing">
     <value>98, 12</value>
@@ -257,11 +281,14 @@
   <data name="&gt;&gt;OppentTeamName.Name" xml:space="preserve">
     <value>OppentTeamName</value>
   </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 22</value>
+  </data>
   <data name="OppentTeamList.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 148</value>
   </data>
   <data name="MyTeamList.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 49</value>
+    <value>12, 75</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="APRadarChart.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
@@ -273,26 +300,32 @@
   <data name="OppentTeamName.Text" xml:space="preserve">
     <value>OppentTeamName</value>
   </data>
-  <data name="MyTeamName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;ActionPointChart.Name" xml:space="preserve">
-    <value>ActionPointChart</value>
+  <data name="&gt;&gt;MyTeamList.Name" xml:space="preserve">
+    <value>MyTeamList</value>
   </data>
   <data name="&gt;&gt;MyTeamName.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;MenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="APShiftGraph.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamList.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;ActionPointShitGraph.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
   </data>
+  <data name="ActionPointShitGraph.Text" xml:space="preserve">
+    <value>chart1</value>
+  </data>
   <data name="&gt;&gt;APShiftGraph.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;OppentTeamList.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;ActionPointGraphTab.Name" xml:space="preserve">
+    <value>ActionPointGraphTab</value>
   </data>
   <data name="MyTeamList.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 148</value>
@@ -300,11 +333,23 @@
   <data name="&gt;&gt;MyTeamName.Name" xml:space="preserve">
     <value>MyTeamName</value>
   </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PrintPreviewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="PrintFormItem.Text" xml:space="preserve">
+    <value>PrintForm</value>
+  </data>
   <data name="ActionPointGraphTab.Size" type="System.Drawing.Size, System.Drawing">
     <value>496, 365</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FormActionPointGraph</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;MyTeamList.Parent" xml:space="preserve">
     <value>$this</value>
@@ -312,8 +357,11 @@
   <data name="APShiftGraph.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;ActionPointGraphTab.Name" xml:space="preserve">
-    <value>ActionPointGraphTab</value>
+  <data name="PrintFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamName.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="ActionPointChart.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -321,8 +369,11 @@
   <data name="&gt;&gt;ActionPointChart.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;OppentTeamName.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;ActionPointChart.Name" xml:space="preserve">
+    <value>ActionPointChart</value>
+  </data>
+  <data name="&gt;&gt;FileToolStripMenuItem.Name" xml:space="preserve">
+    <value>FileToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;APShiftGraph.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -333,14 +384,17 @@
   <data name="OppentTeamList.ItemHeight" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>687, 390</value>
+  <data name="APShiftGraph.Text" xml:space="preserve">
+    <value>ShiftGraph</value>
   </data>
-  <data name="&gt;&gt;ActionPointGraphTab.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="ActionPointChart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>482, 333</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;MenuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PrintPreviewToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OppentTeamList.Parent" xml:space="preserve">
     <value>$this</value>
@@ -351,13 +405,22 @@
   <data name="APShiftGraph.Size" type="System.Drawing.Size, System.Drawing">
     <value>488, 339</value>
   </data>
-  <data name="OppentTeamName.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="MenuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;APRadarChart.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;APRadarChart.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="MyTeamName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="MenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
 </root>

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Cort.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="CortPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABC4AAAI+CAYAAABzKUsHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADrwAAA68AZW8ckkAAFBjSURBVHhe7d1/sG7XQd/njIC2w4xb2qatDNTTgUYzbdUy
@@ -479,28 +479,28 @@
   <data name="label2.Text" xml:space="preserve">
     <value>相手チーム</value>
   </data>
-  <data name="printForm.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PrintFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
   </data>
-  <data name="printForm.Text" xml:space="preserve">
+  <data name="PrintFormItem.Text" xml:space="preserve">
     <value>印刷</value>
   </data>
-  <data name="printPreview.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PrintPreviewItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
   </data>
-  <data name="printPreview.Text" xml:space="preserve">
+  <data name="PrintPreviewItem.Text" xml:space="preserve">
     <value>印刷プレビュー</value>
   </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 22</value>
   </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
     <value>ファイル</value>
   </data>
-  <data name="valuationBasis.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="FaluationBasisItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 22</value>
   </data>
-  <data name="valuationBasis.Text" xml:space="preserve">
+  <data name="FaluationBasisItem.Text" xml:space="preserve">
     <value>評価基準</value>
   </data>
   <data name="configToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
@@ -508,5 +508,8 @@
   </data>
   <data name="configToolStripMenuItem.Text" xml:space="preserve">
     <value>設定</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>シュート確率推論</value>
   </data>
 </root>

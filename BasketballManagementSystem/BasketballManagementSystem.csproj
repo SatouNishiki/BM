@@ -291,6 +291,9 @@
     <EmbeddedResource Include="BMForm\TeamMake\TeamDataEdit.ja.resx">
       <DependentUpon>TeamDataEdit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\Transmission\TCP\TCPClient.ja.resx">
+      <DependentUpon>TCPClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BMForm\Transmission\TCP\TCPServer.ja.resx">
       <DependentUpon>TCPServer.cs</DependentUpon>
     </EmbeddedResource>

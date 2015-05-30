@@ -130,16 +130,37 @@
   <data name="label2.Text" xml:space="preserve">
     <value>アクション選択</value>
   </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
+  <data name="tabPage3.Text" xml:space="preserve">
+    <value>アクション情報</value>
   </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>ファイル</value>
+  <data name="tabPage2.Text" xml:space="preserve">
+    <value>プレイヤー情報</value>
   </data>
-  <data name="gameDataSave.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="GameDataSaveItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 22</value>
   </data>
-  <data name="gameDataSave.Text" xml:space="preserve">
+  <data name="GameDataSaveItem.Text" xml:space="preserve">
     <value>ゲームデータ保存</value>
+  </data>
+  <data name="PrintFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="PrintFormItem.Text" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="PrintPreviewItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="PrintPreviewItem.Text" xml:space="preserve">
+    <value>印刷プレビュー</value>
+  </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ゲームデータ編集</value>
   </data>
 </root>

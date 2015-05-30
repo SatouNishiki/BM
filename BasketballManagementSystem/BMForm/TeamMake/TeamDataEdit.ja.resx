@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="buttonAdd.Text" xml:space="preserve">
+  <data name="AddButton.Text" xml:space="preserve">
     <value>追加</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
@@ -139,10 +139,10 @@
   <data name="groupBox2.Text" xml:space="preserve">
     <value>編集</value>
   </data>
-  <data name="buttonDicision.Text" xml:space="preserve">
-    <value>編集確定</value>
+  <data name="DicisionButton.Text" xml:space="preserve">
+    <value>確定</value>
   </data>
-  <data name="buttonDelete.Text" xml:space="preserve">
+  <data name="DeleteButton.Text" xml:space="preserve">
     <value>削除</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
@@ -172,32 +172,35 @@
   <data name="label7.Text" xml:space="preserve">
     <value>チーム名</value>
   </data>
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 22</value>
   </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
     <value>ファイル</value>
   </data>
-  <data name="loadTeam.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="LoadTeamItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
   </data>
-  <data name="loadTeam.Text" xml:space="preserve">
+  <data name="LoadTeamItem.Text" xml:space="preserve">
     <value>チーム読み込み</value>
   </data>
-  <data name="saveTeam.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SaveTeamItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
   </data>
-  <data name="saveTeam.Text" xml:space="preserve">
+  <data name="SaveTeamItem.Text" xml:space="preserve">
     <value>チーム保存</value>
   </data>
-  <data name="loadClub.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="LoadClubItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
   </data>
-  <data name="loadClub.Text" xml:space="preserve">
-    <value>クラブ読み込み</value>
+  <data name="LoadClubItem.Text" xml:space="preserve">
+    <value>名簿読み込み</value>
   </data>
   <data name="groupBox4.Text" xml:space="preserve">
     <value>部員名簿</value>
+  </data>
+  <data name="IntoMemberButton.Text" xml:space="preserve">
+    <value>チームに追加</value>
   </data>
   <data name="ClubNameLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 12</value>

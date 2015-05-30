@@ -51,7 +51,7 @@
             this.Shoot3PNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.Shoot2PNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ConfigToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,7 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.FreeThrowNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Shoot3PNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Shoot2PNumericUpDown)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.MenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AssistNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StealNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TurnOverNumericUpDown)).BeginInit();
@@ -283,13 +283,13 @@
             this.Shoot2PNumericUpDown.Name = "Shoot2PNumericUpDown";
             this.Shoot2PNumericUpDown.ReadOnly = true;
             // 
-            // menuStrip1
+            // MenuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileToolStripMenuItem,
             this.ConfigToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.Name = "menuStrip1";
+            resources.ApplyResources(this.MenuStrip, "MenuStrip");
+            this.MenuStrip.Name = "MenuStrip";
             // 
             // FileToolStripMenuItem
             // 
@@ -419,9 +419,9 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.MenuStrip);
             this.Controls.Add(this.GroupBox1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.MenuStrip;
             this.Name = "ActionPointEditForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ActionPointEditForm_FormClosed);
             this.Load += new System.EventHandler(this.ActionPointEditForm_Load);
@@ -439,8 +439,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.FreeThrowNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Shoot3PNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Shoot2PNumericUpDown)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AssistNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StealNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TurnOverNumericUpDown)).EndInit();
@@ -478,7 +478,7 @@
         private System.Windows.Forms.NumericUpDown TechnicalFaulNumericUpDown;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.NumericUpDown PersonalFaulNumericUpDown;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip MenuStrip;
         private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SaveItem;
         private System.Windows.Forms.NumericUpDown AssistNumericUpDown;
