@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TeamDataEdit));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.PositionComboBox = new System.Windows.Forms.ComboBox();
             this.AddButton = new System.Windows.Forms.Button();
             this.NumberTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,12 +43,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.TeamMemberListBox = new System.Windows.Forms.CheckedListBox();
             this.label6 = new System.Windows.Forms.Label();
             this.labelSelectedPlayer = new System.Windows.Forms.Label();
             this.TeamNameTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.OutMemberListBox = new System.Windows.Forms.ListBox();
-            this.CortMemberListBox = new System.Windows.Forms.ListBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LoadTeamItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,8 +55,7 @@
             this.LoadClubItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ClubMembersListBox = new System.Windows.Forms.ListBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.IntoOutMemberButton = new System.Windows.Forms.Button();
-            this.IntoCortMemberButton = new System.Windows.Forms.Button();
+            this.IntoMemberButton = new System.Windows.Forms.Button();
             this.ClubNameLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -69,7 +66,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.PositionComboBox);
             this.groupBox1.Controls.Add(this.AddButton);
             this.groupBox1.Controls.Add(this.NumberTextBox);
             this.groupBox1.Controls.Add(this.label2);
@@ -78,16 +74,6 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
-            // 
-            // PositionComboBox
-            // 
-            this.PositionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.PositionComboBox.FormattingEnabled = true;
-            this.PositionComboBox.Items.AddRange(new object[] {
-            resources.GetString("PositionComboBox.Items"),
-            resources.GetString("PositionComboBox.Items1")});
-            resources.ApplyResources(this.PositionComboBox, "PositionComboBox");
-            this.PositionComboBox.Name = "PositionComboBox";
             // 
             // AddButton
             // 
@@ -164,15 +150,22 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.TeamMemberListBox);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.labelSelectedPlayer);
             this.groupBox3.Controls.Add(this.TeamNameTextBox);
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.OutMemberListBox);
-            this.groupBox3.Controls.Add(this.CortMemberListBox);
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
+            // 
+            // TeamMemberListBox
+            // 
+            this.TeamMemberListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.TeamMemberListBox, "TeamMemberListBox");
+            this.TeamMemberListBox.Name = "TeamMemberListBox";
+            this.TeamMemberListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.TeamMemberListBox_ItemCheck);
+            this.TeamMemberListBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -193,20 +186,6 @@
             // 
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
-            // 
-            // OutMemberListBox
-            // 
-            this.OutMemberListBox.FormattingEnabled = true;
-            resources.ApplyResources(this.OutMemberListBox, "OutMemberListBox");
-            this.OutMemberListBox.Name = "OutMemberListBox";
-            this.OutMemberListBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
-            // 
-            // CortMemberListBox
-            // 
-            this.CortMemberListBox.FormattingEnabled = true;
-            resources.ApplyResources(this.CortMemberListBox, "CortMemberListBox");
-            this.CortMemberListBox.Name = "CortMemberListBox";
-            this.CortMemberListBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
@@ -250,27 +229,19 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.IntoOutMemberButton);
-            this.groupBox4.Controls.Add(this.IntoCortMemberButton);
+            this.groupBox4.Controls.Add(this.IntoMemberButton);
             this.groupBox4.Controls.Add(this.ClubNameLabel);
             this.groupBox4.Controls.Add(this.ClubMembersListBox);
             resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
-            // IntoOutMemberButton
+            // IntoMemberButton
             // 
-            resources.ApplyResources(this.IntoOutMemberButton, "IntoOutMemberButton");
-            this.IntoOutMemberButton.Name = "IntoOutMemberButton";
-            this.IntoOutMemberButton.UseVisualStyleBackColor = true;
-            this.IntoOutMemberButton.Click += new System.EventHandler(this.IntoOutMemberButton_Click);
-            // 
-            // IntoCortMemberButton
-            // 
-            resources.ApplyResources(this.IntoCortMemberButton, "IntoCortMemberButton");
-            this.IntoCortMemberButton.Name = "IntoCortMemberButton";
-            this.IntoCortMemberButton.UseVisualStyleBackColor = true;
-            this.IntoCortMemberButton.Click += new System.EventHandler(this.IntoCortMemberButton_Click);
+            resources.ApplyResources(this.IntoMemberButton, "IntoMemberButton");
+            this.IntoMemberButton.Name = "IntoMemberButton";
+            this.IntoMemberButton.UseVisualStyleBackColor = true;
+            this.IntoMemberButton.Click += new System.EventHandler(this.IntoMemberButton_Click);
             // 
             // ClubNameLabel
             // 
@@ -318,23 +289,20 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TeamNameTextBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ListBox OutMemberListBox;
-        private System.Windows.Forms.ListBox CortMemberListBox;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem LoadTeamItem;
         private System.Windows.Forms.ToolStripMenuItem SaveTeamItem;
-        private System.Windows.Forms.ComboBox PositionComboBox;
         private System.Windows.Forms.ToolStripMenuItem LoadClubItem;
         private System.Windows.Forms.ListBox ClubMembersListBox;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button IntoCortMemberButton;
+        private System.Windows.Forms.Button IntoMemberButton;
         private System.Windows.Forms.Label ClubNameLabel;
-        private System.Windows.Forms.Button IntoOutMemberButton;
         private System.Windows.Forms.Button DicisionButton;
         private System.Windows.Forms.TextBox EditNumberTextBox;
         private System.Windows.Forms.TextBox EditNameTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label labelSelectedPlayer;
+        private System.Windows.Forms.CheckedListBox TeamMemberListBox;
     }
 }

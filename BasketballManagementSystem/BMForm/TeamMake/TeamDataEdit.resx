@@ -117,34 +117,91 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PositionComboBox.Items" xml:space="preserve">
-    <value>CortMember</value>
+  <data name="&gt;&gt;AddButton.Name" xml:space="preserve">
+    <value>AddButton</value>
   </data>
-  <data name="PositionComboBox.Items1" xml:space="preserve">
-    <value>OutMember</value>
+  <data name="&gt;&gt;AddButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PositionComboBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>99, 81</value>
-  </data>
-  <data name="PositionComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 20</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PositionComboBox.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;PositionComboBox.Name" xml:space="preserve">
-    <value>PositionComboBox</value>
-  </data>
-  <data name="&gt;&gt;PositionComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PositionComboBox.Parent" xml:space="preserve">
+  <data name="&gt;&gt;AddButton.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="&gt;&gt;PositionComboBox.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;AddButton.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="&gt;&gt;NumberTextBox.Name" xml:space="preserve">
+    <value>NumberTextBox</value>
+  </data>
+  <data name="&gt;&gt;NumberTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumberTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;NumberTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;NameTextBox.Name" xml:space="preserve">
+    <value>NameTextBox</value>
+  </data>
+  <data name="&gt;&gt;NameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NameTextBox.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;NameTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 37</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 107</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="AddButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>196, 79</value>
@@ -168,7 +225,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;AddButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="NumberTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>56, 58</value>
@@ -189,7 +246,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;NumberTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -216,7 +273,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="NameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>56, 24</value>
@@ -237,7 +294,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;NameTextBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -264,31 +321,103 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 37</value>
+  <data name="&gt;&gt;DicisionButton.Name" xml:space="preserve">
+    <value>DicisionButton</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>277, 107</value>
+  <data name="&gt;&gt;DicisionButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;DicisionButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;DicisionButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Add</value>
+  <data name="&gt;&gt;EditNumberTextBox.Name" xml:space="preserve">
+    <value>EditNumberTextBox</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="&gt;&gt;EditNumberTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
+  <data name="&gt;&gt;EditNumberTextBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;EditNumberTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;EditNameTextBox.Name" xml:space="preserve">
+    <value>EditNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;EditNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EditNameTextBox.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;EditNameTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;DeleteButton.Name" xml:space="preserve">
+    <value>DeleteButton</value>
+  </data>
+  <data name="&gt;&gt;DeleteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DeleteButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;DeleteButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 168</value>
+  </data>
+  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>276, 107</value>
+  </data>
+  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="DicisionButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>114, 79</value>
@@ -434,29 +563,26 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>295, 37</value>
+  <data name="TeamMemberListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 76</value>
   </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>276, 107</value>
+  <data name="TeamMemberListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 284</value>
   </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="TeamMemberListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Edit</value>
+  <data name="&gt;&gt;TeamMemberListBox.Name" xml:space="preserve">
+    <value>TeamMemberListBox</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;TeamMemberListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TeamMemberListBox.Parent" xml:space="preserve">
+    <value>groupBox3</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;TeamMemberListBox.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -483,7 +609,7 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="labelSelectedPlayer.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -513,7 +639,7 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;labelSelectedPlayer.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="TeamNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>10, 42</value>
@@ -534,7 +660,7 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;TeamNameTextBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -561,67 +687,13 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="OutMemberListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="OutMemberListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>289, 67</value>
-  </data>
-  <data name="OutMemberListBox.ScrollAlwaysVisible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="OutMemberListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 184</value>
-  </data>
-  <data name="OutMemberListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;OutMemberListBox.Name" xml:space="preserve">
-    <value>OutMemberListBox</value>
-  </data>
-  <data name="&gt;&gt;OutMemberListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;OutMemberListBox.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;OutMemberListBox.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="CortMemberListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="CortMemberListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 67</value>
-  </data>
-  <data name="CortMemberListBox.ScrollAlwaysVisible" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="CortMemberListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>248, 184</value>
-  </data>
-  <data name="CortMemberListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;CortMemberListBox.Name" xml:space="preserve">
-    <value>CortMemberListBox</value>
-  </data>
-  <data name="&gt;&gt;CortMemberListBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CortMemberListBox.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;CortMemberListBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="groupBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 150</value>
+    <value>305, 37</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>559, 257</value>
+    <value>276, 370</value>
   </data>
   <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -644,30 +716,6 @@
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="LoadTeamItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="LoadTeamItem.Text" xml:space="preserve">
-    <value>LoadTeam</value>
-  </data>
-  <data name="SaveTeamItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="SaveTeamItem.Text" xml:space="preserve">
-    <value>SaveTeam</value>
-  </data>
-  <data name="LoadClubItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="LoadClubItem.Text" xml:space="preserve">
-    <value>LoadClub</value>
-  </data>
-  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 22</value>
-  </data>
-  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
-    <value>File</value>
-  </data>
   <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -692,6 +740,30 @@
   <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 22</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="LoadTeamItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="LoadTeamItem.Text" xml:space="preserve">
+    <value>LoadTeam</value>
+  </data>
+  <data name="SaveTeamItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="SaveTeamItem.Text" xml:space="preserve">
+    <value>SaveTeam</value>
+  </data>
+  <data name="LoadClubItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 22</value>
+  </data>
+  <data name="LoadClubItem.Text" xml:space="preserve">
+    <value>LoadClub</value>
+  </data>
   <data name="ClubMembersListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
@@ -714,55 +786,79 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;ClubMembersListBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
-  <data name="IntoOutMemberButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 341</value>
+  <data name="&gt;&gt;IntoMemberButton.Name" xml:space="preserve">
+    <value>IntoMemberButton</value>
   </data>
-  <data name="IntoOutMemberButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 23</value>
-  </data>
-  <data name="IntoOutMemberButton.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="IntoOutMemberButton.Text" xml:space="preserve">
-    <value>IntoOutMember</value>
-  </data>
-  <data name="&gt;&gt;IntoOutMemberButton.Name" xml:space="preserve">
-    <value>IntoOutMemberButton</value>
-  </data>
-  <data name="&gt;&gt;IntoOutMemberButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;IntoMemberButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;IntoOutMemberButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;IntoMemberButton.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;IntoOutMemberButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;IntoMemberButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="IntoCortMemberButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 341</value>
+  <data name="&gt;&gt;ClubNameLabel.Name" xml:space="preserve">
+    <value>ClubNameLabel</value>
   </data>
-  <data name="IntoCortMemberButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>98, 23</value>
+  <data name="&gt;&gt;ClubNameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="IntoCortMemberButton.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="IntoCortMemberButton.Text" xml:space="preserve">
-    <value>IntoCortMember</value>
-  </data>
-  <data name="&gt;&gt;IntoCortMemberButton.Name" xml:space="preserve">
-    <value>IntoCortMemberButton</value>
-  </data>
-  <data name="&gt;&gt;IntoCortMemberButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;IntoCortMemberButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ClubNameLabel.Parent" xml:space="preserve">
     <value>groupBox4</value>
   </data>
-  <data name="&gt;&gt;IntoCortMemberButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ClubNameLabel.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>587, 37</value>
+  </data>
+  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 370</value>
+  </data>
+  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>ClubMembers</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="IntoMemberButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 341</value>
+  </data>
+  <data name="IntoMemberButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 23</value>
+  </data>
+  <data name="IntoMemberButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="IntoMemberButton.Text" xml:space="preserve">
+    <value>IntoMember</value>
+  </data>
+  <data name="&gt;&gt;IntoMemberButton.Name" xml:space="preserve">
+    <value>IntoMemberButton</value>
+  </data>
+  <data name="&gt;&gt;IntoMemberButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IntoMemberButton.Parent" xml:space="preserve">
+    <value>groupBox4</value>
+  </data>
+  <data name="&gt;&gt;IntoMemberButton.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="ClubNameLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -789,31 +885,7 @@
     <value>groupBox4</value>
   </data>
   <data name="&gt;&gt;ClubNameLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="groupBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>587, 37</value>
-  </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 370</value>
-  </data>
-  <data name="groupBox4.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>ClubMembers</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Name" xml:space="preserve">
-    <value>groupBox4</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox4.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
