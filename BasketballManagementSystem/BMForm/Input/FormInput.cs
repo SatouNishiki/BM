@@ -60,6 +60,11 @@ namespace BasketballManagementSystem.BMForm.Input
         private KeyboardEventHelper keyboardEventHelper = new KeyboardEventHelper();
 
         /// <summary>
+        /// メンバーチェンジに関する処理を行うクラス
+        /// </summary>
+        private MemberChangeEventHelper memberChangeEventHelper = new MemberChangeEventHelper();
+
+        /// <summary>
         /// デバッグメッセージを表示するフォーム
         /// </summary>
         private DebugMessageForm debugMessageForm = new DebugMessageForm();
@@ -610,59 +615,7 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void TeamChangeButton_Click(object sender, EventArgs e)
         {
-            List<object> obj1 = new List<object>();
-            List<object> obj2 = new List<object>();
-
-            foreach (var o in MyCortTeamListBox.SelectedItems) obj1.Add(o);
-            foreach (var o in MyOutTeamListBox.SelectedItems) obj2.Add(o);
-
-            if (MyCortTeamListBox.ExchangeSelectedItem(MyOutTeamListBox))
-            {
-                MemberChange m = new MemberChange();
-
-                foreach (Player p in obj1)
-                {
-                    m.ChangedCortMembers.Add(p);
-                }
-
-                foreach (Player p in obj2)
-                {
-                    m.ChangedOutMembers.Add(p);
-                }
-
-                m.ChengedMemberTime = DateTime.Now;
-                m.RemainingTime = QuarterTimer.remainingTime;
-                m.Quarter = Quarter;
-                StackGameData();
-                Game.MyTeam.MemberChange.Add(m);
-            }
-
-            obj1.Clear();
-            obj2.Clear();
-
-            foreach (object o in OppentCortTeamListBox.SelectedItems) obj1.Add(o);
-            foreach (object o in OppentOutTeamListBox.SelectedItems) obj2.Add(o);
-
-            if (OppentCortTeamListBox.ExchangeSelectedItem(OppentOutTeamListBox))
-            {
-                MemberChange m = new MemberChange();
-
-                foreach (Player p in obj1)
-                {
-                    m.ChangedCortMembers.Add(p);
-                }
-
-                foreach (Player p in obj2)
-                {
-                    m.ChangedOutMembers.Add(p);
-                }
-
-                m.ChengedMemberTime = DateTime.Now;
-                m.RemainingTime = QuarterTimer.remainingTime;
-                m.Quarter = Quarter;
-                StackGameData();
-                Game.OppentTeam.MemberChange.Add(m);
-            }
+            memberChangeEventHelper.ChangeMember(this);
 
             PlayerListSortEventHelper.Sort(MyCortTeamListBox);
 
