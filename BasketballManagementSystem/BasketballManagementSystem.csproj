@@ -41,6 +41,9 @@
     <Reference Include="CreateFolderLibrary">
       <HintPath>..\..\BMLibrary\CreateFolderLibrary\bin\Debug\CreateFolderLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="CustomCntrol">
+      <HintPath>..\..\BMLibrary\CustomCntrol\bin\Debug\CustomCntrol.dll</HintPath>
+    </Reference>
     <Reference Include="DragDropList">
       <HintPath>..\..\BMLibrary\DragDropList\bin\Debug\DragDropList.dll</HintPath>
     </Reference>
@@ -356,7 +359,9 @@
     <Content Include="BMForm\Input\Picture\Player.png" />
     <None Include="Resources\Player.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

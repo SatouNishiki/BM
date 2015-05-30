@@ -317,13 +317,13 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
         private void PrintFormToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormPrinter f = new FormPrinter();
-            f.PrintForm();
+            f.PrintForm(this);
         }
 
         private void PrintPreviewToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FormPrinter f = new FormPrinter();
-            f.ShowPrintPreview();
+            f.ShowPrintPreview(this);
         }
 
     }
