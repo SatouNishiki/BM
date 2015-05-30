@@ -136,6 +136,18 @@
   <data name="APShiftGraph.Text" xml:space="preserve">
     <value>時間推移グラフ</value>
   </data>
+  <data name="PrintFormToolStripMenuItem.Text" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="PrintPreviewToolStripMenuItem.Text" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>行動傾向点グラフ</value>
   </data>

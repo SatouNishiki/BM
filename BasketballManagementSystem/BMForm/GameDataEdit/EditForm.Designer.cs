@@ -53,8 +53,8 @@
             // 
             // PlayerSelectCombo
             // 
-            this.PlayerSelectCombo.FormattingEnabled = true;
             resources.ApplyResources(this.PlayerSelectCombo, "PlayerSelectCombo");
+            this.PlayerSelectCombo.FormattingEnabled = true;
             this.PlayerSelectCombo.Name = "PlayerSelectCombo";
             // 
             // label1
@@ -69,79 +69,79 @@
             // 
             // ActionSelectConbo
             // 
-            this.ActionSelectConbo.FormattingEnabled = true;
             resources.ApplyResources(this.ActionSelectConbo, "ActionSelectConbo");
+            this.ActionSelectConbo.FormattingEnabled = true;
             this.ActionSelectConbo.Name = "ActionSelectConbo";
             this.ActionSelectConbo.SelectedIndexChanged += new System.EventHandler(this.ActionSelectConbo_SelectedIndexChanged);
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.ActionInfoGridView);
             resources.ApplyResources(this.tabPage3, "tabPage3");
+            this.tabPage3.Controls.Add(this.ActionInfoGridView);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // ActionInfoGridView
             // 
-            this.ActionInfoGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.ActionInfoGridView, "ActionInfoGridView");
+            this.ActionInfoGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ActionInfoGridView.Name = "ActionInfoGridView";
             this.ActionInfoGridView.RowTemplate.Height = 21;
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.PlayerInfoGridView);
             resources.ApplyResources(this.tabPage2, "tabPage2");
+            this.tabPage2.Controls.Add(this.PlayerInfoGridView);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // PlayerInfoGridView
             // 
-            this.PlayerInfoGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             resources.ApplyResources(this.PlayerInfoGridView, "PlayerInfoGridView");
+            this.PlayerInfoGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PlayerInfoGridView.Name = "PlayerInfoGridView";
             this.PlayerInfoGridView.RowTemplate.Height = 21;
             // 
             // DataGridTab
             // 
+            resources.ApplyResources(this.DataGridTab, "DataGridTab");
             this.DataGridTab.Controls.Add(this.tabPage2);
             this.DataGridTab.Controls.Add(this.tabPage3);
-            resources.ApplyResources(this.DataGridTab, "DataGridTab");
             this.DataGridTab.Name = "DataGridTab";
             this.DataGridTab.SelectedIndex = 0;
             // 
             // menuStrip1
             // 
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // FileToolStripMenuItem
             // 
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GameDataSaveItem,
             this.PrintFormItem,
             this.PrintPreviewItem});
             this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
-            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
             // GameDataSaveItem
             // 
-            this.GameDataSaveItem.Name = "GameDataSaveItem";
             resources.ApplyResources(this.GameDataSaveItem, "GameDataSaveItem");
+            this.GameDataSaveItem.Name = "GameDataSaveItem";
             this.GameDataSaveItem.Click += new System.EventHandler(this.gameDataSave_Click);
             // 
             // PrintFormItem
             // 
-            this.PrintFormItem.Name = "PrintFormItem";
             resources.ApplyResources(this.PrintFormItem, "PrintFormItem");
+            this.PrintFormItem.Name = "PrintFormItem";
             this.PrintFormItem.Click += new System.EventHandler(this.printForm_Click);
             // 
             // PrintPreviewItem
             // 
-            this.PrintPreviewItem.Name = "PrintPreviewItem";
             resources.ApplyResources(this.PrintPreviewItem, "PrintPreviewItem");
+            this.PrintPreviewItem.Name = "PrintPreviewItem";
             this.PrintPreviewItem.Click += new System.EventHandler(this.printPreview_Click);
             // 
             // EditForm

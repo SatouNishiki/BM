@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGraphScore));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormGraphScore));
             System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title6 = new System.Windows.Forms.DataVisualization.Charting.Title();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
@@ -64,7 +64,7 @@
             this.Quarter4Chart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.QuarterAllChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PrintFormItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PrintPreviewItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,11 +79,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.Quarter4Chart)).BeginInit();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QuarterAllChart)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // Quarter1Chart
             // 
+            resources.ApplyResources(this.Quarter1Chart, "Quarter1Chart");
             chartArea6.AxisX.Minimum = 0D;
             chartArea6.AxisX.Title = "クォーター開始からの時間[Second]";
             chartArea6.AxisY.Minimum = 0D;
@@ -92,7 +93,6 @@
             this.Quarter1Chart.ChartAreas.Add(chartArea6);
             legend6.Name = "Legend1";
             this.Quarter1Chart.Legends.Add(legend6);
-            resources.ApplyResources(this.Quarter1Chart, "Quarter1Chart");
             this.Quarter1Chart.Name = "Quarter1Chart";
             series6.ChartArea = "ChartArea1";
             series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -105,15 +105,15 @@
             // 
             // MyTeamListBox
             // 
-            this.MyTeamListBox.FormattingEnabled = true;
             resources.ApplyResources(this.MyTeamListBox, "MyTeamListBox");
+            this.MyTeamListBox.FormattingEnabled = true;
             this.MyTeamListBox.Name = "MyTeamListBox";
             this.MyTeamListBox.SelectedIndexChanged += new System.EventHandler(this.List_SelectedIndexChanged);
             // 
             // OppentTeamListBox
             // 
-            this.OppentTeamListBox.FormattingEnabled = true;
             resources.ApplyResources(this.OppentTeamListBox, "OppentTeamListBox");
+            this.OppentTeamListBox.FormattingEnabled = true;
             this.OppentTeamListBox.Name = "OppentTeamListBox";
             this.OppentTeamListBox.SelectedIndexChanged += new System.EventHandler(this.List_SelectedIndexChanged);
             // 
@@ -131,32 +131,33 @@
             // 
             // TabControl1
             // 
+            resources.ApplyResources(this.TabControl1, "TabControl1");
             this.TabControl1.Controls.Add(this.Quarter1);
             this.TabControl1.Controls.Add(this.Quarter2);
             this.TabControl1.Controls.Add(this.Quarter3);
             this.TabControl1.Controls.Add(this.Quarter4);
             this.TabControl1.Controls.Add(this.tabPage1);
-            resources.ApplyResources(this.TabControl1, "TabControl1");
             this.TabControl1.Name = "TabControl1";
             this.TabControl1.SelectedIndex = 0;
             this.TabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             // 
             // Quarter1
             // 
-            this.Quarter1.Controls.Add(this.Quarter1Chart);
             resources.ApplyResources(this.Quarter1, "Quarter1");
+            this.Quarter1.Controls.Add(this.Quarter1Chart);
             this.Quarter1.Name = "Quarter1";
             this.Quarter1.UseVisualStyleBackColor = true;
             // 
             // Quarter2
             // 
-            this.Quarter2.Controls.Add(this.Quarter2Chart);
             resources.ApplyResources(this.Quarter2, "Quarter2");
+            this.Quarter2.Controls.Add(this.Quarter2Chart);
             this.Quarter2.Name = "Quarter2";
             this.Quarter2.UseVisualStyleBackColor = true;
             // 
             // Quarter2Chart
             // 
+            resources.ApplyResources(this.Quarter2Chart, "Quarter2Chart");
             chartArea7.AxisX.Minimum = 0D;
             chartArea7.AxisX.Title = "クォーター開始からの時間[Second]";
             chartArea7.AxisY.Minimum = 0D;
@@ -165,7 +166,6 @@
             this.Quarter2Chart.ChartAreas.Add(chartArea7);
             legend7.Name = "Legend1";
             this.Quarter2Chart.Legends.Add(legend7);
-            resources.ApplyResources(this.Quarter2Chart, "Quarter2Chart");
             this.Quarter2Chart.Name = "Quarter2Chart";
             series7.ChartArea = "ChartArea1";
             series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -178,13 +178,14 @@
             // 
             // Quarter3
             // 
-            this.Quarter3.Controls.Add(this.Quarter3Chart);
             resources.ApplyResources(this.Quarter3, "Quarter3");
+            this.Quarter3.Controls.Add(this.Quarter3Chart);
             this.Quarter3.Name = "Quarter3";
             this.Quarter3.UseVisualStyleBackColor = true;
             // 
             // Quarter3Chart
             // 
+            resources.ApplyResources(this.Quarter3Chart, "Quarter3Chart");
             chartArea8.AxisX.Minimum = 0D;
             chartArea8.AxisX.Title = "クォーター開始からの時間[Second]";
             chartArea8.AxisY.Minimum = 0D;
@@ -193,7 +194,6 @@
             this.Quarter3Chart.ChartAreas.Add(chartArea8);
             legend8.Name = "Legend1";
             this.Quarter3Chart.Legends.Add(legend8);
-            resources.ApplyResources(this.Quarter3Chart, "Quarter3Chart");
             this.Quarter3Chart.Name = "Quarter3Chart";
             series8.ChartArea = "ChartArea1";
             series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -206,13 +206,14 @@
             // 
             // Quarter4
             // 
-            this.Quarter4.Controls.Add(this.Quarter4Chart);
             resources.ApplyResources(this.Quarter4, "Quarter4");
+            this.Quarter4.Controls.Add(this.Quarter4Chart);
             this.Quarter4.Name = "Quarter4";
             this.Quarter4.UseVisualStyleBackColor = true;
             // 
             // Quarter4Chart
             // 
+            resources.ApplyResources(this.Quarter4Chart, "Quarter4Chart");
             chartArea9.AxisX.Minimum = 0D;
             chartArea9.AxisX.Title = "クォーター開始からの時間[Second]";
             chartArea9.AxisY.Minimum = 0D;
@@ -221,7 +222,6 @@
             this.Quarter4Chart.ChartAreas.Add(chartArea9);
             legend9.Name = "Legend1";
             this.Quarter4Chart.Legends.Add(legend9);
-            resources.ApplyResources(this.Quarter4Chart, "Quarter4Chart");
             this.Quarter4Chart.Name = "Quarter4Chart";
             series9.ChartArea = "ChartArea1";
             series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -234,13 +234,14 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.QuarterAllChart);
             resources.ApplyResources(this.tabPage1, "tabPage1");
+            this.tabPage1.Controls.Add(this.QuarterAllChart);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // QuarterAllChart
             // 
+            resources.ApplyResources(this.QuarterAllChart, "QuarterAllChart");
             chartArea10.AxisX.Minimum = 0D;
             chartArea10.AxisX.Title = "試合開始からの時間[Second]";
             chartArea10.AxisY.Minimum = 0D;
@@ -249,7 +250,6 @@
             this.QuarterAllChart.ChartAreas.Add(chartArea10);
             legend10.Name = "Legend1";
             this.QuarterAllChart.Legends.Add(legend10);
-            resources.ApplyResources(this.QuarterAllChart, "QuarterAllChart");
             this.QuarterAllChart.Name = "QuarterAllChart";
             series10.ChartArea = "ChartArea1";
             series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -260,31 +260,31 @@
             title10.Text = "試合全体のグラフ";
             this.QuarterAllChart.Titles.Add(title10);
             // 
-            // menuStrip1
+            // MenuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            resources.ApplyResources(this.MenuStrip, "MenuStrip");
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.Name = "menuStrip1";
+            this.MenuStrip.Name = "MenuStrip";
             // 
             // FileToolStripMenuItem
             // 
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.PrintFormItem,
             this.PrintPreviewItem});
             this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
-            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
             // PrintFormItem
             // 
-            this.PrintFormItem.Name = "PrintFormItem";
             resources.ApplyResources(this.PrintFormItem, "PrintFormItem");
+            this.PrintFormItem.Name = "PrintFormItem";
             this.PrintFormItem.Click += new System.EventHandler(this.PrintForm_Click);
             // 
             // PrintPreviewItem
             // 
-            this.PrintPreviewItem.Name = "PrintPreviewItem";
             resources.ApplyResources(this.PrintPreviewItem, "PrintPreviewItem");
+            this.PrintPreviewItem.Name = "PrintPreviewItem";
             this.PrintPreviewItem.Click += new System.EventHandler(this.PrintPreview_Click);
             // 
             // FormGraphScore
@@ -296,8 +296,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.OppentTeamListBox);
             this.Controls.Add(this.MyTeamListBox);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.MenuStrip);
+            this.MainMenuStrip = this.MenuStrip;
             this.Name = "FormGraphScore";
             ((System.ComponentModel.ISupportInitialize)(this.Quarter1Chart)).EndInit();
             this.TabControl1.ResumeLayout(false);
@@ -310,8 +310,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Quarter4Chart)).EndInit();
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.QuarterAllChart)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,7 +334,7 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart Quarter4Chart;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataVisualization.Charting.Chart QuarterAllChart;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip MenuStrip;
         private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem PrintFormItem;
         private System.Windows.Forms.ToolStripMenuItem PrintPreviewItem;

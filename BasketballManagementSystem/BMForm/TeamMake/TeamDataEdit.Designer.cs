@@ -48,7 +48,7 @@
             this.labelSelectedPlayer = new System.Windows.Forms.Label();
             this.TeamNameTextBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LoadTeamItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveTeamItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -60,18 +60,18 @@
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.MenuStrip.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.AddButton);
             this.groupBox1.Controls.Add(this.NumberTextBox);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.NameTextBox);
             this.groupBox1.Controls.Add(this.label1);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -104,13 +104,13 @@
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.DicisionButton);
             this.groupBox2.Controls.Add(this.EditNumberTextBox);
             this.groupBox2.Controls.Add(this.EditNameTextBox);
             this.groupBox2.Controls.Add(this.DeleteButton);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -150,19 +150,19 @@
             // 
             // groupBox3
             // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.TeamMemberListBox);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.labelSelectedPlayer);
             this.groupBox3.Controls.Add(this.TeamNameTextBox);
             this.groupBox3.Controls.Add(this.label7);
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
             // TeamMemberListBox
             // 
-            this.TeamMemberListBox.FormattingEnabled = true;
             resources.ApplyResources(this.TeamMemberListBox, "TeamMemberListBox");
+            this.TeamMemberListBox.FormattingEnabled = true;
             this.TeamMemberListBox.Name = "TeamMemberListBox";
             this.TeamMemberListBox.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.TeamMemberListBox_ItemCheck);
             this.TeamMemberListBox.SelectedIndexChanged += new System.EventHandler(this.listBox_SelectedIndexChanged);
@@ -187,52 +187,52 @@
             resources.ApplyResources(this.label7, "label7");
             this.label7.Name = "label7";
             // 
-            // menuStrip1
+            // MenuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            resources.ApplyResources(this.MenuStrip, "MenuStrip");
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.Name = "menuStrip1";
+            this.MenuStrip.Name = "MenuStrip";
             // 
             // FileToolStripMenuItem
             // 
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.LoadTeamItem,
             this.SaveTeamItem,
             this.LoadClubItem});
             this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
-            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
             // LoadTeamItem
             // 
-            this.LoadTeamItem.Name = "LoadTeamItem";
             resources.ApplyResources(this.LoadTeamItem, "LoadTeamItem");
+            this.LoadTeamItem.Name = "LoadTeamItem";
             this.LoadTeamItem.Click += new System.EventHandler(this.loadTeam_Click);
             // 
             // SaveTeamItem
             // 
-            this.SaveTeamItem.Name = "SaveTeamItem";
             resources.ApplyResources(this.SaveTeamItem, "SaveTeamItem");
+            this.SaveTeamItem.Name = "SaveTeamItem";
             this.SaveTeamItem.Click += new System.EventHandler(this.saveTeam_Click);
             // 
             // LoadClubItem
             // 
-            this.LoadClubItem.Name = "LoadClubItem";
             resources.ApplyResources(this.LoadClubItem, "LoadClubItem");
+            this.LoadClubItem.Name = "LoadClubItem";
             this.LoadClubItem.Click += new System.EventHandler(this.LoadClub_Click);
             // 
             // ClubMembersListBox
             // 
-            this.ClubMembersListBox.FormattingEnabled = true;
             resources.ApplyResources(this.ClubMembersListBox, "ClubMembersListBox");
+            this.ClubMembersListBox.FormattingEnabled = true;
             this.ClubMembersListBox.Name = "ClubMembersListBox";
             // 
             // groupBox4
             // 
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.IntoMemberButton);
             this.groupBox4.Controls.Add(this.ClubNameLabel);
             this.groupBox4.Controls.Add(this.ClubMembersListBox);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
@@ -256,8 +256,8 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.MenuStrip);
+            this.MainMenuStrip = this.MenuStrip;
             this.Name = "TeamDataEdit";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -265,8 +265,8 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
@@ -289,7 +289,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox TeamNameTextBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip MenuStrip;
         private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem LoadTeamItem;
         private System.Windows.Forms.ToolStripMenuItem SaveTeamItem;

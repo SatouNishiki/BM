@@ -118,26 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="LoadClubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 22</value>
-  </data>
-  <data name="LoadClubToolStripMenuItem.Text" xml:space="preserve">
-    <value>クラブのロード</value>
-  </data>
-  <data name="SaveClubToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 22</value>
-  </data>
-  <data name="SaveClubToolStripMenuItem.Text" xml:space="preserve">
-    <value>クラブのセーブ</value>
-  </data>
   <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 22</value>
   </data>
   <data name="FileToolStripMenuItem.Text" xml:space="preserve">
     <value>ファイル</value>
   </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="MenuStrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>512, 26</value>
+  </data>
+  <data name="MenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ClubMembersListBox.HorizontalScrollbar" type="System.Boolean, mscorlib">
@@ -154,6 +145,18 @@
   </data>
   <data name="groupBox1.Text" xml:space="preserve">
     <value>部員名簿</value>
+  </data>
+  <data name="WomanSelectedRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <data name="WomanSelectedRadioButton.Text" xml:space="preserve">
+    <value>女性</value>
+  </data>
+  <data name="ManSelectedRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <data name="ManSelectedRadioButton.Text" xml:space="preserve">
+    <value>男性</value>
   </data>
   <data name="DeleteButton.Text" xml:space="preserve">
     <value>削除</value>
@@ -179,15 +182,6 @@
   <data name="HeightSelectedTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 19</value>
   </data>
-  <data name="IsManSelectedCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="IsManSelectedCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 16</value>
-  </data>
-  <data name="IsManSelectedCheckBox.Text" xml:space="preserve">
-    <value>男性かどうか</value>
-  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 12</value>
   </data>
@@ -205,6 +199,18 @@
   </data>
   <data name="groupBox2.Text" xml:space="preserve">
     <value>選択メンバー</value>
+  </data>
+  <data name="WomanAddRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <data name="WomanAddRadioButton.Text" xml:space="preserve">
+    <value>女性</value>
+  </data>
+  <data name="ManAddRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 16</value>
+  </data>
+  <data name="ManAddRadioButton.Text" xml:space="preserve">
+    <value>男性</value>
   </data>
   <data name="AddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 23</value>
@@ -229,15 +235,6 @@
   </data>
   <data name="HeightAddTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 19</value>
-  </data>
-  <data name="IsManAddCheckBox.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="IsManAddCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 16</value>
-  </data>
-  <data name="IsManAddCheckBox.Text" xml:space="preserve">
-    <value>男性かどうか</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 12</value>

@@ -48,11 +48,16 @@
             this.APRadarChart = new System.Windows.Forms.TabPage();
             this.APShiftGraph = new System.Windows.Forms.TabPage();
             this.ActionPointShitGraph = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
+            this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.PrintPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.ActionPointChart)).BeginInit();
             this.ActionPointGraphTab.SuspendLayout();
             this.APRadarChart.SuspendLayout();
             this.APShiftGraph.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ActionPointShitGraph)).BeginInit();
+            this.MenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // ActionPointChart
@@ -152,6 +157,33 @@
             this.ActionPointShitGraph.Series.Add(series5);
             this.ActionPointShitGraph.Series.Add(series6);
             // 
+            // MenuStrip
+            // 
+            resources.ApplyResources(this.MenuStrip, "MenuStrip");
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.FileToolStripMenuItem});
+            this.MenuStrip.Name = "MenuStrip";
+            // 
+            // FileToolStripMenuItem
+            // 
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
+            this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.PrintFormToolStripMenuItem,
+            this.PrintPreviewToolStripMenuItem});
+            this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            // 
+            // PrintFormToolStripMenuItem
+            // 
+            resources.ApplyResources(this.PrintFormToolStripMenuItem, "PrintFormToolStripMenuItem");
+            this.PrintFormToolStripMenuItem.Name = "PrintFormToolStripMenuItem";
+            this.PrintFormToolStripMenuItem.Click += new System.EventHandler(this.PrintFormToolStripMenuItem_Click);
+            // 
+            // PrintPreviewToolStripMenuItem
+            // 
+            resources.ApplyResources(this.PrintPreviewToolStripMenuItem, "PrintPreviewToolStripMenuItem");
+            this.PrintPreviewToolStripMenuItem.Name = "PrintPreviewToolStripMenuItem";
+            this.PrintPreviewToolStripMenuItem.Click += new System.EventHandler(this.PrintPreviewToolStripMenuItem_Click);
+            // 
             // FormActionPointGraph
             // 
             resources.ApplyResources(this, "$this");
@@ -161,12 +193,16 @@
             this.Controls.Add(this.OppentTeamName);
             this.Controls.Add(this.OppentTeamList);
             this.Controls.Add(this.MyTeamList);
+            this.Controls.Add(this.MenuStrip);
+            this.MainMenuStrip = this.MenuStrip;
             this.Name = "FormActionPointGraph";
             ((System.ComponentModel.ISupportInitialize)(this.ActionPointChart)).EndInit();
             this.ActionPointGraphTab.ResumeLayout(false);
             this.APRadarChart.ResumeLayout(false);
             this.APShiftGraph.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ActionPointShitGraph)).EndInit();
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -183,5 +219,9 @@
         private System.Windows.Forms.TabPage APRadarChart;
         private System.Windows.Forms.TabPage APShiftGraph;
         private System.Windows.Forms.DataVisualization.Charting.Chart ActionPointShitGraph;
+        private System.Windows.Forms.MenuStrip MenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem PrintFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem PrintPreviewToolStripMenuItem;
     }
 }

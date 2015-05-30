@@ -51,7 +51,7 @@
             this.Shoot3PNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
             this.Shoot2PNumericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ConfigToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -78,7 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.FreeThrowNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Shoot3PNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Shoot2PNumericUpDown)).BeginInit();
-            this.menuStrip1.SuspendLayout();
+            this.MenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AssistNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.StealNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TurnOverNumericUpDown)).BeginInit();
@@ -89,13 +89,13 @@
             // 
             // groupBox3
             // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.FreeThrowMissNumericUpDown);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.Shoot3PMissNumericUpDown);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.Shoot2PMissNumericUpDown);
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -106,8 +106,8 @@
             // 
             // FreeThrowMissNumericUpDown
             // 
-            this.FreeThrowMissNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.FreeThrowMissNumericUpDown, "FreeThrowMissNumericUpDown");
+            this.FreeThrowMissNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FreeThrowMissNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -123,8 +123,8 @@
             // 
             // Shoot3PMissNumericUpDown
             // 
-            this.Shoot3PMissNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.Shoot3PMissNumericUpDown, "Shoot3PMissNumericUpDown");
+            this.Shoot3PMissNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Shoot3PMissNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -140,8 +140,8 @@
             // 
             // Shoot2PMissNumericUpDown
             // 
-            this.Shoot2PMissNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.Shoot2PMissNumericUpDown, "Shoot2PMissNumericUpDown");
+            this.Shoot2PMissNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Shoot2PMissNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -152,6 +152,7 @@
             // 
             // groupBox4
             // 
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.DisQualifyingFaulNumericUpDown);
             this.groupBox4.Controls.Add(this.label12);
@@ -160,7 +161,6 @@
             this.groupBox4.Controls.Add(this.TechnicalFaulNumericUpDown);
             this.groupBox4.Controls.Add(this.label14);
             this.groupBox4.Controls.Add(this.PersonalFaulNumericUpDown);
-            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
@@ -171,8 +171,8 @@
             // 
             // DisQualifyingFaulNumericUpDown
             // 
-            this.DisQualifyingFaulNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.DisQualifyingFaulNumericUpDown, "DisQualifyingFaulNumericUpDown");
+            this.DisQualifyingFaulNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.DisQualifyingFaulNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -188,8 +188,8 @@
             // 
             // UnSportsmanLikeFaulNumericUpDown
             // 
-            this.UnSportsmanLikeFaulNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.UnSportsmanLikeFaulNumericUpDown, "UnSportsmanLikeFaulNumericUpDown");
+            this.UnSportsmanLikeFaulNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.UnSportsmanLikeFaulNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -205,8 +205,8 @@
             // 
             // TechnicalFaulNumericUpDown
             // 
-            this.TechnicalFaulNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.TechnicalFaulNumericUpDown, "TechnicalFaulNumericUpDown");
+            this.TechnicalFaulNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.TechnicalFaulNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -222,8 +222,8 @@
             // 
             // PersonalFaulNumericUpDown
             // 
-            this.PersonalFaulNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.PersonalFaulNumericUpDown, "PersonalFaulNumericUpDown");
+            this.PersonalFaulNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.PersonalFaulNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -239,8 +239,8 @@
             // 
             // FreeThrowNumericUpDown
             // 
-            this.FreeThrowNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.FreeThrowNumericUpDown, "FreeThrowNumericUpDown");
+            this.FreeThrowNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FreeThrowNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -256,8 +256,8 @@
             // 
             // Shoot3PNumericUpDown
             // 
-            this.Shoot3PNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.Shoot3PNumericUpDown, "Shoot3PNumericUpDown");
+            this.Shoot3PNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Shoot3PNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -273,8 +273,8 @@
             // 
             // Shoot2PNumericUpDown
             // 
-            this.Shoot2PNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.Shoot2PNumericUpDown, "Shoot2PNumericUpDown");
+            this.Shoot2PNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Shoot2PNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -283,44 +283,44 @@
             this.Shoot2PNumericUpDown.Name = "Shoot2PNumericUpDown";
             this.Shoot2PNumericUpDown.ReadOnly = true;
             // 
-            // menuStrip1
+            // MenuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            resources.ApplyResources(this.MenuStrip, "MenuStrip");
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileToolStripMenuItem,
             this.ConfigToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.Name = "menuStrip1";
+            this.MenuStrip.Name = "MenuStrip";
             // 
             // FileToolStripMenuItem
             // 
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SaveItem});
             this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
-            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
             // SaveItem
             // 
-            this.SaveItem.Name = "SaveItem";
             resources.ApplyResources(this.SaveItem, "SaveItem");
+            this.SaveItem.Name = "SaveItem";
             this.SaveItem.Click += new System.EventHandler(this.Save_Click);
             // 
             // ConfigToolStripMenuItem
             // 
+            resources.ApplyResources(this.ConfigToolStripMenuItem, "ConfigToolStripMenuItem");
             this.ConfigToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.SettingAPDefaultItem});
             this.ConfigToolStripMenuItem.Name = "ConfigToolStripMenuItem";
-            resources.ApplyResources(this.ConfigToolStripMenuItem, "ConfigToolStripMenuItem");
             // 
             // SettingAPDefaultItem
             // 
-            this.SettingAPDefaultItem.Name = "SettingAPDefaultItem";
             resources.ApplyResources(this.SettingAPDefaultItem, "SettingAPDefaultItem");
+            this.SettingAPDefaultItem.Name = "SettingAPDefaultItem";
             this.SettingAPDefaultItem.Click += new System.EventHandler(this.SettingAPDefault_Click);
             // 
             // AssistNumericUpDown
             // 
-            this.AssistNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.AssistNumericUpDown, "AssistNumericUpDown");
+            this.AssistNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AssistNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -336,8 +336,8 @@
             // 
             // StealNumericUpDown
             // 
-            this.StealNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.StealNumericUpDown, "StealNumericUpDown");
+            this.StealNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.StealNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -353,8 +353,8 @@
             // 
             // TurnOverNumericUpDown
             // 
-            this.TurnOverNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.TurnOverNumericUpDown, "TurnOverNumericUpDown");
+            this.TurnOverNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.TurnOverNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -370,8 +370,8 @@
             // 
             // BlockShootNumericUpDown
             // 
-            this.BlockShootNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             resources.ApplyResources(this.BlockShootNumericUpDown, "BlockShootNumericUpDown");
+            this.BlockShootNumericUpDown.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BlockShootNumericUpDown.Maximum = new decimal(new int[] {
             255,
             0,
@@ -387,18 +387,19 @@
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.FreeThrowNumericUpDown);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.Shoot3PNumericUpDown);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.Shoot2PNumericUpDown);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
             // GroupBox1
             // 
+            resources.ApplyResources(this.GroupBox1, "GroupBox1");
             this.GroupBox1.BackColor = System.Drawing.SystemColors.Control;
             this.GroupBox1.Controls.Add(this.label4);
             this.GroupBox1.Controls.Add(this.BlockShootNumericUpDown);
@@ -408,7 +409,6 @@
             this.GroupBox1.Controls.Add(this.StealNumericUpDown);
             this.GroupBox1.Controls.Add(this.label1);
             this.GroupBox1.Controls.Add(this.AssistNumericUpDown);
-            resources.ApplyResources(this.GroupBox1, "GroupBox1");
             this.GroupBox1.Name = "GroupBox1";
             this.GroupBox1.TabStop = false;
             // 
@@ -419,9 +419,9 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.MenuStrip);
             this.Controls.Add(this.GroupBox1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.MenuStrip;
             this.Name = "ActionPointEditForm";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ActionPointEditForm_FormClosed);
             this.Load += new System.EventHandler(this.ActionPointEditForm_Load);
@@ -439,8 +439,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.FreeThrowNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Shoot3PNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Shoot2PNumericUpDown)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AssistNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.StealNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TurnOverNumericUpDown)).EndInit();
@@ -478,7 +478,7 @@
         private System.Windows.Forms.NumericUpDown TechnicalFaulNumericUpDown;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.NumericUpDown PersonalFaulNumericUpDown;
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip MenuStrip;
         private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SaveItem;
         private System.Windows.Forms.NumericUpDown AssistNumericUpDown;

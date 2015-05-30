@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClubEdit));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LoadClubItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SaveClubItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,6 +50,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.NameSelectedTextBox = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.WomanAddRadioButton = new System.Windows.Forms.RadioButton();
+            this.ManAddRadioButton = new System.Windows.Forms.RadioButton();
             this.AddButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.WeightAddTextBox = new System.Windows.Forms.TextBox();
@@ -59,54 +61,52 @@
             this.label6 = new System.Windows.Forms.Label();
             this.NameAddTextBox = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.WomanAddRadioButton = new System.Windows.Forms.RadioButton();
-            this.ManAddRadioButton = new System.Windows.Forms.RadioButton();
-            this.menuStrip1.SuspendLayout();
+            this.MenuStrip.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // MenuStrip
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            resources.ApplyResources(this.MenuStrip, "MenuStrip");
+            this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
-            this.menuStrip1.Name = "menuStrip1";
+            this.MenuStrip.Name = "MenuStrip";
             // 
             // FileToolStripMenuItem
             // 
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.LoadClubItem,
             this.SaveClubItem});
             this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
-            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
             // LoadClubItem
             // 
-            this.LoadClubItem.Name = "LoadClubItem";
             resources.ApplyResources(this.LoadClubItem, "LoadClubItem");
+            this.LoadClubItem.Name = "LoadClubItem";
             this.LoadClubItem.Click += new System.EventHandler(this.LoadClubToolStripMenuItem_Click);
             // 
             // SaveClubItem
             // 
-            this.SaveClubItem.Name = "SaveClubItem";
             resources.ApplyResources(this.SaveClubItem, "SaveClubItem");
+            this.SaveClubItem.Name = "SaveClubItem";
             this.SaveClubItem.Click += new System.EventHandler(this.SaveClubToolStripMenuItem_Click);
             // 
             // ClubMembersListBox
             // 
-            this.ClubMembersListBox.FormattingEnabled = true;
             resources.ApplyResources(this.ClubMembersListBox, "ClubMembersListBox");
+            this.ClubMembersListBox.FormattingEnabled = true;
             this.ClubMembersListBox.Name = "ClubMembersListBox";
             this.ClubMembersListBox.SelectedIndexChanged += new System.EventHandler(this.ClubMembersListBox_SelectedIndexChanged);
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.ClubNameTextBox);
             this.groupBox1.Controls.Add(this.ClubMembersListBox);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -122,6 +122,7 @@
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.WomanSelectedRadioButton);
             this.groupBox2.Controls.Add(this.ManSelectedRadioButton);
             this.groupBox2.Controls.Add(this.DeleteButton);
@@ -133,7 +134,6 @@
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.NameSelectedTextBox);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -202,6 +202,7 @@
             // 
             // groupBox3
             // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.WomanAddRadioButton);
             this.groupBox3.Controls.Add(this.ManAddRadioButton);
             this.groupBox3.Controls.Add(this.AddButton);
@@ -212,9 +213,22 @@
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.NameAddTextBox);
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
+            // 
+            // WomanAddRadioButton
+            // 
+            resources.ApplyResources(this.WomanAddRadioButton, "WomanAddRadioButton");
+            this.WomanAddRadioButton.Name = "WomanAddRadioButton";
+            this.WomanAddRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // ManAddRadioButton
+            // 
+            resources.ApplyResources(this.ManAddRadioButton, "ManAddRadioButton");
+            this.ManAddRadioButton.Checked = true;
+            this.ManAddRadioButton.Name = "ManAddRadioButton";
+            this.ManAddRadioButton.TabStop = true;
+            this.ManAddRadioButton.UseVisualStyleBackColor = true;
             // 
             // AddButton
             // 
@@ -263,20 +277,6 @@
             resources.ApplyResources(this.label9, "label9");
             this.label9.Name = "label9";
             // 
-            // WomanAddRadioButton
-            // 
-            resources.ApplyResources(this.WomanAddRadioButton, "WomanAddRadioButton");
-            this.WomanAddRadioButton.Name = "WomanAddRadioButton";
-            this.WomanAddRadioButton.UseVisualStyleBackColor = true;
-            // 
-            // ManAddRadioButton
-            // 
-            resources.ApplyResources(this.ManAddRadioButton, "ManAddRadioButton");
-            this.ManAddRadioButton.Checked = true;
-            this.ManAddRadioButton.Name = "ManAddRadioButton";
-            this.ManAddRadioButton.TabStop = true;
-            this.ManAddRadioButton.UseVisualStyleBackColor = true;
-            // 
             // FormClubEdit
             // 
             resources.ApplyResources(this, "$this");
@@ -285,12 +285,12 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
+            this.Controls.Add(this.MenuStrip);
+            this.MainMenuStrip = this.MenuStrip;
             this.Name = "FormClubEdit";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormClubEdit_FormClosing);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.MenuStrip.ResumeLayout(false);
+            this.MenuStrip.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -304,7 +304,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip MenuStrip;
         private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem LoadClubItem;
         private System.Windows.Forms.ToolStripMenuItem SaveClubItem;

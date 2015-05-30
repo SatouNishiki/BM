@@ -118,40 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="groupBox3.Text" xml:space="preserve">
-    <value>Action(ミス)</value>
+    <value>アクション(ミス)</value>
   </data>
   <data name="groupBox4.Text" xml:space="preserve">
-    <value>Action(ファウル)</value>
+    <value>アクション(ファウル)</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="fileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="fileToolStripMenuItem.Text" xml:space="preserve">
-    <value>ファイル</value>
-  </data>
-  <data name="save.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="SaveItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>152, 22</value>
   </data>
-  <data name="save.Text" xml:space="preserve">
-    <value>セーブ</value>
+  <data name="SaveItem.Text" xml:space="preserve">
+    <value>保存</value>
   </data>
-  <data name="configToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル</value>
+  </data>
+  <data name="SettingAPDefaultItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 22</value>
+  </data>
+  <data name="SettingAPDefaultItem.Text" xml:space="preserve">
+    <value>傾向点を全て元に戻す</value>
+  </data>
+  <data name="ConfigToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 22</value>
   </data>
-  <data name="configToolStripMenuItem.Text" xml:space="preserve">
+  <data name="ConfigToolStripMenuItem.Text" xml:space="preserve">
     <value>設定</value>
   </data>
-  <data name="settingAPDefault.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 22</value>
-  </data>
-  <data name="settingAPDefault.Text" xml:space="preserve">
-    <value>APをデフォルトに戻す</value>
-  </data>
   <data name="groupBox2.Text" xml:space="preserve">
-    <value>Action(得点)</value>
+    <value>アクション(得点)</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Action(通常)</value>
+  <data name="GroupBox1.Text" xml:space="preserve">
+    <value>アクション(通常)</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>行動傾向点設定</value>
   </data>
 </root>

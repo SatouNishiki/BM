@@ -118,46 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>選手選択</value>
-  </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 12</value>
+    <value>33, 12</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>アクション選択</value>
+    <value>ポート</value>
   </data>
-  <data name="tabPage3.Text" xml:space="preserve">
-    <value>アクション情報</value>
+  <data name="WriteTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>458, 101</value>
   </data>
-  <data name="tabPage2.Text" xml:space="preserve">
-    <value>選手情報</value>
+  <data name="SendButton.Text" xml:space="preserve">
+    <value>送信</value>
   </data>
-  <data name="GameDataSaveItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 22</value>
+  <data name="ReadTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>458, 136</value>
   </data>
-  <data name="GameDataSaveItem.Text" xml:space="preserve">
-    <value>ゲームデータ保存</value>
+  <data name="LogTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>458, 102</value>
   </data>
-  <data name="PrintFormItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 22</value>
+  <data name="ReadLabel.Text" xml:space="preserve">
+    <value>受信文字</value>
   </data>
-  <data name="PrintFormItem.Text" xml:space="preserve">
-    <value>印刷</value>
+  <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>527, 258</value>
   </data>
-  <data name="PrintPreviewItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>172, 22</value>
+  <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 102</value>
   </data>
-  <data name="PrintPreviewItem.Text" xml:space="preserve">
-    <value>印刷プレビュー</value>
+  <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>527, 5</value>
   </data>
-  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
+  <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>527, 114</value>
   </data>
-  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
-    <value>ファイル</value>
+  <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 136</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>TCPクライアント</value>
   </data>
 </root>

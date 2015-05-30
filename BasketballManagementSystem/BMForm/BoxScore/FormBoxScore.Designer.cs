@@ -6367,8 +6367,8 @@
             // 
             // label126
             // 
-            this.label126.BackColor = System.Drawing.SystemColors.Control;
             resources.ApplyResources(this.label126, "label126");
+            this.label126.BackColor = System.Drawing.SystemColors.Control;
             this.label126.Name = "label126";
             // 
             // GamePlaceLabel
@@ -6999,29 +6999,29 @@
             // 
             // menuStrip1
             // 
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ToolStripMenuItem});
-            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
             // 
             // ToolStripMenuItem
             // 
+            resources.ApplyResources(this.ToolStripMenuItem, "ToolStripMenuItem");
             this.ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.PrintFormItem,
             this.PrintPreviewItem});
             this.ToolStripMenuItem.Name = "ToolStripMenuItem";
-            resources.ApplyResources(this.ToolStripMenuItem, "ToolStripMenuItem");
             // 
             // PrintFormItem
             // 
-            this.PrintFormItem.Name = "PrintFormItem";
             resources.ApplyResources(this.PrintFormItem, "PrintFormItem");
+            this.PrintFormItem.Name = "PrintFormItem";
             this.PrintFormItem.Click += new System.EventHandler(this.PrintForm_Click);
             // 
             // PrintPreviewItem
             // 
-            this.PrintPreviewItem.Name = "PrintPreviewItem";
             resources.ApplyResources(this.PrintPreviewItem, "PrintPreviewItem");
+            this.PrintPreviewItem.Name = "PrintPreviewItem";
             this.PrintPreviewItem.Click += new System.EventHandler(this.PrintPreview_Click);
             // 
             // FormBoxScore
