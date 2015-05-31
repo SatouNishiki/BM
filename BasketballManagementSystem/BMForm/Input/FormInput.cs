@@ -163,7 +163,7 @@ namespace BasketballManagementSystem.BMForm.Input
                 }
                 catch (Exception exc)
                 {
-                    BMErrorLibrary.BMError.ErrorMessageOutput(exc.ToString());
+                    BMErrorLibrary.BMError.ErrorMessageOutput(exc.ToString(), true);
                     return -1;
                 }
             }
@@ -530,7 +530,7 @@ namespace BasketballManagementSystem.BMForm.Input
             {
                 SelectedPlayer = new Player("No Name", 0);
                
-                BMErrorLibrary.BMError.ErrorMessageOutput(exception.Message);
+                BMErrorLibrary.BMError.ErrorMessageOutput(exception.Message, true);
             }
         }
 
@@ -545,7 +545,7 @@ namespace BasketballManagementSystem.BMForm.Input
                 }
                 catch (Exception exc)
                 {
-                    BMErrorLibrary.BMError.ErrorMessageOutput(exc.ToString());
+                    BMErrorLibrary.BMError.ErrorMessageOutput(exc.ToString(), true);
                 }
                 if (StopGameItem.Enabled)
                 {
@@ -575,7 +575,7 @@ namespace BasketballManagementSystem.BMForm.Input
                 }
                 catch (Exception exc)
                 {
-                    BMErrorLibrary.BMError.ErrorMessageOutput(exc.ToString());
+                    BMErrorLibrary.BMError.ErrorMessageOutput(exc.ToString(), true);
                 }
                 if (StopGameItem.Enabled)
                 {
@@ -808,7 +808,7 @@ namespace BasketballManagementSystem.BMForm.Input
             {
                 GameNameText.Text = "Game1";
                 Game.Name = "Game1";
-                BMErrorLibrary.BMError.ErrorMessageOutput(ex.ToString());
+                BMErrorLibrary.BMError.ErrorMessageOutput(ex.ToString(), true);
             }
         }
 
@@ -822,7 +822,7 @@ namespace BasketballManagementSystem.BMForm.Input
             {
                 Game.Location = "NoInputLocation";
                 GameLocationText.Text = "NoInputLocation";
-                BMErrorLibrary.BMError.ErrorMessageOutput(ex.ToString());
+                BMErrorLibrary.BMError.ErrorMessageOutput(ex.ToString(), true);
             }
         }
 

@@ -46,7 +46,7 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
             }
             else
             {
-                BMError.ErrorMessageOutput("自チーム、相手チーム共に選択している選手が見つかりませんでした");
+                BMError.ErrorMessageOutput("自チーム、相手チーム共に選択している選手が見つかりませんでした", true);
             }
         }
 
@@ -181,7 +181,7 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
             }
             catch(Exception exc)
             {
-                BMError.ErrorMessageOutput(exc.Message);
+                BMError.ErrorMessageOutput(exc.Message, true);
             }
 
 

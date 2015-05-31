@@ -68,7 +68,7 @@ namespace BasketballManagementSystem.BMForm.TeamMake
                     }
                     else
                     {
-                        BMError.ErrorMessageOutput("stream is null");
+                        BMError.ErrorMessageOutput("stream is null", true);
                     }
                 }
             }
@@ -171,7 +171,7 @@ namespace BasketballManagementSystem.BMForm.TeamMake
                     }
                     else
                     {
-                        BMError.ErrorMessageOutput("stream is null !!");
+                        BMError.ErrorMessageOutput("stream is null !!", true);
                     }
                 }
             }
@@ -257,7 +257,7 @@ namespace BasketballManagementSystem.BMForm.TeamMake
                     }
                     else
                     {
-                        BMError.ErrorMessageOutput("stream is null !!");
+                        BMError.ErrorMessageOutput("stream is null !!", true);
                     }
                 }
             }
@@ -328,7 +328,7 @@ namespace BasketballManagementSystem.BMForm.TeamMake
             }
             else
             {
-                BMError.ErrorMessageOutput("選択選手が見つかりませんでした");
+                BMError.ErrorMessageOutput("選択選手が見つかりませんでした", true);
             }
             
         }

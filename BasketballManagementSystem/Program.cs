@@ -33,7 +33,7 @@ namespace BasketballManagementSystem.BMForm.Input
                 }
                 catch (Exception ex)
                 {
-                    BMErrorLibrary.BMError.ErrorMessageOutput(ex.Message);
+                    BMErrorLibrary.BMError.ErrorMessageOutput(ex.Message, true);
                 }
             }
 

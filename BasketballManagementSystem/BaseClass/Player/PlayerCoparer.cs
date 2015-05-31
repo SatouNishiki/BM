@@ -15,13 +15,13 @@ namespace BasketballManagementSystem.BaseClass.Player
             //nullってたら殺す
             if (x == null || y == null)
             {
-                BMError.ErrorMessageOutput("値がnullなので比較できません");
+                BMError.ErrorMessageOutput("値がnullなので比較できません", true);
                 throw new ArgumentException("Player :: 値がnullなので比較できません");
             }
 
             if (x.GetType() != typeof(Player) || y.GetType() != typeof(Player))
             {
-                BMError.ErrorMessageOutput("型が違うので比較できません");
+                BMError.ErrorMessageOutput("型が違うので比較できません", true);
                 throw new ArgumentException("Player :: 型が違うので比較できません");
             }
 

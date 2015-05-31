@@ -529,7 +529,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
                     valuationBasisPercent = 50;
                     PercentTextBox.Text = "50";
 
-                    BMErrorLibrary.BMError.ErrorMessageOutput("評価基準に不正な値が入力されました");
+                    BMErrorLibrary.BMError.ErrorMessageOutput("評価基準に不正な値が入力されました", true);
                 }
             }
             else

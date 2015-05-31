@@ -105,7 +105,7 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
                     }
                     catch(Exception exc)
                     {
-                        BMError.ErrorMessageOutput(exc.Message);
+                        BMError.ErrorMessageOutput(exc.Message, true);
                         return -1;
                     }
 
@@ -143,7 +143,7 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
                     }
                     catch (Exception exc)
                     {
-                        BMError.ErrorMessageOutput(exc.Message);
+                        BMError.ErrorMessageOutput(exc.Message, true);
                         return;
                     }
 

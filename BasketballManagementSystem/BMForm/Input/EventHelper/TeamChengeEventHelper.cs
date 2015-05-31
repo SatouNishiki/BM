@@ -52,7 +52,7 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
                 }
                 else
                 {
-                    BMError.ErrorMessageOutput("stream is null");
+                    BMError.ErrorMessageOutput("stream is null", true);
                 }
             }
         }
@@ -92,7 +92,7 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
                 }
                 else
                 {
-                    BMError.ErrorMessageOutput("stream is null");
+                    BMError.ErrorMessageOutput("stream is null", true);
                 }
             }
         }

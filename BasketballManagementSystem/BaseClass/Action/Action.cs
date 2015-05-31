@@ -126,7 +126,7 @@ namespace BasketballManagementSystem.BaseClass.Action
             }
             catch (Exception exc)
             {
-                BMErrorLibrary.BMError.ErrorMessageOutput(exc.Message);
+                BMErrorLibrary.BMError.ErrorMessageOutput(exc.Message, true);
                 return null;
             }
         }

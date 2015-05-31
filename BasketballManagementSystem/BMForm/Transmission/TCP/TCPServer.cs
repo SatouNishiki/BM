@@ -13,6 +13,7 @@ using BasketballManagementSystem.BaseClass.Game;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using BasketballManagementSystem.BMForm.Input;
+using BMErrorLibrary;
 
 namespace BasketballManagementSystem.BMForm.Transmission.TCP
 {
@@ -119,6 +120,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             {
                 //エラーが起きた
                 WriteLog("サーバ接続エラー:" + ex.Message.ToString());
+                BMError.ErrorMessageOutput(ex.Message.ToString(), true);
                 Listener.Stop();
                 picIndicator.BackColor = Color.Navy;
                 return (false);
@@ -156,14 +158,16 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                     handler.StartRead();
                 } while (true);
             }
-            catch (System.Threading.ThreadAbortException)
+            catch (System.Threading.ThreadAbortException ex)
             {
                 //スレッドが閉じられた時に発生
+                BMError.ErrorMessageOutput(ex.ToString(), false);
                 return;
             }
-            catch (System.Net.Sockets.SocketException)
+            catch (System.Net.Sockets.SocketException ex)
             {
                 //スレッドが閉じられた時に発生
+                BMError.ErrorMessageOutput(ex.ToString(), false);
                 return;
             }
             catch (Exception ex)
@@ -171,6 +175,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 //デリゲートでエラーを書き込む
                 this.LogTextBox.BeginInvoke(new WriteLogDelegate(WriteLog)
                               , new object[] { "受信エラー　" + ex.ToString() });
+                BMError.ErrorMessageOutput(ex.ToString(), true);
                 return;
             }
         }
@@ -229,6 +234,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                     catch (Exception ex)
                     {
                         WriteLog(ex.Message);
+                        BMError.ErrorMessageOutput(ex.ToString(), true);
                     }
                 }
             }
@@ -371,6 +377,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             catch (Exception ex)
             {
                 WriteLog(ex.Message);
+                BMError.ErrorMessageOutput(ex.ToString(), true);
             }
         }
 
@@ -578,15 +585,17 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 }
 
             }
-            catch (System.Net.Sockets.SocketException)
+            catch (System.Net.Sockets.SocketException ex)
             {
                 //スレッドが閉じられた時に発生
+                BMError.ErrorMessageOutput(ex.ToString(), false);
                 //何もしません;
                 return;
             }
-            catch (System.IO.IOException)
+            catch (System.IO.IOException ex)
             {
                 //スレッドが閉じられた時に発生
+                BMError.ErrorMessageOutput(ex.ToString(), false);
                 return;
             }
             catch (Exception ex)
@@ -594,6 +603,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 //エラーログの書き込み
                 fomServer.Invoke(new WriteLogDelegate(fomServer.WriteLog)
                 , new object[] { "受信エラーが起こりました " + ex.ToString() });
+                BMError.ErrorMessageOutput(ex.ToString(), true);
             }
         }
 

@@ -74,7 +74,7 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
                 }
                 else
                 {
-                    BMError.ErrorMessageOutput("stream is null !!");
+                    BMError.ErrorMessageOutput("stream is null !!", true);
                 }
             }
         }
@@ -132,7 +132,7 @@ namespace BasketballManagementSystem.BMForm.ClubEdit
                 }
                 else
                 {
-                    BMError.ErrorMessageOutput("stream is null !!");
+                    BMError.ErrorMessageOutput("stream is null !!", true);
                 }
             }
         }

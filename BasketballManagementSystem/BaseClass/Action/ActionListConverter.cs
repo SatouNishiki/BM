@@ -22,7 +22,7 @@ namespace BasketballManagementSystem.BaseClass.Action
             {
                 if (!(obj is Action))
                 {
-                    BMError.ErrorMessageOutput("不正な型変換が行われました");
+                    BMError.ErrorMessageOutput("不正な型変換が行われました", true);
                     return null;
                 }
 
@@ -46,7 +46,7 @@ namespace BasketballManagementSystem.BaseClass.Action
             {
                 if (!(obj is Action))
                 {
-                    BMError.ErrorMessageOutput("不正な変換が行われました");
+                    BMError.ErrorMessageOutput("不正な変換が行われました", true);
                     return null;
                 }
 

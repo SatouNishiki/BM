@@ -147,7 +147,7 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
                 }
                 catch (Exception exc)
                 {
-                    BMErrorLibrary.BMError.ErrorMessageOutput(exc.Message);
+                    BMErrorLibrary.BMError.ErrorMessageOutput(exc.Message, true);
                 }
             }
 

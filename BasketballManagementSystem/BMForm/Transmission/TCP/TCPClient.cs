@@ -113,7 +113,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             catch (Exception ex)
             {
                 writeLog("クライアント接続エラー:" + ex.Message.ToString());
-                BMError.ErrorMessageOutput(ex.Message);
+                BMError.ErrorMessageOutput(ex.Message, true);
                 IndicatorPctureBox.BackColor = Color.Navy;
                 return (false);
             }
@@ -192,16 +192,17 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                         return;
                     }
                 }
-                catch (System.Threading.ThreadAbortException)
+                catch (System.Threading.ThreadAbortException ex)
                 {
                     //何もしません;
+                    BMError.ErrorMessageOutput(ex.ToString(), false);
                     return;
                 }
                 catch (Exception ex)
                 {
                     this.LogTextBox.BeginInvoke(new WriteTextDelegate(writeLog)
                             , new object[] { "受信エラー　　" + ex.ToString() });
-                    BMError.ErrorMessageOutput(ex.Message);
+                    BMError.ErrorMessageOutput(ex.Message, false);
                     return;
                 }
             }
@@ -305,7 +306,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             catch (Exception exc)
             {
                 writeLog("送信エラー:" + exc.Message);
-                BMError.ErrorMessageOutput(exc.Message);
+                BMError.ErrorMessageOutput(exc.Message, true);
             }
         }
 
@@ -382,7 +383,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             catch (Exception exc)
             {
                 writeLog("送信エラー:" + exc.Message);
-                BMError.ErrorMessageOutput(exc.Message);
+                BMError.ErrorMessageOutput(exc.Message, true);
             }
         }
 

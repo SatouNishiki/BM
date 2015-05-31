@@ -456,7 +456,7 @@ namespace BasketballManagementSystem.BaseClass.Player
             }
             catch (Exception exc)
             {
-                BMErrorLibrary.BMError.ErrorMessageOutput(exc.Message);
+                BMErrorLibrary.BMError.ErrorMessageOutput(exc.Message, true);
                 return null;
             }
         }
@@ -488,7 +488,7 @@ namespace BasketballManagementSystem.BaseClass.Player
             }
             catch (Exception exc)
             {
-                BMErrorLibrary.BMError.ErrorMessageOutput(exc.Message);
+                BMErrorLibrary.BMError.ErrorMessageOutput(exc.Message, true);
                 return;
             }
         }
@@ -526,7 +526,7 @@ namespace BasketballManagementSystem.BaseClass.Player
                 }
                 catch(Exception exc)
                 {
-                    BMErrorLibrary.BMError.ErrorMessageOutput(exc.Message);
+                    BMErrorLibrary.BMError.ErrorMessageOutput(exc.Message, true);
                     return null;
                 }
             }
