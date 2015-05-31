@@ -85,7 +85,7 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
                 IntoDragDropBox(Bench2DragDropBox, "Player_Red.png", count * width, height, true, OppentPlayerTag + count);
 
 
-            IntoDragDropBox(Bench2DragDropBox, "Ball.png", count * width, height, true, BallTag);
+            IntoDragDropBox(Bench2DragDropBox, "Ball2.png", count * width, height, true, BallTag);
 
         }
 

@@ -352,7 +352,7 @@
     <EmbeddedResource Include="BMForm\StrategySimulation\Picture\basketball_court.png" />
     <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Player_Red.png" />
     <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Player_Dark.png" />
-    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Ball.png" />
+    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Ball2.png" />
     <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Ball_Dark.png" />
     <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Player_Red_Dark.png" />
     <Content Include="BMForm\Tactick2D\Picture\basketball_court.png" />
