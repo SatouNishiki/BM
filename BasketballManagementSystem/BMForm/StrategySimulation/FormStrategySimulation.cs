@@ -11,6 +11,8 @@ using BasketballManagementSystem.BaseClass.Game;
 using BasketballManagementSystem.Manager.SaveDataManager;
 using BasketballManagementSystem.BaseClass.Player;
 using DragDropPictureBox;
+using System.Reflection;
+using BasketballManagementSystem.BaseClass.Position;
 
 namespace BasketballManagementSystem.BMForm.StrategySimulation
 {
@@ -18,82 +20,280 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
     {
         private Game game = SaveDataManager.GetInstance().GetGame();
 
-        private const int PermissionPlayerCount = 5;
+        /// <summary>
+        /// 下のほうのベンチにいる人とかボールとかの合計数
+        /// </summary>
+        private const int OtherObjectCount = 6;
+
+        private const string BallTag = "ボール";
+        private const string OppentPlayerTag = "相手プレイヤー";
+
+        private Assembly myAssembly = Assembly.GetExecutingAssembly();
+
+        /// <summary>
+        /// シュミレーションのアニメを回すときに今どこをまわしてるのかを知るために使用
+        /// </summary>
+        private int animationCount = 0;
+
+        private int moveFinishMemberCount = 0;
+
+        /// <summary>
+        /// liteFPSモードのときのループ数計算カウンターとして使用
+        /// </summary>
+        private int loopCount = 0;
+
+        private bool isLiteFPSMode = false;
+
+        /// <summary>
+        /// シュミレート前にリストの中身を覚えるために使用
+        /// </summary>
+        private List<Board> boardListBoxItems = new List<Board>();
 
         public FormStrategySimulation()
         {
             InitializeComponent();
 
-            System.Reflection.Assembly myAssembly =
-    System.Reflection.Assembly.GetExecutingAssembly();
-
-
+            //今何個目の要素を入れようとしてるか
             int count = 0;
+
+            //入れようとしてるDragDropBoxの幅
             int width;
 
+            //0除算起こらないように
             if (game.MyTeam.TeamMember.Count != 0)
-            {
-                width = dragDropBoxBench.Width / game.MyTeam.TeamMember.Count;
-            }
+                width = BenchDragDropBox.Width / game.MyTeam.TeamMember.Count;
             else
-            {
                 width = 0;
-            }
+
+            //画像表示するときの高さ
             int height = 10;
 
 
-            foreach (Player p in game.MyTeam.TeamMember)
+            foreach (var p in game.MyTeam.TeamMember)
             {
-                Bitmap playerGraph = new Bitmap(myAssembly.GetManifestResourceStream
-                     ("BasketballManagementSystem.BMForm.StrategySimulation.Picture.People.png"));
-
-                playerGraph.Tag = p.ToString();
-
                 if (count % 2 == 0)
-                {
-                    dragDropBoxBench.LocationBitmapList.Add(new LocationBitmap(playerGraph, new Point(count * width, height)));
-                }
+                    IntoDragDropBox(BenchDragDropBox, "Player_Blue.png", count * width, height, true, p.ToString());
                 else
-                {
-                    dragDropBoxBench.LocationBitmapList.Add(new LocationBitmap(playerGraph, new Point(count * width, height + dragDropBoxBench.Height / 2)));
-                }
+                    IntoDragDropBox(BenchDragDropBox, "Player_Blue.png", count * width, height + BenchDragDropBox.Height / 2, true, p.ToString());
 
                 count++;
-
             }
 
-            width = dragDropBoxBench2.Width / PermissionPlayerCount;
+            width = Bench2DragDropBox.Width / OtherObjectCount;
 
-            Bitmap playerGraph2 = new Bitmap(myAssembly.GetManifestResourceStream
-                     ("BasketballManagementSystem.BMForm.StrategySimulation.Picture.Player2.png"));
+            for (count = 0; count < OtherObjectCount - 1; count++)
+                IntoDragDropBox(Bench2DragDropBox, "Player_Red.png", count * width, height, true, OppentPlayerTag + count);
 
-            for (count = 0; count < PermissionPlayerCount; count++)
-            {
-                dragDropBoxBench2.LocationBitmapList.Add(new LocationBitmap(playerGraph2, new Point(count * width, height)));
-            }
+
+            IntoDragDropBox(Bench2DragDropBox, "Ball.png", count * width, height, true, BallTag);
+
         }
 
-        private void buttonAddBoard_Click(object sender, EventArgs e)
+        /// <summary>
+        /// 指定されたdragdropboxに画像を入れる
+        /// </summary>
+        /// <param name="dragDropBox">対象</param>
+        /// <param name="pictureName">画像の名前</param>
+        /// <param name="x">x座標</param>
+        /// <param name="y">y座標</param>
+        /// <param name="canMove">動かせるかどうか</param>
+        /// <param name="tag">タグ付与(何もなければnull)</param>
+        private void IntoDragDropBox(DragDropBox dragDropBox, string pictureName, int x, int y, bool canMove, object tag)
         {
+            Bitmap bitmap = CreateBitmap(pictureName);
+
+            bitmap.Tag = tag;
+
+            LocationBitmap l = new LocationBitmap(bitmap, new Point(x, y));
+            l.CanMove = canMove;
+
+            dragDropBox.LocationBitmapList.Add(l);
+        }
+
+        /// <summary>
+        /// 指定された名前の画像をbitmapにして返す
+        /// </summary>
+        /// <param name="pictureName"></param>
+        /// <returns></returns>
+        private Bitmap CreateBitmap(string pictureName)
+        {
+            return new Bitmap(myAssembly.GetManifestResourceStream
+                     ("BasketballManagementSystem.BMForm.StrategySimulation.Picture." + pictureName));
+        }
+
+        private void AddBoardButton_Click(object sender, EventArgs e)
+        {
+            if (dragDropBoxCort.LocationBitmapList.Count == 0)
+            {
+                MessageBox.Show("盤面に何も無いので追加できません");
+                return;
+            }
+
             Board board = new Board();
 
-            foreach (LocationBitmap lb in dragDropBoxCort.LocationBitmapList)
+            foreach (var lb in dragDropBoxCort.LocationBitmapList)
             {
-                LocationBitmap l = lb.CloneDeep();
 
-                board.FieldMembers.Add(l);
+                if (lb.CanMove)
+                {
+                    LocationBitmap l = new LocationBitmap();
+
+                    Bitmap playerGraph;
+
+                    if (((string)lb.Graphics.Tag).Contains(BallTag))
+                    {
+                        playerGraph = CreateBitmap("Ball_Dark.png");
+                    }
+                    else if (((string)lb.Graphics.Tag).Contains(OppentPlayerTag))
+                    {
+                        playerGraph = CreateBitmap("Player_Red_Dark.png");
+                    }
+                    else
+                    {
+                        playerGraph = CreateBitmap("Player_Dark.png");
+                    }
+
+                    l.CanMove = false;
+                    l.Graphics = playerGraph;
+                    l.Graphics.Tag = lb.Graphics.Tag;
+                    l.Location = lb.Location;
+                    board.FieldMembers.Add(l);
+                }
             }
 
-            board.ExecuteTime = listBoxBoard.Items.Count;
+            board.ExecuteTime = BoardListBox.Items.Count;
 
-            listBoxBoard.Items.Add(board);
+            BoardListBox.Items.Add(board);
         }
 
-        private void listBoxBoard_SelectedIndexChanged(object sender, EventArgs e)
+        private void BoardListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
+            BoardChangeFromIndex(BoardListBox.SelectedIndex);
+        }
+
+        private void BoardChangeFromIndex(int index)
+        {
+            dragDropBoxCort.LocationBitmapList.RemoveAll(l => !l.CanMove);
+
+            foreach (var locationBitmap in ((Board)BoardListBox.Items[index]).FieldMembers)
+            {
+                dragDropBoxCort.LocationBitmapList.Add(locationBitmap);
+            }
+
+            dragDropBoxCort.Refresh();
+        }
+
+        private void SimulateButton_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("シュミレーションを開始しますか？",
+                                                  "確認",
+                                                  MessageBoxButtons.OKCancel,
+                                                  MessageBoxIcon.Question,
+                                                  MessageBoxDefaultButton.Button2);
+
+            if (result == DialogResult.Cancel)
+                return;
+
+            //リストボックスを保存
+            boardListBoxItems.Clear();
+            foreach (Board b in BoardListBox.Items)
+            {
+                Board b2 = new Board();
+                
+                foreach (var m in b.FieldMembers)
+                {
+                    LocationBitmap l = new LocationBitmap();
+                    l = m.CloneDeep();
+                    l.Graphics.Tag = m.Graphics.Tag;
+                    b2.FieldMembers.Add(l);
+                }
+
+                b2.ExecuteTime = b.ExecuteTime;
+
+                boardListBoxItems.Add(b2);
+            }
+
+            BoardListBox.Enabled = false;
+            AddBoardButton.Enabled = false;
+            SimulateButton.Enabled = false;
+
+            SimulationFPSTimer.Enabled = true;
+        }
+
+        private void SimulationFPSTimer_Tick(object sender, EventArgs e)
+        {
+            if (BoardListBox.Items.Count == 0 || animationCount + 1 == BoardListBox.Items.Count)
+            {
+                SimulationFPSTimer.Enabled = false;
+                BoardChangeFromIndex(animationCount);
+                animationCount = 0;
+
+                //リストボックスを復元
+                BoardListBox.Items.Clear();
+                foreach (Board b in boardListBoxItems)
+                {
+                    BoardListBox.Items.Add(b);
+                }
+
+                BoardListBox.Enabled = true;
+                AddBoardButton.Enabled = true;
+                SimulateButton.Enabled = true;
+                return;
+            }
+
+            //全員が移動終わるまでループ
+            if (moveFinishMemberCount < ((Board)BoardListBox.Items[animationCount]).FieldMembers.Count)
+            {
+
+                foreach (var graph in ((Board)BoardListBox.Items[animationCount]).FieldMembers)
+                {
+                    foreach (var nextGraph in ((Board)BoardListBox.Items[animationCount + 1]).FieldMembers)
+                    {
+                        if (graph.Graphics.Tag.ToString() == nextGraph.Graphics.Tag.ToString())
+                        {
+                            if (nextGraph.Location.X > graph.Location.X)
+                                graph.Location = new Point(graph.Location.X + 1, graph.Location.Y);
+                            else
+                                graph.Location = new Point(graph.Location.X - 1, graph.Location.Y);
+
+                            if (graph.Location.Y != nextGraph.Location.Y)
+                            {
+                                if (nextGraph.Location.Y > graph.Location.Y)
+                                    graph.Location = new Point(graph.Location.X, graph.Location.Y + 1);
+                                else
+                                    graph.Location = new Point(graph.Location.X, graph.Location.Y - 1);
+                            }
+
+                            if (graph.Location == nextGraph.Location)
+                            {
+                                moveFinishMemberCount++;
+                            }
+
+                        }
+                    }
+
+                    if (isLiteFPSMode && loopCount % 2 == 0)
+                        BoardChangeFromIndex(animationCount);
+
+                    if(!isLiteFPSMode)
+                        BoardChangeFromIndex(animationCount);
+
+                    loopCount++;
+                }
+            }
+            else
+            {
+                moveFinishMemberCount = 0;
+                animationCount++;
+            }
 
         }
 
+        private void UseLiteFPSModeItem_Click(object sender, EventArgs e)
+        {
+            UseLiteFPSModeItem.Checked = !UseLiteFPSModeItem.Checked;
+            isLiteFPSMode = UseLiteFPSModeItem.Checked;
+        }
 
     }
 }

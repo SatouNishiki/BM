@@ -212,9 +212,6 @@
     <Compile Include="BMForm\Transmission\TCP\TCPClient.Designer.cs">
       <DependentUpon>TCPClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Interface\IClose.cs" />
-    <Compile Include="Interface\Init\IInit.cs" />
-    <Compile Include="Interface\loder\ILorder.cs" />
     <Compile Include="Manager\PictureManager\PictureManager.cs" />
     <Compile Include="Manager\PrintManager\FormPrinter.cs" />
     <Compile Include="Manager\TeamManager\TeamManager.cs" />
@@ -351,10 +348,13 @@
     <Content Include="BMForm\Input\Picture\wakuwaku.png" />
     <Content Include="BMForm\Input\Picture\wakuwakuw.png" />
     <Content Include="BMForm\Input\Picture\Yajirusi.png" />
-    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\People.png" />
-    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\ball.png" />
+    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Player_Blue.png" />
     <EmbeddedResource Include="BMForm\StrategySimulation\Picture\basketball_court.png" />
-    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Player2.png" />
+    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Player_Red.png" />
+    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Player_Dark.png" />
+    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Ball.png" />
+    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Ball_Dark.png" />
+    <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Player_Red_Dark.png" />
     <Content Include="BMForm\Tactick2D\Picture\basketball_court.png" />
     <Content Include="BMForm\Input\Picture\Player.png" />
     <None Include="Resources\Player.png" />

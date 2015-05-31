@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="dragDropBoxBench.LocationBitmapList" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="BenchDragDropBox.LocationBitmapList" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAJgBRHJhZ0Ryb3BQaWN0dXJlQm94LCBWZXJzaW9uPTEuMC4wLjAs
         IEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbF1dLCBtc2NvcmxpYiwgVmVyc2lvbj00
@@ -133,7 +133,7 @@
   <data name="dragDropBoxCort.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABC4AAAI+CAYAAABzKUsHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADr8AAA6/ATgFUyQAAFBjSURBVHhe7d1/sG7XQd/njIC2w4xb2qatDNTTgUYzbdUy
+        YQUAAAAJcEhZcwAADr0AAA69AUf7kK0AAFBjSURBVHhe7d1/sG7XQd/njIC2w4xb2qatDNTTgUYzbdUy
         AU2nJKFJLTdRE2agpDMuJEEdOmpKoS5jmGAk2UbCtkoMlUw8di7YyggHqVWFBZZRjfAP4QrXAScGQe0w
         wQRZqqcN0zEwTSVbVt/e7zneuu85d91zz3nPfvdae63nj2ck3X0k3XvO++53r89ea+0/9od/8Ozmx+74
         AAAAAEBTfuvXP7P5Yx95/Hc3N7zszs2bv/+dAADn8p/+qTcfKB0DADiLXFMkXhyEi/zD//d//DIAwLlM
@@ -491,7 +491,7 @@
         AAAAAQAAAAAAAAAEIURyYWdEcm9wUGljdHVyZUJveC5Mb2NhdGlvbkJpdG1hcAMAAAAL
 </value>
   </data>
-  <data name="dragDropBoxBench2.LocationBitmapList" mimetype="application/x-microsoft.net.object.binary.base64">
+  <data name="Bench2DragDropBox.LocationBitmapList" mimetype="application/x-microsoft.net.object.binary.base64">
     <value>
         AAEAAAD/////AQAAAAAAAAAMAgAAAJgBRHJhZ0Ryb3BQaWN0dXJlQm94LCBWZXJzaW9uPTEuMC4wLjAs
         IEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbF1dLCBtc2NvcmxpYiwgVmVyc2lvbj00
@@ -503,4 +503,10 @@
         AAAAAQAAAAAAAAAEIURyYWdEcm9wUGljdHVyZUJveC5Mb2NhdGlvbkJpdG1hcAMAAAAL
 </value>
   </data>
+  <metadata name="SimulationFPSTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>189, 17</value>
+  </metadata>
 </root>
