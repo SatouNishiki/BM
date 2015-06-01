@@ -13,6 +13,7 @@ using BasketballManagementSystem.BaseClass.Player;
 using DragDropPictureBox;
 using System.Reflection;
 using BasketballManagementSystem.BaseClass.Position;
+using BMErrorLibrary;
 
 namespace BasketballManagementSystem.BMForm.StrategySimulation
 {
@@ -44,6 +45,8 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
 
         private bool isLiteFPSMode = false;
 
+        private int speed = 1;
+
         /// <summary>
         /// シュミレート前にリストの中身を覚えるために使用
         /// </summary>
@@ -52,6 +55,7 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
         public FormStrategySimulation()
         {
             InitializeComponent();
+            SpeedComboBox.SelectedIndex = 0;
 
             //今何個目の要素を入れようとしてるか
             int count = 0;
@@ -251,24 +255,18 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
                     {
                         if (graph.Graphics.Tag.ToString() == nextGraph.Graphics.Tag.ToString())
                         {
-                            if (nextGraph.Location.X > graph.Location.X)
-                                graph.Location = new Point(graph.Location.X + 1, graph.Location.Y);
-                            else
-                                graph.Location = new Point(graph.Location.X - 1, graph.Location.Y);
 
-                            if (graph.Location.Y != nextGraph.Location.Y)
+                            for (int i = 0; i < speed; i++)
                             {
-                                if (nextGraph.Location.Y > graph.Location.Y)
-                                    graph.Location = new Point(graph.Location.X, graph.Location.Y + 1);
-                                else
-                                    graph.Location = new Point(graph.Location.X, graph.Location.Y - 1);
-                            }
+                                graph.Location = TryToMove(nextGraph.Location, graph.Location);
 
-                            if (graph.Location == nextGraph.Location)
-                            {
-                                moveFinishMemberCount++;
-                            }
+                                if (graph.Location == nextGraph.Location)
+                                {
+                                    moveFinishMemberCount++;
+                                    break;
+                                }
 
+                            }
                         }
                     }
 
@@ -293,6 +291,65 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
         {
             UseLiteFPSModeItem.Checked = !UseLiteFPSModeItem.Checked;
             isLiteFPSMode = UseLiteFPSModeItem.Checked;
+        }
+
+        /// <summary>
+        /// sourceに至る最短経路のうち次に移動するべき場所を求める
+        /// </summary>
+        /// <param name="wayPoint">現在地</param>
+        /// <param name="source">目的地</param>
+        /// <returns></returns>
+        private Point TryToMove(Point wayPoint, Point source)
+        {
+
+            int lenght1 = (int)Math.Sqrt((source.X - wayPoint.X + 1) * (source.X - wayPoint.X + 1) + (source.Y - wayPoint.Y) * (source.Y - wayPoint.Y));
+            int length2 = (int)Math.Sqrt((source.X - wayPoint.X) * (source.X - wayPoint.X) + (source.Y - wayPoint.Y + 1) * (source.Y - wayPoint.Y + 1));
+            int length3 = (int)Math.Sqrt((source.X - wayPoint.X + 1) * (source.X - wayPoint.X + 1) + (source.Y - wayPoint.Y + 1) * (source.Y - wayPoint.Y + 1));
+            int length4 = (int)Math.Sqrt((source.X - wayPoint.X - 1) * (source.X - wayPoint.X - 1) + (source.Y - wayPoint.Y) * (source.Y - wayPoint.Y));
+            int length5 = (int)Math.Sqrt((source.X - wayPoint.X) * (source.X - wayPoint.X) + (source.Y - wayPoint.Y - 1) * (source.Y - wayPoint.Y - 1));
+            int length6 = (int)Math.Sqrt((source.X - wayPoint.X - 1) * (source.X - wayPoint.X - 1) + (source.Y - wayPoint.Y - 1) * (source.Y - wayPoint.Y - 1));
+
+            List<int> l = new List<int>();
+
+            l.Add(lenght1);
+            l.Add(length2);
+            l.Add(length3);
+            l.Add(length4);
+            l.Add(length5);
+            l.Add(length6);
+
+            l.Sort();
+
+            if (l[0] == lenght1)
+                return new Point(source.X + 1, source.Y);
+
+            else if (l[0] == length2)
+                return new Point(source.X, source.Y + 1);
+
+            else if (l[0] == length3)
+                return new Point(source.X + 1, source.Y + 1);
+
+            else if (l[0] == length4)
+                return new Point(source.X - 1, source.Y);
+
+            else if (l[0] == length5)
+                return new Point(source.X, source.Y - 1);
+            else
+                return new Point(source.X - 1, source.Y - 1);
+        }
+
+        private void SpeedComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int s = 0;
+            if (int.TryParse(SpeedComboBox.SelectedItem.ToString(), out s))
+            {
+                speed = s;
+            }
+            else
+            {
+                BMError.ErrorMessageOutput("無効な型変換が行われました", true);   
+            }
+
         }
 
     }

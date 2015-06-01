@@ -41,6 +41,8 @@
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ConfigToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.UseLiteFPSModeItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SpeedItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SpeedComboBox = new System.Windows.Forms.ToolStripComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.BenchDragDropBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dragDropBoxCort)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Bench2DragDropBox)).BeginInit();
@@ -136,7 +138,8 @@
             // ConfigToolStripMenuItem
             // 
             this.ConfigToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.UseLiteFPSModeItem});
+            this.UseLiteFPSModeItem,
+            this.SpeedItem});
             this.ConfigToolStripMenuItem.Name = "ConfigToolStripMenuItem";
             this.ConfigToolStripMenuItem.Size = new System.Drawing.Size(56, 22);
             this.ConfigToolStripMenuItem.Text = "Config";
@@ -147,6 +150,25 @@
             this.UseLiteFPSModeItem.Size = new System.Drawing.Size(152, 22);
             this.UseLiteFPSModeItem.Text = "UseLiteFPS";
             this.UseLiteFPSModeItem.Click += new System.EventHandler(this.UseLiteFPSModeItem_Click);
+            // 
+            // SpeedItem
+            // 
+            this.SpeedItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.SpeedComboBox});
+            this.SpeedItem.Name = "SpeedItem";
+            this.SpeedItem.Size = new System.Drawing.Size(152, 22);
+            this.SpeedItem.Text = "Speed";
+            // 
+            // SpeedComboBox
+            // 
+            this.SpeedComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.SpeedComboBox.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.SpeedComboBox.Name = "SpeedComboBox";
+            this.SpeedComboBox.Size = new System.Drawing.Size(121, 26);
+            this.SpeedComboBox.SelectedIndexChanged += new System.EventHandler(this.SpeedComboBox_SelectedIndexChanged);
             // 
             // FormStrategySimulation
             // 
@@ -186,6 +208,8 @@
         private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ConfigToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem UseLiteFPSModeItem;
+        private System.Windows.Forms.ToolStripMenuItem SpeedItem;
+        private System.Windows.Forms.ToolStripComboBox SpeedComboBox;
 
 
     }
