@@ -28,7 +28,8 @@ Basketball Data Management System(BM)のメインアプリケーションです
 　-　選手別傾向分析
 　-　傾向点推移グラフ
 
-・★StrategySimulation
+・StrategySimulation
+  -  戦術シュミレーション
 
 ・通信機能
 
