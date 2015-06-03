@@ -134,6 +134,9 @@
   <data name="ClubMembersListBox.HorizontalScrollbar" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>部員名簿</value>
+  </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>54, 12</value>
   </data>
@@ -143,8 +146,8 @@
   <data name="ClubNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 19</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>部員名簿</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>選択メンバー</value>
   </data>
   <data name="WomanSelectedRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 16</value>
@@ -197,8 +200,8 @@
   <data name="NameSelectedTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>148, 19</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>選択メンバー</value>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>追加</value>
   </data>
   <data name="WomanAddRadioButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 16</value>
@@ -211,6 +214,9 @@
   </data>
   <data name="ManAddRadioButton.Text" xml:space="preserve">
     <value>男性</value>
+  </data>
+  <data name="AddButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 48</value>
   </data>
   <data name="AddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>59, 23</value>
@@ -250,9 +256,6 @@
   </data>
   <data name="NameAddTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>132, 19</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>追加</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>391, 26</value>

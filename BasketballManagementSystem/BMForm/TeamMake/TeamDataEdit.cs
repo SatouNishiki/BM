@@ -122,7 +122,7 @@ namespace BasketballManagementSystem.BMForm.TeamMake
         {
             int number = 0;
 
-            if (!int.TryParse(NumberTextBox.Text, out number))
+            if (!int.TryParse(NumberTextBox.Text, out number) || number <= 3)
             {
                 MessageBox.Show("背番号が不正です");
                 return;
@@ -304,7 +304,7 @@ namespace BasketballManagementSystem.BMForm.TeamMake
 
             int number = 0;
 
-            if (!int.TryParse(EditNumberTextBox.Text, out number))
+            if (!int.TryParse(EditNumberTextBox.Text, out number) || number <= 3)
             {
                 MessageBox.Show("値が不正です");
                 return;

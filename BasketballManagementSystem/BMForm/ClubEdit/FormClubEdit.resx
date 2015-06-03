@@ -140,9 +140,6 @@
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;ClubNameTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
@@ -179,8 +176,8 @@
   <data name="HeightAddTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 19</value>
   </data>
-  <data name="&gt;&gt;menuStrip1.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;WeightSelectedTextBox.Name" xml:space="preserve">
+    <value>WeightSelectedTextBox</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 12</value>
@@ -197,9 +194,6 @@
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>380, 26</value>
   </data>
-  <data name="&gt;&gt;DicisionButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
@@ -212,14 +206,17 @@
   <data name="&gt;&gt;WomanSelectedRadioButton.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;ClubNameTextBox.Name" xml:space="preserve">
     <value>ClubNameTextBox</value>
   </data>
   <data name="LoadClubItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 22</value>
   </data>
-  <data name="menuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 26</value>
+  <data name="&gt;&gt;ClubNameTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 21</value>
@@ -251,11 +248,8 @@
   <data name="&gt;&gt;label10.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="WomanAddRadioButton.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;menuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ManAddRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>FormClubEdit</value>
@@ -300,8 +294,8 @@
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
-  <data name="&gt;&gt;menuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -312,17 +306,11 @@
   <data name="&gt;&gt;SaveClubItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
   <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="DicisionButton.Text" xml:space="preserve">
-    <value>Dicision</value>
-  </data>
-  <data name="WomanSelectedRadioButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 16</value>
+  <data name="&gt;&gt;DicisionButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="DeleteButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 23</value>
@@ -348,11 +336,8 @@
   <data name="label3.Text" xml:space="preserve">
     <value>Height (cm)</value>
   </data>
-  <data name="&gt;&gt;WeightSelectedTextBox.Name" xml:space="preserve">
-    <value>WeightSelectedTextBox</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Sex</value>
+  <data name="WomanSelectedRadioButton.Text" xml:space="preserve">
+    <value>woman</value>
   </data>
   <data name="&gt;&gt;HeightSelectedTextBox.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -393,8 +378,14 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="MenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 26</value>
+  </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
     <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
   </data>
   <data name="&gt;&gt;label7.Name" xml:space="preserve">
     <value>label7</value>
@@ -423,8 +414,8 @@
   <data name="&gt;&gt;DicisionButton.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="DicisionButton.Text" xml:space="preserve">
+    <value>Dicision</value>
   </data>
   <data name="&gt;&gt;FileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -467,6 +458,9 @@
   </data>
   <data name="WeightAddTextBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 19</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Sex</value>
   </data>
   <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
     <value>groupBox2</value>
@@ -525,8 +519,8 @@
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="menuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;ManSelectedRadioButton.Name" xml:space="preserve">
+    <value>ManSelectedRadioButton</value>
   </data>
   <data name="SaveClubItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 22</value>
@@ -573,14 +567,11 @@
   <data name="&gt;&gt;HeightSelectedTextBox.Parent" xml:space="preserve">
     <value>groupBox2</value>
   </data>
-  <data name="menuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
+  <data name="NameSelectedTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
   </data>
   <data name="AddButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>375, 48</value>
-  </data>
-  <data name="WomanSelectedRadioButton.Text" xml:space="preserve">
-    <value>woman</value>
   </data>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
@@ -657,8 +648,8 @@
   <data name="&gt;&gt;NameSelectedTextBox.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
   <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -677,9 +668,6 @@
   </data>
   <data name="&gt;&gt;WomanAddRadioButton.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="ManAddRadioButton.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;NameSelectedTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -792,11 +780,8 @@
   <data name="&gt;&gt;label10.Parent" xml:space="preserve">
     <value>groupBox1</value>
   </data>
-  <data name="MenuStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="menuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 22</value>
@@ -816,20 +801,14 @@
   <data name="ManSelectedRadioButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 69</value>
   </data>
-  <data name="HeightSelectedTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>SelectedMember</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>496, 356</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;ManAddRadioButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -864,23 +843,23 @@
   <data name="&gt;&gt;AddButton.Name" xml:space="preserve">
     <value>AddButton</value>
   </data>
-  <data name="NameSelectedTextBox.TabIndex" type="System.Int32, mscorlib">
+  <data name="WomanSelectedRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 16</value>
+  </data>
+  <data name="MenuStrip.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;ManSelectedRadioButton.Name" xml:space="preserve">
-    <value>ManSelectedRadioButton</value>
+  <data name="HeightSelectedTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;DeleteButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>SelectedMember</value>
-  </data>
   <data name="&gt;&gt;WomanSelectedRadioButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;menuStrip1.Name" xml:space="preserve">
-    <value>menuStrip1</value>
+  <data name="WomanAddRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>219, 222</value>
@@ -900,7 +879,7 @@
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 20</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
@@ -915,9 +894,6 @@
   <data name="&gt;&gt;ManSelectedRadioButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
