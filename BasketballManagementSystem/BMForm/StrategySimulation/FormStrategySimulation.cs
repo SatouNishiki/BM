@@ -180,11 +180,13 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
             if (index < 0)
             {
                 BMError.ErrorMessageOutput("不正な値が指定されました", false);
+                return;
             }
 
             if (index >= BoardListBox.Items.Count)
             {
                 BMError.ErrorMessageOutput("指定されたインデックスがリストの上限を超えています", true);
+                return;
             }
 
             dragDropBoxCort.LocationBitmapList.RemoveAll(l => !l.CanMove);
