@@ -236,10 +236,17 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
             SimulationFPSTimer.Enabled = true;
         }
 
+        /// <summary>
+        /// シュミレーションアニメのtick処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SimulationFPSTimer_Tick(object sender, EventArgs e)
         {
+            //これ以上シュミレーションの続きが無かったら
             if (BoardListBox.Items.Count == 0 || animationCount + 1 == BoardListBox.Items.Count)
             {
+                //終了処理
                 SimulationFPSTimer.Enabled = false;
                 BoardChangeFromIndex(animationCount);
                 animationCount = 0;
@@ -257,41 +264,41 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
                 return;
             }
 
-            //全員が移動終わるまでループ
-            if (moveFinishMemberCount < ((Board)BoardListBox.Items[animationCount]).FieldMembers.Count)
+
+            //現在のリストメンバーと次のリストメンバーを順に操作していく
+            foreach (var graph in ((Board)BoardListBox.Items[animationCount]).FieldMembers)
             {
-
-                foreach (var graph in ((Board)BoardListBox.Items[animationCount]).FieldMembers)
+                foreach (var nextGraph in ((Board)BoardListBox.Items[animationCount + 1]).FieldMembers)
                 {
-                    foreach (var nextGraph in ((Board)BoardListBox.Items[animationCount + 1]).FieldMembers)
+                    //名前が同じで、かつ位置が移動できるオブジェクトに対して移動処理を開始する
+                    if (graph.Graphics.Tag.ToString() == nextGraph.Graphics.Tag.ToString() && graph.Location != nextGraph.Location)
                     {
-                        if (graph.Graphics.Tag.ToString() == nextGraph.Graphics.Tag.ToString())
+                        //速度管理変数の分だけ移動処理を繰り返すことで速度を調節できる
+                        for (int i = 0; i < speed; i++)
                         {
+                            graph.Location = TryToMove(nextGraph.Location, graph.Location);
 
-                            for (int i = 0; i < speed; i++)
+                            if (graph.Location.X == nextGraph.Location.X && graph.Location.Y == nextGraph.Location.Y)
                             {
-                                graph.Location = TryToMove(nextGraph.Location, graph.Location);
-
-                                if (graph.Location == nextGraph.Location)
-                                {
-                                    moveFinishMemberCount++;
-                                    break;
-                                }
-
+                                moveFinishMemberCount++;
+                                break;
                             }
                         }
                     }
-
-                    if (isLiteFPSMode && loopCount % 2 == 0)
-                        BoardChangeFromIndex(animationCount);
-
-                    if(!isLiteFPSMode)
-                        BoardChangeFromIndex(animationCount);
-
-                    loopCount++;
                 }
+
+                //liteFPSModeのときの処理 2回に一回しか描画更新しない
+                if (isLiteFPSMode && loopCount % 2 == 0)
+                    BoardChangeFromIndex(animationCount);
+
+                if (!isLiteFPSMode)
+                    BoardChangeFromIndex(animationCount);
+
+                loopCount++;
             }
-            else
+
+            //全員回り終えたらアニメーションカウントを増やして次のループへ
+            if (moveFinishMemberCount >= ((Board)BoardListBox.Items[animationCount]).FieldMembers.Count)
             {
                 moveFinishMemberCount = 0;
                 animationCount++;
