@@ -52,6 +52,10 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
         /// </summary>
         private List<Board> boardListBoxItems = new List<Board>();
 
+        private List<LocationBitmap> canMoveMembers = new List<LocationBitmap>();
+
+        private int beforeAnimationCount = 0;
+
         public FormStrategySimulation()
         {
             InitializeComponent();
@@ -270,8 +274,8 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
             {
                 foreach (var nextGraph in ((Board)BoardListBox.Items[animationCount + 1]).FieldMembers)
                 {
-                    //名前が同じで、かつ位置が移動できるオブジェクトに対して移動処理を開始する
-                    if (graph.Graphics.Tag.ToString() == nextGraph.Graphics.Tag.ToString() && graph.Location != nextGraph.Location)
+                  
+                    if (CanMove(graph, nextGraph))
                     {
                         //速度管理変数の分だけ移動処理を繰り返すことで速度を調節できる
                         for (int i = 0; i < speed; i++)
@@ -367,6 +371,42 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
             else
             {
                 BMError.ErrorMessageOutput("無効な型変換が行われました", true);   
+            }
+
+        }
+
+        /// <summary>
+        /// 二つの引数から移動可能かどうかを返す
+        /// </summary>
+        /// <param name="graph"></param>
+        /// <param name="nextGraph"></param>
+        /// <returns></returns>
+        private bool CanMove(LocationBitmap graph, LocationBitmap nextGraph)
+        {
+            if (animationCount > beforeAnimationCount)
+            {
+                beforeAnimationCount = animationCount;
+                canMoveMembers.Clear();
+            }
+
+            if (graph.Graphics.Tag != nextGraph.Graphics.Tag)
+            {
+                return false;
+            }
+
+            if (canMoveMembers.IndexOf(graph) < 0)
+            {
+                canMoveMembers.Add(graph);
+                return true;
+            }
+
+            if (graph.Location == nextGraph.Location)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
             }
 
         }
