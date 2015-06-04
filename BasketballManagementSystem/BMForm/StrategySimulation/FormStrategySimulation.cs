@@ -177,6 +177,16 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
 
         private void BoardChangeFromIndex(int index)
         {
+            if (index < 0)
+            {
+                BMError.ErrorMessageOutput("不正な値が指定されました", false);
+            }
+
+            if (index >= BoardListBox.Items.Count)
+            {
+                BMError.ErrorMessageOutput("指定されたインデックスがリストの上限を超えています", true);
+            }
+
             dragDropBoxCort.LocationBitmapList.RemoveAll(l => !l.CanMove);
 
             foreach (var locationBitmap in ((Board)BoardListBox.Items[index]).FieldMembers)
