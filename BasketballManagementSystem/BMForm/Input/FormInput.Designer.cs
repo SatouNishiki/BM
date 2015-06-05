@@ -491,6 +491,10 @@
             // 
             resources.ApplyResources(this.TimerTickComboBox, "TimerTickComboBox");
             this.TimerTickComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TimerTickComboBox.Items.AddRange(new object[] {
+            resources.GetString("TimerTickComboBox.Items"),
+            resources.GetString("TimerTickComboBox.Items1"),
+            resources.GetString("TimerTickComboBox.Items2")});
             this.TimerTickComboBox.Name = "TimerTickComboBox";
             this.TimerTickComboBox.SelectedIndexChanged += new System.EventHandler(this.TimerTickComboBox_SelectedIndexChanged);
             // 
