@@ -880,7 +880,9 @@
             // 
             // OppentOutTeamListBox
             // 
+            this.OppentOutTeamListBox.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.OppentOutTeamListBox, "OppentOutTeamListBox");
+            this.OppentOutTeamListBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.OppentOutTeamListBox.FormattingEnabled = true;
             this.OppentOutTeamListBox.IsEasyMemberChangeMode = false;
             this.OppentOutTeamListBox.Name = "OppentOutTeamListBox";
@@ -952,6 +954,7 @@
             this.Controls.Add(this.PlayerNameLabel);
             this.Controls.Add(this.MenuStrip1);
             this.Controls.Add(this.MyOutTeamListBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.MainMenuStrip = this.MenuStrip1;
             this.Name = "FormInput";
