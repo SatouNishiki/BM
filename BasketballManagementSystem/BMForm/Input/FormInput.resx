@@ -1083,7 +1083,7 @@
     <value>4, 2, 0, 2</value>
   </data>
   <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>872, 26</value>
+    <value>880, 26</value>
   </data>
   <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -2703,14 +2703,14 @@
         HDUCk3CpuWV2Q0N+LgAO8m/Fn7Nz8ZdOAdCR8tPHPvsT4XhxuVEGYPOS5uLn/PD1s9n4S3+FfIF8ivwX
         +QhpiDRA6ITfewitEigIMgp09Pev6+f30SOwmSIQTn4hPtEw0gAQ9KWe/PFg3Fxu1LcLFIBDWzvBzKF1
         xY/7vPajy/CXaoU0R5oi3yAUhC+Rz5BPkI8RCsIHCK0S6MYe/xN8U2VEBMwl5qReGIFZH7qWn9jBB0C+
-        K4yQ8vv7xDhNuMuNFARaIUztXx3Gdn9H/P+6fvf6ueuvvpyO+F8j3yMZSFuEgtACaYY0Qeh6//8QigB9
+        K4yQ8vv7xDhNuMuNFARaIUztXx3Gdn9H/P+6fPf6ueuvvpyO+F8j3yMZSFuEgtACaYY0Qeh6//8QigB9
         hr8/qTbGm4jMzxSQEUDhbQFg5Kdtw67l34h7ww9t7SxeWCNavXkSf0k1AAR9BLQ/CZpw2wVaNVD4zR8u
         hy7f0dt46R5+upFHngugJT/9G/qf4JvKo0aA3kS0dsr7zNHfLj+xd1ULEYDsrDbixdW71Ssr8JdT3xtO
         nwzrTxLHOKFIWwbiDX/v7g8/jhHg5J9lsG9NK6cAEPShkP77wP3xJ7+MiIB5YklEYDJGQJdfCcDBTd+J
         M8vy7aHtv3x6BP4yvvz++JOfR76T0IhAfVZ+4uj2LiIAC8d8KALwdYMnOuJPp8t9BfvLO/vjT34fNQJL
         R9cNkn/7gs+F/MTUATVFAKq//gBdP/bl98efVBj1MwWWjsIIKAHYs7K5kH/fxh/E95tXAK4yfqY//viT
         EsNFYOucj4OW//TjzJ/ijz/+pNLYP1PgfTi05Uch//r5TQz5Ef8Skz/+pPCoEdCh7zN/mD/++JOqIyKg
-        3m6Kj+k2VPO7/fEnRaZQof8HiyJwGelXN7sAAAAASUVORK5CYII=
+        3m6Kj+k2VPO7/fEnRaZQof8HXfNwGPiZYCUAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="LoadToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
@@ -3598,7 +3598,7 @@
     <value>0, 26</value>
   </data>
   <data name="ToolStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>872, 25</value>
+    <value>880, 25</value>
   </data>
   <data name="ToolStrip.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -3787,7 +3787,7 @@
     <value>6, 12</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>872, 690</value>
+    <value>880, 690</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
