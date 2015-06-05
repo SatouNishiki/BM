@@ -56,23 +56,23 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
                         break;
 
                     case Keys.D6:
-                        SelectedIndexChange(form.OppentCortTeamListBox, 0);
+                        SelectedIndexChange(form.MyCortTeamListBox, 5);
                         break;
 
                     case Keys.D7:
-                        SelectedIndexChange(form.OppentCortTeamListBox, 1);
+                        SelectedIndexChange(form.MyCortTeamListBox, 6);
                         break;
 
                     case Keys.D8:
-                        SelectedIndexChange(form.OppentCortTeamListBox, 2);
+                        SelectedIndexChange(form.MyCortTeamListBox, 7);
                         break;
 
                     case Keys.D9:
-                        SelectedIndexChange(form.OppentCortTeamListBox, 3);
+                        SelectedIndexChange(form.MyCortTeamListBox, 8);
                         break;
 
                     case Keys.D0:
-                        SelectedIndexChange(form.OppentCortTeamListBox, 4);
+                        SelectedIndexChange(form.MyCortTeamListBox, 9);
                         break;
                 }
 
