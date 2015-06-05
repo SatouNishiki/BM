@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PersonalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 72</value>
+  </data>
   <data name="CortPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABC4AAAI+CAYAAABzKUsHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -467,9 +470,14 @@
         WeSa4iBc/OEfPHvwNwAAAAAt+a1f/8zm/wdr4AmliUezKwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="CortPictureBox.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="CortPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 389</value>
+  </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル</value>
   </data>
   <data name="NewGameItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>242, 22</value>
@@ -519,11 +527,11 @@
   <data name="ExitItem.Text" xml:space="preserve">
     <value>終了</value>
   </data>
-  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
+  <data name="GameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
   </data>
-  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
-    <value>ファイル</value>
+  <data name="GameToolStripMenuItem.Text" xml:space="preserve">
+    <value>試合</value>
   </data>
   <data name="StartGameItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
@@ -555,11 +563,11 @@
   <data name="GameEndItem.Text" xml:space="preserve">
     <value>ゲーム終了</value>
   </data>
-  <data name="GameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
+  <data name="GamePropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
   </data>
-  <data name="GameToolStripMenuItem.Text" xml:space="preserve">
-    <value>試合</value>
+  <data name="GamePropToolStripMenuItem.Text" xml:space="preserve">
+    <value>試合設定</value>
   </data>
   <data name="ChangeGameNameItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
@@ -573,11 +581,11 @@
   <data name="ChangeGameLocationItem.Text" xml:space="preserve">
     <value>ゲーム場所変更</value>
   </data>
-  <data name="GamePropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
+  <data name="SolutionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
   </data>
-  <data name="GamePropToolStripMenuItem.Text" xml:space="preserve">
-    <value>試合設定</value>
+  <data name="SolutionToolStripMenuItem.Text" xml:space="preserve">
+    <value>解析</value>
   </data>
   <data name="GoGraphScoreFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
@@ -615,11 +623,11 @@
   <data name="StrategySimulationFormItem.Text" xml:space="preserve">
     <value>戦略シュミレーション</value>
   </data>
-  <data name="SolutionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 22</value>
   </data>
-  <data name="SolutionToolStripMenuItem.Text" xml:space="preserve">
-    <value>解析</value>
+  <data name="PropToolStripMenuItem.Text" xml:space="preserve">
+    <value>設定</value>
   </data>
   <data name="ColorConfigItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 22</value>
@@ -651,11 +659,11 @@
   <data name="ChangeLanguageItem.Text" xml:space="preserve">
     <value>言語設定(再起動後有効)</value>
   </data>
-  <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
+  <data name="dataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 22</value>
   </data>
-  <data name="PropToolStripMenuItem.Text" xml:space="preserve">
-    <value>設定</value>
+  <data name="dataToolStripMenuItem.Text" xml:space="preserve">
+    <value>データ</value>
   </data>
   <data name="GoDataEditFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 22</value>
@@ -681,11 +689,11 @@
   <data name="GoActionPointEditFormItem.Text" xml:space="preserve">
     <value>行動傾向点変更</value>
   </data>
-  <data name="dataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 22</value>
+  <data name="transmission.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
   </data>
-  <data name="dataToolStripMenuItem.Text" xml:space="preserve">
-    <value>データ</value>
+  <data name="transmission.Text" xml:space="preserve">
+    <value>通信</value>
   </data>
   <data name="GoTCPServerFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 22</value>
@@ -699,23 +707,29 @@
   <data name="GoTCPClientFormItem.Text" xml:space="preserve">
     <value>TCPクライアント</value>
   </data>
-  <data name="transmission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
+  <data name="MyTeamNameLael.Location" type="System.Drawing.Point, System.Drawing">
+    <value>36, 111</value>
   </data>
-  <data name="transmission.Text" xml:space="preserve">
-    <value>通信</value>
+  <data name="MyTeamNameLael.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 14</value>
   </data>
   <data name="OppentTeamNameLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>759, 112</value>
   </data>
+  <data name="OppentTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>786, 75</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 38</value>
+    <value>769, 51</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 12</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>チームファウル</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 61</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 12</value>
@@ -730,7 +744,7 @@
     <value>コートメンバー</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 12</value>
+    <value>103, 16</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>ベンチメンバー</value>
@@ -748,13 +762,10 @@
     <value>752, 133</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 12</value>
+    <value>103, 16</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>ベンチメンバー</value>
-  </data>
-  <data name="MyTimeOutButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 55</value>
   </data>
   <data name="MyTimeOutButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 23</value>
@@ -763,10 +774,16 @@
     <value>タイムアウト(自)</value>
   </data>
   <data name="TechnicalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 76</value>
+    <value>72, 74</value>
   </data>
-  <data name="TechnicalFaulButton.Text" xml:space="preserve">
-    <value>TF</value>
+  <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 72</value>
+  </data>
+  <data name="DisQualifyingFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 72</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 2</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 13</value>
@@ -775,10 +792,25 @@
     <value>アクション(ファウル)</value>
   </data>
   <data name="MyTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 81</value>
+    <value>41, 84</value>
+  </data>
+  <data name="UpButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 11</value>
+  </data>
+  <data name="DownButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 43</value>
+  </data>
+  <data name="givenFreeThowLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 14.25pt, style=Bold</value>
+  </data>
+  <data name="givenFreeThowLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 26</value>
+  </data>
+  <data name="givenFreeThowLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 43</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>458, 217</value>
+    <value>79, 29</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 12</value>
@@ -790,7 +822,10 @@
     <value>タイムアウト(相手)</value>
   </data>
   <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 88</value>
+    <value>158, 81</value>
+  </data>
+  <data name="OppentTimeOutLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 23</value>
   </data>
   <data name="QuarterTimerRewindButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -919,6 +954,21 @@
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>その他入力</value>
+  </data>
+  <data name="OppentTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 48pt</value>
+  </data>
+  <data name="OppentTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 48</value>
+  </data>
+  <data name="MyTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 48pt</value>
+  </data>
+  <data name="MyTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 42</value>
+  </data>
+  <data name="MyTeamPointLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 67</value>
   </data>
   <data name="NewGameToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1354,14 +1404,14 @@
         HDUCk3CpuWV2Q0N+LgAO8m/Fn7Nz8ZdOAdCR8tPHPvsT4XhxuVEGYPOS5uLn/PD1s9n4S3+FfIF8ivwX
         +QhpiDRA6ITfewitEigIMgp09Pev6+f30SOwmSIQTn4hPtEw0gAQ9KWe/PFg3Fxu1LcLFIBDWzvBzKF1
         xY/7vPajy/CXaoU0R5oi3yAUhC+Rz5BPkI8RCsIHCK0S6MYe/xN8U2VEBMwl5qReGIFZH7qWn9jBB0C+
-        K4yQ8vv7xDhNuMuNFARaIUztXx3Gdn9H/P96fPf6ueuvvpyO+F8j3yMZSFuEgtACaYY0Qeh6//8QigB9
+        K4yQ8vv7xDhNuMuNFARaIUztXx3Gdn9H/P+6fPf6ueuvvpyO+F8j3yMZSFuEgtACaYY0Qeh6//8QigB9
         hr8/qTbGm4jMzxSQEUDhbQFg5Kdtw67l34h7ww9t7SxeWCNavXkSf0k1AAR9BLQ/CZpw2wVaNVD4zR8u
         hy7f0dt46R5+upFHngugJT/9G/qf4JvKo0aA3kS0dsr7zNHfLj+xd1ULEYDsrDbixdW71Ssr8JdT3xtO
         nwzrTxLHOKFIWwbiDX/v7g8/jhHg5J9lsG9NK6cAEPShkP77wP3xJ7+MiIB5YklEYDJGQJdfCcDBTd+J
         M8vy7aHtv3x6BP4yvvz++JOfR76T0IhAfVZ+4uj2LiIAC8d8KALwdYMnOuJPp8t9BfvLO/vjT34fNQJL
         R9cNkn/7gs+F/MTUATVFAKq//gBdP/bl98efVBj1MwWWjsIIKAHYs7K5kH/fxh/E95tXAK4yfqY//viT
         EsNFYOucj4OW//TjzJ/ijz/+pNLYP1PgfTi05Uch//r5TQz5Ef8Skz/+pPCoEdCh7zN/mD/++JOqIyKg
-        3m6Kj+k2VPO7/fEnRaZQof8HEr5wHPj9/C8AAAAASUVORK5CYII=
+        3m6Kj+k2VPO7/fEnRaZQof8HXfNwGPiZYCUAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="SaveToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -2208,5 +2258,8 @@
         CRMmchgqUJAKGyQhlAahSgU2HLn/X31t9/u6P5cJEybyONwQqnIDG650ryVlwoQJEyZMmDBhwoQJEyZM
         mDBhwoQJEyZMmDBhwoQJEyZMmDBh4paNf/u3/wOcZAhzVKSJxwAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="QuarterTimer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 101</value>
   </data>
 </root>

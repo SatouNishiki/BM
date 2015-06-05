@@ -77,6 +77,7 @@
             this.ChangeButtonTextColorItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangeButtonTextColorDefaultItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangeFPSItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.TimerTickComboBox = new System.Windows.Forms.ToolStripComboBox();
             this.DebugFormVisiableItem = new System.Windows.Forms.ToolStripMenuItem();
             this.QuarterChangeTimerSpeedChangeItem = new System.Windows.Forms.ToolStripMenuItem();
             this.QuarterChangeTimerSpeedCombo = new System.Windows.Forms.ToolStripComboBox();
@@ -208,6 +209,7 @@
             // MenuStrip1
             // 
             resources.ApplyResources(this.MenuStrip1, "MenuStrip1");
+            this.MenuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileToolStripMenuItem,
             this.GameToolStripMenuItem,
@@ -481,7 +483,16 @@
             // ChangeFPSItem
             // 
             resources.ApplyResources(this.ChangeFPSItem, "ChangeFPSItem");
+            this.ChangeFPSItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TimerTickComboBox});
             this.ChangeFPSItem.Name = "ChangeFPSItem";
+            // 
+            // TimerTickComboBox
+            // 
+            resources.ApplyResources(this.TimerTickComboBox, "TimerTickComboBox");
+            this.TimerTickComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.TimerTickComboBox.Name = "TimerTickComboBox";
+            this.TimerTickComboBox.SelectedIndexChanged += new System.EventHandler(this.TimerTickComboBox_SelectedIndexChanged);
             // 
             // DebugFormVisiableItem
             // 
@@ -773,9 +784,10 @@
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Controls.Add(this.AssistButton);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.StealButton);
-            this.groupBox1.Controls.Add(this.BlockShotButton);
             this.groupBox1.Controls.Add(this.TurnOverButton);
+            this.groupBox1.Controls.Add(this.BlockShotButton);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             this.ToolTipFormInput.SetToolTip(this.groupBox1, resources.GetString("groupBox1.ToolTip"));
@@ -788,9 +800,9 @@
             this.groupBox2.Controls.Add(this.DownButton);
             this.groupBox2.Controls.Add(this.TechnicalFaulButton);
             this.groupBox2.Controls.Add(this.UpButton);
+            this.groupBox2.Controls.Add(this.givenFreeThowLabel);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.UnSportsmanLikeFaulButton);
-            this.groupBox2.Controls.Add(this.givenFreeThowLabel);
             this.groupBox2.Controls.Add(this.DisQualifyingFaulButton);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
@@ -808,11 +820,11 @@
             // 
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.MyTimeOutLabel);
+            this.groupBox3.Controls.Add(this.MyTimeOutButton);
             this.groupBox3.Controls.Add(this.OppentTimeOutLabel);
             this.groupBox3.Controls.Add(this.MemberChangeButton);
             this.groupBox3.Controls.Add(this.OppentTimeOutButton);
-            this.groupBox3.Controls.Add(this.MyTimeOutLabel);
-            this.groupBox3.Controls.Add(this.MyTimeOutButton);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             this.ToolTipFormInput.SetToolTip(this.groupBox3, resources.GetString("groupBox3.ToolTip"));
@@ -839,6 +851,7 @@
             // ToolStrip
             // 
             resources.ApplyResources(this.ToolStrip, "ToolStrip");
+            this.ToolStrip.BackColor = System.Drawing.SystemColors.Control;
             this.ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.NewGameToolStripButton,
             this.LoadToolStripButton,
@@ -902,8 +915,6 @@
             // OppentOutTeamListBox
             // 
             resources.ApplyResources(this.OppentOutTeamListBox, "OppentOutTeamListBox");
-            this.OppentOutTeamListBox.BackColor = System.Drawing.SystemColors.Window;
-            this.OppentOutTeamListBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.OppentOutTeamListBox.FormattingEnabled = true;
             this.OppentOutTeamListBox.IsEasyMemberChangeMode = false;
             this.OppentOutTeamListBox.Name = "OppentOutTeamListBox";
@@ -951,11 +962,10 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.ToolStrip);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.QuarterTimerStopButton);
             this.Controls.Add(this.MyTeamPointLabel);
             this.Controls.Add(this.OppentTeamPointLabel);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.OppentOutTeamListBox);
             this.Controls.Add(this.OppentCortTeamListBox);
@@ -970,7 +980,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.MyTeamFaulLabel);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.OppentTeamFaulLabel);
             this.Controls.Add(this.QuarterTimer);
             this.Controls.Add(this.QuarterText);
@@ -978,9 +987,9 @@
             this.Controls.Add(this.MyTeamNameLael);
             this.Controls.Add(this.CortPictureBox);
             this.Controls.Add(this.PlayerNameLabel);
-            this.Controls.Add(this.MenuStrip1);
             this.Controls.Add(this.MyOutTeamListBox);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Controls.Add(this.ToolStrip);
+            this.Controls.Add(this.MenuStrip1);
             this.KeyPreview = true;
             this.MainMenuStrip = this.MenuStrip1;
             this.Name = "FormInput";
@@ -991,6 +1000,7 @@
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();
             this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -1062,7 +1072,7 @@
         private System.Windows.Forms.ToolStripMenuItem ChangePointLabelColorItem;
         private System.Windows.Forms.ToolStripMenuItem ChangePointLabelColorDefaultItem;
         private System.Windows.Forms.ToolStripMenuItem ChangeFPSItem;
-      //  private System.Windows.Forms.ToolStripComboBox TimerTickComboBox;
+        private System.Windows.Forms.ToolStripComboBox TimerTickComboBox;
         private System.Windows.Forms.ToolStripMenuItem ChangeButtonColorItem;
         private System.Windows.Forms.ToolStripMenuItem ChangeButtonColorDefaultItem;
         private System.Windows.Forms.Button OppentTimeOutButton;
