@@ -133,14 +133,13 @@
             this.UndoToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.RedoToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.QuarterTimer = new QuarterTimer.QuarterTimer();
-            this.ColorDialog = new System.Windows.Forms.ColorDialog();
             this.OppentOutTeamListBox = new ExchangeListBox.ExChangeList();
             this.OppentCortTeamListBox = new ExchangeListBox.ExChangeList();
             this.MyCortTeamListBox = new ExchangeListBox.ExChangeList();
             this.MyOutTeamListBox = new ExchangeListBox.ExChangeList();
+            this.ColorDialog = new System.Windows.Forms.ColorDialog();
             ((System.ComponentModel.ISupportInitialize)(this.CortPictureBox)).BeginInit();
             this.MenuStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.ToolStrip.SuspendLayout();
@@ -489,13 +488,7 @@
             // TimerTickComboBox
             // 
             resources.ApplyResources(this.TimerTickComboBox, "TimerTickComboBox");
-            this.TimerTickComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.TimerTickComboBox.Items.AddRange(new object[] {
-            resources.GetString("TimerTickComboBox.Items"),
-            resources.GetString("TimerTickComboBox.Items1"),
-            resources.GetString("TimerTickComboBox.Items2")});
             this.TimerTickComboBox.Name = "TimerTickComboBox";
-            this.TimerTickComboBox.SelectedIndexChanged += new System.EventHandler(this.TimerTickComboBox_SelectedIndexChanged);
             // 
             // DebugFormVisiableItem
             // 
@@ -786,11 +779,6 @@
             // groupBox1
             // 
             resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Controls.Add(this.AssistButton);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.StealButton);
-            this.groupBox1.Controls.Add(this.BlockShotButton);
-            this.groupBox1.Controls.Add(this.TurnOverButton);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             this.ToolTipFormInput.SetToolTip(this.groupBox1, resources.GetString("groupBox1.ToolTip"));
@@ -823,6 +811,7 @@
             // 
             resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.OppentTimeOutLabel);
             this.groupBox3.Controls.Add(this.MemberChangeButton);
             this.groupBox3.Controls.Add(this.OppentTimeOutButton);
@@ -916,8 +905,8 @@
             // 
             // OppentOutTeamListBox
             // 
-            this.OppentOutTeamListBox.BackColor = System.Drawing.SystemColors.Window;
             resources.ApplyResources(this.OppentOutTeamListBox, "OppentOutTeamListBox");
+            this.OppentOutTeamListBox.BackColor = System.Drawing.SystemColors.Window;
             this.OppentOutTeamListBox.ForeColor = System.Drawing.SystemColors.WindowText;
             this.OppentOutTeamListBox.FormattingEnabled = true;
             this.OppentOutTeamListBox.IsEasyMemberChangeMode = false;
@@ -960,7 +949,11 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.TurnOverButton);
+            this.Controls.Add(this.AssistButton);
             this.Controls.Add(this.ToolStrip);
+            this.Controls.Add(this.BlockShotButton);
+            this.Controls.Add(this.StealButton);
             this.Controls.Add(this.QuarterTimerStopButton);
             this.Controls.Add(this.MyTeamPointLabel);
             this.Controls.Add(this.OppentTeamPointLabel);
@@ -998,8 +991,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.CortPictureBox)).EndInit();
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);

@@ -117,59 +117,81 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;ChangeButtonTextColorItem.Name" xml:space="preserve">
+    <value>ChangeButtonTextColorItem</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PlayerNameLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="groupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;dataToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChangeOppentTeamItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip.Name" xml:space="preserve">
+    <value>ToolStrip</value>
+  </data>
+  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;GoTeamMakeFormItem.Name" xml:space="preserve">
+    <value>GoTeamMakeFormItem</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;groupBox3.Name" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="&gt;&gt;DisQualifyingFaulButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="PlayerNameLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 13.8pt</value>
+  <data name="SaveToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PlayerNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="GoBoxScoreFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 22</value>
   </data>
-  <data name="PlayerNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>379, 174</value>
+  <data name="&gt;&gt;ChangeLanguageItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PlayerNameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 0, 2, 0</value>
-  </data>
-  <data name="PlayerNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 19</value>
-  </data>
-  <data name="PlayerNameLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="PlayerNameLabel.Text" xml:space="preserve">
-    <value>1 : テスト 太郎</value>
-  </data>
-  <data name="&gt;&gt;PlayerNameLabel.Name" xml:space="preserve">
-    <value>PlayerNameLabel</value>
-  </data>
-  <data name="&gt;&gt;PlayerNameLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PlayerNameLabel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PlayerNameLabel.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <metadata name="FormInputTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="AssistButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 8.25pt, style=Bold</value>
-  </data>
-  <data name="AssistButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="AssistButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 20</value>
-  </data>
-  <data name="AssistButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
+  <data name="OppentTeamFaulLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 27</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="OppentTeamFaulLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -195,9 +217,6 @@
   </data>
   <data name="givenFreeThowLabel.Text" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="QuarterTimerStopButton.TabIndex" type="System.Int32, mscorlib">
-    <value>65</value>
   </data>
   <data name="label8.Text" xml:space="preserve">
     <value>Action(Default)</value>
@@ -227,7 +246,7 @@
     <value>7</value>
   </data>
   <data name="SolutionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 22</value>
+    <value>12, 22</value>
   </data>
   <data name="LoadGameDataItem.Text" xml:space="preserve">
     <value>LoadGameData</value>
@@ -260,7 +279,7 @@
     <value>215, 22</value>
   </data>
   <data name="&gt;&gt;OppentTeamFaulLabel.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>23</value>
   </data>
   <data name="QuarterTimerStopButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>421, 59</value>
@@ -279,9 +298,6 @@
   </data>
   <data name="UnSportsmanLikeFaulButton.TabIndex" type="System.Int32, mscorlib">
     <value>49</value>
-  </data>
-  <data name="&gt;&gt;StealButton.Name" xml:space="preserve">
-    <value>StealButton</value>
   </data>
   <data name="PlayerNameLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>379, 174</value>
@@ -323,7 +339,7 @@
     <value>39</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 16</value>
+    <value>77, 12</value>
   </data>
   <data name="&gt;&gt;OppentCortTeamListBox.Name" xml:space="preserve">
     <value>OppentCortTeamListBox</value>
@@ -344,7 +360,7 @@
     <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;NewGameToolStripButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -354,6 +370,9 @@
   </data>
   <data name="&gt;&gt;PersonalFaulButton.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="StealButton.Text" xml:space="preserve">
     <value>ST(&amp;S)</value>
@@ -376,26 +395,29 @@
   <data name="label2.Text" xml:space="preserve">
     <value>TeamFaul</value>
   </data>
-  <data name="NewGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 22</value>
+  <data name="ChangeFormBackGroundColorItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
   </data>
   <data name="LoadToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
   <data name="&gt;&gt;MyTeamFaulLabel.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>21</value>
   </data>
   <data name="label6.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="ChangePointLabelColorDefaultItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 22</value>
+    <value>209, 22</value>
   </data>
   <data name="&gt;&gt;OppentOutTeamListBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="givenFreeThowLabel.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
+  </data>
+  <data name="QuarterTimerFastFowardButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>468, 59</value>
   </data>
   <data name="OppentTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>551, 62</value>
@@ -409,8 +431,8 @@
   <data name="&gt;&gt;ChangeMyTeamItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="LoadGameDataItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 22</value>
+  <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>12, 22</value>
   </data>
   <data name="TechnicalFaulButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -438,22 +460,22 @@
 </value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 2</value>
+    <value>-24, 31</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>18</value>
   </data>
   <data name="MemberChangeButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>101, 23</value>
   </data>
   <data name="&gt;&gt;OppentTeamNameLabel.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>26</value>
   </data>
   <data name="&gt;&gt;ChangeButtonTextColorItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="StopGameItem.Text" xml:space="preserve">
-    <value>Stop</value>
+  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>872, 26</value>
   </data>
   <data name="&gt;&gt;OppentTeamNameLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -461,8 +483,14 @@
   <data name="label4.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="givenFreeThowLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 14.25pt, style=Bold</value>
+  </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;GoGraphScoreFormItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -479,8 +507,8 @@
   <data name="ChangeGameNameItem.Text" xml:space="preserve">
     <value>ChangeGameName</value>
   </data>
-  <data name="&gt;&gt;QuarterTimerFastFowardButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="MyTimeOutLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormInput</value>
@@ -504,10 +532,10 @@
     <value>BenchMember</value>
   </data>
   <data name="&gt;&gt;QuarterTimerFastFowardButton.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>15</value>
   </data>
-  <data name="&gt;&gt;QuarterTimerRewindButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;NextQuarterItem.Name" xml:space="preserve">
+    <value>NextQuarterItem</value>
   </data>
   <data name="QuarterChangeTimerSpeedCombo.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
@@ -548,9 +576,6 @@
   <data name="MyTeamNameLael.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 12</value>
   </data>
-  <data name="NewGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 22</value>
-  </data>
   <data name="&gt;&gt;TurnOverButton.Name" xml:space="preserve">
     <value>TurnOverButton</value>
   </data>
@@ -568,9 +593,6 @@
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>42</value>
-  </data>
-  <data name="MyCortTeamListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>15</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -590,6 +612,9 @@
   <data name="&gt;&gt;QuarterTimerFastFowardButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="BlockShotButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;QuarterText.Name" xml:space="preserve">
     <value>QuarterText</value>
   </data>
@@ -597,7 +622,7 @@
     <value>215, 22</value>
   </data>
   <data name="&gt;&gt;QuarterTimerRewindButton.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>14</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -623,9 +648,6 @@
   <data name="MenuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 2, 0, 2</value>
   </data>
-  <data name="&gt;&gt;GoTacticks2DFormItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;GoPlayerDataFormItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -634,39 +656,6 @@
   </data>
   <data name="GameDataSaveItem.ToolTipText" xml:space="preserve">
     <value>現在の試合データをxmlファイルに保存します</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 38</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 12</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>39</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>TeamFaul</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>26, 38</value>
@@ -677,22 +666,13 @@
   <data name="QuarterTimerRewindButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>35, 31</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="SaveToolStripButton.Text" xml:space="preserve">
+    <value>Save(Ctrl + S)</value>
   </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ToolStrip.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="MyTeamFaulLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="MyTeamFaulLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 20.25pt</value>
-  </data>
-  <data name="MyTeamFaulLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="MemberChangeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;BlockShotButton.Name" xml:space="preserve">
@@ -704,11 +684,8 @@
   <data name="&gt;&gt;OppentTeamNameLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;MyTeamFaulLabel.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="ToolStrip.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;dataToolStripMenuItem.Name" xml:space="preserve">
     <value>dataToolStripMenuItem</value>
@@ -726,7 +703,7 @@
     <value>True</value>
   </data>
   <data name="&gt;&gt;MyTeamNameLael.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>27</value>
   </data>
   <data name="&gt;&gt;label11.Name" xml:space="preserve">
     <value>label11</value>
@@ -740,8 +717,8 @@
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="TimerTickComboBox.Items" xml:space="preserve">
-    <value>100</value>
+  <data name="&gt;&gt;ChangePointLabelColorItem.Name" xml:space="preserve">
+    <value>ChangePointLabelColorItem</value>
   </data>
   <data name="&gt;&gt;ChangeButtonColorItem.Name" xml:space="preserve">
     <value>ChangeButtonColorItem</value>
@@ -769,12 +746,6 @@
   </data>
   <data name="GameEndItem.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>CortMember</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
   </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -809,24 +780,6 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 12</value>
   </data>
-  <data name="MyTimeOutButton.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="MyTimeOutButton.Text" xml:space="preserve">
-    <value>TimeOut(My)</value>
-  </data>
-  <data name="&gt;&gt;MyTimeOutButton.Name" xml:space="preserve">
-    <value>MyTimeOutButton</value>
-  </data>
-  <data name="&gt;&gt;MyTimeOutButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MyTimeOutButton.Parent" xml:space="preserve">
-    <value>groupBox3</value>
-  </data>
-  <data name="&gt;&gt;MyTimeOutButton.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="TechnicalFaulButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 9pt, style=Bold</value>
   </data>
@@ -834,7 +787,7 @@
     <value>50</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>20</value>
   </data>
   <data name="PlayerNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -845,44 +798,11 @@
   <data name="&gt;&gt;MyTimeOutLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GameEndItem.Name" xml:space="preserve">
-    <value>GameEndItem</value>
-  </data>
-  <data name="TechnicalFaulButton.ToolTip" xml:space="preserve">
-    <value>TechnicalFaul</value>
-  </data>
-  <data name="&gt;&gt;TechnicalFaulButton.Name" xml:space="preserve">
-    <value>TechnicalFaulButton</value>
-  </data>
-  <data name="&gt;&gt;TechnicalFaulButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TechnicalFaulButton.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;TechnicalFaulButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="UnSportsmanLikeFaulButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 9pt, style=Bold</value>
-  </data>
-  <data name="UnSportsmanLikeFaulButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 74</value>
-  </data>
-  <data name="UnSportsmanLikeFaulButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
   <data name="&gt;&gt;OppentTeamPointLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;ChangeGameNameItem.Name" xml:space="preserve">
-    <value>ChangeGameNameItem</value>
-  </data>
   <data name="ChangeGameNameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 22</value>
+    <value>189, 22</value>
   </data>
   <data name="OppentCortTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>559, 163</value>
@@ -906,46 +826,19 @@
     <value>141, 55</value>
   </data>
   <data name="OppentCortTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 109</value>
+    <value>145, 100</value>
   </data>
   <data name="&gt;&gt;DebugFormVisiableItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MyCortTeamListBox.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>11</value>
   </data>
-  <data name="&gt;&gt;NextQuarterItem.Name" xml:space="preserve">
-    <value>NextQuarterItem</value>
-  </data>
-  <data name="&gt;&gt;ChangeButtonColorDefaultItem.Name" xml:space="preserve">
-    <value>ChangeButtonColorDefaultItem</value>
+  <data name="&gt;&gt;ChangeLanguageComboBox.Name" xml:space="preserve">
+    <value>ChangeLanguageComboBox</value>
   </data>
   <data name="GoClubMakeFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>163, 22</value>
-  </data>
-  <data name="&gt;&gt;DisQualifyingFaulButton.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;DisQualifyingFaulButton.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 9.75pt, style=Bold</value>
-  </data>
-  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 0</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 13</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Action(Faul)</value>
@@ -955,6 +848,9 @@
   </data>
   <data name="SaveToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 22</value>
+  </data>
+  <data name="&gt;&gt;pageSetupDialog1.Name" xml:space="preserve">
+    <value>pageSetupDialog1</value>
   </data>
   <data name="OppentTeamNameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
@@ -1001,14 +897,11 @@
   <data name="UnSportsmanLikeFaulButton.Text" xml:space="preserve">
     <value>UF</value>
   </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>207, 62</value>
-  </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 13</value>
+    <value>0, 13</value>
   </data>
-  <data name="&gt;&gt;actionPointGraphFormItem.Name" xml:space="preserve">
-    <value>actionPointGraphFormItem</value>
+  <data name="&gt;&gt;GoTCPClientFormItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PersonalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 74</value>
@@ -1022,44 +915,8 @@
   <data name="MenuStrip1.Text" xml:space="preserve">
     <value>menuStrip1</value>
   </data>
-  <data name="&gt;&gt;GoTCPServerFormItem.Name" xml:space="preserve">
-    <value>GoTCPServerFormItem</value>
-  </data>
-  <data name="&gt;&gt;givenFreeThowLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;givenFreeThowLabel.Parent" xml:space="preserve">
-    <value>groupBox2</value>
-  </data>
-  <data name="&gt;&gt;givenFreeThowLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 31</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 12</value>
-  </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>GivenFreeThrow</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
   </data>
   <data name="&gt;&gt;ExitItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1068,7 +925,7 @@
     <value />
   </data>
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+    <value>groupBox3</value>
   </data>
   <data name="&gt;&gt;GoTCPClientFormItem.Name" xml:space="preserve">
     <value>GoTCPClientFormItem</value>
@@ -1082,8 +939,8 @@
   <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
   </data>
-  <data name="TimerTickComboBox.Items1" xml:space="preserve">
-    <value>200</value>
+  <data name="&gt;&gt;GameEndItem.Name" xml:space="preserve">
+    <value>GameEndItem</value>
   </data>
   <data name="UpButton.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -1097,20 +954,17 @@
   <data name="&gt;&gt;givenFreeThowLabel.Name" xml:space="preserve">
     <value>givenFreeThowLabel</value>
   </data>
-  <data name="QuarterTimerRewindButton.TabIndex" type="System.Int32, mscorlib">
-    <value>64</value>
+  <data name="&gt;&gt;GoActionPointEditFormItem.Name" xml:space="preserve">
+    <value>GoActionPointEditFormItem</value>
   </data>
-  <data name="&gt;&gt;QuarterTimerRewindButton.Name" xml:space="preserve">
-    <value>QuarterTimerRewindButton</value>
+  <data name="UnSportsmanLikeFaulButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;QuarterTimerRewindButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;GoTeamMakeFormItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;QuarterTimerRewindButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;QuarterTimerRewindButton.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="OppentCortTeamListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>12</value>
   </data>
   <data name="QuarterTimerFastFowardButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1152,170 +1006,106 @@
         atrENlhrQt9ndTpYwgXmlpge0ekMtvju2hkn46T8oeqJnHzKErFpuvKM/9k=
 </value>
   </data>
-  <data name="QuarterTimerFastFowardButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
+    <value>8</value>
   </data>
-  <data name="QuarterTimerFastFowardButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>468, 59</value>
+  <data name="&gt;&gt;BlockShotButton.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="QuarterTimerFastFowardButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 31</value>
+  <data name="&gt;&gt;SolutionToolStripMenuItem.Name" xml:space="preserve">
+    <value>SolutionToolStripMenuItem</value>
   </data>
-  <data name="QuarterTimerFastFowardButton.TabIndex" type="System.Int32, mscorlib">
-    <value>63</value>
-  </data>
-  <data name="&gt;&gt;QuarterTimerFastFowardButton.Name" xml:space="preserve">
-    <value>QuarterTimerFastFowardButton</value>
-  </data>
-  <data name="&gt;&gt;QuarterTimerFastFowardButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;QuarterTimerRewindButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;QuarterTimerFastFowardButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="AssistButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 195</value>
   </data>
-  <data name="&gt;&gt;QuarterTimerFastFowardButton.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="MyTeamNameLael.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="QuarterTimerStopButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
+  <data name="StealButton.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
   </data>
-  <data name="QuarterTimerStopButton.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;GoPlayerDataFormItem.Name" xml:space="preserve">
+    <value>GoPlayerDataFormItem</value>
   </data>
-  <data name="QuarterTimerStopButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 9pt</value>
+  <data name="&gt;&gt;PropToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="QuarterTimerStopButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
+  <data name="PlayerNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="QuarterTimerStopButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="StopGameItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
   </data>
-  <data name="QuarterTimerStopButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>421, 59</value>
+  <data name="OppentOutTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 94</value>
   </data>
-  <data name="QuarterTimerStopButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 31</value>
+  <data name="&gt;&gt;OppentTimeOutButton.Name" xml:space="preserve">
+    <value>OppentTimeOutButton</value>
   </data>
-  <data name="QuarterTimerStopButton.TabIndex" type="System.Int32, mscorlib">
-    <value>65</value>
+  <data name="TechnicalFaulButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
   </data>
-  <data name="QuarterTimerStopButton.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageBeforeText</value>
-  </data>
-  <data name="&gt;&gt;QuarterTimerStopButton.Name" xml:space="preserve">
-    <value>QuarterTimerStopButton</value>
-  </data>
-  <data name="&gt;&gt;QuarterTimerStopButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;QuarterTimerStopButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;QuarterTimerStopButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 9.75pt, style=Bold</value>
-  </data>
-  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 2</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 13</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+  <data name="PersonalFaulButton.TabIndex" type="System.Int32, mscorlib">
     <value>53</value>
   </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Action(Default)</value>
+  <data name="&gt;&gt;GoDataEditFormItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
+  <data name="GameLocationText.Text" xml:space="preserve">
+    <value>NoInputLocation</value>
   </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;ChangeGameLocationItem.Name" xml:space="preserve">
+    <value>ChangeGameLocationItem</value>
   </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="MyTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 36pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TechnicalFaulButton.Name" xml:space="preserve">
+    <value>TechnicalFaulButton</value>
+  </data>
+  <data name="&gt;&gt;QuarterTimerStopButton.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="&gt;&gt;OppentTimeOutLabel.Parent" xml:space="preserve">
     <value>groupBox3</value>
   </data>
-  <data name="groupBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>66</value>
+  <data name="&gt;&gt;ColorConfigItem.Name" xml:space="preserve">
+    <value>ColorConfigItem</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Name" xml:space="preserve">
-    <value>groupBox1</value>
+  <data name="UpButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;QuarterTimerRewindButton.Name" xml:space="preserve">
+    <value>QuarterTimerRewindButton</value>
   </data>
-  <data name="&gt;&gt;groupBox1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="ChangeButtonTextColorItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
   </data>
-  <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 273</value>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 111</value>
+  <data name="&gt;&gt;ChangeGameNameItem.Name" xml:space="preserve">
+    <value>ChangeGameNameItem</value>
   </data>
-  <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>67</value>
+  <data name="OppentTeamNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
-    <value>groupBox2</value>
+  <data name="ChangeButtonColorDefaultItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
   </data>
-  <data name="&gt;&gt;groupBox2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="MemberChangeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="UnSportsmanLikeFaulButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="UnSportsmanLikeFaulButton.Size" type="System.Drawing.Size, System.Drawing">
@@ -1345,8 +1135,8 @@
   <data name="&gt;&gt;QuarterText.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ToolStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TurnOverButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="OppentTimeOutButton.TabIndex" type="System.Int32, mscorlib">
     <value>61</value>
@@ -1356,9 +1146,6 @@
   </data>
   <data name="FileToolStripMenuItem.Text" xml:space="preserve">
     <value>file</value>
-  </data>
-  <data name="&gt;&gt;QuarterTimerRewindButton.Name" xml:space="preserve">
-    <value>QuarterTimerRewindButton</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1384,23 +1171,20 @@
   <data name="&gt;&gt;FileToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 0</value>
+  <data name="&gt;&gt;GameLocationText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;UndoToolStripButton.Name" xml:space="preserve">
     <value>UndoToolStripButton</value>
   </data>
-  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="UnSportsmanLikeFaulButton.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>44</value>
   </data>
   <data name="ChangePointLabelColorItem.Text" xml:space="preserve">
     <value>ChangePointLabelColor</value>
-  </data>
-  <data name="MyTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 36pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;GameToolStripMenuItem.Name" xml:space="preserve">
     <value>GameToolStripMenuItem</value>
@@ -1411,8 +1195,8 @@
   <data name="TimerTickComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
   </data>
-  <data name="&gt;&gt;GoTCPClientFormItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;MyTeamNameLael.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="BlockShotButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 27</value>
@@ -1459,16 +1243,10 @@
   <data name="NewGameToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="NewGameToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
-  </data>
-  <data name="NewGameToolStripButton.Text" xml:space="preserve">
-    <value>NewGame(Ctrl + N)</value>
-  </data>
   <data name="LoadToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAFZzSURBVHhe7Z0HnBTl2cA5jiKggD0m0dhNjIVY8qWY2BIT
+        YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAFZzSURBVHhe7Z0HnBTl2cA5jiKggD0m0dhNjIVY8qWY2BIT
         u8aKoPSqIAoaa0QB6RwWeu/do/fe+9E7HL3DUaTDPd/zvDPv7DvvPrM7uzu7e7c3D7//l92PImX//3nf
         mdm9QvGcrMz3y64c827jlWNq5eD/gkb2ylF1ZqwY824vfIw/5t0GWWPefSxrbN1y5k/3xx9/8utkZ71f
         dv2sD7PWz/gAVk+oB6vHvgubZn2pRyAEGA0MhMAIRGMRCMT8T/jjjz95dbYs/jhr6+KPQbJ3fRs4c2IC
@@ -1830,21 +1608,18 @@
         HDUCk3CpuWV2Q0N+LgAO8m/Fn7Nz8ZdOAdCR8tPHPvsT4XhxuVEGYPOS5uLn/PD1s9n4S3+FfIF8ivwX
         +QhpiDRA6ITfewitEigIMgp09Pev6+f30SOwmSIQTn4hPtEw0gAQ9KWe/PFg3Fxu1LcLFIBDWzvBzKF1
         xY/7vPajy/CXaoU0R5oi3yAUhC+Rz5BPkI8RCsIHCK0S6MYe/xN8U2VEBMwl5qReGIFZH7qWn9jBB0C+
-        K4yQ8vv7xDhNuMuNFARaIUztXx3Gdn9H/P+6fff6ueuvvpyO+F8j3yMZSFuEgtACaYY0Qeh6//8QigB9
+        K4yQ8vv7xDhNuMuNFARaIUztXx3Gdn9H/P+6fvf6ueuvvpyO+F8j3yMZSFuEgtACaYY0Qeh6//8QigB9
         hr8/qTbGm4jMzxSQEUDhbQFg5Kdtw67l34h7ww9t7SxeWCNavXkSf0k1AAR9BLQ/CZpw2wVaNVD4zR8u
         hy7f0dt46R5+upFHngugJT/9G/qf4JvKo0aA3kS0dsr7zNHfLj+xd1ULEYDsrDbixdW71Ssr8JdT3xtO
         nwzrTxLHOKFIWwbiDX/v7g8/jhHg5J9lsG9NK6cAEPShkP77wP3xJ7+MiIB5YklEYDJGQJdfCcDBTd+J
         M8vy7aHtv3x6BP4yvvz++JOfR76T0IhAfVZ+4uj2LiIAC8d8KALwdYMnOuJPp8t9BfvLO/vjT34fNQJL
         R9cNkn/7gs+F/MTUATVFAKq//gBdP/bl98efVBj1MwWWjsIIKAHYs7K5kH/fxh/E95tXAK4yfqY//viT
         EsNFYOucj4OW//TjzJ/ijz/+pNLYP1PgfTi05Uch//r5TQz5Ef8Skz/+pPCoEdCh7zN/mD/++JOqIyKg
-        3m6Kj+k2VPO7/fEnRaZQof8HuFFwGlkU1igAAAAASUVORK5CYII=
+        3m6Kj+k2VPO7/fEnRaZQof8HiyJwGelXN7sAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="QuarterText.Location" type="System.Drawing.Point, System.Drawing">
     <value>373, 128</value>
-  </data>
-  <data name="MyTeamFaulLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 27</value>
   </data>
   <data name="&gt;&gt;RestartGameItem.Name" xml:space="preserve">
     <value>RestartGameItem</value>
@@ -1880,10 +1655,7 @@
     <value>CortPictureBox</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="GameLocationText.Text" xml:space="preserve">
-    <value>NoInputLocation</value>
+    <value>19</value>
   </data>
   <data name="MyTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>229, 62</value>
@@ -1892,16 +1664,13 @@
     <value />
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 16</value>
+    <value>77, 12</value>
   </data>
   <data name="GameToolStripMenuItem.Text" xml:space="preserve">
     <value>Game</value>
   </data>
   <data name="OppentTimeOutButton.Text" xml:space="preserve">
     <value>TimeOut(Oppent)</value>
-  </data>
-  <data name="MyTimeOutLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
   </data>
   <data name="StealButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 27</value>
@@ -1919,7 +1688,7 @@
     <value>label7</value>
   </data>
   <data name="&gt;&gt;BlockShotButton.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+    <value>$this</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -1931,7 +1700,7 @@
     <value>NoControl</value>
   </data>
   <data name="&gt;&gt;MyTimeOutLabel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;ChangeButtonColorItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1954,9 +1723,6 @@
   <data name="StealButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;ChangeLanguageComboBox.Name" xml:space="preserve">
-    <value>ChangeLanguageComboBox</value>
-  </data>
   <data name="DisQualifyingFaulButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 9pt, style=Bold</value>
   </data>
@@ -1967,7 +1733,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MemberChangeButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="MyTeamNameLael.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1999,6 +1765,9 @@
   <data name="GoTCPServerFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 22</value>
   </data>
+  <data name="&gt;&gt;DownButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;ChangeOppentTeamItem.Name" xml:space="preserve">
     <value>ChangeOppentTeamItem</value>
   </data>
@@ -2024,10 +1793,10 @@
     <value />
   </data>
   <data name="&gt;&gt;StealButton.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;TurnOverButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>0</value>
   </data>
   <data name="groupBox2.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -2065,17 +1834,14 @@
   <data name="PrintPreviewItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 22</value>
   </data>
-  <data name="&gt;&gt;StrategySimulationFormItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="MyCortTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 109</value>
+    <value>145, 100</value>
   </data>
   <data name="&gt;&gt;groupBox2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterText.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>25</value>
   </data>
   <data name="RedoToolStripButton.Text" xml:space="preserve">
     <value>Redo(Ctrl + Y)</value>
@@ -2083,467 +1849,187 @@
   <data name="LoadToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 22</value>
   </data>
-  <data name="LoadToolStripButton.Text" xml:space="preserve">
-    <value>Load(Ctrl + L)</value>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="SaveToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
+  <data name="&gt;&gt;groupBox2.Name" xml:space="preserve">
+    <value>groupBox2</value>
   </data>
-  <data name="SaveToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+  <data name="label11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MyTimeOutButton.Text" xml:space="preserve">
+    <value>TimeOut(My)</value>
+  </data>
+  <data name="&gt;&gt;MyTeamFaulLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ChangeButtonTextColorDefaultItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="QuarterTimerStopButton.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="UnSportsmanLikeFaulButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="GoActionPointEditFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 22</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TechnicalFaulButton.ToolTip" xml:space="preserve">
+    <value>TechnicalFaul</value>
+  </data>
+  <data name="&gt;&gt;ChangePointLabelColorDefaultItem.Name" xml:space="preserve">
+    <value>ChangePointLabelColorDefaultItem</value>
+  </data>
+  <data name="BlockShotButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>468, 154</value>
+  </data>
+  <data name="&gt;&gt;SolutionToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MyCortTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 163</value>
+  </data>
+  <data name="&gt;&gt;UpButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OppentTimeOutLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;groupBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MyTeamFaulLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 27</value>
+  </data>
+  <data name="&gt;&gt;ChangeFormBackGroundColorItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OppentTimeOutButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="actionPointGraphFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 22</value>
+  </data>
+  <data name="&gt;&gt;MyCortTeamListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="MyTimeOutButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="PersonalFaulButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;ExitItem.Name" xml:space="preserve">
+    <value>ExitItem</value>
+  </data>
+  <data name="&gt;&gt;ChangeGameNameItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 13</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamPointLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RedoToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
-  <data name="SaveToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>78</value>
   </data>
-  <data name="SaveToolStripButton.Text" xml:space="preserve">
-    <value>Save(Ctrl + S)</value>
+  <data name="&gt;&gt;QuarterTimerFastFowardButton.Name" xml:space="preserve">
+    <value>QuarterTimerFastFowardButton</value>
   </data>
-  <data name="UndoToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
+  <data name="GoGraphScoreFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 22</value>
   </data>
-  <data name="UndoToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
+  <data name="&gt;&gt;MyTeamFaulLabel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="UndoToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
+  <data name="MyTimeOutButton.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="UndoToolStripButton.Text" xml:space="preserve">
-    <value>Undo(Ctrl + Z)</value>
+  <data name="&gt;&gt;GoTCPServerFormItem.Name" xml:space="preserve">
+    <value>GoTCPServerFormItem</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="QuarterText.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;MyOutTeamListBox.ZOrder" xml:space="preserve">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;TechnicalFaulButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OppentTimeOutLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="QuarterTimerFastFowardButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QuarterTimerFastFowardButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 31</value>
+  </data>
+  <data name="OppentOutTeamListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="QuarterTimerStopButton.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;GameToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GameLocationText.Name" xml:space="preserve">
+    <value>GameLocationText</value>
+  </data>
+  <data name="TurnOverButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>480, 172</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="TechnicalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;StrategySimulationFormItem.Name" xml:space="preserve">
+    <value>StrategySimulationFormItem</value>
+  </data>
+  <data name="givenFreeThowLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;UnSportsmanLikeFaulButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="QuarterTimerStopButton.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="RedoToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAF52SURBVHhe7b0HmBXVtu973nv3vfvOPvecve/eerZhG0By
+        YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAF52SURBVHhe7b0HmBXVtu973nv3vfvOPvecve/eerZhG0By
         k5qcc2xSk3NOTegmN01Dk3NQySgqBkARARVMKCIgKiomcqabJm8xYA573PGfq2atWbVmrdSrE87xff+v
         V9WqXqGqfv8xZqha/2bChAkTJkyYMGHChAkTJkyYMHELxv9lyYQJE3+AkMAHkwkTJm7BkID/3x4yJmDC
         xC0abvD/H0v/Q3msGoEJEyZukVDhl9D/vy5JI5AGYEzAhIlbICT8Kvj/k/X/K8KyzgRMmDBRiEOFH4D/
@@ -2949,14 +2435,14 @@
         mDBhwoQJEyZMmDBhwoQJEyZMmDBh4paNf/u3/wOcZAhzVKSJxwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="RedoToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
+  <data name="&gt;&gt;PlayerNameLabel.ZOrder" xml:space="preserve">
+    <value>29</value>
   </data>
-  <data name="RedoToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 22</value>
+  <data name="&gt;&gt;RedoToolStripButton.Name" xml:space="preserve">
+    <value>RedoToolStripButton</value>
   </data>
-  <data name="RedoToolStripButton.Text" xml:space="preserve">
-    <value>Redo(Ctrl + Y)</value>
+  <data name="StealButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>672, 230</value>
   </data>
   <data name="MyTeamFaulLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2981,6 +2467,9 @@
   </data>
   <data name="CortPictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+  </data>
+  <data name="QuarterTimerRewindButton.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="UndoToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
@@ -3007,7 +2496,7 @@
     <value>88, 12</value>
   </data>
   <data name="&gt;&gt;StealButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
     <value>MenuStrip1</value>
@@ -3061,32 +2550,38 @@
   <data name="QuarterTimer.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
+  <data name="SaveToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
   <data name="&gt;&gt;OppentTeamFaulLabel.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="MemberChangeButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 23</value>
   </data>
-  <data name="&gt;&gt;MyTeamNameLael.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;StopGameItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="QuarterTimerRewindButton.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
   </data>
   <data name="&gt;&gt;QuarterTimer.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>24</value>
   </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CortPictureBox.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>28</value>
   </data>
   <data name="&gt;&gt;GoClubMakeFormItem.Name" xml:space="preserve">
     <value>GoClubMakeFormItem</value>
   </data>
   <data name="&gt;&gt;MyTeamPointLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pageSetupDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PageSetupDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;givenFreeThowLabel.Parent" xml:space="preserve">
     <value>groupBox2</value>
@@ -3100,8 +2595,8 @@
   <data name="TurnOverButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 27</value>
   </data>
-  <data name="QuarterTimerFastFowardButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>468, 59</value>
+  <data name="&gt;&gt;StrategySimulationFormItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;CortPictureBox.Parent" xml:space="preserve">
     <value>$this</value>
@@ -3122,7 +2617,7 @@
     <value>ExchangeListBox.ExChangeList, ExchangeListBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="StartGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
+    <value>141, 22</value>
   </data>
   <data name="MemberChangeButton.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -3135,9 +2630,6 @@
   </data>
   <data name="MyOutTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11pt</value>
-  </data>
-  <data name="OppentCortTeamListBox.HorizontalScrollbar" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="&gt;&gt;GoBoxScoreFormItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3153,9 +2645,6 @@
   </data>
   <data name="DisQualifyingFaulButton.ToolTip" xml:space="preserve">
     <value>DisQualifyingFaul</value>
-  </data>
-  <data name="&gt;&gt;StopGameItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;UpButton.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -3187,38 +2676,41 @@
   <data name="&gt;&gt;GoGraphScoreFormItem.Name" xml:space="preserve">
     <value>GoGraphScoreFormItem</value>
   </data>
-  <data name="SaveToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
+  <data name="&gt;&gt;ColorConfigItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PlayerNameLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="NewGameItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 22</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 0</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>17</value>
   </data>
-  <data name="givenFreeThowLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 14.25pt, style=Bold</value>
+  <data name="&gt;&gt;ChangeButtonColorDefaultItem.Name" xml:space="preserve">
+    <value>ChangeButtonColorDefaultItem</value>
   </data>
   <data name="&gt;&gt;OppentCortTeamListBox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>10</value>
   </data>
   <data name="RestartGameItem.Text" xml:space="preserve">
     <value>Restart</value>
   </data>
   <data name="ChangeButtonColorItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 22</value>
+    <value>209, 22</value>
   </data>
   <data name="MyOutTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>17, 163</value>
   </data>
+  <data name="dataToolStripMenuItem.Text" xml:space="preserve">
+    <value>Data</value>
+  </data>
   <data name="OppentTeamPointLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;GameLocationText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DisQualifyingFaulButton.Name" xml:space="preserve">
     <value>DisQualifyingFaulButton</value>
@@ -3226,8 +2718,8 @@
   <data name="MyTeamNameLael.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="TurnOverButton.Text" xml:space="preserve">
-    <value>TO(&amp;T)</value>
+  <data name="&gt;&gt;QuarterTimerFastFowardButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="TurnOverButton.ToolTip" xml:space="preserve">
     <value>TurnOver</value>
@@ -3242,13 +2734,13 @@
     <value>47, 83</value>
   </data>
   <data name="RestartGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
+    <value>141, 22</value>
   </data>
   <data name="QuarterText.Text" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="ChangeFormBackGroundColorDefaultItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 22</value>
+    <value>209, 22</value>
   </data>
   <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3319,6 +2811,9 @@
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
+  <data name="MyCortTeamListBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <data name="&gt;&gt;QuarterTimerStopButton.Name" xml:space="preserve">
     <value>QuarterTimerStopButton</value>
   </data>
@@ -3331,11 +2826,11 @@
   <data name="OppentTeamNameLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 9pt, style=Bold</value>
   </data>
+  <data name="TurnOverButton.Text" xml:space="preserve">
+    <value>TO(&amp;T)</value>
+  </data>
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
-  </data>
-  <data name="&gt;&gt;TurnOverButton.Parent" xml:space="preserve">
-    <value>groupBox1</value>
   </data>
   <data name="QuarterChangeTimerSpeedCombo.Items" xml:space="preserve">
     <value>100</value>
@@ -3347,13 +2842,13 @@
     <value>6</value>
   </data>
   <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>30</value>
   </data>
   <data name="ToolStrip.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 26</value>
   </data>
-  <data name="dataToolStripMenuItem.Text" xml:space="preserve">
-    <value>Data</value>
+  <data name="&gt;&gt;QuarterTimerRewindButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentOutTeamListBox.Name" xml:space="preserve">
     <value>OppentOutTeamListBox</value>
@@ -3371,7 +2866,7 @@
     <value>DebugFormVisiableItem</value>
   </data>
   <data name="&gt;&gt;MyTimeOutButton.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="ExitItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>215, 22</value>
@@ -3397,8 +2892,8 @@
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>170, 133</value>
   </data>
-  <data name="&gt;&gt;DownButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 62</value>
   </data>
   <data name="GoTCPClientFormItem.Text" xml:space="preserve">
     <value>TCPClient</value>
@@ -3436,11 +2931,14 @@
   <data name="DownButton.Text" xml:space="preserve">
     <value>↓</value>
   </data>
-  <data name="&gt;&gt;BlockShotButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="&gt;&gt;GoTacticks2DFormItem.Name" xml:space="preserve">
+    <value>GoTacticks2DFormItem</value>
   </data>
   <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 9.75pt, style=Bold</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;ChangePointLabelColorItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -3448,8 +2946,8 @@
   <data name="CortPictureBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>555, 297</value>
   </data>
-  <data name="MyCortTeamListBox.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;ToolStrip.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="GameNameText.Text" xml:space="preserve">
     <value>Game1</value>
@@ -3461,13 +2959,13 @@
     <value>Undo(Ctrl + Z)</value>
   </data>
   <data name="NextQuarterItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
+    <value>141, 22</value>
   </data>
   <data name="GameNameText.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 25</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>22</value>
   </data>
   <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>248, 111</value>
@@ -3502,8 +3000,8 @@
   <data name="&gt;&gt;PrintFormItem.Name" xml:space="preserve">
     <value>PrintFormItem</value>
   </data>
-  <data name="&gt;&gt;DownButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;actionPointGraphFormItem.Name" xml:space="preserve">
+    <value>actionPointGraphFormItem</value>
   </data>
   <data name="OppentOutTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>716, 163</value>
@@ -3514,11 +3012,11 @@
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;NextQuarterItem.Name" xml:space="preserve">
-    <value>NextQuarterItem</value>
+  <data name="&gt;&gt;ChangeFormBackGroundColorItem.Name" xml:space="preserve">
+    <value>ChangeFormBackGroundColorItem</value>
   </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="MyTeamPointLabel.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -3541,9 +3039,6 @@
   <data name="ChangeLanguageItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>263, 22</value>
   </data>
-  <data name="&gt;&gt;QuarterTimerRewindButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <data name="DebugFormVisiableItem.Text" xml:space="preserve">
     <value>DebugFormSwitching</value>
   </data>
@@ -3553,8 +3048,8 @@
   <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;ChangeButtonColorDefaultItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="QuarterTimerFastFowardButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -3565,11 +3060,8 @@
   <data name="PersonalFaulButton.ToolTip" xml:space="preserve">
     <value>PersonalFaul</value>
   </data>
-  <data name="QuarterTimer.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="&gt;&gt;AssistButton.Parent" xml:space="preserve">
-    <value>groupBox1</value>
+    <value>$this</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>215, 273</value>
@@ -3578,7 +3070,7 @@
     <value>PrintFormPreview</value>
   </data>
   <data name="ChangeGameLocationItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 22</value>
+    <value>189, 22</value>
   </data>
   <data name="&gt;&gt;GoDataEditFormItem.Name" xml:space="preserve">
     <value>GoDataEditFormItem</value>
@@ -3591,9 +3083,6 @@
   </data>
   <data name="&gt;&gt;FormInputTimer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="MyCortTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 163</value>
   </data>
   <data name="OppentCortTeamListBox.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -3613,8 +3102,8 @@
   <data name="&gt;&gt;LoadToolStripButton.Name" xml:space="preserve">
     <value>LoadToolStripButton</value>
   </data>
-  <data name="&gt;&gt;GoTacticks2DFormItem.Name" xml:space="preserve">
-    <value>GoTacticks2DFormItem</value>
+  <data name="&gt;&gt;GoTacticks2DFormItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="UpButton.Text" xml:space="preserve">
     <value>↑</value>
@@ -3631,181 +3120,600 @@
   <data name="&gt;&gt;ChangeFormBackGroundColorDefaultItem.Name" xml:space="preserve">
     <value>ChangeFormBackGroundColorDefaultItem</value>
   </data>
-  <data name="&gt;&gt;ChangeFormBackGroundColorDefaultItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="PrintFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 22</value>
   </data>
-  <data name="&gt;&gt;ChangePointLabelColorItem.Name" xml:space="preserve">
-    <value>ChangePointLabelColorItem</value>
+  <data name="QuarterTimer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 12</value>
   </data>
-  <data name="&gt;&gt;ChangePointLabelColorItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="OppentTeamPointLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
   </data>
-  <data name="&gt;&gt;ChangePointLabelColorDefaultItem.Name" xml:space="preserve">
-    <value>ChangePointLabelColorDefaultItem</value>
+  <data name="GameEndItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 22</value>
   </data>
-  <data name="&gt;&gt;ChangePointLabelColorDefaultItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="MyTeamFaulLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
-  <data name="&gt;&gt;ChangeButtonColorItem.Name" xml:space="preserve">
-    <value>ChangeButtonColorItem</value>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 12</value>
   </data>
-  <data name="&gt;&gt;ChangeButtonColorItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;MyOutTeamListBox.Type" xml:space="preserve">
+    <value>ExchangeListBox.ExChangeList, ExchangeListBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;ChangeButtonColorDefaultItem.Name" xml:space="preserve">
-    <value>ChangeButtonColorDefaultItem</value>
+  <data name="GameLocationText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 25</value>
   </data>
-  <data name="&gt;&gt;ChangeButtonColorDefaultItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChangeButtonTextColorItem.Name" xml:space="preserve">
-    <value>ChangeButtonTextColorItem</value>
-  </data>
-  <data name="&gt;&gt;ChangeButtonTextColorItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChangeButtonTextColorDefaultItem.Name" xml:space="preserve">
-    <value>ChangeButtonTextColorDefaultItem</value>
-  </data>
-  <data name="&gt;&gt;ChangeButtonTextColorDefaultItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChangeFPSItem.Name" xml:space="preserve">
-    <value>ChangeFPSItem</value>
-  </data>
-  <data name="&gt;&gt;ChangeFPSItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TimerTickComboBox.Name" xml:space="preserve">
-    <value>TimerTickComboBox</value>
+  <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>111, 74</value>
   </data>
   <data name="&gt;&gt;TimerTickComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;DebugFormVisiableItem.Name" xml:space="preserve">
-    <value>DebugFormVisiableItem</value>
-  </data>
-  <data name="&gt;&gt;DebugFormVisiableItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;actionPointGraphFormItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;QuarterChangeTimerSpeedChangeItem.Name" xml:space="preserve">
-    <value>QuarterChangeTimerSpeedChangeItem</value>
+  <data name="&gt;&gt;OppentTeamFaulLabel.Name" xml:space="preserve">
+    <value>OppentTeamFaulLabel</value>
   </data>
-  <data name="&gt;&gt;QuarterChangeTimerSpeedChangeItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;DisQualifyingFaulButton.Parent" xml:space="preserve">
+    <value>groupBox2</value>
+  </data>
+  <data name="AssistButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DownButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DownButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GoDataEditFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 22</value>
+  </data>
+  <data name="DebugFormVisiableItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="RedoToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="ToolStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamPointLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ChangeFPSItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="MyTimeOutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="QuarterTimer.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;OppentCortTeamListBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ChangePointLabelColorItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 22</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="MenuStrip1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ChangePointLabelColorDefaultItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;QuarterChangeTimerSpeedCombo.Name" xml:space="preserve">
-    <value>QuarterChangeTimerSpeedCombo</value>
-  </data>
-  <data name="&gt;&gt;QuarterChangeTimerSpeedCombo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChangeLanguageItem.Name" xml:space="preserve">
-    <value>ChangeLanguageItem</value>
-  </data>
-  <data name="&gt;&gt;ChangeLanguageItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;ChangeButtonTextColorDefaultItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChangeLanguageComboBox.Name" xml:space="preserve">
-    <value>ChangeLanguageComboBox</value>
-  </data>
-  <data name="&gt;&gt;ChangeLanguageComboBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;dataToolStripMenuItem.Name" xml:space="preserve">
-    <value>dataToolStripMenuItem</value>
-  </data>
-  <data name="&gt;&gt;dataToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GoDataEditFormItem.Name" xml:space="preserve">
-    <value>GoDataEditFormItem</value>
-  </data>
-  <data name="&gt;&gt;GoDataEditFormItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GoClubMakeFormItem.Name" xml:space="preserve">
-    <value>GoClubMakeFormItem</value>
-  </data>
-  <data name="&gt;&gt;GoClubMakeFormItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GoTeamMakeFormItem.Name" xml:space="preserve">
-    <value>GoTeamMakeFormItem</value>
-  </data>
-  <data name="&gt;&gt;GoTeamMakeFormItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GoActionPointEditFormItem.Name" xml:space="preserve">
-    <value>GoActionPointEditFormItem</value>
-  </data>
-  <data name="&gt;&gt;GoActionPointEditFormItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;transmission.Name" xml:space="preserve">
-    <value>transmission</value>
-  </data>
-  <data name="&gt;&gt;transmission.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GoTCPServerFormItem.Name" xml:space="preserve">
-    <value>GoTCPServerFormItem</value>
-  </data>
-  <data name="&gt;&gt;GoTCPServerFormItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GoTCPClientFormItem.Name" xml:space="preserve">
-    <value>GoTCPClientFormItem</value>
-  </data>
-  <data name="&gt;&gt;GoTCPClientFormItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ToolTipFormInput.Name" xml:space="preserve">
-    <value>ToolTipFormInput</value>
-  </data>
-  <data name="&gt;&gt;ToolTipFormInput.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NewGameToolStripButton.Name" xml:space="preserve">
-    <value>NewGameToolStripButton</value>
-  </data>
-  <data name="&gt;&gt;NewGameToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LoadToolStripButton.Name" xml:space="preserve">
-    <value>LoadToolStripButton</value>
-  </data>
-  <data name="&gt;&gt;LoadToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SaveToolStripButton.Name" xml:space="preserve">
-    <value>SaveToolStripButton</value>
-  </data>
-  <data name="&gt;&gt;SaveToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UndoToolStripButton.Name" xml:space="preserve">
-    <value>UndoToolStripButton</value>
-  </data>
-  <data name="&gt;&gt;UndoToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RedoToolStripButton.Name" xml:space="preserve">
-    <value>RedoToolStripButton</value>
   </data>
   <data name="&gt;&gt;RedoToolStripButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="MyCortTeamListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;AssistButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ChangeMyTeamItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 22</value>
+  </data>
+  <data name="OppentTeamPointLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="NewGameToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="QuarterTimer.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="GamePropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="&gt;&gt;PersonalFaulButton.Name" xml:space="preserve">
+    <value>PersonalFaulButton</value>
+  </data>
+  <data name="&gt;&gt;LoadGameDataItem.Name" xml:space="preserve">
+    <value>LoadGameDataItem</value>
+  </data>
+  <data name="&gt;&gt;MyTimeOutLabel.Name" xml:space="preserve">
+    <value>MyTimeOutLabel</value>
+  </data>
   <data name="&gt;&gt;ColorDialog.Name" xml:space="preserve">
     <value>ColorDialog</value>
   </data>
-  <data name="&gt;&gt;ColorDialog.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ColorDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;MyTeamPointLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormInput</value>
+  <data name="QuarterTimerStopButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;MyTeamNameLael.Name" xml:space="preserve">
+    <value>MyTeamNameLael</value>
   </data>
+  <data name="&gt;&gt;givenFreeThowLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamNameLabel.Name" xml:space="preserve">
+    <value>OppentTeamNameLabel</value>
+  </data>
+  <data name="givenFreeThowLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;ChangeButtonTextColorDefaultItem.Name" xml:space="preserve">
+    <value>ChangeButtonTextColorDefaultItem</value>
+  </data>
+  <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MyTeamPointLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
+  <data name="label9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="UndoToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="&gt;&gt;MyTimeOutButton.Parent" xml:space="preserve">
+    <value>groupBox3</value>
+  </data>
+  <data name="OppentTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="BlockShotButton.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <metadata name="ToolTipFormInput.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>137, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ja</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="FormInputTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>522, 17</value>
+  </metadata>
+  <metadata name="ToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>297, 17</value>
+  </metadata>
+  <metadata name="pageSetupDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>672, 17</value>
+  </metadata>
+  <metadata name="ColorDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>402, 17</value>
+  </metadata>
+  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
