@@ -916,6 +916,12 @@
             this.MyOutTeamListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.MyOutTeamListBox.Click += new System.EventHandler(this.TeamList_Click);
             // 
+            // ColorDialog
+            // 
+            this.ColorDialog.AnyColor = true;
+            this.ColorDialog.FullOpen = true;
+            this.ColorDialog.ShowHelp = true;
+            // 
             // FormInput
             // 
             resources.ApplyResources(this, "$this");

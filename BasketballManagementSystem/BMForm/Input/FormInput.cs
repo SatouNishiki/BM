@@ -332,13 +332,6 @@ namespace BasketballManagementSystem.BMForm.Input
         private void FormInputTimer_Tick(object sender, System.EventArgs e)
         {
 
-            /*********************** 選択選手 ****************************************/
-
-            PlayerNameLabel.Text = SelectedPlayer.ToString();
-
-            /***********************************************************************/
-
-
             /********************** チーム情報 ********************************************/
 
             MyTeamNameLael.Text = MyTeam.Name;
@@ -425,6 +418,9 @@ namespace BasketballManagementSystem.BMForm.Input
             SyncTeam();
         }
 
+        /// <summary>
+        /// リストとGameDataの選手リストを同期させます
+        /// </summary>
         private void SyncTeam()
         {
             MyTeam.CortMember.Clear();
@@ -525,6 +521,7 @@ namespace BasketballManagementSystem.BMForm.Input
             {
                 //選択選手の記憶
                 SelectedPlayer = (Player)(((ListBox)sender).Items[((ListBox)sender).SelectedIndex]);
+                PlayerNameLabel.Text = SelectedPlayer.ToString();
             }
             catch(System.Exception exception)
             {
@@ -848,9 +845,6 @@ namespace BasketballManagementSystem.BMForm.Input
                 this.BackColor = ColorDialog.Color;
                 AppSetting.GetInstance().FormInputBackGroundColor = ColorDialog.Color;
             }
-
-            // 不要になった時点で破棄する (正しくは オブジェクトの破棄を保証する を参照)
-            ColorDialog.Dispose();
         }
 
         private void PointColorChange_Click(object sender, EventArgs e)
@@ -866,8 +860,6 @@ namespace BasketballManagementSystem.BMForm.Input
                 AppSetting.GetInstance().FormInputPointBackGroundColor = ColorDialog.Color;
             }
 
-            // 不要になった時点で破棄する (正しくは オブジェクトの破棄を保証する を参照)
-            ColorDialog.Dispose();
         }
 
         private void ChangeFormBackGroundColorDefault_Click(object sender, EventArgs e)
@@ -900,8 +892,6 @@ namespace BasketballManagementSystem.BMForm.Input
                 AppSetting.GetInstance().FormInputButtonColor = ColorDialog.Color;
             }
 
-            // 不要になった時点で破棄する (正しくは オブジェクトの破棄を保証する を参照)
-            ColorDialog.Dispose();
         }
 
         private void ChangeButtonColorDefault_Click(object sender, EventArgs e)
@@ -930,8 +920,6 @@ namespace BasketballManagementSystem.BMForm.Input
                 AppSetting.GetInstance().FormInputButtonTextColor = ColorDialog.Color;
             }
 
-            // 不要になった時点で破棄する (正しくは オブジェクトの破棄を保証する を参照)
-            ColorDialog.Dispose();
         }
 
         private void ChangeButtonTextColorDefault_Click(object sender, EventArgs e)
@@ -1116,6 +1104,7 @@ namespace BasketballManagementSystem.BMForm.Input
 
                 LoadProcess(g);
 
+                AddDebugMessage("GameData undo success!");
             }
        
         }
@@ -1124,9 +1113,13 @@ namespace BasketballManagementSystem.BMForm.Input
         {
             if (redoGameDataStack.Count != 0)
             {
+                gameDataStack.Push(Game.CloneDeep());
+
                 Game g = redoGameDataStack.Pop();
 
                 LoadProcess(g);
+
+                AddDebugMessage("GameData redo success!");
 
             }
         }
