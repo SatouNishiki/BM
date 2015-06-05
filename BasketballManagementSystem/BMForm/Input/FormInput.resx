@@ -1052,7 +1052,7 @@
     <value>3</value>
   </data>
   <data name="StopGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="TechnicalFaulButton.Text" xml:space="preserve">
     <value>TF</value>
@@ -1129,8 +1129,8 @@
   <data name="UnSportsmanLikeFaulButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;MyOutTeamListBox.Name" xml:space="preserve">
-    <value>MyOutTeamListBox</value>
+  <data name="UnSportsmanLikeFaulButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 27</value>
   </data>
   <data name="BlockShotButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -1632,14 +1632,14 @@
         HDUCk3CpuWV2Q0N+LgAO8m/Fn7Nz8ZdOAdCR8tPHPvsT4XhxuVEGYPOS5uLn/PD1s9n4S3+FfIF8ivwX
         +QhpiDRA6ITfewitEigIMgp09Pev6+f30SOwmSIQTn4hPtEw0gAQ9KWe/PFg3Fxu1LcLFIBDWzvBzKF1
         xY/7vPajy/CXaoU0R5oi3yAUhC+Rz5BPkI8RCsIHCK0S6MYe/xN8U2VEBMwl5qReGIFZH7qWn9jBB0C+
-        K4yQ8vv7xDhNuMuNFARaIUztXx3Gdn9H/P86fvf6ueuvvpyO+F8j3yMZSFuEgtACaYY0Qeh6//8QigB9
+        K4yQ8vv7xDhNuMuNFARaIUztXx3Gdn9H/P86fPf6ueuvvpyO+F8j3yMZSFuEgtACaYY0Qeh6//8QigB9
         hr8/qTbGm4jMzxSQEUDhbQFg5Kdtw67l34h7ww9t7SxeWCNavXkSf0k1AAR9BLQ/CZpw2wVaNVD4zR8u
         hy7f0dt46R5+upFHngugJT/9G/qf4JvKo0aA3kS0dsr7zNHfLj+xd1ULEYDsrDbixdW71Ssr8JdT3xtO
         nwzrTxLHOKFIWwbiDX/v7g8/jhHg5J9lsG9NK6cAEPShkP77wP3xJ7+MiIB5YklEYDJGQJdfCcDBTd+J
         M8vy7aHtv3x6BP4yvvz++JOfR76T0IhAfVZ+4uj2LiIAC8d8KALwdYMnOuJPp8t9BfvLO/vjT34fNQJL
         R9cNkn/7gs+F/MTUATVFAKq//gBdP/bl98efVBj1MwWWjsIIKAHYs7K5kH/fxh/E95tXAK4yfqY//viT
         EsNFYOucj4OW//TjzJ/ijz/+pNLYP1PgfTi05Uch//r5TQz5Ef8Skz/+pPCoEdCh7zN/mD/++JOqIyKg
-        3m6Kj+k2VPO7/fEnRaZQof8H1ldwFVxr8uYAAAAASUVORK5CYII=
+        3m6Kj+k2VPO7/fEnRaZQof8HqShwFK4gg50AAAAASUVORK5CYII=
 </value>
   </data>
   <data name="QuarterText.Location" type="System.Drawing.Point, System.Drawing">
@@ -1796,16 +1796,13 @@
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="GoTCPServerFormItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>138, 22</value>
   </data>
   <data name="&gt;&gt;ChangeOppentTeamItem.Name" xml:space="preserve">
     <value>ChangeOppentTeamItem</value>
   </data>
   <data name="MyOutTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 169</value>
-  </data>
-  <data name="UnSportsmanLikeFaulButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 27</value>
   </data>
   <data name="&gt;&gt;FormInputTimer.Name" xml:space="preserve">
     <value>FormInputTimer</value>
@@ -1836,6 +1833,9 @@
   </data>
   <data name="&gt;&gt;QuarterTimerStopButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MyOutTeamListBox.Name" xml:space="preserve">
+    <value>MyOutTeamListBox</value>
   </data>
   <data name="StartGameItem.Text" xml:space="preserve">
     <value>StartGame</value>
@@ -2674,7 +2674,7 @@
     <value>ExchangeListBox.ExChangeList, ExchangeListBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="StartGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="MemberChangeButton.TabIndex" type="System.Int32, mscorlib">
     <value>72</value>
@@ -2791,7 +2791,7 @@
     <value>67, 76</value>
   </data>
   <data name="RestartGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="QuarterText.Text" xml:space="preserve">
     <value>1</value>
@@ -2983,7 +2983,7 @@
     <value>221, 111</value>
   </data>
   <data name="GoTCPClientFormItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>138, 22</value>
   </data>
   <data name="DownButton.Text" xml:space="preserve">
     <value>↓</value>
@@ -3013,7 +3013,7 @@
     <value>Undo(Ctrl + Z)</value>
   </data>
   <data name="NextQuarterItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="GameNameText.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 25</value>
@@ -3190,7 +3190,7 @@
     <value>76</value>
   </data>
   <data name="GameEndItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="MyTeamFaulLabel.ToolTip" xml:space="preserve">
     <value />
@@ -3635,7 +3635,7 @@
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAA7OSURBVHhe7Z3rj1XlFYexUlFEsLVe0Hpp2sZYm9qLDRH+
-        hvZfgW/tF0G0CUn5BqUKlgQ+cJHSkhCiH4CA3AnDjFyUi6ACojCtQP0Hdtdvz3kP+529ZmbPMMKcvZ5f
+        hvZfgW/tF0G0CUn5BqUKlgQ+cJHSkhCiCZCA3AnDjFyUi6ACojCtQP0Hdtdvz3kP+529ZmbPMMKcvZ5f
         8mTCzMkk7LPWM+t99+VMm0K5z+F7EA6vDkiLk97kVAD3d5je4fsQhvSeC9WAJwbSolSbPzW9CmGG8WCH
         hyAU6X1XDSQpVGWABFqUavOnxlcRPGzMMmYbczo8Cq0mvc96zx8xVAMzDcngAaMqAiTQgmTN//777xcA
         27dvv7V58+a/Wk380JAYJAOJIE0ESKAlSQKQ2Wfozf/fP/4CAbm15s3iZof//n1x8cUXXxRbtmx5z+ri
@@ -3697,7 +3697,7 @@
         NXSAZEmNSlov6cBp5xSg11DtqoZVy6pp1bZqXLWumk/r/5ACSPsAMuBMI0lAdtSIpHWSNku0Y6rTJgC9
         hmpXNaxaVk2rtlPzq+ZV+2n9H1IAaQqoSkCjkQ6SNkm0U6qDpnOmAL2Galc1rFpWTau2q82f/vqHE4Di
         SUAjkdZF2hzRgdJpEqEDB9BrpPpVLaumVduq8fDNr+g/XZWARqEkAu2MCh0sgF4n1XNqfNV6tflDCkCp
-        SiCJIMkgCQGg10n1nOo71Xvo5q8mHYgq6SABtAGvxu9hpk37P3/5uGV98e47AAAAAElFTkSuQmCC
+        SiCJIMkgCQGg10n1nOo71Xvo5q8mHYgq6SABtAGvxu9hpk37PxqQuDvsUoYpAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="&gt;&gt;AssistButton.ZOrder" xml:space="preserve">
