@@ -120,10 +120,13 @@
   <data name="PlayerNameLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PersonalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 72</value>
+  </data>
   <data name="BlockShotButton.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="CortPictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABC4AAAI+CAYAAABzKUsHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -473,6 +476,9 @@
         WeSa4iBc/OEfPHvwNwAAAAAt+a1f/8zm/wdr4AmliUezKwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="CortPictureBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 389</value>
+  </data>
   <data name="CortPictureBox.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -714,7 +720,10 @@
     <value />
   </data>
   <data name="MyTeamNameLael.Location" type="System.Drawing.Point, System.Drawing">
-    <value>312, 251</value>
+    <value>36, 111</value>
+  </data>
+  <data name="MyTeamNameLael.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 14</value>
   </data>
   <data name="MyTeamNameLael.ToolTip" xml:space="preserve">
     <value />
@@ -728,11 +737,14 @@
   <data name="QuarterText.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="OppentTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>786, 75</value>
+  </data>
   <data name="OppentTeamFaulLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 38</value>
+    <value>769, 51</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 12</value>
@@ -742,6 +754,9 @@
   </data>
   <data name="label2.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 61</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 12</value>
@@ -765,7 +780,7 @@
     <value />
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 12</value>
+    <value>103, 16</value>
   </data>
   <data name="label4.Text" xml:space="preserve">
     <value>ベンチメンバー</value>
@@ -789,7 +804,7 @@
     <value>752, 133</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 12</value>
+    <value>103, 16</value>
   </data>
   <data name="label6.Text" xml:space="preserve">
     <value>ベンチメンバー</value>
@@ -797,14 +812,29 @@
   <data name="label6.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="MyTimeOutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 23</value>
+  </data>
   <data name="MyTimeOutButton.Text" xml:space="preserve">
     <value>タイムアウト(自)</value>
   </data>
   <data name="MyTimeOutButton.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="TechnicalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 74</value>
+  </data>
+  <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 72</value>
+  </data>
   <data name="UnSportsmanLikeFaulButton.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="DisQualifyingFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>176, 72</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-3, 2</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 13</value>
@@ -816,22 +846,37 @@
     <value />
   </data>
   <data name="MyTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>50, 81</value>
+    <value>41, 84</value>
   </data>
   <data name="MyTimeOutLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="UpButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 11</value>
+  </data>
   <data name="UpButton.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="DownButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 43</value>
+  </data>
   <data name="DownButton.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="givenFreeThowLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 14.25pt, style=Bold</value>
+  </data>
+  <data name="givenFreeThowLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>155, 26</value>
+  </data>
+  <data name="givenFreeThowLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 43</value>
   </data>
   <data name="givenFreeThowLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>458, 217</value>
+    <value>79, 29</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 12</value>
@@ -849,7 +894,10 @@
     <value />
   </data>
   <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>175, 81</value>
+    <value>158, 81</value>
+  </data>
+  <data name="OppentTimeOutLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 23</value>
   </data>
   <data name="OppentTimeOutLabel.ToolTip" xml:space="preserve">
     <value />
@@ -985,9 +1033,6 @@
   <data name="label8.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>192, 101</value>
-  </data>
   <data name="groupBox1.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -1012,8 +1057,23 @@
   <data name="groupBox3.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="OppentTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 48pt</value>
+  </data>
+  <data name="OppentTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>614, 48</value>
+  </data>
   <data name="OppentTeamPointLabel.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="MyTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 48pt</value>
+  </data>
+  <data name="MyTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>237, 42</value>
+  </data>
+  <data name="MyTeamPointLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 67</value>
   </data>
   <data name="MyTeamPointLabel.ToolTip" xml:space="preserve">
     <value />
@@ -1452,14 +1512,14 @@
         HDUCk3CpuWV2Q0N+LgAO8m/Fn7Nz8ZdOAdCR8tPHPvsT4XhxuVEGYPOS5uLn/PD1s9n4S3+FfIF8ivwX
         +QhpiDRA6ITfewitEigIMgp09Pev6+f30SOwmSIQTn4hPtEw0gAQ9KWe/PFg3Fxu1LcLFIBDWzvBzKF1
         xY/7vPajy/CXaoU0R5oi3yAUhC+Rz5BPkI8RCsIHCK0S6MYe/xN8U2VEBMwl5qReGIFZH7qWn9jBB0C+
-        K4yQ8vv7xDhNuMuNFARaIUztXx3Gdn9H/P96fvf6ueuvvpyO+F8j3yMZSFuEgtACaYY0Qeh6//8QigB9
+        K4yQ8vv7xDhNuMuNFARaIUztXx3Gdn9H/P86f/f6ueuvvpyO+F8j3yMZSFuEgtACaYY0Qeh6//8QigB9
         hr8/qTbGm4jMzxSQEUDhbQFg5Kdtw67l34h7ww9t7SxeWCNavXkSf0k1AAR9BLQ/CZpw2wVaNVD4zR8u
         hy7f0dt46R5+upFHngugJT/9G/qf4JvKo0aA3kS0dsr7zNHfLj+xd1ULEYDsrDbixdW71Ssr8JdT3xtO
         nwzrTxLHOKFIWwbiDX/v7g8/jhHg5J9lsG9NK6cAEPShkP77wP3xJ7+MiIB5YklEYDJGQJdfCcDBTd+J
         M8vy7aHtv3x6BP4yvvz++JOfR76T0IhAfVZ+4uj2LiIAC8d8KALwdYMnOuJPp8t9BfvLO/vjT34fNQJL
         R9cNkn/7gs+F/MTUATVFAKq//gBdP/bl98efVBj1MwWWjsIIKAHYs7K5kH/fxh/E95tXAK4yfqY//viT
         EsNFYOucj4OW//TjzJ/ijz/+pNLYP1PgfTi05Uch//r5TQz5Ef8Skz/+pPCoEdCh7zN/mD/++JOqIyKg
-        3m6Kj+k2VPO7/fEnRaZQof8HP+1wHVrl9fkAAAAASUVORK5CYII=
+        3m6Kj+k2VPO7/fEnRaZQof8HMMRwF8r6ZKIAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="SaveToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -2309,6 +2369,9 @@
   </data>
   <data name="ToolStrip.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="QuarterTimer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 101</value>
   </data>
   <data name="QuarterTimer.ToolTip" xml:space="preserve">
     <value />
