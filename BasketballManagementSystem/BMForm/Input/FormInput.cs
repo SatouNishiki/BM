@@ -284,7 +284,7 @@ namespace BasketballManagementSystem.BMForm.Input
             this.BackColor = AppSetting.GetInstance().FormInputBackGroundColor;
             this.MyTeamPointLabel.BackColor = AppSetting.GetInstance().FormInputPointBackGroundColor;
             this.OppentTeamPointLabel.BackColor = AppSetting.GetInstance().FormInputPointBackGroundColor;
-            TimerTickComboBox.SelectedIndex = AppSetting.GetInstance().FormInputFPS;
+          //  TimerTickComboBox.SelectedIndex = AppSetting.GetInstance().FormInputFPS;
             DebugFormVisiableItem.Checked = AppSetting.GetInstance().DebugWindowChecked;
 
             foreach (var b in colorChangeButton)
@@ -936,8 +936,8 @@ namespace BasketballManagementSystem.BMForm.Input
         {
             if (!preLoad)
             {
-                FormInputTimer.Interval = int.Parse(TimerTickComboBox.SelectedItem.ToString());
-                AppSetting.GetInstance().FormInputFPS = TimerTickComboBox.SelectedIndex;
+           //     FormInputTimer.Interval = int.Parse(TimerTickComboBox.SelectedItem.ToString());
+          //      AppSetting.GetInstance().FormInputFPS = TimerTickComboBox.SelectedIndex;
                 AppSetting.GetInstance().SettingChanged();
             }
         }
