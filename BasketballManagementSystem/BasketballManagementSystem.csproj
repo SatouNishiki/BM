@@ -357,7 +357,6 @@
     <EmbeddedResource Include="BMForm\StrategySimulation\Picture\Player_Red_Dark.png" />
     <Content Include="BMForm\Tactick2D\Picture\basketball_court.png" />
     <Content Include="BMForm\Input\Picture\Player.png" />
-    <None Include="Resources\Player.png" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

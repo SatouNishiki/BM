@@ -122,7 +122,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PersonalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 72</value>
+    <value>10, 79</value>
   </data>
   <data name="BlockShotButton.ToolTip" xml:space="preserve">
     <value />
@@ -822,19 +822,19 @@
     <value />
   </data>
   <data name="TechnicalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 74</value>
+    <value>65, 81</value>
   </data>
   <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 72</value>
+    <value>114, 80</value>
   </data>
   <data name="UnSportsmanLikeFaulButton.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="DisQualifyingFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>176, 72</value>
+    <value>164, 80</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-3, 2</value>
+    <value>-1, 0</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 13</value>
@@ -852,13 +852,13 @@
     <value />
   </data>
   <data name="UpButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 11</value>
+    <value>177, 12</value>
   </data>
   <data name="UpButton.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="DownButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>186, 43</value>
+    <value>177, 41</value>
   </data>
   <data name="DownButton.ToolTip" xml:space="preserve">
     <value />
@@ -867,16 +867,16 @@
     <value>MS UI Gothic, 14.25pt, style=Bold</value>
   </data>
   <data name="givenFreeThowLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>155, 26</value>
+    <value>145, 38</value>
   </data>
   <data name="givenFreeThowLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 43</value>
+    <value>28, 21</value>
   </data>
   <data name="givenFreeThowLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 29</value>
+    <value>69, 41</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 12</value>
@@ -1512,14 +1512,14 @@
         HDUCk3CpuWV2Q0N+LgAO8m/Fn7Nz8ZdOAdCR8tPHPvsT4XhxuVEGYPOS5uLn/PD1s9n4S3+FfIF8ivwX
         +QhpiDRA6ITfewitEigIMgp09Pev6+f30SOwmSIQTn4hPtEw0gAQ9KWe/PFg3Fxu1LcLFIBDWzvBzKF1
         xY/7vPajy/CXaoU0R5oi3yAUhC+Rz5BPkI8RCsIHCK0S6MYe/xN8U2VEBMwl5qReGIFZH7qWn9jBB0C+
-        K4yQ8vv7xDhNuMuNFARaIUztXx3Gdn9H/P86fff6ueuvvpyO+F8j3yMZSFuEgtACaYY0Qeh6//8QigB9
+        K4yQ8vv7xDhNuMuNFARaIUztXx3Gdn9H/P86fPf6ueuvvpyO+F8j3yMZSFuEgtACaYY0Qeh6//8QigB9
         hr8/qTbGm4jMzxSQEUDhbQFg5Kdtw67l34h7ww9t7SxeWCNavXkSf0k1AAR9BLQ/CZpw2wVaNVD4zR8u
         hy7f0dt46R5+upFHngugJT/9G/qf4JvKo0aA3kS0dsr7zNHfLj+xd1ULEYDsrDbixdW71Ssr8JdT3xtO
         nwzrTxLHOKFIWwbiDX/v7g8/jhHg5J9lsG9NK6cAEPShkP77wP3xJ7+MiIB5YklEYDJGQJdfCcDBTd+J
         M8vy7aHtv3x6BP4yvvz++JOfR76T0IhAfVZ+4uj2LiIAC8d8KALwdYMnOuJPp8t9BfvLO/vjT34fNQJL
         R9cNkn/7gs+F/MTUATVFAKq//gBdP/bl98efVBj1MwWWjsIIKAHYs7K5kH/fxh/E95tXAK4yfqY//viT
         EsNFYOucj4OW//TjzJ/ijz/+pNLYP1PgfTi05Uch//r5TQz5Ef8Skz/+pPCoEdCh7zN/mD/++JOqIyKg
-        3m6Kj+k2VPO7/fEnRaZQof8HA5VwFtugmbYAAAAASUVORK5CYII=
+        3m6Kj+k2VPO7/fEnRaZQof8HqShwFK4gg50AAAAASUVORK5CYII=
 </value>
   </data>
   <data name="SaveToolStripButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -2371,7 +2371,7 @@
     <value />
   </data>
   <data name="QuarterTimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>405, 101</value>
+    <value>426, 97</value>
   </data>
   <data name="QuarterTimer.ToolTip" xml:space="preserve">
     <value />

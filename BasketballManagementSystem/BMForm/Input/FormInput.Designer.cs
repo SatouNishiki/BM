@@ -800,14 +800,14 @@
             // 
             resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.PersonalFaulButton);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.givenFreeThowLabel);
+            this.groupBox2.Controls.Add(this.DisQualifyingFaulButton);
             this.groupBox2.Controls.Add(this.DownButton);
             this.groupBox2.Controls.Add(this.TechnicalFaulButton);
-            this.groupBox2.Controls.Add(this.UpButton);
-            this.groupBox2.Controls.Add(this.givenFreeThowLabel);
-            this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.UnSportsmanLikeFaulButton);
-            this.groupBox2.Controls.Add(this.DisQualifyingFaulButton);
+            this.groupBox2.Controls.Add(this.UpButton);
+            this.groupBox2.Controls.Add(this.PersonalFaulButton);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             this.ToolTipFormInput.SetToolTip(this.groupBox2, resources.GetString("groupBox2.ToolTip"));
