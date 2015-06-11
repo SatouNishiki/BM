@@ -9,7 +9,7 @@ namespace BasketballManagementSystem.BaseClass.Action
     /// 得点に関与しないActionを定義
     /// </summary>
     [Serializable]
-    public class NonRelationPointAction : Action
+    public class NonRelationPointAction : ActionBase
     {
     }
 }

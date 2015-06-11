@@ -154,26 +154,26 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
 
                 if (o is Miss)
                 {
-                    MA += ((BaseClass.Action.Action)o).ActionPoint;
-                    dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, MA);
+                    MA += ((ActionBase)o).ActionPoint;
+                    dp.SetValueXY(((ActionBase)o).ElapsedTime.TotalSeconds, MA);
                     ActionPointShitGraph.Series["MissAction"].Points.Add(dp);
                 }
                 else if (o is Faul)
                 {
-                    FA += ((BaseClass.Action.Action)o).ActionPoint;
-                    dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, FA);
+                    FA += ((ActionBase)o).ActionPoint;
+                    dp.SetValueXY(((ActionBase)o).ElapsedTime.TotalSeconds, FA);
                     ActionPointShitGraph.Series["FaulAction"].Points.Add(dp);
                 }
                 else if (o is RelationPointAction)
                 {
-                    PA += ((BaseClass.Action.Action)o).ActionPoint;
-                    dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, PA);
+                    PA += ((ActionBase)o).ActionPoint;
+                    dp.SetValueXY(((ActionBase)o).ElapsedTime.TotalSeconds, PA);
                     ActionPointShitGraph.Series["PointAction"].Points.Add(dp);
                 }
                 else
                 {
-                    DA += ((BaseClass.Action.Action)o).ActionPoint;
-                    dp.SetValueXY(((BaseClass.Action.Action)o).ElapsedTime.TotalSeconds, DA);
+                    DA += ((ActionBase)o).ActionPoint;
+                    dp.SetValueXY(((ActionBase)o).ElapsedTime.TotalSeconds, DA);
                     ActionPointShitGraph.Series["DefaultAction"].Points.Add(dp);
                 }
             }
@@ -226,7 +226,7 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
                     }
                     else
                     {
-                        temp[1] += ((BaseClass.Action.Action)o).ActionPoint;
+                        temp[1] += ((ActionBase)o).ActionPoint;
                     }
                 }
 
@@ -294,7 +294,7 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
                         }
                         else
                         {
-                            temp[1] += ((BaseClass.Action.Action)o).ActionPoint;
+                            temp[1] += ((ActionBase)o).ActionPoint;
                         }
                     }
 

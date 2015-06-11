@@ -151,7 +151,7 @@ namespace BasketballManagementSystem.BaseClass.Player
             }
 
             var query = from p in actionList
-                        orderby ((Action.Action)p).ActionDate.Ticks
+                        orderby ((ActionBase)p).ActionDate.Ticks
                         select p;
 
             List<object> rt = query.ToList<object>();
@@ -173,7 +173,7 @@ namespace BasketballManagementSystem.BaseClass.Player
             }
 
             var query = from p in actionList
-                        orderby ((Action.Action)p).ActionDate.Ticks
+                        orderby ((ActionBase)p).ActionDate.Ticks
                         select p;
 
             List<object> rt = query.ToList<object>();

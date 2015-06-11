@@ -71,7 +71,7 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
             Type t1 = action.GetType();
 
             //TODO: 謎警告 原因不明だがコードは正常に動作する(Type型はActionを継承してないからVCが勘違いしてる？)
-            if (t1 is BaseClass.Action.Action) return;
+            if (t1 is ActionBase) return;
 
             MethodInfo methodInfo = null;
 

@@ -14,19 +14,19 @@ namespace BasketballManagementSystem.BaseClass.Action
         /// </summary>
         /// <param name="objectList">Actionオブジェクトが入ったlist</param>
         /// <returns>listの要素が全てAction型か? ActionList : null <returns>
-        public static List<Action> ToActionList(List<object> objectList)
+        public static List<ActionBase> ToActionList(List<object> objectList)
         {
-            List<Action> actionList = new List<Action>();
+            List<ActionBase> actionList = new List<ActionBase>();
 
             foreach (var obj in objectList)
             {
-                if (!(obj is Action))
+                if (!(obj is ActionBase))
                 {
                     BMError.ErrorMessageOutput("不正な型変換が行われました", true);
                     return null;
                 }
 
-                actionList.Add((Action)obj);
+                actionList.Add((ActionBase)obj);
             }
 
             return actionList;
@@ -44,7 +44,7 @@ namespace BasketballManagementSystem.BaseClass.Action
 
             foreach (var obj in objectList)
             {
-                if (!(obj is Action))
+                if (!(obj is ActionBase))
                 {
                     BMError.ErrorMessageOutput("不正な変換が行われました", true);
                     return null;

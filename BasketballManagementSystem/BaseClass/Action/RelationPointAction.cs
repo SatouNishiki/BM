@@ -10,7 +10,7 @@ namespace BasketballManagementSystem.BaseClass.Action
     /// 得点に関係するアクションのクラス
     /// </summary>
     [Serializable]
-    public class RelationPointAction : Action
+    public class RelationPointAction : ActionBase
     {
         /// <summary>
         /// このアクションが行われたときに入る点数

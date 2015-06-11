@@ -148,7 +148,7 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// </summary>
         /// <param name="action">Listから列挙されるアクション</param>
         /// <returns>引数のアクションがほしい:true いらない:false</returns>
-        public delegate bool GetActionListDelegate(Action.Action action);
+        public delegate bool GetActionListDelegate(ActionBase action);
 
         /********************************************************************************************/
 
@@ -340,7 +340,7 @@ namespace BasketballManagementSystem.BaseClass.Player
 
             //linqクエリー式 actionListを絶対時間によって昇順ソート命令
             var query = from p in actionList
-                        orderby ((Action.Action)p).ActionDate.Ticks
+                        orderby ((ActionBase)p).ActionDate.Ticks
                         select p;
 
             List<object> rt = query.ToList<object>();
@@ -358,7 +358,7 @@ namespace BasketballManagementSystem.BaseClass.Player
         {
             List<object> actionList = GetActionList(player);
 
-            actionList.RemoveAll(a => !(dl((Action.Action)a)));
+            actionList.RemoveAll(a => !(dl((ActionBase)a)));
 
             return actionList;
         }
@@ -394,7 +394,7 @@ namespace BasketballManagementSystem.BaseClass.Player
                 minutes2 = temp;
             }
 
-            actionList.RemoveAll(a => !(((Action.Action)a).RemainingTime.Minutes >= minutes1 && ((Action.Action)a).RemainingTime.Minutes < minutes2));
+            actionList.RemoveAll(a => !(((ActionBase)a).RemainingTime.Minutes >= minutes1 && ((ActionBase)a).RemainingTime.Minutes < minutes2));
 
             return actionList;
         }
@@ -418,7 +418,7 @@ namespace BasketballManagementSystem.BaseClass.Player
 
             List<object> actionList = this.GetActionList(player, quarter, minutes1, minutes2);
 
-            actionList.RemoveAll(a => !(((Action.Action)a).ActionName == actionName));
+            actionList.RemoveAll(a => !(((ActionBase)a).ActionName == actionName));
 
             return actionList;
         }
@@ -444,7 +444,7 @@ namespace BasketballManagementSystem.BaseClass.Player
                 {
                     Type elementType = obj.GetType().GetGenericArguments()[0];
                  
-                    if (typeof(Action.Action).IsAssignableFrom(obj.GetType().GetGenericArguments()[0]))
+                    if (typeof(ActionBase).IsAssignableFrom(obj.GetType().GetGenericArguments()[0]))
                     {
                         return obj;
                     }
@@ -476,7 +476,7 @@ namespace BasketballManagementSystem.BaseClass.Player
                 {
                     Type elementType = o.GetType().GetGenericArguments()[0];
 
-                    if (typeof(Action.Action).IsAssignableFrom(o.GetType().GetGenericArguments()[0]))
+                    if (typeof(ActionBase).IsAssignableFrom(o.GetType().GetGenericArguments()[0]))
                     {
                         myPropInfo.SetValue(p, obj, null);
                     }
@@ -518,7 +518,7 @@ namespace BasketballManagementSystem.BaseClass.Player
                     {
                         Type elementType = pi.PropertyType.GetGenericArguments()[0];
 
-                        if (typeof(Action.Action).IsAssignableFrom(elementType))
+                        if (typeof(ActionBase).IsAssignableFrom(elementType))
                         {
                             l.Add(pi.Name);
                         }

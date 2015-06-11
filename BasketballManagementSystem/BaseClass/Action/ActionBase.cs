@@ -13,7 +13,7 @@ namespace BasketballManagementSystem.BaseClass.Action
     /// Actionの基底クラスを定義
     /// </summary>
     [Serializable]
-    public class Action
+    public class ActionBase
     {
 
         /// <summary>
@@ -86,7 +86,7 @@ namespace BasketballManagementSystem.BaseClass.Action
         /*******************************************************************************************/
 
 
-        public Action()
+        public ActionBase()
         {
             ActionName = this.GetType().Name;
             ActionDate = new DateTime();
@@ -110,11 +110,11 @@ namespace BasketballManagementSystem.BaseClass.Action
         /// <param name="action">Actionクラス、またはそれを継承したクラスのインスタンス</param>
         /// <param name="name">プロパティ名</param>
         /// <returns>取得成功? プロパティ : null</returns>
-        public object GetPropertyFromString(Action action, string name)
+        public object GetPropertyFromString(ActionBase action, string name)
         {
             try
             {
-                Type type = typeof(Action);
+                Type type = typeof(ActionBase);
                 PropertyInfo myPropInfo = type.GetProperty(name);
 
                 if (myPropInfo == null) return null;
