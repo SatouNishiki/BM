@@ -8,13 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BasketballManagementSystem.BaseClass.Game;
-using BasketballManagementSystem.Manager.SaveDataManager;
+using BasketballManagementSystem.Manager;
 using System.Windows.Forms.DataVisualization.Charting.ChartTypes;
 using BasketballManagementSystem.BaseClass.Action;
 using BasketballManagementSystem.BaseClass.Player;
 using System.Windows.Forms.DataVisualization.Charting;
 using BMErrorLibrary;
-using BasketballManagementSystem.Manager.PrintManager;
 
 namespace BasketballManagementSystem.BMForm.GraphScore
 {

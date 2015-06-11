@@ -8,12 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BasketballManagementSystem.BaseClass.Game;
-using BasketballManagementSystem.Manager.SaveDataManager;
+using BasketballManagementSystem.Manager;
 using BMFileLibrary;
 using System.IO;
 using BasketballManagementSystem.BaseClass.Player;
 using BasketballManagementSystem.BaseClass.Action;
-using BasketballManagementSystem.Manager.PrintManager;
 using System.Collections;
 
 namespace BasketballManagementSystem.BMForm.GameDataEdit

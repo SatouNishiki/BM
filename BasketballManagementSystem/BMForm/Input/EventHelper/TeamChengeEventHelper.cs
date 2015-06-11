@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BasketballManagementSystem.BaseClass.Player;
-using BasketballManagementSystem.Manager.TeamManager;
+using BasketballManagementSystem.Manager;
 using DandDPlayerList;
 using BMErrorLibrary;
 using BMFileLibrary;

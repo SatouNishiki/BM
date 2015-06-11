@@ -9,11 +9,10 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D; 
 using BasketballManagementSystem.BaseClass.Position;
-using BasketballManagementSystem.Manager.SaveDataManager;
+using BasketballManagementSystem.Manager;
 using BasketballManagementSystem.BaseClass.Game;
 using BasketballManagementSystem.BaseClass.Player;
 using BasketballManagementSystem.BaseClass.Action;
-using BasketballManagementSystem.Manager.PrintManager;
 
 namespace BasketballManagementSystem.BMForm.Tactick2D
 {

@@ -212,10 +212,10 @@
     <Compile Include="BMForm\Transmission\TCP\TCPClient.Designer.cs">
       <DependentUpon>TCPClient.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manager\PictureManager\PictureManager.cs" />
-    <Compile Include="Manager\PrintManager\FormPrinter.cs" />
-    <Compile Include="Manager\TeamManager\TeamManager.cs" />
-    <Compile Include="Manager\SaveDataManager\SaveDataManager.cs" />
+    <Compile Include="Manager\PictureManager.cs" />
+    <Compile Include="Manager\FormPrinter.cs" />
+    <Compile Include="Manager\TeamManager.cs" />
+    <Compile Include="Manager\SaveDataManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="BMForm\TeamMake\TeamDataEdit.cs">

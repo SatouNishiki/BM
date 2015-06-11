@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BasketballManagementSystem.BaseClass.Game;
 using BasketballManagementSystem.BaseClass.Player;
-using BasketballManagementSystem.Manager.SaveDataManager;
+using BasketballManagementSystem.Manager;
 
 namespace BasketballManagementSystem.BMForm.Input.LoadHelper
 {

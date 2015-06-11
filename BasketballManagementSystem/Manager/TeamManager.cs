@@ -8,7 +8,7 @@ using System.Collections;
 using TagFileLoader;
 using BMErrorLibrary;
 
-namespace BasketballManagementSystem.Manager.TeamManager
+namespace BasketballManagementSystem.Manager
 {
     class TeamManager
     {
