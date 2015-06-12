@@ -496,7 +496,7 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void CortPicture_Click(object sender, System.EventArgs e)
         {
-            cortEventHelper.onCortClick(this, CortPictureBox, sender, e);
+            cortEventHelper.OnCortClick(this, CortPictureBox, sender, e);
         }
 
         /***************************************************************************************************/

@@ -45,7 +45,7 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
         /// <param name="f"></param>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public void onCortClick(FormInput f, PictureBox pictureBox , object sender, EventArgs e)
+        public void OnCortClick(FormInput f, PictureBox pictureBox , object sender, EventArgs e)
         {
             //もし画面上にlistboxがなかったら
             if (!isExistListBox)

@@ -84,8 +84,11 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
                 form.Game.OppentTeam.MemberChange.Add(m);
             }
 
-            IsEasyChangeMode = false;
-            SetEasyChangeMode(form, IsEasyChangeMode);
+            if (IsEasyChangeMode)
+            {
+                IsEasyChangeMode = false;
+                SetEasyChangeMode(form, IsEasyChangeMode);
+            }
         }
 
         private void SetEasyChangeMode(FormInput form, bool mode)
