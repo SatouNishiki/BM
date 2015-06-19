@@ -52,6 +52,11 @@ namespace BasketballManagementSystem.BaseClass.Action
         /// </summary>
         public int OwnerNumber { get; set; }
 
+        /// <summary>
+        /// アクションに対するコメント
+        /// </summary>
+        public string Comment { get; set; }
+
         
         /// <summary>
         /// このアクションが行われたときの残り時間

@@ -138,6 +138,14 @@ namespace BasketballManagementSystem.BMForm.Input
         }
 
         /// <summary>
+        /// コメント機能を利用するかどうかを取得
+        /// </summary>
+        public bool UseComment
+        {
+            get { return UseCommentItem.Checked; }
+        }
+
+        /// <summary>
         /// ゲームデータ
         /// </summary>
         public Game Game { get; set; }
@@ -285,6 +293,7 @@ namespace BasketballManagementSystem.BMForm.Input
             this.OppentTeamPointLabel.BackColor = AppSetting.GetInstance().FormInputPointBackGroundColor;
             TimerTickComboBox.SelectedIndex = AppSetting.GetInstance().FormInputFPS;
             DebugFormVisiableItem.Checked = AppSetting.GetInstance().DebugWindowChecked;
+            UseCommentItem.Checked = AppSetting.GetInstance().UseCommentChecked;
 
             foreach (var b in colorChangeButton)
             {
@@ -1123,6 +1132,12 @@ namespace BasketballManagementSystem.BMForm.Input
             }
         }
 
+        private void UseCommentToolStripButton_Click(object sender, EventArgs e)
+        {
+            UseCommentItem.PerformClick();
+            AddDebugMessage("UseComment Changed");
+        }
+
         /****************************************************************************************/
 
         /// <summary>
@@ -1134,5 +1149,17 @@ namespace BasketballManagementSystem.BMForm.Input
             gameDataStack.Push(Game.CloneDeep());
             redoGameDataStack.Clear();
         }
+
+        private void UseCommentItem_Click(object sender, EventArgs e)
+        {
+
+            //チェック状態反転
+            ((ToolStripMenuItem)sender).Checked = !((ToolStripMenuItem)sender).Checked;
+
+            AppSetting.GetInstance().UseCommentChecked = ((ToolStripMenuItem)sender).Checked;
+            AppSetting.GetInstance().SettingChanged();
+        }
+
+        
     }
 }

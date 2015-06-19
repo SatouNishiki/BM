@@ -344,6 +344,12 @@
     <EmbeddedResource Include="BMForm\Input\Picture\makimodosi.jpg" />
     <EmbeddedResource Include="BMForm\Input\Picture\susumu.png" />
     <EmbeddedResource Include="BMForm\Input\Picture\teisi.png" />
+    <EmbeddedResource Include="BMForm\Input\Picture\Undo.png" />
+    <EmbeddedResource Include="BMForm\Input\Picture\NewGame3.png" />
+    <EmbeddedResource Include="BMForm\Input\Picture\Open.png" />
+    <EmbeddedResource Include="BMForm\Input\Picture\Redo.png" />
+    <EmbeddedResource Include="BMForm\Input\Picture\save.png" />
+    <EmbeddedResource Include="BMForm\Input\Picture\hukidasi.png" />
     <Content Include="BMForm\Input\Picture\waku2.png" />
     <Content Include="BMForm\Input\Picture\wakuwaku.png" />
     <Content Include="BMForm\Input\Picture\wakuwakuw.png" />

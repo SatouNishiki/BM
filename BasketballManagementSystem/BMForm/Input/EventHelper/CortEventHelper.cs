@@ -16,26 +16,45 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
     /// </summary>
     public class CortEventHelper
     {
-        //マウスの押された位置を覚える変数
+        /// <summary>
+        /// マウスの押された位置を覚える変数
+        /// </summary>
         private Point mousePoint = Point.Empty;
 
-        //コートをクリックされたときに出すリスト
+        /// <summary>
+        /// コートをクリックされたときに出すリスト
+        /// </summary>
         private ListBox selectPointList;
 
-        //入力画面のインスタンスを代入する変数
+        /// <summary>
+        /// 入力画面のインスタンスを代入する変数
+        /// </summary>
         private FormInput formInput;
 
-        //アクションが入力されたときの処理をするクラスのインスタンス
+        /// <summary>
+        /// コートのPictureBox
+        /// </summary>
+        private PictureBox pictureBox;
+
+        /// <summary>
+        /// アクションが入力されたときの処理をするクラスのインスタンス
+        /// </summary>
         private ActionClickEventHelper actionClickEvent = new ActionClickEventHelper();
 
-        //すでにlistが存在しているかどうか
+        /// <summary>
+        /// すでにlistが存在しているかどうか
+        /// </summary>
         private bool isExistListBox = false;
 
-        //リストの中のキャンセル文字を表す固定文字列
+        /// <summary>
+        /// リストの中のキャンセル文字を表す固定文字列
+        /// </summary>
         private const string cancelString = "キャンセル";
 
-        //アクションが行われた場所(実際のコート上の相対座標)
-        Position position = new Position();
+        /// <summary>
+        /// アクションが行われた場所(実際のコート上の相対座標)
+        /// </summary>
+        private Position position = new Position();
 
         /// <summary>
         /// コートがクリックされたときに呼ばれる
@@ -47,6 +66,8 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
         /// <param name="e"></param>
         public void OnCortClick(FormInput f, PictureBox pictureBox , object sender, EventArgs e)
         {
+            this.pictureBox = pictureBox;
+
             //もし画面上にlistboxがなかったら
             if (!isExistListBox)
             {
@@ -116,6 +137,9 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
             {
                 selectPointList.Dispose();
                 isExistListBox = false;
+                //点の消去(背景色で塗りつぶし)
+                using (Graphics graphics = pictureBox.CreateGraphics()) graphics.Clear(pictureBox.BackColor);
+                //コートイメージの再描画
                 pictureBox.Refresh();
             }
         }
@@ -153,6 +177,12 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
 
             //操作が終わったらlistを消す
             ((ListBox)sender).Dispose();
+
+            //点の消去(背景色で塗りつぶし)
+            using (Graphics graphics = pictureBox.CreateGraphics()) graphics.Clear(pictureBox.BackColor);
+
+            //イメージの再描画
+            pictureBox.Refresh();
 
             //フラグを"listが存在しない"に書き換え
             isExistListBox = false;

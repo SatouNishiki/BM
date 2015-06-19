@@ -164,15 +164,10 @@
             this.SpeedComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SpeedComboBox.Items.AddRange(new object[] {
             "1",
-            "2",
             "3",
-            "4",
             "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
+            "10",
+            "15"});
             this.SpeedComboBox.Name = "SpeedComboBox";
             this.SpeedComboBox.Size = new System.Drawing.Size(121, 26);
             this.SpeedComboBox.SelectedIndexChanged += new System.EventHandler(this.SpeedComboBox_SelectedIndexChanged);

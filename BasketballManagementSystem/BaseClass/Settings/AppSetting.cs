@@ -75,6 +75,11 @@ namespace BasketballManagementSystem.BaseClass.Settings
         public bool DebugWindowChecked { get; set; }
 
         /// <summary>
+        /// コメント機能を利用するかどうか
+        /// </summary>
+        public bool UseCommentChecked { get; set; }
+
+        /// <summary>
         /// ActionPointProvider(行動傾向点の重みを決定するクラス)のインスタンス
         /// </summary>
         public ActionPointProvider ActionPointProvider { get; set; }

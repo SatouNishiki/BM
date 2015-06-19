@@ -18,9 +18,9 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
     public class ActionClickEventHelper
     {
          //出力用のプレイヤー変数
-        Player player = new Player();
+        private Player player = new Player();
         
-        Team team = new Team();
+        private Team team = new Team();
 
         /// <summary>
         /// アクションの入力の受付メソッド
@@ -150,6 +150,24 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
                 {
                     methodInfo = propInfo.GetSetMethod();
                     methodInfo.Invoke(action, new object[] { positon });
+                }
+            }
+
+            if (f.UseComment)
+            {
+                string str = Microsoft.VisualBasic.Interaction.InputBox(
+                "アクションに対するコメントを入力してください",
+                "入力画面",
+                "",
+                200,
+                100);
+
+                propInfo = t1.GetProperty("Comment");
+
+                if (propInfo != null)
+                {
+                    methodInfo = propInfo.GetSetMethod();
+                    methodInfo.Invoke(action, new object[] { str });
                 }
             }
 
