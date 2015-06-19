@@ -161,7 +161,6 @@
             // 
             // SpeedComboBox
             // 
-            this.SpeedComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SpeedComboBox.Items.AddRange(new object[] {
             "1",
             "3",
@@ -171,6 +170,7 @@
             this.SpeedComboBox.Name = "SpeedComboBox";
             this.SpeedComboBox.Size = new System.Drawing.Size(121, 26);
             this.SpeedComboBox.SelectedIndexChanged += new System.EventHandler(this.SpeedComboBox_SelectedIndexChanged);
+            this.SpeedComboBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SpeedComboBox_KeyPress);
             // 
             // FormStrategySimulation
             // 

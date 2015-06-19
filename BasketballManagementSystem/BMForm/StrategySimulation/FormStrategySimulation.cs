@@ -30,7 +30,7 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
         private const string OppentPlayerTag = "相手プレイヤー";
 
         private Assembly myAssembly = Assembly.GetExecutingAssembly();
-
+       
         /// <summary>
         /// シュミレーションのアニメを回すときに今どこをまわしてるのかを知るために使用
         /// </summary>
@@ -370,7 +370,7 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
             }
             else
             {
-                BMError.ErrorMessageOutput("無効な型変換が行われました", true);   
+                BMError.ErrorMessageOutput("無効な入力です", true);   
             }
 
         }
@@ -409,6 +409,15 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
                 return true;
             }
 
+        }
+
+        private void SpeedComboBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar < '0' || '9' < e.KeyChar)
+            {
+                //押されたキーが 0～9でない場合は、イベントをキャンセルする
+                e.Handled = true;
+            }
         }
 
     }
