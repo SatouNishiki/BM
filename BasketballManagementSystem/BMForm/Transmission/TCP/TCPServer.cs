@@ -45,6 +45,10 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
 
         public Game SendGame = new Game();
 
+        public string Password;
+
+        public ClientHandler lastConnectClient;
+
         /// <summary>
         /// サーバーのリスナー設定
         /// </summary>
@@ -61,6 +65,8 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         private List<ClientHandler> lstClientHandler = new List<ClientHandler>();
 
         private FormInput instance;
+
+        
 
         /// <summary>
         /// コンストラクタ
@@ -110,6 +116,8 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             {
                 //ログの書き込み
                 WriteLog("サーバを開始しました。");
+                Password = PasswordTextBox.Text;
+
                 //スレッドの作成と開始
                 threadServer = new Thread(new ThreadStart(ServerListen));
                 threadServer.Start();
@@ -234,7 +242,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                     catch (Exception ex)
                     {
                         WriteLog(ex.Message);
-                        BMError.ErrorMessageOutput(ex.ToString(), true);
+                        BMError.ErrorMessageOutput(ex.ToString(), false);
                     }
                 }
             }
@@ -248,6 +256,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         private void AddNewClient(ClientHandler cl)
         {
             lstClientHandler.Add(cl);
+            lastConnectClient = cl;
             ResetClientListBox();
             WriteLog(cl.ClientHandle.ToString() + " さんが接続しました。");
         }
@@ -263,9 +272,12 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             {
                 if (lstClientHandler[i] == cl)
                 {
-                    WriteLog(lstClientHandler[i].ClientHandle.ToString() + " さんが切断しました。");
+                    Invoke(new WriteLogDelegate(WriteLog)
+                                           , new object[] { lstClientHandler[i].ClientHandle.ToString() + " さんが切断しました。" });
+
                     lstClientHandler.RemoveAt(i);
                     ResetClientListBox();
+
                     return;
                 }
             }
@@ -546,12 +558,11 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                         uniBytes = Encoding.Convert(ecSjis, ecUni, body);
 
                         //バイト配列から文字列に変換する
-                        string strGetText = ecUni.GetString(uniBytes);
-                        //受信文字を切り出す
+                        string getText = ecUni.GetString(uniBytes);
 
                         //メインスレッドのテキストボックスに書き込む
                         fomServer.Invoke(new WriteTextDelegate(fomServer.WriteReadText)
-                                           , new object[] { this, strGetText });
+                                           , new object[] { this, getText });
 
                     }
                     else if (header == "GAME")
@@ -565,6 +576,26 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                         m.Close();
 
                         fomServer.SendGame = g;
+                    }
+                    else if (header == "PASS")
+                    {
+                        byte[] uniBytes;
+                        //'S-Jisからユニコードに変換
+                        uniBytes = Encoding.Convert(ecSjis, ecUni, body);
+
+                        //バイト配列から文字列に変換する
+                        string getText = ecUni.GetString(uniBytes);
+
+                        if (getText != fomServer.Password)
+                        {
+                            SendPasswordHelper("NO");
+                            fomServer.Invoke(new ListSetDelegate(fomServer.DeleteClient)
+                                            , new object[] { fomServer.lastConnectClient });
+                        }
+                        else
+                        {
+                            SendPasswordHelper("OK");
+                        }
                     }
                     //次の受信を待つ
                     networkStream.BeginRead(buffer, 0, buffer.Length, callbackRead, null);
@@ -603,6 +634,30 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 //エラーログの書き込み
                 fomServer.Invoke(new WriteLogDelegate(fomServer.WriteLog)
                 , new object[] { "受信エラーが起こりました " + ex.ToString() });
+                BMError.ErrorMessageOutput(ex.ToString(), true);
+            }
+        }
+
+        private void SendPasswordHelper(string message)
+        {
+            //sift-jisに変換して送る
+            Byte[] data = fomServer.EcSjis.GetBytes(message);
+
+            Byte[] head = fomServer.EcSjis.GetBytes("PASS");
+
+            List<Byte> l = new List<byte>();
+
+            l.AddRange(head);
+            l.AddRange(data);
+
+            Byte[] sendData = l.ToArray();
+
+            try
+            {
+                fomServer.lastConnectClient.SendData(sendData);
+            }
+            catch (Exception ex)
+            {
                 BMError.ErrorMessageOutput(ex.ToString(), true);
             }
         }

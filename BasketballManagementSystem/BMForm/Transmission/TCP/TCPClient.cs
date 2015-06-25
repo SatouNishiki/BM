@@ -105,9 +105,11 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 threadClient = new Thread(new ThreadStart(this.ClientListen));
                 threadClient.Start();
 
+                SendPassword();
+
                 //接続インディケータ
                 IndicatorPctureBox.BackColor = Color.LightGreen;
-                writeLog("クライアント接続されました:");
+                writeLog("クライアント接続されました");
                 return (true);
             }
             catch (Exception ex)
@@ -158,9 +160,9 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                             byte[] uniBytes;
                             //'S-Jisからユニコードに変換
                             uniBytes = Encoding.Convert(ecSjis, ecUni, body);
-                            string strGetText = ecUni.GetString(uniBytes);
+                            string getText = ecUni.GetString(uniBytes);
 
-                            WriteTextBox.Invoke(dlgText, strGetText);
+                            WriteTextBox.Invoke(dlgText, getText);
 
                         }
                         else if (header == "GAME")
@@ -181,6 +183,27 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                             }
                             m.Close();
                         }
+                        else if (header == "PASS")
+                        {
+                            byte[] uniBytes;
+                            //'S-Jisからユニコードに変換
+                            uniBytes = Encoding.Convert(ecSjis, ecUni, body);
+                            string getText = ecUni.GetString(uniBytes);
+
+                            if (getText != "OK")
+                            {
+                                this.StartButton.BeginInvoke(new MydelegateDelegate(StopSock),
+                             new object[] { });
+
+                                this.LogTextBox.BeginInvoke(new WriteTextDelegate(writeLog), 
+                                    new object[] { "パスワードが間違っています" });
+                                return;
+                            }
+                            else
+                            {
+                                GameSendTimer.Enabled = true;
+                            }
+                        }
                     }
                     else
                     {
@@ -195,13 +218,13 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 catch (System.Threading.ThreadAbortException ex)
                 {
                     //何もしません;
-                    BMError.ErrorMessageOutput(ex.ToString(), false);
+                    BMError.ErrorMessageOutput(ex.Message, false);
                     return;
                 }
                 catch (Exception ex)
                 {
                     this.LogTextBox.BeginInvoke(new WriteTextDelegate(writeLog)
-                            , new object[] { "受信エラー　　" + ex.ToString() });
+                            , new object[] { "受信エラー　　" + ex.Message });
                     BMError.ErrorMessageOutput(ex.Message, false);
                     return;
                 }
@@ -226,6 +249,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
 
             StartButton.Enabled = true;
             StopButton.Enabled = false;
+            GameSendTimer.Enabled = false;
         }
 
         /// <summary>
@@ -233,13 +257,14 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         /// </summary>
         private void CloseClient()
         {
-            //クライアントのインスタンスが有って、接続されていたら
-            if (client != null && client.Connected)
-                client.Close();
 
             //スレッドは必ず終了させること
             if (threadClient != null)
                 threadClient.Abort();
+
+            //クライアントのインスタンスが有って、接続されていたら
+            if (client != null && client.Connected)
+                client.Close();
 
             //インディケータの色を変える      
             IndicatorPctureBox.BackColor = Color.Navy;
@@ -270,6 +295,41 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         {
             SendStringData();
             WriteTextBox.Clear();
+        }
+
+        private void SendPassword()
+        {
+            //sift-jisに変換して送る
+            Byte[] data = ecSjis.GetBytes(PasswordTextBox.Text);
+
+            Byte[] header = ecSjis.GetBytes("PASS");
+
+            List<Byte> l = new List<byte>();
+
+            l.AddRange(header);
+            l.AddRange(data);
+
+            Byte[] sendData = l.ToArray();
+
+            //送信streamを作成
+            NetworkStream stream = null;
+            try
+            {
+                stream = client.GetStream();
+
+                //Streamを使って送信
+                for (int offset = 0; offset >= sendData.Length; offset += client.SendBufferSize)
+                {
+                    stream.Write(sendData, offset, client.SendBufferSize);
+                }
+
+                stream.Write(sendData, 0, sendData.Length);
+            }
+            catch (Exception exc)
+            {
+                writeLog("送信エラー:" + exc.Message);
+                BMError.ErrorMessageOutput(exc.Message, true);
+            }
         }
 
         /// <summary>

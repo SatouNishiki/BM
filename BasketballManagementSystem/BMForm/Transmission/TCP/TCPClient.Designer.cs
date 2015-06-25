@@ -56,8 +56,10 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.ServerStartTimer = new System.Windows.Forms.Timer(this.components);
             this.GameSendTimer = new System.Windows.Forms.Timer(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.PasswordTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.IndicatorPctureBox)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -69,23 +71,24 @@
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // IndicatorPctureBox
             // 
-            resources.ApplyResources(this.IndicatorPctureBox, "IndicatorPctureBox");
             this.IndicatorPctureBox.BackColor = System.Drawing.Color.Navy;
             this.IndicatorPctureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.IndicatorPctureBox, "IndicatorPctureBox");
             this.IndicatorPctureBox.Name = "IndicatorPctureBox";
             this.IndicatorPctureBox.TabStop = false;
             // 
             // groupBox3
             // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Controls.Add(this.PortNumberTextbox);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.IpTextButton);
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
@@ -149,31 +152,32 @@
             // 
             // ReadLabel
             // 
-            resources.ApplyResources(this.ReadLabel, "ReadLabel");
             this.ReadLabel.BackColor = System.Drawing.Color.Transparent;
             this.ReadLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            resources.ApplyResources(this.ReadLabel, "ReadLabel");
             this.ReadLabel.Name = "ReadLabel";
             // 
             // LogLabel
             // 
-            resources.ApplyResources(this.LogLabel, "LogLabel");
             this.LogLabel.BackColor = System.Drawing.Color.Transparent;
             this.LogLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            resources.ApplyResources(this.LogLabel, "LogLabel");
             this.LogLabel.Name = "LogLabel";
             // 
             // panel1
             // 
-            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox3);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
             // 
             // groupBox2
             // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Controls.Add(this.StopButton);
             this.groupBox2.Controls.Add(this.StartButton);
             this.groupBox2.Controls.Add(this.IndicatorPctureBox);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
@@ -214,47 +218,64 @@
             // 
             // panel8
             // 
-            resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Controls.Add(this.LogClearButton);
+            resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Name = "panel8";
             // 
             // panel3
             // 
-            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Controls.Add(this.SendButton);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
             // 
             // panel4
             // 
-            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Controls.Add(this.ReadLabel);
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
             // 
             // panel5
             // 
-            resources.ApplyResources(this.panel5, "panel5");
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.Controls.Add(this.LogLabel);
+            resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
             // 
             // panel6
             // 
-            resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Controls.Add(this.WriteClearButton);
+            resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Name = "panel6";
             // 
             // panel7
             // 
-            resources.ApplyResources(this.panel7, "panel7");
             this.panel7.Controls.Add(this.ReadClearButton);
+            resources.ApplyResources(this.panel7, "panel7");
             this.panel7.Name = "panel7";
             // 
             // GameSendTimer
             // 
-            this.GameSendTimer.Enabled = true;
             this.GameSendTimer.Interval = 500;
             this.GameSendTimer.Tick += new System.EventHandler(this.GameSendTimer_Tick);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.PasswordTextBox);
+            this.groupBox1.Controls.Add(this.label3);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // PasswordTextBox
+            // 
+            resources.ApplyResources(this.PasswordTextBox, "PasswordTextBox");
+            this.PasswordTextBox.Name = "PasswordTextBox";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
             // 
             // TCPClient
             // 
@@ -279,6 +300,8 @@
             this.panel5.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -309,9 +332,11 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Timer ServerStartTimer;
         private System.Windows.Forms.Button StopButton;
         private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.Timer GameSendTimer;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox PasswordTextBox;
+        private System.Windows.Forms.Label label3;
     }
 }
