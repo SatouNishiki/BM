@@ -278,8 +278,6 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         /// <param name="text"></param>
         private void WriteReadText(string text)
         {
-            //受信文字の改行は全て↓に置き換えられる
-            text = text.Replace("\r\n", "↓");
             this.ReadTextBox.AppendText(text + "\r\n");
         }
 

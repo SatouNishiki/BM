@@ -412,10 +412,10 @@
     <value>Fill</value>
   </data>
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 125</value>
+    <value>493, 125</value>
   </data>
   <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 113</value>
+    <value>86, 113</value>
   </data>
   <data name="panel7.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -460,10 +460,10 @@
     <value>Fill</value>
   </data>
   <data name="panel6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 5</value>
+    <value>493, 5</value>
   </data>
   <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 112</value>
+    <value>86, 112</value>
   </data>
   <data name="panel6.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -589,7 +589,7 @@
     <value>Vertical</value>
   </data>
   <data name="ReadTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>427, 113</value>
+    <value>425, 113</value>
   </data>
   <data name="ReadTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -667,7 +667,7 @@
     <value>Vertical</value>
   </data>
   <data name="LogTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>427, 114</value>
+    <value>425, 114</value>
   </data>
   <data name="LogTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -712,10 +712,10 @@
     <value>Fill</value>
   </data>
   <data name="panel8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 246</value>
+    <value>493, 246</value>
   </data>
   <data name="panel8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 114</value>
+    <value>86, 114</value>
   </data>
   <data name="panel8.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -745,7 +745,7 @@
     <value>Vertical</value>
   </data>
   <data name="WriteTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>333, 112</value>
+    <value>331, 112</value>
   </data>
   <data name="WriteTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -850,7 +850,7 @@
     <value>60, 5</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>427, 112</value>
+    <value>425, 112</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -901,7 +901,7 @@
     <value>0</value>
   </data>
   <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
-    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel8" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="LogTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ReadTextBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel4" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel5" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel6" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="panel7" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,53,Percent,100,Absolute,90" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33334,Percent,33.33334" /&gt;&lt;/TableLayoutSettings&gt;</value>
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="panel2" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel8" Row="2" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="LogTextBox" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel3" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="ReadTextBox" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="panel4" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel5" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panel6" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="panel7" Row="1" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Absolute,53,Percent,100,Absolute,92" /&gt;&lt;Rows Styles="Percent,33.33333,Percent,33.33334,Percent,33.33334" /&gt;&lt;/TableLayoutSettings&gt;</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

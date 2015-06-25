@@ -100,6 +100,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 //ボタンのenableを変える
                 StartButton.Enabled = false;
                 StopButton.Enabled = true;
+                PasswordTextBox.Enabled = false;
                 //LEDインジケータ風の色を変える
                 picIndicator.BackColor = Color.LightGreen;
             }
@@ -321,6 +322,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             //ボタンのenableを変える
             StartButton.Enabled = true;
             StopButton.Enabled = false;
+            PasswordTextBox.Enabled = true;
         }
 
         /// <summary>
