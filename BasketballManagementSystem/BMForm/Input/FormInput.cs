@@ -689,6 +689,15 @@ namespace BasketballManagementSystem.BMForm.Input
             StopGameItem.Enabled = false;
             QuarterTimer.EndGame();
             Game.EndTime = QuarterTimer.endTime;
+
+            string comment = Microsoft.VisualBasic.Interaction.InputBox(
+                "試合に対するコメントを入力してください",
+                "入力画面",
+                "",
+                200,
+                100);
+
+            Game.Comment = comment;
         }
 
         private void QuarterTimerFastFoward_MouseDown(object sender, MouseEventArgs e)
@@ -1135,7 +1144,7 @@ namespace BasketballManagementSystem.BMForm.Input
         private void UseCommentToolStripButton_Click(object sender, EventArgs e)
         {
             UseCommentItem.PerformClick();
-            AddDebugMessage("UseComment Changed");
+            AddDebugMessage("UseComment Enable is" + UseComment);
         }
 
         /****************************************************************************************/
@@ -1158,6 +1167,19 @@ namespace BasketballManagementSystem.BMForm.Input
 
             AppSetting.GetInstance().UseCommentChecked = ((ToolStripMenuItem)sender).Checked;
             AppSetting.GetInstance().SettingChanged();
+
+        }
+
+        private void UseCommentItem_CheckedChanged(object sender, EventArgs e)
+        {
+            if (UseComment)
+            {
+                UseCommentToolStripButton.BackColor = Color.DeepSkyBlue;
+            }
+            else
+            {
+                UseCommentToolStripButton.BackColor = DefaultBackColor;
+            }
         }
 
         

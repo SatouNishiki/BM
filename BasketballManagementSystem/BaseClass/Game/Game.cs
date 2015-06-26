@@ -47,6 +47,11 @@ namespace BasketballManagementSystem.BaseClass.Game
         /// </summary>
         public string Location { get; set; }
 
+        /// <summary>
+        /// 試合全体のコメント
+        /// </summary>
+        public string Comment { get; set; }
+
 
         public Game()
         {
