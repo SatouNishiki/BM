@@ -413,9 +413,9 @@ namespace BasketballManagementSystem.BMForm.StrategySimulation
 
         private void SpeedComboBox_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar < '0' || '9' < e.KeyChar)
+            if ((e.KeyChar < '0' || '9' < e.KeyChar) && e.KeyChar != '\b')
             {
-                //押されたキーが 0～9でない場合は、イベントをキャンセルする
+                //押されたキーが 0～9、バックスペースでない場合は、イベントをキャンセルする
                 e.Handled = true;
             }
         }
