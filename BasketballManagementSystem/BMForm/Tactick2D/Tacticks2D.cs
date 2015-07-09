@@ -350,10 +350,10 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
                 if (g2 < 0) { s2 = "測定不能(データが足りません)"; }
 
                 message =
-                    "MostApproximateShoot" + shoot + "\n" +
-                    "DifferenceDistance" + distance + "\n" +
-                    "NormalShootSuccessPercent" + s + "\n" +
-                    "FreeThrowShootSuccessPercent" + s2 + "\n";
+                    "MostApproximateShoot=" + shoot + "\n" +
+                    "DifferenceDistance=" + distance + "\n" +
+                    "NormalShootSuccessPercent=" + s + "\n" +
+                    "FreeThrowShootSuccessPercent=" + s2 + "\n";
             }
 
             AddInformationText(message);
