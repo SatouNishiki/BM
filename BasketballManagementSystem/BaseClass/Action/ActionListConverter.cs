@@ -13,7 +13,7 @@ namespace BasketballManagementSystem.BaseClass.Action
         /// objectのリストをAction型のリストへと変換します
         /// </summary>
         /// <param name="objectList">Actionオブジェクトが入ったlist</param>
-        /// <returns>listの要素が全てAction型か? ActionList : null <returns>
+        /// <returns>listの要素が全てAction型か? ActionList : null </returns>
         public static List<ActionBase> ToActionList(List<object> objectList)
         {
             List<ActionBase> actionList = new List<ActionBase>();

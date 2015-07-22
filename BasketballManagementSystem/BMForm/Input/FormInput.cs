@@ -27,6 +27,7 @@ using BasketballManagementSystem.BMForm.ActionPointGraph;
 using BasketballManagementSystem.BMForm.StrategySimulation;
 using BasketballManagementSystem.BMForm.Transmission.TCP;
 using BasketballManagementSystem.BMForm.ClubEdit;
+using BasketballManagementSystem.BMForm.CentralityAnalyze;
 
 namespace BasketballManagementSystem.BMForm.Input
 {
@@ -1073,6 +1074,12 @@ namespace BasketballManagementSystem.BMForm.Input
         private void clubMake_Click(object sender, EventArgs e)
         {
             FormClubEdit f = new FormClubEdit();
+            f.Show();
+        }
+
+        private void CentralityAnalyzeItem_Click(object sender, EventArgs e)
+        {
+            FormCentralityAnalyze f = new FormCentralityAnalyze();
             f.Show();
         }
 

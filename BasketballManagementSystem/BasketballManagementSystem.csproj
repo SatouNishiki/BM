@@ -82,6 +82,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseClass\ActionPoint\ActionPointAnalyze.cs" />
     <Compile Include="BaseClass\ActionPoint\ActionPointProvider.cs" />
     <Compile Include="BaseClass\Action\ActionListConverter.cs" />
     <Compile Include="BaseClass\Action\FreeThrowMiss.cs" />
@@ -135,6 +136,12 @@
     </Compile>
     <Compile Include="BMForm\BoxScore\PlayerInfomation.cs" />
     <Compile Include="BMForm\BoxScore\RunningScore.cs" />
+    <Compile Include="BMForm\CentralityAnalyze\FormCentralityAnalyze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BMForm\CentralityAnalyze\FormCentralityAnalyze.Designer.cs">
+      <DependentUpon>FormCentralityAnalyze.cs</DependentUpon>
+    </Compile>
     <Compile Include="BMForm\ClubEdit\FormClubEdit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -241,6 +248,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BMForm\BoxScore\FormBoxScore.resx">
       <DependentUpon>FormBoxScore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BMForm\CentralityAnalyze\FormCentralityAnalyze.resx">
+      <DependentUpon>FormCentralityAnalyze.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BMForm\ClubEdit\FormClubEdit.ja.resx">
       <DependentUpon>FormClubEdit.cs</DependentUpon>

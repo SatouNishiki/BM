@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using BMErrorLibrary;
 using BasketballManagementSystem.BaseClass.Settings;
+using BasketballManagementSystem.BaseClass.Action;
 
 namespace BasketballManagementSystem.BaseClass.ActionPoint
 {
@@ -15,6 +16,26 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
     [Serializable]
     public class ActionPointProvider
     {
+        /// <summary>
+        /// 通常タイプの傾向点
+        /// </summary>
+        public const int TypeNormal = 0;
+
+        /// <summary>
+        /// 得点タイプの傾向点
+        /// </summary>
+        public const int TypePoint = 1;
+
+        /// <summary>
+        /// ミスタイプの傾向点
+        /// </summary>
+        public const int TypeMiss = 2;
+
+        /// <summary>
+        /// ファウルタイプの傾向点
+        /// </summary>
+        public const int TypeFaul = 3;
+
         /// <summary>
         /// このクラスのインスタンス
         /// </summary>
@@ -163,8 +184,8 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
             APTurnOver = 1;
 
             APPersonalFaul = 1;
-            APUnSportsmanLikeFaul = 3;
-            APTechnicalFaul = 5;
+            APUnSportsmanLikeFaul = 5;
+            APTechnicalFaul = 3;
             APDisQualifyingFaul = 10;
 
             APFreeThrow = 1;
@@ -176,6 +197,33 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
             APShoot3PMiss = 1;
 
             APOther = 0;
+        }
+
+        /// <summary>
+        /// 引数のアクションの傾向点タイプを返します
+        /// </summary>
+        /// <param name="action">アクション</param>
+        /// <returns>成功：このクラスのTypeで始まる定数　失敗：-1</returns>
+        public int GetActionPointType(object action)
+        {
+            if (!(action is ActionBase)) return -1;
+
+            if (action is Miss)
+            {
+                return TypeMiss;
+            }
+            else if(action is Faul)
+            {
+                return TypeFaul;
+            }
+            else if(action is RelationPointAction)
+            {
+                return TypePoint;
+            }
+            else
+            {
+                return TypeNormal;
+            }
         }
     }
 }

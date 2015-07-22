@@ -13,6 +13,7 @@ using BasketballManagementSystem.BaseClass.Player;
 using BasketballManagementSystem.BaseClass.Action;
 using System.Collections;
 using System.Windows.Forms.DataVisualization.Charting;
+using BasketballManagementSystem.BaseClass.ActionPoint;
 
 namespace BasketballManagementSystem.BMForm.ActionPointGraph
 {
@@ -203,6 +204,8 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
 
             int[] temp = new int[4];
 
+            ActionPointProvider ap = ActionPointProvider.GetInstance();
+
             foreach (var s in Player.GetAllActionName())
             {
                 object o2 = p.GetActionProperty(p, s);
@@ -211,19 +214,19 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
 
                 foreach (var o in (IList)o2)
                 {
-                    if (o is Miss)
+                    if (ap.GetActionPointType(o) == ActionPointProvider.TypeMiss)
                     {
                         temp[2] += ((Miss)o).ActionPoint;
                     }
-                    else if (o is Faul)
+                    else if (ap.GetActionPointType(o) == ActionPointProvider.TypeFaul)
                     {
                         temp[3] += ((Faul)o).ActionPoint;
                     }
-                    else if (o is RelationPointAction)
+                    else if (ap.GetActionPointType(o) == ActionPointProvider.TypePoint)
                     {
                         temp[0] += ((RelationPointAction)o).ActionPoint;
                     }
-                    else
+                    else if (ap.GetActionPointType(o) == ActionPointProvider.TypeNormal)
                     {
                         temp[1] += ((ActionBase)o).ActionPoint;
                     }
@@ -268,6 +271,8 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
             else
                 t = game.OppentTeam;
 
+            ActionPointProvider ap = ActionPointProvider.GetInstance();
+
             foreach (var p in t.TeamMember)
             {
                 foreach (var s in Player.GetAllActionName())
@@ -279,19 +284,19 @@ namespace BasketballManagementSystem.BMForm.ActionPointGraph
 
                     foreach (var o in (IList)o2)
                     {
-                        if (o is Miss)
+                        if (ap.GetActionPointType(o) == ActionPointProvider.TypeMiss)
                         {
                             temp[2] += ((Miss)o).ActionPoint;
                         }
-                        else if (o is Faul)
+                        else if (ap.GetActionPointType(o) == ActionPointProvider.TypeFaul)
                         {
                             temp[3] += ((Faul)o).ActionPoint;
                         }
-                        else if (o is RelationPointAction)
+                        else if (ap.GetActionPointType(o) == ActionPointProvider.TypePoint)
                         {
                             temp[0] += ((RelationPointAction)o).ActionPoint;
                         }
-                        else
+                        else if (ap.GetActionPointType(o) == ActionPointProvider.TypeNormal)
                         {
                             temp[1] += ((ActionBase)o).ActionPoint;
                         }

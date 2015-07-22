@@ -364,7 +364,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
         /// </summary>
         /// <param name="p">分析する地点</param>
         /// <returns>成功率(%)</returns>
-        private double GetShootSuccessPercent(Position p, double _valuationBasis)
+        private double GetShootSuccessPercent(Position p, double valuationBasis)
         {
 
             /******近い距離のアクションをまとめる処理******/
@@ -452,7 +452,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
 
             foreach (var d in shootSuccessPercent)
             {
-                if (d >= _valuationBasis)
+                if (d >= valuationBasis)
                 {
                     pos = count;
                 }
@@ -483,7 +483,7 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
             {
                 double slope = 15 / fortyPercentPositon;
 
-                return _valuationBasis - (point * slope);
+                return valuationBasis - (point * slope);
             }
             else
             {
@@ -499,10 +499,10 @@ namespace BasketballManagementSystem.BMForm.Tactick2D
                     loop++;
                 }
 
-                if (_valuationBasis - 15 - d < 0) 
+                if (valuationBasis - 15 - d < 0) 
                     return 0;
                 else
-                    return _valuationBasis - 15 - d;
+                    return valuationBasis - 15 - d;
             }
         }
 

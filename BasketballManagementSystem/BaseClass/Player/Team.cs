@@ -225,16 +225,61 @@ namespace BasketballManagementSystem.BaseClass.Player
             }
             else
             {
-                foreach (var _t in TimeOutList)
+                foreach (var t in TimeOutList)
                 {
-                    if (_t.Quarter == timeoutSection)
+                    if (t.Quarter == timeoutSection)
                     {
-                        to.Add(_t);
+                        to.Add(t);
                     }
                 }
             }
 
             return to.Count;
+        }
+
+        /// <summary>
+        /// コートにいたプレイヤーのリストをメンバーチェンジのタイミングごとに区切ったリストで返す
+        /// </summary>
+        /// <returns></returns>
+        public List<List<Player>> GetCortMembers()
+        {
+            List<List<Player>> cortMembers = new List<List<Player>>();
+
+            List<Player> players = new List<Player>();
+
+            //スターターを代入
+            foreach (var p in TeamMember)
+            {
+                if (p.IsStarter) players.Add(p);
+            }
+
+            cortMembers.Add(players);
+
+            //全てのメンバーチェンジ情報を取得
+            foreach (var m in MemberChange)
+            {
+                List<Player> tempPlayers = new List<Player>();
+                int count = 0;
+
+                //メンバーチェンジする前のコートメンバーの中からベンチにいっていない選手を探す
+                foreach (var p in cortMembers[count])
+                {
+                    if (m.ChangedCortMembers.IndexOf(p) < 0)
+                    {
+                        tempPlayers.Add(p);
+                    }
+                }
+
+                //ベンチから入ってきた選手を追加
+                foreach (var p in m.ChangedOutMembers)
+                {
+                    tempPlayers.Add(p);
+                }
+
+                cortMembers.Add(tempPlayers);
+            }
+
+            return cortMembers;
         }
     }
 }
