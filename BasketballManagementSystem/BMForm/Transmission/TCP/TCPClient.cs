@@ -55,6 +55,11 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         /// </summary>
         delegate void MydelegateDelegate();
 
+        /// <summary>
+        /// タイマーの有効化に使用
+        /// </summary>
+        delegate void EnableTimerDelegate();
+
 
         public TCPClient(FormInput f)
         {
@@ -201,7 +206,8 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                             }
                             else
                             {
-                                GameSendTimer.Enabled = true;
+                               // GameSendTimer.Enabled = true;
+                                Invoke(new EnableTimerDelegate(EnableTimer));
                             }
                         }
                     }
@@ -288,6 +294,10 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                                         + strlog + "\r\n");
         }
 
+        private void EnableTimer()
+        {
+            this.GameSendTimer.Enabled = true;
+        }
 
         private void SendButton_Click(object sender, EventArgs e)
         {
@@ -381,6 +391,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         {
             LogTextBox.Clear();
         }
+       
 
         /// <summary>
         /// プログラムの終了処理
@@ -435,6 +446,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                 }
 
                 stream.Write(sendData, offset, sendData.Length - offset);
+                readFlag = false;
 
                 sendGame = game.CloneDeep();
             }
