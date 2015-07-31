@@ -23,11 +23,7 @@ namespace BasketballManagementSystem.BMForm.CentralityAnalyze
 
         public FormCentralityAnalyze()
         {
-            InitializeComponent();
-
-          //  ActionPointAnalyze a = new ActionPointAnalyze();
-        //    MessageBox.Show(a.GetNexus(SaveDataManager.GetInstance().GetGame().MyTeam.TeamMember[0], SaveDataManager.GetInstance().GetGame().MyTeam.TeamMember[1]).ToString());
-          
+            InitializeComponent();     
         }
 
         private void FormCentralityAnalyze_Load(object sender, EventArgs e)
@@ -42,73 +38,64 @@ namespace BasketballManagementSystem.BMForm.CentralityAnalyze
                 OppentTeamListBox.Items.Add(p);
             }
         }
-
-        private void AddSourceToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-         //   sourcePlayer = (Player)((ListBox)(((ContextMenuStrip)sender).SourceControl)).SelectedItem;
-            var menu = (ContextMenuStrip)sender;
-            sourcePlayer = (Player)((ListBox)(menu.SourceControl)).SelectedItem;
-            SourceTextBox.Text = sourcePlayer.ToString();
-        }
-
-        private void AddTargetToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            targetPlayer = (Player)((ListBox)(((ContextMenuStrip)sender).SourceControl)).SelectedItem;
-            TargetTextBox.Text = targetPlayer.ToString();
-        }
-
+       
         private void AnalyzeButton_Click(object sender, EventArgs e)
         {
 
             if (sourcePlayer == null)
+            {
                 MessageBox.Show("ソースプレイヤーがいません");
-
-            if (targetPlayer == null)
-                MessageBox.Show("ターゲットプレイヤーがいません");
-
-            ActionPointAnalyze a = new ActionPointAnalyze();
-        
-
-            Dictionary<int, int> dic = a.GetNexus(sourcePlayer, targetPlayer);
-
-            if (dic == null) { 
-                ResultTextBox.Text = "解析失敗";
                 return;
             }
 
-            ResultTextBox.AppendText("Normal Nexus = " + dic[ActionPointProvider.TypeNormal] + "\n");
-            ResultTextBox.AppendText("Point Nexus = " + dic[ActionPointProvider.TypePoint] + "\n");
-            ResultTextBox.AppendText("Miss Nexus = " + dic[ActionPointProvider.TypeMiss] + "\n");
-            ResultTextBox.AppendText("Faul Nexus = " + dic[ActionPointProvider.TypeFaul] + "\n");
+            ActionPointAnalyze a = new ActionPointAnalyze();
 
+            ResultTextBox.Clear();
+            ResultTextBox.AppendText("**解析結果**\n");
+            ResultTextBox.AppendText("解析方法 : 行動傾向点基準結びつき度分析\n");
+            ResultTextBox.AppendText("\n");
+
+            Team team;
+
+            if (sourcePlayer.IsMyTeam)
+                team = game.MyTeam;
+            else
+                team = game.OppentTeam;
+
+            foreach (var p in team.TeamMember)
+            {
+                targetPlayer = p;
+
+                if (sourcePlayer == targetPlayer) continue;
+
+                Dictionary<int, int> dic = a.GetNexus(sourcePlayer, targetPlayer);
+
+                if (dic == null)
+                {
+                    ResultTextBox.Text = "解析失敗";
+                    return;
+                }
+
+                ResultTextBox.AppendText("対象 : " + sourcePlayer.Name + "(" + sourcePlayer.Number + ") → " + targetPlayer.Name + "(" + targetPlayer.Number + ")\n");
+                ResultTextBox.AppendText("\n");
+                ResultTextBox.AppendText("通常 = " + dic[ActionPointProvider.TypeNormal] + "\n"); 
+                ResultTextBox.AppendText("得点 = " + dic[ActionPointProvider.TypePoint] + "\n");
+                ResultTextBox.AppendText("ミス = " + dic[ActionPointProvider.TypeMiss] + "\n");
+                ResultTextBox.AppendText("ファウル = " + dic[ActionPointProvider.TypeFaul] + "\n");
+                ResultTextBox.AppendText("\n");
+            }
         }
 
         private void MyTeamListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (sourcePlayer == null)
-            {
-                sourcePlayer = (Player)((ListBox)sender).SelectedItem;
-                SourceTextBox.Text = sourcePlayer.ToString();
-            }
-            else
-            {
-                targetPlayer = (Player)((ListBox)sender).SelectedItem;
-                TargetTextBox.Text = targetPlayer.ToString();
-            }
+            sourcePlayer = (Player)((ListBox)sender).SelectedItem;
+            SourceTextBox.Text = sourcePlayer.ToString();
         }
 
         private void OppentTeamListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (sourcePlayer == null)
-            {
-                sourcePlayer = (Player)((ListBox)sender).SelectedItem;
-                SourceTextBox.Text = sourcePlayer.ToString();
-            }
-            else
-            {
-                targetPlayer = (Player)((ListBox)sender).SelectedItem;
-                TargetTextBox.Text = targetPlayer.ToString();
-            }
-        } 
+            sourcePlayer = (Player)((ListBox)sender).SelectedItem;
+            SourceTextBox.Text = sourcePlayer.ToString();
+        }
     }
 }

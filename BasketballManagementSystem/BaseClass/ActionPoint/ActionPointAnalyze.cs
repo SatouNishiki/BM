@@ -40,6 +40,19 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
             //ループ変数
             int count = 0;
 
+            //ダミーデータを追加したかどうか
+            bool dammyFlag = false;
+
+            //メンバーチェンジを行っていない場合
+            if (team.MemberChange.Count == 0)
+            {
+                //ダミーデータを追加
+                MemberChange m = new MemberChange();
+                m.ChengedMemberTime = game.EndTime;
+                team.MemberChange.Add(m);
+                dammyFlag = true;
+            }
+
             //メンバーチェンジ情報の中から
             foreach (var t in team.MemberChange)
             {
@@ -76,6 +89,11 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
 
                 actionList.Add(al);
                 count++;
+            }
+
+            if (dammyFlag)
+            {
+                team.MemberChange.RemoveAt(team.MemberChange.Count - 1);
             }
 
             Dictionary<int, int> dic = new Dictionary<int, int>();

@@ -206,7 +206,6 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                             }
                             else
                             {
-                               // GameSendTimer.Enabled = true;
                                 Invoke(new EnableTimerDelegate(EnableTimer));
                             }
                         }
