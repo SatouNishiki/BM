@@ -207,6 +207,7 @@
     <Compile Include="BMForm\Tactick2D\Tacticks2D.Designer.cs">
       <DependentUpon>Tacticks2D.cs</DependentUpon>
     </Compile>
+    <Compile Include="BMForm\Transmission\Compression\Compressor.cs" />
     <Compile Include="BMForm\Transmission\TCP\TCPServer.cs">
       <SubType>Form</SubType>
     </Compile>

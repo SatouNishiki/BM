@@ -14,6 +14,7 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using BasketballManagementSystem.BMForm.Input;
 using BMErrorLibrary;
+using BasketballManagementSystem.BMForm.Transmission.Compression;
 
 namespace BasketballManagementSystem.BMForm.Transmission.TCP
 {
@@ -173,6 +174,10 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                         else if (header == "GAME")
                         {
                             BinaryFormatter b = new BinaryFormatter();
+                            
+                            //データを解凍
+                            body = Compressor.Decompress(body);
+
                             MemoryStream m = new MemoryStream(body);
                             m.Seek(0, SeekOrigin.Begin);
                             Game g = (Game)b.Deserialize(m);
@@ -184,7 +189,8 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                             else
                             {
                                 if(readFlag && !g.Equals(SaveDataManager.GetInstance().GetGame()))
-                                instance.LoadProcess(g);
+                                 instance.LoadProcess(g);
+                                
                             }
                             m.Close();
                         }
@@ -425,6 +431,9 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
 
             byte[] sendData = temp.ToArray();
 
+            //データ圧縮
+            sendData = Compressor.Compress(sendData);
+
             m.Close();
 
             NetworkStream stream = null;
@@ -443,6 +452,9 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                         readFlag = false;
                     }
                 }
+
+
+                writeLog("sendGameData... byte is " + sendData.Length + "byte");
 
                 stream.Write(sendData, offset, sendData.Length - offset);
                 readFlag = false;
