@@ -543,10 +543,14 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
 
                 if (bytesRead > 0)　　 //受信文字が有った
                 {
+         
                     //受信部分だけ切り出す
-                    Byte[] getByte = new byte[bytesRead];
+                    Byte[] getByte1 = new byte[bytesRead];
                     for (int i = 0; i < bytesRead; i++)
-                        getByte[i] = buffer[i];
+                        getByte1[i] = buffer[i];
+
+                    //解凍
+                    Byte[] getByte = Compressor.Decompress(getByte1);
 
                     Byte[] temp = new byte[4];
 
@@ -554,8 +558,8 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                     Array.Copy(getByte, 0, temp, 0, 4);
 
                     string header = ecSjis.GetString(temp);
-                    Byte[] body = new byte[bytesRead - 4];
-                    Array.Copy(getByte, 4, body, 0, bytesRead - 4);
+                    Byte[] body = new byte[getByte.Length - 4];
+                    Array.Copy(getByte, 4, body, 0, getByte.Length - 4);
 
                     if (header == "TEXT")
                     {
@@ -575,8 +579,6 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                     {
                         BinaryFormatter b = new BinaryFormatter();
 
-                        //データを解凍
-                        body = Compressor.Decompress(body);
 
                         MemoryStream m = new MemoryStream(body);
                         m.Seek(0, SeekOrigin.Begin);
@@ -661,6 +663,8 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             l.AddRange(data);
 
             Byte[] sendData = l.ToArray();
+
+            sendData = Compressor.Compress(sendData);
 
             try
             {
