@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ExchangeListBox;
 
-namespace BasketballManagementSystem.BMForm.Input.EventHelper
+namespace BasketballManagementSystem.BMForm.input.eventHelper
 {
     public class KeyboardEventHelper
     {

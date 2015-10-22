@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
-using BasketballManagementSystem.BaseClass.Action;
+using BasketballManagementSystem.BaseClass.action;
 
-namespace BasketballManagementSystem.BaseClass.Position
+namespace BasketballManagementSystem.BaseClass.position
 {
     public class CortHelper
     {

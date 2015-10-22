@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.Settings;
+using BasketballManagementSystem.BaseClass.settings;
 using System.Globalization;
 using System.Threading;
 
-namespace BasketballManagementSystem.BMForm.Input
+namespace BasketballManagementSystem.BMForm.input
 {
     static class Program
     {

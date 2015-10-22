@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasketballManagementSystem.BaseClass.Action
+namespace BasketballManagementSystem.BaseClass.action
 {
     [Serializable]
     public class Faul : NonRelationPointAction

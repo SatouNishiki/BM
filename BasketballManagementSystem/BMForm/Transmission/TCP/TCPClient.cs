@@ -8,15 +8,15 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
-using BasketballManagementSystem.BaseClass.Game;
-using BasketballManagementSystem.Manager;
+using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.manager;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using BasketballManagementSystem.BMForm.Input;
+using BasketballManagementSystem.BMForm.input;
 using BMErrorLibrary;
-using BasketballManagementSystem.BMForm.Transmission.Compression;
+using BasketballManagementSystem.BMForm.Transmission.compression;
 
-namespace BasketballManagementSystem.BMForm.Transmission.TCP
+namespace BasketballManagementSystem.BMForm.Transmission.tCP
 {
     public partial class TCPClient : Form
     {
@@ -324,7 +324,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             l.AddRange(data);
 
             Byte[] sendData = l.ToArray();
-
+            
             sendData = Compressor.Compress(sendData);
 
             //送信streamを作成

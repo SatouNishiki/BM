@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 using System.Xml;
 
-namespace BasketballManagementSystem.BaseClass.Player
+namespace BasketballManagementSystem.BaseClass.player
 {
     /// <summary>
     /// メンバーチェンジについての情報を記録するクラス

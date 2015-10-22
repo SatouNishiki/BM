@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.BMForm.CentralityAnalyze
+﻿namespace BasketballManagementSystem.BMForm.centralityAnalyze
 {
     partial class FormCentralityAnalyze
     {

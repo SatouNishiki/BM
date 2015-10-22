@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.ActionPoint;
-using BasketballManagementSystem.Manager;
-using BasketballManagementSystem.BaseClass.Game;
-using BasketballManagementSystem.BaseClass.Player;
+using BasketballManagementSystem.BaseClass.actionPoint;
+using BasketballManagementSystem.manager;
+using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.BaseClass.player;
 
-namespace BasketballManagementSystem.BMForm.CentralityAnalyze
+namespace BasketballManagementSystem.BMForm.centralityAnalyze
 {
     public partial class FormCentralityAnalyze : Form
     {

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BasketballManagementSystem.BMForm.Input
+namespace BasketballManagementSystem.BMForm.input
 {
     public partial class ConfigForm : Form
     {

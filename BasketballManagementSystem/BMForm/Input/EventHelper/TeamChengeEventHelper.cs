@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.Player;
-using BasketballManagementSystem.Manager;
+using BasketballManagementSystem.BaseClass.player;
+using BasketballManagementSystem.manager;
 using DandDPlayerList;
 using BMErrorLibrary;
 using BMFileLibrary;
 
-namespace BasketballManagementSystem.BMForm.Input.EventHelper
+namespace BasketballManagementSystem.BMForm.input.eventHelper
 {
     public class TeamChengeEventHelper
     {

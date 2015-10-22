@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D; 
-using BasketballManagementSystem.BaseClass.Position;
-using BasketballManagementSystem.Manager;
-using BasketballManagementSystem.BaseClass.Game;
-using BasketballManagementSystem.BaseClass.Player;
-using BasketballManagementSystem.BaseClass.Action;
+using BasketballManagementSystem.BaseClass.position;
+using BasketballManagementSystem.manager;
+using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.BaseClass.player;
+using BasketballManagementSystem.BaseClass.action;
 
-namespace BasketballManagementSystem.BMForm.Tactick2D
+namespace BasketballManagementSystem.BMForm.tactick2D
 {
     public partial class Tacticks2D : Form
     {

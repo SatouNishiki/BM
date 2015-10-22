@@ -8,15 +8,15 @@ using System.Net;
 using System.Net.Sockets;
 using System.Windows.Forms;
 using System.Threading;
-using BasketballManagementSystem.Manager;
-using BasketballManagementSystem.BaseClass.Game;
+using BasketballManagementSystem.manager;
+using BasketballManagementSystem.BaseClass.game;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using BasketballManagementSystem.BMForm.Input;
+using BasketballManagementSystem.BMForm.input;
 using BMErrorLibrary;
-using BasketballManagementSystem.BMForm.Transmission.Compression;
+using BasketballManagementSystem.BMForm.Transmission.compression;
 
-namespace BasketballManagementSystem.BMForm.Transmission.TCP
+namespace BasketballManagementSystem.BMForm.Transmission.tCP
 {
     /// <summary>
     /// 別スレッドからClientHandlerを持つList<T>の操作

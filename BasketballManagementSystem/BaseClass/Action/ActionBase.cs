@@ -5,9 +5,9 @@ using System.Text;
 using System.Xml;
 using System.Xml.Serialization;
 using System.Reflection;
-using BasketballManagementSystem.BaseClass.Settings;
+using BasketballManagementSystem.BaseClass.settings;
 
-namespace BasketballManagementSystem.BaseClass.Action
+namespace BasketballManagementSystem.BaseClass.action
 {
     /// <summary>
     /// Actionの基底クラスを定義

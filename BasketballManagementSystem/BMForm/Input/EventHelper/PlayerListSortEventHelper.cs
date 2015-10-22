@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DandDPlayerList;
-using BasketballManagementSystem.BaseClass.Player;
+using BasketballManagementSystem.BaseClass.player;
 
-namespace BasketballManagementSystem.BMForm.Input.EventHelper
+namespace BasketballManagementSystem.BMForm.input.eventHelper
 {
     public class PlayerListSortEventHelper
     {

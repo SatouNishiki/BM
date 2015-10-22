@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.BMForm.Input
+﻿namespace BasketballManagementSystem.BMForm.input
 {
     partial class DebugMessageForm
     {

@@ -1,35 +1,35 @@
 ﻿using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.Player;
-using BasketballManagementSystem.BaseClass.Action;
-using BasketballManagementSystem.BMForm.Input.EventHelper;
+using BasketballManagementSystem.BaseClass.player;
+using BasketballManagementSystem.BaseClass.action;
+using BasketballManagementSystem.BMForm.input.eventHelper;
 using System;
 using QuarterTimer;
-using BasketballManagementSystem.BaseClass.Game;
-using BasketballManagementSystem.Manager;
-using BasketballManagementSystem.BMForm.GraphScore;
-using BasketballManagementSystem.BMForm.BoxScore;
-using BasketballManagementSystem.BaseClass.TimeOut;
-using BasketballManagementSystem.BMForm.PlayerData;
-using BasketballManagementSystem.BaseClass.Settings;
+using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.manager;
+using BasketballManagementSystem.BMForm.graphScore;
+using BasketballManagementSystem.BMForm.boxScore;
+using BasketballManagementSystem.BaseClass.timeOut;
+using BasketballManagementSystem.BMForm.playerData;
+using BasketballManagementSystem.BaseClass.settings;
 using System.Drawing;
 using System.Collections.Generic;
-using BasketballManagementSystem.BMForm.Tactick2D;
+using BasketballManagementSystem.BMForm.tactick2D;
 using System.Globalization;
 using System.Threading;
-using BasketballManagementSystem.BMForm.Input.Language;
-using BasketballManagementSystem.BMForm.GameDataEdit;
+using BasketballManagementSystem.BMForm.input.language;
+using BasketballManagementSystem.BMForm.gameDataEdit;
 using BasketballManagementSystem.BMForm.Transmission;
-using BasketballManagementSystem.BMForm.Input.LoadHelper;
+using BasketballManagementSystem.BMForm.input.loadHelper;
 using System.Runtime.CompilerServices;
-using BasketballManagementSystem.BMForm.TeamMake;
-using BasketballManagementSystem.BMForm.ActionPointEdit;
-using BasketballManagementSystem.BMForm.ActionPointGraph;
-using BasketballManagementSystem.BMForm.StrategySimulation;
-using BasketballManagementSystem.BMForm.Transmission.TCP;
-using BasketballManagementSystem.BMForm.ClubEdit;
-using BasketballManagementSystem.BMForm.CentralityAnalyze;
+using BasketballManagementSystem.BMForm.teamMake;
+using BasketballManagementSystem.BMForm.actionPointEdit;
+using BasketballManagementSystem.BMForm.actionPointGraph;
+using BasketballManagementSystem.BMForm.strategySimulation;
+using BasketballManagementSystem.BMForm.Transmission.tCP;
+using BasketballManagementSystem.BMForm.clubEdit;
+using BasketballManagementSystem.BMForm.centralityAnalyze;
 
-namespace BasketballManagementSystem.BMForm.Input
+namespace BasketballManagementSystem.BMForm.input
 {
     public partial class FormInput : Form
     {
@@ -547,7 +547,7 @@ namespace BasketballManagementSystem.BMForm.Input
                 try
                 {
                     StackGameData();
-                    Game.MyTeam.TimeOutList.Add(new BaseClass.TimeOut.TimeOut(Quarter, DateTime.Now, QuarterTimer.remainingTime));
+                    Game.MyTeam.TimeOutList.Add(new BaseClass.timeOut.TimeOut(Quarter, DateTime.Now, QuarterTimer.remainingTime));
                 }
                 catch (Exception exc)
                 {
@@ -577,7 +577,7 @@ namespace BasketballManagementSystem.BMForm.Input
                 try
                 {
                     StackGameData();
-                    Game.OppentTeam.TimeOutList.Add(new BaseClass.TimeOut.TimeOut(Quarter, DateTime.Now, QuarterTimer.remainingTime));
+                    Game.OppentTeam.TimeOutList.Add(new BaseClass.timeOut.TimeOut(Quarter, DateTime.Now, QuarterTimer.remainingTime));
                 }
                 catch (Exception exc)
                 {
@@ -1010,7 +1010,7 @@ namespace BasketballManagementSystem.BMForm.Input
 
         private void GoPlayerData_Click(object sender, EventArgs e)
         {
-            PlayerData.PlayerData pd = new PlayerData.PlayerData();
+            playerData.PlayerData pd = new playerData.PlayerData();
             pd.Show();
         }
 

@@ -7,15 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.Game;
-using BasketballManagementSystem.Manager;
+using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.manager;
 using BMFileLibrary;
 using System.IO;
-using BasketballManagementSystem.BaseClass.Player;
-using BasketballManagementSystem.BaseClass.Action;
+using BasketballManagementSystem.BaseClass.player;
+using BasketballManagementSystem.BaseClass.action;
 using System.Collections;
 
-namespace BasketballManagementSystem.BMForm.GameDataEdit
+namespace BasketballManagementSystem.BMForm.gameDataEdit
 {
     public partial class EditForm : Form
     {

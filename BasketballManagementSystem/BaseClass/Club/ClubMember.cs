@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasketballManagementSystem.BaseClass.Club
+namespace BasketballManagementSystem.BaseClass.club
 {
     /// <summary>
     /// 部員を表すクラス

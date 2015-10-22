@@ -5,10 +5,10 @@ using System.Text;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.Action;
-using BasketballManagementSystem.BaseClass.Position;
+using BasketballManagementSystem.BaseClass.action;
+using BasketballManagementSystem.BaseClass.position;
 
-namespace BasketballManagementSystem.BMForm.Input.EventHelper
+namespace BasketballManagementSystem.BMForm.input.eventHelper
 {
     /// <summary>
     /// コートをクリックされたときのイベントを管理するクラス

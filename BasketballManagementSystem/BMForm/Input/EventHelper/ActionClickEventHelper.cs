@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BasketballManagementSystem.BaseClass.Player;
-using BasketballManagementSystem.BaseClass.Action;
-using BasketballManagementSystem.BMForm.Input;
-using BasketballManagementSystem.BaseClass.Position;
+using BasketballManagementSystem.BaseClass.player;
+using BasketballManagementSystem.BaseClass.action;
+using BasketballManagementSystem.BMForm.input;
+using BasketballManagementSystem.BaseClass.position;
 using BMErrorLibrary;
 using System.Reflection;
 
-namespace BasketballManagementSystem.BMForm.Input.EventHelper
+namespace BasketballManagementSystem.BMForm.input.eventHelper
 {
     /// <summary>
     /// アクションの入力処理を行うクラス

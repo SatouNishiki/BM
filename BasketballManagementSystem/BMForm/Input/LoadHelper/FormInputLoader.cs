@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BasketballManagementSystem.BaseClass.Game;
-using BasketballManagementSystem.BaseClass.Player;
-using BasketballManagementSystem.Manager;
+using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.BaseClass.player;
+using BasketballManagementSystem.manager;
 
-namespace BasketballManagementSystem.BMForm.Input.LoadHelper
+namespace BasketballManagementSystem.BMForm.input.loadHelper
 {
     public class FormInputLoader
     {

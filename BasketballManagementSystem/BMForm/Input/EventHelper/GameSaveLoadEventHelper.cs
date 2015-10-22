@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using BMErrorLibrary;
 using System.Xml.Serialization;
-using BasketballManagementSystem.BaseClass.Game;
+using BasketballManagementSystem.BaseClass.game;
 using System.IO;
 using BMFileLibrary;
 
-namespace BasketballManagementSystem.BMForm.Input.EventHelper
+namespace BasketballManagementSystem.BMForm.input.eventHelper
 {
     public class GameSaveLoadEventHelper
     {

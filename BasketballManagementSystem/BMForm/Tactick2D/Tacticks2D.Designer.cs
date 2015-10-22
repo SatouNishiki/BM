@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.BMForm.Tactick2D
+﻿namespace BasketballManagementSystem.BMForm.tactick2D
 {
     partial class Tacticks2D
     {

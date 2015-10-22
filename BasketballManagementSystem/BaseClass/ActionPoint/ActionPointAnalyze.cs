@@ -3,17 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BasketballManagementSystem.Manager;
-using BasketballManagementSystem.BaseClass.Game;
-using BasketballManagementSystem.BaseClass.Player;
-using BasketballManagementSystem.BaseClass.Action;
-using BasketballManagementSystem.BaseClass.ActionPoint;
+using BasketballManagementSystem.manager;
+using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.BaseClass.player;
+using BasketballManagementSystem.BaseClass.action;
+using BasketballManagementSystem.BaseClass.actionPoint;
 
-namespace BasketballManagementSystem.BaseClass.ActionPoint
+namespace BasketballManagementSystem.BaseClass.actionPoint
 {
     public class ActionPointAnalyze
     {
-        Game.Game game = SaveDataManager.GetInstance().GetGame();
+        game.Game game = SaveDataManager.GetInstance().GetGame();
 
         /// <summary>
         /// sourcePlayerからtargetPlayerへの結びつき度をアクションポイントに基づいて解析します
@@ -21,7 +21,7 @@ namespace BasketballManagementSystem.BaseClass.ActionPoint
         /// <param name="sourcePlayer"></param>
         /// <param name="targetPlayer"></param>
         /// <returns>ソースとターゲットの結びつき度　解析成功：key→ActionPointProviderのType定数　value→Typeごとの結びつき度　解析失敗：null</returns>
-        public Dictionary<int, int> GetNexus(Player.Player sourcePlayer, Player.Player targetPlayer)
+        public Dictionary<int, int> GetNexus(player.Player sourcePlayer, player.Player targetPlayer)
         {
             //メンバーチェンジごとで区切ったアクションのリスト
             List<List<object>> actionList = new List<List<object>>();

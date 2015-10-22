@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BasketballManagementSystem.BaseClass.Player;
+using BasketballManagementSystem.BaseClass.player;
 using System.Windows.Forms;
 
-namespace BasketballManagementSystem.BMForm.Input.EventHelper
+namespace BasketballManagementSystem.BMForm.input.eventHelper
 {
     //TODO: フラグが結構ごちゃごちゃしてる
     public class MemberChangeEventHelper

@@ -5,7 +5,7 @@ using System.Text;
 using System.Drawing;
 using System.Drawing.Imaging;
 
-namespace BasketballManagementSystem.Manager
+namespace BasketballManagementSystem.manager
 {
     /// <summary>
     /// pictureフォルダの中の画像を全てロードし、指定されたファイル名の画像を返す。

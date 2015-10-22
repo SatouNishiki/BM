@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using BasketballManagementSystem.BaseClass.Action;
+using BasketballManagementSystem.BaseClass.action;
 using System.Xml.Serialization;
 using System.Reflection;
 using System.Collections;
 
-namespace BasketballManagementSystem.BaseClass.Player
+namespace BasketballManagementSystem.BaseClass.player
 {
     /// <summary>
     /// 選手をあらわすクラス

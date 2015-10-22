@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace BasketballManagementSystem.BaseClass.Position
+namespace BasketballManagementSystem.BaseClass.position
 {
     public class PositionConvert
     {
