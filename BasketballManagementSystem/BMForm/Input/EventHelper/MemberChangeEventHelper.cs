@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BasketballManagementSystem.BaseClass.player;
+using BasketballManagementSystem.baseClass.player;
 using System.Windows.Forms;
 
-namespace BasketballManagementSystem.BMForm.input.eventHelper
+namespace BasketballManagementSystem.bMForm.input.eventHelper
 {
     //TODO: フラグが結構ごちゃごちゃしてる
     public class MemberChangeEventHelper
@@ -15,7 +15,7 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
 
         private List<bool> enableList = new List<bool>();
 
-        public void ChangeMember(FormInput form)
+        public void ChangeMember(FormInputView form)
         {
             if (form.MyCortTeamListBox.SelectedItems.Count == 0
                 && form.OppentOutTeamListBox.SelectedItems.Count == 0
@@ -91,7 +91,7 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
             }
         }
 
-        private void SetEasyChangeMode(FormInput form, bool mode)
+        private void SetEasyChangeMode(FormInputView form, bool mode)
         {
 
             form.MyCortTeamListBox.IsEasyMemberChangeMode = mode;

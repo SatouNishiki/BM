@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.BMForm.strategySimulation
+﻿namespace BasketballManagementSystem.bMForm.strategySimulation
 {
     partial class FormStrategySimulation
     {

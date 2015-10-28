@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.BMForm.actionPointGraph
+﻿namespace BasketballManagementSystem.bMForm.actionPointGraph
 {
     partial class FormActionPointGraph
     {

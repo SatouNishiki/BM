@@ -1062,13 +1062,13 @@
     <value>Data</value>
   </data>
   <data name="GoTCPServerFormItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>138, 22</value>
   </data>
   <data name="GoTCPServerFormItem.Text" xml:space="preserve">
     <value>TCPServer</value>
   </data>
   <data name="GoTCPClientFormItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>138, 22</value>
   </data>
   <data name="GoTCPClientFormItem.Text" xml:space="preserve">
     <value>TCPClient</value>
@@ -1173,7 +1173,7 @@
     <value>NoControl</value>
   </data>
   <data name="QuarterText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>393, 121</value>
+    <value>397, 126</value>
   </data>
   <data name="QuarterText.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 35</value>
@@ -1227,7 +1227,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentTeamFaulLabel.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1257,7 +1257,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1287,7 +1287,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="MyTeamFaulLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1320,7 +1320,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyTeamFaulLabel.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>18</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1353,7 +1353,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1386,7 +1386,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt, style=Bold</value>
@@ -1413,7 +1413,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1443,7 +1443,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="MyTimeOutButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1860,7 +1860,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterTimerRewindButton.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="QuarterTimerFastFowardButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1924,7 +1924,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterTimerFastFowardButton.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="QuarterTimerStopButton.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
@@ -1991,7 +1991,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterTimerStopButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -2045,7 +2045,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="groupBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>235, 266</value>
@@ -2066,7 +2066,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="MemberChangeButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2147,7 +2147,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="OppentTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 36pt</value>
@@ -2180,7 +2180,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentTeamPointLabel.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="MyTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 36pt, style=Bold</value>
@@ -2213,7 +2213,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyTeamPointLabel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="ToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>137, 17</value>
@@ -3888,42 +3888,6 @@
   <data name="&gt;&gt;ToolStrip.ZOrder" xml:space="preserve">
     <value>26</value>
   </data>
-  <data name="QuarterTimer.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="QuarterTimer.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 18pt</value>
-  </data>
-  <data name="QuarterTimer.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="QuarterTimer.Location" type="System.Drawing.Point, System.Drawing">
-    <value>427, 92</value>
-  </data>
-  <data name="QuarterTimer.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>No</value>
-  </data>
-  <data name="QuarterTimer.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 24</value>
-  </data>
-  <data name="QuarterTimer.TabIndex" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="QuarterTimer.Text" xml:space="preserve">
-    <value>10:00</value>
-  </data>
-  <data name="&gt;&gt;QuarterTimer.Name" xml:space="preserve">
-    <value>QuarterTimer</value>
-  </data>
-  <data name="&gt;&gt;QuarterTimer.Type" xml:space="preserve">
-    <value>QuarterTimer.QuarterTimer, QuarterTimer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;QuarterTimer.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;QuarterTimer.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
   <data name="OppentOutTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11pt</value>
   </data>
@@ -3949,7 +3913,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentOutTeamListBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="OppentCortTeamListBox.HorizontalScrollbar" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -3976,7 +3940,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentCortTeamListBox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="MyCortTeamListBox.HorizontalScrollbar" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -4003,7 +3967,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyCortTeamListBox.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="MyOutTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11pt</value>
@@ -4031,6 +3995,33 @@
   </data>
   <data name="&gt;&gt;MyOutTeamListBox.ZOrder" xml:space="preserve">
     <value>25</value>
+  </data>
+  <data name="QuarterTimerLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 22pt</value>
+  </data>
+  <data name="QuarterTimerLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>427, 86</value>
+  </data>
+  <data name="QuarterTimerLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 29</value>
+  </data>
+  <data name="QuarterTimerLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="QuarterTimerLabel.Text" xml:space="preserve">
+    <value>10:0</value>
+  </data>
+  <data name="&gt;&gt;QuarterTimerLabel.Name" xml:space="preserve">
+    <value>QuarterTimerLabel</value>
+  </data>
+  <data name="&gt;&gt;QuarterTimerLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;QuarterTimerLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;QuarterTimerLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="ColorDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>242, 17</value>
@@ -4219,6 +4210,12 @@
     <value>StrategySimulationFormItem</value>
   </data>
   <data name="&gt;&gt;StrategySimulationFormItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CentralityAnalyzeItem.Name" xml:space="preserve">
+    <value>CentralityAnalyzeItem</value>
+  </data>
+  <data name="&gt;&gt;CentralityAnalyzeItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;PropToolStripMenuItem.Name" xml:space="preserve">
@@ -4425,14 +4422,8 @@
   <data name="&gt;&gt;ColorDialog.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColorDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;CentralityAnalyzeItem.Name" xml:space="preserve">
-    <value>CentralityAnalyzeItem</value>
-  </data>
-  <data name="&gt;&gt;CentralityAnalyzeItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>FormInput</value>
+    <value>FormInputView</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>

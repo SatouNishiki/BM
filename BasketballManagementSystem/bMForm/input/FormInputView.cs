@@ -1,251 +1,447 @@
 ﻿using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.player;
-using BasketballManagementSystem.BaseClass.action;
-using BasketballManagementSystem.BMForm.input.eventHelper;
+using BasketballManagementSystem.baseClass.player;
+using BasketballManagementSystem.baseClass.action;
+using BasketballManagementSystem.bMForm.input.eventHelper;
 using System;
-using QuarterTimer;
-using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.baseClass.game;
 using BasketballManagementSystem.manager;
-using BasketballManagementSystem.BMForm.graphScore;
-using BasketballManagementSystem.BMForm.boxScore;
-using BasketballManagementSystem.BaseClass.timeOut;
-using BasketballManagementSystem.BMForm.playerData;
-using BasketballManagementSystem.BaseClass.settings;
+using BasketballManagementSystem.bMForm.graphScore;
+using BasketballManagementSystem.bMForm.boxScore;
+using BasketballManagementSystem.baseClass.timeOut;
+using BasketballManagementSystem.bMForm.playerData;
+using BasketballManagementSystem.baseClass.settings;
 using System.Drawing;
 using System.Collections.Generic;
-using BasketballManagementSystem.BMForm.tactick2D;
+using BasketballManagementSystem.bMForm.tactick2D;
 using System.Globalization;
 using System.Threading;
-using BasketballManagementSystem.BMForm.input.language;
-using BasketballManagementSystem.BMForm.gameDataEdit;
-using BasketballManagementSystem.BMForm.Transmission;
-using BasketballManagementSystem.BMForm.input.loadHelper;
+using BasketballManagementSystem.bMForm.input.language;
+using BasketballManagementSystem.bMForm.gameDataEdit;
+using BasketballManagementSystem.bMForm.Transmission;
+using BasketballManagementSystem.bMForm.input.loadHelper;
 using System.Runtime.CompilerServices;
-using BasketballManagementSystem.BMForm.teamMake;
-using BasketballManagementSystem.BMForm.actionPointEdit;
-using BasketballManagementSystem.BMForm.actionPointGraph;
-using BasketballManagementSystem.BMForm.strategySimulation;
-using BasketballManagementSystem.BMForm.Transmission.tCP;
-using BasketballManagementSystem.BMForm.clubEdit;
-using BasketballManagementSystem.BMForm.centralityAnalyze;
+using BasketballManagementSystem.bMForm.teamMake;
+using BasketballManagementSystem.bMForm.actionPointEdit;
+using BasketballManagementSystem.bMForm.actionPointGraph;
+using BasketballManagementSystem.bMForm.strategySimulation;
+using BasketballManagementSystem.bMForm.Transmission.tCP;
+using BasketballManagementSystem.bMForm.clubEdit;
+using BasketballManagementSystem.bMForm.centralityAnalyze;
+using BasketballManagementSystem.interfaces.input;
+using BasketballManagementSystem.events;
+using BasketballManagementSystem.interfaces;
+using BasketballManagementSystem.abstracts;
+using BasketballManagementSystem.events.input;
+using BasketballManagementSystem.baseClass.command;
 
-namespace BasketballManagementSystem.BMForm.input
+namespace BasketballManagementSystem.bMForm.input
 {
-    public partial class FormInput : Form
+    public partial class FormInputView : Form, IInputView
     {
-
-        /// <summary>
-        /// アクションクリックのイベントの処理を行うクラス
-        /// </summary>
-        private ActionClickEventHelper actionClickEventHelper = new ActionClickEventHelper();
-
-        /// <summary>
-        /// チームチェンジのイベントの処理を行うクラス
-        /// </summary>
-        private TeamChengeEventHelper teamChangeEventHelper = new TeamChengeEventHelper();
-
-        /// <summary>
-        /// セーブデータの管理を行うクラス
-        /// </summary>
-        private SaveDataManager saveDataManager = SaveDataManager.GetInstance();
-
-        /// <summary>
-        /// コート入力に関するイベントの処理を行うクラス
-        /// </summary>
-        private CortEventHelper cortEventHelper = new CortEventHelper();
-
-        /// <summary>
-        /// キーボードショートカット処理を行うクラス
-        /// </summary>
-        private KeyboardEventHelper keyboardEventHelper = new KeyboardEventHelper();
-
-        /// <summary>
-        /// メンバーチェンジに関する処理を行うクラス
-        /// </summary>
-        private MemberChangeEventHelper memberChangeEventHelper = new MemberChangeEventHelper();
-
-        /// <summary>
-        /// デバッグメッセージを表示するフォーム
-        /// </summary>
-        private DebugMessageForm debugMessageForm = new DebugMessageForm();
-
-        /// <summary>
-        /// そのクォーターのタイムアウト回数の上限
-        /// </summary>
-        private int timeOutRimit = 2;
-        
-        /// <summary>
-        /// 試合停止ボタンの画像
-        /// </summary>
-        private Bitmap StopGraph;
-
-        /// <summary>
-        /// 試合再開ボタンの画像
-        /// </summary>
-        private Bitmap RestartGraph;
 
         /// <summary>
         /// 色を変更するボタンを格納するリスト
         /// </summary>
-        private List<Button> colorChangeButton = new List<Button>();
+        public List<Button> colorChangeButton { get; set; }
 
-        /// <summary>
-        /// 初回のロード処理が終わるまでtrueを示すフラグ
-        /// </summary>
-        private bool preLoad = true;
+        private AbstractPresenter presenter;
 
-        /// <summary>
-        /// Undo,Redoに使われるゲームデータのスタックオブジェクト
-        /// </summary>
-        private Stack<Game> gameDataStack = new Stack<Game>();
-
-        private Stack<Game> redoGameDataStack = new Stack<Game>();
-
-
-        /// <summary>
-        /// 現在の自分のタイムアウトの数
-        /// </summary>
-        private int nowMyTimeOut
+        public AbstractPresenter Presenter
         {
             get
             {
-                if (Quarter == 1 || Quarter == 2)
-                    return Game.MyTeam.GetTimeOutCount(TimeOut.FirstHalf);
-
-                else if (Quarter == 3 || Quarter == 4)
-                    return Game.MyTeam.GetTimeOutCount(TimeOut.SecondHalf);
-
-                else
-                    return Game.MyTeam.GetTimeOutCount(Quarter);
+                return this.presenter;
             }
-        }
-
-        /// <summary>
-        /// 現在の相手のタイムアウトの数
-        /// </summary>
-        private int nowOppentTimeOut 
-        {
-            get
+            set
             {
-                if (Quarter == 1 || Quarter == 2)
-                    return Game.OppentTeam.GetTimeOutCount(TimeOut.FirstHalf);
+                this.presenter = value;
 
-                else if (Quarter == 3 || Quarter == 4)
-                    return Game.OppentTeam.GetTimeOutCount(TimeOut.SecondHalf);
-
-                else
-                    return Game.OppentTeam.GetTimeOutCount(Quarter);
+                this.Init();
             }
         }
 
-        /// <summary>
-        /// コメント機能を利用するかどうかを取得
-        /// </summary>
-        public bool UseComment
+        public DebugMessageForm DebugMessageForm
         {
-            get { return UseCommentItem.Checked; }
+            get { return (DebugMessageForm)this.presenter.GetModelProperty("DebugMessageForm"); }
         }
 
-        /// <summary>
-        /// ゲームデータ
-        /// </summary>
-        public Game Game { get; set; }
-
-        /// <summary>
-        /// 現在選択されているプレイヤーの変数
-        /// </summary>
-        public Player SelectedPlayer { get; set; }
-
-        /// <summary>
-        /// ファウルが行われたときに与えるフリースローの数
-        /// </summary>
-        public int GivenFreeThrow
+        public Team MyTeam
         {
-            get
-            {
-                int r = 0;
-                try
-                {
-                    r = int.Parse(this.givenFreeThowLabel.Text.ToString());
-                    return r;
-                }
-                catch (Exception exc)
-                {
-                    BMErrorLibrary.BMError.ErrorMessageOutput(exc.ToString(), true);
-                    return -1;
-                }
-            }
-            private set { GivenFreeThrow = value; }
+            get { return (Team)this.presenter.GetModelProperty("MyTeam"); }
         }
 
-        /// <summary>
-        /// 自分のチーム(全員)
-        /// </summary>
-        public Team MyTeam 
-        { 
-            get { return Game.MyTeam; } 
-            set { Game.MyTeam = value; } 
-        }
-
-        /// <summary>
-        /// 相手のチーム(全員)
-        /// </summary>
         public Team OppentTeam
-        { 
-            get { return Game.OppentTeam; } 
-            set { Game.OppentTeam = value; }
-        }
-
-        /// <summary>
-        /// クォーターの残り時間
-        /// </summary>
-        public TimeSpan RemainingTime
         {
-            get{  return QuarterTimer.remainingTime; }
+            get { return (Team)this.presenter.GetModelProperty("OppentTeam"); }
         }
 
-        /// <summary>
-        /// 現在のクォーター
-        /// </summary>
         public int Quarter
         {
-            get { return QuarterTimer.quarter; }
+            get { return (int)this.presenter.GetModelProperty("Quarter"); }
+        }
+
+        public int NowMyTimeOut
+        {
+            get { return (int)this.presenter.GetModelProperty("NowMyTimeOut"); }
+        }
+
+        public int NowOppentTimeOut
+        {
+            get { return (int)this.presenter.GetModelProperty("NowOppentTimeOut"); }
+        }
+
+        public Player SelectedPlayer
+        {
+            get { return (Player)this.presenter.GetModelProperty("SelectedPlayer"); }
+        }
+
+        public Bitmap RestartGraph
+        {
+            get { return (Bitmap)this.presenter.GetModelProperty("RestartGraph"); }
+        }
+
+        public Bitmap StopGraph
+        {
+            get { return (Bitmap)this.presenter.GetModelProperty("StopGraph"); }
+        }
+
+        public bool UseComment
+        {
+            get { return (bool)this.presenter.GetModelProperty("UseComment"); }
+        }
+
+        public int TimeOutRimit
+        {
+            get { return (int)this.presenter.GetModelProperty("TimeOutRimit"); }
+        }
+
+        public Stack<Game> GameDataStack
+        {
+            get { return (Stack<Game>)this.presenter.GetModelProperty("GameDataStack"); }
+        }
+
+        public Stack<Game> RedoGameDataStack
+        {
+            get { return (Stack<Game>)this.presenter.GetModelProperty("RedoGameDataStack"); }
+        }
+
+        public Game Game
+        {
+            get { return (Game)this.presenter.GetModelProperty("Game"); }
+        }
+
+        public QuarterTimer.QuarterTimer QuarterTimer
+        {
+            get { return (QuarterTimer.QuarterTimer)this.presenter.GetModelProperty("QuarterTimer"); }
+        }
+
+        public TimeSpan RemainingTime
+        {
+            get { return (TimeSpan)this.presenter.GetModelProperty("RemainingTime"); }
+        }
+
+        public TimeSpan ElaspedTime
+        {
+            get { return (TimeSpan)this.presenter.GetModelProperty("ElaspedTime"); }
+        }
+
+        public int GivenFreeThrow
+        {
+            get { return (int)this.presenter.GetModelProperty("GivenFreeThrow"); }
+        }
+
+        
+
+        /********************************************イベント****************************************/
+
+        /// <summary>
+        /// データ入力汎用イベント
+        /// </summary>
+        public event DataInputEventHandler DataInputEvent;
+
+        /// <summary>
+        /// チーム変更時に呼ばれるイベント
+        /// </summary>
+        public event TeamChangeEventHandler TeamChangeEvent;
+
+        /// <summary>
+        /// メンバー変更時に呼ばれるイベント
+        /// </summary>
+        public event Action<FormInputView> MemberChangeEvent;
+
+        /// <summary>
+        /// キーボードイベント発生時に呼ばれるイベント
+        /// </summary>
+        public event KeyboardEventHandler KeyboardEvent;
+
+        /// <summary>
+        /// Undo時に呼ばれるイベント
+        /// </summary>
+        public event Action UndoEvent;
+
+        /// <summary>
+        /// Redo時に呼ばれるイベント
+        /// </summary>
+        public event Action RedoEvent;
+
+        /// <summary>
+        /// ロードボタンが押された時のイベント
+        /// </summary>
+        public event Action GameLoadEvent;
+
+        /// <summary>
+        /// セーブボタンが押された時のイベント
+        /// </summary>
+        public event Action GameSaveEvent;
+
+        /// <summary>
+        /// セーブデータ管理クラスへの定期セーブ時に呼ばれるイベント
+        /// </summary>
+        public event Action SetSaveDataToManagerEvent;
+
+        /// <summary>
+        /// TCPクライアント画面が開かれる時のイベント
+        /// </summary>
+        public event Action OpenTCPClientFormEvent;
+
+        /// <summary>
+        /// TCPサーバー画面が開かれる時のイベント
+        /// </summary>
+        public event Action OpenTCPServerFormEvent;
+        
+        /// <summary>
+        /// 試合が開始された時のイベント
+        /// </summary>
+        public event Action StartGameEvent;
+
+        /// <summary>
+        /// クォーター遷移が行われた時のイベント
+        /// </summary>
+        public event Action NextQuarterEvent;
+        
+        /// <summary>
+        /// 試合が一時停止された時のイベント
+        /// </summary>
+        public event Action StopGameEvent;
+
+        /// <summary>
+        /// 試合が再開された時のイベント
+        /// </summary>
+        public event Action RestartGameEvent;
+
+        /// <summary>
+        /// 試合が終了した時のイベント
+        /// </summary>
+        public event Action EndGameEvent;
+
+        /// <summary>
+        /// 試合へのコメントメソッドが呼ばれる時のイベント
+        /// </summary>
+        public event Action<string> GameCommentEvent;
+
+        /// <summary>
+        /// アクション入力が行われたときのイベント
+        /// </summary>
+        public event Action<Type> ActionClickEvent;
+
+        /// <summary>
+        /// コートがクリックされたときのイベント
+        /// </summary>
+        public event Action<PictureBox, EventArgs> CortClickEvent;
+
+        public event Action FormActionPointEditOpenEvent;
+
+        /// <summary>
+        /// データ変更イベントを投げる
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="value"></param>
+        private void DataChangeEventThrow(string name, object value)
+        {
+            if (this.DataInputEvent != null)
+            {
+                this.DataInputEvent(this, new DataInputEventArgs(name, value));
+            }
         }
 
         /// <summary>
-        /// クォーターの経過時間
+        /// チーム変更イベントを投げる
         /// </summary>
-        public TimeSpan ElaspedTime {
-            get { return QuarterTimer.elapsedTime; }
+        /// <param name="cortMemberList"></param>
+        /// <param name="outMemberList"></param>
+        private void TeamChangeEventThrow(ListBox cortMemberList, ListBox outMemberList, TeamChangeEventArgs.TeamType type)
+        {
+            if (this.TeamChangeEvent != null)
+            {
+                this.TeamChangeEvent(this, new TeamChangeEventArgs(cortMemberList, outMemberList, type));
+            }
         }
 
-        public FormInput()
+        /// <summary>
+        /// メンバー変更イベントを投げる
+        /// </summary>
+        /// <param name="form"></param>
+        private void MemberChangeEventThrow(FormInputView form)
+        {
+            if (this.MemberChangeEvent != null)
+            {
+                this.MemberChangeEvent(form);
+            }
+        }
+
+        private void KeyboardEventThrow(FormInputView form, KeyEventArgs key, KeyboardEventArgs.KeyType type)
+        {
+            if (this.KeyboardEvent != null)
+            {
+                this.KeyboardEvent(form, new KeyboardEventArgs(key, type));
+            }
+        }
+
+        private void UndoEventThrow()
+        {
+            if (this.UndoEvent != null)
+            {
+                this.UndoEvent();
+            }
+        }
+
+        private void RedoEventThrow()
+        {
+            if (this.RedoEvent != null)
+            {
+                this.RedoEvent();
+            }
+        }
+
+        private void GameLoadEventThrow()
+        {
+            if (this.GameLoadEvent != null)
+            {
+                this.GameLoadEvent();
+            }
+        }
+
+        private void GameSaveEventThrow()
+        {
+            if (this.GameSaveEvent != null)
+            {
+                this.GameSaveEvent();
+            }
+        }
+
+        private void SetSaveDataToManagerEventThrow()
+        {
+            if (this.SetSaveDataToManagerEvent != null)
+            {
+                this.SetSaveDataToManagerEvent();
+            }
+        }
+
+        private void OpenTCPClientFormEventThrow()
+        {
+            if (this.OpenTCPClientFormEvent != null)
+            {
+                this.OpenTCPClientFormEvent();
+            }
+        }
+
+        private void OpenTCPServerFormEventThrow()
+        {
+            if (this.OpenTCPServerFormEvent != null)
+            {
+                this.OpenTCPServerFormEvent();
+            }
+        }
+
+        private void StartGameEventThrow()
+        {
+            if (this.StartGameEvent != null)
+            {
+                this.StartGameEvent();
+            }
+        }
+
+        private void NextQuarterEventThrow()
+        {
+            if (this.NextQuarterEvent != null)
+            {
+                this.NextQuarterEvent();
+            }
+        }
+
+        private void StopGameEventThrow()
+        {
+            if (this.StopGameEvent != null)
+            {
+                this.StopGameEvent();
+            }
+        }
+
+        private void RestartGameEventThrow()
+        {
+            if (this.RestartGameEvent != null)
+            {
+                this.RestartGameEvent();
+            }
+        }
+
+        private void EndGameEventThrow()
+        {
+            if (this.EndGameEvent != null)
+            {
+                this.EndGameEvent();
+            }
+        }
+
+        private void GameCommentEventThrow(string comment)
+        {
+            if (this.GameCommentEvent != null)
+            {
+                this.GameCommentEvent(comment);
+            }
+        }
+
+        private void ActionClickEventThrow(Type type)
+        {
+            if (this.ActionClickEvent != null)
+            {
+                this.ActionClickEvent(type);
+            }
+        }
+
+        private void CortClickEventThrow(PictureBox pictureBox, EventArgs e)
+        {
+            if (this.CortClickEvent != null)
+            {
+                this.CortClickEvent(pictureBox, e);
+            }
+        }
+
+        private void FormActionPointEditOpenEventThrow()
+        {
+            if (this.FormActionPointEditOpenEvent != null)
+            {
+                this.FormActionPointEditOpenEvent();
+            }
+        }
+
+        /*********************************************************************************************/
+
+        public FormInputView()
         {
             InitializeComponent();
-            Init();
+            PreInit();
            
         }
 
         /// <summary>
-        /// 初期化処理メソッド
+        /// コンストラクタで呼ばれる初期化処理メソッド
         /// </summary>
-        private void Init()
+        private void PreInit()
         {
-
             /******************************プロパティ初期化******************************************/
-
-            preLoad = false;
-            Game = new Game();
-
-            //現在のコードを実行しているAssemblyを取得
-            System.Reflection.Assembly assembly =
-                System.Reflection.Assembly.GetExecutingAssembly();
-
-            RestartGraph = new Bitmap(assembly.GetManifestResourceStream
-                            ("BasketballManagementSystem.BMForm.Input.Picture.susumu.png"));
-
-            StopGraph = new Bitmap(assembly.GetManifestResourceStream
-                            ("BasketballManagementSystem.BMForm.Input.Picture.teisi.png"));
+           
+            this.colorChangeButton = new List<Button>();
 
             foreach (var c in Controls)
             {
@@ -255,11 +451,7 @@ namespace BasketballManagementSystem.BMForm.input
                 }
             }
 
-            MyTeam = new Team();
-            OppentTeam = new Team();
-
-            SelectedPlayer = new Player("No Name", 0);
-
+            
             /******************************************************************************************/
 
 
@@ -278,9 +470,10 @@ namespace BasketballManagementSystem.BMForm.input
                 if (c.Name == "ja" || c.Name == "en")
                     this.ChangeLanguageComboBox.Items.Add(c.DisplayName);
             }
-
+            
             ChangeLanguageComboBox.SelectedIndex = AppSetting.GetInstance().CultureSelectedIndex;
-            QuarterChangeTimerSpeedCombo.SelectedIndex = 0;
+            
+            
 
 
             /******************************************************************************************/
@@ -310,31 +503,37 @@ namespace BasketballManagementSystem.BMForm.input
 
            
 
-            /***********************************デバッグウインドウ設定*******************************/
-
-
-            if (DebugFormVisiableItem.Checked)
-            {
-                debugMessageForm.Show();
-
-                this.TopMost = true;
-                this.TopMost = false;
-            }
-
-            /*****************************************************************************************/
 
            
         }
 
+        /// <summary>
+        /// Presenter設定後に呼ばれる初期化処理メソッド
+        /// モデルのデータを用いてコントロールの初期化をするような場合に使う
+        /// </summary>
+        private void Init()
+        {
+            QuarterChangeTimerSpeedCombo.SelectedIndex = 0;
+
+            /***********************************デバッグウインドウ設定*******************************/
+
+            if (DebugFormVisiableItem.Checked)
+            {
+                DebugMessageForm.Show();
+                this.TopMost = true;
+                this.TopMost = false;
+            }
+            /*****************************************************************************************/
+
+        }
         /// <summary>
         /// うけとった文字列をそれっぽくデバッグメッセージに出す
         /// </summary>
         /// <param name="message"></param>
         public void AddDebugMessage(string message)
         {
-
-            if(debugMessageForm != null && !debugMessageForm.IsDisposed)
-            debugMessageForm.addDebugMessage(message);
+            if (DebugMessageForm != null && !DebugMessageForm.IsDisposed)
+                DebugMessageForm.AddDebugMessage(message);
 
         }
 
@@ -375,17 +574,19 @@ namespace BasketballManagementSystem.BMForm.input
 
 
             /******************************** タイムアウト ***************************************/
-            MyTimeOutLabel.Text = nowMyTimeOut + "/" + timeOutRimit;
+            MyTimeOutLabel.Text = NowMyTimeOut + "/" + TimeOutRimit;
 
-            OppentTimeOutLabel.Text = nowOppentTimeOut + "/" + timeOutRimit;
+            OppentTimeOutLabel.Text = NowOppentTimeOut + "/" + TimeOutRimit;
 
             /***********************************************************************/
 
 
             /******************************* DebugWindow **********************************************/
 
-            if ((debugMessageForm == null || debugMessageForm.IsDisposed) && DebugFormVisiableItem.Checked)
+            //DebugWindowが表示モードなのにユーザーから強制的に消されたら
+            if ((DebugMessageForm == null || DebugMessageForm.IsDisposed) && DebugFormVisiableItem.Checked)
             {
+                //非表示モードにしてあげる
                 DebugFormVisiableItem.Checked = false;
                 AppSetting.GetInstance().DebugWindowChecked = false;
                 AppSetting.GetInstance().SettingChanged();
@@ -393,13 +594,18 @@ namespace BasketballManagementSystem.BMForm.input
 
             /*****************************************************************************************/
 
-            if (gameDataStack.Count == 0) UndoToolStripButton.Enabled = false;
+            if (GameDataStack.Count == 0) UndoToolStripButton.Enabled = false;
             else UndoToolStripButton.Enabled = true;
 
-            if (redoGameDataStack.Count == 0) RedoToolStripButton.Enabled = false;
+            if (RedoGameDataStack.Count == 0) RedoToolStripButton.Enabled = false;
             else RedoToolStripButton.Enabled = true;
 
             this.SaveToSaveManager();
+
+            if (this.QuarterTimer.Text != string.Empty)
+                this.QuarterTimerLabel.Text = this.QuarterTimer.Text;
+            else
+                this.QuarterTimerLabel.Text = "10:00";
         }
 
 
@@ -410,7 +616,7 @@ namespace BasketballManagementSystem.BMForm.input
         /// <param name="e"></param>
         private void ChangeMyTeamButton_Click(object sender, System.EventArgs e)
         {
-            teamChangeEventHelper.onMyTeamChange(this,  MyCortTeamListBox, MyOutTeamListBox);
+            this.TeamChangeEventThrow(MyCortTeamListBox, MyOutTeamListBox, TeamChangeEventArgs.TeamType.MyTeam);
 
             SyncTeam();
         }
@@ -422,7 +628,7 @@ namespace BasketballManagementSystem.BMForm.input
         /// <param name="e"></param>
         private void ChangeOppentTeamButton_Click(object sender, System.EventArgs e)
         {
-            teamChangeEventHelper.onOppentTeamChange(this, OppentCortTeamListBox, OppentOutTeamListBox);
+            this.TeamChangeEventThrow(OppentCortTeamListBox, OppentOutTeamListBox, TeamChangeEventArgs.TeamType.OppentTeam);
 
             SyncTeam();
         }
@@ -432,6 +638,7 @@ namespace BasketballManagementSystem.BMForm.input
         /// </summary>
         private void SyncTeam()
         {
+            
             MyTeam.CortMember.Clear();
 
             foreach (Player p in MyCortTeamListBox.Items)
@@ -466,47 +673,47 @@ namespace BasketballManagementSystem.BMForm.input
 
         private void AssistButton_Click(object sender, System.EventArgs e)
         {
-            actionClickEventHelper.ActionInputAccept(this, new Assist(), null);
+            this.ActionClickEventThrow(typeof(Assist));
         }
 
         private void PersonalFaulButton_Click(object sender, System.EventArgs e)
         {
-            actionClickEventHelper.ActionInputAccept(this, new PersonalFaul(), null);
+            this.ActionClickEventThrow(typeof(PersonalFaul));
         }
 
         private void TurnOverButton_Click(object sender, System.EventArgs e)
         {
-            actionClickEventHelper.ActionInputAccept(this, new TurnOver(), null);
+            this.ActionClickEventThrow(typeof(TurnOver));         
         }
 
         private void StealButton_Click(object sender, System.EventArgs e)
         {
-            actionClickEventHelper.ActionInputAccept(this, new Steal(), null);
+            this.ActionClickEventThrow(typeof(Steal));  
         }
 
         private void BlockShotButton_Click(object sender, System.EventArgs e)
         {
-            actionClickEventHelper.ActionInputAccept(this, new ShootBlock(), null);
+            this.ActionClickEventThrow(typeof(ShootBlock));  
         }
 
         private void TechnicalFaulButton_Click(object sender, EventArgs e)
         {
-            actionClickEventHelper.ActionInputAccept(this, new TechnicalFaul(), null);
+            this.ActionClickEventThrow(typeof(TechnicalFaul));  
         }
 
         private void UnSportsmanLikeFaulButton_Click(object sender, EventArgs e)
         {
-            actionClickEventHelper.ActionInputAccept(this, new UnSportsmanLikeFaul(), null);
+            this.ActionClickEventThrow(typeof(UnSportsmanLikeFaul));  
         }
 
         private void DisQualifyingFaulButton_Click(object sender, EventArgs e)
         {
-            actionClickEventHelper.ActionInputAccept(this, new DisQualifyingFaul(), null);
+            this.ActionClickEventThrow(typeof(DisQualifyingFaul));  
         }
 
         private void CortPicture_Click(object sender, System.EventArgs e)
         {
-            cortEventHelper.OnCortClick(this, CortPictureBox, sender, e);
+            this.CortClickEventThrow(CortPictureBox, e);
         }
 
         /***************************************************************************************************/
@@ -529,12 +736,13 @@ namespace BasketballManagementSystem.BMForm.input
             try
             {
                 //選択選手の記憶
-                SelectedPlayer = (Player)(((ListBox)sender).Items[((ListBox)sender).SelectedIndex]);
+                this.DataChangeEventThrow("SelectedPlayer", (Player)(((ListBox)sender).Items[((ListBox)sender).SelectedIndex]));
+               
                 PlayerNameLabel.Text = SelectedPlayer.ToString();
             }
             catch(System.Exception exception)
             {
-                SelectedPlayer = new Player("No Name", 0);
+                this.DataChangeEventThrow("SelectedPlayer", new Player("No Name", 0));
                
                 BMErrorLibrary.BMError.ErrorMessageOutput(exception.Message, true);
             }
@@ -542,12 +750,12 @@ namespace BasketballManagementSystem.BMForm.input
 
         private void TimeOut_Click(object sender, EventArgs e)
         {
-            if (nowMyTimeOut < timeOutRimit)
+            if (NowMyTimeOut < TimeOutRimit)
             {
                 try
                 {
                     StackGameData();
-                    Game.MyTeam.TimeOutList.Add(new BaseClass.timeOut.TimeOut(Quarter, DateTime.Now, QuarterTimer.remainingTime));
+                    Game.MyTeam.TimeOutList.Add(new baseClass.timeOut.TimeOut(Quarter, DateTime.Now, this.QuarterTimer.remainingTime));
                 }
                 catch (Exception exc)
                 {
@@ -555,7 +763,7 @@ namespace BasketballManagementSystem.BMForm.input
                 }
                 if (StopGameItem.Enabled)
                 {
-                    QuarterTimer.StopGame();
+                    this.StopGameEventThrow();
                     StopGameItem.Enabled = false;
                     RestartGameItem.Enabled = true;
                     QuarterTimerStopButton.Image = RestartGraph;
@@ -572,12 +780,12 @@ namespace BasketballManagementSystem.BMForm.input
 
         private void OppentTimeOut_Click(object sender, EventArgs e)
         {
-            if (nowOppentTimeOut < timeOutRimit)
+            if (NowOppentTimeOut < TimeOutRimit)
             {
                 try
                 {
                     StackGameData();
-                    Game.OppentTeam.TimeOutList.Add(new BaseClass.timeOut.TimeOut(Quarter, DateTime.Now, QuarterTimer.remainingTime));
+                    Game.OppentTeam.TimeOutList.Add(new baseClass.timeOut.TimeOut(Quarter, DateTime.Now, this.QuarterTimer.remainingTime));
                 }
                 catch (Exception exc)
                 {
@@ -585,7 +793,7 @@ namespace BasketballManagementSystem.BMForm.input
                 }
                 if (StopGameItem.Enabled)
                 {
-                    QuarterTimer.StopGame();
+                    this.StopGameEventThrow();
                     StopGameItem.Enabled = false;
                     RestartGameItem.Enabled = true;
                     QuarterTimerStopButton.Image = RestartGraph;
@@ -604,9 +812,9 @@ namespace BasketballManagementSystem.BMForm.input
         {
             if (int.Parse(this.givenFreeThowLabel.Text.ToString()) < 3)
             {
-
                 int a = int.Parse(this.givenFreeThowLabel.Text.ToString()) + 1;
                 this.givenFreeThowLabel.Text = a.ToString();
+                this.DataChangeEventThrow("GivenFreeThrow", a);
             }
         }
 
@@ -616,20 +824,21 @@ namespace BasketballManagementSystem.BMForm.input
             {
                 int a = int.Parse(this.givenFreeThowLabel.Text.ToString()) - 1;
                 this.givenFreeThowLabel.Text = a.ToString();
+                this.DataChangeEventThrow("GivenFreeThrow", a);
             }
         }
 
         private void TeamChangeButton_Click(object sender, EventArgs e)
         {
-            memberChangeEventHelper.ChangeMember(this);
+            this.MemberChangeEventThrow(this);
 
-            PlayerListSortEventHelper.Sort(MyCortTeamListBox);
+            this.Sort(MyCortTeamListBox);
 
-            PlayerListSortEventHelper.Sort(MyOutTeamListBox);
+            this.Sort(MyOutTeamListBox);
 
-            PlayerListSortEventHelper.Sort(OppentCortTeamListBox);
+            this.Sort(OppentCortTeamListBox);
 
-            PlayerListSortEventHelper.Sort(OppentOutTeamListBox);
+            this.Sort(OppentOutTeamListBox);
         }
 
         /***********************************************************************************************************/
@@ -643,8 +852,6 @@ namespace BasketballManagementSystem.BMForm.input
         /// <param name="e"></param>
         private void StartGame_Click(object sender, EventArgs e)
         {
-            QuarterTimer.StartGame();
-
             NextQuarterItem.Enabled = true;
 
             GameEndItem.Enabled = true;
@@ -653,23 +860,26 @@ namespace BasketballManagementSystem.BMForm.input
 
             StopGameItem.Enabled = true;
             QuarterTimerStopButton.Enabled = true;
-            Game.StartTime = QuarterTimer.startTime;
+            
+            this.StartGameEventThrow();
         }
 
         private void NextQuarterButton_Click(object sender, EventArgs e)
         {
-            QuarterTimer.GoNextQuarter();
-            QuarterText.Text = QuarterTimer.displayQuarter;
+            this.NextQuarterEventThrow();
+            QuarterText.Text = this.QuarterTimer.displayQuarter;
 
             if (Quarter == 3)
             {
-                timeOutRimit = 3;
+                this.DataChangeEventThrow("TimeOutRimit", 3);
             }
 
             if (Quarter >= 5)
             {
-                timeOutRimit = 1;
+                this.DataChangeEventThrow("TimeOutRimit", 1);
             }
+
+            
            
         }
 
@@ -688,8 +898,7 @@ namespace BasketballManagementSystem.BMForm.input
             StartGameItem.Enabled = true;
             NextQuarterItem.Enabled = false;
             StopGameItem.Enabled = false;
-            QuarterTimer.EndGame();
-            Game.EndTime = QuarterTimer.endTime;
+            this.EndGameEventThrow();
 
             string comment = Microsoft.VisualBasic.Interaction.InputBox(
                 "試合に対するコメントを入力してください",
@@ -698,41 +907,41 @@ namespace BasketballManagementSystem.BMForm.input
                 200,
                 100);
 
-            Game.Comment = comment;
+            this.GameCommentEventThrow(comment);
         }
 
         private void QuarterTimerFastFoward_MouseDown(object sender, MouseEventArgs e)
         {
-            QuarterTimer.fastFowardFlag = true;
+            this.QuarterTimer.fastFowardFlag = true;
         }
 
         private void QuarterTimerFastFoward_MouseUp(object sender, MouseEventArgs e)
         {
-            QuarterTimer.fastFowardFlag = false;
+            this.QuarterTimer.fastFowardFlag = false;
         }
 
         private void QuarterTimerRewind_MouseDown(object sender, MouseEventArgs e)
         {
-            QuarterTimer.rewindFlag = true;
+            this.QuarterTimer.rewindFlag = true;
         }
 
         private void QuarterTimerRewind_MouseUp(object sender, MouseEventArgs e)
         {
-            QuarterTimer.rewindFlag = false;
+            this.QuarterTimer.rewindFlag = false;
         }
 
         private void QuarterTimerStop_Click(object sender, EventArgs e)
         {
             if (StopGameItem.Enabled)
             {
-                QuarterTimer.StopGame();
+                this.StopGameEventThrow();
                 StopGameItem.Enabled = false;
                 RestartGameItem.Enabled = true;
                 QuarterTimerStopButton.Image = RestartGraph;
             }
             else
             {
-                QuarterTimer.RestartGame();
+                this.RestartGameEventThrow();
                 StopGameItem.Enabled = true;
                 RestartGameItem.Enabled = false;
                 QuarterTimerStopButton.Image = StopGraph;
@@ -749,13 +958,12 @@ namespace BasketballManagementSystem.BMForm.input
         /// </summary>
         private void SaveToSaveManager()
         {
-            saveDataManager.SetGame(Game);
+            this.SetSaveDataToManagerEventThrow();
         }
 
         private void GameDataSave_Click(object sender, EventArgs e)
         {
-            GameSaveLoadEventHelper g = new GameSaveLoadEventHelper();
-            g.GameSave(saveDataManager.GetGame());
+            this.GameSaveEventThrow();
         }
 
         /// <summary>
@@ -765,31 +973,9 @@ namespace BasketballManagementSystem.BMForm.input
         /// <param name="e"></param>
         private void GameDataLoad_Click(object sender, EventArgs e)
         {
-            GameSaveLoadEventHelper g = new GameSaveLoadEventHelper();
-
-            Game temp = g.GameLoad();
-
-            if (temp != null)
-            {
-                Game = temp;
-
-                saveDataManager.SetGame(Game);
-
-                LoadProcess(Game);
-
-                gameDataStack.Clear();
-            }
+            this.GameLoadEventThrow();
         }
 
-        /// <summary>
-        /// ゲームデータをロードするときの処理
-        /// </summary>
-        /// <param name="game"></param>
-        public void LoadProcess(Game game)
-        {
-            FormInputLoader f = FormInputLoader.GetFormInputLoaderInstance();
-            f.LoadForm(this, game);
-        }
 
         /***********************************************************************************************/
 
@@ -800,11 +986,11 @@ namespace BasketballManagementSystem.BMForm.input
         {
             //TODO:メモリリークの可能性あり? 要検証
             this.Controls.Clear();
-            Game = new Game();
-            gameDataStack.Clear();
-            redoGameDataStack.Clear();
+            this.DataChangeEventThrow("Game", new Game());
+            GameDataStack.Clear();
+            RedoGameDataStack.Clear();
             InitializeComponent();
-            Init();
+            PreInit();
 
         }
 
@@ -952,26 +1138,24 @@ namespace BasketballManagementSystem.BMForm.input
 
         private void TimerTickComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (!preLoad)
-            {
-                FormInputTimer.Interval = int.Parse(TimerTickComboBox.SelectedItem.ToString());
-                AppSetting.GetInstance().FormInputFPS = TimerTickComboBox.SelectedIndex;
-                AppSetting.GetInstance().SettingChanged();
-            }
+            FormInputTimer.Interval = int.Parse(TimerTickComboBox.SelectedItem.ToString());
+            AppSetting.GetInstance().FormInputFPS = TimerTickComboBox.SelectedIndex;
+            AppSetting.GetInstance().SettingChanged();
+
         }
 
         private void DebugFormVisiable_Click(object sender, EventArgs e)
         {
             if (!((ToolStripMenuItem)sender).Checked)
             {
-                debugMessageForm = new DebugMessageForm();
-                debugMessageForm.Show();
+                this.DataChangeEventThrow("DebugMessageForm", new DebugMessageForm());
+                DebugMessageForm.Show();
                 this.TopMost = true;
                 this.TopMost = false;
             }
             else
             {
-                debugMessageForm.Close();
+                DebugMessageForm.Close();
             }
 
             //チェック状態反転
@@ -983,7 +1167,7 @@ namespace BasketballManagementSystem.BMForm.input
 
         private void QuarterChangeTimerSpeedCombo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            QuarterTimer.SetChangeSpeedTimerInterval(int.Parse(QuarterChangeTimerSpeedCombo.SelectedItem.ToString()));
+            this.QuarterTimer.SetChangeSpeedTimerInterval(int.Parse(QuarterChangeTimerSpeedCombo.SelectedItem.ToString()));
         }
 
         private void ChangeLanguageComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -1042,8 +1226,7 @@ namespace BasketballManagementSystem.BMForm.input
 
         private void actionPointEdit_Click(object sender, EventArgs e)
         {
-            ActionPointEditForm a = new ActionPointEditForm();
-            a.Show();
+            this.FormActionPointEditOpenEventThrow();
         }
 
         private void actionPointGraph_Click(object sender, EventArgs e)
@@ -1060,15 +1243,12 @@ namespace BasketballManagementSystem.BMForm.input
 
         private void tCPServer_Click(object sender, EventArgs e)
         {
-            TCPServer f = new TCPServer(this);
-            f.ShowDialog();
-            f.Dispose();
+            this.OpenTCPServerFormEventThrow();
         }
 
         private void tCPClient_Click(object sender, EventArgs e)
         {
-            TCPClient f = new TCPClient(this);
-            f.Show();
+            this.OpenTCPClientFormEventThrow();
         }
 
         private void clubMake_Click(object sender, EventArgs e)
@@ -1090,12 +1270,12 @@ namespace BasketballManagementSystem.BMForm.input
 
         private void FormInput_KeyDown(object sender, KeyEventArgs e)
         {
-            keyboardEventHelper.KeyDownEvent(this, e);
+            this.KeyboardEventThrow(this, e, KeyboardEventArgs.KeyType.KeyDown);
         }
 
         private void FormInput_KeyUp(object sender, KeyEventArgs e)
         {
-            keyboardEventHelper.KeyUpEvent(this);
+            this.KeyboardEventThrow(this, e, KeyboardEventArgs.KeyType.KeyUp);
         }
 
         /****************************************************************************************/
@@ -1120,32 +1300,17 @@ namespace BasketballManagementSystem.BMForm.input
 
         private void UndoToolStripButton_Click(object sender, EventArgs e)
         {
-            if (gameDataStack.Count != 0)
-            {
-                redoGameDataStack.Push(Game.CloneDeep());
+            this.UndoEventThrow();
 
-                Game g = gameDataStack.Pop();
-
-                LoadProcess(g);
-
-                AddDebugMessage("GameData undo success!");
-            }
+            AddDebugMessage("GameData undo");
        
         }
 
         private void RedoToolStripButton_Click(object sender, EventArgs e)
         {
-            if (redoGameDataStack.Count != 0)
-            {
-                gameDataStack.Push(Game.CloneDeep());
+            this.RedoEventThrow();
 
-                Game g = redoGameDataStack.Pop();
-
-                LoadProcess(g);
-
-                AddDebugMessage("GameData redo success!");
-
-            }
+            AddDebugMessage("GameData redo");
         }
 
         private void UseCommentToolStripButton_Click(object sender, EventArgs e)
@@ -1162,8 +1327,8 @@ namespace BasketballManagementSystem.BMForm.input
         /// </summary>
         public void StackGameData()
         {
-            gameDataStack.Push(Game.CloneDeep());
-            redoGameDataStack.Clear();
+            GameDataStack.Push(Game.CloneDeep());
+            RedoGameDataStack.Clear();
         }
 
         private void UseCommentItem_Click(object sender, EventArgs e)
@@ -1175,6 +1340,7 @@ namespace BasketballManagementSystem.BMForm.input
             AppSetting.GetInstance().UseCommentChecked = ((ToolStripMenuItem)sender).Checked;
             AppSetting.GetInstance().SettingChanged();
 
+            this.DataChangeEventThrow("UseComment", ((ToolStripMenuItem)sender).Checked);
         }
 
         private void UseCommentItem_CheckedChanged(object sender, EventArgs e)
@@ -1186,6 +1352,30 @@ namespace BasketballManagementSystem.BMForm.input
             else
             {
                 UseCommentToolStripButton.BackColor = DefaultBackColor;
+            }
+        }
+
+        
+
+        private void Sort(ListBox pList)
+        {
+            if (pList.Items.Count != 0)
+            {
+                int index = pList.SelectedIndex;
+
+                Player[] array = new Player[pList.Items.Count];
+                pList.Items.CopyTo(array, 0);
+
+                Array.Sort(array, new PlayerCoparer());
+
+                pList.Items.Clear();
+
+                foreach (Player p in array)
+                {
+                    pList.Items.Add(p);
+                }
+
+                pList.SelectedIndex = index;
             }
         }
 

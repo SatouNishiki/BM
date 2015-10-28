@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BasketballManagementSystem.manager;
-using BasketballManagementSystem.BaseClass.game;
-using BasketballManagementSystem.BaseClass.player;
-using BasketballManagementSystem.BaseClass.action;
-using BasketballManagementSystem.BaseClass.actionPoint;
+using BasketballManagementSystem.baseClass.game;
+using BasketballManagementSystem.baseClass.player;
+using BasketballManagementSystem.baseClass.action;
+using BasketballManagementSystem.baseClass.actionPoint;
 
-namespace BasketballManagementSystem.BaseClass.actionPoint
+namespace BasketballManagementSystem.baseClass.actionPoint
 {
     public class ActionPointAnalyze
     {

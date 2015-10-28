@@ -8,15 +8,15 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
-using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.baseClass.game;
 using BasketballManagementSystem.manager;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using BasketballManagementSystem.BMForm.input;
+using BasketballManagementSystem.bMForm.input;
 using BMErrorLibrary;
-using BasketballManagementSystem.BMForm.Transmission.compression;
+using BasketballManagementSystem.bMForm.Transmission.compression;
 
-namespace BasketballManagementSystem.BMForm.Transmission.tCP
+namespace BasketballManagementSystem.bMForm.Transmission.tCP
 {
     public partial class TCPClient : Form
     {
@@ -43,7 +43,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.tCP
 
         private Game sendGame;
 
-        private FormInput instance;
+        private FormInputPresenter instance;
 
         /// <summary>
         /// 別スレッドからメインスレッドのテキストボックスに書き込むデリゲート
@@ -62,7 +62,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.tCP
         delegate void EnableTimerDelegate();
 
 
-        public TCPClient(FormInput f)
+        public TCPClient(FormInputPresenter f)
         {
             InitializeComponent();
             instance = f;
@@ -189,8 +189,10 @@ namespace BasketballManagementSystem.BMForm.Transmission.tCP
                             }
                             else
                             {
-                                if(readFlag && !g.Equals(SaveDataManager.GetInstance().GetGame()))
-                                 instance.LoadProcess(g);
+                                if (readFlag && !g.Equals(SaveDataManager.GetInstance().GetGame()))
+                                {
+                                    instance.LoadGame(g);
+                                }
                                 
                             }
                             m.Close();

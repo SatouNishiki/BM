@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
-using BasketballManagementSystem.BaseClass.action;
+using BasketballManagementSystem.baseClass.action;
 
-namespace BasketballManagementSystem.BMForm.boxScore
+namespace BasketballManagementSystem.bMForm.boxScore
 {
     public class RunningScore
     {

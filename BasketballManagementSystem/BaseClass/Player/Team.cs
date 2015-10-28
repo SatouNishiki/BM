@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Serialization;
-using BasketballManagementSystem.BaseClass.action;
+using BasketballManagementSystem.baseClass.action;
 using System;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasketballManagementSystem.BaseClass.player
+namespace BasketballManagementSystem.baseClass.player
 {
     [Serializable]
     public class Team

@@ -8,14 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BasketballManagementSystem.manager;
-using BasketballManagementSystem.BaseClass.player;
+using BasketballManagementSystem.baseClass.player;
 using BMErrorLibrary;
 using BMFileLibrary;
 using System.IO;
-using BasketballManagementSystem.BaseClass.club;
+using BasketballManagementSystem.baseClass.club;
 using System.Xml.Serialization;
 
-namespace BasketballManagementSystem.BMForm.teamMake
+namespace BasketballManagementSystem.bMForm.teamMake
 {
     public partial class TeamDataEdit : Form
     {

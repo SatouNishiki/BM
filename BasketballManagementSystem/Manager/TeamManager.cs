@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using BasketballManagementSystem.BaseClass.player;
+using BasketballManagementSystem.baseClass.player;
 using System.IO;
 using System.Collections;
 using TagFileLoader;

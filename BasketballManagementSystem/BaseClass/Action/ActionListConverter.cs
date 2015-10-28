@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BMErrorLibrary;
 
-namespace BasketballManagementSystem.BaseClass.action
+namespace BasketballManagementSystem.baseClass.action
 {
     public class ActionListConverter
     {

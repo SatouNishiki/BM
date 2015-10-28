@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.BMForm.playerData
+﻿namespace BasketballManagementSystem.bMForm.playerData
 {
     partial class PlayerData
     {

@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.BMForm.boxScore
+﻿namespace BasketballManagementSystem.bMForm.boxScore
 {
     partial class FormBoxScore
     {

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BasketballManagementSystem.BaseClass.player;
-using BasketballManagementSystem.BaseClass.position;
+using BasketballManagementSystem.baseClass.player;
+using BasketballManagementSystem.baseClass.position;
 
-namespace BasketballManagementSystem.BMForm.strategySimulation
+namespace BasketballManagementSystem.bMForm.strategySimulation
 {
     public class BoardPlayer
     {

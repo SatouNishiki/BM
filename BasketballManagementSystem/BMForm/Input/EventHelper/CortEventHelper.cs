@@ -5,10 +5,12 @@ using System.Text;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.action;
-using BasketballManagementSystem.BaseClass.position;
+using BasketballManagementSystem.baseClass.action;
+using BasketballManagementSystem.baseClass.position;
+using BasketballManagementSystem.baseClass.command;
+using BasketballManagementSystem.interfaces;
 
-namespace BasketballManagementSystem.BMForm.input.eventHelper
+namespace BasketballManagementSystem.bMForm.input.eventHelper
 {
     /// <summary>
     /// コートをクリックされたときのイベントを管理するクラス
@@ -27,19 +29,9 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
         private ListBox selectPointList;
 
         /// <summary>
-        /// 入力画面のインスタンスを代入する変数
-        /// </summary>
-        private FormInput formInput;
-
-        /// <summary>
         /// コートのPictureBox
         /// </summary>
         private PictureBox pictureBox;
-
-        /// <summary>
-        /// アクションが入力されたときの処理をするクラスのインスタンス
-        /// </summary>
-        private ActionClickEventHelper actionClickEvent = new ActionClickEventHelper();
 
         /// <summary>
         /// すでにlistが存在しているかどうか
@@ -56,29 +48,31 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
         /// </summary>
         private Position position = new Position();
 
+        private FormInputModel model;
+
         /// <summary>
         /// コートがクリックされたときに呼ばれる
         /// マウスの位置にlistboxを出す
         /// 二個以上は表示しない
         /// </summary>
-        /// <param name="f"></param>
+        /// <param name="formInputView"></param>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        public void OnCortClick(FormInput f, PictureBox pictureBox , object sender, EventArgs e)
+        public void OnCortClick(FormInputView formInputView, FormInputModel formInputModel, PictureBox pictureBox, EventArgs e)
         {
+            this.model = formInputModel;
             this.pictureBox = pictureBox;
 
             //もし画面上にlistboxがなかったら
             if (!isExistListBox)
             {
-                formInput = f;
 
                 //マウスの位置を記憶
                 mousePoint.X = Cursor.Position.X;
                 mousePoint.Y = Cursor.Position.Y;
 
                 //マウスの位置をフォーム上の座標に変換
-                mousePoint = f.PointToClient(mousePoint);
+                mousePoint = formInputView.PointToClient(mousePoint);
 
                 //コートの画像の左上、右下の座標算出
                 Point leftTop = pictureBox.Location;
@@ -88,8 +82,12 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
                 rightDown.X = rightDownX;
                 rightDown.Y = rightDownY;
 
+                bool isChangeCort = false;
+
+                if (formInputModel.Quarter >= 3) isChangeCort = true;
+
                 //入力された場所の座標を実際のコートに変換
-                position = PositionConvert.ConvertToPosition(mousePoint, leftTop, rightDown);
+                position = PositionConvert.ConvertToPosition(mousePoint, leftTop, rightDown, formInputModel.SelectedPlayer.IsMyTeam, isChangeCort);
 
                 selectPointList = new ListBox();
 
@@ -126,7 +124,7 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
                 selectPointList.Click += new EventHandler(SelectPointListClick);
 
                 //コントロールをフォームに追加
-                f.Controls.Add(selectPointList);
+                formInputView.Controls.Add(selectPointList);
                 
                 //コントロールを最前面にもってくる
                 selectPointList.BringToFront();
@@ -161,12 +159,13 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
                 try
                 {
                     //フルパスでうたないと動かないらしい
-                    Type t = Type.GetType("BasketballManagementSystem.BaseClass.Action." + selectItemName);
+                    Type t = Type.GetType("BasketballManagementSystem.baseClass.action." + selectItemName);
 
                     object o = Activator.CreateInstance(t);
 
                     //何のアクションを入力してほしいかを渡す
-                    actionClickEvent.ActionInputAccept(formInput, o, position);
+                    ICommand command = new ActionCommand(model, t, this.position);
+                    command.Execute();
 
                 }
                 catch (Exception exc)

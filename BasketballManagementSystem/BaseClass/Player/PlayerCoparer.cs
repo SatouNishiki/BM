@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BMErrorLibrary;
 
-namespace BasketballManagementSystem.BaseClass.player
+namespace BasketballManagementSystem.baseClass.player
 {
     public class PlayerCoparer : IComparer
     {

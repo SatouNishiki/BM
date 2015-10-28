@@ -7,15 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.baseClass.game;
 using BasketballManagementSystem.manager;
-using BasketballManagementSystem.BaseClass.player;
-using BasketballManagementSystem.BaseClass.action;
+using BasketballManagementSystem.baseClass.player;
+using BasketballManagementSystem.baseClass.action;
 using System.Collections;
 using System.Windows.Forms.DataVisualization.Charting;
-using BasketballManagementSystem.BaseClass.actionPoint;
+using BasketballManagementSystem.baseClass.actionPoint;
 
-namespace BasketballManagementSystem.BMForm.actionPointGraph
+namespace BasketballManagementSystem.bMForm.actionPointGraph
 {
     public partial class FormActionPointGraph : Form
     {

@@ -9,14 +9,14 @@ using System.Net.Sockets;
 using System.Windows.Forms;
 using System.Threading;
 using BasketballManagementSystem.manager;
-using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.baseClass.game;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using BasketballManagementSystem.BMForm.input;
+using BasketballManagementSystem.bMForm.input;
 using BMErrorLibrary;
-using BasketballManagementSystem.BMForm.Transmission.compression;
+using BasketballManagementSystem.bMForm.Transmission.compression;
 
-namespace BasketballManagementSystem.BMForm.Transmission.tCP
+namespace BasketballManagementSystem.bMForm.Transmission.tCP
 {
     /// <summary>
     /// 別スレッドからClientHandlerを持つList<T>の操作
@@ -65,15 +65,13 @@ namespace BasketballManagementSystem.BMForm.Transmission.tCP
         /// </summary>
         private List<ClientHandler> lstClientHandler = new List<ClientHandler>();
 
-        private FormInput instance;
-
-        
+        private FormInputPresenter instance;
 
         /// <summary>
         /// コンストラクタ
         /// </summary>
         /// <param name="f"></param>
-        public TCPServer(FormInput f)
+        public TCPServer(FormInputPresenter f)
         {
             InitializeComponent();
             instance = f;
@@ -472,7 +470,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.tCP
         private Encoding ecUni = Encoding.GetEncoding("utf-16");
         private Encoding ecSjis = Encoding.GetEncoding("shift-jis");
 
-        private FormInput instance;
+        private FormInputPresenter instance;
 
         /// <summary>
         /// コンストラクタ
@@ -480,7 +478,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.tCP
         /// <param name="socketForClient"></param>
         /// <param name="fomServer"></param>
         /// <param name="f"></param>
-        public ClientHandler(Socket socketForClient, TCPServer fomServer, FormInput f)
+        public ClientHandler(Socket socketForClient, TCPServer fomServer, FormInputPresenter f)
         {
             //呼び出し側のSocketを保持
             socket = socketForClient;
@@ -583,7 +581,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.tCP
                         MemoryStream m = new MemoryStream(body);
                         m.Seek(0, SeekOrigin.Begin);
                         Game g = (Game)b.Deserialize(m);
-                        instance.LoadProcess(g);
+                        instance.LoadGame(g);
 
                         m.Close();
 

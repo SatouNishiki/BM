@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using BasketballManagementSystem.BaseClass.position;
+using BasketballManagementSystem.baseClass.position;
 
-namespace BasketballManagementSystem.BaseClass.action
+namespace BasketballManagementSystem.baseClass.action
 {
     /// <summary>
     /// 得点に関係するアクションのクラス

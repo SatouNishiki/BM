@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.club;
+using BasketballManagementSystem.baseClass.club;
 using BMFileLibrary;
 using System.Xml.Serialization;
 using BMErrorLibrary;
 
-namespace BasketballManagementSystem.BMForm.clubEdit
+namespace BasketballManagementSystem.bMForm.clubEdit
 {
     public partial class FormClubEdit : Form
     {

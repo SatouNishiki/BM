@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.BMForm.graphScore
+﻿namespace BasketballManagementSystem.bMForm.graphScore
 {
     partial class FormGraphScore
     {

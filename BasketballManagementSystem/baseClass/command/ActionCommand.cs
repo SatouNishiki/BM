@@ -3,75 +3,89 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BasketballManagementSystem.BaseClass.player;
-using BasketballManagementSystem.BaseClass.action;
-using BasketballManagementSystem.BMForm.input;
-using BasketballManagementSystem.BaseClass.position;
-using BMErrorLibrary;
+using BasketballManagementSystem.baseClass.game;
+using BasketballManagementSystem.baseClass.player;
+using BasketballManagementSystem.manager;
+using BasketballManagementSystem.baseClass.position;
+using BasketballManagementSystem.baseClass.action;
 using System.Reflection;
+using System.Windows.Forms;
+using BMErrorLibrary;
+using BasketballManagementSystem.interfaces;
+using BasketballManagementSystem.bMForm.input;
+using BasketballManagementSystem.bMForm.popupForm;
 
-namespace BasketballManagementSystem.BMForm.input.eventHelper
+namespace BasketballManagementSystem.baseClass.command
 {
-    /// <summary>
-    /// アクションの入力処理を行うクラス
-    /// </summary>
-    public class ActionClickEventHelper
+    public class ActionCommand : ICommand 
     {
-         //出力用のプレイヤー変数
-        private Player player = new Player();
-        
-        private Team team = new Team();
+        /// <summary>
+        /// 入力対象のGameオブジェクト
+        /// </summary>
+        public Game Game { get { return this.Model.Game; } }
 
         /// <summary>
-        /// アクションの入力の受付メソッド
+        /// 入力対象の選手
         /// </summary>
-        /// <param name="form">formInputインスタンス</param>
-        /// <param name="action">アクションのインスタンス</param>
-        /// <param name="position">アクションの場所</param>
-        public void ActionInputAccept<Type>(FormInput form, Type action, Position position)
+        public Player Player { get { return this.Model.SelectedPlayer; } }
+
+        /// <summary>
+        /// 入力場所
+        /// </summary>
+        public Position Position { get; set; }
+
+        /// <summary>
+        /// ファウルのとき、相手に与えたフリースローの数
+        /// </summary>
+        public int GivenFreeThrow { get { return this.Model.GivenFreeThrow; } }
+
+        private Team Team;
+
+        private Type type;
+
+        protected FormInputModel Model { get; set; }
+
+        public ActionCommand(FormInputModel m, Type t)
         {
-            //現在選択しているプレイヤーが自分のチームなのか相手のチームなのか判定
-            if (form.MyTeam.TeamMember.IndexOf(form.SelectedPlayer) >= 0)
+            this.Model = m;
+            this.type = t;
+        }
+
+        public ActionCommand(FormInputModel m, Type t, Position p)
+        {
+            this.Model = m;
+            this.type = t;
+            this.Position = p;
+        }
+
+        protected void ActionInput(Type type)
+        {
+
+            object obj = Activator.CreateInstance(type);
+
+            if (!(obj is ActionBase)) return;
+
+            if (Player.IsMyTeam)
             {
-                team = form.MyTeam;
-
-                ActionInput(form, action, position);
-
-            }
-            else if (form.OppentTeam.TeamMember.IndexOf(form.SelectedPlayer) >= 0)
-            {
-                team = form.OppentTeam;
-
-                ActionInput(form, action, position);
+                this.Team = this.Model.MyTeam;
             }
             else
             {
-                BMError.ErrorMessageOutput("自チーム、相手チーム共に選択している選手が見つかりませんでした", true);
+                this.Team = this.Model.OppentTeam;
             }
+
+            this.ActionInputHelper(obj);
         }
 
-        /// <summary>
-        /// アクションの入力処理を行うメソッド
-        /// </summary>
-        /// <param name="f">FormInputインスタンス</param>
-        /// <param name="action">actionのインスタンス</param>
-        /// <param name="positon">アクションが行われた位置情報</param>
-        private void ActionInput<T>(FormInput f, T action, Position positon)
+        private void ActionInputHelper(object action)
         {
-            f.StackGameData();
-
             //選手リストの中で現在選択中の選手がどの場所にあるか(リストの何番目の要素か)
             int point = 0;
 
-            player = f.SelectedPlayer;
-
             //選手の場所を確定
-            point = team.TeamMember.IndexOf(player);
+            point = this.Team.TeamMember.IndexOf(this.Player);
 
             Type t1 = action.GetType();
-
-            //TODO: 謎警告 原因不明だがコードは正常に動作する(Type型はActionを継承してないからVCが勘違いしてる？)
-            if (t1 is ActionBase) return;
 
             MethodInfo methodInfo = null;
 
@@ -89,7 +103,7 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
             if (propInfo != null)
             {
                 methodInfo = propInfo.GetSetMethod();
-                methodInfo.Invoke(action, new object[] { f.Quarter });
+                methodInfo.Invoke(action, new object[] { this.Model.QuarterTimer.quarter });
             }
 
             propInfo = t1.GetProperty("RemainingTime");
@@ -97,7 +111,7 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
             if (propInfo != null)
             {
                 methodInfo = propInfo.GetSetMethod();
-                methodInfo.Invoke(action, new object[] { f.RemainingTime });
+                methodInfo.Invoke(action, new object[] { this.Model.QuarterTimer.remainingTime });
             }
 
             propInfo = t1.GetProperty("ElapsedTime");
@@ -105,7 +119,7 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
             if (propInfo != null)
             {
                 methodInfo = propInfo.GetSetMethod();
-                methodInfo.Invoke(action, new object[] { f.ElaspedTime });
+                methodInfo.Invoke(action, new object[] { this.Model.QuarterTimer.elapsedTime });
             }
 
             propInfo = t1.GetProperty("OwnerName");
@@ -113,7 +127,7 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
             if (propInfo != null)
             {
                 methodInfo = propInfo.GetSetMethod();
-                methodInfo.Invoke(action, new object[] { player.Name });
+                methodInfo.Invoke(action, new object[] { this.Player.Name });
             }
 
             propInfo = t1.GetProperty("OwnerNumber");
@@ -121,7 +135,7 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
             if (propInfo != null)
             {
                 methodInfo = propInfo.GetSetMethod();
-                methodInfo.Invoke(action, new object[] { player.Number });
+                methodInfo.Invoke(action, new object[] { this.Player.Number });
             }
 
             propInfo = t1.GetProperty("GivenFreeThrow");
@@ -129,31 +143,31 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
             if (propInfo != null)
             {
                 methodInfo = propInfo.GetSetMethod();
-                methodInfo.Invoke(action, new object[] { f.GivenFreeThrow });
+                methodInfo.Invoke(action, new object[] { this.GivenFreeThrow });
 
                 //与フリースローのプロパティを入力する=ファウルなのでファウルカウントを増やす
-                if (f.Quarter <= 4)
+                if (this.Model.QuarterTimer.quarter <= 4)
                 {
-                    team.TeamFaul[f.Quarter]++;
+                    this.Team.TeamFaul[this.Model.QuarterTimer.quarter]++;
                 }
                 else
                 {
-                    team.TeamFaul[4]++;
+                    this.Team.TeamFaul[4]++;
                 }
             }
 
-            if (positon != null)
+            if (this.Position != null)
             {
                 propInfo = t1.GetProperty("Position");
 
                 if (propInfo != null)
                 {
                     methodInfo = propInfo.GetSetMethod();
-                    methodInfo.Invoke(action, new object[] { positon });
+                    methodInfo.Invoke(action, new object[] { this.Position });
                 }
             }
 
-            if (f.UseComment)
+            if (this.Model.UseComment)
             {
                 string str = Microsoft.VisualBasic.Interaction.InputBox(
                 "アクションに対するコメントを入力してください",
@@ -181,7 +195,7 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
 
             actionName = (string)propInfo.GetValue(action, null);
 
-            object o = team.TeamMember[point].GetActionProperty(player, actionName);
+            object o = this.Team.TeamMember[point].GetActionProperty(this.Player, actionName);
 
             try
             {
@@ -195,14 +209,20 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
 
                 int count = (int)pi.GetValue(o, null);
 
-                f.AddDebugMessage(player.Name + "のアクションを変更, " + action + " ,ActionCount=" + count);
+                PopupForm p = new PopupForm();
+                p.Show(this.Player.Name + "のアクションを変更, " + action + " ,ActionCount=" + count);
+
             }
-            catch(Exception exc)
+            catch (Exception exc)
             {
                 BMError.ErrorMessageOutput(exc.Message, true);
             }
 
+        }
 
+        public void Execute()
+        {
+            this.ActionInput(this.type);
         }
     }
 }

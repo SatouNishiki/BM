@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.BMForm.input
+﻿namespace BasketballManagementSystem.bMForm.input
 {
     partial class ConfigForm
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace BasketballManagementSystem.BaseClass.action
+namespace BasketballManagementSystem.baseClass.action
 {
     /// <summary>
     /// 得点に関与しないActionを定義

@@ -11,10 +11,10 @@ using System.Xml.Serialization;
 using System.ComponentModel;
 using System.Xml;
 using System.Globalization;
-using BasketballManagementSystem.BaseClass.actionPoint;
+using BasketballManagementSystem.baseClass.actionPoint;
 using System.Windows.Forms;
 
-namespace BasketballManagementSystem.BaseClass.settings
+namespace BasketballManagementSystem.baseClass.settings
 {
     /// <summary>
     /// アプリケーションの設定を保存するクラス

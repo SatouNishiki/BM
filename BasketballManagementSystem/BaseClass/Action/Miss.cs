@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasketballManagementSystem.BaseClass.action
+namespace BasketballManagementSystem.baseClass.action
 {
     [Serializable]
     public class Miss : RelationPointAction

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ExchangeListBox;
 
-namespace BasketballManagementSystem.BMForm.input.eventHelper
+namespace BasketballManagementSystem.bMForm.input.eventHelper
 {
     public class KeyboardEventHelper
     {
         private bool fastFowardFlagPushed = false;
         private bool rewindFlagPushed = false;
 
-        public void KeyDownEvent(FormInput form, KeyEventArgs key)
+        public void KeyDownEvent(FormInputView form, KeyEventArgs key)
         {
             //修飾キーが押されていない時
             if (!IsModifiersKeyPush(key))
@@ -131,13 +131,13 @@ namespace BasketballManagementSystem.BMForm.input.eventHelper
             return (key.Modifiers & Keys.Alt) == Keys.Alt;
         }
 
-        public void KeyUpEvent(FormInput form)
+        public void KeyUpEvent(FormInputView form)
         {
-            if(fastFowardFlagPushed)
-            form.QuarterTimer.rewindFlag = false;
+            if (fastFowardFlagPushed)
+                form.QuarterTimer.rewindFlag = false;
 
-            if(rewindFlagPushed)
-            form.QuarterTimer.fastFowardFlag = false;
+            if (rewindFlagPushed)
+                form.QuarterTimer.fastFowardFlag = false;
         }
 
         private bool CanListMemberSelect(ListBox listbox, int selectNumber)

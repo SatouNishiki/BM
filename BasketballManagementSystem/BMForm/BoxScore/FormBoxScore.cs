@@ -7,14 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.baseClass.game;
 using BasketballManagementSystem.manager;
 using System.Collections;
-using BasketballManagementSystem.BaseClass.player;
-using BasketballManagementSystem.BaseClass.action;
-using BasketballManagementSystem.BaseClass.timeOut;
+using BasketballManagementSystem.baseClass.player;
+using BasketballManagementSystem.baseClass.action;
+using BasketballManagementSystem.baseClass.timeOut;
 
-namespace BasketballManagementSystem.BMForm.boxScore
+namespace BasketballManagementSystem.bMForm.boxScore
 {
     public partial class FormBoxScore : Form
     {

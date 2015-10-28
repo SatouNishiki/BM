@@ -7,15 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.baseClass.game;
 using BasketballManagementSystem.manager;
 using System.Windows.Forms.DataVisualization.Charting.ChartTypes;
-using BasketballManagementSystem.BaseClass.action;
-using BasketballManagementSystem.BaseClass.player;
+using BasketballManagementSystem.baseClass.action;
+using BasketballManagementSystem.baseClass.player;
 using System.Windows.Forms.DataVisualization.Charting;
 using BMErrorLibrary;
 
-namespace BasketballManagementSystem.BMForm.graphScore
+namespace BasketballManagementSystem.bMForm.graphScore
 {
     //TODO: 絶望的に汚い
 

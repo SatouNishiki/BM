@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BasketballManagementSystem.BMForm.boxScore
+namespace BasketballManagementSystem.bMForm.boxScore
 {
     public class PlayerInfomation
     {

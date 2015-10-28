@@ -8,13 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Drawing2D; 
-using BasketballManagementSystem.BaseClass.position;
+using BasketballManagementSystem.baseClass.position;
 using BasketballManagementSystem.manager;
-using BasketballManagementSystem.BaseClass.game;
-using BasketballManagementSystem.BaseClass.player;
-using BasketballManagementSystem.BaseClass.action;
+using BasketballManagementSystem.baseClass.game;
+using BasketballManagementSystem.baseClass.player;
+using BasketballManagementSystem.baseClass.action;
 
-namespace BasketballManagementSystem.BMForm.tactick2D
+namespace BasketballManagementSystem.bMForm.tactick2D
 {
     public partial class Tacticks2D : Form
     {
@@ -311,7 +311,7 @@ namespace BasketballManagementSystem.BMForm.tactick2D
             //マウスの位置をフォーム上の座標に変換
             mousePoint = PointToClient(mousePoint);
 
-            Position p = PositionConvert.ConvertToPosition(mousePoint, leftTop, rightDown);
+            Position p = PositionConvert.ConvertToPosition(mousePoint, leftTop, rightDown, true, false);
 
             double distance = Double.MaxValue;
 
@@ -321,7 +321,6 @@ namespace BasketballManagementSystem.BMForm.tactick2D
             foreach (var r in ActionListConverter.ToRelationPointActionList(selectedPlayer.GetActionList(selectedPlayer, a => !(a is Miss) && !(a is FreeThrow))))
             {
                 double temp = CortHelper.GetDistance(p, r.Position);
-               //double temp = CortHelper.GetDistanceX(p, r.position);
 
                 //一番近いものをとってくる
                 if (distance > temp)

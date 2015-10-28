@@ -1,6 +1,6 @@
-﻿namespace BasketballManagementSystem.BMForm.input
+﻿namespace BasketballManagementSystem.bMForm.input
 {
-    partial class FormInput
+    partial class FormInputView
     {
         /// <summary>
         /// 必要なデザイナー変数です。
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInput));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInputView));
             this.PlayerNameLabel = new System.Windows.Forms.Label();
             this.FormInputTimer = new System.Windows.Forms.Timer(this.components);
             this.AssistButton = new System.Windows.Forms.Button();
@@ -66,6 +66,7 @@
             this.GoTacticks2DFormItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actionPointGraphFormItem = new System.Windows.Forms.ToolStripMenuItem();
             this.StrategySimulationFormItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CentralityAnalyzeItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PropToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ColorConfigItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangeFormBackGroundColorItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -134,13 +135,12 @@
             this.UndoToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.RedoToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.UseCommentToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.QuarterTimer = new QuarterTimer.QuarterTimer();
             this.OppentOutTeamListBox = new ExchangeListBox.ExChangeList();
             this.OppentCortTeamListBox = new ExchangeListBox.ExChangeList();
             this.MyCortTeamListBox = new ExchangeListBox.ExChangeList();
             this.MyOutTeamListBox = new ExchangeListBox.ExChangeList();
+            this.QuarterTimerLabel = new System.Windows.Forms.Label();
             this.ColorDialog = new System.Windows.Forms.ColorDialog();
-            this.CentralityAnalyzeItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.CortPictureBox)).BeginInit();
             this.MenuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -405,6 +405,12 @@
             this.StrategySimulationFormItem.Name = "StrategySimulationFormItem";
             resources.ApplyResources(this.StrategySimulationFormItem, "StrategySimulationFormItem");
             this.StrategySimulationFormItem.Click += new System.EventHandler(this.strategySimulation_Click);
+            // 
+            // CentralityAnalyzeItem
+            // 
+            this.CentralityAnalyzeItem.Name = "CentralityAnalyzeItem";
+            resources.ApplyResources(this.CentralityAnalyzeItem, "CentralityAnalyzeItem");
+            this.CentralityAnalyzeItem.Click += new System.EventHandler(this.CentralityAnalyzeItem_Click);
             // 
             // PropToolStripMenuItem
             // 
@@ -883,21 +889,6 @@
             this.UseCommentToolStripButton.Name = "UseCommentToolStripButton";
             this.UseCommentToolStripButton.Click += new System.EventHandler(this.UseCommentToolStripButton_Click);
             // 
-            // QuarterTimer
-            // 
-            resources.ApplyResources(this.QuarterTimer, "QuarterTimer");
-            this.QuarterTimer.changeSpeedPermit = false;
-            this.QuarterTimer.displayQuarter = null;
-            this.QuarterTimer.elapsedTime = System.TimeSpan.Parse("00:00:00");
-            this.QuarterTimer.endTime = new System.DateTime(((long)(0)));
-            this.QuarterTimer.fastFowardFlag = false;
-            this.QuarterTimer.Name = "QuarterTimer";
-            this.QuarterTimer.quarter = 1;
-            this.QuarterTimer.quartStartTime = new System.DateTime(((long)(0)));
-            this.QuarterTimer.remainingTime = System.TimeSpan.Parse("00:00:00");
-            this.QuarterTimer.rewindFlag = false;
-            this.QuarterTimer.startTime = new System.DateTime(((long)(0)));
-            // 
             // OppentOutTeamListBox
             // 
             resources.ApplyResources(this.OppentOutTeamListBox, "OppentOutTeamListBox");
@@ -934,22 +925,22 @@
             this.MyOutTeamListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.MyOutTeamListBox.Click += new System.EventHandler(this.TeamList_Click);
             // 
+            // QuarterTimerLabel
+            // 
+            resources.ApplyResources(this.QuarterTimerLabel, "QuarterTimerLabel");
+            this.QuarterTimerLabel.Name = "QuarterTimerLabel";
+            // 
             // ColorDialog
             // 
             this.ColorDialog.AnyColor = true;
             this.ColorDialog.FullOpen = true;
             this.ColorDialog.ShowHelp = true;
             // 
-            // CentralityAnalyzeItem
-            // 
-            this.CentralityAnalyzeItem.Name = "CentralityAnalyzeItem";
-            resources.ApplyResources(this.CentralityAnalyzeItem, "CentralityAnalyzeItem");
-            this.CentralityAnalyzeItem.Click += new System.EventHandler(this.CentralityAnalyzeItem_Click);
-            // 
-            // FormInput
+            // FormInputView
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.QuarterTimerLabel);
             this.Controls.Add(this.QuarterTimerStopButton);
             this.Controls.Add(this.MyTeamPointLabel);
             this.Controls.Add(this.OppentTeamPointLabel);
@@ -969,7 +960,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.MyTeamFaulLabel);
             this.Controls.Add(this.OppentTeamFaulLabel);
-            this.Controls.Add(this.QuarterTimer);
             this.Controls.Add(this.QuarterText);
             this.Controls.Add(this.OppentTeamNameLabel);
             this.Controls.Add(this.MyTeamNameLael);
@@ -980,7 +970,7 @@
             this.Controls.Add(this.MenuStrip1);
             this.KeyPreview = true;
             this.MainMenuStrip = this.MenuStrip1;
-            this.Name = "FormInput";
+            this.Name = "FormInputView";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormInput_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormInput_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.CortPictureBox)).EndInit();
@@ -1104,7 +1094,6 @@
         private System.Windows.Forms.ToolStripButton NewGameToolStripButton;
         private System.Windows.Forms.ToolStripButton SaveToolStripButton;
         private System.Windows.Forms.ToolStripButton LoadToolStripButton;
-        internal QuarterTimer.QuarterTimer QuarterTimer;
         internal System.Windows.Forms.Button QuarterTimerStopButton;
         internal System.Windows.Forms.ToolStripButton RedoToolStripButton;
         internal System.Windows.Forms.ToolStripButton UndoToolStripButton;
@@ -1112,6 +1101,7 @@
         private System.Windows.Forms.ToolStripMenuItem UseCommentItem;
         private System.Windows.Forms.ToolStripButton UseCommentToolStripButton;
         private System.Windows.Forms.ToolStripMenuItem CentralityAnalyzeItem;
+        private System.Windows.Forms.Label QuarterTimerLabel;
     }
 }
 

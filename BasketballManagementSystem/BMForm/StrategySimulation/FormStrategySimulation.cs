@@ -7,15 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.baseClass.game;
 using BasketballManagementSystem.manager;
-using BasketballManagementSystem.BaseClass.player;
+using BasketballManagementSystem.baseClass.player;
 using DragDropPictureBox;
 using System.Reflection;
-using BasketballManagementSystem.BaseClass.position;
+using BasketballManagementSystem.baseClass.position;
 using BMErrorLibrary;
 
-namespace BasketballManagementSystem.BMForm.strategySimulation
+namespace BasketballManagementSystem.bMForm.strategySimulation
 {
     public partial class FormStrategySimulation : Form
     {

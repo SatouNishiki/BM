@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.settings;
+using BasketballManagementSystem.baseClass.settings;
 using System.Globalization;
 using System.Threading;
+using BasketballManagementSystem.factory;
+using BasketballManagementSystem.abstracts;
 
-namespace BasketballManagementSystem.BMForm.input
+namespace BasketballManagementSystem.bMForm.input
 {
     static class Program
     {
@@ -37,7 +39,10 @@ namespace BasketballManagementSystem.BMForm.input
                 }
             }
 
-            Application.Run(new FormInput());
+            FormFactory factory = new FormInputFactory();
+            factory.CreatePresenter();
+
+            Application.Run(factory.GetForm());
 
             AppSetting.GetInstance().SettingChanged();
         }

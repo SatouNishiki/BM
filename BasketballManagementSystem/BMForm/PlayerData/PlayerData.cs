@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using BasketballManagementSystem.BaseClass.game;
+using BasketballManagementSystem.baseClass.game;
 using BasketballManagementSystem.manager;
-using BasketballManagementSystem.BaseClass.player;
-using BasketballManagementSystem.BaseClass.action;
+using BasketballManagementSystem.baseClass.player;
+using BasketballManagementSystem.baseClass.action;
 using Mathmatical;
 
-namespace BasketballManagementSystem.BMForm.playerData
+namespace BasketballManagementSystem.bMForm.playerData
 {
     public partial class PlayerData : Form
     {
