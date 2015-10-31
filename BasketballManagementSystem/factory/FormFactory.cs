@@ -16,11 +16,5 @@ namespace BasketballManagementSystem.factory
         /// </summary>
         /// <returns></returns>
         public abstract AbstractPresenter CreatePresenter();
-
-        /// <summary>
-        /// フォームインスタンスの取得
-        /// </summary>
-        /// <returns></returns>
-        public abstract Form GetForm();
     }
 }

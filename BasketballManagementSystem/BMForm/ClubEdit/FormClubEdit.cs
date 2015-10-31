@@ -12,7 +12,7 @@ using BMFileLibrary;
 using System.Xml.Serialization;
 using BMErrorLibrary;
 
-namespace BasketballManagementSystem.bMForm.clubEdit
+namespace BasketballManagementSystem.bmForm.clubEdit
 {
     public partial class FormClubEdit : Form
     {

@@ -12,11 +12,11 @@ using BasketballManagementSystem.baseClass.game;
 using BasketballManagementSystem.manager;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using BasketballManagementSystem.bMForm.input;
+using BasketballManagementSystem.bmForm.input;
 using BMErrorLibrary;
-using BasketballManagementSystem.bMForm.Transmission.compression;
+using BasketballManagementSystem.bmForm.Transmission.compression;
 
-namespace BasketballManagementSystem.bMForm.Transmission.tCP
+namespace BasketballManagementSystem.bmForm.Transmission.tcp
 {
     public partial class TCPClient : Form
     {

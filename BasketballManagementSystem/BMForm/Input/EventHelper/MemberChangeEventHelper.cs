@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using BasketballManagementSystem.baseClass.player;
 using System.Windows.Forms;
 
-namespace BasketballManagementSystem.bMForm.input.eventHelper
+namespace BasketballManagementSystem.bmForm.input.eventHelper
 {
     //TODO: フラグが結構ごちゃごちゃしてる
     public class MemberChangeEventHelper

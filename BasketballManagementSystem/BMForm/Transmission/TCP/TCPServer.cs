@@ -12,11 +12,11 @@ using BasketballManagementSystem.manager;
 using BasketballManagementSystem.baseClass.game;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using BasketballManagementSystem.bMForm.input;
+using BasketballManagementSystem.bmForm.input;
 using BMErrorLibrary;
-using BasketballManagementSystem.bMForm.Transmission.compression;
+using BasketballManagementSystem.bmForm.Transmission.compression;
 
-namespace BasketballManagementSystem.bMForm.Transmission.tCP
+namespace BasketballManagementSystem.bmForm.Transmission.tcp
 {
     /// <summary>
     /// 別スレッドからClientHandlerを持つList<T>の操作

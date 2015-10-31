@@ -14,7 +14,7 @@ using BasketballManagementSystem.baseClass.game;
 using BasketballManagementSystem.baseClass.player;
 using BasketballManagementSystem.baseClass.action;
 
-namespace BasketballManagementSystem.bMForm.tactick2D
+namespace BasketballManagementSystem.bmForm.tactick2D
 {
     public partial class Tacticks2D : Form
     {

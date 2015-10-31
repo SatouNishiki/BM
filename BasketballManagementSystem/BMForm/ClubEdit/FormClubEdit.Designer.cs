@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.bMForm.clubEdit
+﻿namespace BasketballManagementSystem.bmForm.clubEdit
 {
     partial class FormClubEdit
     {

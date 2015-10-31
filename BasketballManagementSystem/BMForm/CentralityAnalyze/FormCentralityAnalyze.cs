@@ -12,7 +12,7 @@ using BasketballManagementSystem.manager;
 using BasketballManagementSystem.baseClass.game;
 using BasketballManagementSystem.baseClass.player;
 
-namespace BasketballManagementSystem.bMForm.centralityAnalyze
+namespace BasketballManagementSystem.bmForm.centralityAnalyze
 {
     public partial class FormCentralityAnalyze : Form
     {

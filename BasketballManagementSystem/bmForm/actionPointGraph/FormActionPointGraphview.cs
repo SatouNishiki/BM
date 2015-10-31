@@ -14,47 +14,32 @@ using BasketballManagementSystem.baseClass.action;
 using System.Collections;
 using System.Windows.Forms.DataVisualization.Charting;
 using BasketballManagementSystem.baseClass.actionPoint;
+using BasketballManagementSystem.interfaces.actionPointGraph;
 
-namespace BasketballManagementSystem.bMForm.actionPointGraph
+namespace BasketballManagementSystem.bmForm.actionPointGraph
 {
-    public partial class FormActionPointGraph : Form
+    public partial class FormActionPointGraphView : Form, IActionPointGraphView
     {
-        /// <summary>
-        /// 現在のゲームデータオブジェクト
-        /// </summary>
-        private Game game = SaveDataManager.GetInstance().GetGame();
+        private Game game = new Game();
 
-        /// <summary>
-        /// 選択選手
-        /// </summary>
-        private Player selectedPlayer = new Player("No Name", 0);
-
-        public FormActionPointGraph()
+        public event Action<Player> SelectedPlayerChangedEvent;
+      
+        public FormActionPointGraphView()
         {
             InitializeComponent();
 
-            SetTeam();
-
         }
 
-        /// <summary>
-        /// チームのリストの初期化
-        /// </summary>
-        private void SetTeam()
+
+
+        private void SelectedPlayerChangedEventThrow(Player selectedPlayer)
         {
-            MyTeamName.Text = game.MyTeam.Name;
-            OppentTeamName.Text = game.OppentTeam.Name;
-
-            foreach (var p in game.MyTeam.TeamMember)
+            if (this.SelectedPlayerChangedEvent != null)
             {
-                MyTeamList.Items.Add(p);
-            }
-
-            foreach (var p in game.OppentTeam.TeamMember)
-            {
-                OppentTeamList.Items.Add(p);
+                this.SelectedPlayerChangedEvent(selectedPlayer);
             }
         }
+
 
         /// <summary>
         /// リストのアイテムの選択が変更されたとき
@@ -75,7 +60,9 @@ namespace BasketballManagementSystem.bMForm.actionPointGraph
                 ActionPointShitGraph.Series["FaulAction"].Points.Clear();
 
                 DrawActionPoint((Player)obj);
-                selectedPlayer = (Player)obj;
+
+                this.SelectedPlayerChangedEventThrow((Player)obj);
+
                 DrawAverageActionPoint();
                 DrawAPShiftGraph((Player)obj);
             }
@@ -87,7 +74,8 @@ namespace BasketballManagementSystem.bMForm.actionPointGraph
         private void DrawAverageActionPoint()
         {
             
-            DataSet ds = GetDataSet(selectedPlayer.IsMyTeam);
+         //   DataSet ds = GetDataSet(selectedPlayer.IsMyTeam);
+            DataSet ds = GetDataSetHelper(((Player)this.Presenter.GetModelProperty("SelectedPlayer")).IsMyTeam);
 
             ActionPointChart.DataSource = ds;
 
@@ -110,7 +98,7 @@ namespace BasketballManagementSystem.bMForm.actionPointGraph
         private void DrawActionPoint(Player p)
         {
 
-            DataSet ds = GetDataSet(p);
+            DataSet ds = GetDataSetHelper(p);
 
             ActionPointChart.DataSource = ds;
 
@@ -177,8 +165,7 @@ namespace BasketballManagementSystem.bMForm.actionPointGraph
                     ActionPointShitGraph.Series["DefaultAction"].Points.Add(dp);
                 }
             }
-                
-             
+                            
         }
 
         /// <summary>
@@ -186,7 +173,7 @@ namespace BasketballManagementSystem.bMForm.actionPointGraph
         /// </summary>
         /// <param name="p"></param>
         /// <returns></returns>
-        private DataSet GetDataSet(Player p)
+        private DataSet GetDataSetHelper(Player p)
         {
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
@@ -244,7 +231,7 @@ namespace BasketballManagementSystem.bMForm.actionPointGraph
             return ds;
         }
 
-        private DataSet GetDataSet(bool isMyTeam)
+        private DataSet GetDataSetHelper(bool isMyTeam)
         {
             DataSet ds = new DataSet();
             DataTable dt = new DataTable();
@@ -330,5 +317,66 @@ namespace BasketballManagementSystem.bMForm.actionPointGraph
             f.ShowPrintPreview(this);
         }
 
+
+        public void SetMyListBox(List<Player> players)
+        {
+            foreach (var p in players)
+            {
+                MyTeamList.Items.Add(p);
+            }
+        }
+
+        public void SetOppentListBox(List<Player> players)
+        {
+            foreach (var p in players)
+            {
+                OppentTeamList.Items.Add(p);
+            }
+        }
+
+        public event events.DataInputEventHandler DataInputEvent;
+
+        private abstracts.AbstractPresenter presenter;
+        
+        public abstracts.AbstractPresenter Presenter
+        {
+            get
+            {
+                return this.presenter;
+            }
+            set
+            {
+                this.presenter = value;
+            }
+        }
+
+
+        public void SetMyTeamName(string name)
+        {
+            MyTeamName.Text = name;
+        }
+
+        public void SetOppentTeamName(string name)
+        {
+            OppentTeamName.Text = name;
+        }
+
+        private void DataInputViewEventThrow(string name, object value)
+        {
+            if (this.DataInputEvent != null)
+            {
+                this.DataInputEvent(this, new events.DataInputEventArgs(name, value));
+            }
+        }
+
+        private void FormActionPointGraphView_Load(object sender, EventArgs e)
+        {
+            game = (Game)this.Presenter.GetModelProperty("Game");
+
+            SetMyListBox(game.MyTeam.TeamMember);
+            SetMyTeamName(game.MyTeam.Name);
+            SetOppentListBox(game.OppentTeam.TeamMember);
+            SetOppentTeamName(game.OppentTeam.Name);
+        }
     }
 }

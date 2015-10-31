@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BasketballManagementSystem.bMForm.popupForm
+namespace BasketballManagementSystem.bmForm.popupForm
 {
     public partial class PopupForm : Form
     {

@@ -7,7 +7,7 @@ using BasketballManagementSystem.baseClass.game;
 using BasketballManagementSystem.baseClass.player;
 using BasketballManagementSystem.manager;
 
-namespace BasketballManagementSystem.bMForm.input.loadHelper
+namespace BasketballManagementSystem.bmForm.input.loadHelper
 {
     public class FormInputLoader
     {

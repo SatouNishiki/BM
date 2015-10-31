@@ -11,7 +11,7 @@ namespace BasketballManagementSystem.baseClass.position
     public class CortHelper
     {
         //ゴールの位置はエンドラインより120cm内側である(競技ルールより)
-        public static readonly Position goalPosition = new Position(1.2, PositionConvert.CortY / 2);
+        public static readonly Position goalPosition = new Position(PositionConvert.CortX - 1.2, PositionConvert.CortY / 2);
 
         /// <summary>
         /// 指定された実際のコート上の長さをフォーム上の長さに変換する

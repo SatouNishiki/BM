@@ -7,14 +7,15 @@ using BasketballManagementSystem.interfaces;
 using BasketballManagementSystem.events;
 using System.Reflection;
 using BMErrorLibrary;
+using System.Windows.Forms;
 
 namespace BasketballManagementSystem.abstracts
 {
-    public abstract class AbstractPresenter : IPresenter
+    public abstract class AbstractPresenter : IPresenter, IHasForm
     {
         protected IModel model;
         protected IView view;
-
+        protected Form form;
 
         IModel IPresenter.Model
         {
@@ -88,6 +89,11 @@ namespace BasketballManagementSystem.abstracts
 
 
         public virtual void ShowView()
+        {
+            throw new NotImplementedException();
+        }
+
+        public virtual Form GetForm()
         {
             throw new NotImplementedException();
         }

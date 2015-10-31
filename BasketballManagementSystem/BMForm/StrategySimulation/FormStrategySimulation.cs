@@ -15,7 +15,7 @@ using System.Reflection;
 using BasketballManagementSystem.baseClass.position;
 using BMErrorLibrary;
 
-namespace BasketballManagementSystem.bMForm.strategySimulation
+namespace BasketballManagementSystem.bmForm.strategySimulation
 {
     public partial class FormStrategySimulation : Form
     {

@@ -7,7 +7,7 @@ using BasketballManagementSystem.abstracts;
 using BasketballManagementSystem.baseClass.player;
 using BasketballManagementSystem.baseClass.game;
 using System.Drawing;
-using BasketballManagementSystem.bMForm.input;
+using BasketballManagementSystem.bmForm.input;
 using BasketballManagementSystem.events.input;
 using System.Windows.Forms;
 
@@ -125,5 +125,9 @@ namespace BasketballManagementSystem.interfaces.input
         event Action<PictureBox, EventArgs> CortClickEvent;
 
         event Action FormActionPointEditOpenEvent;
+
+        event Action FormActionPointGraphOpenEvent;
+
+        event Action FormBoxScoreOpenEvent;
     }
 }

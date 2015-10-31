@@ -12,8 +12,8 @@ using System.Reflection;
 using System.Windows.Forms;
 using BMErrorLibrary;
 using BasketballManagementSystem.interfaces;
-using BasketballManagementSystem.bMForm.input;
-using BasketballManagementSystem.bMForm.popupForm;
+using BasketballManagementSystem.bmForm.input;
+using BasketballManagementSystem.bmForm.popupForm;
 
 namespace BasketballManagementSystem.baseClass.command
 {

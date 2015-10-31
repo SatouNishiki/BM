@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BasketballManagementSystem.bMForm.input
+namespace BasketballManagementSystem.bmForm.input
 {
     public partial class DebugMessageForm : Form
     {

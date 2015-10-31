@@ -13,16 +13,18 @@ using System.Collections;
 using BasketballManagementSystem.baseClass.player;
 using BasketballManagementSystem.baseClass.action;
 using BasketballManagementSystem.baseClass.timeOut;
+using BasketballManagementSystem.interfaces.boxScore;
 
-namespace BasketballManagementSystem.bMForm.boxScore
+namespace BasketballManagementSystem.bmForm.boxScore
 {
-    public partial class FormBoxScore : Form
+    public partial class FormBoxScoreView : Form, IBoxScoreView
     {
         /// <summary>
         /// スコアシートのプレイヤーの人数
         /// </summary>
         private const int PlayerNumber = 18;
         private const int FaulLineNumber = 5;
+        private string ResouceCurrentDirPass;
 
         private Game game = new Game();
 
@@ -45,9 +47,9 @@ namespace BasketballManagementSystem.bMForm.boxScore
 
         private Label[,] oppentFaulLines = new Label[FaulLineNumber, PlayerNumber];
 
-        private List<PlayerInfomation> myPlayerLists = new List<PlayerInfomation>();
+        private List<PlayerInfomationModel> myPlayerLists = new List<PlayerInfomationModel>();
 
-        private List<PlayerInfomation> oppentPlayerLists = new List<PlayerInfomation>();
+        private List<PlayerInfomationModel> oppentPlayerLists = new List<PlayerInfomationModel>();
 
         private Label[,] myTeamFaulLabels = new Label[4, 4];
 
@@ -57,13 +59,22 @@ namespace BasketballManagementSystem.bMForm.boxScore
 
         private Label[] oppentTeamTimeOutLabels = new Label[7];
 
-        private RunningScore runningScore = new RunningScore();
+        private RunningScoreView runningScore = new RunningScoreView();
 
-        public FormBoxScore()
+        public FormBoxScoreView()
         {
             InitializeComponent();
 
-            game = SaveDataManager.GetInstance().GetGame();
+
+        }
+
+        /// <summary>
+        /// コンストラクタとLoadの間に呼ばれる
+        /// </summary>
+        public void Init()
+        {
+            this.game = (Game)this.Presenter.GetModelProperty("Game");
+            this.ResouceCurrentDirPass = this.GetType().Namespace + ".picture";
 
             QuarterLabelInit();
 
@@ -92,8 +103,9 @@ namespace BasketballManagementSystem.bMForm.boxScore
             InputTimeOutLabel();
 
             InputRunningScore();
-
         }
+
+
 
         /// <summary>
         /// コントロールの配列を取得する
@@ -532,7 +544,7 @@ namespace BasketballManagementSystem.bMForm.boxScore
 
             foreach (var p in game.MyTeam.TeamMember)
             {
-                PlayerInfomation pi = new PlayerInfomation();
+                PlayerInfomationModel pi = new PlayerInfomationModel();
 
                 pi.Name = myPlayerNameLabels[i];
                 pi.Name.Text = p.Name;
@@ -552,7 +564,7 @@ namespace BasketballManagementSystem.bMForm.boxScore
                     //指定されたリソースを読み込む
                     Bitmap bmp =
                         new Bitmap(_myAssembly.GetManifestResourceStream
-                            ("BasketballManagementSystem.BMForm.BoxScore.Picture.marubatu2.png"));
+                            (ResouceCurrentDirPass + ".marubatu2.png"));
 
                     pi.PlIn.Image = bmp;
                 }
@@ -584,7 +596,7 @@ namespace BasketballManagementSystem.bMForm.boxScore
                     //指定されたリソースを読み込む
                     Bitmap bmp =
                         new Bitmap(_myAssembly.GetManifestResourceStream
-                            ("BasketballManagementSystem.BMForm.BoxScore.Picture.batu.png"));
+                            (ResouceCurrentDirPass + ".batu.png"));
 
                     pi.PlIn.Image = bmp;
                 }
@@ -680,7 +692,7 @@ namespace BasketballManagementSystem.bMForm.boxScore
                         //指定されたリソースを読み込む
                         Bitmap bmp =
                             new Bitmap(myAssembly.GetManifestResourceStream
-                                ("BasketballManagementSystem.BMForm.BoxScore.Picture.bar.png"));
+                                (ResouceCurrentDirPass + ".bar.png"));
 
                         myFaulLines[m, l].Text = "";
                         myFaulLines[m, l].Image = bmp;
@@ -699,7 +711,7 @@ namespace BasketballManagementSystem.bMForm.boxScore
 
             foreach (var p in game.OppentTeam.TeamMember)
             {
-                PlayerInfomation pl = new PlayerInfomation();
+                PlayerInfomationModel pl = new PlayerInfomationModel();
 
                 pl.Name = oppentPlayerNameLabels[i];
                 pl.Name.Text = p.Name;
@@ -719,7 +731,7 @@ namespace BasketballManagementSystem.bMForm.boxScore
                     //指定されたリソースを読み込む
                     Bitmap bmp =
                         new Bitmap(oppentAssembly.GetManifestResourceStream
-                            ("BasketballManagementSystem.BMForm.BoxScore.Picture.marubatu2.png"));
+                            (ResouceCurrentDirPass + ".marubatu2.png"));
 
                     pl.PlIn.Image = bmp;
                 }
@@ -752,7 +764,7 @@ namespace BasketballManagementSystem.bMForm.boxScore
                     //指定されたリソースを読み込む
                     Bitmap bmp =
                         new Bitmap(oppentAssembly.GetManifestResourceStream
-                            ("BasketballManagementSystem.BMForm.BoxScore.Picture.batu.png"));
+                            (ResouceCurrentDirPass + ".batu.png"));
 
                     pl.PlIn.Image = bmp;
                 }
@@ -847,7 +859,7 @@ namespace BasketballManagementSystem.bMForm.boxScore
                         //指定されたリソースを読み込む
                         Bitmap bmp =
                             new Bitmap(oppentAssembly.GetManifestResourceStream
-                                ("BasketballManagementSystem.BMForm.BoxScore.Picture.bar.png"));
+                                (ResouceCurrentDirPass + ".bar.png"));
 
                         oppentFaulLines[m, l].Text = "";
                         oppentFaulLines[m, l].Image = bmp;
@@ -865,7 +877,7 @@ namespace BasketballManagementSystem.bMForm.boxScore
             //指定されたリソースを読み込む
             Bitmap bmp =
                 new Bitmap(assembly.GetManifestResourceStream
-                    ("BasketballManagementSystem.BMForm.BoxScore.Picture.batu_touka.png"));
+                    (ResouceCurrentDirPass + ".batu_touka.png"));
 
             for (var i = 0; i < 4; i++)
             {
@@ -898,7 +910,7 @@ namespace BasketballManagementSystem.bMForm.boxScore
                         //指定されたリソースを読み込む
                         Bitmap bmp =
                             new Bitmap(assembly.GetManifestResourceStream
-                                ("BasketballManagementSystem.BMForm.BoxScore.Picture.batu_touka.png"));
+                                (ResouceCurrentDirPass + ".batu_touka.png"));
 
             foreach (var t in game.MyTeam.TimeOutList)
             {
@@ -929,7 +941,7 @@ namespace BasketballManagementSystem.bMForm.boxScore
             }
 
             Bitmap bmp2 = new Bitmap(assembly.GetManifestResourceStream
-                               ("BasketballManagementSystem.BMForm.BoxScore.Picture.redDualLine.png"));
+                               (ResouceCurrentDirPass + ".redDualLine.png"));
 
             for (var j = 0; j < myTeamTimeOutLabels.Count(); j++)
             {
@@ -1005,6 +1017,22 @@ namespace BasketballManagementSystem.bMForm.boxScore
         {
             FormPrinter fp = new FormPrinter();
             fp.ShowPrintPreview(this);
+        }
+
+        public event events.DataInputEventHandler DataInputEvent;
+
+        private abstracts.AbstractPresenter presenter;
+
+        public abstracts.AbstractPresenter Presenter
+        {
+            get
+            {
+                return this.presenter;
+            }
+            set
+            {
+                this.presenter = value;
+            }
         }
     }
 

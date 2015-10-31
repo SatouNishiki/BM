@@ -13,7 +13,7 @@ using BasketballManagementSystem.baseClass.player;
 using BasketballManagementSystem.baseClass.action;
 using Mathmatical;
 
-namespace BasketballManagementSystem.bMForm.playerData
+namespace BasketballManagementSystem.bmForm.playerData
 {
     public partial class PlayerData : Form
     {

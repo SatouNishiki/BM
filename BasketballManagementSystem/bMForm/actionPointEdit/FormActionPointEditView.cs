@@ -12,7 +12,7 @@ using BasketballManagementSystem.interfaces.actionPointEdit;
 using BasketballManagementSystem.abstracts;
 using BasketballManagementSystem.events;
 
-namespace BasketballManagementSystem.bMForm.actionPointEdit
+namespace BasketballManagementSystem.bmForm.actionPointEdit
 {
     public partial class FormActionPointEditView : Form, IActionPointEditView
     {

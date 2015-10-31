@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 using BasketballManagementSystem.baseClass.action;
+using BasketballManagementSystem.interfaces;
 
-namespace BasketballManagementSystem.bMForm.boxScore
+namespace BasketballManagementSystem.bmForm.boxScore
 {
-    public class RunningScore
+    public class RunningScoreView : IView
     {
         private const int RunningScoreNumber = 160;
+
+        private string ResouceCurrentDirPass;
 
         public Label[] teamANumbers { get; set; }
         public Label[] teamAPoints { get; set; }
@@ -29,8 +32,9 @@ namespace BasketballManagementSystem.bMForm.boxScore
         private int teamAAllPoint = 0;
         private int teamBAllPoint = 0;
 
-        public RunningScore()
+        public RunningScoreView()
         {
+            this.ResouceCurrentDirPass = this.GetType().Namespace + ".picture";
 
             teamANumbers = new Label[RunningScoreNumber];
             teamAPoints = new Label[RunningScoreNumber];
@@ -44,22 +48,22 @@ namespace BasketballManagementSystem.bMForm.boxScore
             //指定されたリソースを読み込む
             syasen_black =
                 new Bitmap(Assembly.GetManifestResourceStream
-                    ("BasketballManagementSystem.BMForm.BoxScore.Picture.syasen_black.png"));
+                    (ResouceCurrentDirPass + ".syasen_black.png"));
 
             syasen_red = new Bitmap(Assembly.GetManifestResourceStream
-                    ("BasketballManagementSystem.BMForm.BoxScore.Picture.syasen_red.png"));
+                    (ResouceCurrentDirPass + ".syasen_red.png"));
 
             maru_black = new Bitmap(Assembly.GetManifestResourceStream
-                    ("BasketballManagementSystem.BMForm.BoxScore.Picture.maru_black.png"));
+                    (ResouceCurrentDirPass + ".maru_black.png"));
 
             maru_red = new Bitmap(Assembly.GetManifestResourceStream
-                    ("BasketballManagementSystem.BMForm.BoxScore.Picture.maru_red.png"));
+                    (ResouceCurrentDirPass + ".maru_red.png"));
 
             kuromaru = new Bitmap(Assembly.GetManifestResourceStream
-                    ("BasketballManagementSystem.BMForm.BoxScore.Picture.kuromaru.png"));
+                    (ResouceCurrentDirPass + ".kuromaru.png"));
 
             akamaru = new Bitmap(Assembly.GetManifestResourceStream
-                    ("BasketballManagementSystem.BMForm.BoxScore.Picture.akamaru.png"));
+                    (ResouceCurrentDirPass + ".akamaru.png"));
 
            
         }
@@ -187,6 +191,20 @@ namespace BasketballManagementSystem.bMForm.boxScore
                 teamBNumbers[i].Font = new Font(teamAPoints[i].Font.FontFamily.Name, 10.0F);
             }
 
+        }
+
+        public event events.DataInputEventHandler DataInputEvent;
+
+        public abstracts.AbstractPresenter Presenter
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 }

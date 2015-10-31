@@ -10,7 +10,7 @@ using BasketballManagementSystem.baseClass.position;
 using BasketballManagementSystem.baseClass.command;
 using BasketballManagementSystem.interfaces;
 
-namespace BasketballManagementSystem.bMForm.input.eventHelper
+namespace BasketballManagementSystem.bmForm.input.eventHelper
 {
     /// <summary>
     /// コートをクリックされたときのイベントを管理するクラス

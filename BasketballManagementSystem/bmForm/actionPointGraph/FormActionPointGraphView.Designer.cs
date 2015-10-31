@@ -1,6 +1,6 @@
-﻿namespace BasketballManagementSystem.bMForm.actionPointGraph
+﻿namespace BasketballManagementSystem.bmForm.actionPointGraph
 {
-    partial class FormActionPointGraph
+    partial class FormActionPointGraphView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormActionPointGraph));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormActionPointGraphView));
             System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
@@ -62,11 +62,11 @@
             // 
             // ActionPointChart
             // 
-            resources.ApplyResources(this.ActionPointChart, "ActionPointChart");
             chartArea1.Name = "ChartArea1";
             this.ActionPointChart.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.ActionPointChart.Legends.Add(legend1);
+            resources.ApplyResources(this.ActionPointChart, "ActionPointChart");
             this.ActionPointChart.Name = "ActionPointChart";
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Radar;
@@ -84,15 +84,15 @@
             // 
             // MyTeamList
             // 
-            resources.ApplyResources(this.MyTeamList, "MyTeamList");
             this.MyTeamList.FormattingEnabled = true;
+            resources.ApplyResources(this.MyTeamList, "MyTeamList");
             this.MyTeamList.Name = "MyTeamList";
             this.MyTeamList.SelectedIndexChanged += new System.EventHandler(this.TeamList_SelectedIndexChanged);
             // 
             // OppentTeamList
             // 
-            resources.ApplyResources(this.OppentTeamList, "OppentTeamList");
             this.OppentTeamList.FormattingEnabled = true;
+            resources.ApplyResources(this.OppentTeamList, "OppentTeamList");
             this.OppentTeamList.Name = "OppentTeamList";
             this.OppentTeamList.SelectedIndexChanged += new System.EventHandler(this.TeamList_SelectedIndexChanged);
             // 
@@ -108,33 +108,33 @@
             // 
             // ActionPointGraphTab
             // 
-            resources.ApplyResources(this.ActionPointGraphTab, "ActionPointGraphTab");
             this.ActionPointGraphTab.Controls.Add(this.APRadarChart);
             this.ActionPointGraphTab.Controls.Add(this.APShiftGraph);
+            resources.ApplyResources(this.ActionPointGraphTab, "ActionPointGraphTab");
             this.ActionPointGraphTab.Name = "ActionPointGraphTab";
             this.ActionPointGraphTab.SelectedIndex = 0;
             // 
             // APRadarChart
             // 
-            resources.ApplyResources(this.APRadarChart, "APRadarChart");
             this.APRadarChart.Controls.Add(this.ActionPointChart);
+            resources.ApplyResources(this.APRadarChart, "APRadarChart");
             this.APRadarChart.Name = "APRadarChart";
             this.APRadarChart.UseVisualStyleBackColor = true;
             // 
             // APShiftGraph
             // 
-            resources.ApplyResources(this.APShiftGraph, "APShiftGraph");
             this.APShiftGraph.Controls.Add(this.ActionPointShitGraph);
+            resources.ApplyResources(this.APShiftGraph, "APShiftGraph");
             this.APShiftGraph.Name = "APShiftGraph";
             this.APShiftGraph.UseVisualStyleBackColor = true;
             // 
             // ActionPointShitGraph
             // 
-            resources.ApplyResources(this.ActionPointShitGraph, "ActionPointShitGraph");
             chartArea2.Name = "ChartArea1";
             this.ActionPointShitGraph.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.ActionPointShitGraph.Legends.Add(legend2);
+            resources.ApplyResources(this.ActionPointShitGraph, "ActionPointShitGraph");
             this.ActionPointShitGraph.Name = "ActionPointShitGraph";
             series3.ChartArea = "ChartArea1";
             series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
@@ -159,32 +159,32 @@
             // 
             // MenuStrip
             // 
-            resources.ApplyResources(this.MenuStrip, "MenuStrip");
             this.MenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileToolStripMenuItem});
+            resources.ApplyResources(this.MenuStrip, "MenuStrip");
             this.MenuStrip.Name = "MenuStrip";
             // 
             // FileToolStripMenuItem
             // 
-            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.PrintFormToolStripMenuItem,
             this.PrintPreviewToolStripMenuItem});
             this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
             // PrintFormToolStripMenuItem
             // 
-            resources.ApplyResources(this.PrintFormToolStripMenuItem, "PrintFormToolStripMenuItem");
             this.PrintFormToolStripMenuItem.Name = "PrintFormToolStripMenuItem";
+            resources.ApplyResources(this.PrintFormToolStripMenuItem, "PrintFormToolStripMenuItem");
             this.PrintFormToolStripMenuItem.Click += new System.EventHandler(this.PrintFormToolStripMenuItem_Click);
             // 
             // PrintPreviewToolStripMenuItem
             // 
-            resources.ApplyResources(this.PrintPreviewToolStripMenuItem, "PrintPreviewToolStripMenuItem");
             this.PrintPreviewToolStripMenuItem.Name = "PrintPreviewToolStripMenuItem";
+            resources.ApplyResources(this.PrintPreviewToolStripMenuItem, "PrintPreviewToolStripMenuItem");
             this.PrintPreviewToolStripMenuItem.Click += new System.EventHandler(this.PrintPreviewToolStripMenuItem_Click);
             // 
-            // FormActionPointGraph
+            // FormActionPointGraphView
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -195,7 +195,8 @@
             this.Controls.Add(this.MyTeamList);
             this.Controls.Add(this.MenuStrip);
             this.MainMenuStrip = this.MenuStrip;
-            this.Name = "FormActionPointGraph";
+            this.Name = "FormActionPointGraphView";
+            this.Load += new System.EventHandler(this.FormActionPointGraphView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ActionPointChart)).EndInit();
             this.ActionPointGraphTab.ResumeLayout(false);
             this.APRadarChart.ResumeLayout(false);

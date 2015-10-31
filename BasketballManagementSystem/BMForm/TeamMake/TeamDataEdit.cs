@@ -15,7 +15,7 @@ using System.IO;
 using BasketballManagementSystem.baseClass.club;
 using System.Xml.Serialization;
 
-namespace BasketballManagementSystem.bMForm.teamMake
+namespace BasketballManagementSystem.bmForm.teamMake
 {
     public partial class TeamDataEdit : Form
     {

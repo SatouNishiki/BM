@@ -9,7 +9,7 @@ using System.Threading;
 using BasketballManagementSystem.factory;
 using BasketballManagementSystem.abstracts;
 
-namespace BasketballManagementSystem.bMForm.input
+namespace BasketballManagementSystem.bmForm.input
 {
     static class Program
     {
@@ -40,9 +40,9 @@ namespace BasketballManagementSystem.bMForm.input
             }
 
             FormFactory factory = new FormInputFactory();
-            factory.CreatePresenter();
+            AbstractPresenter presenter = factory.CreatePresenter();
 
-            Application.Run(factory.GetForm());
+            Application.Run(presenter.GetForm());
 
             AppSetting.GetInstance().SettingChanged();
         }

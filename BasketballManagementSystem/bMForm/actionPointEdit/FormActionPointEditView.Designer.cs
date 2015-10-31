@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.bMForm.actionPointEdit
+﻿namespace BasketballManagementSystem.bmForm.actionPointEdit
 {
     partial class FormActionPointEditView
     {

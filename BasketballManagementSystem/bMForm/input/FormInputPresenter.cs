@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 using BasketballManagementSystem.interfaces;
 using BasketballManagementSystem.abstracts;
 using BasketballManagementSystem.events.input;
-using BasketballManagementSystem.bMForm.input.eventHelper;
-using BasketballManagementSystem.bMForm.input.loadHelper;
+using BasketballManagementSystem.bmForm.input.eventHelper;
+using BasketballManagementSystem.bmForm.input.loadHelper;
 using BasketballManagementSystem.baseClass.game;
-using BasketballManagementSystem.bMForm.Transmission.tCP;
+using BasketballManagementSystem.bmForm.Transmission.tcp;
 using BasketballManagementSystem.baseClass.command;
 using BasketballManagementSystem.factory;
-
-namespace BasketballManagementSystem.bMForm.input
+namespace BasketballManagementSystem.bmForm.input
 {
     public class FormInputPresenter : AbstractPresenter
     {
@@ -68,6 +67,22 @@ namespace BasketballManagementSystem.bMForm.input
             this.inputView.ActionClickEvent += inputView_ActionClickEvent;
             this.inputView.CortClickEvent += inputView_CortClickEvent;
             this.inputView.FormActionPointEditOpenEvent += inputView_FormActionPointEditOpenEvent;
+            this.inputView.FormActionPointGraphOpenEvent += inputView_FormActionPointGraphOpenEvent;
+            this.inputView.FormBoxScoreOpenEvent += inputView_FormBoxScoreOpenEvent;
+        }
+
+        void inputView_FormBoxScoreOpenEvent()
+        {
+            FormFactory factory = new FormBoxScoreFactory();
+            AbstractPresenter presenter = factory.CreatePresenter();
+            presenter.ShowView();
+        }
+
+        void inputView_FormActionPointGraphOpenEvent()
+        {
+            FormFactory factory = new FormAcitonPointGraphFactory();
+            AbstractPresenter presenter = factory.CreatePresenter();
+            presenter.ShowView();
         }
 
         void inputView_FormActionPointEditOpenEvent()
@@ -225,6 +240,11 @@ namespace BasketballManagementSystem.bMForm.input
         public override void ShowView()
         {
             this.inputView.Show();
+        }
+
+        public override System.Windows.Forms.Form GetForm()
+        {
+            return this.inputView;
         }
     }
 }

@@ -15,7 +15,7 @@ using BasketballManagementSystem.baseClass.player;
 using BasketballManagementSystem.baseClass.action;
 using System.Collections;
 
-namespace BasketballManagementSystem.bMForm.gameDataEdit
+namespace BasketballManagementSystem.bmForm.gameDataEdit
 {
     public partial class EditForm : Form
     {

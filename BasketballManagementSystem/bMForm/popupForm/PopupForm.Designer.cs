@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.bMForm.popupForm
+﻿namespace BasketballManagementSystem.bmForm.popupForm
 {
     partial class PopupForm
     {

@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.bMForm.input
+﻿namespace BasketballManagementSystem.bmForm.input
 {
     partial class FormInputView
     {

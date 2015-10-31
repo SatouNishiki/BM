@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using BasketballManagementSystem.baseClass.player;
 using BasketballManagementSystem.baseClass.position;
 
-namespace BasketballManagementSystem.bMForm.strategySimulation
+namespace BasketballManagementSystem.bmForm.strategySimulation
 {
     public class BoardPlayer
     {

@@ -17,12 +17,13 @@ using BMErrorLibrary;
 using BMFileLibrary;
 using System.Xml.Serialization;
 
-namespace BasketballManagementSystem.bMForm.input
+namespace BasketballManagementSystem.bmForm.input
 {
     public class FormInputModel : IModel
     {
 
         private const string defaultFileName = "Game1";
+        private string assemblyPass;
 
         /// <summary>
         /// デバッグメッセージを表示するフォーム
@@ -211,6 +212,8 @@ namespace BasketballManagementSystem.bMForm.input
         /// </summary>
         public void PreInit() 
         {
+            this.assemblyPass = this.GetType().Namespace;
+
             Game = new Game();
 
             //現在のコードを実行しているAssemblyを取得
@@ -218,10 +221,10 @@ namespace BasketballManagementSystem.bMForm.input
                 System.Reflection.Assembly.GetExecutingAssembly();
 
             RestartGraph = new Bitmap(assembly.GetManifestResourceStream
-                            ("BasketballManagementSystem.bMForm.input.picture.susumu.png"));
+                            (assemblyPass + ".picture.susumu.png"));
 
             StopGraph = new Bitmap(assembly.GetManifestResourceStream
-                            ("BasketballManagementSystem.bMForm.input.picture.teisi.png"));
+                            (assemblyPass + ".picture.teisi.png"));
         }
 
         /// <summary>

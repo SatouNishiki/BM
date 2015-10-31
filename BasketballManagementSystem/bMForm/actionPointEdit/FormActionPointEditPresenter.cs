@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using BasketballManagementSystem.abstracts;
 using System.Windows.Forms;
 
-namespace BasketballManagementSystem.bMForm.actionPointEdit
+namespace BasketballManagementSystem.bmForm.actionPointEdit
 {
     public class FormActionPointEditPresenter : AbstractPresenter
     {
@@ -27,6 +27,11 @@ namespace BasketballManagementSystem.bMForm.actionPointEdit
         public override void ShowView()
         {
             this.actionPointEditView.Show();
+        }
+
+        public override Form GetForm()
+        {
+            return this.actionPointEditView;
         }
 
         void actionPointEditView_SaveClickEvent()

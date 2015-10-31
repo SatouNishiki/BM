@@ -15,7 +15,7 @@ using BasketballManagementSystem.baseClass.player;
 using System.Windows.Forms.DataVisualization.Charting;
 using BMErrorLibrary;
 
-namespace BasketballManagementSystem.bMForm.graphScore
+namespace BasketballManagementSystem.bmForm.graphScore
 {
     //TODO: 絶望的に汚い
 

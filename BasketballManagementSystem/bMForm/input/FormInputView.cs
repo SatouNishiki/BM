@@ -1,32 +1,32 @@
 ﻿using System.Windows.Forms;
 using BasketballManagementSystem.baseClass.player;
 using BasketballManagementSystem.baseClass.action;
-using BasketballManagementSystem.bMForm.input.eventHelper;
+using BasketballManagementSystem.bmForm.input.eventHelper;
 using System;
 using BasketballManagementSystem.baseClass.game;
 using BasketballManagementSystem.manager;
-using BasketballManagementSystem.bMForm.graphScore;
-using BasketballManagementSystem.bMForm.boxScore;
+using BasketballManagementSystem.bmForm.graphScore;
+using BasketballManagementSystem.bmForm.boxScore;
 using BasketballManagementSystem.baseClass.timeOut;
-using BasketballManagementSystem.bMForm.playerData;
+using BasketballManagementSystem.bmForm.playerData;
 using BasketballManagementSystem.baseClass.settings;
 using System.Drawing;
 using System.Collections.Generic;
-using BasketballManagementSystem.bMForm.tactick2D;
+using BasketballManagementSystem.bmForm.tactick2D;
 using System.Globalization;
 using System.Threading;
-using BasketballManagementSystem.bMForm.input.language;
-using BasketballManagementSystem.bMForm.gameDataEdit;
-using BasketballManagementSystem.bMForm.Transmission;
-using BasketballManagementSystem.bMForm.input.loadHelper;
+using BasketballManagementSystem.bmForm.input.language;
+using BasketballManagementSystem.bmForm.gameDataEdit;
+using BasketballManagementSystem.bmForm.Transmission;
+using BasketballManagementSystem.bmForm.input.loadHelper;
 using System.Runtime.CompilerServices;
-using BasketballManagementSystem.bMForm.teamMake;
-using BasketballManagementSystem.bMForm.actionPointEdit;
-using BasketballManagementSystem.bMForm.actionPointGraph;
-using BasketballManagementSystem.bMForm.strategySimulation;
-using BasketballManagementSystem.bMForm.Transmission.tCP;
-using BasketballManagementSystem.bMForm.clubEdit;
-using BasketballManagementSystem.bMForm.centralityAnalyze;
+using BasketballManagementSystem.bmForm.teamMake;
+using BasketballManagementSystem.bmForm.actionPointEdit;
+using BasketballManagementSystem.bmForm.actionPointGraph;
+using BasketballManagementSystem.bmForm.strategySimulation;
+using BasketballManagementSystem.bmForm.Transmission.tcp;
+using BasketballManagementSystem.bmForm.clubEdit;
+using BasketballManagementSystem.bmForm.centralityAnalyze;
 using BasketballManagementSystem.interfaces.input;
 using BasketballManagementSystem.events;
 using BasketballManagementSystem.interfaces;
@@ -34,7 +34,7 @@ using BasketballManagementSystem.abstracts;
 using BasketballManagementSystem.events.input;
 using BasketballManagementSystem.baseClass.command;
 
-namespace BasketballManagementSystem.bMForm.input
+namespace BasketballManagementSystem.bmForm.input
 {
     public partial class FormInputView : Form, IInputView
     {
@@ -251,6 +251,10 @@ namespace BasketballManagementSystem.bMForm.input
 
         public event Action FormActionPointEditOpenEvent;
 
+        public event Action FormActionPointGraphOpenEvent;
+
+        public event Action FormBoxScoreOpenEvent;
+
         /// <summary>
         /// データ変更イベントを投げる
         /// </summary>
@@ -422,6 +426,22 @@ namespace BasketballManagementSystem.bMForm.input
             if (this.FormActionPointEditOpenEvent != null)
             {
                 this.FormActionPointEditOpenEvent();
+            }
+        }
+
+        private void FormActionPointGraphOpenEventThrow()
+        {
+            if (this.FormActionPointGraphOpenEvent != null)
+            {
+                this.FormActionPointGraphOpenEvent();
+            }
+        }
+
+        private void FormBoxScoreOpenEventThrow()
+        {
+            if (this.FormBoxScoreOpenEvent != null)
+            {
+                this.FormBoxScoreOpenEvent();
             }
         }
 
@@ -1188,8 +1208,7 @@ namespace BasketballManagementSystem.bMForm.input
 
         private void GoBoxScorePage_Click(object sender, EventArgs e)
         {
-            FormBoxScore fbs = new FormBoxScore();
-            fbs.Show();
+            this.FormBoxScoreOpenEventThrow();
         }
 
         private void GoPlayerData_Click(object sender, EventArgs e)
@@ -1231,8 +1250,7 @@ namespace BasketballManagementSystem.bMForm.input
 
         private void actionPointGraph_Click(object sender, EventArgs e)
         {
-            FormActionPointGraph f = new FormActionPointGraph();
-            f.Show();
+            this.FormActionPointGraphOpenEventThrow();
         }
 
         private void strategySimulation_Click(object sender, EventArgs e)

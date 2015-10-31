@@ -8,7 +8,7 @@ using System.Windows.Forms;
 using BasketballManagementSystem.events;
 using BasketballManagementSystem.baseClass.settings;
 
-namespace BasketballManagementSystem.bMForm.actionPointEdit
+namespace BasketballManagementSystem.bmForm.actionPointEdit
 {
     public class FormActionPointEditModel : IModel
     {

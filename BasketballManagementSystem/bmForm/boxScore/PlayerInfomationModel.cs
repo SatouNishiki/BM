@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BasketballManagementSystem.interfaces;
 
-namespace BasketballManagementSystem.bMForm.boxScore
+namespace BasketballManagementSystem.bmForm.boxScore
 {
-    public class PlayerInfomation
+    public class PlayerInfomationModel : IModel
     {
         public Label Name { get; set; }
 
@@ -17,9 +18,11 @@ namespace BasketballManagementSystem.bMForm.boxScore
 
         public Label PlIn { get; set; }
 
-        public PlayerInfomation()
+        public PlayerInfomationModel()
         {
             Fauls = new Label[5];
         }
+
+        public event events.PropertyChangedEventHandler PropertyChangedEvent = null;
     }
 }

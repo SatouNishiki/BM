@@ -118,114 +118,118 @@
     <Compile Include="baseClass\player\Team.cs" />
     <Compile Include="baseClass\settings\AppSetting.cs" />
     <Compile Include="baseClass\timeOut\TimeOut.cs" />
-    <Compile Include="bMForm\actionPointEdit\FormActionPointEditPresenter.cs" />
-    <Compile Include="bMForm\actionPointEdit\FormActionPointEditModel.cs" />
-    <Compile Include="bMForm\actionPointEdit\FormActionPointEditView.cs">
+    <Compile Include="bmForm\actionPointEdit\FormActionPointEditPresenter.cs" />
+    <Compile Include="bmForm\actionPointEdit\FormActionPointEditModel.cs" />
+    <Compile Include="bmForm\actionPointEdit\FormActionPointEditView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\actionPointEdit\FormActionPointEditView.Designer.cs">
+    <Compile Include="bmForm\actionPointEdit\FormActionPointEditView.Designer.cs">
       <DependentUpon>FormActionPointEditView.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\actionPointGraph\FormActionPointGraph.cs">
+    <Compile Include="bmForm\actionPointGraph\FormActionPointGraphModel.cs" />
+    <Compile Include="bmForm\actionPointGraph\FormActionPointGraphPresenter.cs" />
+    <Compile Include="bmForm\actionPointGraph\FormActionPointGraphView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\actionPointGraph\FormActionPointGraph.Designer.cs">
-      <DependentUpon>FormActionPointGraph.cs</DependentUpon>
+    <Compile Include="bmForm\actionPointGraph\FormActionPointGraphView.Designer.cs">
+      <DependentUpon>FormActionPointGraphView.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\boxScore\FormBoxScore.cs">
+    <Compile Include="bmForm\boxScore\FormBoxScoreModel.cs" />
+    <Compile Include="bmForm\boxScore\FormBoxScorePresenter.cs" />
+    <Compile Include="bmForm\boxScore\FormBoxScoreView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\boxScore\FormBoxScore.Designer.cs">
-      <DependentUpon>FormBoxScore.cs</DependentUpon>
+    <Compile Include="bmForm\boxScore\FormBoxScoreView.Designer.cs">
+      <DependentUpon>FormBoxScoreView.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\boxScore\PlayerInfomation.cs" />
-    <Compile Include="bMForm\boxScore\RunningScore.cs" />
-    <Compile Include="bMForm\centralityAnalyze\FormCentralityAnalyze.cs">
+    <Compile Include="bmForm\boxScore\PlayerInfomationModel.cs" />
+    <Compile Include="bmForm\boxScore\RunningScoreView.cs" />
+    <Compile Include="bmForm\centralityAnalyze\FormCentralityAnalyze.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\centralityAnalyze\FormCentralityAnalyze.Designer.cs">
+    <Compile Include="bmForm\centralityAnalyze\FormCentralityAnalyze.Designer.cs">
       <DependentUpon>FormCentralityAnalyze.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\clubEdit\FormClubEdit.cs">
+    <Compile Include="bmForm\clubEdit\FormClubEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\clubEdit\FormClubEdit.Designer.cs">
+    <Compile Include="bmForm\clubEdit\FormClubEdit.Designer.cs">
       <DependentUpon>FormClubEdit.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\gameDataEdit\EditForm.cs">
+    <Compile Include="bmForm\gameDataEdit\EditForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\gameDataEdit\EditForm.Designer.cs">
+    <Compile Include="bmForm\gameDataEdit\EditForm.Designer.cs">
       <DependentUpon>EditForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\graphScore\FormGraphScore.cs">
+    <Compile Include="bmForm\graphScore\FormGraphScore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\graphScore\FormGraphScore.Designer.cs">
+    <Compile Include="bmForm\graphScore\FormGraphScore.Designer.cs">
       <DependentUpon>FormGraphScore.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\input\ConfigForm.cs">
+    <Compile Include="bmForm\input\ConfigForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\input\ConfigForm.Designer.cs">
+    <Compile Include="bmForm\input\ConfigForm.Designer.cs">
       <DependentUpon>ConfigForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\input\DebugMessageForm.cs">
+    <Compile Include="bmForm\input\DebugMessageForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\input\DebugMessageForm.Designer.cs">
+    <Compile Include="bmForm\input\DebugMessageForm.Designer.cs">
       <DependentUpon>DebugMessageForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\input\eventHelper\KeyboardEventHelper.cs" />
-    <Compile Include="bMForm\input\eventHelper\MemberChangeEventHelper.cs" />
-    <Compile Include="bMForm\input\FormInputView.cs">
+    <Compile Include="bmForm\input\eventHelper\KeyboardEventHelper.cs" />
+    <Compile Include="bmForm\input\eventHelper\MemberChangeEventHelper.cs" />
+    <Compile Include="bmForm\input\FormInputView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\input\FormInputView.Designer.cs">
+    <Compile Include="bmForm\input\FormInputView.Designer.cs">
       <DependentUpon>FormInputView.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\input\eventHelper\CortEventHelper.cs" />
-    <Compile Include="bMForm\input\FormInputPresenter.cs" />
-    <Compile Include="bMForm\input\FormInputModel.cs" />
-    <Compile Include="bMForm\input\language\CultureHelper.cs" />
-    <Compile Include="bMForm\input\loadHelper\FormInputLoader.cs" />
-    <Compile Include="bMForm\playerData\PlayerData.cs">
+    <Compile Include="bmForm\input\eventHelper\CortEventHelper.cs" />
+    <Compile Include="bmForm\input\FormInputPresenter.cs" />
+    <Compile Include="bmForm\input\FormInputModel.cs" />
+    <Compile Include="bmForm\input\language\CultureHelper.cs" />
+    <Compile Include="bmForm\input\loadHelper\FormInputLoader.cs" />
+    <Compile Include="bmForm\playerData\PlayerData.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\playerData\PlayerData.Designer.cs">
+    <Compile Include="bmForm\playerData\PlayerData.Designer.cs">
       <DependentUpon>PlayerData.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\popupForm\PopupForm.cs">
+    <Compile Include="bmForm\popupForm\PopupForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\popupForm\PopupForm.Designer.cs">
+    <Compile Include="bmForm\popupForm\PopupForm.Designer.cs">
       <DependentUpon>PopupForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\strategySimulation\Board.cs" />
-    <Compile Include="bMForm\strategySimulation\BoardPlayer.cs" />
-    <Compile Include="bMForm\strategySimulation\FormStrategySimulation.cs">
+    <Compile Include="bmForm\strategySimulation\Board.cs" />
+    <Compile Include="bmForm\strategySimulation\BoardPlayer.cs" />
+    <Compile Include="bmForm\strategySimulation\FormStrategySimulation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\strategySimulation\FormStrategySimulation.Designer.cs">
+    <Compile Include="bmForm\strategySimulation\FormStrategySimulation.Designer.cs">
       <DependentUpon>FormStrategySimulation.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\tactick2D\Tacticks2D.cs">
+    <Compile Include="bmForm\tactick2D\Tacticks2D.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\tactick2D\Tacticks2D.Designer.cs">
+    <Compile Include="bmForm\tactick2D\Tacticks2D.Designer.cs">
       <DependentUpon>Tacticks2D.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\transmission\compression\Compressor.cs" />
-    <Compile Include="bMForm\transmission\tCP\TCPServer.cs">
+    <Compile Include="bmForm\transmission\compression\Compressor.cs" />
+    <Compile Include="bmForm\transmission\tcp\TCPServer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\transmission\tCP\TCPServer.Designer.cs">
+    <Compile Include="bmForm\transmission\tcp\TCPServer.Designer.cs">
       <DependentUpon>TCPServer.cs</DependentUpon>
     </Compile>
-    <Compile Include="bMForm\transmission\tCP\TCPClient.cs">
+    <Compile Include="bmForm\transmission\tcp\TCPClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\transmission\tCP\TCPClient.Designer.cs">
+    <Compile Include="bmForm\transmission\tcp\TCPClient.Designer.cs">
       <DependentUpon>TCPClient.cs</DependentUpon>
     </Compile>
     <Compile Include="events\DataInputEventArgs.cs" />
@@ -236,111 +240,114 @@
     <Compile Include="events\input\TeamChangeEventHandler.cs" />
     <Compile Include="events\PropertyChangedEventArgs.cs" />
     <Compile Include="events\PropertyChangedEventHandler.cs" />
+    <Compile Include="factory\FormAcitonPointGraphFactory.cs" />
     <Compile Include="factory\FormActionPointEditFactory.cs" />
+    <Compile Include="factory\FormBoxScoreFactory.cs" />
     <Compile Include="factory\FormFactory.cs" />
     <Compile Include="factory\FormInputFactory.cs" />
     <Compile Include="interfaces\actionPointEdit\IActionPointEditView.cs" />
+    <Compile Include="interfaces\actionPointGraph\IActionPointGraphView.cs" />
+    <Compile Include="interfaces\boxScore\IBoxScoreView.cs" />
     <Compile Include="interfaces\ICommand.cs" />
+    <Compile Include="interfaces\IHasForm.cs" />
     <Compile Include="interfaces\IModel.cs" />
     <Compile Include="interfaces\input\IInputView.cs" />
     <Compile Include="interfaces\IPresenter.cs" />
     <Compile Include="interfaces\IView.cs" />
-    <Compile Include="manager\PictureManager.cs" />
     <Compile Include="manager\FormPrinter.cs" />
-    <Compile Include="manager\SystemManager.cs" />
     <Compile Include="manager\TeamManager.cs" />
     <Compile Include="manager\SaveDataManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="bMForm\teamMake\TeamDataEdit.cs">
+    <Compile Include="bmForm\teamMake\TeamDataEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bMForm\teamMake\TeamDataEdit.Designer.cs">
+    <Compile Include="bmForm\teamMake\TeamDataEdit.Designer.cs">
       <DependentUpon>TeamDataEdit.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="bMForm\actionPointEdit\FormActionPointEditView.ja.resx">
+    <EmbeddedResource Include="bmForm\actionPointEdit\FormActionPointEditView.ja.resx">
       <DependentUpon>FormActionPointEditView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\actionPointEdit\FormActionPointEditView.resx">
+    <EmbeddedResource Include="bmForm\actionPointEdit\FormActionPointEditView.resx">
       <DependentUpon>FormActionPointEditView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\actionPointGraph\FormActionPointGraph.ja.resx">
-      <DependentUpon>FormActionPointGraph.cs</DependentUpon>
+    <EmbeddedResource Include="bmForm\actionPointGraph\FormActionPointGraphView.ja.resx">
+      <DependentUpon>FormActionPointGraphView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\actionPointGraph\FormActionPointGraph.resx">
-      <DependentUpon>FormActionPointGraph.cs</DependentUpon>
+    <EmbeddedResource Include="bmForm\actionPointGraph\FormActionPointGraphView.resx">
+      <DependentUpon>FormActionPointGraphView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\boxScore\FormBoxScore.ja.resx">
-      <DependentUpon>FormBoxScore.cs</DependentUpon>
+    <EmbeddedResource Include="bmForm\boxScore\FormBoxScoreView.ja.resx">
+      <DependentUpon>FormBoxScoreView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\boxScore\FormBoxScore.resx">
-      <DependentUpon>FormBoxScore.cs</DependentUpon>
+    <EmbeddedResource Include="bmForm\boxScore\FormBoxScoreView.resx">
+      <DependentUpon>FormBoxScoreView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\centralityAnalyze\FormCentralityAnalyze.resx">
+    <EmbeddedResource Include="bmForm\centralityAnalyze\FormCentralityAnalyze.resx">
       <DependentUpon>FormCentralityAnalyze.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\clubEdit\FormClubEdit.ja.resx">
+    <EmbeddedResource Include="bmForm\clubEdit\FormClubEdit.ja.resx">
       <DependentUpon>FormClubEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\clubEdit\FormClubEdit.resx">
+    <EmbeddedResource Include="bmForm\clubEdit\FormClubEdit.resx">
       <DependentUpon>FormClubEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\gameDataEdit\EditForm.ja.resx">
+    <EmbeddedResource Include="bmForm\gameDataEdit\EditForm.ja.resx">
       <DependentUpon>EditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\gameDataEdit\EditForm.resx">
+    <EmbeddedResource Include="bmForm\gameDataEdit\EditForm.resx">
       <DependentUpon>EditForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\graphScore\FormGraphScore.ja.resx">
+    <EmbeddedResource Include="bmForm\graphScore\FormGraphScore.ja.resx">
       <DependentUpon>FormGraphScore.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\graphScore\FormGraphScore.resx">
+    <EmbeddedResource Include="bmForm\graphScore\FormGraphScore.resx">
       <DependentUpon>FormGraphScore.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\input\ConfigForm.resx">
+    <EmbeddedResource Include="bmForm\input\ConfigForm.resx">
       <DependentUpon>ConfigForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\input\DebugMessageForm.resx">
+    <EmbeddedResource Include="bmForm\input\DebugMessageForm.resx">
       <DependentUpon>DebugMessageForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\input\FormInputView.ja.resx">
+    <EmbeddedResource Include="bmForm\input\FormInputView.ja.resx">
       <DependentUpon>FormInputView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\input\FormInputView.resx">
+    <EmbeddedResource Include="bmForm\input\FormInputView.resx">
       <DependentUpon>FormInputView.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\playerData\PlayerData.ja.resx">
+    <EmbeddedResource Include="bmForm\playerData\PlayerData.ja.resx">
       <DependentUpon>PlayerData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\playerData\PlayerData.resx">
+    <EmbeddedResource Include="bmForm\playerData\PlayerData.resx">
       <DependentUpon>PlayerData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\popupForm\PopupForm.resx">
+    <EmbeddedResource Include="bmForm\popupForm\PopupForm.resx">
       <DependentUpon>PopupForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\strategySimulation\FormStrategySimulation.resx">
+    <EmbeddedResource Include="bmForm\strategySimulation\FormStrategySimulation.resx">
       <DependentUpon>FormStrategySimulation.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\tactick2D\Tacticks2D.ja.resx">
+    <EmbeddedResource Include="bmForm\tactick2D\Tacticks2D.ja.resx">
       <DependentUpon>Tacticks2D.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\tactick2D\Tacticks2D.resx">
+    <EmbeddedResource Include="bmForm\tactick2D\Tacticks2D.resx">
       <DependentUpon>Tacticks2D.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\teamMake\TeamDataEdit.ja.resx">
+    <EmbeddedResource Include="bmForm\teamMake\TeamDataEdit.ja.resx">
       <DependentUpon>TeamDataEdit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\transmission\tCP\TCPClient.ja.resx">
+    <EmbeddedResource Include="bmForm\transmission\tcp\TCPClient.ja.resx">
       <DependentUpon>TCPClient.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\transmission\tCP\TCPServer.ja.resx">
+    <EmbeddedResource Include="bmForm\transmission\tcp\TCPServer.ja.resx">
       <DependentUpon>TCPServer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\transmission\tCP\TCPServer.resx">
+    <EmbeddedResource Include="bmForm\transmission\tcp\TCPServer.resx">
       <DependentUpon>TCPServer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bMForm\transmission\tCP\TCPClient.resx">
+    <EmbeddedResource Include="bmForm\transmission\tcp\TCPClient.resx">
       <DependentUpon>TCPClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -353,7 +360,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="bMForm\teamMake\TeamDataEdit.resx">
+    <EmbeddedResource Include="bmForm\teamMake\TeamDataEdit.resx">
       <DependentUpon>TeamDataEdit.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -367,42 +374,42 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="bMForm\boxScore\picture\marubatu2.png" />
-    <EmbeddedResource Include="bMForm\boxScore\picture\batu.png" />
-    <EmbeddedResource Include="bMForm\boxScore\picture\bar.png" />
-    <EmbeddedResource Include="bMForm\boxScore\picture\batu_touka.png" />
-    <EmbeddedResource Include="bMForm\boxScore\picture\redDualLine.png" />
-    <EmbeddedResource Include="bMForm\boxScore\picture\maru_black.png" />
-    <EmbeddedResource Include="bMForm\boxScore\picture\maru_red.png" />
-    <EmbeddedResource Include="bMForm\boxScore\picture\akamaru.png" />
-    <EmbeddedResource Include="bMForm\boxScore\picture\kuromaru.png" />
-    <Content Include="bMForm\boxScore\picture\ScoreSheet.jpg" />
-    <EmbeddedResource Include="bMForm\boxScore\picture\syasen_black.png" />
-    <EmbeddedResource Include="bMForm\boxScore\picture\syasen_red.png" />
-    <Content Include="bMForm\input\picture\basketball_court.png" />
-    <EmbeddedResource Include="bMForm\input\picture\hayaokuri.jpg" />
-    <EmbeddedResource Include="bMForm\input\picture\makimodosi.jpg" />
-    <EmbeddedResource Include="bMForm\input\picture\susumu.png" />
-    <EmbeddedResource Include="bMForm\input\picture\teisi.png" />
-    <EmbeddedResource Include="bMForm\input\picture\Undo.png" />
-    <EmbeddedResource Include="bMForm\input\picture\NewGame3.png" />
-    <EmbeddedResource Include="bMForm\input\picture\Open.png" />
-    <EmbeddedResource Include="bMForm\input\picture\Redo.png" />
-    <EmbeddedResource Include="bMForm\input\picture\save.png" />
-    <EmbeddedResource Include="bMForm\input\picture\hukidasi.png" />
-    <Content Include="bMForm\input\picture\waku2.png" />
-    <Content Include="bMForm\input\picture\wakuwaku.png" />
-    <Content Include="bMForm\input\picture\wakuwakuw.png" />
-    <Content Include="bMForm\input\picture\Yajirusi.png" />
-    <EmbeddedResource Include="bMForm\strategySimulation\picture\Player_Blue.png" />
-    <EmbeddedResource Include="bMForm\strategySimulation\picture\basketball_court.png" />
-    <EmbeddedResource Include="bMForm\strategySimulation\picture\Player_Red.png" />
-    <EmbeddedResource Include="bMForm\strategySimulation\picture\Player_Dark.png" />
-    <EmbeddedResource Include="bMForm\strategySimulation\picture\Ball2.png" />
-    <EmbeddedResource Include="bMForm\strategySimulation\picture\Ball_Dark.png" />
-    <EmbeddedResource Include="bMForm\strategySimulation\picture\Player_Red_Dark.png" />
-    <Content Include="bMForm\tactick2D\picture\basketball_court.png" />
-    <Content Include="bMForm\input\picture\Player.png" />
+    <EmbeddedResource Include="bmForm\boxScore\picture\marubatu2.png" />
+    <EmbeddedResource Include="bmForm\boxScore\picture\batu.png" />
+    <EmbeddedResource Include="bmForm\boxScore\picture\bar.png" />
+    <EmbeddedResource Include="bmForm\boxScore\picture\batu_touka.png" />
+    <EmbeddedResource Include="bmForm\boxScore\picture\redDualLine.png" />
+    <EmbeddedResource Include="bmForm\boxScore\picture\maru_black.png" />
+    <EmbeddedResource Include="bmForm\boxScore\picture\maru_red.png" />
+    <EmbeddedResource Include="bmForm\boxScore\picture\akamaru.png" />
+    <EmbeddedResource Include="bmForm\boxScore\picture\kuromaru.png" />
+    <Content Include="bmForm\boxScore\picture\ScoreSheet.jpg" />
+    <EmbeddedResource Include="bmForm\boxScore\picture\syasen_black.png" />
+    <EmbeddedResource Include="bmForm\boxScore\picture\syasen_red.png" />
+    <Content Include="bmForm\input\picture\basketball_court.png" />
+    <EmbeddedResource Include="bmForm\input\picture\hayaokuri.jpg" />
+    <EmbeddedResource Include="bmForm\input\picture\makimodosi.jpg" />
+    <EmbeddedResource Include="bmForm\input\picture\susumu.png" />
+    <EmbeddedResource Include="bmForm\input\picture\teisi.png" />
+    <EmbeddedResource Include="bmForm\input\picture\Undo.png" />
+    <EmbeddedResource Include="bmForm\input\picture\NewGame3.png" />
+    <EmbeddedResource Include="bmForm\input\picture\Open.png" />
+    <EmbeddedResource Include="bmForm\input\picture\Redo.png" />
+    <EmbeddedResource Include="bmForm\input\picture\save.png" />
+    <EmbeddedResource Include="bmForm\input\picture\hukidasi.png" />
+    <Content Include="bmForm\input\picture\waku2.png" />
+    <Content Include="bmForm\input\picture\wakuwaku.png" />
+    <Content Include="bmForm\input\picture\wakuwakuw.png" />
+    <Content Include="bmForm\input\picture\Yajirusi.png" />
+    <EmbeddedResource Include="bmForm\strategySimulation\picture\Player_Blue.png" />
+    <EmbeddedResource Include="bmForm\strategySimulation\picture\basketball_court.png" />
+    <EmbeddedResource Include="bmForm\strategySimulation\picture\Player_Red.png" />
+    <EmbeddedResource Include="bmForm\strategySimulation\picture\Player_Dark.png" />
+    <EmbeddedResource Include="bmForm\strategySimulation\picture\Ball2.png" />
+    <EmbeddedResource Include="bmForm\strategySimulation\picture\Ball_Dark.png" />
+    <EmbeddedResource Include="bmForm\strategySimulation\picture\Player_Red_Dark.png" />
+    <Content Include="bmForm\tactick2D\picture\basketball_court.png" />
+    <Content Include="bmForm\input\picture\Player.png" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

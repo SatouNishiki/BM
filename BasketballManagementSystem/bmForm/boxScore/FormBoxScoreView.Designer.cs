@@ -1,6 +1,6 @@
-﻿namespace BasketballManagementSystem.bMForm.boxScore
+﻿namespace BasketballManagementSystem.bmForm.boxScore
 {
-    partial class FormBoxScore
+    partial class FormBoxScoreView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBoxScore));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBoxScoreView));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label961 = new System.Windows.Forms.Label();
             this.label962 = new System.Windows.Forms.Label();
