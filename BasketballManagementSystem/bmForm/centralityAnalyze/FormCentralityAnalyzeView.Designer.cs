@@ -1,6 +1,6 @@
 ﻿namespace BasketballManagementSystem.bmForm.centralityAnalyze
 {
-    partial class FormCentralityAnalyze
+    partial class FormCentralityAnalyzeView
     {
         /// <summary>
         /// Required designer variable.

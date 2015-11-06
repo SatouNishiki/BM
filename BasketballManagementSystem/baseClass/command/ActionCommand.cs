@@ -85,6 +85,8 @@ namespace BasketballManagementSystem.baseClass.command
             //選手の場所を確定
             point = this.Team.TeamMember.IndexOf(this.Player);
 
+            if (point < 0) return;
+
             Type t1 = action.GetType();
 
             MethodInfo methodInfo = null;

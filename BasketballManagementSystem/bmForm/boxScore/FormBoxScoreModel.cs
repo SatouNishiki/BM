@@ -9,14 +9,14 @@ using BasketballManagementSystem.manager;
 
 namespace BasketballManagementSystem.bmForm.boxScore
 {
-    public class FormBoxScoreModel : IModel
+    public class FormBoxScoreModel : abstracts.AbstractModel
     {
         public Game Game { get; set; }
-        public event events.PropertyChangedEventHandler PropertyChangedEvent;
 
         public FormBoxScoreModel()
         {
             this.Game = SaveDataManager.GetInstance().GetGame();
         }
+
     }
 }

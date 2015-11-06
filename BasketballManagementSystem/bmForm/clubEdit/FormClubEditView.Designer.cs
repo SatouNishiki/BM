@@ -1,6 +1,6 @@
 ﻿namespace BasketballManagementSystem.bmForm.clubEdit
 {
-    partial class FormClubEdit
+    partial class FormClubEditView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClubEdit));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormClubEditView));
             this.MenuStrip = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.LoadClubItem = new System.Windows.Forms.ToolStripMenuItem();

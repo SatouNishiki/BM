@@ -7,17 +7,17 @@ using BasketballManagementSystem.interfaces;
 using System.Windows.Forms;
 using BasketballManagementSystem.events;
 using BasketballManagementSystem.baseClass.settings;
+using BasketballManagementSystem.abstracts;
 
 namespace BasketballManagementSystem.bmForm.actionPointEdit
 {
-    public class FormActionPointEditModel : IModel
+    public class FormActionPointEditModel : AbstractModel
     {
         /// <summary>
         /// フォーム内のnumericUpDownコントロールのlist
         /// </summary>
         private List<NumericUpDown> numericUpDowns = new List<NumericUpDown>();
 
-        public event PropertyChangedEventHandler PropertyChangedEvent;
 
         /// <summary>
         /// NumericUpDownの初期設定
@@ -65,12 +65,6 @@ namespace BasketballManagementSystem.bmForm.actionPointEdit
             AppSetting.GetInstance().ActionPointProvider.SetDefault();
         }
 
-        private void PropertyChangedEventThrow(object sender, PropertyChangedEventArgs e)
-        {
-            if (this.PropertyChangedEvent != null)
-            {
-                this.PropertyChangedEvent(sender, e);
-            }
-        }
+        
     }
 }

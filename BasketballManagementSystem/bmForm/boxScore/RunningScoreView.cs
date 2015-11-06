@@ -206,5 +206,13 @@ namespace BasketballManagementSystem.bmForm.boxScore
                 throw new NotImplementedException();
             }
         }
+        private void DataChangeEventThrow(string name, object value)
+        {
+            if (this.DataInputEvent != null)
+            {
+                this.DataInputEvent(this, new events.DataInputEventArgs(name, value));
+            }
+        }
+
     }
 }

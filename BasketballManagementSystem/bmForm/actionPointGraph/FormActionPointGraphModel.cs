@@ -8,10 +8,11 @@ using BasketballManagementSystem.events;
 using BasketballManagementSystem.baseClass.game;
 using BasketballManagementSystem.baseClass.player;
 using BasketballManagementSystem.manager;
+using BasketballManagementSystem.abstracts;
 
 namespace BasketballManagementSystem.bmForm.actionPointGraph
 {
-    public class FormActionPointGraphModel : IModel
+    public class FormActionPointGraphModel : AbstractModel
     {
         /// <summary>
         /// 現在のゲームデータオブジェクト
@@ -29,19 +30,12 @@ namespace BasketballManagementSystem.bmForm.actionPointGraph
             set { this.selectedPlayer = value; }
         }
 
-        public event PropertyChangedEventHandler PropertyChangedEvent;
 
         public FormActionPointGraphModel()
         {
             this.Game = SaveDataManager.GetInstance().GetGame();
         }
 
-        private void PropertyChangedEventThrow(string name, object value)
-        {
-            if (this.PropertyChangedEvent != null)
-            {
-                this.PropertyChangedEvent(this, new PropertyChangedEventArgs(name, value));
-            }
-        }
+       
     }
 }

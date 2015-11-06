@@ -11,7 +11,7 @@ using BasketballManagementSystem.baseClass.actionPoint;
 
 namespace BasketballManagementSystem.baseClass.actionPoint
 {
-    public class ActionPointAnalyze
+    public class ActionPointAnalyzer
     {
         game.Game game = SaveDataManager.GetInstance().GetGame();
 

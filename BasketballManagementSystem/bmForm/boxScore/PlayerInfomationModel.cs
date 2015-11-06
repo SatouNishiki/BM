@@ -8,7 +8,7 @@ using BasketballManagementSystem.interfaces;
 
 namespace BasketballManagementSystem.bmForm.boxScore
 {
-    public class PlayerInfomationModel : IModel
+    public class PlayerInfomationModel : abstracts.AbstractModel
     {
         public Label Name { get; set; }
 
@@ -23,6 +23,7 @@ namespace BasketballManagementSystem.bmForm.boxScore
             Fauls = new Label[5];
         }
 
-        public event events.PropertyChangedEventHandler PropertyChangedEvent = null;
+
+       
     }
 }

@@ -1034,6 +1034,14 @@ namespace BasketballManagementSystem.bmForm.boxScore
                 this.presenter = value;
             }
         }
+
+        private void DataChangeEventThrow(string name, object value)
+        {
+            if (this.DataInputEvent != null)
+            {
+                this.DataInputEvent(this, new events.DataInputEventArgs(name, value));
+            }
+        }
     }
 
 }

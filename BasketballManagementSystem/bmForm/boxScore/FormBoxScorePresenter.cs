@@ -12,14 +12,12 @@ namespace BasketballManagementSystem.bmForm.boxScore
     {
         private FormBoxScoreModel boxScoreModel;
         private FormBoxScoreView boxScoreView;
-        private Form form;
 
         public FormBoxScorePresenter(FormBoxScoreModel model, FormBoxScoreView view)
             : base(view, model)
         {
             this.boxScoreModel = model;
             this.boxScoreView = view;
-            this.form = view;
             view.Presenter = this;
 
             view.Init();
@@ -28,7 +26,7 @@ namespace BasketballManagementSystem.bmForm.boxScore
 
         public override Form GetForm()
         {
-            return this.form;
+            return this.boxScoreView;
         }
 
         public override void ShowView()

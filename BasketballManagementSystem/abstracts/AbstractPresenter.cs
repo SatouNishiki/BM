@@ -88,14 +88,8 @@ namespace BasketballManagementSystem.abstracts
         }
 
 
-        public virtual void ShowView()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract void ShowView();
 
-        public virtual Form GetForm()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract Form GetForm();
     }
 }

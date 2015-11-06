@@ -255,6 +255,10 @@ namespace BasketballManagementSystem.bmForm.input
 
         public event Action FormBoxScoreOpenEvent;
 
+        public event Action FormCentralityAnalyzeOpenEvent;
+
+        public event Action FormClubEditOpenEvent;
+
         /// <summary>
         /// データ変更イベントを投げる
         /// </summary>
@@ -442,6 +446,22 @@ namespace BasketballManagementSystem.bmForm.input
             if (this.FormBoxScoreOpenEvent != null)
             {
                 this.FormBoxScoreOpenEvent();
+            }
+        }
+
+        private void FormCentralityAnalyzeOpenEventThrow()
+        {
+            if (this.FormCentralityAnalyzeOpenEvent != null)
+            {
+                this.FormCentralityAnalyzeOpenEvent();
+            }
+        }
+
+        private void FormClubEditOpenEventThrow()
+        {
+            if (this.FormClubEditOpenEvent != null)
+            {
+                this.FormClubEditOpenEvent();
             }
         }
 
@@ -1271,14 +1291,12 @@ namespace BasketballManagementSystem.bmForm.input
 
         private void clubMake_Click(object sender, EventArgs e)
         {
-            FormClubEdit f = new FormClubEdit();
-            f.Show();
+            this.FormClubEditOpenEventThrow();
         }
 
         private void CentralityAnalyzeItem_Click(object sender, EventArgs e)
         {
-            FormCentralityAnalyze f = new FormCentralityAnalyze();
-            f.Show();
+            this.FormCentralityAnalyzeOpenEventThrow();
         }
 
         /****************************************************************************************/

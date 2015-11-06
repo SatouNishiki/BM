@@ -129,5 +129,7 @@ namespace BasketballManagementSystem.interfaces.input
         event Action FormActionPointGraphOpenEvent;
 
         event Action FormBoxScoreOpenEvent;
+
+        event Action FormCentralityAnalyzeOpenEvent;
     }
 }

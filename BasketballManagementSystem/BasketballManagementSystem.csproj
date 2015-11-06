@@ -82,8 +82,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="abstracts\AbstractModel.cs" />
     <Compile Include="abstracts\AbstractPresenter.cs" />
-    <Compile Include="baseClass\actionPoint\ActionPointAnalyze.cs" />
+    <Compile Include="baseClass\actionPoint\ActionPointAnalyzer.cs" />
     <Compile Include="baseClass\actionPoint\ActionPointProvider.cs" />
     <Compile Include="baseClass\action\ActionListConverter.cs" />
     <Compile Include="baseClass\action\FreeThrowMiss.cs" />
@@ -144,18 +145,22 @@
     </Compile>
     <Compile Include="bmForm\boxScore\PlayerInfomationModel.cs" />
     <Compile Include="bmForm\boxScore\RunningScoreView.cs" />
-    <Compile Include="bmForm\centralityAnalyze\FormCentralityAnalyze.cs">
+    <Compile Include="bmForm\centralityAnalyze\FormCentralityAnalyzeView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bmForm\centralityAnalyze\FormCentralityAnalyze.Designer.cs">
-      <DependentUpon>FormCentralityAnalyze.cs</DependentUpon>
+    <Compile Include="bmForm\centralityAnalyze\FormCentralityAnalyzeView.Designer.cs">
+      <DependentUpon>FormCentralityAnalyzeView.cs</DependentUpon>
     </Compile>
-    <Compile Include="bmForm\clubEdit\FormClubEdit.cs">
+    <Compile Include="bmForm\centralityAnalyze\FormCentralityAnalyzeModel.cs" />
+    <Compile Include="bmForm\centralityAnalyze\FormCentralityAnalyzePresenter.cs" />
+    <Compile Include="bmForm\clubEdit\FormClubEditView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bmForm\clubEdit\FormClubEdit.Designer.cs">
-      <DependentUpon>FormClubEdit.cs</DependentUpon>
+    <Compile Include="bmForm\clubEdit\FormClubEditView.Designer.cs">
+      <DependentUpon>FormClubEditView.cs</DependentUpon>
     </Compile>
+    <Compile Include="bmForm\clubEdit\FormClubEditModel.cs" />
+    <Compile Include="bmForm\clubEdit\FormClubEditPresenter.cs" />
     <Compile Include="bmForm\gameDataEdit\EditForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -243,11 +248,15 @@
     <Compile Include="factory\FormAcitonPointGraphFactory.cs" />
     <Compile Include="factory\FormActionPointEditFactory.cs" />
     <Compile Include="factory\FormBoxScoreFactory.cs" />
+    <Compile Include="factory\FormCentralityAnalyzeFactory.cs" />
+    <Compile Include="factory\FormClubEditFactory.cs" />
     <Compile Include="factory\FormFactory.cs" />
     <Compile Include="factory\FormInputFactory.cs" />
     <Compile Include="interfaces\actionPointEdit\IActionPointEditView.cs" />
     <Compile Include="interfaces\actionPointGraph\IActionPointGraphView.cs" />
     <Compile Include="interfaces\boxScore\IBoxScoreView.cs" />
+    <Compile Include="interfaces\centralityAnalyze\ICentralityAnalyzeView.cs" />
+    <Compile Include="interfaces\clubEdit\IClubEditView.cs" />
     <Compile Include="interfaces\ICommand.cs" />
     <Compile Include="interfaces\IHasForm.cs" />
     <Compile Include="interfaces\IModel.cs" />
@@ -283,14 +292,14 @@
     <EmbeddedResource Include="bmForm\boxScore\FormBoxScoreView.resx">
       <DependentUpon>FormBoxScoreView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bmForm\centralityAnalyze\FormCentralityAnalyze.resx">
-      <DependentUpon>FormCentralityAnalyze.cs</DependentUpon>
+    <EmbeddedResource Include="bmForm\centralityAnalyze\FormCentralityAnalyzeView.resx">
+      <DependentUpon>FormCentralityAnalyzeView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bmForm\clubEdit\FormClubEdit.ja.resx">
-      <DependentUpon>FormClubEdit.cs</DependentUpon>
+    <EmbeddedResource Include="bmForm\clubEdit\FormClubEditView.ja.resx">
+      <DependentUpon>FormClubEditView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bmForm\clubEdit\FormClubEdit.resx">
-      <DependentUpon>FormClubEdit.cs</DependentUpon>
+    <EmbeddedResource Include="bmForm\clubEdit\FormClubEditView.resx">
+      <DependentUpon>FormClubEditView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="bmForm\gameDataEdit\EditForm.ja.resx">
       <DependentUpon>EditForm.cs</DependentUpon>
