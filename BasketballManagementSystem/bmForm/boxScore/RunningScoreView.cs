@@ -193,8 +193,6 @@ namespace BasketballManagementSystem.bmForm.boxScore
 
         }
 
-        public event events.DataInputEventHandler DataInputEvent;
-
         public abstracts.AbstractPresenter Presenter
         {
             get
@@ -206,6 +204,9 @@ namespace BasketballManagementSystem.bmForm.boxScore
                 throw new NotImplementedException();
             }
         }
+
+        public event events.DataInputEventHandler DataInputEvent;
+
         private void DataChangeEventThrow(string name, object value)
         {
             if (this.DataInputEvent != null)

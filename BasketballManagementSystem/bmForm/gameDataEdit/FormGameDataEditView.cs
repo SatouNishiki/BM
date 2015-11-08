@@ -14,18 +14,21 @@ using System.IO;
 using BasketballManagementSystem.baseClass.player;
 using BasketballManagementSystem.baseClass.action;
 using System.Collections;
+using BasketballManagementSystem.interfaces;
 
 namespace BasketballManagementSystem.bmForm.gameDataEdit
 {
-    public partial class EditForm : Form
+    public partial class FormGameDataEditView : Form, IView
     {
-        private Game game;
-        
-        public EditForm()
+        public FormGameDataEditView()
         {
             InitializeComponent();
 
-            game = SaveDataManager.GetInstance().GetGame();
+        }
+
+        public void Init()
+        {
+            Game game = (Game)this.Presenter.GetModelProperty("Game");
 
             PlayerSelectCombo.Items.Add("AllPlayer");
 
@@ -44,12 +47,12 @@ namespace BasketballManagementSystem.bmForm.gameDataEdit
                 ActionSelectConbo.Items.Add(s);
             }
 
-            if(PlayerSelectCombo.Items.Count != 0)
-            PlayerSelectCombo.SelectedIndex = 0;
+            if (PlayerSelectCombo.Items.Count != 0)
+                PlayerSelectCombo.SelectedIndex = 0;
 
-            if(ActionSelectConbo.Items.Count != 0)
-            ActionSelectConbo.SelectedIndex = 0;
-            
+            if (ActionSelectConbo.Items.Count != 0)
+                ActionSelectConbo.SelectedIndex = 0;
+
 
             List<Player> l = new List<Player>();
 
@@ -57,7 +60,6 @@ namespace BasketballManagementSystem.bmForm.gameDataEdit
             l.AddRange(game.OppentTeam.TeamMember);
 
             PlayerInfoGridView.DataSource = l;
-
         }
 
         private void ActionSelectConbo_SelectedIndexChanged(object sender, EventArgs e)
@@ -97,6 +99,8 @@ namespace BasketballManagementSystem.bmForm.gameDataEdit
 
         private void gameDataSave_Click(object sender, EventArgs e)
         {
+            Game game = (Game)this.Presenter.GetModelProperty("Game");
+
             List<Player> l = (List<Player>)PlayerInfoGridView.DataSource;
 
             game.MyTeam.CortMember.Clear();
@@ -161,6 +165,29 @@ namespace BasketballManagementSystem.bmForm.gameDataEdit
             fp.ShowPrintPreview(this);
         }
 
-       
+
+        private abstracts.AbstractPresenter presenter;
+
+        public abstracts.AbstractPresenter Presenter
+        {
+            get
+            {
+                return this.presenter;
+            }
+            set
+            {
+                this.presenter = value;
+            }
+        }
+
+        public event events.DataInputEventHandler DataInputEvent;
+
+        private void DataChangeEventThrow(string name, object value)
+        {
+            if (this.DataInputEvent != null)
+            {
+                this.DataInputEvent(this, new events.DataInputEventArgs(name, value));
+            }
+        }
     }
 }

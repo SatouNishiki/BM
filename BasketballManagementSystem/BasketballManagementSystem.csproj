@@ -161,12 +161,14 @@
     </Compile>
     <Compile Include="bmForm\clubEdit\FormClubEditModel.cs" />
     <Compile Include="bmForm\clubEdit\FormClubEditPresenter.cs" />
-    <Compile Include="bmForm\gameDataEdit\EditForm.cs">
+    <Compile Include="bmForm\gameDataEdit\FormGameDataEditView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bmForm\gameDataEdit\EditForm.Designer.cs">
-      <DependentUpon>EditForm.cs</DependentUpon>
+    <Compile Include="bmForm\gameDataEdit\FormGameDataEditView.Designer.cs">
+      <DependentUpon>FormGameDataEditView.cs</DependentUpon>
     </Compile>
+    <Compile Include="bmForm\gameDataEdit\FormGameDataEditModel.cs" />
+    <Compile Include="bmForm\gameDataEdit\FormGameDataEditPresenter.cs" />
     <Compile Include="bmForm\graphScore\FormGraphScore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +253,7 @@
     <Compile Include="factory\FormCentralityAnalyzeFactory.cs" />
     <Compile Include="factory\FormClubEditFactory.cs" />
     <Compile Include="factory\FormFactory.cs" />
+    <Compile Include="factory\FormGameDataEditFactory.cs" />
     <Compile Include="factory\FormInputFactory.cs" />
     <Compile Include="interfaces\actionPointEdit\IActionPointEditView.cs" />
     <Compile Include="interfaces\actionPointGraph\IActionPointGraphView.cs" />
@@ -301,11 +304,11 @@
     <EmbeddedResource Include="bmForm\clubEdit\FormClubEditView.resx">
       <DependentUpon>FormClubEditView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bmForm\gameDataEdit\EditForm.ja.resx">
-      <DependentUpon>EditForm.cs</DependentUpon>
+    <EmbeddedResource Include="bmForm\gameDataEdit\FormGameDataEditView.ja.resx">
+      <DependentUpon>FormGameDataEditView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bmForm\gameDataEdit\EditForm.resx">
-      <DependentUpon>EditForm.cs</DependentUpon>
+    <EmbeddedResource Include="bmForm\gameDataEdit\FormGameDataEditView.resx">
+      <DependentUpon>FormGameDataEditView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="bmForm\graphScore\FormGraphScore.ja.resx">
       <DependentUpon>FormGraphScore.cs</DependentUpon>

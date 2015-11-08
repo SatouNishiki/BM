@@ -129,7 +129,6 @@ namespace BasketballManagementSystem.bmForm.centralityAnalyze
             SourceTextBox.Text = ((Player)this.Presenter.GetModelProperty("SourcePlayer")).ToString();
         }
 
-        public event events.DataInputEventHandler DataInputEvent;
 
         private abstracts.AbstractPresenter presenter;
 
@@ -145,6 +144,8 @@ namespace BasketballManagementSystem.bmForm.centralityAnalyze
             }
         }
 
+        public event events.DataInputEventHandler DataInputEvent;
+
         private void DataChangeEventThrow(string name, object value)
         {
             if (this.DataInputEvent != null)
@@ -152,5 +153,6 @@ namespace BasketballManagementSystem.bmForm.centralityAnalyze
                 this.DataInputEvent(this, new events.DataInputEventArgs(name, value));
             }
         }
+
     }
 }

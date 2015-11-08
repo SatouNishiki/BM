@@ -71,6 +71,14 @@ namespace BasketballManagementSystem.bmForm.input
             this.inputView.FormBoxScoreOpenEvent += inputView_FormBoxScoreOpenEvent;
             this.inputView.FormCentralityAnalyzeOpenEvent += inputView_FormCentralityAnalyzeOpenEvent;
             this.inputView.FormClubEditOpenEvent += inputView_FormClubEditOpenEvent;
+            this.inputView.FormGameDataEditOpenEvent += inputView_FormGameDataEditOpenEvent;
+        }
+
+        void inputView_FormGameDataEditOpenEvent()
+        {
+            FormFactory factory = new FormGameDataEditFactory();
+            AbstractPresenter presenter = factory.CreatePresenter();
+            presenter.ShowView();
         }
 
         void inputView_FormClubEditOpenEvent()

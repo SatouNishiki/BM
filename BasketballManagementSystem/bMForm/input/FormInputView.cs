@@ -259,6 +259,8 @@ namespace BasketballManagementSystem.bmForm.input
 
         public event Action FormClubEditOpenEvent;
 
+        public event Action FormGameDataEditOpenEvent;
+
         /// <summary>
         /// データ変更イベントを投げる
         /// </summary>
@@ -462,6 +464,14 @@ namespace BasketballManagementSystem.bmForm.input
             if (this.FormClubEditOpenEvent != null)
             {
                 this.FormClubEditOpenEvent();
+            }
+        }
+
+        private void FormGameDataEditOpenEventThrow()
+        {
+            if (this.FormGameDataEditOpenEvent != null)
+            {
+                this.FormGameDataEditOpenEvent();
             }
         }
 
@@ -1253,8 +1263,7 @@ namespace BasketballManagementSystem.bmForm.input
 
         private void dataEdit_Click(object sender, EventArgs e)
         {
-            EditForm ed = new EditForm();
-            ed.Show();
+            this.FormGameDataEditOpenEventThrow();
         }
 
         private void teamMake_Click(object sender, EventArgs e)

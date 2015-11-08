@@ -1019,7 +1019,6 @@ namespace BasketballManagementSystem.bmForm.boxScore
             fp.ShowPrintPreview(this);
         }
 
-        public event events.DataInputEventHandler DataInputEvent;
 
         private abstracts.AbstractPresenter presenter;
 
@@ -1034,6 +1033,10 @@ namespace BasketballManagementSystem.bmForm.boxScore
                 this.presenter = value;
             }
         }
+
+
+
+        public event events.DataInputEventHandler DataInputEvent;
 
         private void DataChangeEventThrow(string name, object value)
         {

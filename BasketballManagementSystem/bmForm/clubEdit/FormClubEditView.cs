@@ -29,9 +29,15 @@ namespace BasketballManagementSystem.bmForm.clubEdit
         public event Action ClubMemberEditDicisionEvent;
         public event Action FormClosingEvent;
         public event Action DeleteButtonClickEvent;
-
-
         public event events.DataInputEventHandler DataInputEvent;
+
+        private void DataChangeEventThrow(string name, object value)
+        {
+            if (this.DataInputEvent != null)
+            {
+                this.DataInputEvent(this, new events.DataInputEventArgs(name, value));
+            }
+        }
 
         private abstracts.AbstractPresenter presenter;
 
@@ -342,12 +348,5 @@ namespace BasketballManagementSystem.bmForm.clubEdit
         }
 
 
-        private void DataChangeEventThrow(string name, object value)
-        {
-            if (this.DataInputEvent != null)
-            {
-                this.DataInputEvent(this, new events.DataInputEventArgs(name, value));
-            }
-        }
     }
 }

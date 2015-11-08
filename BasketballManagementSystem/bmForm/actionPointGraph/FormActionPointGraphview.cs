@@ -30,8 +30,6 @@ namespace BasketballManagementSystem.bmForm.actionPointGraph
 
         }
 
-
-
         private void SelectedPlayerChangedEventThrow(Player selectedPlayer)
         {
             if (this.SelectedPlayerChangedEvent != null)
@@ -334,8 +332,6 @@ namespace BasketballManagementSystem.bmForm.actionPointGraph
             }
         }
 
-        public event events.DataInputEventHandler DataInputEvent;
-
         private abstracts.AbstractPresenter presenter;
         
         public abstracts.AbstractPresenter Presenter
@@ -361,14 +357,6 @@ namespace BasketballManagementSystem.bmForm.actionPointGraph
             OppentTeamName.Text = name;
         }
 
-        private void DataInputViewEventThrow(string name, object value)
-        {
-            if (this.DataInputEvent != null)
-            {
-                this.DataInputEvent(this, new events.DataInputEventArgs(name, value));
-            }
-        }
-
         private void FormActionPointGraphView_Load(object sender, EventArgs e)
         {
             game = (Game)this.Presenter.GetModelProperty("Game");
@@ -377,6 +365,16 @@ namespace BasketballManagementSystem.bmForm.actionPointGraph
             SetMyTeamName(game.MyTeam.Name);
             SetOppentListBox(game.OppentTeam.TeamMember);
             SetOppentTeamName(game.OppentTeam.Name);
+        }
+
+        public event events.DataInputEventHandler DataInputEvent;
+
+        private void DataChangeEventThrow(string name, object value)
+        {
+            if (this.DataInputEvent != null)
+            {
+                this.DataInputEvent(this, new events.DataInputEventArgs(name, value));
+            }
         }
     }
 }
