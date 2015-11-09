@@ -4,10 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasketballManagementSystem.interfaces
+namespace BasketballManagementSystem.interfaces.graphScore
 {
-    public interface ICommand
+    public interface IGraphScoreView : IView
     {
-        bool Execute();
+        void Init();
+
+
     }
 }

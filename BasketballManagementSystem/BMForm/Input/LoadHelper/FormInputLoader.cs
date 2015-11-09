@@ -26,7 +26,6 @@ namespace BasketballManagementSystem.bmForm.input.loadHelper
 
         public void LoadForm(FormInputModel fModel, FormInputView fView, Game game)
         {
-         //   fView.Game = game;
             fModel.Game = game;
             SaveDataManager.GetInstance().SetGame(game);
 

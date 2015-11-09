@@ -165,7 +165,9 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
 
                     //何のアクションを入力してほしいかを渡す
                     ICommand command = new ActionCommand(model, t, this.position);
+                    this.model.StackGameData();
                     command.Execute();
+                        
 
                 }
                 catch (Exception exc)

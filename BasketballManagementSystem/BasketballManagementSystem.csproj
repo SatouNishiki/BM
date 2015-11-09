@@ -169,12 +169,14 @@
     </Compile>
     <Compile Include="bmForm\gameDataEdit\FormGameDataEditModel.cs" />
     <Compile Include="bmForm\gameDataEdit\FormGameDataEditPresenter.cs" />
-    <Compile Include="bmForm\graphScore\FormGraphScore.cs">
+    <Compile Include="bmForm\graphScore\FormGraphScoreView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bmForm\graphScore\FormGraphScore.Designer.cs">
-      <DependentUpon>FormGraphScore.cs</DependentUpon>
+    <Compile Include="bmForm\graphScore\FormGraphScoreView.Designer.cs">
+      <DependentUpon>FormGraphScoreView.cs</DependentUpon>
     </Compile>
+    <Compile Include="bmForm\graphScore\FormGraphScoreModel.cs" />
+    <Compile Include="bmForm\graphScore\FormGraphScorePresenter.cs" />
     <Compile Include="bmForm\input\ConfigForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,12 +202,14 @@
     <Compile Include="bmForm\input\FormInputModel.cs" />
     <Compile Include="bmForm\input\language\CultureHelper.cs" />
     <Compile Include="bmForm\input\loadHelper\FormInputLoader.cs" />
-    <Compile Include="bmForm\playerData\PlayerData.cs">
+    <Compile Include="bmForm\playerData\FormPlayerDataPresenter.cs" />
+    <Compile Include="bmForm\playerData\FormPlayerDataView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="bmForm\playerData\PlayerData.Designer.cs">
-      <DependentUpon>PlayerData.cs</DependentUpon>
+    <Compile Include="bmForm\playerData\FormPlayerDataView.Designer.cs">
+      <DependentUpon>FormPlayerDataView.cs</DependentUpon>
     </Compile>
+    <Compile Include="bmForm\playerData\FormPlayerDataModel.cs" />
     <Compile Include="bmForm\popupForm\PopupForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,18 +258,23 @@
     <Compile Include="factory\FormClubEditFactory.cs" />
     <Compile Include="factory\FormFactory.cs" />
     <Compile Include="factory\FormGameDataEditFactory.cs" />
+    <Compile Include="factory\FormGraphScoreFactory.cs" />
     <Compile Include="factory\FormInputFactory.cs" />
+    <Compile Include="factory\FormPlayerDataFactory.cs" />
     <Compile Include="interfaces\actionPointEdit\IActionPointEditView.cs" />
     <Compile Include="interfaces\actionPointGraph\IActionPointGraphView.cs" />
     <Compile Include="interfaces\boxScore\IBoxScoreView.cs" />
     <Compile Include="interfaces\centralityAnalyze\ICentralityAnalyzeView.cs" />
     <Compile Include="interfaces\clubEdit\IClubEditView.cs" />
+    <Compile Include="interfaces\gameDataEdit\IGameDataEditView.cs" />
+    <Compile Include="interfaces\graphScore\IGraphScoreView.cs" />
     <Compile Include="interfaces\ICommand.cs" />
     <Compile Include="interfaces\IHasForm.cs" />
     <Compile Include="interfaces\IModel.cs" />
     <Compile Include="interfaces\input\IInputView.cs" />
     <Compile Include="interfaces\IPresenter.cs" />
     <Compile Include="interfaces\IView.cs" />
+    <Compile Include="interfaces\playerData\IPlayerDataView.cs" />
     <Compile Include="manager\FormPrinter.cs" />
     <Compile Include="manager\TeamManager.cs" />
     <Compile Include="manager\SaveDataManager.cs" />
@@ -310,11 +319,11 @@
     <EmbeddedResource Include="bmForm\gameDataEdit\FormGameDataEditView.resx">
       <DependentUpon>FormGameDataEditView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bmForm\graphScore\FormGraphScore.ja.resx">
-      <DependentUpon>FormGraphScore.cs</DependentUpon>
+    <EmbeddedResource Include="bmForm\graphScore\FormGraphScoreView.ja.resx">
+      <DependentUpon>FormGraphScoreView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bmForm\graphScore\FormGraphScore.resx">
-      <DependentUpon>FormGraphScore.cs</DependentUpon>
+    <EmbeddedResource Include="bmForm\graphScore\FormGraphScoreView.resx">
+      <DependentUpon>FormGraphScoreView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="bmForm\input\ConfigForm.resx">
       <DependentUpon>ConfigForm.cs</DependentUpon>
@@ -329,11 +338,11 @@
       <DependentUpon>FormInputView.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="bmForm\playerData\PlayerData.ja.resx">
-      <DependentUpon>PlayerData.cs</DependentUpon>
+    <EmbeddedResource Include="bmForm\playerData\FormPlayerDataView.ja.resx">
+      <DependentUpon>FormPlayerDataView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="bmForm\playerData\PlayerData.resx">
-      <DependentUpon>PlayerData.cs</DependentUpon>
+    <EmbeddedResource Include="bmForm\playerData\FormPlayerDataView.resx">
+      <DependentUpon>FormPlayerDataView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="bmForm\popupForm\PopupForm.resx">
       <DependentUpon>PopupForm.cs</DependentUpon>

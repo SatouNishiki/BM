@@ -72,6 +72,22 @@ namespace BasketballManagementSystem.bmForm.input
             this.inputView.FormCentralityAnalyzeOpenEvent += inputView_FormCentralityAnalyzeOpenEvent;
             this.inputView.FormClubEditOpenEvent += inputView_FormClubEditOpenEvent;
             this.inputView.FormGameDataEditOpenEvent += inputView_FormGameDataEditOpenEvent;
+            this.inputView.FormGraphScoreOpenEvent += inputView_FormGraphScoreOpenEvent;
+            this.inputView.FormPlayerDataOpenEvent += inputView_FormPlayerDataOpenEvent;
+        }
+
+        void inputView_FormPlayerDataOpenEvent()
+        {
+            FormFactory factory = new FormPlayerDataFactory();
+            abstracts.AbstractPresenter presenter = factory.CreatePresenter();
+            presenter.ShowView();
+        }
+
+        void inputView_FormGraphScoreOpenEvent()
+        {
+            FormFactory factory = new FormGraphScoreFactory();
+            abstracts.AbstractPresenter presenter = factory.CreatePresenter();
+            presenter.ShowView();
         }
 
         void inputView_FormGameDataEditOpenEvent()
@@ -118,14 +134,15 @@ namespace BasketballManagementSystem.bmForm.input
 
         void inputView_CortClickEvent(System.Windows.Forms.PictureBox arg1, EventArgs arg2)
         {
-            
             this.cortEventHelper.OnCortClick(this.inputView, this.inputModel, arg1, arg2);
         }
         
         void inputView_ActionClickEvent(Type obj)
         {
+            this.inputModel.StackGameData();
             ICommand command = new ActionCommand(this.inputModel, obj);
             command.Execute();
+                
         }
 
         void inputView_GameCommentEvent(string obj)

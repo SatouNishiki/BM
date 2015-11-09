@@ -18,24 +18,22 @@ using BMErrorLibrary;
 namespace BasketballManagementSystem.bmForm.graphScore
 {
     //TODO: 絶望的に汚い
-
-    public partial class FormGraphScore : Form
+    public partial class FormGraphScoreView : Form, interfaces.graphScore.IGraphScoreView
     {
         /// <summary>
         /// ゲームデータ格納用変数
         /// </summary>
-        private Game game = new Game();
-
-        private SaveDataManager saveDataManager = SaveDataManager.GetInstance();
+        private Game game;
 
 
-        public FormGraphScore()
+        public FormGraphScoreView()
         {
             InitializeComponent();
-           
+        }
 
-            //このフォームが呼び出されたときにSaveDataをもらう
-            game = saveDataManager.GetGame();
+        public void Init()
+        {
+            this.game = (Game)this.Presenter.GetModelProperty("Game");
 
             PlotAllClear();
 
@@ -111,7 +109,6 @@ namespace BasketballManagementSystem.bmForm.graphScore
             Quarter4Chart.Series["OppentAllPoint"].Points.AddXY(0, 0);
             QuarterAllChart.Series["OppentAllPoint"].Points.AddXY(0, 0);
 
-            
 
             int point = 0;
 
@@ -251,6 +248,11 @@ namespace BasketballManagementSystem.bmForm.graphScore
                 
             }
 
+            //グラフの最後まで線を伸ばす
+            List<RelationPointAction> l = ActionListConverter.ToRelationPointActionList(game.MyTeam.GetQuarterAction(1));
+            if (l.Count > 0)
+                Quarter1Chart.Series["SelectPlayerAllPoint"].Points.AddXY(l[l.Count - 1].ElapsedTime.TotalSeconds, point);
+
             point = 0;
 
             foreach (var r in ActionListConverter.ToRelationPointActionList(p.GetActionList(p, 2)))
@@ -260,6 +262,10 @@ namespace BasketballManagementSystem.bmForm.graphScore
                 Quarter2Chart.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds, point);
 
             }
+
+            l = ActionListConverter.ToRelationPointActionList(game.MyTeam.GetQuarterAction(2));
+            if (l.Count > 0)
+                Quarter2Chart.Series["SelectPlayerAllPoint"].Points.AddXY(l[l.Count - 1].ElapsedTime.TotalSeconds, point);
 
             point = 0;
 
@@ -271,6 +277,10 @@ namespace BasketballManagementSystem.bmForm.graphScore
 
             }
 
+            l = ActionListConverter.ToRelationPointActionList(game.MyTeam.GetQuarterAction(3));
+            if (l.Count > 0)
+                Quarter3Chart.Series["SelectPlayerAllPoint"].Points.AddXY(l[l.Count - 1].ElapsedTime.TotalSeconds, point);
+
             point = 0;
 
             foreach (var r in ActionListConverter.ToRelationPointActionList(p.GetActionList(p, 4)))
@@ -280,7 +290,10 @@ namespace BasketballManagementSystem.bmForm.graphScore
                 Quarter4Chart.Series["SelectPlayerAllPoint"].Points.AddXY(r.ElapsedTime.TotalSeconds,  point);
             }
 
-             point = 0;
+            l = ActionListConverter.ToRelationPointActionList(game.MyTeam.GetQuarterAction(4));
+            if (l.Count > 0)
+                Quarter4Chart.Series["SelectPlayerAllPoint"].Points.AddXY(l[l.Count - 1].ElapsedTime.TotalSeconds, point);
+            point = 0;
 
             foreach (var r in ActionListConverter.ToRelationPointActionList(p.GetActionList(p)))
             {
@@ -288,6 +301,10 @@ namespace BasketballManagementSystem.bmForm.graphScore
 
                 QuarterAllChart.Series["SelectPlayerAllPoint"].Points.AddXY((int)((r.ActionDate - game.StartTime).TotalSeconds), point);
             }
+
+            l = ActionListConverter.ToRelationPointActionList(game.MyTeam.GetActionAll());
+            if (l.Count > 0)
+                QuarterAllChart.Series["SelectPlayerAllPoint"].Points.AddXY(l[l.Count - 1].ElapsedTime.TotalSeconds, point);
 
         }
 
@@ -314,6 +331,30 @@ namespace BasketballManagementSystem.bmForm.graphScore
             fp.ShowPrintPreview(this);
         }
 
-     
+
+
+        public event events.DataInputEventHandler DataInputEvent;
+
+        private void DataChangeEventThrow(string name, object value)
+        {
+            if (this.DataInputEvent != null)
+            {
+                this.DataInputEvent(this, new events.DataInputEventArgs(name, value));
+            }
+        }
+
+        abstracts.AbstractPresenter presenter;
+
+        public abstracts.AbstractPresenter Presenter
+        {
+            get
+            {
+                return this.presenter;
+            }
+            set
+            {
+                this.presenter = value;
+            }
+        }
     }
 }

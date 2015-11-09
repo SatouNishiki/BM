@@ -14,11 +14,11 @@ using System.IO;
 using BasketballManagementSystem.baseClass.player;
 using BasketballManagementSystem.baseClass.action;
 using System.Collections;
-using BasketballManagementSystem.interfaces;
+using BasketballManagementSystem.interfaces.gameDataEdit;
 
 namespace BasketballManagementSystem.bmForm.gameDataEdit
 {
-    public partial class FormGameDataEditView : Form, IView
+    public partial class FormGameDataEditView : Form, IGameDataEditView
     {
         public FormGameDataEditView()
         {

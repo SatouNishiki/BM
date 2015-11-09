@@ -1,6 +1,6 @@
 ﻿namespace BasketballManagementSystem.bmForm.playerData
 {
-    partial class PlayerData
+    partial class FormPlayerDataView
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PlayerData));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPlayerDataView));
             this.MyTeamListBox = new System.Windows.Forms.ListBox();
             this.OppentTeamListBox = new System.Windows.Forms.ListBox();
             this.SelectPlayer = new System.Windows.Forms.Label();

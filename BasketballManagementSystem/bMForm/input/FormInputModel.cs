@@ -578,5 +578,11 @@ namespace BasketballManagementSystem.bmForm.input
         {
             this.Game.Comment = comment;
         }
+
+        public void StackGameData()
+        {
+            GameDataStack.Push(Game.CloneDeep());
+            RedoGameDataStack.Clear();
+        }
     }
 }

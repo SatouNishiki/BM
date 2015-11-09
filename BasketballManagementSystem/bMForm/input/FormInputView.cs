@@ -261,6 +261,10 @@ namespace BasketballManagementSystem.bmForm.input
 
         public event Action FormGameDataEditOpenEvent;
 
+        public event Action FormGraphScoreOpenEvent;
+
+        public event Action FormPlayerDataOpenEvent;
+
         /// <summary>
         /// データ変更イベントを投げる
         /// </summary>
@@ -472,6 +476,22 @@ namespace BasketballManagementSystem.bmForm.input
             if (this.FormGameDataEditOpenEvent != null)
             {
                 this.FormGameDataEditOpenEvent();
+            }
+        }
+
+        private void FormGraphScoreOpenEventThrow()
+        {
+            if (this.FormGraphScoreOpenEvent != null)
+            {
+                this.FormGraphScoreOpenEvent();
+            }
+        }
+
+        private void FormPlayerDataOpenEventThrow()
+        {
+            if (this.FormPlayerDataOpenEvent != null)
+            {
+                this.FormPlayerDataOpenEvent();
             }
         }
 
@@ -1232,8 +1252,7 @@ namespace BasketballManagementSystem.bmForm.input
 
         private void GoGraphScorePage_Click(object sender, EventArgs e)
         {
-            FormGraphScore fgs = new FormGraphScore();
-            fgs.Show();
+            this.FormGraphScoreOpenEventThrow();
         }
 
         private void GoBoxScorePage_Click(object sender, EventArgs e)
@@ -1243,8 +1262,7 @@ namespace BasketballManagementSystem.bmForm.input
 
         private void GoPlayerData_Click(object sender, EventArgs e)
         {
-            playerData.PlayerData pd = new playerData.PlayerData();
-            pd.Show();
+            this.FormPlayerDataOpenEventThrow();
         }
 
         private void GoTacticks2D_Click(object sender, EventArgs e)

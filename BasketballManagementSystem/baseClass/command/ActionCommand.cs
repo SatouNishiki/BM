@@ -58,12 +58,12 @@ namespace BasketballManagementSystem.baseClass.command
             this.Position = p;
         }
 
-        protected void ActionInput(Type type)
+        protected bool ActionInput(Type type)
         {
 
             object obj = Activator.CreateInstance(type);
 
-            if (!(obj is ActionBase)) return;
+            if (!(obj is ActionBase)) return false;
 
             if (Player.IsMyTeam)
             {
@@ -74,10 +74,10 @@ namespace BasketballManagementSystem.baseClass.command
                 this.Team = this.Model.OppentTeam;
             }
 
-            this.ActionInputHelper(obj);
+            return this.ActionInputHelper(obj);
         }
 
-        private void ActionInputHelper(object action)
+        private bool ActionInputHelper(object action)
         {
             //選手リストの中で現在選択中の選手がどの場所にあるか(リストの何番目の要素か)
             int point = 0;
@@ -85,7 +85,7 @@ namespace BasketballManagementSystem.baseClass.command
             //選手の場所を確定
             point = this.Team.TeamMember.IndexOf(this.Player);
 
-            if (point < 0) return;
+            if (point < 0) return false;
 
             Type t1 = action.GetType();
 
@@ -193,7 +193,7 @@ namespace BasketballManagementSystem.baseClass.command
 
             string actionName = "";
 
-            if (propInfo == null) return;
+            if (propInfo == null) return false;
 
             actionName = (string)propInfo.GetValue(action, null);
 
@@ -218,13 +218,16 @@ namespace BasketballManagementSystem.baseClass.command
             catch (Exception exc)
             {
                 BMError.ErrorMessageOutput(exc.Message, true);
+                return false;
             }
+
+            return true;
 
         }
 
-        public void Execute()
+        public bool Execute()
         {
-            this.ActionInput(this.type);
+            return this.ActionInput(this.type);
         }
     }
 }

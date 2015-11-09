@@ -15,15 +15,22 @@ using Mathmatical;
 
 namespace BasketballManagementSystem.bmForm.playerData
 {
-    public partial class PlayerData : Form
+    public partial class FormPlayerDataView : Form, interfaces.playerData.IPlayerDataView
     {
-        private Game game = SaveDataManager.GetInstance().GetGame();
+        private Game game;
+        private Player selectedPlayer;
 
-        private Player selectedPlayer = new Player();
-
-        public PlayerData()
+        public FormPlayerDataView()
         {
             InitializeComponent();
+
+        }
+
+        public void Init()
+        {
+            this.game = (Game)this.presenter.GetModelProperty("Game");
+
+            this.selectedPlayer = (Player)this.presenter.GetModelProperty("SelectedPlayer");
 
             TeamListInit();
 
@@ -237,6 +244,30 @@ namespace BasketballManagementSystem.bmForm.playerData
         {
             FormPrinter fp = new FormPrinter();
             fp.ShowPrintPreview(this);
+        }
+
+        public event events.DataInputEventHandler DataInputEvent;
+
+        private abstracts.AbstractPresenter presenter;
+       
+        public abstracts.AbstractPresenter Presenter
+        {
+            get
+            {
+                return this.presenter;
+            }
+            set
+            {
+                this.presenter = value;
+            }
+        }
+
+        private void DataChangeEventThrow(string name, object value)
+        {
+            if (this.DataInputEvent != null)
+            {
+                this.DataInputEvent(this, new events.DataInputEventArgs(name, value));
+            }
         }
     }
 }

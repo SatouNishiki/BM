@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasketballManagementSystem.interfaces
+namespace BasketballManagementSystem.interfaces.playerData
 {
-    public interface ICommand
+    public interface IPlayerDataView : IView
     {
-        bool Execute();
+        void Init();
     }
 }

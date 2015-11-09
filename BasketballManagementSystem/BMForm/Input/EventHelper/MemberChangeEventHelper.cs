@@ -38,22 +38,29 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
 
             if (form.MyCortTeamListBox.ExchangeSelectedItem(form.MyOutTeamListBox))
             {
+                form.StackGameData();
+
                 MemberChange m = new MemberChange();
 
                 foreach (Player p in obj1)
                 {
                     m.ChangedCortMembers.Add(p);
+
+                    form.MyTeam.CortMember.Remove(p);
+                    form.MyTeam.OutMember.Add(p);
                 }
 
                 foreach (Player p in obj2)
                 {
                     m.ChangedOutMembers.Add(p);
+                    form.MyTeam.OutMember.Remove(p);
+                    form.MyTeam.CortMember.Add(p);
                 }
 
+               
                 m.ChengedMemberTime = DateTime.Now;
                 m.RemainingTime = form.QuarterTimer.remainingTime;
                 m.Quarter = form.Quarter;
-                form.StackGameData();
                 form.Game.MyTeam.MemberChange.Add(m);
             }
 
@@ -65,22 +72,27 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
 
             if (form.OppentCortTeamListBox.ExchangeSelectedItem(form.OppentOutTeamListBox))
             {
+
+                form.StackGameData();
                 MemberChange m = new MemberChange();
 
                 foreach (Player p in obj1)
                 {
                     m.ChangedCortMembers.Add(p);
+                    form.OppentTeam.CortMember.Remove(p);
+                    form.OppentTeam.OutMember.Add(p);
                 }
 
                 foreach (Player p in obj2)
                 {
                     m.ChangedOutMembers.Add(p);
+                    form.OppentTeam.CortMember.Remove(p);
+                    form.OppentTeam.OutMember.Add(p);
                 }
 
                 m.ChengedMemberTime = DateTime.Now;
                 m.RemainingTime = form.QuarterTimer.remainingTime;
                 m.Quarter = form.Quarter;
-                form.StackGameData();
                 form.Game.OppentTeam.MemberChange.Add(m);
             }
 
