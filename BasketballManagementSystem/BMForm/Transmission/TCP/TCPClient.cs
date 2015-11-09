@@ -177,25 +177,25 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
                         else if (header == "GAME")
                         {
                             BinaryFormatter b = new BinaryFormatter();
-                            
 
-                            MemoryStream m = new MemoryStream(body);
-                            m.Seek(0, SeekOrigin.Begin);
-                            Game g = (Game)b.Deserialize(m);
+                            using (MemoryStream m = new MemoryStream(body))
+                            {
+                                m.Seek(0, SeekOrigin.Begin);
+                                Game g = (Game)b.Deserialize(m);
 
-                            if (g.Equals(sendGame))
-                            {
-                                readFlag = true;
-                            }
-                            else
-                            {
-                                if (readFlag && !g.Equals(SaveDataManager.GetInstance().GetGame()))
+                                if (g.Equals(sendGame))
                                 {
-                                    instance.LoadGame(g);
+                                    readFlag = true;
                                 }
-                                
+                                else
+                                {
+                                    if (readFlag && !g.Equals(SaveDataManager.GetInstance().GetGame()))
+                                    {
+                                        instance.LoadGame(g);
+                                    }
+
+                                }
                             }
-                            m.Close();
                         }
                         else if (header == "PASS")
                         {
@@ -240,7 +240,9 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
                     this.LogTextBox.BeginInvoke(new WriteTextDelegate(writeLog)
                             , new object[] { "受信エラー　　" + ex.Message });
                     BMError.ErrorMessageOutput(ex.Message, false);
-                    return;
+
+                    //TODO:読み込みエラーが起きても通信は切断しないようにしてるけど再送要求に変えたり通信をリセットしたり他にやり方あるかも
+                 //   return;
                 }
             }
         }

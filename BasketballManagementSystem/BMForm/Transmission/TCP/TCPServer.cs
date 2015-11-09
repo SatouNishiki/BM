@@ -562,6 +562,8 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
                     if (header == "TEXT")
                     {
                         byte[] uniBytes;
+
+
                         //'S-Jisからユニコードに変換
                         uniBytes = Encoding.Convert(ecSjis, ecUni, body);
 
@@ -571,6 +573,7 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
                         //メインスレッドのテキストボックスに書き込む
                         fomServer.Invoke(new WriteTextDelegate(fomServer.WriteReadText)
                                            , new object[] { this, getText });
+
 
                     }
                     else if (header == "GAME")
