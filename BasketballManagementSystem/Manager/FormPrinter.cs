@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing;
 
-namespace BasketballManagementSystem.Manager
+namespace BasketballManagementSystem.manager
 {
     public class FormPrinter
     {

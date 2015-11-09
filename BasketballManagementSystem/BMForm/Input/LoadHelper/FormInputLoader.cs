@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BasketballManagementSystem.BaseClass.Game;
-using BasketballManagementSystem.BaseClass.Player;
-using BasketballManagementSystem.Manager;
+using BasketballManagementSystem.baseClass.game;
+using BasketballManagementSystem.baseClass.player;
+using BasketballManagementSystem.manager;
 
-namespace BasketballManagementSystem.BMForm.Input.LoadHelper
+namespace BasketballManagementSystem.bmForm.input.loadHelper
 {
     public class FormInputLoader
     {
@@ -22,16 +22,16 @@ namespace BasketballManagementSystem.BMForm.Input.LoadHelper
             return instance;
         }
 
-        delegate void SetListBoxDelegate(FormInput f, Game game);
+        delegate void SetListBoxDelegate(FormInputView f, Game game);
 
-        public void LoadForm(FormInput f, Game game)
+        public void LoadForm(FormInputModel fModel, FormInputView fView, Game game)
         {
-            f.Game = game;
+            fModel.Game = game;
             SaveDataManager.GetInstance().SetGame(game);
 
 
             //別スレッドからコントロールを操作するための努力
-            if (f.MyCortTeamListBox.InvokeRequired)
+            if (fView.MyCortTeamListBox.InvokeRequired)
             {
                 SetListBoxDelegate sbd = (fi, g) =>
                 {
@@ -80,57 +80,57 @@ namespace BasketballManagementSystem.BMForm.Input.LoadHelper
                     fi.OppentOutTeamListBox.Enabled = true;
                 };
 
-                f.Invoke(sbd, new object[] { f, game });
+                fView.Invoke(sbd, new object[] { fView, game });
             }
             else
             {
-                f.MyCortTeamListBox.Enabled = false;
+                fView.MyCortTeamListBox.Enabled = false;
 
                 
-                f.MyCortTeamListBox.Items.Clear();
+                fView.MyCortTeamListBox.Items.Clear();
                 foreach (Player p in game.MyTeam.CortMember)
                 {
-                    f.MyCortTeamListBox.Items.Add(p);
+                    fView.MyCortTeamListBox.Items.Add(p);
                 }
 
-                SelectedIndexClick(f);
-                f.MyCortTeamListBox.Enabled = true;
+                SelectedIndexClick(fView);
+                fView.MyCortTeamListBox.Enabled = true;
 
 
-                f.MyOutTeamListBox.Enabled = false;
+                fView.MyOutTeamListBox.Enabled = false;
 
-                f.MyOutTeamListBox.Items.Clear();
+                fView.MyOutTeamListBox.Items.Clear();
                 foreach (Player p in game.MyTeam.OutMember)
                 {
-                    f.MyOutTeamListBox.Items.Add(p);
+                    fView.MyOutTeamListBox.Items.Add(p);
                 }
 
-                SelectedIndexClick(f);
-                f.MyOutTeamListBox.Enabled = true;
+                SelectedIndexClick(fView);
+                fView.MyOutTeamListBox.Enabled = true;
 
 
-                f.OppentCortTeamListBox.Enabled = false;
+                fView.OppentCortTeamListBox.Enabled = false;
 
-                f.OppentCortTeamListBox.Items.Clear();
+                fView.OppentCortTeamListBox.Items.Clear();
                 foreach (Player p in game.OppentTeam.CortMember)
                 {
-                    f.OppentCortTeamListBox.Items.Add(p);
+                    fView.OppentCortTeamListBox.Items.Add(p);
                 }
 
-                SelectedIndexClick(f);
-                f.OppentCortTeamListBox.Enabled = true;
+                SelectedIndexClick(fView);
+                fView.OppentCortTeamListBox.Enabled = true;
 
 
-                f.OppentOutTeamListBox.Enabled = false;
+                fView.OppentOutTeamListBox.Enabled = false;
 
-                f.OppentOutTeamListBox.Items.Clear();
+                fView.OppentOutTeamListBox.Items.Clear();
                 foreach (Player p in game.OppentTeam.OutMember)
                 {
-                    f.OppentOutTeamListBox.Items.Add(p);
+                    fView.OppentOutTeamListBox.Items.Add(p);
                 }
 
-                SelectedIndexClick(f);
-                f.OppentOutTeamListBox.Enabled = true;
+                SelectedIndexClick(fView);
+                fView.OppentOutTeamListBox.Enabled = true;
                 
             }
         }
@@ -139,7 +139,7 @@ namespace BasketballManagementSystem.BMForm.Input.LoadHelper
         /// ロードイベント後にselectedIndexの再設定をはさむためのメソッド
         /// </summary>
         /// <param name="f"></param>
-        private void SelectedIndexClick(FormInput f)
+        private void SelectedIndexClick(FormInputView f)
         {
             int index = f.MyCortTeamListBox.Items.IndexOf(f.SelectedPlayer);
             f.MyCortTeamListBox.PerformIndexClick(index);

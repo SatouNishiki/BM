@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.BMForm.TeamMake
+﻿namespace BasketballManagementSystem.bmForm.teamMake
 {
     partial class TeamDataEdit
     {

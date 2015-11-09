@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using System.IO.Compression;
 
-namespace BasketballManagementSystem.BMForm.Transmission.Compression
+namespace BasketballManagementSystem.bmForm.Transmission.compression
 {
     public class Compressor
     {

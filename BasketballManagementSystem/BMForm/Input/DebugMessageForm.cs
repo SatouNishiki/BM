@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BasketballManagementSystem.BMForm.Input
+namespace BasketballManagementSystem.bmForm.input
 {
     public partial class DebugMessageForm : Form
     {
@@ -17,7 +17,7 @@ namespace BasketballManagementSystem.BMForm.Input
             InitializeComponent();
         }
 
-        public void addDebugMessage(string message)
+        public void AddDebugMessage(string message)
         {
             // 現在の日付と時刻を取得する
             DateTime dtNow = DateTime.Now;

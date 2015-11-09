@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace BasketballManagementSystem.BaseClass.TimeOut
+namespace BasketballManagementSystem.baseClass.timeOut
 {
     [Serializable]
     public class TimeOut

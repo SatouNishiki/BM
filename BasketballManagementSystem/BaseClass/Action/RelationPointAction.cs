@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using BasketballManagementSystem.BaseClass.Position;
+using BasketballManagementSystem.baseClass.position;
 
-namespace BasketballManagementSystem.BaseClass.Action
+namespace BasketballManagementSystem.baseClass.action
 {
     /// <summary>
     /// 得点に関係するアクションのクラス
@@ -20,11 +20,11 @@ namespace BasketballManagementSystem.BaseClass.Action
         /// <summary>
         /// このアクションが行われた場所
         /// </summary>
-        public Position.Position Position { get; set; }
+        public position.Position Position { get; set; }
 
         public RelationPointAction()
         {
-            Position = new Position.Position();
+            Position = new position.Position();
         }
 
         public override string ToString()

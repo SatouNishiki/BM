@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DragDropPictureBox;
 
-namespace BasketballManagementSystem.BMForm.StrategySimulation
+namespace BasketballManagementSystem.bmForm.strategySimulation
 {
     /// <summary>
     /// StrategySimulationで使われる戦術の1盤面をあらわすクラス

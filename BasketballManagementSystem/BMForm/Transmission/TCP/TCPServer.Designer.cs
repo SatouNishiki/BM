@@ -1,4 +1,4 @@
-﻿namespace BasketballManagementSystem.BMForm.Transmission.TCP
+﻿namespace BasketballManagementSystem.bmForm.Transmission.tcp
 {
     partial class TCPServer
     {

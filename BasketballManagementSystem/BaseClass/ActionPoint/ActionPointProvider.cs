@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Reflection;
 using BMErrorLibrary;
-using BasketballManagementSystem.BaseClass.Settings;
-using BasketballManagementSystem.BaseClass.Action;
+using BasketballManagementSystem.baseClass.settings;
+using BasketballManagementSystem.baseClass.action;
 
-namespace BasketballManagementSystem.BaseClass.ActionPoint
+namespace BasketballManagementSystem.baseClass.actionPoint
 {
     /// <summary>
     /// ActionPointの重みを定義しているクラス

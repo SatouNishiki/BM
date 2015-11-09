@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Drawing;
 
-namespace BasketballManagementSystem.BaseClass.Position
+namespace BasketballManagementSystem.baseClass.position
 {
     public class PositionConvert
     {
@@ -25,8 +25,10 @@ namespace BasketballManagementSystem.BaseClass.Position
         /// <param name="objectPoint">変換する対象のオブジェクトの座標(フォーム上の座標)</param>
         /// <param name="leftTop">変換する対象があったコートの左上の座標(フォーム上の座標)</param>
         /// <param name="rightDown">変換する対象があったコートの右下の座標(フォーム上の座標)</param>
+        /// <param name="isMyTeam">プレイヤー変数の持つチーム情報</param>
+        /// <param name="isCortChange">コートチェンジを行っているかどうか</param>
         /// <returns></returns>
-        public static Position ConvertToPosition(Point objectPoint, Point leftTop, Point rightDown)
+        public static Position ConvertToPosition(Point objectPoint, Point leftTop, Point rightDown, bool isMyTeam, bool isCortChange)
         {
             //フォーム上のコートの横幅、縦幅
             double formCortX = rightDown.X - leftTop.X;
@@ -43,6 +45,23 @@ namespace BasketballManagementSystem.BaseClass.Position
             //実際のコート上の相対座標
             double relativeRealX = relativeX / ratioX;
             double relativeRealY = relativeY / ratioY;
+
+            if (!isCortChange)
+            {
+                //コートの図で左に攻めてるチームなら
+                if (!isMyTeam)
+                {
+                    relativeRealX = CortX - relativeRealX;
+                }
+            }
+            else
+            {
+                //コートチェンジ以降に左に攻めてるチーム(コートチェンジ前は右に攻めてたチーム)なら
+                if (isMyTeam)
+                {
+                    relativeRealX = CortX - relativeRealX;
+                }
+            }
 
             return new Position(relativeRealX, relativeRealY);
         }

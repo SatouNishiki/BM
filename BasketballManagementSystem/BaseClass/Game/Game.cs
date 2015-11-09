@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BasketballManagementSystem.BaseClass.Player;
+using BasketballManagementSystem.baseClass.player;
 using System.Xml.Serialization;
-using BasketballManagementSystem.BaseClass.TimeOut;
+using BasketballManagementSystem.baseClass.timeOut;
 using Utility;
-using BasketballManagementSystem.BaseClass.Action;
+using BasketballManagementSystem.baseClass.action;
 
-namespace BasketballManagementSystem.BaseClass.Game
+namespace BasketballManagementSystem.baseClass.game
 {
     /// <summary>
     /// BMのデータを集約する全ゲームデータのクラス

@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ActionPointChart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="ActionPointChart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>482, 333</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ActionPointChart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ActionPointChart.Name" xml:space="preserve">
+    <value>ActionPointChart</value>
+  </data>
+  <data name="&gt;&gt;ActionPointChart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;ActionPointChart.Parent" xml:space="preserve">
+    <value>APRadarChart</value>
+  </data>
+  <data name="&gt;&gt;ActionPointChart.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MyTeamList.ItemHeight" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="MyTeamList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 77</value>
+  </data>
+  <data name="MyTeamList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 148</value>
+  </data>
+  <data name="MyTeamList.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;MyTeamList.Name" xml:space="preserve">
+    <value>MyTeamList</value>
+  </data>
+  <data name="&gt;&gt;MyTeamList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MyTeamList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MyTeamList.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="OppentTeamList.ItemHeight" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="OppentTeamList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 258</value>
+  </data>
+  <data name="OppentTeamList.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 148</value>
+  </data>
+  <data name="OppentTeamList.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamList.Name" xml:space="preserve">
+    <value>OppentTeamList</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamList.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamList.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamList.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="OppentTeamName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OppentTeamName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 243</value>
+  </data>
+  <data name="OppentTeamName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 12</value>
+  </data>
+  <data name="OppentTeamName.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="OppentTeamName.Text" xml:space="preserve">
+    <value>OppentTeamName</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamName.Name" xml:space="preserve">
+    <value>OppentTeamName</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;OppentTeamName.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="MyTeamName.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MyTeamName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 61</value>
+  </data>
+  <data name="MyTeamName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 12</value>
+  </data>
+  <data name="MyTeamName.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="MyTeamName.Text" xml:space="preserve">
+    <value>MyTeamName</value>
+  </data>
+  <data name="&gt;&gt;MyTeamName.Name" xml:space="preserve">
+    <value>MyTeamName</value>
+  </data>
+  <data name="&gt;&gt;MyTeamName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MyTeamName.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MyTeamName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="APRadarChart.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="APRadarChart.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="APRadarChart.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 339</value>
+  </data>
+  <data name="APRadarChart.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="APRadarChart.Text" xml:space="preserve">
+    <value>RadarChart</value>
+  </data>
+  <data name="&gt;&gt;APRadarChart.Name" xml:space="preserve">
+    <value>APRadarChart</value>
+  </data>
+  <data name="&gt;&gt;APRadarChart.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;APRadarChart.Parent" xml:space="preserve">
+    <value>ActionPointGraphTab</value>
+  </data>
+  <data name="&gt;&gt;APRadarChart.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ActionPointShitGraph.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ActionPointShitGraph.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 339</value>
+  </data>
+  <data name="ActionPointShitGraph.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ActionPointShitGraph.Text" xml:space="preserve">
+    <value>chart1</value>
+  </data>
+  <data name="&gt;&gt;ActionPointShitGraph.Name" xml:space="preserve">
+    <value>ActionPointShitGraph</value>
+  </data>
+  <data name="&gt;&gt;ActionPointShitGraph.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataVisualization.Charting.Chart, System.Windows.Forms.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35</value>
+  </data>
+  <data name="&gt;&gt;ActionPointShitGraph.Parent" xml:space="preserve">
+    <value>APShiftGraph</value>
+  </data>
+  <data name="&gt;&gt;ActionPointShitGraph.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="APShiftGraph.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="APShiftGraph.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="APShiftGraph.Size" type="System.Drawing.Size, System.Drawing">
+    <value>488, 339</value>
+  </data>
+  <data name="APShiftGraph.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="APShiftGraph.Text" xml:space="preserve">
+    <value>ShiftGraph</value>
+  </data>
+  <data name="&gt;&gt;APShiftGraph.Name" xml:space="preserve">
+    <value>APShiftGraph</value>
+  </data>
+  <data name="&gt;&gt;APShiftGraph.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;APShiftGraph.Parent" xml:space="preserve">
+    <value>ActionPointGraphTab</value>
+  </data>
+  <data name="&gt;&gt;APShiftGraph.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ActionPointGraphTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>179, 41</value>
+  </data>
+  <data name="ActionPointGraphTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>496, 365</value>
+  </data>
+  <data name="ActionPointGraphTab.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;ActionPointGraphTab.Name" xml:space="preserve">
+    <value>ActionPointGraphTab</value>
+  </data>
+  <data name="&gt;&gt;ActionPointGraphTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ActionPointGraphTab.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ActionPointGraphTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="MenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="PrintFormToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="PrintFormToolStripMenuItem.Text" xml:space="preserve">
+    <value>PrintForm</value>
+  </data>
+  <data name="PrintPreviewToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
+  </data>
+  <data name="PrintPreviewToolStripMenuItem.Text" xml:space="preserve">
+    <value>PrintPreview</value>
+  </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 22</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="MenuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>687, 26</value>
+  </data>
+  <data name="MenuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="MenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.Name" xml:space="preserve">
+    <value>MenuStrip</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>687, 415</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FormActionPointGraph</value>
+  </data>
+  <data name="&gt;&gt;FileToolStripMenuItem.Name" xml:space="preserve">
+    <value>FileToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;FileToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PrintFormToolStripMenuItem.Name" xml:space="preserve">
+    <value>PrintFormToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;PrintFormToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PrintPreviewToolStripMenuItem.Name" xml:space="preserve">
+    <value>PrintPreviewToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;PrintPreviewToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormActionPointGraphView</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

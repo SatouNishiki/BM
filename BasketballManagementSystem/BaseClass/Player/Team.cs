@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Xml.Serialization;
-using BasketballManagementSystem.BaseClass.Action;
+using BasketballManagementSystem.baseClass.action;
 using System;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasketballManagementSystem.BaseClass.Player
+namespace BasketballManagementSystem.baseClass.player
 {
     [Serializable]
     public class Team
@@ -72,7 +72,7 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <summary>
         /// タイムアウト情報
         /// </summary>
-        public List<TimeOut.TimeOut> TimeOutList { get; set; }
+        public List<timeOut.TimeOut> TimeOutList { get; set; }
 
         /// <summary>
         /// メンバーチェンジ情報
@@ -90,7 +90,7 @@ namespace BasketballManagementSystem.BaseClass.Player
             TeamFaul = new int[5];
             Name = "No Name Team";
 
-            TimeOutList = new List<TimeOut.TimeOut>();
+            TimeOutList = new List<timeOut.TimeOut>();
             MemberChange = new List<MemberChange>();
 
         }
@@ -209,11 +209,11 @@ namespace BasketballManagementSystem.BaseClass.Player
         /// <returns></returns>
         public int GetTimeOutCount(int timeoutSection)
         {
-            List<TimeOut.TimeOut> to = new List<TimeOut.TimeOut>();
+            List<timeOut.TimeOut> to = new List<timeOut.TimeOut>();
 
-            if (timeoutSection == TimeOut.TimeOut.FirstHalf ||
-                timeoutSection == TimeOut.TimeOut.SecondHalf ||
-                timeoutSection == TimeOut.TimeOut.ExtraInning)
+            if (timeoutSection == timeOut.TimeOut.FirstHalf ||
+                timeoutSection == timeOut.TimeOut.SecondHalf ||
+                timeoutSection == timeOut.TimeOut.ExtraInning)
             {
                 foreach (var t in TimeOutList)
                 {

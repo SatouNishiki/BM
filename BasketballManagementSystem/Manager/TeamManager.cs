@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using BasketballManagementSystem.BaseClass.Player;
+using BasketballManagementSystem.baseClass.player;
 using System.IO;
 using System.Collections;
 using TagFileLoader;
 using BMErrorLibrary;
 
-namespace BasketballManagementSystem.Manager
+namespace BasketballManagementSystem.manager
 {
     class TeamManager
     {

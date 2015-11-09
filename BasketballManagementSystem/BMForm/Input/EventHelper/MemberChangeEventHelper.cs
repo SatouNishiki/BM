@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BasketballManagementSystem.BaseClass.Player;
+using BasketballManagementSystem.baseClass.player;
 using System.Windows.Forms;
 
-namespace BasketballManagementSystem.BMForm.Input.EventHelper
+namespace BasketballManagementSystem.bmForm.input.eventHelper
 {
     //TODO: フラグが結構ごちゃごちゃしてる
     public class MemberChangeEventHelper
@@ -15,7 +15,7 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
 
         private List<bool> enableList = new List<bool>();
 
-        public void ChangeMember(FormInput form)
+        public void ChangeMember(FormInputView form)
         {
             if (form.MyCortTeamListBox.SelectedItems.Count == 0
                 && form.OppentOutTeamListBox.SelectedItems.Count == 0
@@ -38,22 +38,29 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
 
             if (form.MyCortTeamListBox.ExchangeSelectedItem(form.MyOutTeamListBox))
             {
+                form.StackGameData();
+
                 MemberChange m = new MemberChange();
 
                 foreach (Player p in obj1)
                 {
                     m.ChangedCortMembers.Add(p);
+
+                    form.MyTeam.CortMember.Remove(p);
+                    form.MyTeam.OutMember.Add(p);
                 }
 
                 foreach (Player p in obj2)
                 {
                     m.ChangedOutMembers.Add(p);
+                    form.MyTeam.OutMember.Remove(p);
+                    form.MyTeam.CortMember.Add(p);
                 }
 
+               
                 m.ChengedMemberTime = DateTime.Now;
                 m.RemainingTime = form.QuarterTimer.remainingTime;
                 m.Quarter = form.Quarter;
-                form.StackGameData();
                 form.Game.MyTeam.MemberChange.Add(m);
             }
 
@@ -65,22 +72,27 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
 
             if (form.OppentCortTeamListBox.ExchangeSelectedItem(form.OppentOutTeamListBox))
             {
+
+                form.StackGameData();
                 MemberChange m = new MemberChange();
 
                 foreach (Player p in obj1)
                 {
                     m.ChangedCortMembers.Add(p);
+                    form.OppentTeam.CortMember.Remove(p);
+                    form.OppentTeam.OutMember.Add(p);
                 }
 
                 foreach (Player p in obj2)
                 {
                     m.ChangedOutMembers.Add(p);
+                    form.OppentTeam.CortMember.Remove(p);
+                    form.OppentTeam.OutMember.Add(p);
                 }
 
                 m.ChengedMemberTime = DateTime.Now;
                 m.RemainingTime = form.QuarterTimer.remainingTime;
                 m.Quarter = form.Quarter;
-                form.StackGameData();
                 form.Game.OppentTeam.MemberChange.Add(m);
             }
 
@@ -91,7 +103,7 @@ namespace BasketballManagementSystem.BMForm.Input.EventHelper
             }
         }
 
-        private void SetEasyChangeMode(FormInput form, bool mode)
+        private void SetEasyChangeMode(FormInputView form, bool mode)
         {
 
             form.MyCortTeamListBox.IsEasyMemberChangeMode = mode;

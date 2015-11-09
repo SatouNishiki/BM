@@ -8,15 +8,15 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Sockets;
 using System.Threading;
-using BasketballManagementSystem.BaseClass.Game;
-using BasketballManagementSystem.Manager;
+using BasketballManagementSystem.baseClass.game;
+using BasketballManagementSystem.manager;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
-using BasketballManagementSystem.BMForm.Input;
+using BasketballManagementSystem.bmForm.input;
 using BMErrorLibrary;
-using BasketballManagementSystem.BMForm.Transmission.Compression;
+using BasketballManagementSystem.bmForm.Transmission.compression;
 
-namespace BasketballManagementSystem.BMForm.Transmission.TCP
+namespace BasketballManagementSystem.bmForm.Transmission.tcp
 {
     public partial class TCPClient : Form
     {
@@ -43,7 +43,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
 
         private Game sendGame;
 
-        private FormInput instance;
+        private FormInputPresenter instance;
 
         /// <summary>
         /// 別スレッドからメインスレッドのテキストボックスに書き込むデリゲート
@@ -62,7 +62,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
         delegate void EnableTimerDelegate();
 
 
-        public TCPClient(FormInput f)
+        public TCPClient(FormInputPresenter f)
         {
             InitializeComponent();
             instance = f;
@@ -177,23 +177,25 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                         else if (header == "GAME")
                         {
                             BinaryFormatter b = new BinaryFormatter();
-                            
 
-                            MemoryStream m = new MemoryStream(body);
-                            m.Seek(0, SeekOrigin.Begin);
-                            Game g = (Game)b.Deserialize(m);
+                            using (MemoryStream m = new MemoryStream(body))
+                            {
+                                m.Seek(0, SeekOrigin.Begin);
+                                Game g = (Game)b.Deserialize(m);
 
-                            if (g.Equals(sendGame))
-                            {
-                                readFlag = true;
+                                if (g.Equals(sendGame))
+                                {
+                                    readFlag = true;
+                                }
+                                else
+                                {
+                                    if (readFlag && !g.Equals(SaveDataManager.GetInstance().GetGame()))
+                                    {
+                                        instance.LoadGame(g);
+                                    }
+
+                                }
                             }
-                            else
-                            {
-                                if(readFlag && !g.Equals(SaveDataManager.GetInstance().GetGame()))
-                                 instance.LoadProcess(g);
-                                
-                            }
-                            m.Close();
                         }
                         else if (header == "PASS")
                         {
@@ -238,7 +240,9 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
                     this.LogTextBox.BeginInvoke(new WriteTextDelegate(writeLog)
                             , new object[] { "受信エラー　　" + ex.Message });
                     BMError.ErrorMessageOutput(ex.Message, false);
-                    return;
+
+                    //TODO:読み込みエラーが起きても通信は切断しないようにしてるけど再送要求に変えたり通信をリセットしたり他にやり方あるかも
+                 //   return;
                 }
             }
         }
@@ -324,7 +328,7 @@ namespace BasketballManagementSystem.BMForm.Transmission.TCP
             l.AddRange(data);
 
             Byte[] sendData = l.ToArray();
-
+            
             sendData = Compressor.Compress(sendData);
 
             //送信streamを作成

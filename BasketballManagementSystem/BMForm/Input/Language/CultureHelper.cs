@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
 
-namespace BasketballManagementSystem.BMForm.Input.Language
+namespace BasketballManagementSystem.bmForm.input.language
 {
     public class CultureHelper
     {
