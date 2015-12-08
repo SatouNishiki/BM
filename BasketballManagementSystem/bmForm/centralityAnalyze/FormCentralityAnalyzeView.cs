@@ -118,15 +118,21 @@ namespace BasketballManagementSystem.bmForm.centralityAnalyze
         private void MyTeamListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
           //  sourcePlayer = (Player)((ListBox)sender).SelectedItem;
-            this.SourcePlayerSelectedEventThrow((Player)((ListBox)sender).SelectedItem);
-            SourceTextBox.Text = ((Player)this.Presenter.GetModelProperty("SourcePlayer")).ToString();
+            if (((ListBox)sender).SelectedIndex >= 0)
+            {
+                this.SourcePlayerSelectedEventThrow((Player)((ListBox)sender).SelectedItem);
+                SourceTextBox.Text = ((Player)this.Presenter.GetModelProperty("SourcePlayer")).ToString();
+            }
         }
 
         private void OppentTeamListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
          //   sourcePlayer = (Player)((ListBox)sender).SelectedItem;
-            this.SourcePlayerSelectedEventThrow((Player)((ListBox)sender).SelectedItem);
-            SourceTextBox.Text = ((Player)this.Presenter.GetModelProperty("SourcePlayer")).ToString();
+            if (((ListBox)sender).SelectedIndex >= 0)
+            {
+                this.SourcePlayerSelectedEventThrow((Player)((ListBox)sender).SelectedItem);
+                SourceTextBox.Text = ((Player)this.Presenter.GetModelProperty("SourcePlayer")).ToString();
+            }
         }
 
 

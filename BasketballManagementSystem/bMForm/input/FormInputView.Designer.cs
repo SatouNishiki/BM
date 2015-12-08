@@ -909,8 +909,8 @@
             // 
             // MyCortTeamListBox
             // 
-            this.MyCortTeamListBox.FormattingEnabled = true;
             resources.ApplyResources(this.MyCortTeamListBox, "MyCortTeamListBox");
+            this.MyCortTeamListBox.FormattingEnabled = true;
             this.MyCortTeamListBox.IsEasyMemberChangeMode = false;
             this.MyCortTeamListBox.Name = "MyCortTeamListBox";
             this.MyCortTeamListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;

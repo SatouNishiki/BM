@@ -3942,6 +3942,9 @@
   <data name="&gt;&gt;OppentCortTeamListBox.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="MyCortTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 9pt</value>
+  </data>
   <data name="MyCortTeamListBox.HorizontalScrollbar" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -3952,7 +3955,7 @@
     <value>193, 156</value>
   </data>
   <data name="MyCortTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 100</value>
+    <value>145, 76</value>
   </data>
   <data name="MyCortTeamListBox.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
