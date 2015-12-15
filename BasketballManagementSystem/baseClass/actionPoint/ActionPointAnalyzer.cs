@@ -21,7 +21,10 @@ namespace BasketballManagementSystem.baseClass.actionPoint
         /// <param name="sourcePlayer"></param>
         /// <param name="targetPlayer"></param>
         /// <returns>ソースとターゲットの結びつき度　解析成功：key→ActionPointProviderのType定数　value→Typeごとの結びつき度　解析失敗：null</returns>
-        public Dictionary<int, int> GetNexus(player.Player sourcePlayer, player.Player targetPlayer)
+     //   public Dictionary<int, int> GetNexus(player.Player sourcePlayer, player.Player targetPlayer)
+       
+        //TODO:sourceとtargetを逆にしないと正常に動作しない 多分アルゴリズムに問題あり 意味的にはA→BとB→Aは同じなので結果に不整合はなさそう
+        public Dictionary<int, int> GetNexus(player.Player targetPlayer, player.Player sourcePlayer)
         {
             //メンバーチェンジごとで区切ったアクションのリスト
             List<List<object>> actionList = new List<List<object>>();
