@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using BasketballManagementSystem.abstracts;
 using BasketballManagementSystem.baseClass.actionPoint;
+using BasketballManagementSystem.baseClass.player;
 
 namespace BasketballManagementSystem.bmForm.centralityAnalyze
 {
@@ -33,7 +34,7 @@ namespace BasketballManagementSystem.bmForm.centralityAnalyze
 
         void view_AnalyzeButtonClickEvent()
         {
-            List<Dictionary<int,int>> dicList = this.centralityAnalyzeModel.Analyze();
+            Dictionary<Player, Dictionary<int, int>> dicList = this.centralityAnalyzeModel.Analyze();
 
             this.centralityAnalyzeView.ClearResult();
 
@@ -56,14 +57,14 @@ namespace BasketballManagementSystem.bmForm.centralityAnalyze
                 this.centralityAnalyzeView.WriteResult(
                     "対象 : " + this.centralityAnalyzeModel.SourcePlayer.Name + 
                     "(" + this.centralityAnalyzeModel.SourcePlayer.Number + ") → " + 
-                    this.centralityAnalyzeModel.TargetPlayer.Name +
-                    "(" + this.centralityAnalyzeModel.TargetPlayer.Number + ")\n");
+                    dic.Key.Name +
+                    "(" + dic.Key.Number + ")\n");
 
                 this.centralityAnalyzeView.WriteResult("\n");
-                this.centralityAnalyzeView.WriteResult("通常 = " + dic[ActionPointProvider.TypeNormal] + "\n");
-                this.centralityAnalyzeView.WriteResult("得点 = " + dic[ActionPointProvider.TypePoint] + "\n");
-                this.centralityAnalyzeView.WriteResult("ミス = " + dic[ActionPointProvider.TypeMiss] + "\n");
-                this.centralityAnalyzeView.WriteResult("ファウル = " + dic[ActionPointProvider.TypeFaul] + "\n");
+                this.centralityAnalyzeView.WriteResult("通常 = " + dic.Value[ActionPointProvider.TypeNormal] + "\n");
+                this.centralityAnalyzeView.WriteResult("得点 = " + dic.Value[ActionPointProvider.TypePoint] + "\n");
+                this.centralityAnalyzeView.WriteResult("ミス = " + dic.Value[ActionPointProvider.TypeMiss] + "\n");
+                this.centralityAnalyzeView.WriteResult("ファウル = " + dic.Value[ActionPointProvider.TypeFaul] + "\n");
                 this.centralityAnalyzeView.WriteResult("\n");
             }
             

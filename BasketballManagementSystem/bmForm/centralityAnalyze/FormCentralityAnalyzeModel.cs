@@ -29,7 +29,7 @@ namespace BasketballManagementSystem.bmForm.centralityAnalyze
         /// 行動傾向点に基づいた中心性解析を行う
         /// </summary>
         /// <returns></returns>
-        public List<Dictionary<int, int>> Analyze()
+        public Dictionary<Player, Dictionary<int, int>> Analyze()
         {
             if (this.SourcePlayer == null)
                 return null;
@@ -43,18 +43,17 @@ namespace BasketballManagementSystem.bmForm.centralityAnalyze
             else
                 team = Game.OppentTeam;
 
-            List<Dictionary<int, int>> dicList = new List<Dictionary<int, int>>();
+            Dictionary<Player, Dictionary<int, int>> rtList = new Dictionary<Player, Dictionary<int, int>>();
 
             foreach (var p in team.TeamMember)
             {
                 TargetPlayer = p;
 
                 if (SourcePlayer == TargetPlayer) continue;
-
-                dicList.Add(analyze.GetNexus(SourcePlayer, TargetPlayer));
+                rtList.Add(TargetPlayer, analyze.GetNexus(SourcePlayer, TargetPlayer));
             }
 
-            return dicList;
+            return rtList;
         }
 
      

@@ -126,7 +126,7 @@ namespace BasketballManagementSystem.bmForm.strategySimulation
         private Bitmap CreateBitmap(string pictureName)
         {
             return new Bitmap(myAssembly.GetManifestResourceStream
-                     ("BasketballManagementSystem.BMForm.StrategySimulation.Picture." + pictureName));
+                     ("BasketballManagementSystembBMForm.strategySimulation.picture." + pictureName));
         }
 
         private void AddBoardButton_Click(object sender, EventArgs e)
