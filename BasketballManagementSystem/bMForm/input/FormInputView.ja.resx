@@ -122,7 +122,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PersonalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 79</value>
+    <value>505, 394</value>
   </data>
   <data name="BlockShotButton.ToolTip" xml:space="preserve">
     <value />
@@ -383,7 +383,7 @@
     <value />
   </data>
   <data name="OppentTeamNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>759, 112</value>
+    <value>821, 133</value>
   </data>
   <data name="OppentTeamNameLabel.ToolTip" xml:space="preserve">
     <value />
@@ -392,13 +392,13 @@
     <value />
   </data>
   <data name="OppentTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>786, 75</value>
+    <value>861, 97</value>
   </data>
   <data name="OppentTeamFaulLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>787, 71</value>
+    <value>821, 71</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 12</value>
@@ -421,98 +421,32 @@
   <data name="label3.ToolTip" xml:space="preserve">
     <value />
   </data>
+  <data name="MyTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 82</value>
+  </data>
   <data name="MyTeamFaulLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 16</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>コートメンバー</value>
-  </data>
-  <data name="label1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 16</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>ベンチメンバー</value>
-  </data>
-  <data name="label4.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>590, 133</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 16</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>コートメンバー</value>
-  </data>
-  <data name="label5.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>752, 133</value>
-  </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>103, 16</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>ベンチメンバー</value>
-  </data>
-  <data name="label6.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyTimeOutButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 23</value>
-  </data>
-  <data name="MyTimeOutButton.Text" xml:space="preserve">
-    <value>タイムアウト(自)</value>
-  </data>
-  <data name="MyTimeOutButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="TechnicalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>65, 81</value>
+    <value>552, 398</value>
   </data>
   <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>114, 80</value>
+    <value>601, 396</value>
   </data>
   <data name="UnSportsmanLikeFaulButton.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="DisQualifyingFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 80</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 0</value>
-  </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 13</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>アクション(ファウル)</value>
-  </data>
-  <data name="label7.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>41, 84</value>
-  </data>
-  <data name="MyTimeOutLabel.ToolTip" xml:space="preserve">
-    <value />
+    <value>651, 396</value>
   </data>
   <data name="UpButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 12</value>
+    <value>726, 347</value>
   </data>
   <data name="UpButton.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="DownButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 41</value>
+    <value>726, 424</value>
   </data>
   <data name="DownButton.ToolTip" xml:space="preserve">
     <value />
@@ -521,7 +455,7 @@
     <value>MS UI Gothic, 14.25pt, style=Bold</value>
   </data>
   <data name="givenFreeThowLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>145, 38</value>
+    <value>722, 387</value>
   </data>
   <data name="givenFreeThowLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 21</value>
@@ -541,54 +475,6 @@
   <data name="label11.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="OppentTimeOutButton.Text" xml:space="preserve">
-    <value>タイムアウト(相手)</value>
-  </data>
-  <data name="OppentTimeOutButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>158, 81</value>
-  </data>
-  <data name="OppentTimeOutLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 23</value>
-  </data>
-  <data name="OppentTimeOutLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 13</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>アクション(通常)</value>
-  </data>
-  <data name="label8.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MemberChangeButton.Text" xml:space="preserve">
-    <value>メンバー交代</value>
-  </data>
-  <data name="MemberChangeButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 13</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>その他入力</value>
-  </data>
-  <data name="label9.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="groupBox3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="OppentTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>615, 71</value>
   </data>
@@ -599,7 +485,7 @@
     <value>MS UI Gothic, 36pt</value>
   </data>
   <data name="MyTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 42</value>
+    <value>240, 93</value>
   </data>
   <data name="MyTeamPointLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 67</value>
@@ -617,7 +503,7 @@
     <value />
   </data>
   <data name="OppentCortTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>635, 202</value>
+    <value>800, 504</value>
   </data>
   <data name="OppentCortTeamListBox.ToolTip" xml:space="preserve">
     <value />
@@ -1215,107 +1101,61 @@
   <data name="CortPicture.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="QuarterTimerStopButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="QuarterTimerRewindButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEASABIAAD/4QCuRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAZKG
-        AAcAAAB6AAAALAAAAABVTklDT0RFAABDAFIARQBBAFQATwBSADoAIABnAGQALQBqAHAAZQBnACAAdgAx
-        AC4AMAAgACgAdQBzAGkAbgBnACAASQBKAEcAIABKAFAARQBHACAAdgA2ADIAKQAsACAAcQB1AGEAbABp
-        AHQAeQAgAD0AIAA5ADAACv/+ADxDUkVBVE9SOiBnZC1qcGVnIHYxLjAgKHVzaW5nIElKRyBKUEVHIHY2
-        MiksIHF1YWxpdHkgPSA5MAoA/9sAQwABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
-        AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/9sAQwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
-        AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/8IAEQgAFwAXAwERAAIRAQMRAf/EABUA
-        AQEAAAAAAAAAAAAAAAAAAAgH/8QAGAEBAQEBAQAAAAAAAAAAAAAABgcIAwX/2gAMAwEAAhADEAAAAVXQ
-        5hH1YlKBaOVKbm10FFoT9XgxRrA0O8sMWbbH/8QAHBAAAgICAwAAAAAAAAAAAAAABQYEBwIDARUW/9oA
-        CAEBAAEFAnl/KtDD0SjhzWVhFY52ucgg4jNJofrbF1ECzy8VnP0G9RoJMmVzW0sUS//EACsRAAICAQMD
-        AwEJAAAAAAAAAAIDAQQFBgcSERMUABUhIggWIzEyM0Nicv/aAAgBAwEBPwHV+ul4y6eGo2BVYSCyyFyI
-        Bh1paMMXVrCwTT5MpkWNa0GglbViKycUkj77jE84yGQWwomRb59kuvWZHmKXMbUKOUFHGa5K6xMQHx09
-        aO1kvPm7G2TX7lXTFgDEe0N6p1ECdCv0reozX5ABPbKHKcgRWRKTkdU6X0/ulqRWvqV21UjLvJBrPuVq
-        vdmGVn3ceIw69XmsSZiAdIguPmnb5DC8luPtGrcGq7KEm/Qs4DEzhcxWYF7A0YFt4CRaxVdcMrPUUcSJ
-        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
-</value>
-  </data>
-  <data name="QuarterTimerRewindButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="QuarterTimerFastFowardButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        /9j/4AAQSkZJRgABAQEASABIAAD/4QCuRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAZKG
-        AAcAAAB6AAAALAAAAABVTklDT0RFAABDAFIARQBBAFQATwBSADoAIABnAGQALQBqAHAAZQBnACAAdgAx
-        AC4AMAAgACgAdQBzAGkAbgBnACAASQBKAEcAIABKAFAARQBHACAAdgA2ADIAKQAsACAAcQB1AGEAbABp
-        AHQAeQAgAD0AIAA5ADAACv/+ADxDUkVBVE9SOiBnZC1qcGVnIHYxLjAgKHVzaW5nIElKRyBKUEVHIHY2
-        MiksIHF1YWxpdHkgPSA5MAoA/9sAQwABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
-        AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/9sAQwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
-        AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/8IAEQgAFwAXAwERAAIRAQMRAf/EABYA
-        AQEBAAAAAAAAAAAAAAAAAAkIB//EABYBAQEBAAAAAAAAAAAAAAAAAAcGCP/aAAwDAQACEAMQAAAB2tVD
-        5FSRa4iLRs32xikkEoC9cwaGRd8UF/CMyYqf/8QAGxAAAgMBAQEAAAAAAAAAAAAABQcCAwQGARX/2gAI
-        AQEAAQUCYrJO9Qa+HkqsUTWL5TSljHzqsFahlex6sZAm2kwVsIZb57zCbTO7nd3/xAApEQACAgEEAQMD
-        BQEAAAAAAAABAgMEEgUGERMUAAchFTFRIjRBYXGS/9oACAEDAQE/Afcb3Fs6ZZk0LQpRFYiCi/fVQ0kT
-        sA3jVsuVVwpXtl4zVjihTEs0G69fis+Sdb17s55LHVb0ifn9s85g4/rD7etgb1fcMXg6gyNfii7IrCKE
-        FyJDw+aKAqWI/jIKqh15bBSpy0miJvcux50STKdwar2R2EV0ZSbbRZK4KsMSmII/Hqro3t737j6oNPeu
-        Y6n1VZMTQrNla48KVvmCR2y7FpyhFdYeoJJ8HaNOhBvNl0BrMmlq85rvYHD4mhOJf4VjEJeBE0gEhTAy
-        DL77t2N9Wstq2ltFDqDqq24JeUhu4DFZRIvPTaVAqZEdcqquZRgzSR7I1136jp+B54LG5TMf+/pmLn/j
-        n1tbakO342mlZJr8y4u6A9cKEgmKItwWyIUySFVJxCqqqDn/AP/EACgRAAIBBAEEAQMFAAAAAAAAAAEC
-        AwQFERIGExQhYQAVFiIzUXOCof/aAAgBAgEBPwHhvDKaqpo7td4+ss2Wo6MkiIxg4E9RqQX3IPSizpph
-        n32Cq9js7xdE2m16YxjsKVTj+RYhJn3tn385nxOK0YuFuDLQySCOanZi5pZH8oY2bLNA5yo3ZmjfUbMr
-        jS4zFeCJJSu0ZFot2rxMVZSBTK+GXBHnYHHv38qKvmvTsYlNas5ep+nabd7OuKYt3UY/UjRcFGqk20aU
-        ykx4Iv0tZ9oStelgjrmFMJVh8oG72Ep+6iQxjMgQmMNtodfA4rzIWmEW64rJJRKWNPNH+UtLsdmQocdS
-        Atlhg7xkkKHUhUfmXH1j6nfMwxnUUtXt/sAXP9se/nKOVPfWSngR4LfC+6o5HVqJANRLNrkKFBbpxBmA
-        2LMzMRp//8QAJRAAAgIBBAICAgMAAAAAAAAAAwQBAgUGERITABQVISIjMWFi/9oACAEBAAY/Ashh8Hkm
-        8JpbEOM42S41iyuR1C6oSVnWSvB4sKYtdkZ1k11TV92K2bbuSpV1lPbUoFZ+J5w+vN18jBP57IyQpq52
-        b/fPt33+9/BaL1i+TIJu0ZthM2+WLPJMKrXcvjMizb7dUOqBk6b5yXbEcfqFuyJhf09H43JiHe9Y9Z8L
-        da3iXgJMUcoahY42JDlCc4tG/Z/fmsrrkxJEABx/zli2pOIUJcj9R/FM2/KhjEratq40sjk1VqKfvnj4
-        yjoG2RboUsUw0lrNXiQKKHZ69ogvVUNHuqxK1PZaNzVi/Lx/UukQjeUyBTPZXC3YWVZSeL+xlzGkcuBU
-        6TxexlxRhoRlnCEKnLAGIWRrgUYlrM9vRRGIqInbM8eEMMXElH39cvb4f628rq/WHT8xQJg4fDBMNkWL
-        GyLpO68wPcJskUFzLCCsQyaqpzWkzTLFfR//xAAaEAEAAwEBAQAAAAAAAAAAAAABABExIUGR/9oACAEB
-        AAE/IWnUv3gSMsnzD1wdvOCORjcNg0MiFLg5nYSkkmUporFjjpVJw6mzA4PPhUV0bwDEIYRWc3SqB+oI
-        vGJ9gRkwj2yXBtHR9U6soU6hPz+nk//aAAwDAQACAAMAAAAQasnwP//EABkRAQEBAQEBAAAAAAAAAAAA
-        AAERACExUf/aAAgBAwEBPxAfjyHZIzVIjGQrTGhIsUtr7hxEpkiWDEHfMrtaN3jRGCcrahrxlQxUkUi4
-        sQ+Bk1XCv7dKJWmjGqBcpuSQE1EgcWOUSGHFBgkyNSn4BcQhc4Y0WsYqhz//xAAZEQEBAQEBAQAAAAAA
-        AAAAAAABEQAhMUH/2gAIAQIBAT8Qt86es7ZgEqEtKRdqdgJwBHgP30XBngNmqQsDgCDOmiauJqgJQ+Xk
-        Yly5ACQ9EGFkng1ne4Lciik9ngwKnqxrpiZNvZc6PiNfCpyo99PKM3J1QAMhkhFw5//EABgQAQEBAQEA
-        AAAAAAAAAAAAAAERACEx/9oACAEBAAE/EN/9ypqc8XPJIsxMAhFA8SEKd0LVax5hAsoiVHI8pM1AICZ5
-        atrENlhrQt9ndTpYwgXmlpge0ekMtvju2hkn46T8oeqJnHzKErFpuvKM/9k=
-</value>
-  </data>
-  <data name="QuarterTimerFastFowardButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="backPictureBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="pictureBox1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="pictureBox2.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="pictureButton1.ToolTip" xml:space="preserve">
+  <data name="OppentTimeOutButton.Text" xml:space="preserve">
+    <value>タイムアウト(相手)</value>
+  </data>
+  <data name="OppentTimeOutButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MemberChangeButton.Text" xml:space="preserve">
+    <value>メンバー交代</value>
+  </data>
+  <data name="MemberChangeButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>915, 732</value>
+  </data>
+  <data name="OppentTimeOutLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 23</value>
+  </data>
+  <data name="OppentTimeOutLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MyTimeOutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 23</value>
+  </data>
+  <data name="MyTimeOutButton.Text" xml:space="preserve">
+    <value>タイムアウト(自)</value>
+  </data>
+  <data name="MyTimeOutButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MyTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 708</value>
+  </data>
+  <data name="MyTimeOutLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QuarterTimerStopButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QuarterTimerFastFowardButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="QuarterTimerRewindButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="backPictureBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="button1.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
