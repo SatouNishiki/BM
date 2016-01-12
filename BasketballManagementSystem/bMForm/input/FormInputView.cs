@@ -150,7 +150,7 @@ namespace BasketballManagementSystem.bmForm.input
             get { return (int)this.presenter.GetModelProperty("GivenFreeThrow"); }
         }
 
-        
+
 
         /********************************************イベント****************************************/
 
@@ -208,7 +208,7 @@ namespace BasketballManagementSystem.bmForm.input
         /// TCPサーバー画面が開かれる時のイベント
         /// </summary>
         public event Action OpenTCPServerFormEvent;
-        
+
         /// <summary>
         /// 試合が開始された時のイベント
         /// </summary>
@@ -218,7 +218,7 @@ namespace BasketballManagementSystem.bmForm.input
         /// クォーター遷移が行われた時のイベント
         /// </summary>
         public event Action NextQuarterEvent;
-        
+
         /// <summary>
         /// 試合が一時停止された時のイベント
         /// </summary>
@@ -501,7 +501,7 @@ namespace BasketballManagementSystem.bmForm.input
         {
             InitializeComponent();
             PreInit();
-           
+
         }
 
         /// <summary>
@@ -510,7 +510,7 @@ namespace BasketballManagementSystem.bmForm.input
         private void PreInit()
         {
             /******************************プロパティ初期化******************************************/
-           
+
             this.colorChangeButton = new List<Button>();
 
             foreach (var c in Controls)
@@ -521,7 +521,7 @@ namespace BasketballManagementSystem.bmForm.input
                 }
             }
 
-            
+
             /******************************************************************************************/
 
 
@@ -540,16 +540,16 @@ namespace BasketballManagementSystem.bmForm.input
                 if (c.Name == "ja" || c.Name == "en")
                     this.ChangeLanguageComboBox.Items.Add(c.DisplayName);
             }
-            
+
             ChangeLanguageComboBox.SelectedIndex = AppSetting.GetInstance().CultureSelectedIndex;
-            
-            
+
+
 
 
             /******************************************************************************************/
 
 
-            
+
             /************************************設定読み込み****************************************/
 
             this.BackColor = AppSetting.GetInstance().FormInputBackGroundColor;
@@ -571,10 +571,10 @@ namespace BasketballManagementSystem.bmForm.input
 
             /*****************************************************************************************/
 
-           
 
 
-           
+
+
         }
 
         /// <summary>
@@ -708,7 +708,7 @@ namespace BasketballManagementSystem.bmForm.input
         /// </summary>
         private void SyncTeam()
         {
-            
+
             MyTeam.CortMember.Clear();
 
             foreach (Player p in MyCortTeamListBox.Items)
@@ -753,37 +753,37 @@ namespace BasketballManagementSystem.bmForm.input
 
         private void TurnOverButton_Click(object sender, System.EventArgs e)
         {
-            this.ActionClickEventThrow(typeof(TurnOver));         
+            this.ActionClickEventThrow(typeof(TurnOver));
         }
 
         private void StealButton_Click(object sender, System.EventArgs e)
         {
-            this.ActionClickEventThrow(typeof(Steal));  
+            this.ActionClickEventThrow(typeof(Steal));
         }
 
         private void BlockShotButton_Click(object sender, System.EventArgs e)
         {
-            this.ActionClickEventThrow(typeof(ShootBlock));  
+            this.ActionClickEventThrow(typeof(ShootBlock));
         }
 
         private void TechnicalFaulButton_Click(object sender, EventArgs e)
         {
-            this.ActionClickEventThrow(typeof(TechnicalFaul));  
+            this.ActionClickEventThrow(typeof(TechnicalFaul));
         }
 
         private void UnSportsmanLikeFaulButton_Click(object sender, EventArgs e)
         {
-            this.ActionClickEventThrow(typeof(UnSportsmanLikeFaul));  
+            this.ActionClickEventThrow(typeof(UnSportsmanLikeFaul));
         }
 
         private void DisQualifyingFaulButton_Click(object sender, EventArgs e)
         {
-            this.ActionClickEventThrow(typeof(DisQualifyingFaul));  
+            this.ActionClickEventThrow(typeof(DisQualifyingFaul));
         }
 
         private void CortPicture_Click(object sender, System.EventArgs e)
         {
-            this.CortClickEventThrow(CortPictureBox, e);
+            this.CortClickEventThrow(CortPicture, e);
         }
 
         /***************************************************************************************************/
@@ -802,18 +802,18 @@ namespace BasketballManagementSystem.bmForm.input
 
             //何もない場所が選択されていたら終了
             if (((ListBox)sender).SelectedIndex < 0) return;
-            
+
             try
             {
                 //選択選手の記憶
                 this.DataChangeEventThrow("SelectedPlayer", (Player)(((ListBox)sender).Items[((ListBox)sender).SelectedIndex]));
-               
+
                 PlayerNameLabel.Text = SelectedPlayer.ToString();
             }
-            catch(System.Exception exception)
+            catch (System.Exception exception)
             {
                 this.DataChangeEventThrow("SelectedPlayer", new Player("No Name", 0));
-               
+
                 BMErrorLibrary.BMError.ErrorMessageOutput(exception.Message, true);
             }
         }
@@ -836,7 +836,6 @@ namespace BasketballManagementSystem.bmForm.input
                     this.StopGameEventThrow();
                     StopGameItem.Enabled = false;
                     RestartGameItem.Enabled = true;
-                    QuarterTimerStopButton.Image = RestartGraph;
                 }
             }
             else
@@ -866,7 +865,6 @@ namespace BasketballManagementSystem.bmForm.input
                     this.StopGameEventThrow();
                     StopGameItem.Enabled = false;
                     RestartGameItem.Enabled = true;
-                    QuarterTimerStopButton.Image = RestartGraph;
                 }
             }
             else
@@ -927,10 +925,8 @@ namespace BasketballManagementSystem.bmForm.input
             GameEndItem.Enabled = true;
             //ゲーム開始ボタンはゲーム終了まで操作不能にしておく
             StartGameItem.Enabled = false;
-
             StopGameItem.Enabled = true;
-            QuarterTimerStopButton.Enabled = true;
-            
+
             this.StartGameEventThrow();
         }
 
@@ -949,8 +945,8 @@ namespace BasketballManagementSystem.bmForm.input
                 this.DataChangeEventThrow("TimeOutRimit", 1);
             }
 
-            
-           
+
+
         }
 
         private void StopGameButton_Click(object sender, EventArgs e)
@@ -969,6 +965,7 @@ namespace BasketballManagementSystem.bmForm.input
             NextQuarterItem.Enabled = false;
             StopGameItem.Enabled = false;
             this.EndGameEventThrow();
+            QuarterTimerStopButton.Enabled = false;
 
             string comment = Microsoft.VisualBasic.Interaction.InputBox(
                 "試合に対するコメントを入力してください",
@@ -1007,14 +1004,12 @@ namespace BasketballManagementSystem.bmForm.input
                 this.StopGameEventThrow();
                 StopGameItem.Enabled = false;
                 RestartGameItem.Enabled = true;
-                QuarterTimerStopButton.Image = RestartGraph;
             }
             else
             {
                 this.RestartGameEventThrow();
                 StopGameItem.Enabled = true;
                 RestartGameItem.Enabled = false;
-                QuarterTimerStopButton.Image = StopGraph;
             }
         }
 
@@ -1075,7 +1070,7 @@ namespace BasketballManagementSystem.bmForm.input
             {
                 Game.Name = GameNameText.Text;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 GameNameText.Text = "Game1";
                 Game.Name = "Game1";
@@ -1089,7 +1084,7 @@ namespace BasketballManagementSystem.bmForm.input
             {
                 Game.Location = GameLocationText.Text;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Game.Location = "NoInputLocation";
                 GameLocationText.Text = "NoInputLocation";
@@ -1151,7 +1146,7 @@ namespace BasketballManagementSystem.bmForm.input
 
         private void ChangeButtonColor_Click(object sender, EventArgs e)
         {
-          
+
             // 初期選択する色を設定する
             ColorDialog.Color = MyTeamPointLabel.BackColor;
 
@@ -1274,9 +1269,9 @@ namespace BasketballManagementSystem.bmForm.input
         //TODO:コンフィグ画面分離？
         private void PropToolStripMenuItem_Click(object sender, EventArgs e)
         {
-       //     ConfigForm c = new ConfigForm();
-       //     c.ShowDialog();
-       //     c.Dispose();
+            //     ConfigForm c = new ConfigForm();
+            //     c.ShowDialog();
+            //     c.Dispose();
         }
 
         private void dataEdit_Click(object sender, EventArgs e)
@@ -1366,7 +1361,7 @@ namespace BasketballManagementSystem.bmForm.input
             this.UndoEventThrow();
 
             AddDebugMessage("GameData undo");
-       
+
         }
 
         private void RedoToolStripButton_Click(object sender, EventArgs e)
@@ -1418,7 +1413,7 @@ namespace BasketballManagementSystem.bmForm.input
             }
         }
 
-        
+
 
         private void Sort(ListBox pList)
         {
@@ -1442,6 +1437,5 @@ namespace BasketballManagementSystem.bmForm.input
             }
         }
 
-        
     }
 }

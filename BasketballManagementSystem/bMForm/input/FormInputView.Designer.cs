@@ -37,7 +37,6 @@
             this.TurnOverButton = new System.Windows.Forms.Button();
             this.StealButton = new System.Windows.Forms.Button();
             this.BlockShotButton = new System.Windows.Forms.Button();
-            this.CortPictureBox = new System.Windows.Forms.PictureBox();
             this.MenuStrip1 = new System.Windows.Forms.MenuStrip();
             this.FileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.NewGameItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -100,32 +99,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.MyTeamFaulLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.MyTimeOutButton = new System.Windows.Forms.Button();
             this.TechnicalFaulButton = new System.Windows.Forms.Button();
             this.UnSportsmanLikeFaulButton = new System.Windows.Forms.Button();
             this.DisQualifyingFaulButton = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.MyTimeOutLabel = new System.Windows.Forms.Label();
             this.UpButton = new System.Windows.Forms.Button();
             this.DownButton = new System.Windows.Forms.Button();
             this.givenFreeThowLabel = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.OppentTimeOutButton = new System.Windows.Forms.Button();
-            this.OppentTimeOutLabel = new System.Windows.Forms.Label();
-            this.QuarterTimerRewindButton = new System.Windows.Forms.Button();
-            this.QuarterTimerFastFowardButton = new System.Windows.Forms.Button();
-            this.QuarterTimerStopButton = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.ToolTipFormInput = new System.Windows.Forms.ToolTip(this.components);
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.MemberChangeButton = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.OppentTeamPointLabel = new System.Windows.Forms.Label();
             this.MyTeamPointLabel = new System.Windows.Forms.Label();
             this.ToolStrip = new System.Windows.Forms.ToolStrip();
@@ -140,18 +121,33 @@
             this.MyCortTeamListBox = new ExchangeListBox.ExChangeList();
             this.MyOutTeamListBox = new ExchangeListBox.ExChangeList();
             this.QuarterTimerLabel = new System.Windows.Forms.Label();
+            this.CortPicture = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.ColorDialog = new System.Windows.Forms.ColorDialog();
-            ((System.ComponentModel.ISupportInitialize)(this.CortPictureBox)).BeginInit();
+            this.OppentTimeOutButton = new System.Windows.Forms.Button();
+            this.MemberChangeButton = new System.Windows.Forms.Button();
+            this.OppentTimeOutLabel = new System.Windows.Forms.Label();
+            this.MyTimeOutButton = new System.Windows.Forms.Button();
+            this.MyTimeOutLabel = new System.Windows.Forms.Label();
+            this.QuarterTimerStopButton = new CustomPictureButton.ReversePictureButton();
+            this.QuarterTimerFastFowardButton = new CustomPictureButton.PictureButton();
+            this.QuarterTimerRewindButton = new CustomPictureButton.PictureButton();
+            this.backPictureBox = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.MenuStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.ToolStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CortPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // PlayerNameLabel
             // 
             resources.ApplyResources(this.PlayerNameLabel, "PlayerNameLabel");
+            this.PlayerNameLabel.BackColor = System.Drawing.Color.DimGray;
+            this.PlayerNameLabel.ForeColor = System.Drawing.Color.White;
             this.PlayerNameLabel.Name = "PlayerNameLabel";
             // 
             // FormInputTimer
@@ -198,13 +194,6 @@
             this.BlockShotButton.Name = "BlockShotButton";
             this.BlockShotButton.UseVisualStyleBackColor = true;
             this.BlockShotButton.Click += new System.EventHandler(this.BlockShotButton_Click);
-            // 
-            // CortPictureBox
-            // 
-            resources.ApplyResources(this.CortPictureBox, "CortPictureBox");
-            this.CortPictureBox.Name = "CortPictureBox";
-            this.CortPictureBox.TabStop = false;
-            this.CortPictureBox.Click += new System.EventHandler(this.CortPicture_Click);
             // 
             // MenuStrip1
             // 
@@ -618,8 +607,9 @@
             // 
             // QuarterText
             // 
+            this.QuarterText.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.QuarterText, "QuarterText");
-            this.QuarterText.ForeColor = System.Drawing.Color.Red;
+            this.QuarterText.ForeColor = System.Drawing.Color.White;
             this.QuarterText.Name = "QuarterText";
             // 
             // OppentTeamFaulLabel
@@ -641,37 +631,6 @@
             // 
             resources.ApplyResources(this.MyTeamFaulLabel, "MyTeamFaulLabel");
             this.MyTeamFaulLabel.Name = "MyTeamFaulLabel";
-            // 
-            // label1
-            // 
-            resources.ApplyResources(this.label1, "label1");
-            this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Name = "label1";
-            // 
-            // label4
-            // 
-            resources.ApplyResources(this.label4, "label4");
-            this.label4.ForeColor = System.Drawing.Color.Green;
-            this.label4.Name = "label4";
-            // 
-            // label5
-            // 
-            resources.ApplyResources(this.label5, "label5");
-            this.label5.ForeColor = System.Drawing.Color.Green;
-            this.label5.Name = "label5";
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.ForeColor = System.Drawing.Color.Green;
-            this.label6.Name = "label6";
-            // 
-            // MyTimeOutButton
-            // 
-            resources.ApplyResources(this.MyTimeOutButton, "MyTimeOutButton");
-            this.MyTimeOutButton.Name = "MyTimeOutButton";
-            this.MyTimeOutButton.UseVisualStyleBackColor = true;
-            this.MyTimeOutButton.Click += new System.EventHandler(this.TimeOut_Click);
             // 
             // TechnicalFaulButton
             // 
@@ -695,17 +654,6 @@
             this.ToolTipFormInput.SetToolTip(this.DisQualifyingFaulButton, resources.GetString("DisQualifyingFaulButton.ToolTip"));
             this.DisQualifyingFaulButton.UseVisualStyleBackColor = true;
             this.DisQualifyingFaulButton.Click += new System.EventHandler(this.DisQualifyingFaulButton_Click);
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label7.Name = "label7";
-            // 
-            // MyTimeOutLabel
-            // 
-            resources.ApplyResources(this.MyTimeOutLabel, "MyTimeOutLabel");
-            this.MyTimeOutLabel.Name = "MyTimeOutLabel";
             // 
             // UpButton
             // 
@@ -731,107 +679,18 @@
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
             // 
-            // OppentTimeOutButton
-            // 
-            resources.ApplyResources(this.OppentTimeOutButton, "OppentTimeOutButton");
-            this.OppentTimeOutButton.Name = "OppentTimeOutButton";
-            this.OppentTimeOutButton.UseVisualStyleBackColor = true;
-            this.OppentTimeOutButton.Click += new System.EventHandler(this.OppentTimeOut_Click);
-            // 
-            // OppentTimeOutLabel
-            // 
-            resources.ApplyResources(this.OppentTimeOutLabel, "OppentTimeOutLabel");
-            this.OppentTimeOutLabel.Name = "OppentTimeOutLabel";
-            // 
-            // QuarterTimerRewindButton
-            // 
-            resources.ApplyResources(this.QuarterTimerRewindButton, "QuarterTimerRewindButton");
-            this.QuarterTimerRewindButton.Name = "QuarterTimerRewindButton";
-            this.QuarterTimerRewindButton.UseVisualStyleBackColor = true;
-            this.QuarterTimerRewindButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerRewind_MouseDown);
-            this.QuarterTimerRewindButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerRewind_MouseUp);
-            // 
-            // QuarterTimerFastFowardButton
-            // 
-            resources.ApplyResources(this.QuarterTimerFastFowardButton, "QuarterTimerFastFowardButton");
-            this.QuarterTimerFastFowardButton.Name = "QuarterTimerFastFowardButton";
-            this.QuarterTimerFastFowardButton.UseVisualStyleBackColor = true;
-            this.QuarterTimerFastFowardButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerFastFoward_MouseDown);
-            this.QuarterTimerFastFowardButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerFastFoward_MouseUp);
-            // 
-            // QuarterTimerStopButton
-            // 
-            resources.ApplyResources(this.QuarterTimerStopButton, "QuarterTimerStopButton");
-            this.QuarterTimerStopButton.ForeColor = System.Drawing.Color.Black;
-            this.QuarterTimerStopButton.Name = "QuarterTimerStopButton";
-            this.QuarterTimerStopButton.UseVisualStyleBackColor = true;
-            this.QuarterTimerStopButton.Click += new System.EventHandler(this.QuarterTimerStop_Click);
-            // 
-            // label8
-            // 
-            resources.ApplyResources(this.label8, "label8");
-            this.label8.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label8.Name = "label8";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.AssistButton);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.StealButton);
-            this.groupBox1.Controls.Add(this.TurnOverButton);
-            this.groupBox1.Controls.Add(this.BlockShotButton);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.givenFreeThowLabel);
-            this.groupBox2.Controls.Add(this.DisQualifyingFaulButton);
-            this.groupBox2.Controls.Add(this.DownButton);
-            this.groupBox2.Controls.Add(this.TechnicalFaulButton);
-            this.groupBox2.Controls.Add(this.UnSportsmanLikeFaulButton);
-            this.groupBox2.Controls.Add(this.UpButton);
-            this.groupBox2.Controls.Add(this.PersonalFaulButton);
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
-            // 
-            // MemberChangeButton
-            // 
-            resources.ApplyResources(this.MemberChangeButton, "MemberChangeButton");
-            this.MemberChangeButton.Name = "MemberChangeButton";
-            this.MemberChangeButton.UseVisualStyleBackColor = true;
-            this.MemberChangeButton.Click += new System.EventHandler(this.TeamChangeButton_Click);
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.MyTimeOutLabel);
-            this.groupBox3.Controls.Add(this.MyTimeOutButton);
-            this.groupBox3.Controls.Add(this.OppentTimeOutLabel);
-            this.groupBox3.Controls.Add(this.MemberChangeButton);
-            this.groupBox3.Controls.Add(this.OppentTimeOutButton);
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.TabStop = false;
-            // 
-            // label9
-            // 
-            resources.ApplyResources(this.label9, "label9");
-            this.label9.ForeColor = System.Drawing.Color.OrangeRed;
-            this.label9.Name = "label9";
-            // 
             // OppentTeamPointLabel
             // 
+            this.OppentTeamPointLabel.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.OppentTeamPointLabel, "OppentTeamPointLabel");
+            this.OppentTeamPointLabel.ForeColor = System.Drawing.Color.White;
             this.OppentTeamPointLabel.Name = "OppentTeamPointLabel";
             // 
             // MyTeamPointLabel
             // 
+            this.MyTeamPointLabel.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.MyTeamPointLabel, "MyTeamPointLabel");
+            this.MyTeamPointLabel.ForeColor = System.Drawing.Color.White;
             this.MyTeamPointLabel.Name = "MyTeamPointLabel";
             // 
             // ToolStrip
@@ -850,6 +709,7 @@
             // NewGameToolStripButton
             // 
             this.NewGameToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.NewGameToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources._new;
             resources.ApplyResources(this.NewGameToolStripButton, "NewGameToolStripButton");
             this.NewGameToolStripButton.Name = "NewGameToolStripButton";
             this.NewGameToolStripButton.Click += new System.EventHandler(this.NewGameToolStripButton_Click);
@@ -857,6 +717,7 @@
             // LoadToolStripButton
             // 
             this.LoadToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.LoadToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.open;
             resources.ApplyResources(this.LoadToolStripButton, "LoadToolStripButton");
             this.LoadToolStripButton.Name = "LoadToolStripButton";
             this.LoadToolStripButton.Click += new System.EventHandler(this.OpenToolStripButton_Click);
@@ -864,6 +725,7 @@
             // SaveToolStripButton
             // 
             this.SaveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.SaveToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.floppy;
             resources.ApplyResources(this.SaveToolStripButton, "SaveToolStripButton");
             this.SaveToolStripButton.Name = "SaveToolStripButton";
             this.SaveToolStripButton.Click += new System.EventHandler(this.SaveToolStripButton_Click);
@@ -871,6 +733,7 @@
             // UndoToolStripButton
             // 
             this.UndoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.UndoToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.left;
             resources.ApplyResources(this.UndoToolStripButton, "UndoToolStripButton");
             this.UndoToolStripButton.Name = "UndoToolStripButton";
             this.UndoToolStripButton.Click += new System.EventHandler(this.UndoToolStripButton_Click);
@@ -878,6 +741,7 @@
             // RedoToolStripButton
             // 
             this.RedoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.RedoToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.right;
             resources.ApplyResources(this.RedoToolStripButton, "RedoToolStripButton");
             this.RedoToolStripButton.Name = "RedoToolStripButton";
             this.RedoToolStripButton.Click += new System.EventHandler(this.RedoToolStripButton_Click);
@@ -885,6 +749,7 @@
             // UseCommentToolStripButton
             // 
             this.UseCommentToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.UseCommentToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.hukidashi;
             resources.ApplyResources(this.UseCommentToolStripButton, "UseCommentToolStripButton");
             this.UseCommentToolStripButton.Name = "UseCommentToolStripButton";
             this.UseCommentToolStripButton.Click += new System.EventHandler(this.UseCommentToolStripButton_Click);
@@ -927,8 +792,34 @@
             // 
             // QuarterTimerLabel
             // 
+            this.QuarterTimerLabel.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.QuarterTimerLabel, "QuarterTimerLabel");
+            this.QuarterTimerLabel.ForeColor = System.Drawing.Color.White;
             this.QuarterTimerLabel.Name = "QuarterTimerLabel";
+            // 
+            // CortPicture
+            // 
+            this.CortPicture.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.CortPicture, "CortPicture");
+            this.CortPicture.Name = "CortPicture";
+            this.CortPicture.TabStop = false;
+            this.CortPicture.Click += new System.EventHandler(this.CortPicture_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::BasketballManagementSystem.Properties.Resources.right;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::BasketballManagementSystem.Properties.Resources.left;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
             // 
             // ColorDialog
             // 
@@ -936,54 +827,135 @@
             this.ColorDialog.FullOpen = true;
             this.ColorDialog.ShowHelp = true;
             // 
+            // OppentTimeOutButton
+            // 
+            resources.ApplyResources(this.OppentTimeOutButton, "OppentTimeOutButton");
+            this.OppentTimeOutButton.Name = "OppentTimeOutButton";
+            this.OppentTimeOutButton.UseVisualStyleBackColor = true;
+            this.OppentTimeOutButton.Click += new System.EventHandler(this.OppentTimeOut_Click);
+            // 
+            // MemberChangeButton
+            // 
+            resources.ApplyResources(this.MemberChangeButton, "MemberChangeButton");
+            this.MemberChangeButton.Name = "MemberChangeButton";
+            this.MemberChangeButton.UseVisualStyleBackColor = true;
+            this.MemberChangeButton.Click += new System.EventHandler(this.TeamChangeButton_Click);
+            // 
+            // OppentTimeOutLabel
+            // 
+            resources.ApplyResources(this.OppentTimeOutLabel, "OppentTimeOutLabel");
+            this.OppentTimeOutLabel.Name = "OppentTimeOutLabel";
+            // 
+            // MyTimeOutButton
+            // 
+            resources.ApplyResources(this.MyTimeOutButton, "MyTimeOutButton");
+            this.MyTimeOutButton.Name = "MyTimeOutButton";
+            this.MyTimeOutButton.UseVisualStyleBackColor = true;
+            this.MyTimeOutButton.Click += new System.EventHandler(this.TimeOut_Click);
+            // 
+            // MyTimeOutLabel
+            // 
+            resources.ApplyResources(this.MyTimeOutLabel, "MyTimeOutLabel");
+            this.MyTimeOutLabel.Name = "MyTimeOutLabel";
+            // 
+            // QuarterTimerStopButton
+            // 
+            this.QuarterTimerStopButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.stop;
+            resources.ApplyResources(this.QuarterTimerStopButton, "QuarterTimerStopButton");
+            this.QuarterTimerStopButton.Name = "QuarterTimerStopButton";
+            this.QuarterTimerStopButton.ReverseImage = global::BasketballManagementSystem.Properties.Resources.playback_off;
+            this.QuarterTimerStopButton.Click += new System.EventHandler(this.QuarterTimerStop_Click);
+            // 
+            // QuarterTimerFastFowardButton
+            // 
+            this.QuarterTimerFastFowardButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.fastforward_off;
+            resources.ApplyResources(this.QuarterTimerFastFowardButton, "QuarterTimerFastFowardButton");
+            this.QuarterTimerFastFowardButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.fastforward_on;
+            this.QuarterTimerFastFowardButton.Name = "QuarterTimerFastFowardButton";
+            this.QuarterTimerFastFowardButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerFastFoward_MouseDown);
+            this.QuarterTimerFastFowardButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerFastFoward_MouseUp);
+            // 
+            // QuarterTimerRewindButton
+            // 
+            this.QuarterTimerRewindButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.rewind_off;
+            resources.ApplyResources(this.QuarterTimerRewindButton, "QuarterTimerRewindButton");
+            this.QuarterTimerRewindButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.rewind_on;
+            this.QuarterTimerRewindButton.Name = "QuarterTimerRewindButton";
+            this.QuarterTimerRewindButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerRewind_MouseDown);
+            this.QuarterTimerRewindButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerRewind_MouseUp);
+            // 
+            // backPictureBox
+            // 
+            this.backPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.back;
+            resources.ApplyResources(this.backPictureBox, "backPictureBox");
+            this.backPictureBox.Name = "backPictureBox";
+            this.backPictureBox.TabStop = false;
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // FormInputView
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.QuarterTimerLabel);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AssistButton);
+            this.Controls.Add(this.MyTimeOutLabel);
+            this.Controls.Add(this.QuarterTimerRewindButton);
+            this.Controls.Add(this.MyTimeOutButton);
+            this.Controls.Add(this.StealButton);
+            this.Controls.Add(this.OppentTimeOutLabel);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.MemberChangeButton);
+            this.Controls.Add(this.TurnOverButton);
+            this.Controls.Add(this.OppentTimeOutButton);
+            this.Controls.Add(this.QuarterTimerFastFowardButton);
+            this.Controls.Add(this.BlockShotButton);
+            this.Controls.Add(this.givenFreeThowLabel);
             this.Controls.Add(this.QuarterTimerStopButton);
+            this.Controls.Add(this.DisQualifyingFaulButton);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.DownButton);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.TechnicalFaulButton);
+            this.Controls.Add(this.CortPicture);
+            this.Controls.Add(this.UnSportsmanLikeFaulButton);
+            this.Controls.Add(this.QuarterTimerLabel);
+            this.Controls.Add(this.UpButton);
             this.Controls.Add(this.MyTeamPointLabel);
+            this.Controls.Add(this.PersonalFaulButton);
             this.Controls.Add(this.OppentTeamPointLabel);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.OppentOutTeamListBox);
             this.Controls.Add(this.OppentCortTeamListBox);
             this.Controls.Add(this.MyCortTeamListBox);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.QuarterTimerRewindButton);
-            this.Controls.Add(this.QuarterTimerFastFowardButton);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.MyTeamFaulLabel);
             this.Controls.Add(this.OppentTeamFaulLabel);
             this.Controls.Add(this.QuarterText);
             this.Controls.Add(this.OppentTeamNameLabel);
             this.Controls.Add(this.MyTeamNameLael);
-            this.Controls.Add(this.CortPictureBox);
             this.Controls.Add(this.PlayerNameLabel);
             this.Controls.Add(this.MyOutTeamListBox);
             this.Controls.Add(this.ToolStrip);
             this.Controls.Add(this.MenuStrip1);
+            this.Controls.Add(this.backPictureBox);
             this.KeyPreview = true;
             this.MainMenuStrip = this.MenuStrip1;
             this.Name = "FormInputView";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormInput_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormInput_KeyUp);
-            ((System.ComponentModel.ISupportInitialize)(this.CortPictureBox)).EndInit();
             this.MenuStrip1.ResumeLayout(false);
             this.MenuStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.ToolStrip.ResumeLayout(false);
             this.ToolStrip.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CortPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -998,7 +970,6 @@
         private System.Windows.Forms.Button TurnOverButton;
         private System.Windows.Forms.Button StealButton;
         private System.Windows.Forms.Button BlockShotButton;
-        private System.Windows.Forms.PictureBox CortPictureBox;
         private System.Windows.Forms.ToolStripMenuItem FileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ChangeMyTeamItem;
         private System.Windows.Forms.ToolStripMenuItem ChangeOppentTeamItem;
@@ -1018,10 +989,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label MyTeamFaulLabel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ToolStripMenuItem GoGraphScoreFormItem;
         private System.Windows.Forms.ToolStripMenuItem LoadGameDataItem;
         private System.Windows.Forms.ToolStripMenuItem ExitItem;
@@ -1029,13 +996,10 @@
         private System.Windows.Forms.ToolStripMenuItem ChangeGameNameItem;
         private System.Windows.Forms.ToolStripMenuItem ChangeGameLocationItem;
         private System.Windows.Forms.ToolStripMenuItem GoBoxScoreFormItem;
-        private System.Windows.Forms.Button MyTimeOutButton;
         private System.Windows.Forms.Button TechnicalFaulButton;
         private System.Windows.Forms.Button UnSportsmanLikeFaulButton;
         private System.Windows.Forms.Button DisQualifyingFaulButton;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.ToolStripMenuItem NewGameItem;
-        private System.Windows.Forms.Label MyTimeOutLabel;
         private System.Windows.Forms.Button UpButton;
         private System.Windows.Forms.Button DownButton;
         private System.Windows.Forms.Label givenFreeThowLabel;
@@ -1052,11 +1016,7 @@
         private System.Windows.Forms.ToolStripComboBox TimerTickComboBox;
         private System.Windows.Forms.ToolStripMenuItem ChangeButtonColorItem;
         private System.Windows.Forms.ToolStripMenuItem ChangeButtonColorDefaultItem;
-        private System.Windows.Forms.Button OppentTimeOutButton;
-        private System.Windows.Forms.Label OppentTimeOutLabel;
         private System.Windows.Forms.ToolStripMenuItem GoTacticks2DFormItem;
-        private System.Windows.Forms.Button QuarterTimerRewindButton;
-        private System.Windows.Forms.Button QuarterTimerFastFowardButton;
         private System.Windows.Forms.ToolStripMenuItem ChangeButtonTextColorItem;
         private System.Windows.Forms.ToolStripMenuItem ChangeButtonTextColorDefaultItem;
         private System.Windows.Forms.ToolStripMenuItem DebugFormVisiableItem;
@@ -1071,21 +1031,16 @@
         private System.Windows.Forms.ToolStripMenuItem GoDataEditFormItem;
         private System.Windows.Forms.ToolStripMenuItem transmission;
         private System.Windows.Forms.ToolStripMenuItem GoTeamMakeFormItem;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ToolStripMenuItem GoActionPointEditFormItem;
         private System.Windows.Forms.ToolStripMenuItem actionPointGraphFormItem;
         private System.Windows.Forms.ToolStripMenuItem StrategySimulationFormItem;
         private System.Windows.Forms.ToolStripMenuItem GoTCPServerFormItem;
         private System.Windows.Forms.ToolStripMenuItem GoTCPClientFormItem;
         private System.Windows.Forms.ToolTip ToolTipFormInput;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
         public ExchangeListBox.ExChangeList MyCortTeamListBox;
         public ExchangeListBox.ExChangeList MyOutTeamListBox;
         public ExchangeListBox.ExChangeList OppentCortTeamListBox;
         public ExchangeListBox.ExChangeList OppentOutTeamListBox;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ToolStripMenuItem GoClubMakeFormItem;
         private System.Windows.Forms.Label OppentTeamPointLabel;
         private System.Windows.Forms.Label MyTeamPointLabel;
@@ -1094,14 +1049,25 @@
         private System.Windows.Forms.ToolStripButton NewGameToolStripButton;
         private System.Windows.Forms.ToolStripButton SaveToolStripButton;
         private System.Windows.Forms.ToolStripButton LoadToolStripButton;
-        internal System.Windows.Forms.Button QuarterTimerStopButton;
         internal System.Windows.Forms.ToolStripButton RedoToolStripButton;
         internal System.Windows.Forms.ToolStripButton UndoToolStripButton;
-        public System.Windows.Forms.Button MemberChangeButton;
         private System.Windows.Forms.ToolStripMenuItem UseCommentItem;
         private System.Windows.Forms.ToolStripButton UseCommentToolStripButton;
         private System.Windows.Forms.ToolStripMenuItem CentralityAnalyzeItem;
         private System.Windows.Forms.Label QuarterTimerLabel;
+        private System.Windows.Forms.PictureBox CortPicture;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button OppentTimeOutButton;
+        public System.Windows.Forms.Button MemberChangeButton;
+        private System.Windows.Forms.Label OppentTimeOutLabel;
+        private System.Windows.Forms.Button MyTimeOutButton;
+        private System.Windows.Forms.Label MyTimeOutLabel;
+        private CustomPictureButton.PictureButton QuarterTimerFastFowardButton;
+        private CustomPictureButton.PictureButton QuarterTimerRewindButton;
+        public CustomPictureButton.ReversePictureButton QuarterTimerStopButton;
+        private System.Windows.Forms.PictureBox backPictureBox;
+        public System.Windows.Forms.Button button1;
     }
 }
 

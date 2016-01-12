@@ -44,6 +44,10 @@
     <Reference Include="CustomCntrol">
       <HintPath>..\..\BMLibrary\CustomCntrol\bin\Debug\CustomCntrol.dll</HintPath>
     </Reference>
+    <Reference Include="CustomPictureButton, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\BMLibrary\CustomPictureButton\bin\Debug\CustomPictureButton.dll</HintPath>
+    </Reference>
     <Reference Include="DragDropList">
       <HintPath>..\..\BMLibrary\DragDropList\bin\Debug\DragDropList.dll</HintPath>
     </Reference>
@@ -331,6 +335,13 @@
     <EmbeddedResource Include="bmForm\input\DebugMessageForm.resx">
       <DependentUpon>DebugMessageForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="bmForm\input\FormInputView.is.resx">
+      <DependentUpon>FormInputView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bmForm\input\FormInputView.ja-JP.resx">
+      <DependentUpon>FormInputView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bmForm\input\FormInputView.ja.resx">
       <DependentUpon>FormInputView.cs</DependentUpon>
     </EmbeddedResource>
@@ -395,6 +406,13 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\back.png" />
+    <None Include="Resources\action_N_frame.png" />
+    <None Include="Resources\action_F_frame.png" />
+    <None Include="Resources\stop.png" />
+    <None Include="Resources\BMblack.ico" />
+    <None Include="Resources\BM.png" />
+    <None Include="Resources\BMblack.png" />
     <EmbeddedResource Include="bmForm\boxScore\picture\marubatu2.png" />
     <EmbeddedResource Include="bmForm\boxScore\picture\batu.png" />
     <EmbeddedResource Include="bmForm\boxScore\picture\bar.png" />
@@ -429,6 +447,54 @@
     <EmbeddedResource Include="bmForm\strategySimulation\picture\Ball2.png" />
     <EmbeddedResource Include="bmForm\strategySimulation\picture\Ball_Dark.png" />
     <EmbeddedResource Include="bmForm\strategySimulation\picture\Player_Red_Dark.png" />
+    <EmbeddedResource Include="bmForm\input\texture\0.png" />
+    <EmbeddedResource Include="bmForm\input\texture\1.png" />
+    <EmbeddedResource Include="bmForm\input\texture\2.png" />
+    <EmbeddedResource Include="bmForm\input\texture\3.png" />
+    <EmbeddedResource Include="bmForm\input\texture\4.png" />
+    <EmbeddedResource Include="bmForm\input\texture\5.png" />
+    <EmbeddedResource Include="bmForm\input\texture\6.png" />
+    <EmbeddedResource Include="bmForm\input\texture\7.png" />
+    <EmbeddedResource Include="bmForm\input\texture\8.png" />
+    <EmbeddedResource Include="bmForm\input\texture\9.png" />
+    <EmbeddedResource Include="bmForm\input\texture\all_off.png" />
+    <EmbeddedResource Include="bmForm\input\texture\ASoff.png" />
+    <EmbeddedResource Include="bmForm\input\texture\ASon.png" />
+    <EmbeddedResource Include="bmForm\input\texture\BSoff.png" />
+    <EmbeddedResource Include="bmForm\input\texture\BSon.png" />
+    <EmbeddedResource Include="bmForm\input\texture\colon_off.png" />
+    <EmbeddedResource Include="bmForm\input\texture\colon_on.png" />
+    <EmbeddedResource Include="bmForm\input\texture\DFoff.png" />
+    <EmbeddedResource Include="bmForm\input\texture\DFon.png" />
+    <EmbeddedResource Include="bmForm\input\texture\down.png" />
+    <EmbeddedResource Include="bmForm\input\texture\fastforward_off.png" />
+    <EmbeddedResource Include="bmForm\input\texture\fastforward_on.png" />
+    <EmbeddedResource Include="bmForm\input\texture\floppy.png" />
+    <EmbeddedResource Include="bmForm\input\texture\hukidashi.png" />
+    <EmbeddedResource Include="bmForm\input\texture\left.png" />
+    <EmbeddedResource Include="bmForm\input\texture\new.png" />
+    <EmbeddedResource Include="bmForm\input\texture\open.png" />
+    <EmbeddedResource Include="bmForm\input\texture\PFoff.png" />
+    <EmbeddedResource Include="bmForm\input\texture\PFon.png" />
+    <EmbeddedResource Include="bmForm\input\texture\playback_off.png" />
+    <EmbeddedResource Include="bmForm\input\texture\playback_on.png" />
+    <EmbeddedResource Include="bmForm\input\texture\redo.png" />
+    <EmbeddedResource Include="bmForm\input\texture\rewind_off.png" />
+    <EmbeddedResource Include="bmForm\input\texture\rewind_on.png" />
+    <EmbeddedResource Include="bmForm\input\texture\right.png" />
+    <EmbeddedResource Include="bmForm\input\texture\SToff.png" />
+    <EmbeddedResource Include="bmForm\input\texture\STon.png" />
+    <EmbeddedResource Include="bmForm\input\texture\TFoff.png" />
+    <EmbeddedResource Include="bmForm\input\texture\TFon.png" />
+    <EmbeddedResource Include="bmForm\input\texture\TOoff.png" />
+    <EmbeddedResource Include="bmForm\input\texture\TOon.png" />
+    <EmbeddedResource Include="bmForm\input\texture\UFoff.png" />
+    <EmbeddedResource Include="bmForm\input\texture\UFon.png" />
+    <EmbeddedResource Include="bmForm\input\texture\undo.png" />
+    <EmbeddedResource Include="bmForm\input\texture\up.png" />
+    <EmbeddedResource Include="bmForm\input\texture\background.png" />
+    <EmbeddedResource Include="bmForm\input\texture\backgroundATARI.png" />
+    <EmbeddedResource Include="bmForm\input\texture\coat.png" />
     <Content Include="bmForm\tactick2D\picture\basketball_court.png" />
     <Content Include="bmForm\input\picture\Player.png" />
   </ItemGroup>

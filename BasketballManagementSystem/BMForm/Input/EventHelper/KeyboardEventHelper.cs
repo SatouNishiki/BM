@@ -32,7 +32,8 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                         break;
 
                     case Keys.Space:
-                        form.QuarterTimerStopButton.PerformClick();
+                        //TODO:pictureboxにperformclickイベントがないのでやるなら自分で実装してください
+                        //form.QuarterTimerStopButton.PerformClick();
                         break;
 
                     case Keys.D1:
