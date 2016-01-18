@@ -103,7 +103,7 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                 selectPointList.Items.Add((new FreeThrowMiss()).ActionName);
                 selectPointList.Items.Add(cancelString);
 
-             //   selectPointList.IntegralHeight = true;
+                selectPointList.Size = new Size(selectPointList.Size.Width + 15, selectPointList.Size.Height + 30);
 
                 Point p2 = new Point(mousePoint.X + 40, mousePoint.Y - 40);
 
