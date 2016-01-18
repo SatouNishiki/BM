@@ -286,6 +286,54 @@
   <data name="ColorConfigItem.Text" xml:space="preserve">
     <value>色設定</value>
   </data>
+  <data name="ChangeFormBackGroundColorItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="ChangeFormBackGroundColorItem.Text" xml:space="preserve">
+    <value>背景色変更</value>
+  </data>
+  <data name="ChangeFormBackGroundColorDefaultItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="ChangeFormBackGroundColorDefaultItem.Text" xml:space="preserve">
+    <value>背景色をリセット</value>
+  </data>
+  <data name="ChangePointLabelColorItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="ChangePointLabelColorItem.Text" xml:space="preserve">
+    <value>点数板の色を変更</value>
+  </data>
+  <data name="ChangePointLabelColorDefaultItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="ChangePointLabelColorDefaultItem.Text" xml:space="preserve">
+    <value>点数板の色をリセット</value>
+  </data>
+  <data name="ChangeButtonColorItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="ChangeButtonColorItem.Text" xml:space="preserve">
+    <value>ボタンの色を一括変更</value>
+  </data>
+  <data name="ChangeButtonColorDefaultItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="ChangeButtonColorDefaultItem.Text" xml:space="preserve">
+    <value>ボタンの色をリセット</value>
+  </data>
+  <data name="ChangeButtonTextColorItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="ChangeButtonTextColorItem.Text" xml:space="preserve">
+    <value>ボタンの文字色を変更</value>
+  </data>
+  <data name="ChangeButtonTextColorDefaultItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>220, 22</value>
+  </data>
+  <data name="ChangeButtonTextColorDefaultItem.Text" xml:space="preserve">
+    <value>ボタンの文字色をリセット</value>
+  </data>
   <data name="ChangeFPSItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 22</value>
   </data>
@@ -400,9 +448,6 @@
   <data name="TechnicalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>564, 398</value>
   </data>
-  <data name="TechnicalFaulButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 27</value>
-  </data>
   <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>613, 398</value>
   </data>
@@ -436,14 +481,8 @@
   <data name="OppentTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>615, 71</value>
   </data>
-  <data name="MyTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 36pt</value>
-  </data>
   <data name="MyTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>240, 93</value>
-  </data>
-  <data name="MyTeamPointLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>145, 67</value>
+    <value>240, 71</value>
   </data>
   <data name="OppentOutTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>800, 203</value>
@@ -1038,20 +1077,17 @@
   <data name="MemberChangeButton.Text" xml:space="preserve">
     <value>メンバー交代</value>
   </data>
-  <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>915, 732</value>
-  </data>
-  <data name="OppentTimeOutLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 23</value>
-  </data>
   <data name="MyTimeOutButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 23</value>
   </data>
   <data name="MyTimeOutButton.Text" xml:space="preserve">
     <value>タイムアウト(自)</value>
   </data>
-  <data name="MyTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 708</value>
+  <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>938, 686</value>
+  </data>
+  <data name="OppentTimeOutLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 17</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -584,7 +584,7 @@ namespace BasketballManagementSystem.bmForm.input
         private void Init()
         {
             QuarterChangeTimerSpeedCombo.SelectedIndex = 0;
-
+            
             /***********************************デバッグウインドウ設定*******************************/
 
             if (DebugFormVisiableItem.Checked)
@@ -1397,13 +1397,13 @@ namespace BasketballManagementSystem.bmForm.input
 
             AppSetting.GetInstance().UseCommentChecked = ((ToolStripMenuItem)sender).Checked;
             AppSetting.GetInstance().SettingChanged();
-
             this.DataChangeEventThrow("UseComment", ((ToolStripMenuItem)sender).Checked);
+           
         }
 
         private void UseCommentItem_CheckedChanged(object sender, EventArgs e)
         {
-            if (UseComment)
+            if (UseCommentItem.Checked)
             {
                 UseCommentToolStripButton.BackColor = Color.DeepSkyBlue;
             }
@@ -1411,6 +1411,8 @@ namespace BasketballManagementSystem.bmForm.input
             {
                 UseCommentToolStripButton.BackColor = DefaultBackColor;
             }
+
+            
         }
 
 
