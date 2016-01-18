@@ -150,7 +150,10 @@ namespace BasketballManagementSystem.bmForm.input
             get { return (int)this.presenter.GetModelProperty("GivenFreeThrow"); }
         }
 
-
+        public bool IsStartGame
+        {
+            get { return (bool)this.presenter.GetModelProperty("IsStartGame"); }
+        }
 
         /********************************************イベント****************************************/
 
@@ -417,6 +420,12 @@ namespace BasketballManagementSystem.bmForm.input
 
         private void ActionClickEventThrow(Type type)
         {
+            if (!this.IsStartGame)
+            {
+                MessageBox.Show("試合が開始されていません");
+                return;
+            }
+
             if (this.ActionClickEvent != null)
             {
                 this.ActionClickEvent(type);
@@ -425,6 +434,12 @@ namespace BasketballManagementSystem.bmForm.input
 
         private void CortClickEventThrow(PictureBox pictureBox, EventArgs e)
         {
+            if (!this.IsStartGame)
+            {
+                MessageBox.Show("試合が開始されていません");
+                return;
+            }
+
             if (this.CortClickEvent != null)
             {
                 this.CortClickEvent(pictureBox, e);
@@ -926,6 +941,8 @@ namespace BasketballManagementSystem.bmForm.input
             StopGameItem.Enabled = true;
 
             this.StartGameEventThrow();
+
+            this.DataChangeEventThrow("IsStartGame", true);
         }
 
         private void NextQuarterButton_Click(object sender, EventArgs e)
@@ -973,6 +990,8 @@ namespace BasketballManagementSystem.bmForm.input
                 100);
 
             this.GameCommentEventThrow(comment);
+
+            this.DataChangeEventThrow("IsStartGame", false);
         }
 
         private void QuarterTimerFastFoward_MouseDown(object sender, MouseEventArgs e)

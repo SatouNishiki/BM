@@ -40,6 +40,8 @@ namespace BasketballManagementSystem.bmForm.input
         /// </summary>
         public int CultureSelectedIndex { get; set; }
 
+        public bool IsStartGame { get; set; }
+
         private Game game;
 
         /// <summary>
