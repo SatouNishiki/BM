@@ -85,6 +85,18 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                 {
                     switch (key.KeyCode)
                     {
+                        case Keys.N:
+                            form.NewGameToolStripButton.PerformClick();
+                            break;
+
+                        case Keys.L:
+                            form.LoadToolStripButton.PerformClick();
+                            break;
+
+                        case Keys.S:
+                            form.SaveToolStripButton.PerformClick();
+                            break;
+
                         case Keys.Z:
                             form.UndoToolStripButton.PerformClick();
                             break;

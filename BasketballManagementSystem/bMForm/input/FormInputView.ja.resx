@@ -274,6 +274,9 @@
   <data name="CentralityAnalyzeItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
   </data>
+  <data name="CentralityAnalyzeItem.Text" xml:space="preserve">
+    <value>中心性解析</value>
+  </data>
   <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 22</value>
   </data>
@@ -297,18 +300,6 @@
   </data>
   <data name="ChangeFormBackGroundColorDefaultItem.Text" xml:space="preserve">
     <value>背景色をリセット</value>
-  </data>
-  <data name="ChangePointLabelColorItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 22</value>
-  </data>
-  <data name="ChangePointLabelColorItem.Text" xml:space="preserve">
-    <value>点数板の色を変更</value>
-  </data>
-  <data name="ChangePointLabelColorDefaultItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>220, 22</value>
-  </data>
-  <data name="ChangePointLabelColorDefaultItem.Text" xml:space="preserve">
-    <value>点数板の色をリセット</value>
   </data>
   <data name="ChangeButtonColorItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 22</value>
@@ -483,6 +474,12 @@
   </data>
   <data name="MyTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>240, 71</value>
+  </data>
+  <data name="NewGameToolStripButton.ToolTipText" xml:space="preserve">
+    <value>試合データを新規作成します(Ctrl + N)</value>
+  </data>
+  <data name="UseCommentToolStripButton.ToolTipText" xml:space="preserve">
+    <value>アクション入力の際のコメント入力の有無を選択します(Ctrl + C)</value>
   </data>
   <data name="OppentOutTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>800, 203</value>

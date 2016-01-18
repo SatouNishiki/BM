@@ -105,6 +105,9 @@
             this.givenFreeThowLabel = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.ToolTipFormInput = new System.Windows.Forms.ToolTip(this.components);
+            this.QuarterTimerStopButton = new CustomPictureButton.ReversePictureButton();
+            this.QuarterTimerFastFowardButton = new CustomPictureButton.PictureButton();
+            this.QuarterTimerRewindButton = new CustomPictureButton.PictureButton();
             this.MyOutTeamListBox = new ExchangeListBox.ExChangeList();
             this.OppentTeamPointLabel = new System.Windows.Forms.Label();
             this.MyTeamPointLabel = new System.Windows.Forms.Label();
@@ -126,9 +129,6 @@
             this.MemberChangeButton = new System.Windows.Forms.Button();
             this.MyTimeOutButton = new System.Windows.Forms.Button();
             this.MyTimeOutLabel = new System.Windows.Forms.Label();
-            this.QuarterTimerStopButton = new CustomPictureButton.ReversePictureButton();
-            this.QuarterTimerFastFowardButton = new CustomPictureButton.PictureButton();
-            this.QuarterTimerRewindButton = new CustomPictureButton.PictureButton();
             this.backPictureBox = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.OppentTimeOutLabel = new System.Windows.Forms.Label();
@@ -665,6 +665,35 @@
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
             // 
+            // QuarterTimerStopButton
+            // 
+            this.QuarterTimerStopButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.stop;
+            resources.ApplyResources(this.QuarterTimerStopButton, "QuarterTimerStopButton");
+            this.QuarterTimerStopButton.Name = "QuarterTimerStopButton";
+            this.QuarterTimerStopButton.ReverseImage = global::BasketballManagementSystem.Properties.Resources.playback_off;
+            this.ToolTipFormInput.SetToolTip(this.QuarterTimerStopButton, resources.GetString("QuarterTimerStopButton.ToolTip"));
+            this.QuarterTimerStopButton.Click += new System.EventHandler(this.QuarterTimerStop_Click);
+            // 
+            // QuarterTimerFastFowardButton
+            // 
+            this.QuarterTimerFastFowardButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.fastforward_off;
+            resources.ApplyResources(this.QuarterTimerFastFowardButton, "QuarterTimerFastFowardButton");
+            this.QuarterTimerFastFowardButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.fastforward_on;
+            this.QuarterTimerFastFowardButton.Name = "QuarterTimerFastFowardButton";
+            this.ToolTipFormInput.SetToolTip(this.QuarterTimerFastFowardButton, resources.GetString("QuarterTimerFastFowardButton.ToolTip"));
+            this.QuarterTimerFastFowardButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerFastFoward_MouseDown);
+            this.QuarterTimerFastFowardButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerFastFoward_MouseUp);
+            // 
+            // QuarterTimerRewindButton
+            // 
+            this.QuarterTimerRewindButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.rewind_off;
+            resources.ApplyResources(this.QuarterTimerRewindButton, "QuarterTimerRewindButton");
+            this.QuarterTimerRewindButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.rewind_on;
+            this.QuarterTimerRewindButton.Name = "QuarterTimerRewindButton";
+            this.ToolTipFormInput.SetToolTip(this.QuarterTimerRewindButton, resources.GetString("QuarterTimerRewindButton.ToolTip"));
+            this.QuarterTimerRewindButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerRewind_MouseDown);
+            this.QuarterTimerRewindButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerRewind_MouseUp);
+            // 
             // MyOutTeamListBox
             // 
             resources.ApplyResources(this.MyOutTeamListBox, "MyOutTeamListBox");
@@ -833,35 +862,6 @@
             resources.ApplyResources(this.MyTimeOutLabel, "MyTimeOutLabel");
             this.MyTimeOutLabel.Name = "MyTimeOutLabel";
             // 
-            // QuarterTimerStopButton
-            // 
-            this.QuarterTimerStopButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.stop;
-            resources.ApplyResources(this.QuarterTimerStopButton, "QuarterTimerStopButton");
-            this.QuarterTimerStopButton.Name = "QuarterTimerStopButton";
-            this.QuarterTimerStopButton.ReverseImage = global::BasketballManagementSystem.Properties.Resources.playback_off;
-            this.ToolTipFormInput.SetToolTip(this.QuarterTimerStopButton, resources.GetString("QuarterTimerStopButton.ToolTip"));
-            this.QuarterTimerStopButton.Click += new System.EventHandler(this.QuarterTimerStop_Click);
-            // 
-            // QuarterTimerFastFowardButton
-            // 
-            this.QuarterTimerFastFowardButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.fastforward_off;
-            resources.ApplyResources(this.QuarterTimerFastFowardButton, "QuarterTimerFastFowardButton");
-            this.QuarterTimerFastFowardButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.fastforward_on;
-            this.QuarterTimerFastFowardButton.Name = "QuarterTimerFastFowardButton";
-            this.ToolTipFormInput.SetToolTip(this.QuarterTimerFastFowardButton, resources.GetString("QuarterTimerFastFowardButton.ToolTip"));
-            this.QuarterTimerFastFowardButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerFastFoward_MouseDown);
-            this.QuarterTimerFastFowardButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerFastFoward_MouseUp);
-            // 
-            // QuarterTimerRewindButton
-            // 
-            this.QuarterTimerRewindButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.rewind_off;
-            resources.ApplyResources(this.QuarterTimerRewindButton, "QuarterTimerRewindButton");
-            this.QuarterTimerRewindButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.rewind_on;
-            this.QuarterTimerRewindButton.Name = "QuarterTimerRewindButton";
-            this.ToolTipFormInput.SetToolTip(this.QuarterTimerRewindButton, resources.GetString("QuarterTimerRewindButton.ToolTip"));
-            this.QuarterTimerRewindButton.MouseDown += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerRewind_MouseDown);
-            this.QuarterTimerRewindButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.QuarterTimerRewind_MouseUp);
-            // 
             // backPictureBox
             // 
             this.backPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.back;
@@ -932,6 +932,7 @@
             this.Controls.Add(this.ToolStrip);
             this.Controls.Add(this.MenuStrip1);
             this.Controls.Add(this.backPictureBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.MainMenuStrip = this.MenuStrip1;
             this.Name = "FormInputView";
@@ -1033,9 +1034,6 @@
         private System.Windows.Forms.Label MyTeamPointLabel;
         private System.Windows.Forms.ToolStrip ToolStrip;
         private System.Windows.Forms.ColorDialog ColorDialog;
-        private System.Windows.Forms.ToolStripButton NewGameToolStripButton;
-        private System.Windows.Forms.ToolStripButton SaveToolStripButton;
-        private System.Windows.Forms.ToolStripButton LoadToolStripButton;
         internal System.Windows.Forms.ToolStripButton RedoToolStripButton;
         internal System.Windows.Forms.ToolStripButton UndoToolStripButton;
         private System.Windows.Forms.ToolStripMenuItem UseCommentItem;
@@ -1055,6 +1053,9 @@
         private System.Windows.Forms.PictureBox backPictureBox;
         public System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label OppentTimeOutLabel;
+        public System.Windows.Forms.ToolStripButton NewGameToolStripButton;
+        public System.Windows.Forms.ToolStripButton SaveToolStripButton;
+        public System.Windows.Forms.ToolStripButton LoadToolStripButton;
     }
 }
 
