@@ -864,7 +864,7 @@
             // 
             // backPictureBox
             // 
-            this.backPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.backgroundATARI;
+            this.backPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.back;
             resources.ApplyResources(this.backPictureBox, "backPictureBox");
             this.backPictureBox.Name = "backPictureBox";
             this.backPictureBox.TabStop = false;
