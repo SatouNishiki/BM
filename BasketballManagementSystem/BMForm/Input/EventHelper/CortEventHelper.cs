@@ -92,6 +92,7 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                 selectPointList = new ListBox();
 
                 selectPointList.Name = "selectPointList";
+                selectPointList.Font = new Font("MS UI Gothic", 12);
 
                 //listboxにアイテム追加
                 selectPointList.Items.Add((new Shoot2P()).ActionName);
@@ -101,6 +102,8 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                 selectPointList.Items.Add((new FreeThrow()).ActionName);
                 selectPointList.Items.Add((new FreeThrowMiss()).ActionName);
                 selectPointList.Items.Add(cancelString);
+
+             //   selectPointList.IntegralHeight = true;
 
                 Point p2 = new Point(mousePoint.X + 40, mousePoint.Y - 40);
 
