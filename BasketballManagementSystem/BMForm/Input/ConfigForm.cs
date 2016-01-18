@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace BasketballManagementSystem.bmForm.input
 {
+    //TODO:Config画面分離を考えて一応つくってみたフォーム
+
     public partial class ConfigForm : Form
     {
         public ConfigForm()
