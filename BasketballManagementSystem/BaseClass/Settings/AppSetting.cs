@@ -32,12 +32,6 @@ namespace BasketballManagementSystem.baseClass.settings
         public Color FormInputBackGroundColor { get; set; }
 
         /// <summary>
-        /// 入力画面の得点板の背景色
-        /// </summary>
-        [XmlIgnore]
-        public Color FormInputPointBackGroundColor { get; set; }
-
-        /// <summary>
         /// 入力画面のボタンの背景色
         /// </summary>
         [XmlIgnore]
@@ -96,13 +90,6 @@ namespace BasketballManagementSystem.baseClass.settings
             set {
                 FormInputBackGroundColor = ColorTranslator.FromHtml(value);
             }
-        }
-
-        [XmlAttribute("FormInputPointBackGroundColor")]
-        public string FormInputPointBackGroundColorAsRGB
-        {
-            get { return ColorTranslator.ToHtml(FormInputPointBackGroundColor); }
-            set { FormInputPointBackGroundColor = ColorTranslator.FromHtml(value); }
         }
 
         [XmlAttribute("FormInputButtonColor")]

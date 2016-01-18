@@ -70,8 +70,6 @@
             this.ColorConfigItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangeFormBackGroundColorItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangeFormBackGroundColorDefaultItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ChangePointLabelColorItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ChangePointLabelColorDefaultItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangeButtonColorItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangeButtonColorDefaultItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ChangeButtonTextColorItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -149,7 +147,6 @@
             this.PlayerNameLabel.BackColor = System.Drawing.Color.DimGray;
             this.PlayerNameLabel.ForeColor = System.Drawing.Color.White;
             this.PlayerNameLabel.Name = "PlayerNameLabel";
-            this.ToolTipFormInput.SetToolTip(this.PlayerNameLabel, resources.GetString("PlayerNameLabel.ToolTip"));
             // 
             // FormInputTimer
             // 
@@ -166,8 +163,8 @@
             // 
             // PersonalFaulButton
             // 
-            resources.ApplyResources(this.PersonalFaulButton, "PersonalFaulButton");
             this.PersonalFaulButton.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.PersonalFaulButton, "PersonalFaulButton");
             this.PersonalFaulButton.Name = "PersonalFaulButton";
             this.ToolTipFormInput.SetToolTip(this.PersonalFaulButton, resources.GetString("PersonalFaulButton.ToolTip"));
             this.PersonalFaulButton.UseVisualStyleBackColor = true;
@@ -199,7 +196,6 @@
             // 
             // MenuStrip1
             // 
-            resources.ApplyResources(this.MenuStrip1, "MenuStrip1");
             this.MenuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileToolStripMenuItem,
@@ -209,12 +205,11 @@
             this.PropToolStripMenuItem,
             this.dataToolStripMenuItem,
             this.transmission});
+            resources.ApplyResources(this.MenuStrip1, "MenuStrip1");
             this.MenuStrip1.Name = "MenuStrip1";
-            this.ToolTipFormInput.SetToolTip(this.MenuStrip1, resources.GetString("MenuStrip1.ToolTip"));
             // 
             // FileToolStripMenuItem
             // 
-            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.NewGameItem,
             this.ChangeMyTeamItem,
@@ -225,58 +220,58 @@
             this.PrintPreviewItem,
             this.ExitItem});
             this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
             // NewGameItem
             // 
-            resources.ApplyResources(this.NewGameItem, "NewGameItem");
             this.NewGameItem.Name = "NewGameItem";
+            resources.ApplyResources(this.NewGameItem, "NewGameItem");
             this.NewGameItem.Click += new System.EventHandler(this.NewGameItem_Click);
             // 
             // ChangeMyTeamItem
             // 
-            resources.ApplyResources(this.ChangeMyTeamItem, "ChangeMyTeamItem");
             this.ChangeMyTeamItem.Name = "ChangeMyTeamItem";
+            resources.ApplyResources(this.ChangeMyTeamItem, "ChangeMyTeamItem");
             this.ChangeMyTeamItem.Click += new System.EventHandler(this.ChangeMyTeamButton_Click);
             // 
             // ChangeOppentTeamItem
             // 
-            resources.ApplyResources(this.ChangeOppentTeamItem, "ChangeOppentTeamItem");
             this.ChangeOppentTeamItem.Name = "ChangeOppentTeamItem";
+            resources.ApplyResources(this.ChangeOppentTeamItem, "ChangeOppentTeamItem");
             this.ChangeOppentTeamItem.Click += new System.EventHandler(this.ChangeOppentTeamButton_Click);
             // 
             // GameDataSaveItem
             // 
-            resources.ApplyResources(this.GameDataSaveItem, "GameDataSaveItem");
             this.GameDataSaveItem.Name = "GameDataSaveItem";
+            resources.ApplyResources(this.GameDataSaveItem, "GameDataSaveItem");
             this.GameDataSaveItem.Click += new System.EventHandler(this.GameDataSave_Click);
             // 
             // LoadGameDataItem
             // 
-            resources.ApplyResources(this.LoadGameDataItem, "LoadGameDataItem");
             this.LoadGameDataItem.Name = "LoadGameDataItem";
+            resources.ApplyResources(this.LoadGameDataItem, "LoadGameDataItem");
             this.LoadGameDataItem.Click += new System.EventHandler(this.GameDataLoad_Click);
             // 
             // PrintFormItem
             // 
-            resources.ApplyResources(this.PrintFormItem, "PrintFormItem");
             this.PrintFormItem.Name = "PrintFormItem";
+            resources.ApplyResources(this.PrintFormItem, "PrintFormItem");
             this.PrintFormItem.Click += new System.EventHandler(this.PrintForm_Click);
             // 
             // PrintPreviewItem
             // 
-            resources.ApplyResources(this.PrintPreviewItem, "PrintPreviewItem");
             this.PrintPreviewItem.Name = "PrintPreviewItem";
+            resources.ApplyResources(this.PrintPreviewItem, "PrintPreviewItem");
             this.PrintPreviewItem.Click += new System.EventHandler(this.PrintPreview_Click);
             // 
             // ExitItem
             // 
-            resources.ApplyResources(this.ExitItem, "ExitItem");
             this.ExitItem.Name = "ExitItem";
+            resources.ApplyResources(this.ExitItem, "ExitItem");
             this.ExitItem.Click += new System.EventHandler(this.Exit_Click);
             // 
             // GameToolStripMenuItem
             // 
-            resources.ApplyResources(this.GameToolStripMenuItem, "GameToolStripMenuItem");
             this.GameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StartGameItem,
             this.NextQuarterItem,
@@ -284,17 +279,18 @@
             this.RestartGameItem,
             this.GameEndItem});
             this.GameToolStripMenuItem.Name = "GameToolStripMenuItem";
+            resources.ApplyResources(this.GameToolStripMenuItem, "GameToolStripMenuItem");
             // 
             // StartGameItem
             // 
-            resources.ApplyResources(this.StartGameItem, "StartGameItem");
             this.StartGameItem.Name = "StartGameItem";
+            resources.ApplyResources(this.StartGameItem, "StartGameItem");
             this.StartGameItem.Click += new System.EventHandler(this.StartGame_Click);
             // 
             // NextQuarterItem
             // 
-            resources.ApplyResources(this.NextQuarterItem, "NextQuarterItem");
             this.NextQuarterItem.Name = "NextQuarterItem";
+            resources.ApplyResources(this.NextQuarterItem, "NextQuarterItem");
             this.NextQuarterItem.Click += new System.EventHandler(this.NextQuarterButton_Click);
             // 
             // StopGameItem
@@ -305,8 +301,8 @@
             // 
             // RestartGameItem
             // 
-            resources.ApplyResources(this.RestartGameItem, "RestartGameItem");
             this.RestartGameItem.Name = "RestartGameItem";
+            resources.ApplyResources(this.RestartGameItem, "RestartGameItem");
             this.RestartGameItem.Click += new System.EventHandler(this.RestartGameButton_Click);
             // 
             // GameEndItem
@@ -317,41 +313,40 @@
             // 
             // GamePropToolStripMenuItem
             // 
-            resources.ApplyResources(this.GamePropToolStripMenuItem, "GamePropToolStripMenuItem");
             this.GamePropToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ChangeGameNameItem,
             this.ChangeGameLocationItem});
             this.GamePropToolStripMenuItem.Name = "GamePropToolStripMenuItem";
+            resources.ApplyResources(this.GamePropToolStripMenuItem, "GamePropToolStripMenuItem");
             // 
             // ChangeGameNameItem
             // 
-            resources.ApplyResources(this.ChangeGameNameItem, "ChangeGameNameItem");
             this.ChangeGameNameItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GameNameText});
             this.ChangeGameNameItem.Name = "ChangeGameNameItem";
+            resources.ApplyResources(this.ChangeGameNameItem, "ChangeGameNameItem");
             // 
             // GameNameText
             // 
-            resources.ApplyResources(this.GameNameText, "GameNameText");
             this.GameNameText.Name = "GameNameText";
+            resources.ApplyResources(this.GameNameText, "GameNameText");
             this.GameNameText.TextChanged += new System.EventHandler(this.GameNameText_TextChanged);
             // 
             // ChangeGameLocationItem
             // 
-            resources.ApplyResources(this.ChangeGameLocationItem, "ChangeGameLocationItem");
             this.ChangeGameLocationItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GameLocationText});
             this.ChangeGameLocationItem.Name = "ChangeGameLocationItem";
+            resources.ApplyResources(this.ChangeGameLocationItem, "ChangeGameLocationItem");
             // 
             // GameLocationText
             // 
-            resources.ApplyResources(this.GameLocationText, "GameLocationText");
             this.GameLocationText.Name = "GameLocationText";
+            resources.ApplyResources(this.GameLocationText, "GameLocationText");
             this.GameLocationText.TextChanged += new System.EventHandler(this.GameLocationText_TextChanged);
             // 
             // SolutionToolStripMenuItem
             // 
-            resources.ApplyResources(this.SolutionToolStripMenuItem, "SolutionToolStripMenuItem");
             this.SolutionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GoGraphScoreFormItem,
             this.GoBoxScoreFormItem,
@@ -361,52 +356,52 @@
             this.StrategySimulationFormItem,
             this.CentralityAnalyzeItem});
             this.SolutionToolStripMenuItem.Name = "SolutionToolStripMenuItem";
+            resources.ApplyResources(this.SolutionToolStripMenuItem, "SolutionToolStripMenuItem");
             // 
             // GoGraphScoreFormItem
             // 
-            resources.ApplyResources(this.GoGraphScoreFormItem, "GoGraphScoreFormItem");
             this.GoGraphScoreFormItem.Name = "GoGraphScoreFormItem";
+            resources.ApplyResources(this.GoGraphScoreFormItem, "GoGraphScoreFormItem");
             this.GoGraphScoreFormItem.Click += new System.EventHandler(this.GoGraphScorePage_Click);
             // 
             // GoBoxScoreFormItem
             // 
-            resources.ApplyResources(this.GoBoxScoreFormItem, "GoBoxScoreFormItem");
             this.GoBoxScoreFormItem.Name = "GoBoxScoreFormItem";
+            resources.ApplyResources(this.GoBoxScoreFormItem, "GoBoxScoreFormItem");
             this.GoBoxScoreFormItem.Click += new System.EventHandler(this.GoBoxScorePage_Click);
             // 
             // GoPlayerDataFormItem
             // 
-            resources.ApplyResources(this.GoPlayerDataFormItem, "GoPlayerDataFormItem");
             this.GoPlayerDataFormItem.Name = "GoPlayerDataFormItem";
+            resources.ApplyResources(this.GoPlayerDataFormItem, "GoPlayerDataFormItem");
             this.GoPlayerDataFormItem.Click += new System.EventHandler(this.GoPlayerData_Click);
             // 
             // GoTacticks2DFormItem
             // 
-            resources.ApplyResources(this.GoTacticks2DFormItem, "GoTacticks2DFormItem");
             this.GoTacticks2DFormItem.Name = "GoTacticks2DFormItem";
+            resources.ApplyResources(this.GoTacticks2DFormItem, "GoTacticks2DFormItem");
             this.GoTacticks2DFormItem.Click += new System.EventHandler(this.GoTacticks2D_Click);
             // 
             // actionPointGraphFormItem
             // 
-            resources.ApplyResources(this.actionPointGraphFormItem, "actionPointGraphFormItem");
             this.actionPointGraphFormItem.Name = "actionPointGraphFormItem";
+            resources.ApplyResources(this.actionPointGraphFormItem, "actionPointGraphFormItem");
             this.actionPointGraphFormItem.Click += new System.EventHandler(this.actionPointGraph_Click);
             // 
             // StrategySimulationFormItem
             // 
-            resources.ApplyResources(this.StrategySimulationFormItem, "StrategySimulationFormItem");
             this.StrategySimulationFormItem.Name = "StrategySimulationFormItem";
+            resources.ApplyResources(this.StrategySimulationFormItem, "StrategySimulationFormItem");
             this.StrategySimulationFormItem.Click += new System.EventHandler(this.strategySimulation_Click);
             // 
             // CentralityAnalyzeItem
             // 
-            resources.ApplyResources(this.CentralityAnalyzeItem, "CentralityAnalyzeItem");
             this.CentralityAnalyzeItem.Name = "CentralityAnalyzeItem";
+            resources.ApplyResources(this.CentralityAnalyzeItem, "CentralityAnalyzeItem");
             this.CentralityAnalyzeItem.Click += new System.EventHandler(this.CentralityAnalyzeItem_Click);
             // 
             // PropToolStripMenuItem
             // 
-            resources.ApplyResources(this.PropToolStripMenuItem, "PropToolStripMenuItem");
             this.PropToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ColorConfigItem,
             this.ChangeFPSItem,
@@ -415,185 +410,172 @@
             this.QuarterChangeTimerSpeedChangeItem,
             this.ChangeLanguageItem});
             this.PropToolStripMenuItem.Name = "PropToolStripMenuItem";
+            resources.ApplyResources(this.PropToolStripMenuItem, "PropToolStripMenuItem");
             this.PropToolStripMenuItem.Click += new System.EventHandler(this.PropToolStripMenuItem_Click);
             // 
             // ColorConfigItem
             // 
-            resources.ApplyResources(this.ColorConfigItem, "ColorConfigItem");
             this.ColorConfigItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ChangeFormBackGroundColorItem,
             this.ChangeFormBackGroundColorDefaultItem,
-            this.ChangePointLabelColorItem,
-            this.ChangePointLabelColorDefaultItem,
             this.ChangeButtonColorItem,
             this.ChangeButtonColorDefaultItem,
             this.ChangeButtonTextColorItem,
             this.ChangeButtonTextColorDefaultItem});
             this.ColorConfigItem.Name = "ColorConfigItem";
+            resources.ApplyResources(this.ColorConfigItem, "ColorConfigItem");
             // 
             // ChangeFormBackGroundColorItem
             // 
-            resources.ApplyResources(this.ChangeFormBackGroundColorItem, "ChangeFormBackGroundColorItem");
             this.ChangeFormBackGroundColorItem.Name = "ChangeFormBackGroundColorItem";
+            resources.ApplyResources(this.ChangeFormBackGroundColorItem, "ChangeFormBackGroundColorItem");
             this.ChangeFormBackGroundColorItem.Click += new System.EventHandler(this.ChangeBackGroundColor_Click);
             // 
             // ChangeFormBackGroundColorDefaultItem
             // 
-            resources.ApplyResources(this.ChangeFormBackGroundColorDefaultItem, "ChangeFormBackGroundColorDefaultItem");
             this.ChangeFormBackGroundColorDefaultItem.Name = "ChangeFormBackGroundColorDefaultItem";
+            resources.ApplyResources(this.ChangeFormBackGroundColorDefaultItem, "ChangeFormBackGroundColorDefaultItem");
             this.ChangeFormBackGroundColorDefaultItem.Click += new System.EventHandler(this.ChangeFormBackGroundColorDefault_Click);
-            // 
-            // ChangePointLabelColorItem
-            // 
-            resources.ApplyResources(this.ChangePointLabelColorItem, "ChangePointLabelColorItem");
-            this.ChangePointLabelColorItem.Name = "ChangePointLabelColorItem";
-            this.ChangePointLabelColorItem.Click += new System.EventHandler(this.PointColorChange_Click);
-            // 
-            // ChangePointLabelColorDefaultItem
-            // 
-            resources.ApplyResources(this.ChangePointLabelColorDefaultItem, "ChangePointLabelColorDefaultItem");
-            this.ChangePointLabelColorDefaultItem.Name = "ChangePointLabelColorDefaultItem";
-            this.ChangePointLabelColorDefaultItem.Click += new System.EventHandler(this.ChangePointLabelColorDefault_Click);
             // 
             // ChangeButtonColorItem
             // 
-            resources.ApplyResources(this.ChangeButtonColorItem, "ChangeButtonColorItem");
             this.ChangeButtonColorItem.Name = "ChangeButtonColorItem";
+            resources.ApplyResources(this.ChangeButtonColorItem, "ChangeButtonColorItem");
             this.ChangeButtonColorItem.Click += new System.EventHandler(this.ChangeButtonColor_Click);
             // 
             // ChangeButtonColorDefaultItem
             // 
-            resources.ApplyResources(this.ChangeButtonColorDefaultItem, "ChangeButtonColorDefaultItem");
             this.ChangeButtonColorDefaultItem.Name = "ChangeButtonColorDefaultItem";
+            resources.ApplyResources(this.ChangeButtonColorDefaultItem, "ChangeButtonColorDefaultItem");
             this.ChangeButtonColorDefaultItem.Click += new System.EventHandler(this.ChangeButtonColorDefault_Click);
             // 
             // ChangeButtonTextColorItem
             // 
-            resources.ApplyResources(this.ChangeButtonTextColorItem, "ChangeButtonTextColorItem");
             this.ChangeButtonTextColorItem.Name = "ChangeButtonTextColorItem";
+            resources.ApplyResources(this.ChangeButtonTextColorItem, "ChangeButtonTextColorItem");
             this.ChangeButtonTextColorItem.Click += new System.EventHandler(this.ChangeButtonTextColor_Click);
             // 
             // ChangeButtonTextColorDefaultItem
             // 
-            resources.ApplyResources(this.ChangeButtonTextColorDefaultItem, "ChangeButtonTextColorDefaultItem");
             this.ChangeButtonTextColorDefaultItem.Name = "ChangeButtonTextColorDefaultItem";
+            resources.ApplyResources(this.ChangeButtonTextColorDefaultItem, "ChangeButtonTextColorDefaultItem");
             this.ChangeButtonTextColorDefaultItem.Click += new System.EventHandler(this.ChangeButtonTextColorDefault_Click);
             // 
             // ChangeFPSItem
             // 
-            resources.ApplyResources(this.ChangeFPSItem, "ChangeFPSItem");
             this.ChangeFPSItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TimerTickComboBox});
             this.ChangeFPSItem.Name = "ChangeFPSItem";
+            resources.ApplyResources(this.ChangeFPSItem, "ChangeFPSItem");
             // 
             // TimerTickComboBox
             // 
-            resources.ApplyResources(this.TimerTickComboBox, "TimerTickComboBox");
             this.TimerTickComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TimerTickComboBox.Items.AddRange(new object[] {
             resources.GetString("TimerTickComboBox.Items"),
             resources.GetString("TimerTickComboBox.Items1"),
             resources.GetString("TimerTickComboBox.Items2")});
             this.TimerTickComboBox.Name = "TimerTickComboBox";
+            resources.ApplyResources(this.TimerTickComboBox, "TimerTickComboBox");
             this.TimerTickComboBox.SelectedIndexChanged += new System.EventHandler(this.TimerTickComboBox_SelectedIndexChanged);
             // 
             // DebugFormVisiableItem
             // 
-            resources.ApplyResources(this.DebugFormVisiableItem, "DebugFormVisiableItem");
             this.DebugFormVisiableItem.Name = "DebugFormVisiableItem";
+            resources.ApplyResources(this.DebugFormVisiableItem, "DebugFormVisiableItem");
             this.DebugFormVisiableItem.Click += new System.EventHandler(this.DebugFormVisiable_Click);
             // 
             // UseCommentItem
             // 
-            resources.ApplyResources(this.UseCommentItem, "UseCommentItem");
             this.UseCommentItem.Name = "UseCommentItem";
+            resources.ApplyResources(this.UseCommentItem, "UseCommentItem");
             this.UseCommentItem.CheckedChanged += new System.EventHandler(this.UseCommentItem_CheckedChanged);
             this.UseCommentItem.Click += new System.EventHandler(this.UseCommentItem_Click);
             // 
             // QuarterChangeTimerSpeedChangeItem
             // 
-            resources.ApplyResources(this.QuarterChangeTimerSpeedChangeItem, "QuarterChangeTimerSpeedChangeItem");
             this.QuarterChangeTimerSpeedChangeItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.QuarterChangeTimerSpeedCombo});
             this.QuarterChangeTimerSpeedChangeItem.Name = "QuarterChangeTimerSpeedChangeItem";
+            resources.ApplyResources(this.QuarterChangeTimerSpeedChangeItem, "QuarterChangeTimerSpeedChangeItem");
             // 
             // QuarterChangeTimerSpeedCombo
             // 
-            resources.ApplyResources(this.QuarterChangeTimerSpeedCombo, "QuarterChangeTimerSpeedCombo");
             this.QuarterChangeTimerSpeedCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.QuarterChangeTimerSpeedCombo.Items.AddRange(new object[] {
             resources.GetString("QuarterChangeTimerSpeedCombo.Items"),
             resources.GetString("QuarterChangeTimerSpeedCombo.Items1"),
             resources.GetString("QuarterChangeTimerSpeedCombo.Items2")});
             this.QuarterChangeTimerSpeedCombo.Name = "QuarterChangeTimerSpeedCombo";
+            resources.ApplyResources(this.QuarterChangeTimerSpeedCombo, "QuarterChangeTimerSpeedCombo");
             this.QuarterChangeTimerSpeedCombo.SelectedIndexChanged += new System.EventHandler(this.QuarterChangeTimerSpeedCombo_SelectedIndexChanged);
             // 
             // ChangeLanguageItem
             // 
-            resources.ApplyResources(this.ChangeLanguageItem, "ChangeLanguageItem");
             this.ChangeLanguageItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ChangeLanguageComboBox});
             this.ChangeLanguageItem.Name = "ChangeLanguageItem";
+            resources.ApplyResources(this.ChangeLanguageItem, "ChangeLanguageItem");
             // 
             // ChangeLanguageComboBox
             // 
-            resources.ApplyResources(this.ChangeLanguageComboBox, "ChangeLanguageComboBox");
             this.ChangeLanguageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ChangeLanguageComboBox.Name = "ChangeLanguageComboBox";
+            resources.ApplyResources(this.ChangeLanguageComboBox, "ChangeLanguageComboBox");
             this.ChangeLanguageComboBox.SelectedIndexChanged += new System.EventHandler(this.ChangeLanguageComboBox_SelectedIndexChanged);
             // 
             // dataToolStripMenuItem
             // 
-            resources.ApplyResources(this.dataToolStripMenuItem, "dataToolStripMenuItem");
             this.dataToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GoDataEditFormItem,
             this.GoClubMakeFormItem,
             this.GoTeamMakeFormItem,
             this.GoActionPointEditFormItem});
             this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
+            resources.ApplyResources(this.dataToolStripMenuItem, "dataToolStripMenuItem");
             // 
             // GoDataEditFormItem
             // 
-            resources.ApplyResources(this.GoDataEditFormItem, "GoDataEditFormItem");
             this.GoDataEditFormItem.Name = "GoDataEditFormItem";
+            resources.ApplyResources(this.GoDataEditFormItem, "GoDataEditFormItem");
             this.GoDataEditFormItem.Click += new System.EventHandler(this.dataEdit_Click);
             // 
             // GoClubMakeFormItem
             // 
-            resources.ApplyResources(this.GoClubMakeFormItem, "GoClubMakeFormItem");
             this.GoClubMakeFormItem.Name = "GoClubMakeFormItem";
+            resources.ApplyResources(this.GoClubMakeFormItem, "GoClubMakeFormItem");
             this.GoClubMakeFormItem.Click += new System.EventHandler(this.clubMake_Click);
             // 
             // GoTeamMakeFormItem
             // 
-            resources.ApplyResources(this.GoTeamMakeFormItem, "GoTeamMakeFormItem");
             this.GoTeamMakeFormItem.Name = "GoTeamMakeFormItem";
+            resources.ApplyResources(this.GoTeamMakeFormItem, "GoTeamMakeFormItem");
             this.GoTeamMakeFormItem.Click += new System.EventHandler(this.teamMake_Click);
             // 
             // GoActionPointEditFormItem
             // 
-            resources.ApplyResources(this.GoActionPointEditFormItem, "GoActionPointEditFormItem");
             this.GoActionPointEditFormItem.Name = "GoActionPointEditFormItem";
+            resources.ApplyResources(this.GoActionPointEditFormItem, "GoActionPointEditFormItem");
             this.GoActionPointEditFormItem.Click += new System.EventHandler(this.actionPointEdit_Click);
             // 
             // transmission
             // 
-            resources.ApplyResources(this.transmission, "transmission");
             this.transmission.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GoTCPServerFormItem,
             this.GoTCPClientFormItem});
             this.transmission.Name = "transmission";
+            resources.ApplyResources(this.transmission, "transmission");
             // 
             // GoTCPServerFormItem
             // 
-            resources.ApplyResources(this.GoTCPServerFormItem, "GoTCPServerFormItem");
             this.GoTCPServerFormItem.Name = "GoTCPServerFormItem";
+            resources.ApplyResources(this.GoTCPServerFormItem, "GoTCPServerFormItem");
             this.GoTCPServerFormItem.Click += new System.EventHandler(this.tCPServer_Click);
             // 
             // GoTCPClientFormItem
             // 
-            resources.ApplyResources(this.GoTCPClientFormItem, "GoTCPClientFormItem");
             this.GoTCPClientFormItem.Name = "GoTCPClientFormItem";
+            resources.ApplyResources(this.GoTCPClientFormItem, "GoTCPClientFormItem");
             this.GoTCPClientFormItem.Click += new System.EventHandler(this.tCPClient_Click);
             // 
             // MyTeamNameLael
@@ -601,46 +583,39 @@
             resources.ApplyResources(this.MyTeamNameLael, "MyTeamNameLael");
             this.MyTeamNameLael.ForeColor = System.Drawing.Color.Indigo;
             this.MyTeamNameLael.Name = "MyTeamNameLael";
-            this.ToolTipFormInput.SetToolTip(this.MyTeamNameLael, resources.GetString("MyTeamNameLael.ToolTip"));
             // 
             // OppentTeamNameLabel
             // 
             resources.ApplyResources(this.OppentTeamNameLabel, "OppentTeamNameLabel");
             this.OppentTeamNameLabel.ForeColor = System.Drawing.Color.Indigo;
             this.OppentTeamNameLabel.Name = "OppentTeamNameLabel";
-            this.ToolTipFormInput.SetToolTip(this.OppentTeamNameLabel, resources.GetString("OppentTeamNameLabel.ToolTip"));
             // 
             // QuarterText
             // 
-            resources.ApplyResources(this.QuarterText, "QuarterText");
             this.QuarterText.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.QuarterText, "QuarterText");
             this.QuarterText.ForeColor = System.Drawing.Color.White;
             this.QuarterText.Name = "QuarterText";
-            this.ToolTipFormInput.SetToolTip(this.QuarterText, resources.GetString("QuarterText.ToolTip"));
             // 
             // OppentTeamFaulLabel
             // 
             resources.ApplyResources(this.OppentTeamFaulLabel, "OppentTeamFaulLabel");
             this.OppentTeamFaulLabel.Name = "OppentTeamFaulLabel";
-            this.ToolTipFormInput.SetToolTip(this.OppentTeamFaulLabel, resources.GetString("OppentTeamFaulLabel.ToolTip"));
             // 
             // label2
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.ToolTipFormInput.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
             // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.ToolTipFormInput.SetToolTip(this.label3, resources.GetString("label3.ToolTip"));
             // 
             // MyTeamFaulLabel
             // 
             resources.ApplyResources(this.MyTeamFaulLabel, "MyTeamFaulLabel");
             this.MyTeamFaulLabel.Name = "MyTeamFaulLabel";
-            this.ToolTipFormInput.SetToolTip(this.MyTeamFaulLabel, resources.GetString("MyTeamFaulLabel.ToolTip"));
             // 
             // TechnicalFaulButton
             // 
@@ -670,7 +645,6 @@
             // 
             resources.ApplyResources(this.UpButton, "UpButton");
             this.UpButton.Name = "UpButton";
-            this.ToolTipFormInput.SetToolTip(this.UpButton, resources.GetString("UpButton.ToolTip"));
             this.UpButton.UseVisualStyleBackColor = true;
             this.UpButton.Click += new System.EventHandler(this.buttonUp_Click);
             // 
@@ -678,7 +652,6 @@
             // 
             resources.ApplyResources(this.DownButton, "DownButton");
             this.DownButton.Name = "DownButton";
-            this.ToolTipFormInput.SetToolTip(this.DownButton, resources.GetString("DownButton.ToolTip"));
             this.DownButton.UseVisualStyleBackColor = true;
             this.DownButton.Click += new System.EventHandler(this.buttonDown_Click);
             // 
@@ -686,13 +659,11 @@
             // 
             resources.ApplyResources(this.givenFreeThowLabel, "givenFreeThowLabel");
             this.givenFreeThowLabel.Name = "givenFreeThowLabel";
-            this.ToolTipFormInput.SetToolTip(this.givenFreeThowLabel, resources.GetString("givenFreeThowLabel.ToolTip"));
             // 
             // label11
             // 
             resources.ApplyResources(this.label11, "label11");
             this.label11.Name = "label11";
-            this.ToolTipFormInput.SetToolTip(this.label11, resources.GetString("label11.ToolTip"));
             // 
             // MyOutTeamListBox
             // 
@@ -701,28 +672,24 @@
             this.MyOutTeamListBox.IsEasyMemberChangeMode = false;
             this.MyOutTeamListBox.Name = "MyOutTeamListBox";
             this.MyOutTeamListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.ToolTipFormInput.SetToolTip(this.MyOutTeamListBox, resources.GetString("MyOutTeamListBox.ToolTip"));
             this.MyOutTeamListBox.Click += new System.EventHandler(this.TeamList_Click);
             // 
             // OppentTeamPointLabel
             // 
-            resources.ApplyResources(this.OppentTeamPointLabel, "OppentTeamPointLabel");
             this.OppentTeamPointLabel.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.OppentTeamPointLabel, "OppentTeamPointLabel");
             this.OppentTeamPointLabel.ForeColor = System.Drawing.Color.White;
             this.OppentTeamPointLabel.Name = "OppentTeamPointLabel";
-            this.ToolTipFormInput.SetToolTip(this.OppentTeamPointLabel, resources.GetString("OppentTeamPointLabel.ToolTip"));
             // 
             // MyTeamPointLabel
             // 
-            resources.ApplyResources(this.MyTeamPointLabel, "MyTeamPointLabel");
             this.MyTeamPointLabel.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.MyTeamPointLabel, "MyTeamPointLabel");
             this.MyTeamPointLabel.ForeColor = System.Drawing.Color.White;
             this.MyTeamPointLabel.Name = "MyTeamPointLabel";
-            this.ToolTipFormInput.SetToolTip(this.MyTeamPointLabel, resources.GetString("MyTeamPointLabel.ToolTip"));
             // 
             // ToolStrip
             // 
-            resources.ApplyResources(this.ToolStrip, "ToolStrip");
             this.ToolStrip.BackColor = System.Drawing.SystemColors.Control;
             this.ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.NewGameToolStripButton,
@@ -731,54 +698,54 @@
             this.UndoToolStripButton,
             this.RedoToolStripButton,
             this.UseCommentToolStripButton});
+            resources.ApplyResources(this.ToolStrip, "ToolStrip");
             this.ToolStrip.Name = "ToolStrip";
-            this.ToolTipFormInput.SetToolTip(this.ToolStrip, resources.GetString("ToolStrip.ToolTip"));
             // 
             // NewGameToolStripButton
             // 
-            resources.ApplyResources(this.NewGameToolStripButton, "NewGameToolStripButton");
             this.NewGameToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.NewGameToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources._new;
+            resources.ApplyResources(this.NewGameToolStripButton, "NewGameToolStripButton");
             this.NewGameToolStripButton.Name = "NewGameToolStripButton";
             this.NewGameToolStripButton.Click += new System.EventHandler(this.NewGameToolStripButton_Click);
             // 
             // LoadToolStripButton
             // 
-            resources.ApplyResources(this.LoadToolStripButton, "LoadToolStripButton");
             this.LoadToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.LoadToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.open;
+            resources.ApplyResources(this.LoadToolStripButton, "LoadToolStripButton");
             this.LoadToolStripButton.Name = "LoadToolStripButton";
             this.LoadToolStripButton.Click += new System.EventHandler(this.OpenToolStripButton_Click);
             // 
             // SaveToolStripButton
             // 
-            resources.ApplyResources(this.SaveToolStripButton, "SaveToolStripButton");
             this.SaveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.SaveToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.floppy;
+            resources.ApplyResources(this.SaveToolStripButton, "SaveToolStripButton");
             this.SaveToolStripButton.Name = "SaveToolStripButton";
             this.SaveToolStripButton.Click += new System.EventHandler(this.SaveToolStripButton_Click);
             // 
             // UndoToolStripButton
             // 
-            resources.ApplyResources(this.UndoToolStripButton, "UndoToolStripButton");
             this.UndoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.UndoToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.left;
+            resources.ApplyResources(this.UndoToolStripButton, "UndoToolStripButton");
             this.UndoToolStripButton.Name = "UndoToolStripButton";
             this.UndoToolStripButton.Click += new System.EventHandler(this.UndoToolStripButton_Click);
             // 
             // RedoToolStripButton
             // 
-            resources.ApplyResources(this.RedoToolStripButton, "RedoToolStripButton");
             this.RedoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.RedoToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.right;
+            resources.ApplyResources(this.RedoToolStripButton, "RedoToolStripButton");
             this.RedoToolStripButton.Name = "RedoToolStripButton";
             this.RedoToolStripButton.Click += new System.EventHandler(this.RedoToolStripButton_Click);
             // 
             // UseCommentToolStripButton
             // 
-            resources.ApplyResources(this.UseCommentToolStripButton, "UseCommentToolStripButton");
             this.UseCommentToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.UseCommentToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.hukidashi;
+            resources.ApplyResources(this.UseCommentToolStripButton, "UseCommentToolStripButton");
             this.UseCommentToolStripButton.Name = "UseCommentToolStripButton";
             this.UseCommentToolStripButton.Click += new System.EventHandler(this.UseCommentToolStripButton_Click);
             // 
@@ -789,7 +756,6 @@
             this.OppentOutTeamListBox.IsEasyMemberChangeMode = false;
             this.OppentOutTeamListBox.Name = "OppentOutTeamListBox";
             this.OppentOutTeamListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.ToolTipFormInput.SetToolTip(this.OppentOutTeamListBox, resources.GetString("OppentOutTeamListBox.ToolTip"));
             this.OppentOutTeamListBox.Click += new System.EventHandler(this.TeamList_Click);
             // 
             // OppentCortTeamListBox
@@ -799,7 +765,6 @@
             this.OppentCortTeamListBox.IsEasyMemberChangeMode = false;
             this.OppentCortTeamListBox.Name = "OppentCortTeamListBox";
             this.OppentCortTeamListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.ToolTipFormInput.SetToolTip(this.OppentCortTeamListBox, resources.GetString("OppentCortTeamListBox.ToolTip"));
             this.OppentCortTeamListBox.Click += new System.EventHandler(this.TeamList_Click);
             // 
             // MyCortTeamListBox
@@ -809,49 +774,43 @@
             this.MyCortTeamListBox.IsEasyMemberChangeMode = false;
             this.MyCortTeamListBox.Name = "MyCortTeamListBox";
             this.MyCortTeamListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
-            this.ToolTipFormInput.SetToolTip(this.MyCortTeamListBox, resources.GetString("MyCortTeamListBox.ToolTip"));
             this.MyCortTeamListBox.Click += new System.EventHandler(this.TeamList_Click);
             // 
             // QuarterTimerLabel
             // 
-            resources.ApplyResources(this.QuarterTimerLabel, "QuarterTimerLabel");
             this.QuarterTimerLabel.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.QuarterTimerLabel, "QuarterTimerLabel");
             this.QuarterTimerLabel.ForeColor = System.Drawing.Color.White;
             this.QuarterTimerLabel.Name = "QuarterTimerLabel";
-            this.ToolTipFormInput.SetToolTip(this.QuarterTimerLabel, resources.GetString("QuarterTimerLabel.ToolTip"));
             // 
             // CortPicture
             // 
-            resources.ApplyResources(this.CortPicture, "CortPicture");
             this.CortPicture.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.CortPicture, "CortPicture");
             this.CortPicture.Name = "CortPicture";
             this.CortPicture.TabStop = false;
-            this.ToolTipFormInput.SetToolTip(this.CortPicture, resources.GetString("CortPicture.ToolTip"));
             this.CortPicture.Click += new System.EventHandler(this.CortPicture_Click);
             // 
             // pictureBox1
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::BasketballManagementSystem.Properties.Resources.right;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
-            this.ToolTipFormInput.SetToolTip(this.pictureBox1, resources.GetString("pictureBox1.ToolTip"));
             // 
             // pictureBox2
             // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::BasketballManagementSystem.Properties.Resources.left;
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
-            this.ToolTipFormInput.SetToolTip(this.pictureBox2, resources.GetString("pictureBox2.ToolTip"));
             // 
             // OppentTimeOutButton
             // 
             resources.ApplyResources(this.OppentTimeOutButton, "OppentTimeOutButton");
             this.OppentTimeOutButton.Name = "OppentTimeOutButton";
-            this.ToolTipFormInput.SetToolTip(this.OppentTimeOutButton, resources.GetString("OppentTimeOutButton.ToolTip"));
             this.OppentTimeOutButton.UseVisualStyleBackColor = true;
             this.OppentTimeOutButton.Click += new System.EventHandler(this.OppentTimeOut_Click);
             // 
@@ -859,7 +818,6 @@
             // 
             resources.ApplyResources(this.MemberChangeButton, "MemberChangeButton");
             this.MemberChangeButton.Name = "MemberChangeButton";
-            this.ToolTipFormInput.SetToolTip(this.MemberChangeButton, resources.GetString("MemberChangeButton.ToolTip"));
             this.MemberChangeButton.UseVisualStyleBackColor = true;
             this.MemberChangeButton.Click += new System.EventHandler(this.TeamChangeButton_Click);
             // 
@@ -867,7 +825,6 @@
             // 
             resources.ApplyResources(this.MyTimeOutButton, "MyTimeOutButton");
             this.MyTimeOutButton.Name = "MyTimeOutButton";
-            this.ToolTipFormInput.SetToolTip(this.MyTimeOutButton, resources.GetString("MyTimeOutButton.ToolTip"));
             this.MyTimeOutButton.UseVisualStyleBackColor = true;
             this.MyTimeOutButton.Click += new System.EventHandler(this.TimeOut_Click);
             // 
@@ -875,12 +832,11 @@
             // 
             resources.ApplyResources(this.MyTimeOutLabel, "MyTimeOutLabel");
             this.MyTimeOutLabel.Name = "MyTimeOutLabel";
-            this.ToolTipFormInput.SetToolTip(this.MyTimeOutLabel, resources.GetString("MyTimeOutLabel.ToolTip"));
             // 
             // QuarterTimerStopButton
             // 
-            resources.ApplyResources(this.QuarterTimerStopButton, "QuarterTimerStopButton");
             this.QuarterTimerStopButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.stop;
+            resources.ApplyResources(this.QuarterTimerStopButton, "QuarterTimerStopButton");
             this.QuarterTimerStopButton.Name = "QuarterTimerStopButton";
             this.QuarterTimerStopButton.ReverseImage = global::BasketballManagementSystem.Properties.Resources.playback_off;
             this.ToolTipFormInput.SetToolTip(this.QuarterTimerStopButton, resources.GetString("QuarterTimerStopButton.ToolTip"));
@@ -888,8 +844,8 @@
             // 
             // QuarterTimerFastFowardButton
             // 
-            resources.ApplyResources(this.QuarterTimerFastFowardButton, "QuarterTimerFastFowardButton");
             this.QuarterTimerFastFowardButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.fastforward_off;
+            resources.ApplyResources(this.QuarterTimerFastFowardButton, "QuarterTimerFastFowardButton");
             this.QuarterTimerFastFowardButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.fastforward_on;
             this.QuarterTimerFastFowardButton.Name = "QuarterTimerFastFowardButton";
             this.ToolTipFormInput.SetToolTip(this.QuarterTimerFastFowardButton, resources.GetString("QuarterTimerFastFowardButton.ToolTip"));
@@ -898,8 +854,8 @@
             // 
             // QuarterTimerRewindButton
             // 
-            resources.ApplyResources(this.QuarterTimerRewindButton, "QuarterTimerRewindButton");
             this.QuarterTimerRewindButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.rewind_off;
+            resources.ApplyResources(this.QuarterTimerRewindButton, "QuarterTimerRewindButton");
             this.QuarterTimerRewindButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.rewind_on;
             this.QuarterTimerRewindButton.Name = "QuarterTimerRewindButton";
             this.ToolTipFormInput.SetToolTip(this.QuarterTimerRewindButton, resources.GetString("QuarterTimerRewindButton.ToolTip"));
@@ -908,24 +864,21 @@
             // 
             // backPictureBox
             // 
-            resources.ApplyResources(this.backPictureBox, "backPictureBox");
             this.backPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.back;
+            resources.ApplyResources(this.backPictureBox, "backPictureBox");
             this.backPictureBox.Name = "backPictureBox";
             this.backPictureBox.TabStop = false;
-            this.ToolTipFormInput.SetToolTip(this.backPictureBox, resources.GetString("backPictureBox.ToolTip"));
             // 
             // button1
             // 
             resources.ApplyResources(this.button1, "button1");
             this.button1.Name = "button1";
-            this.ToolTipFormInput.SetToolTip(this.button1, resources.GetString("button1.ToolTip"));
             this.button1.UseVisualStyleBackColor = true;
             // 
             // OppentTimeOutLabel
             // 
             resources.ApplyResources(this.OppentTimeOutLabel, "OppentTimeOutLabel");
             this.OppentTimeOutLabel.Name = "OppentTimeOutLabel";
-            this.ToolTipFormInput.SetToolTip(this.OppentTimeOutLabel, resources.GetString("OppentTimeOutLabel.ToolTip"));
             // 
             // ColorDialog
             // 
@@ -982,7 +935,6 @@
             this.KeyPreview = true;
             this.MainMenuStrip = this.MenuStrip1;
             this.Name = "FormInputView";
-            this.ToolTipFormInput.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormInput_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormInput_KeyUp);
             this.MenuStrip1.ResumeLayout(false);
@@ -1047,8 +999,6 @@
         private System.Windows.Forms.ToolStripMenuItem ColorConfigItem;
         private System.Windows.Forms.ToolStripMenuItem ChangeFormBackGroundColorItem;
         private System.Windows.Forms.ToolStripMenuItem ChangeFormBackGroundColorDefaultItem;
-        private System.Windows.Forms.ToolStripMenuItem ChangePointLabelColorItem;
-        private System.Windows.Forms.ToolStripMenuItem ChangePointLabelColorDefaultItem;
         private System.Windows.Forms.ToolStripMenuItem ChangeFPSItem;
         private System.Windows.Forms.ToolStripComboBox TimerTickComboBox;
         private System.Windows.Forms.ToolStripMenuItem ChangeButtonColorItem;

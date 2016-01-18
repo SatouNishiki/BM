@@ -553,8 +553,6 @@ namespace BasketballManagementSystem.bmForm.input
             /************************************設定読み込み****************************************/
 
             this.BackColor = AppSetting.GetInstance().FormInputBackGroundColor;
-            this.MyTeamPointLabel.BackColor = AppSetting.GetInstance().FormInputPointBackGroundColor;
-            this.OppentTeamPointLabel.BackColor = AppSetting.GetInstance().FormInputPointBackGroundColor;
             TimerTickComboBox.SelectedIndex = AppSetting.GetInstance().FormInputFPS;
             DebugFormVisiableItem.Checked = AppSetting.GetInstance().DebugWindowChecked;
             UseCommentItem.Checked = AppSetting.GetInstance().UseCommentChecked;
@@ -1116,32 +1114,10 @@ namespace BasketballManagementSystem.bmForm.input
             }
         }
 
-        private void PointColorChange_Click(object sender, EventArgs e)
-        {
-            // 初期選択する色を設定する
-            ColorDialog.Color = MyTeamPointLabel.BackColor;
-
-            // ダイアログを表示し、戻り値が [OK] の場合は選択した色を textBox1 に適用する
-            if (ColorDialog.ShowDialog() == DialogResult.OK)
-            {
-                MyTeamPointLabel.BackColor = ColorDialog.Color;
-                OppentTeamPointLabel.BackColor = ColorDialog.Color;
-                AppSetting.GetInstance().FormInputPointBackGroundColor = ColorDialog.Color;
-            }
-
-        }
-
         private void ChangeFormBackGroundColorDefault_Click(object sender, EventArgs e)
         {
             this.BackColor = Color.Empty;
             AppSetting.GetInstance().FormInputBackGroundColor = this.BackColor;
-        }
-
-        private void ChangePointLabelColorDefault_Click(object sender, EventArgs e)
-        {
-            MyTeamPointLabel.BackColor = Color.Empty;
-            OppentTeamPointLabel.BackColor = Color.Empty;
-            AppSetting.GetInstance().FormInputPointBackGroundColor = Color.Empty;
         }
 
         private void ChangeButtonColor_Click(object sender, EventArgs e)
