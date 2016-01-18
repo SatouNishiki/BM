@@ -125,7 +125,7 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                         && c2.Name != form.OppentOutTeamListBox.Name
                         && c2.Name != form.MyOutTeamListBox.Name
                         && c2.Name != form.MyOutTeamListBox.Name
-                        && c2.Name != form.MemberChangeButton.Name)
+                        && c2.Name != form.MyMemberChangeButton.Name)
                         {
                             enableList.Add(c.Enabled);
                             c2.Enabled = false;
@@ -145,7 +145,7 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                         && c.Name != form.OppentOutTeamListBox.Name
                         && c.Name != form.MyOutTeamListBox.Name
                         && c.Name != form.MyOutTeamListBox.Name
-                        && c.Name != form.MemberChangeButton.Name)
+                        && c.Name != form.MyMemberChangeButton.Name)
                     {
                         enableList.Add(c.Enabled);
                         c.Enabled = false;
@@ -167,7 +167,7 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                         && c2.Name != form.OppentOutTeamListBox.Name
                         && c2.Name != form.MyOutTeamListBox.Name
                         && c2.Name != form.MyOutTeamListBox.Name
-                        && c2.Name != form.MemberChangeButton.Name)
+                        && c2.Name != form.MyMemberChangeButton.Name)
                         {
                             continueFlag = true;
                             c2.Enabled = enableList[i];
@@ -187,7 +187,7 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                         && c.Name != form.OppentOutTeamListBox.Name
                         && c.Name != form.MyOutTeamListBox.Name
                         && c.Name != form.MyOutTeamListBox.Name
-                        && c.Name != form.MemberChangeButton.Name)
+                        && c.Name != form.MyMemberChangeButton.Name)
                     {
                         c.Enabled = enableList[i];
                         i++;

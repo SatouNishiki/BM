@@ -922,6 +922,7 @@ namespace BasketballManagementSystem.bmForm.input
             this.Sort(OppentOutTeamListBox);
         }
 
+
         /***********************************************************************************************************/
 
         /*********************************** ゲームの進行に関するメソッド郡 ****************************************/
@@ -1433,6 +1434,8 @@ namespace BasketballManagementSystem.bmForm.input
                 pList.SelectedIndex = index;
             }
         }
+
+        
 
     }
 }
