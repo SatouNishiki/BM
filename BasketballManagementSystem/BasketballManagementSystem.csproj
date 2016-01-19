@@ -406,7 +406,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\backgroundATARI1.png" />
     <None Include="Resources\back.png" />
+    <None Include="Resources\backgroundATARI.png" />
     <None Include="Resources\action_N_frame.png" />
     <None Include="Resources\action_F_frame.png" />
     <None Include="Resources\stop.png" />

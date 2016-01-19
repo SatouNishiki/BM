@@ -117,12 +117,15 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PlayerNameLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PersonalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>515, 398</value>
+    <value>468, 334</value>
+  </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル</value>
   </data>
   <data name="NewGameItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>242, 22</value>
@@ -172,11 +175,11 @@
   <data name="ExitItem.Text" xml:space="preserve">
     <value>終了</value>
   </data>
-  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
+  <data name="GameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
   </data>
-  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
-    <value>ファイル</value>
+  <data name="GameToolStripMenuItem.Text" xml:space="preserve">
+    <value>試合</value>
   </data>
   <data name="StartGameItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
@@ -208,11 +211,11 @@
   <data name="GameEndItem.Text" xml:space="preserve">
     <value>ゲーム終了</value>
   </data>
-  <data name="GameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
+  <data name="GamePropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
   </data>
-  <data name="GameToolStripMenuItem.Text" xml:space="preserve">
-    <value>試合</value>
+  <data name="GamePropToolStripMenuItem.Text" xml:space="preserve">
+    <value>試合設定</value>
   </data>
   <data name="ChangeGameNameItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 22</value>
@@ -226,11 +229,11 @@
   <data name="ChangeGameLocationItem.Text" xml:space="preserve">
     <value>ゲーム場所変更</value>
   </data>
-  <data name="GamePropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
+  <data name="SolutionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
   </data>
-  <data name="GamePropToolStripMenuItem.Text" xml:space="preserve">
-    <value>試合設定</value>
+  <data name="SolutionToolStripMenuItem.Text" xml:space="preserve">
+    <value>解析</value>
   </data>
   <data name="GoGraphScoreFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>196, 22</value>
@@ -274,11 +277,17 @@
   <data name="CentralityAnalyzeItem.Text" xml:space="preserve">
     <value>中心性解析</value>
   </data>
-  <data name="SolutionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 22</value>
   </data>
-  <data name="SolutionToolStripMenuItem.Text" xml:space="preserve">
-    <value>解析</value>
+  <data name="PropToolStripMenuItem.Text" xml:space="preserve">
+    <value>設定</value>
+  </data>
+  <data name="ColorConfigItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 22</value>
+  </data>
+  <data name="ColorConfigItem.Text" xml:space="preserve">
+    <value>色設定</value>
   </data>
   <data name="ChangeFormBackGroundColorItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>220, 22</value>
@@ -316,12 +325,6 @@
   <data name="ChangeButtonTextColorDefaultItem.Text" xml:space="preserve">
     <value>ボタンの文字色をリセット</value>
   </data>
-  <data name="ColorConfigItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 22</value>
-  </data>
-  <data name="ColorConfigItem.Text" xml:space="preserve">
-    <value>色設定</value>
-  </data>
   <data name="ChangeFPSItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>232, 22</value>
   </data>
@@ -352,11 +355,11 @@
   <data name="ChangeLanguageItem.Text" xml:space="preserve">
     <value>言語設定(再起動後有効)</value>
   </data>
-  <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
+  <data name="dataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 22</value>
   </data>
-  <data name="PropToolStripMenuItem.Text" xml:space="preserve">
-    <value>設定</value>
+  <data name="dataToolStripMenuItem.Text" xml:space="preserve">
+    <value>データ</value>
   </data>
   <data name="GoDataEditFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 22</value>
@@ -382,11 +385,11 @@
   <data name="GoActionPointEditFormItem.Text" xml:space="preserve">
     <value>行動傾向点変更</value>
   </data>
-  <data name="dataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 22</value>
+  <data name="transmission.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
   </data>
-  <data name="dataToolStripMenuItem.Text" xml:space="preserve">
-    <value>データ</value>
+  <data name="transmission.Text" xml:space="preserve">
+    <value>通信</value>
   </data>
   <data name="GoTCPServerFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 22</value>
@@ -400,50 +403,26 @@
   <data name="GoTCPClientFormItem.Text" xml:space="preserve">
     <value>TCPクライアント</value>
   </data>
-  <data name="transmission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
-  </data>
-  <data name="transmission.Text" xml:space="preserve">
-    <value>通信</value>
-  </data>
-  <data name="MenuStrip1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="MyTeamNameLael.Location" type="System.Drawing.Point, System.Drawing">
     <value>29, 150</value>
   </data>
   <data name="MyTeamNameLael.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 14</value>
   </data>
-  <data name="MyTeamNameLael.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="OppentTeamNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>876, 142</value>
-  </data>
-  <data name="OppentTeamNameLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="QuarterText.ToolTip" xml:space="preserve">
-    <value />
+    <value>747, 147</value>
   </data>
   <data name="OppentTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>873, 97</value>
-  </data>
-  <data name="OppentTeamFaulLabel.ToolTip" xml:space="preserve">
-    <value />
+    <value>783, 97</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>849, 71</value>
+    <value>766, 71</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>68, 12</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>チームファウル</value>
-  </data>
-  <data name="label2.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>83, 71</value>
@@ -454,50 +433,35 @@
   <data name="label3.Text" xml:space="preserve">
     <value>チームファウル</value>
   </data>
-  <data name="label3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="MyTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>103, 97</value>
   </data>
-  <data name="MyTeamFaulLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="TechnicalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>564, 398</value>
+    <value>517, 334</value>
   </data>
   <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>613, 398</value>
+    <value>566, 334</value>
   </data>
   <data name="DisQualifyingFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>663, 398</value>
+    <value>616, 334</value>
   </data>
   <data name="UpButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>714, 336</value>
-  </data>
-  <data name="UpButton.ToolTip" xml:space="preserve">
-    <value />
+    <value>667, 308</value>
   </data>
   <data name="DownButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>714, 365</value>
-  </data>
-  <data name="DownButton.ToolTip" xml:space="preserve">
-    <value />
+    <value>667, 358</value>
   </data>
   <data name="givenFreeThowLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 14.25pt, style=Bold</value>
   </data>
   <data name="givenFreeThowLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>680, 353</value>
+    <value>667, 334</value>
   </data>
   <data name="givenFreeThowLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 21</value>
   </data>
-  <data name="givenFreeThowLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>599, 359</value>
+    <value>591, 308</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 12</value>
@@ -505,50 +469,11 @@
   <data name="label11.Text" xml:space="preserve">
     <value>与フリースロー</value>
   </data>
-  <data name="label11.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyOutTeamListBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OppentTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>615, 71</value>
-  </data>
-  <data name="OppentTeamPointLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>240, 71</value>
-  </data>
-  <data name="MyTeamPointLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="NewGameToolStripButton.ToolTipText" xml:space="preserve">
     <value>試合データを新規作成します(Ctrl + N)</value>
   </data>
   <data name="UseCommentToolStripButton.ToolTipText" xml:space="preserve">
     <value>アクション入力の際のコメント入力の有無を選択します(Ctrl + C)</value>
-  </data>
-  <data name="ToolStrip.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OppentOutTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>800, 203</value>
-  </data>
-  <data name="OppentOutTeamListBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OppentCortTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>800, 504</value>
-  </data>
-  <data name="OppentCortTeamListBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyCortTeamListBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="QuarterTimerLabel.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="CortPicture.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1131,26 +1056,11 @@
         AAD0isEFAADoK9dwAAAA9OYL6f8HrNYl3F2qoYwAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="CortPicture.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="OppentTimeOutButton.Text" xml:space="preserve">
     <value>タイムアウト(相手)</value>
   </data>
-  <data name="OppentTimeOutButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="MyMemberChangeButton.Text" xml:space="preserve">
     <value>メンバー交代</value>
-  </data>
-  <data name="MyMemberChangeButton.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="MyTimeOutButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 23</value>
@@ -1158,29 +1068,14 @@
   <data name="MyTimeOutButton.Text" xml:space="preserve">
     <value>タイムアウト(自)</value>
   </data>
-  <data name="MyTimeOutButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyTimeOutLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="backPictureBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="OppentMemberChangeButton.Text" xml:space="preserve">
     <value>メンバー交代</value>
   </data>
-  <data name="OppentMemberChangeButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>938, 686</value>
+    <value>717, 647</value>
   </data>
   <data name="OppentTimeOutLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 17</value>
-  </data>
-  <data name="OppentTimeOutLabel.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3996,8 +3891,5 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIyo
         /w9EYS+mRoQ/2AAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>
