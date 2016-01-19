@@ -5,7 +5,7 @@ Basketball Data Management System in Kimilab of Sendai NCT
 ●概要
 
 Basketball Data Management System(BM)のメインアプリケーションです
-このプログラム単体では動きません　別途BMLibrary(https://github.com/SatouNishiki/BMLibrary)のダウンロードが必要です
+このプログラム単体では動きません　別途BMLibrary( https://github.com/SatouNishiki/BMLibrary )のダウンロードが必要です
 
 ●機能
 (★ = β版機能)
@@ -29,7 +29,7 @@ Basketball Data Management System(BM)のメインアプリケーションです
 　-　傾向点推移グラフ
 
 ・StrategySimulation
-  -  戦術シュミレーション
+  -　戦術シュミレーション
 
 ・通信機能
 
