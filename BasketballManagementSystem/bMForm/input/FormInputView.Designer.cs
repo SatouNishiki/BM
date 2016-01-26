@@ -806,6 +806,7 @@
             // CortPicture
             // 
             this.CortPicture.BackColor = System.Drawing.SystemColors.Control;
+            this.CortPicture.Image = global::BasketballManagementSystem.Properties.Resources.coat;
             resources.ApplyResources(this.CortPicture, "CortPicture");
             this.CortPicture.Name = "CortPicture";
             this.CortPicture.TabStop = false;
