@@ -101,6 +101,9 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
         /// <returns></returns>
         private bool ClientStart()
         {
+            if (UserNameTextBox.Text == null || UserNameTextBox.Text == string.Empty)
+                UserNameTextBox.Text = "名無しさん";
+
             try
             {
                 //クライアントのソケットを用意
@@ -112,6 +115,8 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
                 threadClient.Start();
 
                 SendPassword();
+
+                SendUserName();
 
                 //接続インディケータ
                 IndicatorPctureBox.BackColor = Color.LightGreen;
@@ -329,6 +334,43 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
 
             Byte[] sendData = l.ToArray();
             
+            sendData = Compressor.Compress(sendData);
+
+            //送信streamを作成
+            NetworkStream stream = null;
+            try
+            {
+                stream = client.GetStream();
+
+                //Streamを使って送信
+                for (int offset = 0; offset >= sendData.Length; offset += client.SendBufferSize)
+                {
+                    stream.Write(sendData, offset, client.SendBufferSize);
+                }
+
+                stream.Write(sendData, 0, sendData.Length);
+            }
+            catch (Exception exc)
+            {
+                writeLog("送信エラー:" + exc.Message);
+                BMError.ErrorMessageOutput(exc.Message, true);
+            }
+        }
+
+        private void SendUserName()
+        {
+
+            //sift-jisに変換して送る
+            Byte[] data = ecSjis.GetBytes(UserNameTextBox.Text);
+
+            Byte[] header = ecSjis.GetBytes("NAME");
+
+            List<Byte> l = new List<byte>();
+
+            l.AddRange(header);
+            l.AddRange(data);
+
+            Byte[] sendData = l.ToArray();
             sendData = Compressor.Compress(sendData);
 
             //送信streamを作成

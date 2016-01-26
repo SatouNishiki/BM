@@ -37,12 +37,19 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
     /// <param name="text"></param>
     public delegate void WriteLogDelegate(string text);
 
+    /// <summary>
+    /// クライアントのリストを書きなおすデリゲート
+    /// </summary>
+    public delegate void RewriteClientListDelegate();
+
     public partial class TCPServer : Form
     {
         //受送信は必ずshift-jisと仮定している
         //他の文字の場合はここを変える事
         public Encoding EcUni = Encoding.GetEncoding("utf-16");
         public Encoding EcSjis = Encoding.GetEncoding("shift-jis");
+        
+        public Dictionary<IntPtr, string> userNameDic = new Dictionary<IntPtr, string>();
 
         public Game SendGame = new Game();
 
@@ -66,6 +73,7 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
         private List<ClientHandler> lstClientHandler = new List<ClientHandler>();
 
         private FormInputPresenter instance;
+
 
         /// <summary>
         /// コンストラクタ
@@ -198,27 +206,27 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
         {
             //Listクラスが保持しているClientHandlerの中のSocketクラスの
             //Handleを比較し、クライアントを識別します。
-            int no = 0;
+            IntPtr no = new IntPtr();
             for (int i = 0; i < lstClientHandler.Count; i++)
             {
                 if (lstClientHandler[i] == cl)
                 {
                     //クライアントのハンドルが一致した
-                    no = (int)lstClientHandler[i].ClientHandle;
+                    no = lstClientHandler[i].ClientHandle;
                     break;
                 }
             }
             //送られたメッセージをクライアントの情報と時間と共に書き込む
-            this.ReadTextBox.AppendText("[" + no.ToString() + "さんからのメッセージ] "
+            this.ReadTextBox.AppendText("[" + userNameDic[no] + "さんからのメッセージ] "
+                            + DateTime.Now.ToString()
+                            + "\r\n" + text + "\r\n\r\n");
+
+            //クライアントに送信するデータ
+            Byte[] data = EcSjis.GetBytes("TEXT" + "[" + userNameDic[no] + "さんからのメッセージ] "
                             + DateTime.Now.ToString()
                             + "\r\n" + text + "\r\n");
 
-            //クライアントに送信するデータ
-            Byte[] data = EcSjis.GetBytes("TEXT" + "[" + no.ToString() + "さんからのメッセージ] "
-                            + DateTime.Now.ToString()
-                            + text);
-
-            NotifyAll(cl, data);
+            NotifyAll(data);
         }
 
         /// <summary>
@@ -226,7 +234,7 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
         /// </summary>
         /// <param name="cl">送らない送信先クライアント(全員に送る場合はnull)</param>
         /// <param name="data">送信するデータ</param>
-        public void NotifyAll(ClientHandler cl, Byte[] data)
+        public void NotifyAll( Byte[] data , ClientHandler cl = null)
         {
             //送ってきた相手以外へ送信
             for (int i = 0; i < lstClientHandler.Count; i++)
@@ -256,9 +264,10 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
         private void AddNewClient(ClientHandler cl)
         {
             lstClientHandler.Add(cl);
+            userNameDic.Add(cl.ClientHandle, "名無しさん");
             lastConnectClient = cl;
-            ResetClientListBox();
-            WriteLog(cl.ClientHandle.ToString() + " さんが接続しました。");
+            RewriteClientListBox();
+            
         }
 
         /// <summary>
@@ -267,16 +276,20 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
         /// <param name="cl"></param>
         public void DeleteClient(ClientHandler cl)
         {
+            string name = userNameDic[cl.ClientHandle];
+
+            userNameDic.Remove(cl.ClientHandle);
+
             //Listクラスを総なめ
             for (int i = 0; i < lstClientHandler.Count; i++)
             {
                 if (lstClientHandler[i] == cl)
                 {
                     Invoke(new WriteLogDelegate(WriteLog)
-                                           , new object[] { lstClientHandler[i].ClientHandle.ToString() + " さんが切断しました。" });
+                                           , new object[] { name + " さんが切断しました。" });
 
                     lstClientHandler.RemoveAt(i);
-                    ResetClientListBox();
+                    RewriteClientListBox();
 
                     return;
                 }
@@ -287,12 +300,14 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
         /// <summary>
         /// クライアント表示のListBoxを新しく書き直す
         /// </summary>
-        private void ResetClientListBox()
+        public void RewriteClientListBox()
         {
             ClientListBox.Items.Clear();
+
             for (int i = 0; i < lstClientHandler.Count; i++)
             {
-                ClientListBox.Items.Add(lstClientHandler[i].ClientHandle.ToString());
+                //  ClientListBox.Items.Add(lstClientHandler[i].ClientHandle.ToString());
+                ClientListBox.Items.Add(userNameDic[lstClientHandler[i].ClientHandle].ToString());
             }
         }
 
@@ -358,20 +373,11 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
         {
 
             ClientHandler clientHandler = null;
-
-            //リストボックスでクライアントのハンドルが選択されていない。
-            if (ClientListBox.SelectedItem == null)
-                return;
-
-            //ListBoxの選択された番号を取得
-            int no = int.Parse(ClientListBox.SelectedItem.ToString());
-
-            //List<T>からハンドルがキーに該当するclientHandlerを取得する
-            clientHandler = lstClientHandler.Find(delegate(ClientHandler clitem)
-            { return ((int)clitem.ClientHandle == no); });
-
+            
             //sift-jisに変換して送る
-            Byte[] data = EcSjis.GetBytes(WriteTextBox.Text);
+            Byte[] data = EcSjis.GetBytes("[サーバーからのメッセージ(全体)] "
+                            + DateTime.Now.ToString()
+                            + "\r\n" + WriteTextBox.Text + "\r\n");
 
             Byte[] header = EcSjis.GetBytes("TEXT");
 
@@ -382,9 +388,59 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
 
             Byte[] sendData = l.ToArray();
 
+
+            string item = string.Empty;
+
+            if (ClientListBox.SelectedItem != null)
+                item = ClientListBox.SelectedItem.ToString();
+
+            //sift-jisに変換して送る
+            Byte[] data2 = EcSjis.GetBytes("[サーバーからのメッセージ(個別:" + item + ")] "
+                            + DateTime.Now.ToString()
+                            + "\r\n" + WriteTextBox.Text + "\r\n");
+          
+            List<Byte> l2 = new List<byte>();
+
+            l2.AddRange(header);
+            l2.AddRange(data2);
+
+            Byte[] sendData2 = l2.ToArray();
+
+            //リストボックスでクライアントのハンドルが選択されていない。
+            if (ClientListBox.SelectedItem == null)
+            {
+                try
+                {
+                    this.NotifyAll(sendData);
+                    this.ReadTextBox.AppendText("[サーバーからのメッセージ(全体)] "
+                            + DateTime.Now.ToString()
+                            + "\r\n" + WriteTextBox.Text + "\r\n\r\n");
+                    WriteTextBox.Clear();
+                }
+                catch (Exception ex)
+                {
+                    WriteLog(ex.Message);
+                    BMError.ErrorMessageOutput(ex.ToString(), true);
+                }
+
+                
+                return;
+            }
+
+            //ListBoxの選択された番号を取得
+            // int no = int.Parse(ClientListBox.SelectedItem.ToString());
+            int no = int.Parse(lstClientHandler[ClientListBox.SelectedIndex].ClientHandle.ToString());
+
+            //List<T>からハンドルがキーに該当するclientHandlerを取得する
+            clientHandler = lstClientHandler.Find(delegate(ClientHandler clitem)
+            { return ((int)clitem.ClientHandle == no); });
+
             try
             {
-                clientHandler.SendData(sendData);
+                clientHandler.SendData(sendData2);
+                this.ReadTextBox.AppendText("[サーバーからのメッセージ(個別:" + item + ")] "
+                            + DateTime.Now.ToString()
+                            + "\r\n" + WriteTextBox.Text + "\r\n\r\n");
                 WriteTextBox.Clear();
             }
             catch (Exception ex)
@@ -440,9 +496,13 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
             //データ圧縮
             sendData = Compressor.Compress(sendData);
 
-            NotifyAll(null, sendData);
+            NotifyAll(sendData);
         }
 
+        private void SelectClearButton_Click(object sender, EventArgs e)
+        {
+            ClientListBox.ClearSelected();
+        }
     }
 
     /// <summary>
@@ -471,6 +531,14 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
         private Encoding ecSjis = Encoding.GetEncoding("shift-jis");
 
         private FormInputPresenter instance;
+        
+        /// <summary>
+        /// Socketクラスのハンドルを返す
+        /// </summary>
+        public IntPtr ClientHandle
+        {
+            get { return socket.Handle; }
+        }
 
         /// <summary>
         /// コンストラクタ
@@ -503,15 +571,6 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
             callbackWrite = new AsyncCallback(this.OnWriteComplete);
 
             instance = f;
-        }
-
-
-        /// <summary>
-        /// Socketクラスのハンドルを返す
-        /// </summary>
-        public IntPtr ClientHandle
-        {
-            get { return socket.Handle; }
         }
 
         /// <summary>
@@ -610,6 +669,22 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
                             SendPasswordHelper("OK");
                         }
                     }
+                    else if(header == "NAME")
+                    {
+                        byte[] uniBytes;
+                        //'S-Jisからユニコードに変換
+                        uniBytes = Encoding.Convert(ecSjis, ecUni, body);
+
+                        //バイト配列から文字列に変換する
+                        string getText = ecUni.GetString(uniBytes);
+                        
+                        fomServer.userNameDic[this.ClientHandle] = getText;
+                        fomServer.Invoke(new RewriteClientListDelegate(fomServer.RewriteClientListBox));
+
+                        fomServer.Invoke(new WriteTextDelegate(fomServer.WriteReadText)
+                                           , new object[] { this, getText + " さんが接続しました。" });
+
+                    }
                     //次の受信を待つ
                     networkStream.BeginRead(buffer, 0, buffer.Length, callbackRead, null);
 
@@ -683,6 +758,9 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
         /// <param name="buffer"></param>
         public void SendData(byte[] buffer)
         {
+
+            buffer = Compressor.Compress(buffer);
+
             int offset = 0;
 
             //もしネットワークバッファのサイズを超えたデータを送ろうとしていたら分割送信処理

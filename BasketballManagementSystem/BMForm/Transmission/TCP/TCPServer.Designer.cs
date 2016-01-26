@@ -52,6 +52,7 @@
             this.ReadLabel = new System.Windows.Forms.Label();
             this.ReadTextBox = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.SelectClearButton = new System.Windows.Forms.Button();
             this.SendButton = new System.Windows.Forms.Button();
             this.LogTextBox = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -220,9 +221,17 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.SelectClearButton);
             this.panel3.Controls.Add(this.SendButton);
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
+            // 
+            // SelectClearButton
+            // 
+            resources.ApplyResources(this.SelectClearButton, "SelectClearButton");
+            this.SelectClearButton.Name = "SelectClearButton";
+            this.SelectClearButton.UseVisualStyleBackColor = true;
+            this.SelectClearButton.Click += new System.EventHandler(this.SelectClearButton_Click);
             // 
             // SendButton
             // 
@@ -361,5 +370,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox PasswordTextBox;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button SelectClearButton;
     }
 }
