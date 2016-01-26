@@ -415,7 +415,7 @@
     <value>file</value>
   </data>
   <data name="StartGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="StartGameItem.Text" xml:space="preserve">
     <value>StartGame</value>
@@ -428,7 +428,7 @@
     <value>False</value>
   </data>
   <data name="NextQuarterItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="NextQuarterItem.Text" xml:space="preserve">
     <value>NextQuarter</value>
@@ -437,13 +437,13 @@
     <value>False</value>
   </data>
   <data name="StopGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="StopGameItem.Text" xml:space="preserve">
     <value>Stop</value>
   </data>
   <data name="RestartGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="RestartGameItem.Text" xml:space="preserve">
     <value>Restart</value>
@@ -452,7 +452,7 @@
     <value>False</value>
   </data>
   <data name="GameEndItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="GameEndItem.Text" xml:space="preserve">
     <value>End</value>
@@ -1520,7 +1520,7 @@
     <value>506, 272</value>
   </data>
   <data name="CortPicture.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
+    <value>StretchImage</value>
   </data>
   <data name="CortPicture.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
