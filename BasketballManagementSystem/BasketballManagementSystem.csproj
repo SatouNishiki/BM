@@ -406,6 +406,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\member_change_gray.png" />
+    <None Include="Resources\member_change.png" />
+    <None Include="Resources\timeout_gray.png" />
+    <None Include="Resources\timeout_blue.png" />
+    <None Include="Resources\timeout_red.png" />
     <None Include="Resources\backgroundATARI1.png" />
     <None Include="Resources\back.png" />
     <None Include="Resources\backgroundATARI.png" />

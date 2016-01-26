@@ -263,6 +263,26 @@ namespace BasketballManagementSystem.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap member_change {
+            get {
+                object obj = ResourceManager.GetObject("member_change", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap member_change_gray {
+            get {
+                object obj = ResourceManager.GetObject("member_change_gray", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap open {
             get {
                 object obj = ResourceManager.GetObject("open", resourceCulture);
@@ -386,6 +406,36 @@ namespace BasketballManagementSystem.Properties {
         internal static System.Drawing.Bitmap TFon {
             get {
                 object obj = ResourceManager.GetObject("TFon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap timeout_blue {
+            get {
+                object obj = ResourceManager.GetObject("timeout_blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap timeout_gray {
+            get {
+                object obj = ResourceManager.GetObject("timeout_gray", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
+        internal static System.Drawing.Bitmap timeout_red {
+            get {
+                object obj = ResourceManager.GetObject("timeout_red", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -1434,8 +1434,5 @@ namespace BasketballManagementSystem.bmForm.input
                 pList.SelectedIndex = index;
             }
         }
-
-        
-
     }
 }
