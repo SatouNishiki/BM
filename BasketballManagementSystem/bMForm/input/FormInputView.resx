@@ -162,9 +162,6 @@
   <metadata name="FormInputTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>362, 17</value>
   </metadata>
-  <metadata name="ToolTipFormInput.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>512, 17</value>
-  </metadata>
   <data name="AssistButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 8.25pt, style=Bold</value>
   </data>
@@ -186,6 +183,9 @@
   <data name="AssistButton.Text" xml:space="preserve">
     <value>AS(&amp;A)</value>
   </data>
+  <metadata name="ToolTipFormInput.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>512, 17</value>
+  </metadata>
   <data name="AssistButton.ToolTip" xml:space="preserve">
     <value>Assist</value>
   </data>
@@ -348,39 +348,6 @@
   <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="MenuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 2, 0, 2</value>
-  </data>
-  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>900, 26</value>
-  </data>
-  <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="MenuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
-    <value>MenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
-    <value>40</value>
-  </data>
-  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 22</value>
-  </data>
-  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
-    <value>file</value>
-  </data>
   <data name="NewGameItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 22</value>
   </data>
@@ -441,11 +408,11 @@
   <data name="ExitItem.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
-  <data name="GameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 22</value>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 22</value>
   </data>
-  <data name="GameToolStripMenuItem.Text" xml:space="preserve">
-    <value>Game</value>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>file</value>
   </data>
   <data name="StartGameItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 22</value>
@@ -487,17 +454,11 @@
   <data name="GameEndItem.Text" xml:space="preserve">
     <value>End</value>
   </data>
-  <data name="GamePropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 22</value>
+  <data name="GameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 22</value>
   </data>
-  <data name="GamePropToolStripMenuItem.Text" xml:space="preserve">
-    <value>GameConfig</value>
-  </data>
-  <data name="ChangeGameNameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 22</value>
-  </data>
-  <data name="ChangeGameNameItem.Text" xml:space="preserve">
-    <value>ChangeGameName</value>
+  <data name="GameToolStripMenuItem.Text" xml:space="preserve">
+    <value>Game</value>
   </data>
   <data name="GameNameText.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 25</value>
@@ -505,11 +466,11 @@
   <data name="GameNameText.Text" xml:space="preserve">
     <value>Game1</value>
   </data>
-  <data name="ChangeGameLocationItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ChangeGameNameItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>203, 22</value>
   </data>
-  <data name="ChangeGameLocationItem.Text" xml:space="preserve">
-    <value>ChangeGameLocation</value>
+  <data name="ChangeGameNameItem.Text" xml:space="preserve">
+    <value>ChangeGameName</value>
   </data>
   <data name="GameLocationText.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 25</value>
@@ -517,11 +478,17 @@
   <data name="GameLocationText.Text" xml:space="preserve">
     <value>NoInputLocation</value>
   </data>
-  <data name="SolutionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 22</value>
+  <data name="ChangeGameLocationItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 22</value>
   </data>
-  <data name="SolutionToolStripMenuItem.Text" xml:space="preserve">
-    <value>Analize</value>
+  <data name="ChangeGameLocationItem.Text" xml:space="preserve">
+    <value>ChangeGameLocation</value>
+  </data>
+  <data name="GamePropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="GamePropToolStripMenuItem.Text" xml:space="preserve">
+    <value>GameConfig</value>
   </data>
   <data name="GoGraphScoreFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 22</value>
@@ -565,17 +532,11 @@
   <data name="CentralityAnalyzeItem.Text" xml:space="preserve">
     <value>CentralityAnalyze</value>
   </data>
-  <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 22</value>
+  <data name="SolutionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
   </data>
-  <data name="PropToolStripMenuItem.Text" xml:space="preserve">
-    <value>Config</value>
-  </data>
-  <data name="ColorConfigItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 22</value>
-  </data>
-  <data name="ColorConfigItem.Text" xml:space="preserve">
-    <value>ColorConfig</value>
+  <data name="SolutionToolStripMenuItem.Text" xml:space="preserve">
+    <value>Analize</value>
   </data>
   <data name="ChangeFormBackGroundColorItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>292, 22</value>
@@ -613,11 +574,11 @@
   <data name="ChangeButtonTextColorDefaultItem.Text" xml:space="preserve">
     <value>ChangeButtonTextColorDefault</value>
   </data>
-  <data name="ChangeFPSItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ColorConfigItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>263, 22</value>
   </data>
-  <data name="ChangeFPSItem.Text" xml:space="preserve">
-    <value>ChangelFPS</value>
+  <data name="ColorConfigItem.Text" xml:space="preserve">
+    <value>ColorConfig</value>
   </data>
   <data name="TimerTickComboBox.Items" xml:space="preserve">
     <value>100</value>
@@ -630,6 +591,12 @@
   </data>
   <data name="TimerTickComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
+  </data>
+  <data name="ChangeFPSItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="ChangeFPSItem.Text" xml:space="preserve">
+    <value>ChangelFPS</value>
   </data>
   <data name="DebugFormVisiableItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>263, 22</value>
@@ -646,12 +613,6 @@
   <data name="UseCommentItem.Text" xml:space="preserve">
     <value>UseComment</value>
   </data>
-  <data name="QuarterChangeTimerSpeedChangeItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 22</value>
-  </data>
-  <data name="QuarterChangeTimerSpeedChangeItem.Text" xml:space="preserve">
-    <value>QuarterTimerAcceralationSpeed</value>
-  </data>
   <data name="QuarterChangeTimerSpeedCombo.Items" xml:space="preserve">
     <value>100</value>
   </data>
@@ -664,20 +625,26 @@
   <data name="QuarterChangeTimerSpeedCombo.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
   </data>
+  <data name="QuarterChangeTimerSpeedChangeItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="QuarterChangeTimerSpeedChangeItem.Text" xml:space="preserve">
+    <value>QuarterTimerAcceralationSpeed</value>
+  </data>
+  <data name="ChangeLanguageComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 26</value>
+  </data>
   <data name="ChangeLanguageItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>263, 22</value>
   </data>
   <data name="ChangeLanguageItem.Text" xml:space="preserve">
     <value>ChangeLanguage</value>
   </data>
-  <data name="ChangeLanguageComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 26</value>
+  <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 22</value>
   </data>
-  <data name="dataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 22</value>
-  </data>
-  <data name="dataToolStripMenuItem.Text" xml:space="preserve">
-    <value>Data</value>
+  <data name="PropToolStripMenuItem.Text" xml:space="preserve">
+    <value>Config</value>
   </data>
   <data name="GoDataEditFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>163, 22</value>
@@ -703,11 +670,11 @@
   <data name="GoActionPointEditFormItem.Text" xml:space="preserve">
     <value>ActionPointEdit</value>
   </data>
-  <data name="transmission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 22</value>
+  <data name="dataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 22</value>
   </data>
-  <data name="transmission.Text" xml:space="preserve">
-    <value>Transmission</value>
+  <data name="dataToolStripMenuItem.Text" xml:space="preserve">
+    <value>Data</value>
   </data>
   <data name="GoTCPServerFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>138, 22</value>
@@ -720,6 +687,39 @@
   </data>
   <data name="GoTCPClientFormItem.Text" xml:space="preserve">
     <value>TCPClient</value>
+  </data>
+  <data name="transmission.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 22</value>
+  </data>
+  <data name="transmission.Text" xml:space="preserve">
+    <value>Transmission</value>
+  </data>
+  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="MenuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 2, 0, 2</value>
+  </data>
+  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 26</value>
+  </data>
+  <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="MenuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
+    <value>40</value>
   </data>
   <data name="MyTeamNameLael.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 9pt, style=Bold</value>
@@ -1162,9 +1162,6 @@
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <metadata name="ToolTipFormInput.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>512, 17</value>
-  </metadata>
   <data name="QuarterTimerFastFowardButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>476, 80</value>
   </data>
@@ -1312,27 +1309,6 @@
   <metadata name="ToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>137, 17</value>
   </metadata>
-  <data name="ToolStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 26</value>
-  </data>
-  <data name="ToolStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>900, 25</value>
-  </data>
-  <data name="ToolStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;ToolStrip.Name" xml:space="preserve">
-    <value>ToolStrip</value>
-  </data>
-  <data name="&gt;&gt;ToolStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ToolStrip.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ToolStrip.ZOrder" xml:space="preserve">
-    <value>39</value>
-  </data>
   <data name="NewGameToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
@@ -1386,6 +1362,27 @@
   </data>
   <data name="UseCommentToolStripButton.Text" xml:space="preserve">
     <value>UseComment(Ctrl + C)</value>
+  </data>
+  <data name="ToolStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 26</value>
+  </data>
+  <data name="ToolStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 25</value>
+  </data>
+  <data name="ToolStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip.Name" xml:space="preserve">
+    <value>ToolStrip</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ToolStrip.ZOrder" xml:space="preserve">
+    <value>39</value>
   </data>
   <data name="OppentOutTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>

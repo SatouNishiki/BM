@@ -831,7 +831,7 @@ namespace BasketballManagementSystem.bmForm.input
             }
         }
 
-        private void TimeOut_Click(object sender, EventArgs e)
+        private void MyTimeOut_Click(object sender, EventArgs e)
         {
             if (NowMyTimeOut < TimeOutRimit)
             {

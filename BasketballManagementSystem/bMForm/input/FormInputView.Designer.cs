@@ -846,7 +846,7 @@
             resources.ApplyResources(this.MyTimeOutButton, "MyTimeOutButton");
             this.MyTimeOutButton.Name = "MyTimeOutButton";
             this.MyTimeOutButton.UseVisualStyleBackColor = true;
-            this.MyTimeOutButton.Click += new System.EventHandler(this.TimeOut_Click);
+            this.MyTimeOutButton.Click += new System.EventHandler(this.MyTimeOut_Click);
             // 
             // MyTimeOutLabel
             // 
@@ -855,7 +855,7 @@
             // 
             // backPictureBox
             // 
-            this.backPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.back;
+            this.backPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.backgroundATARI1;
             resources.ApplyResources(this.backPictureBox, "backPictureBox");
             this.backPictureBox.Name = "backPictureBox";
             this.backPictureBox.TabStop = false;
