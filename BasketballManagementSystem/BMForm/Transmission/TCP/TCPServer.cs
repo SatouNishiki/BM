@@ -218,7 +218,7 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
                             + DateTime.Now.ToString()
                             + text);
 
-            NotifyAll(cl, data);
+            NotifyAll(data, cl);
         }
 
         /// <summary>
@@ -226,7 +226,7 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
         /// </summary>
         /// <param name="cl">送らない送信先クライアント(全員に送る場合はnull)</param>
         /// <param name="data">送信するデータ</param>
-        public void NotifyAll(ClientHandler cl, Byte[] data)
+        public void NotifyAll( Byte[] data , ClientHandler cl = null)
         {
             //送ってきた相手以外へ送信
             for (int i = 0; i < lstClientHandler.Count; i++)
@@ -359,17 +359,6 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
 
             ClientHandler clientHandler = null;
 
-            //リストボックスでクライアントのハンドルが選択されていない。
-            if (ClientListBox.SelectedItem == null)
-                return;
-
-            //ListBoxの選択された番号を取得
-            int no = int.Parse(ClientListBox.SelectedItem.ToString());
-
-            //List<T>からハンドルがキーに該当するclientHandlerを取得する
-            clientHandler = lstClientHandler.Find(delegate(ClientHandler clitem)
-            { return ((int)clitem.ClientHandle == no); });
-
             //sift-jisに変換して送る
             Byte[] data = EcSjis.GetBytes(WriteTextBox.Text);
 
@@ -381,6 +370,29 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
             l.AddRange(data);
 
             Byte[] sendData = l.ToArray();
+
+            //リストボックスでクライアントのハンドルが選択されていない。
+            if (ClientListBox.SelectedItem == null)
+            {
+                try
+                {
+                    this.NotifyAll(sendData);
+                    WriteTextBox.Clear();
+                }
+                catch (Exception ex)
+                {
+                    WriteLog(ex.Message);
+                    BMError.ErrorMessageOutput(ex.ToString(), true);
+                }
+                return;
+            }
+
+            //ListBoxの選択された番号を取得
+            int no = int.Parse(ClientListBox.SelectedItem.ToString());
+
+            //List<T>からハンドルがキーに該当するclientHandlerを取得する
+            clientHandler = lstClientHandler.Find(delegate(ClientHandler clitem)
+            { return ((int)clitem.ClientHandle == no); });
 
             try
             {
@@ -440,7 +452,7 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
             //データ圧縮
             sendData = Compressor.Compress(sendData);
 
-            NotifyAll(null, sendData);
+            NotifyAll(sendData);
         }
 
     }
@@ -683,6 +695,9 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
         /// <param name="buffer"></param>
         public void SendData(byte[] buffer)
         {
+
+            buffer = Compressor.Compress(buffer);
+
             int offset = 0;
 
             //もしネットワークバッファのサイズを超えたデータを送ろうとしていたら分割送信処理
