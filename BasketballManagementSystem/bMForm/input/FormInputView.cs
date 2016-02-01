@@ -982,6 +982,7 @@ namespace BasketballManagementSystem.bmForm.input
             StopGameItem.Enabled = false;
             this.EndGameEventThrow();
             QuarterTimerStopButton.Enabled = false;
+            QuarterText.Text = this.QuarterTimer.displayQuarter;
 
             string comment = Microsoft.VisualBasic.Interaction.InputBox(
                 "試合に対するコメントを入力してください",
@@ -1072,6 +1073,9 @@ namespace BasketballManagementSystem.bmForm.input
             this.DataChangeEventThrow("Game", new Game());
             GameDataStack.Clear();
             RedoGameDataStack.Clear();
+            this.QuarterTimer.EndGame();
+            QuarterText.Text = this.QuarterTimer.displayQuarter;
+            this.DataInputEvent(this, new DataInputEventArgs("IsStartGame", false));
             InitializeComponent();
             PreInit();
 

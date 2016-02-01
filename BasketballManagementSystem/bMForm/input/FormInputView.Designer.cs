@@ -289,8 +289,8 @@
             // 
             // NextQuarterItem
             // 
-            this.NextQuarterItem.Name = "NextQuarterItem";
             resources.ApplyResources(this.NextQuarterItem, "NextQuarterItem");
+            this.NextQuarterItem.Name = "NextQuarterItem";
             this.NextQuarterItem.Click += new System.EventHandler(this.NextQuarterButton_Click);
             // 
             // StopGameItem
