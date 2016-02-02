@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;ChangeButtonTextColorItem.Name" xml:space="preserve">
-    <value>ChangeButtonTextColorItem</value>
+  <data name="MyTeamFaulLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;dataToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -138,8 +138,8 @@
   <data name="&gt;&gt;DisQualifyingFaulButton.Type" xml:space="preserve">
     <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="QuarterChangeTimerSpeedCombo.Items2" xml:space="preserve">
-    <value>10</value>
+  <data name="&gt;&gt;SaveToolStripButton.Name" xml:space="preserve">
+    <value>SaveToolStripButton</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="GoBoxScoreFormItem.Size" type="System.Drawing.Size, System.Drawing">
@@ -196,9 +196,6 @@
   <data name="&gt;&gt;UndoToolStripButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;SaveToolStripButton.Name" xml:space="preserve">
-    <value>SaveToolStripButton</value>
-  </data>
   <data name="&gt;&gt;PlayerNameLabel.Name" xml:space="preserve">
     <value>PlayerNameLabel</value>
   </data>
@@ -207,6 +204,9 @@
   </data>
   <data name="givenFreeThowLabel.Text" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="QuarterTimerStopButton.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
   </data>
   <data name="MyTimeOutLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -278,11 +278,14 @@
   <data name="ChangeOppentTeamItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 22</value>
   </data>
+  <data name="&gt;&gt;FormInputTimer.Name" xml:space="preserve">
+    <value>FormInputTimer</value>
+  </data>
   <data name="&gt;&gt;OppentTeamFaulLabel.ZOrder" xml:space="preserve">
     <value>33</value>
   </data>
-  <data name="OppentOutTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 12pt</value>
+  <data name="QuarterTimerStopButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>431, 80</value>
   </data>
   <data name="ChangeLanguageItem.Text" xml:space="preserve">
     <value>ChangeLanguage</value>
@@ -333,11 +336,11 @@
   <data name="PlayerNameLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>359, 232</value>
   </data>
+  <data name="&gt;&gt;MyTimeOutButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;NewGameItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;QuarterChangeTimerSpeedCombo.Name" xml:space="preserve">
-    <value>QuarterChangeTimerSpeedCombo</value>
   </data>
   <data name="&gt;&gt;UseCommentToolStripButton.Name" xml:space="preserve">
     <value>UseCommentToolStripButton</value>
@@ -350,9 +353,6 @@
   </data>
   <data name="CortPicture.Location" type="System.Drawing.Point, System.Drawing">
     <value>197, 394</value>
-  </data>
-  <data name="&gt;&gt;ChangeMyTeamItem.Name" xml:space="preserve">
-    <value>ChangeMyTeamItem</value>
   </data>
   <data name="OppentMemberChangeButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>720, 601</value>
@@ -371,6 +371,9 @@
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>39</value>
+  </data>
+  <data name="&gt;&gt;MyTimeOutLabel.ZOrder" xml:space="preserve">
+    <value>16</value>
   </data>
   <data name="&gt;&gt;OppentCortTeamListBox.Name" xml:space="preserve">
     <value>OppentCortTeamListBox</value>
@@ -393,8 +396,8 @@
   <data name="&gt;&gt;NewGameToolStripButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
+  <data name="OppentCortTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 132</value>
   </data>
   <data name="&gt;&gt;PersonalFaulButton.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -522,14 +525,11 @@
         QmCC
 </value>
   </data>
-  <data name="OppentTeamFaulLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 45</value>
+  <data name="&gt;&gt;CortPicture.Name" xml:space="preserve">
+    <value>CortPicture</value>
   </data>
   <data name="OppentMemberChangeButton.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="&gt;&gt;OppentOutTeamListBox.ZOrder" xml:space="preserve">
-    <value>28</value>
   </data>
   <data name="givenFreeThowLabel.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
@@ -549,8 +549,8 @@
   <data name="&gt;&gt;ChangeMyTeamItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>747, 62</value>
+  <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 22</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -567,15 +567,12 @@
   <data name="StrategySimulationFormItem.Text" xml:space="preserve">
     <value>StrategySimulation</value>
   </data>
-  <data name="GoDataEditFormItem.Text" xml:space="preserve">
-    <value>DataEdit</value>
+  <data name="&gt;&gt;ChangeMyTeamItem.Name" xml:space="preserve">
+    <value>ChangeMyTeamItem</value>
   </data>
   <data name="StartGameItem.ToolTipText" xml:space="preserve">
     <value>
 </value>
-  </data>
-  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>197, 188</value>
@@ -586,6 +583,9 @@
   <data name="&gt;&gt;ChangeButtonTextColorItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="UpButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>647, 296</value>
+  </data>
   <data name="&gt;&gt;CentralityAnalyzeItem.Name" xml:space="preserve">
     <value>CentralityAnalyzeItem</value>
   </data>
@@ -594,6 +594,9 @@
   </data>
   <data name="&gt;&gt;OppentTeamNameLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="QuarterTimerLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="PrintFormItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -626,8 +629,36 @@
         QmCC
 </value>
   </data>
-  <data name="&gt;&gt;ToolStrip.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="ColorConfigItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
+        a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
+        ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
+        CACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABI
+        BAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAA
+        EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgE
+        gEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQC
+        ASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJ
+        QABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJA
+        IhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEA
+        kAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
+        ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
+        CACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABI
+        BAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAA
+        EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgE
+        gEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQC
+        ASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJ
+        QABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJA
+        IhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEA
+        kAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
+        ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
+        CACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABI
+        BAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAA
+        EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASDYfR4wRvEbYtOSAAAAAElFTkSu
+        QmCC
+</value>
   </data>
   <data name="&gt;&gt;GoGraphScoreFormItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -638,14 +669,17 @@
   <data name="ChangeGameNameItem.Text" xml:space="preserve">
     <value>ChangeGameName</value>
   </data>
-  <data name="&gt;&gt;QuarterTimerFastFowardButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="MyTimeOutLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>FormInputView</value>
   </data>
   <data name="GoBoxScoreFormItem.Text" xml:space="preserve">
     <value>BoxScore</value>
+  </data>
+  <data name="GameEndItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
   </data>
   <data name="&gt;&gt;DownButton.Parent" xml:space="preserve">
     <value>$this</value>
@@ -658,12 +692,6 @@
   </data>
   <data name="&gt;&gt;PersonalFaulButton.Type" xml:space="preserve">
     <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;LoadToolStripButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PersonalFaulButton.Name" xml:space="preserve">
-    <value>PersonalFaulButton</value>
   </data>
   <data name="&gt;&gt;QuarterTimerFastFowardButton.ZOrder" xml:space="preserve">
     <value>19</value>
@@ -772,37 +800,6 @@
         QmCC
 </value>
   </data>
-  <data name="ColorConfigItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
-        AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
-        a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
-        ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
-        CACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABI
-        BAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAA
-        EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgE
-        gEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQC
-        ASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJ
-        QABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJA
-        IhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEA
-        kAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
-        ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
-        CACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABI
-        BAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAA
-        EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgE
-        gEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQC
-        ASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJ
-        QABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJA
-        IhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEA
-        kAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
-        ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
-        CACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABI
-        BAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAA
-        EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASDYfR4wRvEbYtOSAAAAAElFTkSu
-        QmCC
-</value>
-  </data>
   <data name="StopGameItem.Text" xml:space="preserve">
     <value>Stop</value>
   </data>
@@ -812,8 +809,8 @@
   <data name="LoadToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 29</value>
   </data>
-  <data name="TimerTickComboBox.Items2" xml:space="preserve">
-    <value>500</value>
+  <data name="&gt;&gt;LoadToolStripButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -842,17 +839,8 @@
   <data name="MyMemberChangeButton.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="BlockShotButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;QuarterText.Name" xml:space="preserve">
-    <value>QuarterText</value>
-  </data>
   <data name="&gt;&gt;QuarterTimerRewindButton.ZOrder" xml:space="preserve">
     <value>17</value>
-  </data>
-  <data name="MyOutTeamListBox.TabIndex" type="System.Int32, mscorlib">
-    <value>69</value>
   </data>
   <data name="&gt;&gt;StealButton.Name" xml:space="preserve">
     <value>StealButton</value>
@@ -912,6 +900,12 @@
   <data name="GameDataSaveItem.ToolTipText" xml:space="preserve">
     <value>現在の試合データをxmlファイルに保存します</value>
   </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>747, 62</value>
+  </data>
+  <data name="CortPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="QuarterChangeTimerSpeedChangeItem.Text" xml:space="preserve">
     <value>QuarterTimerAcceralationSpeed</value>
   </data>
@@ -923,6 +917,9 @@
   </data>
   <data name="&gt;&gt;ToolStrip.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="GoDataEditFormItem.Text" xml:space="preserve">
+    <value>DataEdit</value>
   </data>
   <data name="QuarterText.Text" xml:space="preserve">
     <value>1</value>
@@ -947,6 +944,9 @@
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>41</value>
+  </data>
+  <data name="QuarterChangeTimerSpeedCombo.Items2" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;MyTeamNameLael.ZOrder" xml:space="preserve">
     <value>36</value>
@@ -1012,14 +1012,14 @@
   <data name="&gt;&gt;ChangeButtonColorItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ColorConfigItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 22</value>
-  </data>
   <data name="&gt;&gt;PropToolStripMenuItem.Name" xml:space="preserve">
     <value>PropToolStripMenuItem</value>
   </data>
   <data name="MyTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 647</value>
+  </data>
+  <data name="&gt;&gt;OppentTimeOutButton.Name" xml:space="preserve">
+    <value>OppentTimeOutButton</value>
   </data>
   <data name="OppentTeamPointLabel.ToolTip" xml:space="preserve">
     <value />
@@ -1081,9 +1081,6 @@
   <data name="OppentTimeOutButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>799, 601</value>
   </data>
-  <data name="OppentCortTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>153, 132</value>
-  </data>
   <data name="&gt;&gt;DebugFormVisiableItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -1095,9 +1092,6 @@
   </data>
   <data name="GoClubMakeFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>163, 22</value>
-  </data>
-  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
   </data>
   <data name="ChangeMyTeamItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1130,9 +1124,6 @@
         QmCC
 </value>
   </data>
-  <data name="UpButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="SaveToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 29</value>
   </data>
@@ -1151,8 +1142,8 @@
   <data name="MyTimeOutButton.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
   </data>
-  <data name="&gt;&gt;OppentCortTeamListBox.Type" xml:space="preserve">
-    <value>ExchangeListBox.ExChangeList, ExchangeListBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="&gt;&gt;QuarterChangeTimerSpeedCombo.Name" xml:space="preserve">
+    <value>QuarterChangeTimerSpeedCombo</value>
   </data>
   <data name="&gt;&gt;OppentTimeOutLabel.Name" xml:space="preserve">
     <value>OppentTimeOutLabel</value>
@@ -1165,9 +1156,6 @@
   </data>
   <data name="&gt;&gt;GoClubMakeFormItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;actionPointGraphFormItem.Name" xml:space="preserve">
-    <value>actionPointGraphFormItem</value>
   </data>
   <data name="&gt;&gt;RedoToolStripButton.Name" xml:space="preserve">
     <value>RedoToolStripButton</value>
@@ -1211,6 +1199,9 @@
   </data>
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
+  </data>
+  <data name="&gt;&gt;ExitItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="QuarterText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -1316,11 +1307,14 @@
   <data name="&gt;&gt;BlockShotButton.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="NextQuarterItem.Text" xml:space="preserve">
-    <value>NextQuarter</value>
+  <data name="&gt;&gt;SolutionToolStripMenuItem.Name" xml:space="preserve">
+    <value>SolutionToolStripMenuItem</value>
   </data>
   <data name="QuarterTimerRewindButton.ToolTip" xml:space="preserve">
     <value>タイマー巻き戻し</value>
+  </data>
+  <data name="LoadGameDataItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>194, 22</value>
   </data>
   <data name="ChangeFPSItem.Text" xml:space="preserve">
     <value>ChangelFPS</value>
@@ -1340,9 +1334,6 @@
   <data name="label3.Text" xml:space="preserve">
     <value>TeamFaul</value>
   </data>
-  <data name="&gt;&gt;SolutionToolStripMenuItem.Name" xml:space="preserve">
-    <value>SolutionToolStripMenuItem</value>
-  </data>
   <data name="PlayerNameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -1355,8 +1346,8 @@
   <data name="OppentOutTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 228</value>
   </data>
-  <data name="&gt;&gt;OppentTimeOutButton.Name" xml:space="preserve">
-    <value>OppentTimeOutButton</value>
+  <data name="&gt;&gt;PrintPreviewItem.Name" xml:space="preserve">
+    <value>PrintPreviewItem</value>
   </data>
   <data name="TechnicalFaulButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 45</value>
@@ -1379,20 +1370,23 @@
   <data name="MyTeamPointLabel.Text" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;TechnicalFaulButton.Name" xml:space="preserve">
-    <value>TechnicalFaulButton</value>
+  <data name="&gt;&gt;ChangeButtonColorDefaultItem.Name" xml:space="preserve">
+    <value>ChangeButtonColorDefaultItem</value>
   </data>
   <data name="&gt;&gt;QuarterTimerStopButton.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="&gt;&gt;OppentTimeOutLabel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;QuarterTimerRewindButton.Name" xml:space="preserve">
+    <value>QuarterTimerRewindButton</value>
   </data>
   <data name="&gt;&gt;ColorConfigItem.Name" xml:space="preserve">
     <value>ColorConfigItem</value>
   </data>
-  <data name="UpButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>647, 296</value>
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="&gt;&gt;OppentOutTeamListBox.ZOrder" xml:space="preserve">
+    <value>28</value>
   </data>
   <data name="GameEndItem.Text" xml:space="preserve">
     <value>End</value>
@@ -1406,11 +1400,8 @@
   <data name="&gt;&gt;MyMemberChangeButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="CortPicture.Size" type="System.Drawing.Size, System.Drawing">
-    <value>506, 272</value>
-  </data>
-  <data name="&gt;&gt;ChangeGameNameItem.Name" xml:space="preserve">
-    <value>ChangeGameNameItem</value>
+  <data name="&gt;&gt;ToolStrip.ZOrder" xml:space="preserve">
+    <value>40</value>
   </data>
   <data name="OppentTeamNameLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>720, 141</value>
@@ -1436,7 +1427,7 @@
   <data name="&gt;&gt;QuarterTimerLabel.ZOrder" xml:space="preserve">
     <value>24</value>
   </data>
-  <data name="&gt;&gt;ExitItem.Type" xml:space="preserve">
+  <data name="&gt;&gt;ChangeFPSItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;StartGameItem.Type" xml:space="preserve">
@@ -1445,8 +1436,8 @@
   <data name="&gt;&gt;QuarterText.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;TurnOverButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;ToolStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="ChangeButtonTextColorItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1484,9 +1475,6 @@
   </data>
   <data name="FileToolStripMenuItem.Text" xml:space="preserve">
     <value>file</value>
-  </data>
-  <data name="&gt;&gt;QuarterTimerRewindButton.Name" xml:space="preserve">
-    <value>QuarterTimerRewindButton</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>899, 677</value>
@@ -1628,14 +1616,17 @@
   <data name="SolutionToolStripMenuItem.Text" xml:space="preserve">
     <value>Analize</value>
   </data>
+  <data name="GameLocationText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 25</value>
+  </data>
   <data name="&gt;&gt;CortPicture.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;GoActionPointEditFormItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;AssistButton.Type" xml:space="preserve">
-    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  <data name="OppentOutTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>MS UI Gothic, 12pt</value>
   </data>
   <data name="OppentTeamFaulLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -1654,6 +1645,9 @@
   </data>
   <data name="QuarterText.Location" type="System.Drawing.Point, System.Drawing">
     <value>440, 188</value>
+  </data>
+  <data name="AssistButton.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
   </data>
   <data name="MyTeamFaulLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 45</value>
@@ -1676,8 +1670,8 @@
   <data name="AssistButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 45</value>
   </data>
-  <data name="&gt;&gt;PrintPreviewItem.Name" xml:space="preserve">
-    <value>PrintPreviewItem</value>
+  <data name="ColorConfigItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
   </data>
   <data name="PlayerNameLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
@@ -1688,14 +1682,48 @@
   <data name="&gt;&gt;MyMemberChangeButton.Type" xml:space="preserve">
     <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
+  <data name="ChangeFormBackGroundColorItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
+        a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
+        ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
+        CACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABI
+        BAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAA
+        EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgE
+        gEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQC
+        ASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJ
+        QABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJA
+        IhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEA
+        kAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
+        ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
+        CACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABI
+        BAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAA
+        EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgE
+        gEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQC
+        ASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJ
+        QABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJA
+        IhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEA
+        kAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
+        ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
+        CACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABI
+        BAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAA
+        EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASDYfR4wRvEbYtOSAAAAAElFTkSu
+        QmCC
+</value>
+  </data>
+  <data name="RestartGameItem.Text" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <data name="NextQuarterItem.Text" xml:space="preserve">
+    <value>NextQuarter</value>
+  </data>
   <data name="MyTeamPointLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>216, 80</value>
   </data>
   <data name="MyOutTeamListBox.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 22</value>
   </data>
   <data name="PersonalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>476, 296</value>
@@ -1709,14 +1737,8 @@
   <data name="MyMemberChangeButton.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
   </data>
-  <data name="OppentCortTeamListBox.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="MyTimeOutLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
-  </data>
-  <data name="QuarterTimerStopButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>431, 80</value>
+  <data name="GameToolStripMenuItem.Text" xml:space="preserve">
+    <value>Game</value>
   </data>
   <data name="StealButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 45</value>
@@ -1730,8 +1752,8 @@
   <data name="&gt;&gt;RestartGameItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="LoadGameDataItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 22</value>
+  <data name="&gt;&gt;BlockShotButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -1785,17 +1807,14 @@
   <data name="MyTeamNameLael.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
-  <data name="MyTimeOutLabel.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;OppentTeamNameLabel.Name" xml:space="preserve">
+    <value>OppentTeamNameLabel</value>
   </data>
   <data name="MyTimeOutLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
   </data>
   <data name="MyTeamNameLael.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="UndoToolStripButton.Text" xml:space="preserve">
-    <value>Undo(Ctrl + Z)</value>
   </data>
   <data name="backPictureBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 53</value>
@@ -1815,8 +1834,8 @@
   <data name="MyOutTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 228</value>
   </data>
-  <data name="&gt;&gt;FormInputTimer.Name" xml:space="preserve">
-    <value>FormInputTimer</value>
+  <data name="CortPicture.Size" type="System.Drawing.Size, System.Drawing">
+    <value>506, 272</value>
   </data>
   <data name="&gt;&gt;GamePropToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1841,9 +1860,6 @@
   </data>
   <data name="&gt;&gt;QuarterTimerStopButton.Type" xml:space="preserve">
     <value>CustomPictureButton.ReversePictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;OppentMemberChangeButton.Type" xml:space="preserve">
-    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="&gt;&gt;MyOutTeamListBox.Name" xml:space="preserve">
     <value>MyOutTeamListBox</value>
@@ -1897,8 +1913,8 @@
   <data name="LoadGameDataItem.ShortcutKeys" type="System.Windows.Forms.Keys, System.Windows.Forms">
     <value>Ctrl+L</value>
   </data>
-  <data name="GameToolStripMenuItem.Text" xml:space="preserve">
-    <value>Game</value>
+  <data name="OppentTeamPointLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="GoPlayerDataFormItem.Text" xml:space="preserve">
     <value>PlayerData</value>
@@ -1906,14 +1922,17 @@
   <data name="PrintPreviewItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 22</value>
   </data>
+  <data name="&gt;&gt;OppentTimeOutLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="MyCortTeamListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 132</value>
   </data>
   <data name="&gt;&gt;QuarterText.ZOrder" xml:space="preserve">
     <value>34</value>
   </data>
-  <data name="RedoToolStripButton.Text" xml:space="preserve">
-    <value>Redo(Ctrl + Y)</value>
+  <data name="MyTimeOutLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="GameEndItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1946,8 +1965,8 @@
         QmCC
 </value>
   </data>
-  <data name="MyTeamPointLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 84</value>
+  <data name="&gt;&gt;ChangeButtonTextColorDefaultItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1961,8 +1980,8 @@
   <data name="ChangeButtonTextColorDefaultItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>292, 22</value>
   </data>
-  <data name="QuarterTimerStopButton.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
+  <data name="UnSportsmanLikeFaulButton.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="ChangeGameLocationItem.Text" xml:space="preserve">
     <value>ChangeGameLocation</value>
@@ -2013,6 +2032,9 @@
   <data name="ChangeButtonTextColorItem.Text" xml:space="preserve">
     <value>ChangeButtonTextColor</value>
   </data>
+  <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 341</value>
+  </data>
   <data name="OppentMemberChangeButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 37</value>
   </data>
@@ -2022,8 +2044,11 @@
   <data name="QuarterTimerLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 58</value>
   </data>
-  <data name="CortPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="TimerTickComboBox.Items2" xml:space="preserve">
+    <value>500</value>
+  </data>
+  <data name="&gt;&gt;AssistButton.Type" xml:space="preserve">
+    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="ColorConfigItem.Text" xml:space="preserve">
     <value>ColorConfig</value>
@@ -2031,8 +2056,8 @@
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 18</value>
   </data>
-  <data name="&gt;&gt;TechnicalFaulButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="BlockShotButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>324, 341</value>
   </data>
   <data name="&gt;&gt;SolutionToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -2076,8 +2101,8 @@
   <data name="PersonalFaulButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 45</value>
   </data>
-  <data name="QuarterTimerLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>378, 125</value>
+  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="OppentCortTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -2097,11 +2122,17 @@
   <data name="&gt;&gt;QuarterTimerFastFowardButton.Name" xml:space="preserve">
     <value>QuarterTimerFastFowardButton</value>
   </data>
+  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
   <data name="GoGraphScoreFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 22</value>
   </data>
   <data name="&gt;&gt;MyTeamFaulLabel.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="OppentTeamNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="MyTimeOutButton.ToolTip" xml:space="preserve">
     <value />
@@ -2225,14 +2256,14 @@
   <data name="&gt;&gt;MyTeamFaulLabel.ZOrder" xml:space="preserve">
     <value>32</value>
   </data>
-  <data name="QuarterTimerLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;ChangeButtonColorDefaultItem.Name" xml:space="preserve">
-    <value>ChangeButtonColorDefaultItem</value>
+  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="NewGameToolStripButton.Text" xml:space="preserve">
     <value>NewGame(Ctrl + N)</value>
+  </data>
+  <data name="RedoToolStripButton.Text" xml:space="preserve">
+    <value>Redo(Ctrl + Y)</value>
   </data>
   <data name="ChangeButtonColorDefaultItem.Text" xml:space="preserve">
     <value>ResetButtonColor</value>
@@ -2280,36 +2311,8 @@
   <data name="&gt;&gt;GamePropToolStripMenuItem.Name" xml:space="preserve">
     <value>GamePropToolStripMenuItem</value>
   </data>
-  <data name="ChangeFormBackGroundColorItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACwwAAAsMAT9AIsgAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
-        AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
-        a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
-        ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
-        CACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABI
-        BAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAA
-        EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgE
-        gEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQC
-        ASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJ
-        QABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJA
-        IhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEA
-        kAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
-        ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
-        CACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABI
-        BAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAA
-        EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgE
-        gEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQC
-        ASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJ
-        QABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJA
-        IhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEA
-        kAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
-        ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
-        CACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABI
-        BAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAA
-        EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASDYfR4wRvEbYtOSAAAAAElFTkSu
-        QmCC
-</value>
+  <data name="UpButton.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="MyMemberChangeButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>106, 601</value>
@@ -2326,8 +2329,8 @@
   <data name="&gt;&gt;CortPicture.ZOrder" xml:space="preserve">
     <value>23</value>
   </data>
-  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
-    <value>MenuStrip1</value>
+  <data name="QuarterTimerLabel.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;GoBoxScoreFormItem.Name" xml:space="preserve">
     <value>GoBoxScoreFormItem</value>
@@ -2338,23 +2341,17 @@
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>99, 18</value>
   </data>
-  <data name="&gt;&gt;QuarterChangeTimerSpeedCombo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="SaveToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
     <value>Magenta</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;MyTeamNameLael.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;StopGameItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="QuarterTimerRewindButton.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
-  </data>
-  <data name="OppentTeamPointLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;GoClubMakeFormItem.Name" xml:space="preserve">
     <value>GoClubMakeFormItem</value>
@@ -2374,8 +2371,8 @@
   <data name="&gt;&gt;UseCommentItem.Name" xml:space="preserve">
     <value>UseCommentItem</value>
   </data>
-  <data name="OppentTeamPointLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 84</value>
+  <data name="&gt;&gt;ChangeButtonTextColorItem.Name" xml:space="preserve">
+    <value>ChangeButtonTextColorItem</value>
   </data>
   <data name="TurnOverButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 45</value>
@@ -2394,6 +2391,9 @@
   </data>
   <data name="OppentTeamNameLabel.Text" xml:space="preserve">
     <value>No Name Team</value>
+  </data>
+  <data name="&gt;&gt;givenFreeThowLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;StartGameItem.Name" xml:space="preserve">
     <value>StartGameItem</value>
@@ -2465,9 +2465,6 @@
   <data name="DisQualifyingFaulButton.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="&gt;&gt;StopGameItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="ChangeFPSItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -2504,6 +2501,9 @@
   </data>
   <data name="QuarterText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleCenter</value>
+  </data>
+  <data name="OppentTeamPointLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 84</value>
   </data>
   <data name="QuarterTimerFastFowardButton.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -2597,14 +2597,8 @@
   <data name="&gt;&gt;OppentCortTeamListBox.ZOrder" xml:space="preserve">
     <value>29</value>
   </data>
-  <data name="RestartGameItem.Text" xml:space="preserve">
-    <value>Restart</value>
-  </data>
-  <data name="ChangeButtonColorItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>292, 22</value>
-  </data>
-  <data name="MyOutTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>27, 188</value>
+  <data name="RestartGameItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 22</value>
   </data>
   <data name="OppentTeamPointLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2615,8 +2609,8 @@
   <data name="MyTeamNameLael.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
-  <data name="&gt;&gt;ChangeButtonTextColorDefaultItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;QuarterTimerFastFowardButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="CentralityAnalyzeItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>189, 22</value>
@@ -2638,9 +2632,6 @@
   </data>
   <data name="MyTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>81, 89</value>
-  </data>
-  <data name="RestartGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5460,9 +5451,6 @@
   <data name="ChangeFormBackGroundColorDefaultItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>292, 22</value>
   </data>
-  <data name="&gt;&gt;OppentTeamFaulLabel.Name" xml:space="preserve">
-    <value>OppentTeamFaulLabel</value>
-  </data>
   <data name="givenFreeThowLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -5471,15 +5459,6 @@
   </data>
   <data name="OppentTeamFaulLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 36pt</value>
-  </data>
-  <data name="&gt;&gt;ChangeFPSItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CortPicture.Name" xml:space="preserve">
-    <value>CortPicture</value>
-  </data>
-  <data name="MyCortTeamListBox.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="&gt;&gt;QuarterTimerStopButton.Name" xml:space="preserve">
     <value>QuarterTimerStopButton</value>
@@ -5495,6 +5474,9 @@
   </data>
   <data name="OppentTeamNameLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;TurnOverButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="QuarterChangeTimerSpeedCombo.Items" xml:space="preserve">
     <value>100</value>
@@ -5556,9 +5538,6 @@
   </data>
   <data name="ExitItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 22</value>
-  </data>
-  <data name="&gt;&gt;DebugFormVisiableItem.Name" xml:space="preserve">
-    <value>DebugFormVisiableItem</value>
   </data>
   <data name="&gt;&gt;GameNameText.Name" xml:space="preserve">
     <value>GameNameText</value>
@@ -5649,14 +5628,23 @@
         QmCC
 </value>
   </data>
+  <data name="&gt;&gt;MyTimeOutLabel.Name" xml:space="preserve">
+    <value>MyTimeOutLabel</value>
+  </data>
   <data name="&gt;&gt;MyTeamPointLabel.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TechnicalFaulButton.Name" xml:space="preserve">
+    <value>TechnicalFaulButton</value>
   </data>
   <data name="TechnicalFaulButton.TabIndex" type="System.Int32, mscorlib">
     <value>99</value>
   </data>
   <data name="QuarterTimerFastFowardButton.ToolTip" xml:space="preserve">
     <value>タイマー早送り</value>
+  </data>
+  <data name="&gt;&gt;ChangeGameNameItem.Name" xml:space="preserve">
+    <value>ChangeGameNameItem</value>
   </data>
   <data name="QuarterText.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 21.75pt, style=Bold</value>
@@ -5670,8 +5658,8 @@
   <data name="&gt;&gt;StrategySimulationFormItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;ToolStrip.ZOrder" xml:space="preserve">
-    <value>40</value>
+  <data name="MyCortTeamListBox.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="GameNameText.Text" xml:space="preserve">
     <value>Game1</value>
@@ -5679,8 +5667,8 @@
   <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>620, 188</value>
   </data>
-  <data name="&gt;&gt;BlockShotButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="UndoToolStripButton.Text" xml:space="preserve">
+    <value>Undo(Ctrl + Z)</value>
   </data>
   <data name="NextQuarterItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 22</value>
@@ -5715,9 +5703,6 @@
   <data name="&gt;&gt;GoTCPServerFormItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="UnSportsmanLikeFaulButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="GoBoxScoreFormItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -5749,14 +5734,14 @@
         QmCC
 </value>
   </data>
-  <data name="ToolStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+  <data name="&gt;&gt;TechnicalFaulButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;PrintFormItem.Name" xml:space="preserve">
     <value>PrintFormItem</value>
   </data>
-  <data name="&gt;&gt;DownButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;actionPointGraphFormItem.Name" xml:space="preserve">
+    <value>actionPointGraphFormItem</value>
   </data>
   <data name="OppentOutTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>720, 188</value>
@@ -5769,6 +5754,9 @@
   </data>
   <data name="&gt;&gt;DisQualifyingFaulButton.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="UseCommentItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
   </data>
   <data name="MyTeamPointLabel.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -5785,8 +5773,8 @@
   <data name="StartGameItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>149, 22</value>
   </data>
-  <data name="&gt;&gt;UnSportsmanLikeFaulButton.Name" xml:space="preserve">
-    <value>UnSportsmanLikeFaulButton</value>
+  <data name="MyOutTeamListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 188</value>
   </data>
   <data name="ChangeLanguageItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>263, 22</value>
@@ -5869,8 +5857,8 @@
   <data name="PrintFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>194, 22</value>
   </data>
-  <data name="UseCommentItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 22</value>
+  <data name="OppentCortTeamListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
   </data>
   <data name="RestartGameItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5903,6 +5891,9 @@
         QmCC
 </value>
   </data>
+  <data name="&gt;&gt;UnSportsmanLikeFaulButton.Name" xml:space="preserve">
+    <value>UnSportsmanLikeFaulButton</value>
+  </data>
   <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
   </data>
@@ -5912,11 +5903,8 @@
   <data name="UseCommentToolStripButton.Text" xml:space="preserve">
     <value>UseComment(Ctrl + C)</value>
   </data>
-  <data name="GameEndItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
-  </data>
-  <data name="MyTeamFaulLabel.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;MyTeamNameLael.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="MyTimeOutButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 601</value>
@@ -5955,8 +5943,8 @@
   <data name="&gt;&gt;MyOutTeamListBox.Type" xml:space="preserve">
     <value>ExchangeListBox.ExChangeList, ExchangeListBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="GameLocationText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 25</value>
+  <data name="&gt;&gt;OppentMemberChangeButton.Type" xml:space="preserve">
+    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
   </data>
   <data name="StrategySimulationFormItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -5989,11 +5977,8 @@
         QmCC
 </value>
   </data>
-  <data name="pictureBox2.ToolTip" xml:space="preserve">
+  <data name="BlockShotButton.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>476, 341</value>
   </data>
   <data name="&gt;&gt;TimerTickComboBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6001,17 +5986,17 @@
   <data name="&gt;&gt;actionPointGraphFormItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="OppentTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>774, 89</value>
+  <data name="&gt;&gt;OppentTeamFaulLabel.Name" xml:space="preserve">
+    <value>OppentTeamFaulLabel</value>
   </data>
-  <data name="AssistButton.TabIndex" type="System.Int32, mscorlib">
-    <value>94</value>
+  <data name="ChangeButtonColorItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
   </data>
   <data name="ChangeFormBackGroundColorDefaultItem.Text" xml:space="preserve">
     <value>ChangeFormBackGroundColorDefault</value>
   </data>
-  <data name="OppentTeamNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="&gt;&gt;DownButton.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="TurnOverButton.ToolTip" xml:space="preserve">
     <value />
@@ -6028,6 +6013,9 @@
   <data name="RedoToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>23, 29</value>
   </data>
+  <data name="ToolStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
   <data name="&gt;&gt;OppentTeamPointLabel.ZOrder" xml:space="preserve">
     <value>26</value>
   </data>
@@ -6037,20 +6025,20 @@
   <data name="ChangeFPSItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>263, 22</value>
   </data>
-  <data name="MyTimeOutButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 37</value>
+  <data name="OppentTeamFaulLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 45</value>
   </data>
   <data name="OppentTeamFaulLabel.Text" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="BlockShotButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>324, 341</value>
   </data>
   <data name="&gt;&gt;OppentCortTeamListBox.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="MenuStrip1.ToolTip" xml:space="preserve">
     <value />
+  </data>
+  <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>799, 647</value>
   </data>
   <data name="&gt;&gt;RedoToolStripButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6064,8 +6052,8 @@
   <data name="&gt;&gt;AssistButton.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="QuarterTimerLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="pictureBox2.ToolTip" xml:space="preserve">
+    <value />
   </data>
   <data name="&gt;&gt;TurnOverButton.Name" xml:space="preserve">
     <value>TurnOverButton</value>
@@ -6085,8 +6073,8 @@
   <data name="GamePropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>91, 22</value>
   </data>
-  <data name="&gt;&gt;MyTimeOutLabel.ZOrder" xml:space="preserve">
-    <value>16</value>
+  <data name="&gt;&gt;PersonalFaulButton.Name" xml:space="preserve">
+    <value>PersonalFaulButton</value>
   </data>
   <data name="actionPointGraphFormItem.Text" xml:space="preserve">
     <value>ActionPointGraph</value>
@@ -6097,8 +6085,8 @@
   <data name="&gt;&gt;LoadGameDataItem.Name" xml:space="preserve">
     <value>LoadGameDataItem</value>
   </data>
-  <data name="&gt;&gt;MyTimeOutLabel.Name" xml:space="preserve">
-    <value>MyTimeOutLabel</value>
+  <data name="&gt;&gt;QuarterChangeTimerSpeedCombo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;ColorDialog.Name" xml:space="preserve">
     <value>ColorDialog</value>
@@ -6109,11 +6097,11 @@
   <data name="&gt;&gt;ChangeFormBackGroundColorDefaultItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;givenFreeThowLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="QuarterTimerLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>378, 125</value>
   </data>
-  <data name="&gt;&gt;OppentTeamNameLabel.Name" xml:space="preserve">
-    <value>OppentTeamNameLabel</value>
+  <data name="MyOutTeamListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
   </data>
   <data name="givenFreeThowLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>647, 314</value>
@@ -6121,20 +6109,38 @@
   <data name="&gt;&gt;ChangeButtonTextColorDefaultItem.Name" xml:space="preserve">
     <value>ChangeButtonTextColorDefaultItem</value>
   </data>
-  <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>799, 647</value>
+  <data name="&gt;&gt;QuarterText.Name" xml:space="preserve">
+    <value>QuarterText</value>
   </data>
   <data name="GoTeamMakeFormItem.Text" xml:space="preserve">
     <value>GameMake</value>
   </data>
-  <data name="&gt;&gt;MyTimeOutButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="MyTeamPointLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 84</value>
+  </data>
+  <data name="&gt;&gt;OppentCortTeamListBox.Type" xml:space="preserve">
+    <value>ExchangeListBox.ExChangeList, ExchangeListBox, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="MyTimeOutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 37</value>
+  </data>
+  <data name="&gt;&gt;DebugFormVisiableItem.Name" xml:space="preserve">
+    <value>DebugFormVisiableItem</value>
+  </data>
+  <data name="OppentTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>774, 89</value>
   </data>
   <data name="BlockShotButton.TabIndex" type="System.Int32, mscorlib">
     <value>97</value>
   </data>
+  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="ToolTipFormInput.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>512, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ja</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -6150,8 +6156,5 @@
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>43</value>
-  </metadata>
-  <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
   </metadata>
 </root>

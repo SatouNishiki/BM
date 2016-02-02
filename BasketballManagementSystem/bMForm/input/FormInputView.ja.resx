@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="PlayerNameLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="FileToolStripMenuItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -151,6 +148,12 @@
         EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASDYfR4wRvEbYtOSAAAAAElFTkSu
         QmCC
 </value>
+  </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>ファイル</value>
   </data>
   <data name="NewGameItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -448,12 +451,6 @@
   <data name="ExitItem.Text" xml:space="preserve">
     <value>終了</value>
   </data>
-  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
-    <value>ファイル</value>
-  </data>
   <data name="GameToolStripMenuItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -484,6 +481,12 @@
         EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASDYfR4wRvEbYtOSAAAAAElFTkSu
         QmCC
 </value>
+  </data>
+  <data name="GameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
+  </data>
+  <data name="GameToolStripMenuItem.Text" xml:space="preserve">
+    <value>試合</value>
   </data>
   <data name="StartGameItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -670,12 +673,6 @@
   <data name="GameEndItem.Text" xml:space="preserve">
     <value>ゲーム終了</value>
   </data>
-  <data name="GameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
-  </data>
-  <data name="GameToolStripMenuItem.Text" xml:space="preserve">
-    <value>試合</value>
-  </data>
   <data name="GamePropToolStripMenuItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -706,6 +703,12 @@
         EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASDYfR4wRvEbYtOSAAAAAElFTkSu
         QmCC
 </value>
+  </data>
+  <data name="GamePropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="GamePropToolStripMenuItem.Text" xml:space="preserve">
+    <value>試合設定</value>
   </data>
   <data name="ChangeGameNameItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -781,12 +784,6 @@
   <data name="ChangeGameLocationItem.Text" xml:space="preserve">
     <value>ゲーム場所変更</value>
   </data>
-  <data name="GamePropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="GamePropToolStripMenuItem.Text" xml:space="preserve">
-    <value>試合設定</value>
-  </data>
   <data name="SolutionToolStripMenuItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -817,6 +814,12 @@
         EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASDYfR4wRvEbYtOSAAAAAElFTkSu
         QmCC
 </value>
+  </data>
+  <data name="SolutionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
+  </data>
+  <data name="SolutionToolStripMenuItem.Text" xml:space="preserve">
+    <value>解析</value>
   </data>
   <data name="GoGraphScoreFormItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1077,11 +1080,11 @@
   <data name="CentralityAnalyzeItem.Text" xml:space="preserve">
     <value>中心性解析</value>
   </data>
-  <data name="SolutionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 22</value>
   </data>
-  <data name="SolutionToolStripMenuItem.Text" xml:space="preserve">
-    <value>解析</value>
+  <data name="PropToolStripMenuItem.Text" xml:space="preserve">
+    <value>設定</value>
   </data>
   <data name="ColorConfigItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1113,6 +1116,12 @@
         EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASDYfR4wRvEbYtOSAAAAAElFTkSu
         QmCC
 </value>
+  </data>
+  <data name="ColorConfigItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 22</value>
+  </data>
+  <data name="ColorConfigItem.Text" xml:space="preserve">
+    <value>色設定</value>
   </data>
   <data name="ChangeFormBackGroundColorItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1336,12 +1345,6 @@
   <data name="ChangeButtonTextColorDefaultItem.Text" xml:space="preserve">
     <value>ボタンの文字色をリセット</value>
   </data>
-  <data name="ColorConfigItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 22</value>
-  </data>
-  <data name="ColorConfigItem.Text" xml:space="preserve">
-    <value>色設定</value>
-  </data>
   <data name="ChangeFPSItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -1527,11 +1530,11 @@
   <data name="ChangeLanguageItem.Text" xml:space="preserve">
     <value>言語設定(再起動後有効)</value>
   </data>
-  <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
+  <data name="dataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 22</value>
   </data>
-  <data name="PropToolStripMenuItem.Text" xml:space="preserve">
-    <value>設定</value>
+  <data name="dataToolStripMenuItem.Text" xml:space="preserve">
+    <value>データ</value>
   </data>
   <data name="GoDataEditFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>172, 22</value>
@@ -1557,11 +1560,11 @@
   <data name="GoActionPointEditFormItem.Text" xml:space="preserve">
     <value>行動傾向点変更</value>
   </data>
-  <data name="dataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 22</value>
+  <data name="transmission.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 22</value>
   </data>
-  <data name="dataToolStripMenuItem.Text" xml:space="preserve">
-    <value>データ</value>
+  <data name="transmission.Text" xml:space="preserve">
+    <value>通信</value>
   </data>
   <data name="GoTCPServerFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>171, 22</value>
@@ -1575,143 +1578,17 @@
   <data name="GoTCPClientFormItem.Text" xml:space="preserve">
     <value>TCPクライアント</value>
   </data>
-  <data name="transmission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 22</value>
-  </data>
-  <data name="transmission.Text" xml:space="preserve">
-    <value>通信</value>
-  </data>
-  <data name="MenuStrip1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyTeamNameLael.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OppentTeamNameLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="QuarterText.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OppentTeamFaulLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>747, 62</value>
-  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>チームファウル</value>
   </data>
-  <data name="label2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>54, 62</value>
-  </data>
   <data name="label3.Text" xml:space="preserve">
     <value>チームファウル</value>
-  </data>
-  <data name="label3.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyTeamFaulLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="givenFreeThowLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyOutTeamListBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OppentTeamPointLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyTeamPointLabel.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="NewGameToolStripButton.ToolTipText" xml:space="preserve">
     <value>試合データを新規作成します(Ctrl + N)</value>
   </data>
   <data name="UseCommentToolStripButton.ToolTipText" xml:space="preserve">
     <value>アクション入力の際のコメント入力の有無を選択します(Ctrl + C)</value>
-  </data>
-  <data name="ToolStrip.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OppentOutTeamListBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OppentCortTeamListBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyCortTeamListBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="QuarterTimerLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="CortPicture.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="pictureBox2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyTimeOutLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="backPictureBox.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OppentTimeOutLabel.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="QuarterTimerStopButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyTimeOutButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OppentTimeOutButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="MyMemberChangeButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="OppentMemberChangeButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="AssistButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="StealButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TurnOverButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="BlockShotButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="PersonalFaulButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="TechnicalFaulButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="UnSportsmanLikeFaulButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="DisQualifyingFaulButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="UpButton.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="DownButton.ToolTip" xml:space="preserve">
-    <value />
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4527,8 +4404,5 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIyo
         /w9EYS+mRoQ/2AAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="$this.ToolTip" xml:space="preserve">
-    <value />
   </data>
 </root>
