@@ -197,6 +197,7 @@
             // MenuStrip1
             // 
             this.MenuStrip1.BackColor = System.Drawing.SystemColors.Control;
+            this.MenuStrip1.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
             this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileToolStripMenuItem,
             this.GameToolStripMenuItem,
@@ -210,6 +211,7 @@
             // 
             // FileToolStripMenuItem
             // 
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.NewGameItem,
             this.ChangeMyTeamItem,
@@ -219,112 +221,128 @@
             this.PrintFormItem,
             this.PrintPreviewItem,
             this.ExitItem});
+            this.FileToolStripMenuItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
-            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
             // NewGameItem
             // 
-            this.NewGameItem.Name = "NewGameItem";
             resources.ApplyResources(this.NewGameItem, "NewGameItem");
+            this.NewGameItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.NewGameItem.Name = "NewGameItem";
             this.NewGameItem.Click += new System.EventHandler(this.NewGameItem_Click);
             // 
             // ChangeMyTeamItem
             // 
-            this.ChangeMyTeamItem.Name = "ChangeMyTeamItem";
             resources.ApplyResources(this.ChangeMyTeamItem, "ChangeMyTeamItem");
+            this.ChangeMyTeamItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ChangeMyTeamItem.Name = "ChangeMyTeamItem";
             this.ChangeMyTeamItem.Click += new System.EventHandler(this.ChangeMyTeamButton_Click);
             // 
             // ChangeOppentTeamItem
             // 
-            this.ChangeOppentTeamItem.Name = "ChangeOppentTeamItem";
             resources.ApplyResources(this.ChangeOppentTeamItem, "ChangeOppentTeamItem");
+            this.ChangeOppentTeamItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ChangeOppentTeamItem.Name = "ChangeOppentTeamItem";
             this.ChangeOppentTeamItem.Click += new System.EventHandler(this.ChangeOppentTeamButton_Click);
             // 
             // GameDataSaveItem
             // 
-            this.GameDataSaveItem.Name = "GameDataSaveItem";
             resources.ApplyResources(this.GameDataSaveItem, "GameDataSaveItem");
+            this.GameDataSaveItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.GameDataSaveItem.Name = "GameDataSaveItem";
             this.GameDataSaveItem.Click += new System.EventHandler(this.GameDataSave_Click);
             // 
             // LoadGameDataItem
             // 
-            this.LoadGameDataItem.Name = "LoadGameDataItem";
             resources.ApplyResources(this.LoadGameDataItem, "LoadGameDataItem");
+            this.LoadGameDataItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.LoadGameDataItem.Name = "LoadGameDataItem";
             this.LoadGameDataItem.Click += new System.EventHandler(this.GameDataLoad_Click);
             // 
             // PrintFormItem
             // 
-            this.PrintFormItem.Name = "PrintFormItem";
             resources.ApplyResources(this.PrintFormItem, "PrintFormItem");
+            this.PrintFormItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.PrintFormItem.Name = "PrintFormItem";
             this.PrintFormItem.Click += new System.EventHandler(this.PrintForm_Click);
             // 
             // PrintPreviewItem
             // 
-            this.PrintPreviewItem.Name = "PrintPreviewItem";
             resources.ApplyResources(this.PrintPreviewItem, "PrintPreviewItem");
+            this.PrintPreviewItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.PrintPreviewItem.Name = "PrintPreviewItem";
             this.PrintPreviewItem.Click += new System.EventHandler(this.PrintPreview_Click);
             // 
             // ExitItem
             // 
-            this.ExitItem.Name = "ExitItem";
             resources.ApplyResources(this.ExitItem, "ExitItem");
+            this.ExitItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ExitItem.Name = "ExitItem";
             this.ExitItem.Click += new System.EventHandler(this.Exit_Click);
             // 
             // GameToolStripMenuItem
             // 
+            resources.ApplyResources(this.GameToolStripMenuItem, "GameToolStripMenuItem");
             this.GameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StartGameItem,
             this.NextQuarterItem,
             this.StopGameItem,
             this.RestartGameItem,
             this.GameEndItem});
+            this.GameToolStripMenuItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.GameToolStripMenuItem.Name = "GameToolStripMenuItem";
-            resources.ApplyResources(this.GameToolStripMenuItem, "GameToolStripMenuItem");
             // 
             // StartGameItem
             // 
-            this.StartGameItem.Name = "StartGameItem";
             resources.ApplyResources(this.StartGameItem, "StartGameItem");
+            this.StartGameItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.StartGameItem.Name = "StartGameItem";
             this.StartGameItem.Click += new System.EventHandler(this.StartGame_Click);
             // 
             // NextQuarterItem
             // 
             resources.ApplyResources(this.NextQuarterItem, "NextQuarterItem");
+            this.NextQuarterItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.NextQuarterItem.Name = "NextQuarterItem";
             this.NextQuarterItem.Click += new System.EventHandler(this.NextQuarterButton_Click);
             // 
             // StopGameItem
             // 
             resources.ApplyResources(this.StopGameItem, "StopGameItem");
+            this.StopGameItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.StopGameItem.Name = "StopGameItem";
             this.StopGameItem.Click += new System.EventHandler(this.StopGameButton_Click);
             // 
             // RestartGameItem
             // 
-            this.RestartGameItem.Name = "RestartGameItem";
             resources.ApplyResources(this.RestartGameItem, "RestartGameItem");
+            this.RestartGameItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.RestartGameItem.Name = "RestartGameItem";
             this.RestartGameItem.Click += new System.EventHandler(this.RestartGameButton_Click);
             // 
             // GameEndItem
             // 
             resources.ApplyResources(this.GameEndItem, "GameEndItem");
+            this.GameEndItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.GameEndItem.Name = "GameEndItem";
             this.GameEndItem.Click += new System.EventHandler(this.GameEndButton_Click);
             // 
             // GamePropToolStripMenuItem
             // 
+            resources.ApplyResources(this.GamePropToolStripMenuItem, "GamePropToolStripMenuItem");
             this.GamePropToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ChangeGameNameItem,
             this.ChangeGameLocationItem});
+            this.GamePropToolStripMenuItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.GamePropToolStripMenuItem.Name = "GamePropToolStripMenuItem";
-            resources.ApplyResources(this.GamePropToolStripMenuItem, "GamePropToolStripMenuItem");
             // 
             // ChangeGameNameItem
             // 
+            resources.ApplyResources(this.ChangeGameNameItem, "ChangeGameNameItem");
             this.ChangeGameNameItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GameNameText});
+            this.ChangeGameNameItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.ChangeGameNameItem.Name = "ChangeGameNameItem";
-            resources.ApplyResources(this.ChangeGameNameItem, "ChangeGameNameItem");
             // 
             // GameNameText
             // 
@@ -334,10 +352,11 @@
             // 
             // ChangeGameLocationItem
             // 
+            resources.ApplyResources(this.ChangeGameLocationItem, "ChangeGameLocationItem");
             this.ChangeGameLocationItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GameLocationText});
+            this.ChangeGameLocationItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.ChangeGameLocationItem.Name = "ChangeGameLocationItem";
-            resources.ApplyResources(this.ChangeGameLocationItem, "ChangeGameLocationItem");
             // 
             // GameLocationText
             // 
@@ -347,6 +366,7 @@
             // 
             // SolutionToolStripMenuItem
             // 
+            resources.ApplyResources(this.SolutionToolStripMenuItem, "SolutionToolStripMenuItem");
             this.SolutionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GoGraphScoreFormItem,
             this.GoBoxScoreFormItem,
@@ -355,49 +375,56 @@
             this.actionPointGraphFormItem,
             this.StrategySimulationFormItem,
             this.CentralityAnalyzeItem});
+            this.SolutionToolStripMenuItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.SolutionToolStripMenuItem.Name = "SolutionToolStripMenuItem";
-            resources.ApplyResources(this.SolutionToolStripMenuItem, "SolutionToolStripMenuItem");
             // 
             // GoGraphScoreFormItem
             // 
-            this.GoGraphScoreFormItem.Name = "GoGraphScoreFormItem";
             resources.ApplyResources(this.GoGraphScoreFormItem, "GoGraphScoreFormItem");
+            this.GoGraphScoreFormItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.GoGraphScoreFormItem.Name = "GoGraphScoreFormItem";
             this.GoGraphScoreFormItem.Click += new System.EventHandler(this.GoGraphScorePage_Click);
             // 
             // GoBoxScoreFormItem
             // 
-            this.GoBoxScoreFormItem.Name = "GoBoxScoreFormItem";
             resources.ApplyResources(this.GoBoxScoreFormItem, "GoBoxScoreFormItem");
+            this.GoBoxScoreFormItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.GoBoxScoreFormItem.Name = "GoBoxScoreFormItem";
             this.GoBoxScoreFormItem.Click += new System.EventHandler(this.GoBoxScorePage_Click);
             // 
             // GoPlayerDataFormItem
             // 
-            this.GoPlayerDataFormItem.Name = "GoPlayerDataFormItem";
             resources.ApplyResources(this.GoPlayerDataFormItem, "GoPlayerDataFormItem");
+            this.GoPlayerDataFormItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.GoPlayerDataFormItem.Name = "GoPlayerDataFormItem";
             this.GoPlayerDataFormItem.Click += new System.EventHandler(this.GoPlayerData_Click);
             // 
             // GoTacticks2DFormItem
             // 
-            this.GoTacticks2DFormItem.Name = "GoTacticks2DFormItem";
             resources.ApplyResources(this.GoTacticks2DFormItem, "GoTacticks2DFormItem");
+            this.GoTacticks2DFormItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.GoTacticks2DFormItem.Name = "GoTacticks2DFormItem";
             this.GoTacticks2DFormItem.Click += new System.EventHandler(this.GoTacticks2D_Click);
             // 
             // actionPointGraphFormItem
             // 
-            this.actionPointGraphFormItem.Name = "actionPointGraphFormItem";
             resources.ApplyResources(this.actionPointGraphFormItem, "actionPointGraphFormItem");
+            this.actionPointGraphFormItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.actionPointGraphFormItem.Name = "actionPointGraphFormItem";
             this.actionPointGraphFormItem.Click += new System.EventHandler(this.actionPointGraph_Click);
             // 
             // StrategySimulationFormItem
             // 
-            this.StrategySimulationFormItem.Name = "StrategySimulationFormItem";
             resources.ApplyResources(this.StrategySimulationFormItem, "StrategySimulationFormItem");
+            this.StrategySimulationFormItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.StrategySimulationFormItem.Name = "StrategySimulationFormItem";
             this.StrategySimulationFormItem.Click += new System.EventHandler(this.strategySimulation_Click);
             // 
             // CentralityAnalyzeItem
             // 
-            this.CentralityAnalyzeItem.Name = "CentralityAnalyzeItem";
             resources.ApplyResources(this.CentralityAnalyzeItem, "CentralityAnalyzeItem");
+            this.CentralityAnalyzeItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.CentralityAnalyzeItem.Name = "CentralityAnalyzeItem";
             this.CentralityAnalyzeItem.Click += new System.EventHandler(this.CentralityAnalyzeItem_Click);
             // 
             // PropToolStripMenuItem
@@ -409,12 +436,14 @@
             this.UseCommentItem,
             this.QuarterChangeTimerSpeedChangeItem,
             this.ChangeLanguageItem});
+            this.PropToolStripMenuItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.PropToolStripMenuItem.Name = "PropToolStripMenuItem";
             resources.ApplyResources(this.PropToolStripMenuItem, "PropToolStripMenuItem");
             this.PropToolStripMenuItem.Click += new System.EventHandler(this.PropToolStripMenuItem_Click);
             // 
             // ColorConfigItem
             // 
+            resources.ApplyResources(this.ColorConfigItem, "ColorConfigItem");
             this.ColorConfigItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ChangeFormBackGroundColorItem,
             this.ChangeFormBackGroundColorDefaultItem,
@@ -422,51 +451,58 @@
             this.ChangeButtonColorDefaultItem,
             this.ChangeButtonTextColorItem,
             this.ChangeButtonTextColorDefaultItem});
+            this.ColorConfigItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.ColorConfigItem.Name = "ColorConfigItem";
-            resources.ApplyResources(this.ColorConfigItem, "ColorConfigItem");
             // 
             // ChangeFormBackGroundColorItem
             // 
-            this.ChangeFormBackGroundColorItem.Name = "ChangeFormBackGroundColorItem";
             resources.ApplyResources(this.ChangeFormBackGroundColorItem, "ChangeFormBackGroundColorItem");
+            this.ChangeFormBackGroundColorItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ChangeFormBackGroundColorItem.Name = "ChangeFormBackGroundColorItem";
             this.ChangeFormBackGroundColorItem.Click += new System.EventHandler(this.ChangeBackGroundColor_Click);
             // 
             // ChangeFormBackGroundColorDefaultItem
             // 
-            this.ChangeFormBackGroundColorDefaultItem.Name = "ChangeFormBackGroundColorDefaultItem";
             resources.ApplyResources(this.ChangeFormBackGroundColorDefaultItem, "ChangeFormBackGroundColorDefaultItem");
+            this.ChangeFormBackGroundColorDefaultItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ChangeFormBackGroundColorDefaultItem.Name = "ChangeFormBackGroundColorDefaultItem";
             this.ChangeFormBackGroundColorDefaultItem.Click += new System.EventHandler(this.ChangeFormBackGroundColorDefault_Click);
             // 
             // ChangeButtonColorItem
             // 
-            this.ChangeButtonColorItem.Name = "ChangeButtonColorItem";
             resources.ApplyResources(this.ChangeButtonColorItem, "ChangeButtonColorItem");
+            this.ChangeButtonColorItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ChangeButtonColorItem.Name = "ChangeButtonColorItem";
             this.ChangeButtonColorItem.Click += new System.EventHandler(this.ChangeButtonColor_Click);
             // 
             // ChangeButtonColorDefaultItem
             // 
-            this.ChangeButtonColorDefaultItem.Name = "ChangeButtonColorDefaultItem";
             resources.ApplyResources(this.ChangeButtonColorDefaultItem, "ChangeButtonColorDefaultItem");
+            this.ChangeButtonColorDefaultItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ChangeButtonColorDefaultItem.Name = "ChangeButtonColorDefaultItem";
             this.ChangeButtonColorDefaultItem.Click += new System.EventHandler(this.ChangeButtonColorDefault_Click);
             // 
             // ChangeButtonTextColorItem
             // 
-            this.ChangeButtonTextColorItem.Name = "ChangeButtonTextColorItem";
             resources.ApplyResources(this.ChangeButtonTextColorItem, "ChangeButtonTextColorItem");
+            this.ChangeButtonTextColorItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ChangeButtonTextColorItem.Name = "ChangeButtonTextColorItem";
             this.ChangeButtonTextColorItem.Click += new System.EventHandler(this.ChangeButtonTextColor_Click);
             // 
             // ChangeButtonTextColorDefaultItem
             // 
-            this.ChangeButtonTextColorDefaultItem.Name = "ChangeButtonTextColorDefaultItem";
             resources.ApplyResources(this.ChangeButtonTextColorDefaultItem, "ChangeButtonTextColorDefaultItem");
+            this.ChangeButtonTextColorDefaultItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.ChangeButtonTextColorDefaultItem.Name = "ChangeButtonTextColorDefaultItem";
             this.ChangeButtonTextColorDefaultItem.Click += new System.EventHandler(this.ChangeButtonTextColorDefault_Click);
             // 
             // ChangeFPSItem
             // 
+            resources.ApplyResources(this.ChangeFPSItem, "ChangeFPSItem");
             this.ChangeFPSItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TimerTickComboBox});
+            this.ChangeFPSItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.ChangeFPSItem.Name = "ChangeFPSItem";
-            resources.ApplyResources(this.ChangeFPSItem, "ChangeFPSItem");
             // 
             // TimerTickComboBox
             // 
@@ -481,23 +517,26 @@
             // 
             // DebugFormVisiableItem
             // 
-            this.DebugFormVisiableItem.Name = "DebugFormVisiableItem";
             resources.ApplyResources(this.DebugFormVisiableItem, "DebugFormVisiableItem");
+            this.DebugFormVisiableItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.DebugFormVisiableItem.Name = "DebugFormVisiableItem";
             this.DebugFormVisiableItem.Click += new System.EventHandler(this.DebugFormVisiable_Click);
             // 
             // UseCommentItem
             // 
-            this.UseCommentItem.Name = "UseCommentItem";
             resources.ApplyResources(this.UseCommentItem, "UseCommentItem");
+            this.UseCommentItem.ForeColor = System.Drawing.Color.DarkOrange;
+            this.UseCommentItem.Name = "UseCommentItem";
             this.UseCommentItem.CheckedChanged += new System.EventHandler(this.UseCommentItem_CheckedChanged);
             this.UseCommentItem.Click += new System.EventHandler(this.UseCommentItem_Click);
             // 
             // QuarterChangeTimerSpeedChangeItem
             // 
+            resources.ApplyResources(this.QuarterChangeTimerSpeedChangeItem, "QuarterChangeTimerSpeedChangeItem");
             this.QuarterChangeTimerSpeedChangeItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.QuarterChangeTimerSpeedCombo});
+            this.QuarterChangeTimerSpeedChangeItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.QuarterChangeTimerSpeedChangeItem.Name = "QuarterChangeTimerSpeedChangeItem";
-            resources.ApplyResources(this.QuarterChangeTimerSpeedChangeItem, "QuarterChangeTimerSpeedChangeItem");
             // 
             // QuarterChangeTimerSpeedCombo
             // 
@@ -512,10 +551,11 @@
             // 
             // ChangeLanguageItem
             // 
+            resources.ApplyResources(this.ChangeLanguageItem, "ChangeLanguageItem");
             this.ChangeLanguageItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ChangeLanguageComboBox});
+            this.ChangeLanguageItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.ChangeLanguageItem.Name = "ChangeLanguageItem";
-            resources.ApplyResources(this.ChangeLanguageItem, "ChangeLanguageItem");
             // 
             // ChangeLanguageComboBox
             // 
@@ -531,29 +571,38 @@
             this.GoClubMakeFormItem,
             this.GoTeamMakeFormItem,
             this.GoActionPointEditFormItem});
+            this.dataToolStripMenuItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
             resources.ApplyResources(this.dataToolStripMenuItem, "dataToolStripMenuItem");
             // 
             // GoDataEditFormItem
             // 
+            this.GoDataEditFormItem.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
+            this.GoDataEditFormItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.GoDataEditFormItem.Name = "GoDataEditFormItem";
             resources.ApplyResources(this.GoDataEditFormItem, "GoDataEditFormItem");
             this.GoDataEditFormItem.Click += new System.EventHandler(this.dataEdit_Click);
             // 
             // GoClubMakeFormItem
             // 
+            this.GoClubMakeFormItem.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
+            this.GoClubMakeFormItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.GoClubMakeFormItem.Name = "GoClubMakeFormItem";
             resources.ApplyResources(this.GoClubMakeFormItem, "GoClubMakeFormItem");
             this.GoClubMakeFormItem.Click += new System.EventHandler(this.clubMake_Click);
             // 
             // GoTeamMakeFormItem
             // 
+            this.GoTeamMakeFormItem.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
+            this.GoTeamMakeFormItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.GoTeamMakeFormItem.Name = "GoTeamMakeFormItem";
             resources.ApplyResources(this.GoTeamMakeFormItem, "GoTeamMakeFormItem");
             this.GoTeamMakeFormItem.Click += new System.EventHandler(this.teamMake_Click);
             // 
             // GoActionPointEditFormItem
             // 
+            this.GoActionPointEditFormItem.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
+            this.GoActionPointEditFormItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.GoActionPointEditFormItem.Name = "GoActionPointEditFormItem";
             resources.ApplyResources(this.GoActionPointEditFormItem, "GoActionPointEditFormItem");
             this.GoActionPointEditFormItem.Click += new System.EventHandler(this.actionPointEdit_Click);
@@ -563,17 +612,22 @@
             this.transmission.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GoTCPServerFormItem,
             this.GoTCPClientFormItem});
+            this.transmission.ForeColor = System.Drawing.Color.DarkOrange;
             this.transmission.Name = "transmission";
             resources.ApplyResources(this.transmission, "transmission");
             // 
             // GoTCPServerFormItem
             // 
+            this.GoTCPServerFormItem.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
+            this.GoTCPServerFormItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.GoTCPServerFormItem.Name = "GoTCPServerFormItem";
             resources.ApplyResources(this.GoTCPServerFormItem, "GoTCPServerFormItem");
             this.GoTCPServerFormItem.Click += new System.EventHandler(this.tCPServer_Click);
             // 
             // GoTCPClientFormItem
             // 
+            this.GoTCPClientFormItem.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
+            this.GoTCPClientFormItem.ForeColor = System.Drawing.Color.DarkOrange;
             this.GoTCPClientFormItem.Name = "GoTCPClientFormItem";
             resources.ApplyResources(this.GoTCPClientFormItem, "GoTCPClientFormItem");
             this.GoTCPClientFormItem.Click += new System.EventHandler(this.tCPClient_Click);
@@ -609,11 +663,17 @@
             // 
             // label2
             // 
+            this.label2.BackColor = System.Drawing.Color.DimGray;
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
             // 
             // label3
             // 
+            this.label3.BackColor = System.Drawing.Color.DimGray;
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
             // 
@@ -705,19 +765,24 @@
             // 
             this.OppentTeamPointLabel.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.OppentTeamPointLabel, "OppentTeamPointLabel");
-            this.OppentTeamPointLabel.ForeColor = System.Drawing.Color.White;
+            this.OppentTeamPointLabel.ForeColor = System.Drawing.Color.DarkOrange;
+            this.OppentTeamPointLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.OppentTeamPointLabel.Name = "OppentTeamPointLabel";
             // 
             // MyTeamPointLabel
             // 
             this.MyTeamPointLabel.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.MyTeamPointLabel, "MyTeamPointLabel");
-            this.MyTeamPointLabel.ForeColor = System.Drawing.Color.White;
+            this.MyTeamPointLabel.ForeColor = System.Drawing.Color.DarkOrange;
+            this.MyTeamPointLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.MyTeamPointLabel.Name = "MyTeamPointLabel";
             // 
             // ToolStrip
             // 
-            this.ToolStrip.BackColor = System.Drawing.SystemColors.Control;
+            resources.ApplyResources(this.ToolStrip, "ToolStrip");
+            this.ToolStrip.BackColor = System.Drawing.Color.Transparent;
+            this.ToolStrip.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
+            this.ToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.ToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.NewGameToolStripButton,
             this.LoadToolStripButton,
@@ -725,7 +790,6 @@
             this.UndoToolStripButton,
             this.RedoToolStripButton,
             this.UseCommentToolStripButton});
-            resources.ApplyResources(this.ToolStrip, "ToolStrip");
             this.ToolStrip.Name = "ToolStrip";
             // 
             // NewGameToolStripButton
@@ -770,6 +834,7 @@
             // 
             // UseCommentToolStripButton
             // 
+            this.UseCommentToolStripButton.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
             this.UseCommentToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.UseCommentToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.hukidashi;
             resources.ApplyResources(this.UseCommentToolStripButton, "UseCommentToolStripButton");
@@ -805,9 +870,10 @@
             // 
             // QuarterTimerLabel
             // 
-            this.QuarterTimerLabel.BackColor = System.Drawing.Color.DimGray;
+            this.QuarterTimerLabel.BackColor = System.Drawing.Color.Transparent;
+            this.QuarterTimerLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.QuarterTimerLabel, "QuarterTimerLabel");
-            this.QuarterTimerLabel.ForeColor = System.Drawing.Color.White;
+            this.QuarterTimerLabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.QuarterTimerLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.QuarterTimerLabel.Name = "QuarterTimerLabel";
             // 
@@ -841,6 +907,8 @@
             // MyTimeOutLabel
             // 
             resources.ApplyResources(this.MyTimeOutLabel, "MyTimeOutLabel");
+            this.MyTimeOutLabel.ForeColor = System.Drawing.Color.White;
+            this.MyTimeOutLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.MyTimeOutLabel.Name = "MyTimeOutLabel";
             // 
             // backPictureBox
@@ -853,6 +921,8 @@
             // OppentTimeOutLabel
             // 
             resources.ApplyResources(this.OppentTimeOutLabel, "OppentTimeOutLabel");
+            this.OppentTimeOutLabel.ForeColor = System.Drawing.Color.White;
+            this.OppentTimeOutLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.OppentTimeOutLabel.Name = "OppentTimeOutLabel";
             // 
             // QuarterTimerStopButton
@@ -944,9 +1014,9 @@
             this.Controls.Add(this.OppentTeamNameLabel);
             this.Controls.Add(this.MyTeamNameLael);
             this.Controls.Add(this.MyOutTeamListBox);
-            this.Controls.Add(this.ToolStrip);
             this.Controls.Add(this.MenuStrip1);
             this.Controls.Add(this.backPictureBox);
+            this.Controls.Add(this.ToolStrip);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.KeyPreview = true;
             this.MainMenuStrip = this.MenuStrip1;

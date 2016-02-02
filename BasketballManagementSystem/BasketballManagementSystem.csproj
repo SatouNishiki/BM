@@ -406,6 +406,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\backimg2.png" />
     <None Include="Resources\backimg.png" />
     <None Include="Resources\coat2.png" />
     <None Include="Resources\member_change_gray.png" />
