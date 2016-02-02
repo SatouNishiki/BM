@@ -142,8 +142,8 @@
             // 
             // PlayerNameLabel
             // 
-            resources.ApplyResources(this.PlayerNameLabel, "PlayerNameLabel");
             this.PlayerNameLabel.BackColor = System.Drawing.Color.DimGray;
+            resources.ApplyResources(this.PlayerNameLabel, "PlayerNameLabel");
             this.PlayerNameLabel.ForeColor = System.Drawing.Color.White;
             this.PlayerNameLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.PlayerNameLabel.Name = "PlayerNameLabel";

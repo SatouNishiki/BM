@@ -117,10 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="PlayerNameLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PlayerNameLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 24pt</value>
@@ -130,14 +126,15 @@
     <value>NoControl</value>
   </data>
   <data name="PlayerNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>359, 232</value>
+    <value>284, 232</value>
   </data>
   <data name="PlayerNameLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
   </data>
   <data name="PlayerNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 33</value>
+    <value>331, 33</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PlayerNameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
@@ -573,7 +570,7 @@
 </value>
   </data>
   <data name="StartGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="StartGameItem.Text" xml:space="preserve">
     <value>StartGame</value>
@@ -617,7 +614,7 @@
     <value>False</value>
   </data>
   <data name="NextQuarterItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="NextQuarterItem.Text" xml:space="preserve">
     <value>NextQuarter</value>
@@ -657,7 +654,7 @@
     <value>False</value>
   </data>
   <data name="StopGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="StopGameItem.Text" xml:space="preserve">
     <value>Stop</value>
@@ -694,7 +691,7 @@
 </value>
   </data>
   <data name="RestartGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="RestartGameItem.Text" xml:space="preserve">
     <value>Restart</value>
@@ -734,7 +731,7 @@
     <value>False</value>
   </data>
   <data name="GameEndItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="GameEndItem.Text" xml:space="preserve">
     <value>End</value>
