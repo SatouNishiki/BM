@@ -630,7 +630,7 @@
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.DimGray;
-            this.label2.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.label2.ForeColor = System.Drawing.Color.IndianRed;
             this.label2.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.label2.Name = "label2";
             this.ToolTipFormInput.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
@@ -639,7 +639,7 @@
             // 
             resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.DimGray;
-            this.label3.ForeColor = System.Drawing.Color.IndianRed;
+            this.label3.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.label3.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.label3.Name = "label3";
             this.ToolTipFormInput.SetToolTip(this.label3, resources.GetString("label3.ToolTip"));

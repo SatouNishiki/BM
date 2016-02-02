@@ -1584,17 +1584,8 @@
   <data name="MenuStrip1.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="MyTeamNameLael.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 150</value>
-  </data>
-  <data name="MyTeamNameLael.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 14</value>
-  </data>
   <data name="MyTeamNameLael.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="OppentTeamNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>747, 147</value>
   </data>
   <data name="OppentTeamNameLabel.ToolTip" xml:space="preserve">
     <value />
@@ -1602,17 +1593,11 @@
   <data name="QuarterText.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="OppentTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>783, 97</value>
-  </data>
   <data name="OppentTeamFaulLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>766, 71</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 12</value>
+    <value>747, 62</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>チームファウル</value>
@@ -1621,10 +1606,7 @@
     <value />
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>83, 71</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 12</value>
+    <value>54, 62</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>チームファウル</value>
@@ -1632,20 +1614,8 @@
   <data name="label3.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="MyTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>103, 97</value>
-  </data>
   <data name="MyTeamFaulLabel.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="givenFreeThowLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 14.25pt, style=Bold</value>
-  </data>
-  <data name="givenFreeThowLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>667, 334</value>
-  </data>
-  <data name="givenFreeThowLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 21</value>
   </data>
   <data name="givenFreeThowLabel.ToolTip" xml:space="preserve">
     <value />
@@ -1695,12 +1665,6 @@
   <data name="backPictureBox.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>717, 647</value>
-  </data>
-  <data name="OppentTimeOutLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>34, 17</value>
-  </data>
   <data name="OppentTimeOutLabel.ToolTip" xml:space="preserve">
     <value />
   </data>
@@ -1731,38 +1695,20 @@
   <data name="BlockShotButton.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="PersonalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>468, 334</value>
-  </data>
   <data name="PersonalFaulButton.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="TechnicalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>517, 334</value>
   </data>
   <data name="TechnicalFaulButton.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>566, 334</value>
-  </data>
   <data name="UnSportsmanLikeFaulButton.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="DisQualifyingFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>616, 334</value>
   </data>
   <data name="DisQualifyingFaulButton.ToolTip" xml:space="preserve">
     <value />
   </data>
-  <data name="UpButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>667, 308</value>
-  </data>
   <data name="UpButton.ToolTip" xml:space="preserve">
     <value />
-  </data>
-  <data name="DownButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>667, 358</value>
   </data>
   <data name="DownButton.ToolTip" xml:space="preserve">
     <value />
