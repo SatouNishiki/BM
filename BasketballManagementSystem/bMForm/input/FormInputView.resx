@@ -157,194 +157,11 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PlayerNameLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>15</value>
   </data>
   <metadata name="FormInputTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>362, 17</value>
   </metadata>
-  <metadata name="ToolTipFormInput.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>512, 17</value>
-  </metadata>
-  <data name="AssistButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 8.25pt, style=Bold</value>
-  </data>
-  <data name="AssistButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="AssistButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>185, 344</value>
-  </data>
-  <data name="AssistButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="AssistButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 27</value>
-  </data>
-  <data name="AssistButton.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="AssistButton.Text" xml:space="preserve">
-    <value>AS(&amp;A)</value>
-  </data>
-  <data name="AssistButton.ToolTip" xml:space="preserve">
-    <value>Assist</value>
-  </data>
-  <data name="&gt;&gt;AssistButton.Name" xml:space="preserve">
-    <value>AssistButton</value>
-  </data>
-  <data name="&gt;&gt;AssistButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;AssistButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;AssistButton.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="PersonalFaulButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 9pt, style=Bold</value>
-  </data>
-  <data name="PersonalFaulButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="PersonalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 301</value>
-  </data>
-  <data name="PersonalFaulButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="PersonalFaulButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 27</value>
-  </data>
-  <data name="PersonalFaulButton.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="PersonalFaulButton.Text" xml:space="preserve">
-    <value>PF</value>
-  </data>
-  <data name="PersonalFaulButton.ToolTip" xml:space="preserve">
-    <value>PersonalFaul</value>
-  </data>
-  <data name="&gt;&gt;PersonalFaulButton.Name" xml:space="preserve">
-    <value>PersonalFaulButton</value>
-  </data>
-  <data name="&gt;&gt;PersonalFaulButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PersonalFaulButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;PersonalFaulButton.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="TurnOverButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 8.25pt, style=Bold</value>
-  </data>
-  <data name="TurnOverButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="TurnOverButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>254, 344</value>
-  </data>
-  <data name="TurnOverButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="TurnOverButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 27</value>
-  </data>
-  <data name="TurnOverButton.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="TurnOverButton.Text" xml:space="preserve">
-    <value>TO(&amp;T)</value>
-  </data>
-  <data name="TurnOverButton.ToolTip" xml:space="preserve">
-    <value>TurnOver</value>
-  </data>
-  <data name="&gt;&gt;TurnOverButton.Name" xml:space="preserve">
-    <value>TurnOverButton</value>
-  </data>
-  <data name="&gt;&gt;TurnOverButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TurnOverButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TurnOverButton.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="StealButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 8.25pt, style=Bold</value>
-  </data>
-  <data name="StealButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="StealButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 301</value>
-  </data>
-  <data name="StealButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="StealButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 27</value>
-  </data>
-  <data name="StealButton.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="StealButton.Text" xml:space="preserve">
-    <value>ST(&amp;S)</value>
-  </data>
-  <data name="StealButton.ToolTip" xml:space="preserve">
-    <value>Steal</value>
-  </data>
-  <data name="&gt;&gt;StealButton.Name" xml:space="preserve">
-    <value>StealButton</value>
-  </data>
-  <data name="&gt;&gt;StealButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;StealButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;StealButton.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="BlockShotButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 8.25pt, style=Bold</value>
-  </data>
-  <data name="BlockShotButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BlockShotButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 355</value>
-  </data>
-  <data name="BlockShotButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="BlockShotButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 27</value>
-  </data>
-  <data name="BlockShotButton.TabIndex" type="System.Int32, mscorlib">
-    <value>54</value>
-  </data>
-  <data name="BlockShotButton.Text" xml:space="preserve">
-    <value>BS(&amp;B)</value>
-  </data>
-  <data name="BlockShotButton.ToolTip" xml:space="preserve">
-    <value>BlockShoot</value>
-  </data>
-  <data name="&gt;&gt;BlockShotButton.Name" xml:space="preserve">
-    <value>BlockShotButton</value>
-  </data>
-  <data name="&gt;&gt;BlockShotButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BlockShotButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BlockShotButton.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
   <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -789,7 +606,7 @@
 </value>
   </data>
   <data name="StartGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="StartGameItem.Text" xml:space="preserve">
     <value>StartGame</value>
@@ -833,7 +650,7 @@
     <value>False</value>
   </data>
   <data name="NextQuarterItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="NextQuarterItem.Text" xml:space="preserve">
     <value>NextQuarter</value>
@@ -873,7 +690,7 @@
     <value>False</value>
   </data>
   <data name="StopGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="StopGameItem.Text" xml:space="preserve">
     <value>Stop</value>
@@ -910,7 +727,7 @@
 </value>
   </data>
   <data name="RestartGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="RestartGameItem.Text" xml:space="preserve">
     <value>Restart</value>
@@ -950,7 +767,7 @@
     <value>False</value>
   </data>
   <data name="GameEndItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>149, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="GameEndItem.Text" xml:space="preserve">
     <value>End</value>
@@ -1891,13 +1708,13 @@
     <value>Transmission</value>
   </data>
   <data name="GoTCPServerFormItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="GoTCPServerFormItem.Text" xml:space="preserve">
     <value>TCPServer</value>
   </data>
   <data name="GoTCPClientFormItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 22</value>
+    <value>152, 22</value>
   </data>
   <data name="GoTCPClientFormItem.Text" xml:space="preserve">
     <value>TCPClient</value>
@@ -2002,7 +1819,7 @@
     <value>34</value>
   </data>
   <data name="OppentTeamFaulLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 20.25pt</value>
+    <value>MS UI Gothic, 36pt</value>
   </data>
   <data name="OppentTeamFaulLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2095,7 +1912,7 @@
     <value>31</value>
   </data>
   <data name="MyTeamFaulLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 20.25pt</value>
+    <value>MS UI Gothic, 36pt</value>
   </data>
   <data name="MyTeamFaulLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2127,165 +1944,6 @@
   <data name="&gt;&gt;MyTeamFaulLabel.ZOrder" xml:space="preserve">
     <value>32</value>
   </data>
-  <data name="TechnicalFaulButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 9pt, style=Bold</value>
-  </data>
-  <data name="TechnicalFaulButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="TechnicalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>574, 301</value>
-  </data>
-  <data name="TechnicalFaulButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="TechnicalFaulButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 27</value>
-  </data>
-  <data name="TechnicalFaulButton.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="TechnicalFaulButton.Text" xml:space="preserve">
-    <value>TF</value>
-  </data>
-  <data name="TechnicalFaulButton.ToolTip" xml:space="preserve">
-    <value>TechnicalFaul</value>
-  </data>
-  <data name="&gt;&gt;TechnicalFaulButton.Name" xml:space="preserve">
-    <value>TechnicalFaulButton</value>
-  </data>
-  <data name="&gt;&gt;TechnicalFaulButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TechnicalFaulButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TechnicalFaulButton.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="UnSportsmanLikeFaulButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 9pt, style=Bold</value>
-  </data>
-  <data name="UnSportsmanLikeFaulButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>495, 357</value>
-  </data>
-  <data name="UnSportsmanLikeFaulButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="UnSportsmanLikeFaulButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 27</value>
-  </data>
-  <data name="UnSportsmanLikeFaulButton.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="UnSportsmanLikeFaulButton.Text" xml:space="preserve">
-    <value>UF</value>
-  </data>
-  <data name="UnSportsmanLikeFaulButton.ToolTip" xml:space="preserve">
-    <value>UnSportsmanLikeFaul</value>
-  </data>
-  <data name="&gt;&gt;UnSportsmanLikeFaulButton.Name" xml:space="preserve">
-    <value>UnSportsmanLikeFaulButton</value>
-  </data>
-  <data name="&gt;&gt;UnSportsmanLikeFaulButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UnSportsmanLikeFaulButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;UnSportsmanLikeFaulButton.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="DisQualifyingFaulButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 9pt, style=Bold</value>
-  </data>
-  <data name="DisQualifyingFaulButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="DisQualifyingFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>564, 355</value>
-  </data>
-  <data name="DisQualifyingFaulButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 27</value>
-  </data>
-  <data name="DisQualifyingFaulButton.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="DisQualifyingFaulButton.Text" xml:space="preserve">
-    <value>DF</value>
-  </data>
-  <data name="DisQualifyingFaulButton.ToolTip" xml:space="preserve">
-    <value>DisQualifyingFaul</value>
-  </data>
-  <data name="&gt;&gt;DisQualifyingFaulButton.Name" xml:space="preserve">
-    <value>DisQualifyingFaulButton</value>
-  </data>
-  <data name="&gt;&gt;DisQualifyingFaulButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DisQualifyingFaulButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DisQualifyingFaulButton.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="UpButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="UpButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>655, 289</value>
-  </data>
-  <data name="UpButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 23</value>
-  </data>
-  <data name="UpButton.TabIndex" type="System.Int32, mscorlib">
-    <value>56</value>
-  </data>
-  <data name="UpButton.Text" xml:space="preserve">
-    <value>↑</value>
-  </data>
-  <data name="&gt;&gt;UpButton.Name" xml:space="preserve">
-    <value>UpButton</value>
-  </data>
-  <data name="&gt;&gt;UpButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UpButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;UpButton.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="DownButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="DownButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>655, 365</value>
-  </data>
-  <data name="DownButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 23</value>
-  </data>
-  <data name="DownButton.TabIndex" type="System.Int32, mscorlib">
-    <value>57</value>
-  </data>
-  <data name="DownButton.Text" xml:space="preserve">
-    <value>↓</value>
-  </data>
-  <data name="&gt;&gt;DownButton.Name" xml:space="preserve">
-    <value>DownButton</value>
-  </data>
-  <data name="&gt;&gt;DownButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DownButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;DownButton.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
   <data name="givenFreeThowLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 20.25pt</value>
   </data>
@@ -2293,16 +1951,19 @@
     <value>NoControl</value>
   </data>
   <data name="givenFreeThowLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>650, 331</value>
+    <value>647, 314</value>
   </data>
   <data name="givenFreeThowLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>24, 27</value>
+    <value>36, 54</value>
   </data>
   <data name="givenFreeThowLabel.TabIndex" type="System.Int32, mscorlib">
     <value>58</value>
   </data>
   <data name="givenFreeThowLabel.Text" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="givenFreeThowLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;givenFreeThowLabel.Name" xml:space="preserve">
     <value>givenFreeThowLabel</value>
@@ -2314,7 +1975,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;givenFreeThowLabel.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>20</value>
   </data>
   <metadata name="ToolTipFormInput.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>512, 17</value>
@@ -2341,7 +2002,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterTimerFastFowardButton.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>19</value>
   </data>
   <data name="QuarterTimerRewindButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>386, 80</value>
@@ -2365,7 +2026,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterTimerRewindButton.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>17</value>
   </data>
   <data name="MyOutTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -2461,7 +2122,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyTeamPointLabel.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>25</value>
   </data>
   <metadata name="ToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>137, 17</value>
@@ -2668,7 +2329,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterTimerLabel.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>24</value>
   </data>
   <data name="CortPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2695,7 +2356,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CortPicture.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>23</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>197, 188</value>
@@ -2719,7 +2380,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>22</value>
   </data>
   <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2749,7 +2410,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>21</value>
   </data>
   <data name="MyTimeOutLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt</value>
@@ -2782,7 +2443,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyTimeOutLabel.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>16</value>
   </data>
   <data name="backPictureBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2845,7 +2506,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentTimeOutLabel.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>18</value>
   </data>
   <data name="QuarterTimerStopButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>431, 80</value>
@@ -2866,7 +2527,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterTimerStopButton.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>14</value>
   </data>
   <data name="MyTimeOutButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>27, 601</value>
@@ -2887,7 +2548,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyTimeOutButton.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>13</value>
   </data>
   <data name="OppentTimeOutButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>799, 601</value>
@@ -2908,7 +2569,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentTimeOutButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>12</value>
   </data>
   <data name="MyMemberChangeButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>106, 601</value>
@@ -2929,7 +2590,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyMemberChangeButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>11</value>
   </data>
   <data name="OppentMemberChangeButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>720, 601</value>
@@ -2950,11 +2611,221 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentMemberChangeButton.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>10</value>
   </data>
   <metadata name="ColorDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>242, 17</value>
   </metadata>
+  <data name="AssistButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>243, 296</value>
+  </data>
+  <data name="AssistButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 45</value>
+  </data>
+  <data name="AssistButton.TabIndex" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="&gt;&gt;AssistButton.Name" xml:space="preserve">
+    <value>AssistButton</value>
+  </data>
+  <data name="&gt;&gt;AssistButton.Type" xml:space="preserve">
+    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;AssistButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AssistButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="StealButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>324, 296</value>
+  </data>
+  <data name="StealButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 45</value>
+  </data>
+  <data name="StealButton.TabIndex" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="&gt;&gt;StealButton.Name" xml:space="preserve">
+    <value>StealButton</value>
+  </data>
+  <data name="&gt;&gt;StealButton.Type" xml:space="preserve">
+    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;StealButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;StealButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="TurnOverButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>243, 341</value>
+  </data>
+  <data name="TurnOverButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 45</value>
+  </data>
+  <data name="TurnOverButton.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="&gt;&gt;TurnOverButton.Name" xml:space="preserve">
+    <value>TurnOverButton</value>
+  </data>
+  <data name="&gt;&gt;TurnOverButton.Type" xml:space="preserve">
+    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TurnOverButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TurnOverButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="BlockShotButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>324, 341</value>
+  </data>
+  <data name="BlockShotButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 45</value>
+  </data>
+  <data name="BlockShotButton.TabIndex" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="&gt;&gt;BlockShotButton.Name" xml:space="preserve">
+    <value>BlockShotButton</value>
+  </data>
+  <data name="&gt;&gt;BlockShotButton.Type" xml:space="preserve">
+    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BlockShotButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BlockShotButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="PersonalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 296</value>
+  </data>
+  <data name="PersonalFaulButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 45</value>
+  </data>
+  <data name="PersonalFaulButton.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
+  </data>
+  <data name="&gt;&gt;PersonalFaulButton.Name" xml:space="preserve">
+    <value>PersonalFaulButton</value>
+  </data>
+  <data name="&gt;&gt;PersonalFaulButton.Type" xml:space="preserve">
+    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;PersonalFaulButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PersonalFaulButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="TechnicalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>557, 296</value>
+  </data>
+  <data name="TechnicalFaulButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 45</value>
+  </data>
+  <data name="TechnicalFaulButton.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="&gt;&gt;TechnicalFaulButton.Name" xml:space="preserve">
+    <value>TechnicalFaulButton</value>
+  </data>
+  <data name="&gt;&gt;TechnicalFaulButton.Type" xml:space="preserve">
+    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TechnicalFaulButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TechnicalFaulButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 341</value>
+  </data>
+  <data name="UnSportsmanLikeFaulButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 45</value>
+  </data>
+  <data name="UnSportsmanLikeFaulButton.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;UnSportsmanLikeFaulButton.Name" xml:space="preserve">
+    <value>UnSportsmanLikeFaulButton</value>
+  </data>
+  <data name="&gt;&gt;UnSportsmanLikeFaulButton.Type" xml:space="preserve">
+    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;UnSportsmanLikeFaulButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UnSportsmanLikeFaulButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="DisQualifyingFaulButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>557, 341</value>
+  </data>
+  <data name="DisQualifyingFaulButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 45</value>
+  </data>
+  <data name="DisQualifyingFaulButton.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;DisQualifyingFaulButton.Name" xml:space="preserve">
+    <value>DisQualifyingFaulButton</value>
+  </data>
+  <data name="&gt;&gt;DisQualifyingFaulButton.Type" xml:space="preserve">
+    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DisQualifyingFaulButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DisQualifyingFaulButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="UpButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>647, 296</value>
+  </data>
+  <data name="UpButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 18</value>
+  </data>
+  <data name="UpButton.TabIndex" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="&gt;&gt;UpButton.Name" xml:space="preserve">
+    <value>UpButton</value>
+  </data>
+  <data name="&gt;&gt;UpButton.Type" xml:space="preserve">
+    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;UpButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UpButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DownButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>647, 368</value>
+  </data>
+  <data name="DownButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 18</value>
+  </data>
+  <data name="DownButton.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="&gt;&gt;DownButton.Name" xml:space="preserve">
+    <value>DownButton</value>
+  </data>
+  <data name="&gt;&gt;DownButton.Type" xml:space="preserve">
+    <value>CustomPictureButton.PictureButton, CustomPictureButton, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DownButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DownButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

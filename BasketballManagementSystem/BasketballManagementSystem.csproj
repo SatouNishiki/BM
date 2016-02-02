@@ -406,6 +406,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\upArrow2_g.png" />
+    <None Include="Resources\downArrow2_g.png" />
+    <None Include="Resources\downArrow2.png" />
+    <None Include="Resources\upArrow2.png" />
     <None Include="Resources\backgroundATARI3.png" />
     <None Include="Resources\back.png" />
     <None Include="Resources\backimg2.png" />
