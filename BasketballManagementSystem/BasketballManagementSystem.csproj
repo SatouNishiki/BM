@@ -406,6 +406,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\backgroundATARI3.png" />
+    <None Include="Resources\back.png" />
     <None Include="Resources\backimg2.png" />
     <None Include="Resources\backimg.png" />
     <None Include="Resources\coat2.png" />
@@ -415,7 +417,6 @@
     <None Include="Resources\timeout_blue.png" />
     <None Include="Resources\timeout_red.png" />
     <None Include="Resources\backgroundATARI1.png" />
-    <None Include="Resources\back.png" />
     <None Include="Resources\backgroundATARI.png" />
     <None Include="Resources\action_N_frame.png" />
     <None Include="Resources\action_F_frame.png" />

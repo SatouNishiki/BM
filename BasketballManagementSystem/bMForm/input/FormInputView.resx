@@ -162,9 +162,6 @@
   <metadata name="FormInputTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>362, 17</value>
   </metadata>
-  <metadata name="ToolTipFormInput.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>512, 17</value>
-  </metadata>
   <data name="AssistButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 8.25pt, style=Bold</value>
   </data>
@@ -172,7 +169,7 @@
     <value>NoControl</value>
   </data>
   <data name="AssistButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>217, 344</value>
+    <value>254, 301</value>
   </data>
   <data name="AssistButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -186,6 +183,9 @@
   <data name="AssistButton.Text" xml:space="preserve">
     <value>AS(&amp;A)</value>
   </data>
+  <metadata name="ToolTipFormInput.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>512, 17</value>
+  </metadata>
   <data name="AssistButton.ToolTip" xml:space="preserve">
     <value>Assist</value>
   </data>
@@ -208,7 +208,7 @@
     <value>NoControl</value>
   </data>
   <data name="PersonalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>476, 344</value>
+    <value>495, 301</value>
   </data>
   <data name="PersonalFaulButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -235,7 +235,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PersonalFaulButton.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>25</value>
   </data>
   <data name="TurnOverButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 8.25pt, style=Bold</value>
@@ -244,7 +244,7 @@
     <value>NoControl</value>
   </data>
   <data name="TurnOverButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>315, 344</value>
+    <value>254, 344</value>
   </data>
   <data name="TurnOverButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -271,7 +271,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TurnOverButton.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="StealButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 8.25pt, style=Bold</value>
@@ -280,7 +280,7 @@
     <value>NoControl</value>
   </data>
   <data name="StealButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>266, 344</value>
+    <value>338, 301</value>
   </data>
   <data name="StealButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -316,7 +316,7 @@
     <value>NoControl</value>
   </data>
   <data name="BlockShotButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>364, 344</value>
+    <value>338, 355</value>
   </data>
   <data name="BlockShotButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -343,42 +343,15 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BlockShotButton.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="MenuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 2, 0, 2</value>
-  </data>
-  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>900, 26</value>
-  </data>
-  <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="MenuStrip1.Text" xml:space="preserve">
-    <value>menuStrip1</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
-    <value>MenuStrip1</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
-    <value>39</value>
-  </data>
   <data name="FileToolStripMenuItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -406,16 +379,10 @@
         QmCC
 </value>
   </data>
-  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 22</value>
-  </data>
-  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
-    <value>file</value>
-  </data>
   <data name="NewGameItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -452,7 +419,7 @@
   <data name="ChangeMyTeamItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -489,7 +456,7 @@
   <data name="ChangeOppentTeamItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -526,7 +493,7 @@
   <data name="GameDataSaveItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -569,7 +536,7 @@
   <data name="LoadGameDataItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -609,7 +576,7 @@
   <data name="PrintFormItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -646,7 +613,7 @@
   <data name="PrintPreviewItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -683,7 +650,7 @@
   <data name="ExitItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -720,10 +687,16 @@
   <data name="ExitItem.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
+  <data name="FileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 22</value>
+  </data>
+  <data name="FileToolStripMenuItem.Text" xml:space="preserve">
+    <value>file</value>
+  </data>
   <data name="GameToolStripMenuItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -751,16 +724,10 @@
         QmCC
 </value>
   </data>
-  <data name="GameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 22</value>
-  </data>
-  <data name="GameToolStripMenuItem.Text" xml:space="preserve">
-    <value>Game</value>
-  </data>
   <data name="StartGameItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -789,7 +756,7 @@
 </value>
   </data>
   <data name="StartGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="StartGameItem.Text" xml:space="preserve">
     <value>StartGame</value>
@@ -801,7 +768,7 @@
   <data name="NextQuarterItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -833,7 +800,7 @@
     <value>False</value>
   </data>
   <data name="NextQuarterItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="NextQuarterItem.Text" xml:space="preserve">
     <value>NextQuarter</value>
@@ -841,7 +808,7 @@
   <data name="StopGameItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -873,7 +840,7 @@
     <value>False</value>
   </data>
   <data name="StopGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="StopGameItem.Text" xml:space="preserve">
     <value>Stop</value>
@@ -881,7 +848,7 @@
   <data name="RestartGameItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -910,7 +877,7 @@
 </value>
   </data>
   <data name="RestartGameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="RestartGameItem.Text" xml:space="preserve">
     <value>Restart</value>
@@ -918,7 +885,7 @@
   <data name="GameEndItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -950,15 +917,21 @@
     <value>False</value>
   </data>
   <data name="GameEndItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+    <value>149, 22</value>
   </data>
   <data name="GameEndItem.Text" xml:space="preserve">
     <value>End</value>
   </data>
+  <data name="GameToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 22</value>
+  </data>
+  <data name="GameToolStripMenuItem.Text" xml:space="preserve">
+    <value>Game</value>
+  </data>
   <data name="GamePropToolStripMenuItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -985,17 +958,11 @@
         EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASDYfR4wRvEbYtOSAAAAAElFTkSu
         QmCC
 </value>
-  </data>
-  <data name="GamePropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 22</value>
-  </data>
-  <data name="GamePropToolStripMenuItem.Text" xml:space="preserve">
-    <value>GameConfig</value>
   </data>
   <data name="ChangeGameNameItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1022,12 +989,6 @@
         EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASDYfR4wRvEbYtOSAAAAAElFTkSu
         QmCC
 </value>
-  </data>
-  <data name="ChangeGameNameItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 22</value>
-  </data>
-  <data name="ChangeGameNameItem.Text" xml:space="preserve">
-    <value>ChangeGameName</value>
   </data>
   <data name="GameNameText.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 25</value>
@@ -1035,10 +996,16 @@
   <data name="GameNameText.Text" xml:space="preserve">
     <value>Game1</value>
   </data>
+  <data name="ChangeGameNameItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 22</value>
+  </data>
+  <data name="ChangeGameNameItem.Text" xml:space="preserve">
+    <value>ChangeGameName</value>
+  </data>
   <data name="ChangeGameLocationItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1065,12 +1032,6 @@
         EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASDYfR4wRvEbYtOSAAAAAElFTkSu
         QmCC
 </value>
-  </data>
-  <data name="ChangeGameLocationItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>203, 22</value>
-  </data>
-  <data name="ChangeGameLocationItem.Text" xml:space="preserve">
-    <value>ChangeGameLocation</value>
   </data>
   <data name="GameLocationText.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 25</value>
@@ -1078,10 +1039,22 @@
   <data name="GameLocationText.Text" xml:space="preserve">
     <value>NoInputLocation</value>
   </data>
+  <data name="ChangeGameLocationItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 22</value>
+  </data>
+  <data name="ChangeGameLocationItem.Text" xml:space="preserve">
+    <value>ChangeGameLocation</value>
+  </data>
+  <data name="GamePropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 22</value>
+  </data>
+  <data name="GamePropToolStripMenuItem.Text" xml:space="preserve">
+    <value>GameConfig</value>
+  </data>
   <data name="SolutionToolStripMenuItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1109,16 +1082,10 @@
         QmCC
 </value>
   </data>
-  <data name="SolutionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 22</value>
-  </data>
-  <data name="SolutionToolStripMenuItem.Text" xml:space="preserve">
-    <value>Analize</value>
-  </data>
   <data name="GoGraphScoreFormItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1155,7 +1122,7 @@
   <data name="GoBoxScoreFormItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1192,7 +1159,7 @@
   <data name="GoPlayerDataFormItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1229,7 +1196,7 @@
   <data name="GoTacticks2DFormItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1266,7 +1233,7 @@
   <data name="actionPointGraphFormItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1303,7 +1270,7 @@
   <data name="StrategySimulationFormItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1340,7 +1307,7 @@
   <data name="CentralityAnalyzeItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1374,16 +1341,16 @@
   <data name="CentralityAnalyzeItem.Text" xml:space="preserve">
     <value>CentralityAnalyze</value>
   </data>
-  <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 22</value>
+  <data name="SolutionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
   </data>
-  <data name="PropToolStripMenuItem.Text" xml:space="preserve">
-    <value>Config</value>
+  <data name="SolutionToolStripMenuItem.Text" xml:space="preserve">
+    <value>Analize</value>
   </data>
   <data name="ColorConfigItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1411,16 +1378,10 @@
         QmCC
 </value>
   </data>
-  <data name="ColorConfigItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 22</value>
-  </data>
-  <data name="ColorConfigItem.Text" xml:space="preserve">
-    <value>ColorConfig</value>
-  </data>
   <data name="ChangeFormBackGroundColorItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1457,7 +1418,7 @@
   <data name="ChangeFormBackGroundColorDefaultItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1494,7 +1455,7 @@
   <data name="ChangeButtonColorItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1531,7 +1492,7 @@
   <data name="ChangeButtonColorDefaultItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1568,7 +1529,7 @@
   <data name="ChangeButtonTextColorItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1605,7 +1566,7 @@
   <data name="ChangeButtonTextColorDefaultItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1639,10 +1600,16 @@
   <data name="ChangeButtonTextColorDefaultItem.Text" xml:space="preserve">
     <value>ChangeButtonTextColorDefault</value>
   </data>
+  <data name="ColorConfigItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="ColorConfigItem.Text" xml:space="preserve">
+    <value>ColorConfig</value>
+  </data>
   <data name="ChangeFPSItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1670,12 +1637,6 @@
         QmCC
 </value>
   </data>
-  <data name="ChangeFPSItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 22</value>
-  </data>
-  <data name="ChangeFPSItem.Text" xml:space="preserve">
-    <value>ChangelFPS</value>
-  </data>
   <data name="TimerTickComboBox.Items" xml:space="preserve">
     <value>100</value>
   </data>
@@ -1688,10 +1649,16 @@
   <data name="TimerTickComboBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
   </data>
+  <data name="ChangeFPSItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="ChangeFPSItem.Text" xml:space="preserve">
+    <value>ChangelFPS</value>
+  </data>
   <data name="DebugFormVisiableItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1728,7 +1695,7 @@
   <data name="UseCommentItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1768,7 +1735,7 @@
   <data name="QuarterChangeTimerSpeedChangeItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1795,12 +1762,6 @@
         EoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASDYfR4wRvEbYtOSAAAAAElFTkSu
         QmCC
 </value>
-  </data>
-  <data name="QuarterChangeTimerSpeedChangeItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 22</value>
-  </data>
-  <data name="QuarterChangeTimerSpeedChangeItem.Text" xml:space="preserve">
-    <value>QuarterTimerAcceralationSpeed</value>
   </data>
   <data name="QuarterChangeTimerSpeedCombo.Items" xml:space="preserve">
     <value>100</value>
@@ -1814,10 +1775,16 @@
   <data name="QuarterChangeTimerSpeedCombo.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
   </data>
+  <data name="QuarterChangeTimerSpeedChangeItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 22</value>
+  </data>
+  <data name="QuarterChangeTimerSpeedChangeItem.Text" xml:space="preserve">
+    <value>QuarterTimerAcceralationSpeed</value>
+  </data>
   <data name="ChangeLanguageItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAZAAAAGQCAYAAACAvzbMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
+        YQUAAAAJcEhZcwAACw4AAAsOAUC+4UEAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfgAgIDJC4lIXj5
         AAAAHWlUWHRDb21tZW50AAAAAABDcmVhdGVkIHdpdGggR0lNUGQuZQcAAAViSURBVHhe7dUxAQAgAAQh
         a33/YJrBmxnIwNl2AeCXQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQg
         ACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASARCACJQABIBAJAIhAAEoEAkAgEgEQgACQCASAR
@@ -1845,20 +1812,20 @@
         QmCC
 </value>
   </data>
+  <data name="ChangeLanguageComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 26</value>
+  </data>
   <data name="ChangeLanguageItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>263, 22</value>
   </data>
   <data name="ChangeLanguageItem.Text" xml:space="preserve">
     <value>ChangeLanguage</value>
   </data>
-  <data name="ChangeLanguageComboBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 26</value>
+  <data name="PropToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 22</value>
   </data>
-  <data name="dataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 22</value>
-  </data>
-  <data name="dataToolStripMenuItem.Text" xml:space="preserve">
-    <value>Data</value>
+  <data name="PropToolStripMenuItem.Text" xml:space="preserve">
+    <value>Config</value>
   </data>
   <data name="GoDataEditFormItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>163, 22</value>
@@ -1884,23 +1851,56 @@
   <data name="GoActionPointEditFormItem.Text" xml:space="preserve">
     <value>ActionPointEdit</value>
   </data>
+  <data name="dataToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 22</value>
+  </data>
+  <data name="dataToolStripMenuItem.Text" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="GoTCPServerFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 22</value>
+  </data>
+  <data name="GoTCPServerFormItem.Text" xml:space="preserve">
+    <value>TCPServer</value>
+  </data>
+  <data name="GoTCPClientFormItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 22</value>
+  </data>
+  <data name="GoTCPClientFormItem.Text" xml:space="preserve">
+    <value>TCPClient</value>
+  </data>
   <data name="transmission.Size" type="System.Drawing.Size, System.Drawing">
     <value>96, 22</value>
   </data>
   <data name="transmission.Text" xml:space="preserve">
     <value>Transmission</value>
   </data>
-  <data name="GoTCPServerFormItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+  <data name="MenuStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="GoTCPServerFormItem.Text" xml:space="preserve">
-    <value>TCPServer</value>
+  <data name="MenuStrip1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 2, 0, 2</value>
   </data>
-  <data name="GoTCPClientFormItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
+  <data name="MenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 26</value>
   </data>
-  <data name="GoTCPClientFormItem.Text" xml:space="preserve">
-    <value>TCPClient</value>
+  <data name="MenuStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="MenuStrip1.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Name" xml:space="preserve">
+    <value>MenuStrip1</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MenuStrip1.ZOrder" xml:space="preserve">
+    <value>38</value>
   </data>
   <data name="MyTeamNameLael.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt, style=Bold</value>
@@ -1933,7 +1933,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyTeamNameLael.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>36</value>
   </data>
   <data name="OppentTeamNameLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt, style=Bold</value>
@@ -1966,7 +1966,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentTeamNameLabel.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>35</value>
   </data>
   <data name="QuarterText.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 21.75pt, style=Bold</value>
@@ -1999,7 +1999,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterText.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>34</value>
   </data>
   <data name="OppentTeamFaulLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 20.25pt</value>
@@ -2032,7 +2032,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentTeamFaulLabel.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>33</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2062,7 +2062,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>27</value>
   </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2092,7 +2092,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>31</value>
   </data>
   <data name="MyTeamFaulLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 20.25pt</value>
@@ -2125,7 +2125,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyTeamFaulLabel.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>32</value>
   </data>
   <data name="TechnicalFaulButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 9pt, style=Bold</value>
@@ -2134,7 +2134,7 @@
     <value>NoControl</value>
   </data>
   <data name="TechnicalFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>525, 344</value>
+    <value>574, 301</value>
   </data>
   <data name="TechnicalFaulButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2161,7 +2161,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TechnicalFaulButton.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>19</value>
   </data>
   <data name="UnSportsmanLikeFaulButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 9pt, style=Bold</value>
@@ -2170,7 +2170,7 @@
     <value>NoControl</value>
   </data>
   <data name="UnSportsmanLikeFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>574, 344</value>
+    <value>495, 357</value>
   </data>
   <data name="UnSportsmanLikeFaulButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -2197,7 +2197,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;UnSportsmanLikeFaulButton.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>21</value>
   </data>
   <data name="DisQualifyingFaulButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 9pt, style=Bold</value>
@@ -2206,7 +2206,7 @@
     <value>NoControl</value>
   </data>
   <data name="DisQualifyingFaulButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>624, 344</value>
+    <value>564, 355</value>
   </data>
   <data name="DisQualifyingFaulButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 27</value>
@@ -2230,13 +2230,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DisQualifyingFaulButton.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="UpButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="UpButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>674, 301</value>
+    <value>655, 289</value>
   </data>
   <data name="UpButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 23</value>
@@ -2257,13 +2257,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;UpButton.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>23</value>
   </data>
   <data name="DownButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="DownButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>669, 359</value>
+    <value>655, 365</value>
   </data>
   <data name="DownButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>29, 23</value>
@@ -2284,7 +2284,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;DownButton.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>17</value>
   </data>
   <data name="givenFreeThowLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 20.25pt</value>
@@ -2293,7 +2293,7 @@
     <value>NoControl</value>
   </data>
   <data name="givenFreeThowLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>644, 314</value>
+    <value>650, 331</value>
   </data>
   <data name="givenFreeThowLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>24, 27</value>
@@ -2314,41 +2314,8 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;givenFreeThowLabel.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>502, 301</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 12</value>
-  </data>
-  <data name="label11.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>GivenFreeThrow</value>
-  </data>
-  <data name="&gt;&gt;label11.Name" xml:space="preserve">
-    <value>label11</value>
-  </data>
-  <data name="&gt;&gt;label11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <metadata name="ToolTipFormInput.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>512, 17</value>
-  </metadata>
   <data name="QuarterTimerFastFowardButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>476, 80</value>
   </data>
@@ -2371,7 +2338,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterTimerFastFowardButton.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="QuarterTimerRewindButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>386, 80</value>
@@ -2425,7 +2392,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyOutTeamListBox.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>37</value>
   </data>
   <data name="OppentTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 72pt</value>
@@ -2458,7 +2425,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentTeamPointLabel.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>26</value>
   </data>
   <data name="MyTeamPointLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 72pt</value>
@@ -2491,7 +2458,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyTeamPointLabel.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>24</value>
   </data>
   <metadata name="ToolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>137, 17</value>
@@ -2575,7 +2542,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ToolStrip.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>40</value>
   </data>
   <data name="OppentOutTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -2605,7 +2572,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentOutTeamListBox.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>28</value>
   </data>
   <data name="OppentCortTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -2635,7 +2602,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OppentCortTeamListBox.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>29</value>
   </data>
   <data name="MyCortTeamListBox.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 12pt</value>
@@ -2665,7 +2632,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MyCortTeamListBox.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>30</value>
   </data>
   <data name="QuarterTimerLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 22pt</value>
@@ -2698,7 +2665,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;QuarterTimerLabel.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>22</value>
   </data>
   <data name="CortPicture.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2725,7 +2692,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CortPicture.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>20</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>197, 188</value>
@@ -2749,7 +2716,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>18</value>
   </data>
   <data name="pictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2779,7 +2746,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>16</value>
   </data>
   <data name="MyTimeOutLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt</value>
@@ -2842,7 +2809,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;backPictureBox.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>39</value>
   </data>
   <data name="OppentTimeOutLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 11.25pt</value>

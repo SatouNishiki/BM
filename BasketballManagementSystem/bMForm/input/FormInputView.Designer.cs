@@ -103,7 +103,6 @@
             this.UpButton = new System.Windows.Forms.Button();
             this.DownButton = new System.Windows.Forms.Button();
             this.givenFreeThowLabel = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.ToolTipFormInput = new System.Windows.Forms.ToolTip(this.components);
             this.QuarterTimerFastFowardButton = new CustomPictureButton.PictureButton();
             this.QuarterTimerRewindButton = new CustomPictureButton.PictureButton();
@@ -727,11 +726,6 @@
             resources.ApplyResources(this.givenFreeThowLabel, "givenFreeThowLabel");
             this.givenFreeThowLabel.Name = "givenFreeThowLabel";
             // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.Name = "label11";
-            // 
             // QuarterTimerFastFowardButton
             // 
             this.QuarterTimerFastFowardButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.fastforward_off;
@@ -913,7 +907,7 @@
             // 
             // backPictureBox
             // 
-            this.backPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.back;
+            this.backPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.backgroundATARI3;
             resources.ApplyResources(this.backPictureBox, "backPictureBox");
             this.backPictureBox.Name = "backPictureBox";
             this.backPictureBox.TabStop = false;
@@ -986,7 +980,6 @@
             this.Controls.Add(this.QuarterTimerRewindButton);
             this.Controls.Add(this.StealButton);
             this.Controls.Add(this.OppentTimeOutLabel);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.TurnOverButton);
             this.Controls.Add(this.QuarterTimerFastFowardButton);
             this.Controls.Add(this.BlockShotButton);
@@ -1078,7 +1071,6 @@
         private System.Windows.Forms.Button UpButton;
         private System.Windows.Forms.Button DownButton;
         private System.Windows.Forms.Label givenFreeThowLabel;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ToolStripMenuItem PrintFormItem;
         private System.Windows.Forms.ToolStripMenuItem PrintPreviewItem;
         private System.Windows.Forms.ToolStripMenuItem GoPlayerDataFormItem;
