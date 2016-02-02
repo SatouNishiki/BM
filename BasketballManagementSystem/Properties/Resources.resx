@@ -124,9 +124,6 @@
   <data name="DFon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bmForm\input\texture\DFon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="redo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bmForm\input\texture\redo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="hukidashi" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bmForm\input\texture\hukidashi.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -138,9 +135,6 @@
   </data>
   <data name="PFon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bmForm\input\texture\PFon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="undo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\bmForm\input\texture\undo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ASoff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bmForm\input\texture\ASoff.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,9 +217,6 @@
   <data name="TFon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bmForm\input\texture\TFon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backgroundATARI1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backgroundATARI1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="member_change" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\member_change.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -247,9 +238,6 @@
   <data name="backimg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\backimg2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="backgroundATARI3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\backgroundATARI3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="downArrow2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\downArrow2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -261,5 +249,8 @@
   </data>
   <data name="upArrow2_g" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\upArrow2_g.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\back_logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

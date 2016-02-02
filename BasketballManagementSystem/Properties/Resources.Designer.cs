@@ -103,19 +103,9 @@ namespace BasketballManagementSystem.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap backgroundATARI1 {
+        internal static System.Drawing.Bitmap back_logo {
             get {
-                object obj = ResourceManager.GetObject("backgroundATARI1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap backgroundATARI3 {
-            get {
-                object obj = ResourceManager.GetObject("backgroundATARI3", resourceCulture);
+                object obj = ResourceManager.GetObject("back_logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,16 +343,6 @@ namespace BasketballManagementSystem.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
-        internal static System.Drawing.Bitmap redo {
-            get {
-                object obj = ResourceManager.GetObject("redo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
         internal static System.Drawing.Bitmap rewind_off {
             get {
                 object obj = ResourceManager.GetObject("rewind_off", resourceCulture);
@@ -506,16 +486,6 @@ namespace BasketballManagementSystem.Properties {
         internal static System.Drawing.Bitmap UFon {
             get {
                 object obj = ResourceManager.GetObject("UFon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
-        /// </summary>
-        internal static System.Drawing.Bitmap undo {
-            get {
-                object obj = ResourceManager.GetObject("undo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -859,7 +859,7 @@
             // backPictureBox
             // 
             resources.ApplyResources(this.backPictureBox, "backPictureBox");
-            this.backPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.back;
+            this.backPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.back_logo;
             this.backPictureBox.Name = "backPictureBox";
             this.backPictureBox.TabStop = false;
             this.ToolTipFormInput.SetToolTip(this.backPictureBox, resources.GetString("backPictureBox.ToolTip"));
