@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PlayerNameLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 24pt</value>
+    <value>pso2_font, 24pt</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="PlayerNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -136,7 +136,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="PlayerNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 33</value>
+    <value>206, 33</value>
   </data>
   <data name="PlayerNameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -725,22 +725,25 @@
     <value>40</value>
   </data>
   <data name="MyTeamNameLael.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 9pt, style=Bold</value>
+    <value>MS UI Gothic, 12pt, style=Bold</value>
   </data>
   <data name="MyTeamNameLael.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="MyTeamNameLael.Location" type="System.Drawing.Point, System.Drawing">
-    <value>29, 154</value>
+    <value>27, 141</value>
   </data>
   <data name="MyTeamNameLael.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 12</value>
+    <value>153, 18</value>
   </data>
   <data name="MyTeamNameLael.TabIndex" type="System.Int32, mscorlib">
     <value>32</value>
   </data>
   <data name="MyTeamNameLael.Text" xml:space="preserve">
     <value>No Name Team</value>
+  </data>
+  <data name="MyTeamNameLael.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;MyTeamNameLael.Name" xml:space="preserve">
     <value>MyTeamNameLael</value>
@@ -754,26 +757,26 @@
   <data name="&gt;&gt;MyTeamNameLael.ZOrder" xml:space="preserve">
     <value>37</value>
   </data>
-  <data name="OppentTeamNameLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="OppentTeamNameLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>MS UI Gothic, 9pt, style=Bold</value>
+    <value>MS UI Gothic, 12pt, style=Bold</value>
   </data>
   <data name="OppentTeamNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="OppentTeamNameLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>755, 147</value>
+    <value>720, 141</value>
   </data>
   <data name="OppentTeamNameLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 12</value>
+    <value>153, 18</value>
   </data>
   <data name="OppentTeamNameLabel.TabIndex" type="System.Int32, mscorlib">
     <value>33</value>
   </data>
   <data name="OppentTeamNameLabel.Text" xml:space="preserve">
     <value>No Name Team</value>
+  </data>
+  <data name="OppentTeamNameLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;OppentTeamNameLabel.Name" xml:space="preserve">
     <value>OppentTeamNameLabel</value>
@@ -820,9 +823,6 @@
   <data name="&gt;&gt;QuarterText.ZOrder" xml:space="preserve">
     <value>35</value>
   </data>
-  <data name="OppentTeamFaulLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="OppentTeamFaulLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 20.25pt</value>
   </data>
@@ -830,16 +830,19 @@
     <value>NoControl</value>
   </data>
   <data name="OppentTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>781, 99</value>
+    <value>774, 89</value>
   </data>
   <data name="OppentTeamFaulLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 27</value>
+    <value>45, 45</value>
   </data>
   <data name="OppentTeamFaulLabel.TabIndex" type="System.Int32, mscorlib">
     <value>38</value>
   </data>
   <data name="OppentTeamFaulLabel.Text" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="OppentTeamFaulLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;OppentTeamFaulLabel.Name" xml:space="preserve">
     <value>OppentTeamFaulLabel</value>
@@ -913,9 +916,6 @@
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
     <value>32</value>
   </data>
-  <data name="MyTeamFaulLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="MyTeamFaulLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>MS UI Gothic, 20.25pt</value>
   </data>
@@ -923,16 +923,19 @@
     <value>NoControl</value>
   </data>
   <data name="MyTeamFaulLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>87, 99</value>
+    <value>81, 89</value>
   </data>
   <data name="MyTeamFaulLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 27</value>
+    <value>45, 45</value>
   </data>
   <data name="MyTeamFaulLabel.TabIndex" type="System.Int32, mscorlib">
     <value>40</value>
   </data>
   <data name="MyTeamFaulLabel.Text" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="MyTeamFaulLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;MyTeamFaulLabel.Name" xml:space="preserve">
     <value>MyTeamFaulLabel</value>
@@ -1598,16 +1601,19 @@
     <value>NoControl</value>
   </data>
   <data name="MyTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>146, 647</value>
+    <value>27, 647</value>
   </data>
   <data name="MyTimeOutLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>31, 17</value>
+    <value>74, 19</value>
   </data>
   <data name="MyTimeOutLabel.TabIndex" type="System.Int32, mscorlib">
     <value>55</value>
   </data>
   <data name="MyTimeOutLabel.Text" xml:space="preserve">
     <value>0/2</value>
+  </data>
+  <data name="MyTimeOutLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;MyTimeOutLabel.Name" xml:space="preserve">
     <value>MyTimeOutLabel</value>
@@ -1658,16 +1664,19 @@
     <value>NoControl</value>
   </data>
   <data name="OppentTimeOutLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>727, 647</value>
+    <value>799, 647</value>
   </data>
   <data name="OppentTimeOutLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 17</value>
+    <value>74, 19</value>
   </data>
   <data name="OppentTimeOutLabel.TabIndex" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
   <data name="OppentTimeOutLabel.Text" xml:space="preserve">
     <value>0/2</value>
+  </data>
+  <data name="OppentTimeOutLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
   </data>
   <data name="&gt;&gt;OppentTimeOutLabel.Name" xml:space="preserve">
     <value>OppentTimeOutLabel</value>

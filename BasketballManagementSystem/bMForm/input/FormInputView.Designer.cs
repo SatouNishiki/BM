@@ -581,25 +581,30 @@
             // MyTeamNameLael
             // 
             resources.ApplyResources(this.MyTeamNameLael, "MyTeamNameLael");
-            this.MyTeamNameLael.ForeColor = System.Drawing.Color.Indigo;
+            this.MyTeamNameLael.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.MyTeamNameLael.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.MyTeamNameLael.Name = "MyTeamNameLael";
             // 
             // OppentTeamNameLabel
             // 
             resources.ApplyResources(this.OppentTeamNameLabel, "OppentTeamNameLabel");
-            this.OppentTeamNameLabel.ForeColor = System.Drawing.Color.Indigo;
+            this.OppentTeamNameLabel.ForeColor = System.Drawing.Color.IndianRed;
+            this.OppentTeamNameLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.OppentTeamNameLabel.Name = "OppentTeamNameLabel";
             // 
             // QuarterText
             // 
             this.QuarterText.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.QuarterText, "QuarterText");
-            this.QuarterText.ForeColor = System.Drawing.Color.White;
+            this.QuarterText.ForeColor = System.Drawing.Color.Red;
+            this.QuarterText.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.QuarterText.Name = "QuarterText";
             // 
             // OppentTeamFaulLabel
             // 
             resources.ApplyResources(this.OppentTeamFaulLabel, "OppentTeamFaulLabel");
+            this.OppentTeamFaulLabel.ForeColor = System.Drawing.Color.White;
+            this.OppentTeamFaulLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.OppentTeamFaulLabel.Name = "OppentTeamFaulLabel";
             // 
             // label2
@@ -615,6 +620,8 @@
             // MyTeamFaulLabel
             // 
             resources.ApplyResources(this.MyTeamFaulLabel, "MyTeamFaulLabel");
+            this.MyTeamFaulLabel.ForeColor = System.Drawing.Color.White;
+            this.MyTeamFaulLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.MyTeamFaulLabel.Name = "MyTeamFaulLabel";
             // 
             // TechnicalFaulButton
@@ -801,6 +808,7 @@
             this.QuarterTimerLabel.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.QuarterTimerLabel, "QuarterTimerLabel");
             this.QuarterTimerLabel.ForeColor = System.Drawing.Color.White;
+            this.QuarterTimerLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.QuarterTimerLabel.Name = "QuarterTimerLabel";
             // 
             // CortPicture
@@ -815,6 +823,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.pictureBox1.Image = global::BasketballManagementSystem.Properties.Resources.right;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
@@ -823,6 +832,7 @@
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.pictureBox2.Image = global::BasketballManagementSystem.Properties.Resources.left;
             resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
