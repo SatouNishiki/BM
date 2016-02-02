@@ -49,6 +49,7 @@
             // 
             // CortPictureBox
             // 
+            this.CortPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.coat;
             resources.ApplyResources(this.CortPictureBox, "CortPictureBox");
             this.CortPictureBox.Name = "CortPictureBox";
             this.CortPictureBox.TabStop = false;
@@ -57,23 +58,23 @@
             // 
             // DrawActionKindsComboBox
             // 
-            resources.ApplyResources(this.DrawActionKindsComboBox, "DrawActionKindsComboBox");
             this.DrawActionKindsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.DrawActionKindsComboBox.FormattingEnabled = true;
+            resources.ApplyResources(this.DrawActionKindsComboBox, "DrawActionKindsComboBox");
             this.DrawActionKindsComboBox.Name = "DrawActionKindsComboBox";
             this.DrawActionKindsComboBox.SelectedIndexChanged += new System.EventHandler(this.DrawActionKinds_SelectedIndexChanged);
             // 
             // MyTeamListBox
             // 
-            resources.ApplyResources(this.MyTeamListBox, "MyTeamListBox");
             this.MyTeamListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.MyTeamListBox, "MyTeamListBox");
             this.MyTeamListBox.Name = "MyTeamListBox";
             this.MyTeamListBox.SelectedIndexChanged += new System.EventHandler(this.TeamList_SelectedIndexChanged);
             // 
             // OppentTeamListBox
             // 
-            resources.ApplyResources(this.OppentTeamListBox, "OppentTeamListBox");
             this.OppentTeamListBox.FormattingEnabled = true;
+            resources.ApplyResources(this.OppentTeamListBox, "OppentTeamListBox");
             this.OppentTeamListBox.Name = "OppentTeamListBox";
             this.OppentTeamListBox.SelectedIndexChanged += new System.EventHandler(this.TeamList_SelectedIndexChanged);
             // 
@@ -89,57 +90,57 @@
             // 
             // InformationRichTextBox
             // 
-            resources.ApplyResources(this.InformationRichTextBox, "InformationRichTextBox");
             this.InformationRichTextBox.BackColor = System.Drawing.SystemColors.Window;
+            resources.ApplyResources(this.InformationRichTextBox, "InformationRichTextBox");
             this.InformationRichTextBox.Name = "InformationRichTextBox";
             this.InformationRichTextBox.ReadOnly = true;
             // 
             // ＭenuStrip
             // 
-            resources.ApplyResources(this.ＭenuStrip, "ＭenuStrip");
             this.ＭenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FileToolStripMenuItem,
             this.configToolStripMenuItem});
+            resources.ApplyResources(this.ＭenuStrip, "ＭenuStrip");
             this.ＭenuStrip.Name = "ＭenuStrip";
             // 
             // FileToolStripMenuItem
             // 
-            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             this.FileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.PrintFormItem,
             this.PrintPreviewItem});
             this.FileToolStripMenuItem.Name = "FileToolStripMenuItem";
+            resources.ApplyResources(this.FileToolStripMenuItem, "FileToolStripMenuItem");
             // 
             // PrintFormItem
             // 
-            resources.ApplyResources(this.PrintFormItem, "PrintFormItem");
             this.PrintFormItem.Name = "PrintFormItem";
+            resources.ApplyResources(this.PrintFormItem, "PrintFormItem");
             this.PrintFormItem.Click += new System.EventHandler(this.printForm_Click);
             // 
             // PrintPreviewItem
             // 
-            resources.ApplyResources(this.PrintPreviewItem, "PrintPreviewItem");
             this.PrintPreviewItem.Name = "PrintPreviewItem";
+            resources.ApplyResources(this.PrintPreviewItem, "PrintPreviewItem");
             this.PrintPreviewItem.Click += new System.EventHandler(this.printPreview_Click);
             // 
             // configToolStripMenuItem
             // 
-            resources.ApplyResources(this.configToolStripMenuItem, "configToolStripMenuItem");
             this.configToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.FaluationBasisItem});
             this.configToolStripMenuItem.Name = "configToolStripMenuItem";
+            resources.ApplyResources(this.configToolStripMenuItem, "configToolStripMenuItem");
             // 
             // FaluationBasisItem
             // 
-            resources.ApplyResources(this.FaluationBasisItem, "FaluationBasisItem");
             this.FaluationBasisItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.PercentTextBox});
             this.FaluationBasisItem.Name = "FaluationBasisItem";
+            resources.ApplyResources(this.FaluationBasisItem, "FaluationBasisItem");
             // 
             // PercentTextBox
             // 
-            resources.ApplyResources(this.PercentTextBox, "PercentTextBox");
             this.PercentTextBox.Name = "PercentTextBox";
+            resources.ApplyResources(this.PercentTextBox, "PercentTextBox");
             this.PercentTextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.percent_KeyPress);
             this.PercentTextBox.TextChanged += new System.EventHandler(this.percent_TextChanged);
             // 
