@@ -406,6 +406,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\coat_mirror.png" />
     <None Include="Resources\back_logo.png" />
     <None Include="Resources\upArrow2_g.png" />
     <None Include="Resources\downArrow2_g.png" />

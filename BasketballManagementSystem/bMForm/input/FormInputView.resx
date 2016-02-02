@@ -486,7 +486,7 @@
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
-    <value>TeamFaul</value>
+    <value>TeamFoul</value>
   </data>
   <data name="ChangeFormBackGroundColorItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>292, 22</value>
@@ -672,7 +672,7 @@
     <value>19</value>
   </data>
   <data name="QuarterTimerLabel.Text" xml:space="preserve">
-    <value>10:0</value>
+    <value>10.0</value>
   </data>
   <data name="QuarterChangeTimerSpeedCombo.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 26</value>
@@ -1350,7 +1350,7 @@
     <value>GoPlayerDataFormItem</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
-    <value>TeamFaul</value>
+    <value>TeamFoul</value>
   </data>
   <data name="&gt;&gt;SolutionToolStripMenuItem.Name" xml:space="preserve">
     <value>SolutionToolStripMenuItem</value>

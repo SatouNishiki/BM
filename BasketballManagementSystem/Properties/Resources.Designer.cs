@@ -193,6 +193,16 @@ namespace BasketballManagementSystem.Properties {
         /// <summary>
         ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
         /// </summary>
+        internal static System.Drawing.Bitmap coat_mirror {
+            get {
+                object obj = ResourceManager.GetObject("coat_mirror", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   型 System.Drawing.Bitmap のローカライズされたリソースを検索します。
+        /// </summary>
         internal static System.Drawing.Bitmap DFoff {
             get {
                 object obj = ResourceManager.GetObject("DFoff", resourceCulture);

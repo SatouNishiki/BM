@@ -964,9 +964,9 @@ namespace BasketballManagementSystem.bmForm.input
 
             if(Quarter >= 3)
             {
-                leftArrow.Image = Properties.Resources.left;
-               
+                leftArrow.Image = Properties.Resources.left;              
                 rightArrow.Image = Properties.Resources.right;
+                CortPicture.Image = Properties.Resources.coat_mirror;
             }
 
         }
