@@ -121,7 +121,6 @@
             this.OppentTimeOutButton = new CustomPictureButton.PictureButton();
             this.MyMemberChangeButton = new CustomPictureButton.PictureButton();
             this.OppentMemberChangeButton = new CustomPictureButton.PictureButton();
-            this.ColorDialog = new System.Windows.Forms.ColorDialog();
             this.AssistButton = new CustomPictureButton.PictureButton();
             this.StealButton = new CustomPictureButton.PictureButton();
             this.TurnOverButton = new CustomPictureButton.PictureButton();
@@ -132,6 +131,7 @@
             this.DisQualifyingFaulButton = new CustomPictureButton.PictureButton();
             this.UpButton = new CustomPictureButton.PictureButton();
             this.DownButton = new CustomPictureButton.PictureButton();
+            this.ColorDialog = new System.Windows.Forms.ColorDialog();
             this.MenuStrip1.SuspendLayout();
             this.ToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CortPicture)).BeginInit();
@@ -145,7 +145,9 @@
             resources.ApplyResources(this.PlayerNameLabel, "PlayerNameLabel");
             this.PlayerNameLabel.BackColor = System.Drawing.Color.DimGray;
             this.PlayerNameLabel.ForeColor = System.Drawing.Color.White;
+            this.PlayerNameLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.PlayerNameLabel.Name = "PlayerNameLabel";
+            this.ToolTipFormInput.SetToolTip(this.PlayerNameLabel, resources.GetString("PlayerNameLabel.ToolTip"));
             // 
             // FormInputTimer
             // 
@@ -154,6 +156,7 @@
             // 
             // MenuStrip1
             // 
+            resources.ApplyResources(this.MenuStrip1, "MenuStrip1");
             this.MenuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.MenuStrip1.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
             this.MenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -164,8 +167,8 @@
             this.PropToolStripMenuItem,
             this.dataToolStripMenuItem,
             this.transmission});
-            resources.ApplyResources(this.MenuStrip1, "MenuStrip1");
             this.MenuStrip1.Name = "MenuStrip1";
+            this.ToolTipFormInput.SetToolTip(this.MenuStrip1, resources.GetString("MenuStrip1.ToolTip"));
             // 
             // FileToolStripMenuItem
             // 
@@ -304,8 +307,8 @@
             // 
             // GameNameText
             // 
-            this.GameNameText.Name = "GameNameText";
             resources.ApplyResources(this.GameNameText, "GameNameText");
+            this.GameNameText.Name = "GameNameText";
             this.GameNameText.TextChanged += new System.EventHandler(this.GameNameText_TextChanged);
             // 
             // ChangeGameLocationItem
@@ -318,8 +321,8 @@
             // 
             // GameLocationText
             // 
-            this.GameLocationText.Name = "GameLocationText";
             resources.ApplyResources(this.GameLocationText, "GameLocationText");
+            this.GameLocationText.Name = "GameLocationText";
             this.GameLocationText.TextChanged += new System.EventHandler(this.GameLocationText_TextChanged);
             // 
             // SolutionToolStripMenuItem
@@ -387,6 +390,7 @@
             // 
             // PropToolStripMenuItem
             // 
+            resources.ApplyResources(this.PropToolStripMenuItem, "PropToolStripMenuItem");
             this.PropToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.ColorConfigItem,
             this.ChangeFPSItem,
@@ -396,7 +400,6 @@
             this.ChangeLanguageItem});
             this.PropToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.PropToolStripMenuItem.Name = "PropToolStripMenuItem";
-            resources.ApplyResources(this.PropToolStripMenuItem, "PropToolStripMenuItem");
             this.PropToolStripMenuItem.Click += new System.EventHandler(this.PropToolStripMenuItem_Click);
             // 
             // ColorConfigItem
@@ -464,13 +467,13 @@
             // 
             // TimerTickComboBox
             // 
+            resources.ApplyResources(this.TimerTickComboBox, "TimerTickComboBox");
             this.TimerTickComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.TimerTickComboBox.Items.AddRange(new object[] {
             resources.GetString("TimerTickComboBox.Items"),
             resources.GetString("TimerTickComboBox.Items1"),
             resources.GetString("TimerTickComboBox.Items2")});
             this.TimerTickComboBox.Name = "TimerTickComboBox";
-            resources.ApplyResources(this.TimerTickComboBox, "TimerTickComboBox");
             this.TimerTickComboBox.SelectedIndexChanged += new System.EventHandler(this.TimerTickComboBox_SelectedIndexChanged);
             // 
             // DebugFormVisiableItem
@@ -498,13 +501,13 @@
             // 
             // QuarterChangeTimerSpeedCombo
             // 
+            resources.ApplyResources(this.QuarterChangeTimerSpeedCombo, "QuarterChangeTimerSpeedCombo");
             this.QuarterChangeTimerSpeedCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.QuarterChangeTimerSpeedCombo.Items.AddRange(new object[] {
             resources.GetString("QuarterChangeTimerSpeedCombo.Items"),
             resources.GetString("QuarterChangeTimerSpeedCombo.Items1"),
             resources.GetString("QuarterChangeTimerSpeedCombo.Items2")});
             this.QuarterChangeTimerSpeedCombo.Name = "QuarterChangeTimerSpeedCombo";
-            resources.ApplyResources(this.QuarterChangeTimerSpeedCombo, "QuarterChangeTimerSpeedCombo");
             this.QuarterChangeTimerSpeedCombo.SelectedIndexChanged += new System.EventHandler(this.QuarterChangeTimerSpeedCombo_SelectedIndexChanged);
             // 
             // ChangeLanguageItem
@@ -517,13 +520,14 @@
             // 
             // ChangeLanguageComboBox
             // 
+            resources.ApplyResources(this.ChangeLanguageComboBox, "ChangeLanguageComboBox");
             this.ChangeLanguageComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ChangeLanguageComboBox.Name = "ChangeLanguageComboBox";
-            resources.ApplyResources(this.ChangeLanguageComboBox, "ChangeLanguageComboBox");
             this.ChangeLanguageComboBox.SelectedIndexChanged += new System.EventHandler(this.ChangeLanguageComboBox_SelectedIndexChanged);
             // 
             // dataToolStripMenuItem
             // 
+            resources.ApplyResources(this.dataToolStripMenuItem, "dataToolStripMenuItem");
             this.dataToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GoDataEditFormItem,
             this.GoClubMakeFormItem,
@@ -531,63 +535,62 @@
             this.GoActionPointEditFormItem});
             this.dataToolStripMenuItem.ForeColor = System.Drawing.Color.White;
             this.dataToolStripMenuItem.Name = "dataToolStripMenuItem";
-            resources.ApplyResources(this.dataToolStripMenuItem, "dataToolStripMenuItem");
             // 
             // GoDataEditFormItem
             // 
+            resources.ApplyResources(this.GoDataEditFormItem, "GoDataEditFormItem");
             this.GoDataEditFormItem.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
             this.GoDataEditFormItem.ForeColor = System.Drawing.Color.White;
             this.GoDataEditFormItem.Name = "GoDataEditFormItem";
-            resources.ApplyResources(this.GoDataEditFormItem, "GoDataEditFormItem");
             this.GoDataEditFormItem.Click += new System.EventHandler(this.dataEdit_Click);
             // 
             // GoClubMakeFormItem
             // 
+            resources.ApplyResources(this.GoClubMakeFormItem, "GoClubMakeFormItem");
             this.GoClubMakeFormItem.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
             this.GoClubMakeFormItem.ForeColor = System.Drawing.Color.White;
             this.GoClubMakeFormItem.Name = "GoClubMakeFormItem";
-            resources.ApplyResources(this.GoClubMakeFormItem, "GoClubMakeFormItem");
             this.GoClubMakeFormItem.Click += new System.EventHandler(this.clubMake_Click);
             // 
             // GoTeamMakeFormItem
             // 
+            resources.ApplyResources(this.GoTeamMakeFormItem, "GoTeamMakeFormItem");
             this.GoTeamMakeFormItem.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
             this.GoTeamMakeFormItem.ForeColor = System.Drawing.Color.White;
             this.GoTeamMakeFormItem.Name = "GoTeamMakeFormItem";
-            resources.ApplyResources(this.GoTeamMakeFormItem, "GoTeamMakeFormItem");
             this.GoTeamMakeFormItem.Click += new System.EventHandler(this.teamMake_Click);
             // 
             // GoActionPointEditFormItem
             // 
+            resources.ApplyResources(this.GoActionPointEditFormItem, "GoActionPointEditFormItem");
             this.GoActionPointEditFormItem.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
             this.GoActionPointEditFormItem.ForeColor = System.Drawing.Color.White;
             this.GoActionPointEditFormItem.Name = "GoActionPointEditFormItem";
-            resources.ApplyResources(this.GoActionPointEditFormItem, "GoActionPointEditFormItem");
             this.GoActionPointEditFormItem.Click += new System.EventHandler(this.actionPointEdit_Click);
             // 
             // transmission
             // 
+            resources.ApplyResources(this.transmission, "transmission");
             this.transmission.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GoTCPServerFormItem,
             this.GoTCPClientFormItem});
             this.transmission.ForeColor = System.Drawing.Color.White;
             this.transmission.Name = "transmission";
-            resources.ApplyResources(this.transmission, "transmission");
             // 
             // GoTCPServerFormItem
             // 
+            resources.ApplyResources(this.GoTCPServerFormItem, "GoTCPServerFormItem");
             this.GoTCPServerFormItem.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
             this.GoTCPServerFormItem.ForeColor = System.Drawing.Color.White;
             this.GoTCPServerFormItem.Name = "GoTCPServerFormItem";
-            resources.ApplyResources(this.GoTCPServerFormItem, "GoTCPServerFormItem");
             this.GoTCPServerFormItem.Click += new System.EventHandler(this.tCPServer_Click);
             // 
             // GoTCPClientFormItem
             // 
+            resources.ApplyResources(this.GoTCPClientFormItem, "GoTCPClientFormItem");
             this.GoTCPClientFormItem.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
             this.GoTCPClientFormItem.ForeColor = System.Drawing.Color.White;
             this.GoTCPClientFormItem.Name = "GoTCPClientFormItem";
-            resources.ApplyResources(this.GoTCPClientFormItem, "GoTCPClientFormItem");
             this.GoTCPClientFormItem.Click += new System.EventHandler(this.tCPClient_Click);
             // 
             // MyTeamNameLael
@@ -596,6 +599,7 @@
             this.MyTeamNameLael.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.MyTeamNameLael.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.MyTeamNameLael.Name = "MyTeamNameLael";
+            this.ToolTipFormInput.SetToolTip(this.MyTeamNameLael, resources.GetString("MyTeamNameLael.ToolTip"));
             // 
             // OppentTeamNameLabel
             // 
@@ -603,14 +607,16 @@
             this.OppentTeamNameLabel.ForeColor = System.Drawing.Color.IndianRed;
             this.OppentTeamNameLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.OppentTeamNameLabel.Name = "OppentTeamNameLabel";
+            this.ToolTipFormInput.SetToolTip(this.OppentTeamNameLabel, resources.GetString("OppentTeamNameLabel.ToolTip"));
             // 
             // QuarterText
             // 
-            this.QuarterText.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.QuarterText, "QuarterText");
+            this.QuarterText.BackColor = System.Drawing.Color.DimGray;
             this.QuarterText.ForeColor = System.Drawing.Color.Red;
             this.QuarterText.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.QuarterText.Name = "QuarterText";
+            this.ToolTipFormInput.SetToolTip(this.QuarterText, resources.GetString("QuarterText.ToolTip"));
             // 
             // OppentTeamFaulLabel
             // 
@@ -618,22 +624,25 @@
             this.OppentTeamFaulLabel.ForeColor = System.Drawing.Color.White;
             this.OppentTeamFaulLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.OppentTeamFaulLabel.Name = "OppentTeamFaulLabel";
+            this.ToolTipFormInput.SetToolTip(this.OppentTeamFaulLabel, resources.GetString("OppentTeamFaulLabel.ToolTip"));
             // 
             // label2
             // 
+            resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.DimGray;
             this.label2.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.label2.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
-            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
+            this.ToolTipFormInput.SetToolTip(this.label2, resources.GetString("label2.ToolTip"));
             // 
             // label3
             // 
+            resources.ApplyResources(this.label3, "label3");
             this.label3.BackColor = System.Drawing.Color.DimGray;
             this.label3.ForeColor = System.Drawing.Color.IndianRed;
             this.label3.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
-            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
+            this.ToolTipFormInput.SetToolTip(this.label3, resources.GetString("label3.ToolTip"));
             // 
             // MyTeamFaulLabel
             // 
@@ -641,19 +650,21 @@
             this.MyTeamFaulLabel.ForeColor = System.Drawing.Color.White;
             this.MyTeamFaulLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.MyTeamFaulLabel.Name = "MyTeamFaulLabel";
+            this.ToolTipFormInput.SetToolTip(this.MyTeamFaulLabel, resources.GetString("MyTeamFaulLabel.ToolTip"));
             // 
             // givenFreeThowLabel
             // 
-            this.givenFreeThowLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.givenFreeThowLabel, "givenFreeThowLabel");
+            this.givenFreeThowLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.givenFreeThowLabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.givenFreeThowLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.givenFreeThowLabel.Name = "givenFreeThowLabel";
+            this.ToolTipFormInput.SetToolTip(this.givenFreeThowLabel, resources.GetString("givenFreeThowLabel.ToolTip"));
             // 
             // QuarterTimerFastFowardButton
             // 
-            this.QuarterTimerFastFowardButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.fastforward_off;
             resources.ApplyResources(this.QuarterTimerFastFowardButton, "QuarterTimerFastFowardButton");
+            this.QuarterTimerFastFowardButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.fastforward_off;
             this.QuarterTimerFastFowardButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.fastforward_on;
             this.QuarterTimerFastFowardButton.Name = "QuarterTimerFastFowardButton";
             this.QuarterTimerFastFowardButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -663,8 +674,8 @@
             // 
             // QuarterTimerRewindButton
             // 
-            this.QuarterTimerRewindButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.rewind_off;
             resources.ApplyResources(this.QuarterTimerRewindButton, "QuarterTimerRewindButton");
+            this.QuarterTimerRewindButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.rewind_off;
             this.QuarterTimerRewindButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.rewind_on;
             this.QuarterTimerRewindButton.Name = "QuarterTimerRewindButton";
             this.QuarterTimerRewindButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -679,25 +690,28 @@
             this.MyOutTeamListBox.IsEasyMemberChangeMode = false;
             this.MyOutTeamListBox.Name = "MyOutTeamListBox";
             this.MyOutTeamListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.ToolTipFormInput.SetToolTip(this.MyOutTeamListBox, resources.GetString("MyOutTeamListBox.ToolTip"));
             this.MyOutTeamListBox.Click += new System.EventHandler(this.TeamList_Click);
             // 
             // OppentTeamPointLabel
             // 
+            resources.ApplyResources(this.OppentTeamPointLabel, "OppentTeamPointLabel");
             this.OppentTeamPointLabel.BackColor = System.Drawing.Color.DimGray;
             this.OppentTeamPointLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.OppentTeamPointLabel, "OppentTeamPointLabel");
             this.OppentTeamPointLabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.OppentTeamPointLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.OppentTeamPointLabel.Name = "OppentTeamPointLabel";
+            this.ToolTipFormInput.SetToolTip(this.OppentTeamPointLabel, resources.GetString("OppentTeamPointLabel.ToolTip"));
             // 
             // MyTeamPointLabel
             // 
+            resources.ApplyResources(this.MyTeamPointLabel, "MyTeamPointLabel");
             this.MyTeamPointLabel.BackColor = System.Drawing.Color.DimGray;
             this.MyTeamPointLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.MyTeamPointLabel, "MyTeamPointLabel");
             this.MyTeamPointLabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.MyTeamPointLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.MyTeamPointLabel.Name = "MyTeamPointLabel";
+            this.ToolTipFormInput.SetToolTip(this.MyTeamPointLabel, resources.GetString("MyTeamPointLabel.ToolTip"));
             // 
             // ToolStrip
             // 
@@ -713,53 +727,54 @@
             this.RedoToolStripButton,
             this.UseCommentToolStripButton});
             this.ToolStrip.Name = "ToolStrip";
+            this.ToolTipFormInput.SetToolTip(this.ToolStrip, resources.GetString("ToolStrip.ToolTip"));
             // 
             // NewGameToolStripButton
             // 
+            resources.ApplyResources(this.NewGameToolStripButton, "NewGameToolStripButton");
             this.NewGameToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.NewGameToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources._new;
-            resources.ApplyResources(this.NewGameToolStripButton, "NewGameToolStripButton");
             this.NewGameToolStripButton.Name = "NewGameToolStripButton";
             this.NewGameToolStripButton.Click += new System.EventHandler(this.NewGameToolStripButton_Click);
             // 
             // LoadToolStripButton
             // 
+            resources.ApplyResources(this.LoadToolStripButton, "LoadToolStripButton");
             this.LoadToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.LoadToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.open;
-            resources.ApplyResources(this.LoadToolStripButton, "LoadToolStripButton");
             this.LoadToolStripButton.Name = "LoadToolStripButton";
             this.LoadToolStripButton.Click += new System.EventHandler(this.OpenToolStripButton_Click);
             // 
             // SaveToolStripButton
             // 
+            resources.ApplyResources(this.SaveToolStripButton, "SaveToolStripButton");
             this.SaveToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.SaveToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.floppy;
-            resources.ApplyResources(this.SaveToolStripButton, "SaveToolStripButton");
             this.SaveToolStripButton.Name = "SaveToolStripButton";
             this.SaveToolStripButton.Click += new System.EventHandler(this.SaveToolStripButton_Click);
             // 
             // UndoToolStripButton
             // 
+            resources.ApplyResources(this.UndoToolStripButton, "UndoToolStripButton");
             this.UndoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.UndoToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.left;
-            resources.ApplyResources(this.UndoToolStripButton, "UndoToolStripButton");
             this.UndoToolStripButton.Name = "UndoToolStripButton";
             this.UndoToolStripButton.Click += new System.EventHandler(this.UndoToolStripButton_Click);
             // 
             // RedoToolStripButton
             // 
+            resources.ApplyResources(this.RedoToolStripButton, "RedoToolStripButton");
             this.RedoToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.RedoToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.right;
-            resources.ApplyResources(this.RedoToolStripButton, "RedoToolStripButton");
             this.RedoToolStripButton.Name = "RedoToolStripButton";
             this.RedoToolStripButton.Click += new System.EventHandler(this.RedoToolStripButton_Click);
             // 
             // UseCommentToolStripButton
             // 
+            resources.ApplyResources(this.UseCommentToolStripButton, "UseCommentToolStripButton");
             this.UseCommentToolStripButton.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg2;
             this.UseCommentToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.UseCommentToolStripButton.Image = global::BasketballManagementSystem.Properties.Resources.hukidashi;
-            resources.ApplyResources(this.UseCommentToolStripButton, "UseCommentToolStripButton");
             this.UseCommentToolStripButton.Name = "UseCommentToolStripButton";
             this.UseCommentToolStripButton.Click += new System.EventHandler(this.UseCommentToolStripButton_Click);
             // 
@@ -770,6 +785,7 @@
             this.OppentOutTeamListBox.IsEasyMemberChangeMode = false;
             this.OppentOutTeamListBox.Name = "OppentOutTeamListBox";
             this.OppentOutTeamListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.ToolTipFormInput.SetToolTip(this.OppentOutTeamListBox, resources.GetString("OppentOutTeamListBox.ToolTip"));
             this.OppentOutTeamListBox.Click += new System.EventHandler(this.TeamList_Click);
             // 
             // OppentCortTeamListBox
@@ -779,6 +795,7 @@
             this.OppentCortTeamListBox.IsEasyMemberChangeMode = false;
             this.OppentCortTeamListBox.Name = "OppentCortTeamListBox";
             this.OppentCortTeamListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.ToolTipFormInput.SetToolTip(this.OppentCortTeamListBox, resources.GetString("OppentCortTeamListBox.ToolTip"));
             this.OppentCortTeamListBox.Click += new System.EventHandler(this.TeamList_Click);
             // 
             // MyCortTeamListBox
@@ -788,43 +805,48 @@
             this.MyCortTeamListBox.IsEasyMemberChangeMode = false;
             this.MyCortTeamListBox.Name = "MyCortTeamListBox";
             this.MyCortTeamListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.ToolTipFormInput.SetToolTip(this.MyCortTeamListBox, resources.GetString("MyCortTeamListBox.ToolTip"));
             this.MyCortTeamListBox.Click += new System.EventHandler(this.TeamList_Click);
             // 
             // QuarterTimerLabel
             // 
+            resources.ApplyResources(this.QuarterTimerLabel, "QuarterTimerLabel");
             this.QuarterTimerLabel.BackColor = System.Drawing.Color.Transparent;
             this.QuarterTimerLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            resources.ApplyResources(this.QuarterTimerLabel, "QuarterTimerLabel");
             this.QuarterTimerLabel.ForeColor = System.Drawing.Color.DarkOrange;
             this.QuarterTimerLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.QuarterTimerLabel.Name = "QuarterTimerLabel";
+            this.ToolTipFormInput.SetToolTip(this.QuarterTimerLabel, resources.GetString("QuarterTimerLabel.ToolTip"));
             // 
             // CortPicture
             // 
+            resources.ApplyResources(this.CortPicture, "CortPicture");
             this.CortPicture.BackColor = System.Drawing.SystemColors.Control;
             this.CortPicture.Image = global::BasketballManagementSystem.Properties.Resources.coat;
-            resources.ApplyResources(this.CortPicture, "CortPicture");
             this.CortPicture.Name = "CortPicture";
             this.CortPicture.TabStop = false;
+            this.ToolTipFormInput.SetToolTip(this.CortPicture, resources.GetString("CortPicture.ToolTip"));
             this.CortPicture.Click += new System.EventHandler(this.CortPicture_Click);
             // 
             // pictureBox1
             // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.pictureBox1.Image = global::BasketballManagementSystem.Properties.Resources.right;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
+            this.ToolTipFormInput.SetToolTip(this.pictureBox1, resources.GetString("pictureBox1.ToolTip"));
             // 
             // pictureBox2
             // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.pictureBox2.Image = global::BasketballManagementSystem.Properties.Resources.left;
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.TabStop = false;
+            this.ToolTipFormInput.SetToolTip(this.pictureBox2, resources.GetString("pictureBox2.ToolTip"));
             // 
             // MyTimeOutLabel
             // 
@@ -832,13 +854,15 @@
             this.MyTimeOutLabel.ForeColor = System.Drawing.Color.White;
             this.MyTimeOutLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.MyTimeOutLabel.Name = "MyTimeOutLabel";
+            this.ToolTipFormInput.SetToolTip(this.MyTimeOutLabel, resources.GetString("MyTimeOutLabel.ToolTip"));
             // 
             // backPictureBox
             // 
-            this.backPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.back;
             resources.ApplyResources(this.backPictureBox, "backPictureBox");
+            this.backPictureBox.Image = global::BasketballManagementSystem.Properties.Resources.back;
             this.backPictureBox.Name = "backPictureBox";
             this.backPictureBox.TabStop = false;
+            this.ToolTipFormInput.SetToolTip(this.backPictureBox, resources.GetString("backPictureBox.ToolTip"));
             // 
             // OppentTimeOutLabel
             // 
@@ -846,146 +870,162 @@
             this.OppentTimeOutLabel.ForeColor = System.Drawing.Color.White;
             this.OppentTimeOutLabel.Image = global::BasketballManagementSystem.Properties.Resources.backimg;
             this.OppentTimeOutLabel.Name = "OppentTimeOutLabel";
+            this.ToolTipFormInput.SetToolTip(this.OppentTimeOutLabel, resources.GetString("OppentTimeOutLabel.ToolTip"));
             // 
             // QuarterTimerStopButton
             // 
-            this.QuarterTimerStopButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.playback_off;
             resources.ApplyResources(this.QuarterTimerStopButton, "QuarterTimerStopButton");
+            this.QuarterTimerStopButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.playback_off;
             this.QuarterTimerStopButton.Name = "QuarterTimerStopButton";
             this.QuarterTimerStopButton.ReverseImage = global::BasketballManagementSystem.Properties.Resources.stop;
+            this.ToolTipFormInput.SetToolTip(this.QuarterTimerStopButton, resources.GetString("QuarterTimerStopButton.ToolTip"));
             this.QuarterTimerStopButton.Click += new System.EventHandler(this.QuarterTimerStop_Click);
             // 
             // MyTimeOutButton
             // 
-            this.MyTimeOutButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.timeout_blue;
             resources.ApplyResources(this.MyTimeOutButton, "MyTimeOutButton");
+            this.MyTimeOutButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.timeout_blue;
             this.MyTimeOutButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.timeout_gray;
             this.MyTimeOutButton.Name = "MyTimeOutButton";
             this.MyTimeOutButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ToolTipFormInput.SetToolTip(this.MyTimeOutButton, resources.GetString("MyTimeOutButton.ToolTip"));
             this.MyTimeOutButton.Click += new System.EventHandler(this.MyTimeOut_Click);
             // 
             // OppentTimeOutButton
             // 
-            this.OppentTimeOutButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.timeout_red;
             resources.ApplyResources(this.OppentTimeOutButton, "OppentTimeOutButton");
+            this.OppentTimeOutButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.timeout_red;
             this.OppentTimeOutButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.timeout_gray;
             this.OppentTimeOutButton.Name = "OppentTimeOutButton";
             this.OppentTimeOutButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ToolTipFormInput.SetToolTip(this.OppentTimeOutButton, resources.GetString("OppentTimeOutButton.ToolTip"));
             this.OppentTimeOutButton.Click += new System.EventHandler(this.OppentTimeOut_Click);
             // 
             // MyMemberChangeButton
             // 
-            this.MyMemberChangeButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.member_change;
             resources.ApplyResources(this.MyMemberChangeButton, "MyMemberChangeButton");
+            this.MyMemberChangeButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.member_change;
             this.MyMemberChangeButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.member_change_gray;
             this.MyMemberChangeButton.Name = "MyMemberChangeButton";
             this.MyMemberChangeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ToolTipFormInput.SetToolTip(this.MyMemberChangeButton, resources.GetString("MyMemberChangeButton.ToolTip"));
             this.MyMemberChangeButton.Click += new System.EventHandler(this.TeamChangeButton_Click);
             // 
             // OppentMemberChangeButton
             // 
-            this.OppentMemberChangeButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.member_change;
             resources.ApplyResources(this.OppentMemberChangeButton, "OppentMemberChangeButton");
+            this.OppentMemberChangeButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.member_change;
             this.OppentMemberChangeButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.member_change_gray;
             this.OppentMemberChangeButton.Name = "OppentMemberChangeButton";
             this.OppentMemberChangeButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ToolTipFormInput.SetToolTip(this.OppentMemberChangeButton, resources.GetString("OppentMemberChangeButton.ToolTip"));
             this.OppentMemberChangeButton.Click += new System.EventHandler(this.TeamChangeButton_Click);
+            // 
+            // AssistButton
+            // 
+            resources.ApplyResources(this.AssistButton, "AssistButton");
+            this.AssistButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.ASoff;
+            this.AssistButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.ASon;
+            this.AssistButton.Name = "AssistButton";
+            this.AssistButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToolTipFormInput.SetToolTip(this.AssistButton, resources.GetString("AssistButton.ToolTip"));
+            this.AssistButton.Click += new System.EventHandler(this.AssistButton_Click);
+            // 
+            // StealButton
+            // 
+            resources.ApplyResources(this.StealButton, "StealButton");
+            this.StealButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.SToff;
+            this.StealButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.STon;
+            this.StealButton.Name = "StealButton";
+            this.StealButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToolTipFormInput.SetToolTip(this.StealButton, resources.GetString("StealButton.ToolTip"));
+            this.StealButton.Click += new System.EventHandler(this.StealButton_Click);
+            // 
+            // TurnOverButton
+            // 
+            resources.ApplyResources(this.TurnOverButton, "TurnOverButton");
+            this.TurnOverButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.TOoff;
+            this.TurnOverButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.TOon;
+            this.TurnOverButton.Name = "TurnOverButton";
+            this.TurnOverButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToolTipFormInput.SetToolTip(this.TurnOverButton, resources.GetString("TurnOverButton.ToolTip"));
+            this.TurnOverButton.Click += new System.EventHandler(this.TurnOverButton_Click);
+            // 
+            // BlockShotButton
+            // 
+            resources.ApplyResources(this.BlockShotButton, "BlockShotButton");
+            this.BlockShotButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.BSoff;
+            this.BlockShotButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.BSon;
+            this.BlockShotButton.Name = "BlockShotButton";
+            this.BlockShotButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToolTipFormInput.SetToolTip(this.BlockShotButton, resources.GetString("BlockShotButton.ToolTip"));
+            this.BlockShotButton.Click += new System.EventHandler(this.BlockShotButton_Click);
+            // 
+            // PersonalFaulButton
+            // 
+            resources.ApplyResources(this.PersonalFaulButton, "PersonalFaulButton");
+            this.PersonalFaulButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.PFoff;
+            this.PersonalFaulButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.PFon;
+            this.PersonalFaulButton.Name = "PersonalFaulButton";
+            this.PersonalFaulButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToolTipFormInput.SetToolTip(this.PersonalFaulButton, resources.GetString("PersonalFaulButton.ToolTip"));
+            this.PersonalFaulButton.Click += new System.EventHandler(this.PersonalFaulButton_Click);
+            // 
+            // TechnicalFaulButton
+            // 
+            resources.ApplyResources(this.TechnicalFaulButton, "TechnicalFaulButton");
+            this.TechnicalFaulButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.TFoff;
+            this.TechnicalFaulButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.TFon;
+            this.TechnicalFaulButton.Name = "TechnicalFaulButton";
+            this.TechnicalFaulButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToolTipFormInput.SetToolTip(this.TechnicalFaulButton, resources.GetString("TechnicalFaulButton.ToolTip"));
+            this.TechnicalFaulButton.Click += new System.EventHandler(this.TechnicalFaulButton_Click);
+            // 
+            // UnSportsmanLikeFaulButton
+            // 
+            resources.ApplyResources(this.UnSportsmanLikeFaulButton, "UnSportsmanLikeFaulButton");
+            this.UnSportsmanLikeFaulButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.UFoff;
+            this.UnSportsmanLikeFaulButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.UFon;
+            this.UnSportsmanLikeFaulButton.Name = "UnSportsmanLikeFaulButton";
+            this.UnSportsmanLikeFaulButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToolTipFormInput.SetToolTip(this.UnSportsmanLikeFaulButton, resources.GetString("UnSportsmanLikeFaulButton.ToolTip"));
+            this.UnSportsmanLikeFaulButton.Click += new System.EventHandler(this.UnSportsmanLikeFaulButton_Click);
+            // 
+            // DisQualifyingFaulButton
+            // 
+            resources.ApplyResources(this.DisQualifyingFaulButton, "DisQualifyingFaulButton");
+            this.DisQualifyingFaulButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.DFoff;
+            this.DisQualifyingFaulButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.DFon;
+            this.DisQualifyingFaulButton.Name = "DisQualifyingFaulButton";
+            this.DisQualifyingFaulButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToolTipFormInput.SetToolTip(this.DisQualifyingFaulButton, resources.GetString("DisQualifyingFaulButton.ToolTip"));
+            this.DisQualifyingFaulButton.Click += new System.EventHandler(this.DisQualifyingFaulButton_Click);
+            // 
+            // UpButton
+            // 
+            resources.ApplyResources(this.UpButton, "UpButton");
+            this.UpButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.upArrow2;
+            this.UpButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.upArrow2_g;
+            this.UpButton.Name = "UpButton";
+            this.UpButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToolTipFormInput.SetToolTip(this.UpButton, resources.GetString("UpButton.ToolTip"));
+            this.UpButton.Click += new System.EventHandler(this.buttonUp_Click);
+            // 
+            // DownButton
+            // 
+            resources.ApplyResources(this.DownButton, "DownButton");
+            this.DownButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.downArrow2;
+            this.DownButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.downArrow2_g;
+            this.DownButton.Name = "DownButton";
+            this.DownButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ToolTipFormInput.SetToolTip(this.DownButton, resources.GetString("DownButton.ToolTip"));
+            this.DownButton.Click += new System.EventHandler(this.buttonDown_Click);
             // 
             // ColorDialog
             // 
             this.ColorDialog.AnyColor = true;
             this.ColorDialog.FullOpen = true;
             this.ColorDialog.ShowHelp = true;
-            // 
-            // AssistButton
-            // 
-            this.AssistButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.ASoff;
-            resources.ApplyResources(this.AssistButton, "AssistButton");
-            this.AssistButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.ASon;
-            this.AssistButton.Name = "AssistButton";
-            this.AssistButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.AssistButton.Click += new System.EventHandler(this.AssistButton_Click);
-            // 
-            // StealButton
-            // 
-            this.StealButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.SToff;
-            resources.ApplyResources(this.StealButton, "StealButton");
-            this.StealButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.STon;
-            this.StealButton.Name = "StealButton";
-            this.StealButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.StealButton.Click += new System.EventHandler(this.StealButton_Click);
-            // 
-            // TurnOverButton
-            // 
-            this.TurnOverButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.TOoff;
-            resources.ApplyResources(this.TurnOverButton, "TurnOverButton");
-            this.TurnOverButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.TOon;
-            this.TurnOverButton.Name = "TurnOverButton";
-            this.TurnOverButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.TurnOverButton.Click += new System.EventHandler(this.TurnOverButton_Click);
-            // 
-            // BlockShotButton
-            // 
-            this.BlockShotButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.BSoff;
-            resources.ApplyResources(this.BlockShotButton, "BlockShotButton");
-            this.BlockShotButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.BSon;
-            this.BlockShotButton.Name = "BlockShotButton";
-            this.BlockShotButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.BlockShotButton.Click += new System.EventHandler(this.BlockShotButton_Click);
-            // 
-            // PersonalFaulButton
-            // 
-            this.PersonalFaulButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.PFoff;
-            resources.ApplyResources(this.PersonalFaulButton, "PersonalFaulButton");
-            this.PersonalFaulButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.PFon;
-            this.PersonalFaulButton.Name = "PersonalFaulButton";
-            this.PersonalFaulButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PersonalFaulButton.Click += new System.EventHandler(this.PersonalFaulButton_Click);
-            // 
-            // TechnicalFaulButton
-            // 
-            this.TechnicalFaulButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.TFoff;
-            resources.ApplyResources(this.TechnicalFaulButton, "TechnicalFaulButton");
-            this.TechnicalFaulButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.TFon;
-            this.TechnicalFaulButton.Name = "TechnicalFaulButton";
-            this.TechnicalFaulButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.TechnicalFaulButton.Click += new System.EventHandler(this.TechnicalFaulButton_Click);
-            // 
-            // UnSportsmanLikeFaulButton
-            // 
-            this.UnSportsmanLikeFaulButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.UFoff;
-            resources.ApplyResources(this.UnSportsmanLikeFaulButton, "UnSportsmanLikeFaulButton");
-            this.UnSportsmanLikeFaulButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.UFon;
-            this.UnSportsmanLikeFaulButton.Name = "UnSportsmanLikeFaulButton";
-            this.UnSportsmanLikeFaulButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.UnSportsmanLikeFaulButton.Click += new System.EventHandler(this.UnSportsmanLikeFaulButton_Click);
-            // 
-            // DisQualifyingFaulButton
-            // 
-            this.DisQualifyingFaulButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.DFoff;
-            resources.ApplyResources(this.DisQualifyingFaulButton, "DisQualifyingFaulButton");
-            this.DisQualifyingFaulButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.DFon;
-            this.DisQualifyingFaulButton.Name = "DisQualifyingFaulButton";
-            this.DisQualifyingFaulButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.DisQualifyingFaulButton.Click += new System.EventHandler(this.DisQualifyingFaulButton_Click);
-            // 
-            // UpButton
-            // 
-            this.UpButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.upArrow2;
-            resources.ApplyResources(this.UpButton, "UpButton");
-            this.UpButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.upArrow2_g;
-            this.UpButton.Name = "UpButton";
-            this.UpButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.UpButton.Click += new System.EventHandler(this.buttonUp_Click);
-            // 
-            // DownButton
-            // 
-            this.DownButton.DefaultImage = global::BasketballManagementSystem.Properties.Resources.downArrow2;
-            resources.ApplyResources(this.DownButton, "DownButton");
-            this.DownButton.MouseDownImage = global::BasketballManagementSystem.Properties.Resources.downArrow2_g;
-            this.DownButton.Name = "DownButton";
-            this.DownButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.DownButton.Click += new System.EventHandler(this.buttonDown_Click);
             // 
             // FormInputView
             // 
@@ -1036,6 +1076,7 @@
             this.KeyPreview = true;
             this.MainMenuStrip = this.MenuStrip1;
             this.Name = "FormInputView";
+            this.ToolTipFormInput.SetToolTip(this, resources.GetString("$this.ToolTip"));
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FormInput_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormInput_KeyUp);
             this.MenuStrip1.ResumeLayout(false);
