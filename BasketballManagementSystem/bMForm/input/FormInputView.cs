@@ -689,6 +689,7 @@ namespace BasketballManagementSystem.bmForm.input
                 this.QuarterTimerLabel.Text = this.QuarterTimer.Text;
             else
                 this.QuarterTimerLabel.Text = "10:00";
+            
         }
 
 
@@ -961,7 +962,12 @@ namespace BasketballManagementSystem.bmForm.input
                 this.DataChangeEventThrow("TimeOutRimit", 1);
             }
 
-
+            if(Quarter >= 3)
+            {
+                leftArrow.Image = Properties.Resources.left;
+               
+                rightArrow.Image = Properties.Resources.right;
+            }
 
         }
 
