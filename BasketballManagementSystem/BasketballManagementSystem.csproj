@@ -358,6 +358,12 @@
     <EmbeddedResource Include="bmForm\popupForm\PopupForm.resx">
       <DependentUpon>PopupForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="bmForm\strategySimulation\FormStrategySimulation.is.resx">
+      <DependentUpon>FormStrategySimulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bmForm\strategySimulation\FormStrategySimulation.ja.resx">
+      <DependentUpon>FormStrategySimulation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bmForm\strategySimulation\FormStrategySimulation.resx">
       <DependentUpon>FormStrategySimulation.cs</DependentUpon>
     </EmbeddedResource>
