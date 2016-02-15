@@ -86,10 +86,10 @@ namespace BasketballManagementSystem.bmForm.tactick2D
                 team = game.OppentTeam.Name;
             }
 
-            InformationRichTextBox.Text = "SelectedPlayer = " + selectedPlayer + "\n";
-            InformationRichTextBox.AppendText("Team = " + team + "\n");
-            InformationRichTextBox.AppendText("AllPoint = " + selectedPlayer.Point + "\n");
-            InformationRichTextBox.AppendText("MaxShootRange = " + CortHelper.GetMaxShootRange(ActionListConverter.ToRelationPointActionList(selectedPlayer.GetActionList(selectedPlayer))) + "[m]\n");
+            InformationRichTextBox.Text = "選択選手 = " + selectedPlayer + "\n";
+            InformationRichTextBox.AppendText("チーム = " + team + "\n");
+            InformationRichTextBox.AppendText("総得点数 = " + selectedPlayer.Point + "\n");
+            InformationRichTextBox.AppendText("最長シュート距離 = " + CortHelper.GetMaxShootRange(ActionListConverter.ToRelationPointActionList(selectedPlayer.GetActionList(selectedPlayer))) + "[m]\n");
             InformationRichTextBox.AppendText(message);
         }
        
@@ -334,7 +334,7 @@ namespace BasketballManagementSystem.bmForm.tactick2D
 
             if (distance == Double.MaxValue)
             {
-                message = "CannotAnalyze:NotFindApproximateShoot\n";
+                message = "CannotAnalyze:近似シュートが見つかりません\n";
             }
             else
             {
@@ -349,10 +349,10 @@ namespace BasketballManagementSystem.bmForm.tactick2D
                 if (g2 < 0) { s2 = "測定不能(データが足りません)"; }
 
                 message =
-                    "MostApproximateShoot=" + shoot + "\n" +
-                    "DifferenceDistance=" + distance + "\n" +
-                    "NormalShootSuccessPercent=" + s + "\n" +
-                    "FreeThrowShootSuccessPercent=" + s2 + "\n";
+                    "最近似シュート" + shoot + "\n" +
+                    "近似シュートとの距離=" + distance + "\n" +
+                    "通常シュート成功率=" + s + "\n" +
+                    "フリースロー成功率=" + s2 + "\n";
             }
 
             AddInformationText(message);
