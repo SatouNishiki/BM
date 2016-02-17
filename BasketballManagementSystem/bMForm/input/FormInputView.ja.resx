@@ -1038,7 +1038,7 @@
     <value>196, 22</value>
   </data>
   <data name="StrategySimulationFormItem.Text" xml:space="preserve">
-    <value>戦略シュミレーション</value>
+    <value>戦略シミュレーション</value>
   </data>
   <data name="CentralityAnalyzeItem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
