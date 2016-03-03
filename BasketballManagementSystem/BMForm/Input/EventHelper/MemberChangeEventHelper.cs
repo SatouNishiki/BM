@@ -124,7 +124,7 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                         if (c2.Name != form.MyCortTeamListBox.Name
                         && c2.Name != form.OppentOutTeamListBox.Name
                         && c2.Name != form.MyOutTeamListBox.Name
-                        && c2.Name != form.OppentOutTeamListBox.Name
+                        && c2.Name != form.OppentCortTeamListBox.Name
                         && c2.Name != form.MyMemberChangeButton.Name)
                         {
                             enableList.Add(c.Enabled);
