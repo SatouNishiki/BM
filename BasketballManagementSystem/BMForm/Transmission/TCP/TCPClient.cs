@@ -115,9 +115,7 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
                 threadClient.Start();
 
                 SendPassword();
-
-                SendUserName();
-
+                
                 //接続インディケータ
                 IndicatorPctureBox.BackColor = Color.LightGreen;
                 writeLog("クライアント接続されました");
@@ -167,6 +165,7 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
                         string header = ecSjis.GetString(temp);
                         Byte[] body = new byte[getByte.Length - 4];
                         Array.Copy(getByte, 4, body, 0, getByte.Length - 4);
+                        
 
                         if (header == "TEXT")
                         {
@@ -220,6 +219,8 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
                             }
                             else
                             {
+                                //パスワードがあってるか確認してからユーザー名送信
+                                SendUserName();
                                 Invoke(new EnableTimerDelegate(EnableTimer));
                             }
                         }

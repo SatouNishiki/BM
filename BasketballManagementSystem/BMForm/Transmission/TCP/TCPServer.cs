@@ -276,6 +276,10 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
         /// <param name="cl"></param>
         public void DeleteClient(ClientHandler cl)
         {
+            //パスワード間違ってた時usernameDicに値が入れられる前に切断処理されてしまうのでここに落ちる
+            if (!userNameDic.ContainsKey(cl.ClientHandle))
+                return;
+
             string name = userNameDic[cl.ClientHandle];
 
             userNameDic.Remove(cl.ClientHandle);
@@ -651,6 +655,7 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
                     }
                     else if (header == "PASS")
                     {
+                        
                         byte[] uniBytes;
                         //'S-Jisからユニコードに変換
                         uniBytes = Encoding.Convert(ecSjis, ecUni, body);
@@ -666,6 +671,10 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
                         }
                         else
                         {
+
+                            fomServer.Invoke(new WriteTextDelegate(fomServer.WriteReadText)
+                                             , new object[] { this, "ok" });
+
                             SendPasswordHelper("OK");
                         }
                     }
@@ -739,8 +748,8 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
             l.AddRange(data);
 
             Byte[] sendData = l.ToArray();
-
-            sendData = Compressor.Compress(sendData);
+            
+            //sendData = Compressor.Compress(sendData);
 
             try
             {
