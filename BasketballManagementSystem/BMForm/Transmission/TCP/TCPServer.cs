@@ -498,7 +498,7 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
             m.Close();
 
             //データ圧縮
-            sendData = Compressor.Compress(sendData);
+        //    sendData = Compressor.Compress(sendData);
 
             NotifyAll(sendData);
         }
@@ -672,9 +672,6 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
                         else
                         {
 
-                            fomServer.Invoke(new WriteTextDelegate(fomServer.WriteReadText)
-                                             , new object[] { this, "ok" });
-
                             SendPasswordHelper("OK");
                         }
                     }
@@ -748,8 +745,6 @@ namespace BasketballManagementSystem.bmForm.Transmission.tcp
             l.AddRange(data);
 
             Byte[] sendData = l.ToArray();
-            
-            //sendData = Compressor.Compress(sendData);
 
             try
             {
