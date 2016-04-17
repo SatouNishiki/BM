@@ -86,8 +86,8 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                 foreach (Player p in obj2)
                 {
                     m.ChangedOutMembers.Add(p);
-                    form.OppentTeam.CortMember.Remove(p);
-                    form.OppentTeam.OutMember.Add(p);
+                    form.OppentTeam.OutMember.Remove(p);
+                    form.OppentTeam.CortMember.Add(p);
                 }
 
                 m.ChengedMemberTime = DateTime.Now;
@@ -125,7 +125,8 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                         && c2.Name != form.OppentOutTeamListBox.Name
                         && c2.Name != form.MyOutTeamListBox.Name
                         && c2.Name != form.OppentCortTeamListBox.Name
-                        && c2.Name != form.MyMemberChangeButton.Name)
+                        && c2.Name != form.MyMemberChangeButton.Name
+                        && c2.Name != form.OppentMemberChangeButton.Name)
                         {
                             enableList.Add(c.Enabled);
                             c2.Enabled = false;
@@ -145,7 +146,8 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                         && c.Name != form.OppentOutTeamListBox.Name
                         && c.Name != form.MyOutTeamListBox.Name
                         && c.Name != form.OppentCortTeamListBox.Name
-                        && c.Name != form.MyMemberChangeButton.Name)
+                        && c.Name != form.MyMemberChangeButton.Name
+                        && c.Name != form.OppentMemberChangeButton.Name)
                     {
                         enableList.Add(c.Enabled);
                         c.Enabled = false;
@@ -167,7 +169,8 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                         && c2.Name != form.OppentOutTeamListBox.Name
                         && c2.Name != form.MyOutTeamListBox.Name
                         && c2.Name != form.OppentCortTeamListBox.Name
-                        && c2.Name != form.MyMemberChangeButton.Name)
+                        && c2.Name != form.MyMemberChangeButton.Name
+                        && c2.Name != form.OppentMemberChangeButton.Name)
                         {
                             continueFlag = true;
                             c2.Enabled = enableList[i];
@@ -187,7 +190,8 @@ namespace BasketballManagementSystem.bmForm.input.eventHelper
                         && c.Name != form.OppentOutTeamListBox.Name
                         && c.Name != form.MyOutTeamListBox.Name
                         && c.Name != form.OppentCortTeamListBox.Name
-                        && c.Name != form.MyMemberChangeButton.Name)
+                        && c.Name != form.MyMemberChangeButton.Name
+                        && c.Name != form.OppentMemberChangeButton.Name)
                     {
                         c.Enabled = enableList[i];
                         i++;
