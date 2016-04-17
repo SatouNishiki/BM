@@ -914,13 +914,7 @@ namespace BasketballManagementSystem.bmForm.input
         {
             this.MemberChangeEventThrow(this);
 
-            this.Sort(MyCortTeamListBox);
-
-            this.Sort(MyOutTeamListBox);
-
-            this.Sort(OppentCortTeamListBox);
-
-            this.Sort(OppentOutTeamListBox);
+            this.SortAllMemberList();
         }
 
 
@@ -1393,6 +1387,20 @@ namespace BasketballManagementSystem.bmForm.input
         {
             GameDataStack.Push(Game.CloneDeep());
             RedoGameDataStack.Clear();
+        }
+
+        /// <summary>
+        /// 全メンバーリストを背番号昇順でソートします
+        /// </summary>
+        public void SortAllMemberList()
+        {
+            this.Sort(MyCortTeamListBox);
+
+            this.Sort(MyOutTeamListBox);
+
+            this.Sort(OppentCortTeamListBox);
+
+            this.Sort(OppentOutTeamListBox);
         }
 
         private void UseCommentItem_Click(object sender, EventArgs e)

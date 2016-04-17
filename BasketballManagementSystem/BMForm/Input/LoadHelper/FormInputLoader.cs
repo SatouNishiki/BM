@@ -78,6 +78,8 @@ namespace BasketballManagementSystem.bmForm.input.loadHelper
 
                     SelectedIndexClick(fi);
                     fi.OppentOutTeamListBox.Enabled = true;
+
+                    fi.SortAllMemberList();
                 };
 
                 fView.Invoke(sbd, new object[] { fView, game });
@@ -131,7 +133,8 @@ namespace BasketballManagementSystem.bmForm.input.loadHelper
 
                 SelectedIndexClick(fView);
                 fView.OppentOutTeamListBox.Enabled = true;
-                
+
+                fView.SortAllMemberList();
             }
         }
 
